@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export default function ReviewerCard({ reviewer, subjectId, index }) {
   const delay = `${index * 60}ms`;
   const questionCount = reviewer.questions ? reviewer.questions.length : 0;
+  const isFlashCard = !!reviewer.quizletLink && questionCount === 0;
 
   return (
     <div
@@ -30,26 +31,36 @@ export default function ReviewerCard({ reviewer, subjectId, index }) {
 
       {/* Tags */}
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-        <span className="badge badge-lilac">
-          {questionCount} {questionCount === 1 ? "question" : "questions"}
-        </span>
-        {reviewer.quizletLink && (
-          <span className="badge badge-blue">Quizlet</span>
+        {isFlashCard ? (
+          <span className="badge badge-blue">Flash Cards</span>
+        ) : (
+          <>
+            <span className="badge badge-lilac">
+              {questionCount} {questionCount === 1 ? "question" : "questions"}
+            </span>
+            {reviewer.quizletLink && (
+              <span className="badge badge-blue">Quizlet</span>
+            )}
+          </>
         )}
       </div>
 
       {/* Actions */}
       <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", marginTop: "auto" }}>
-        {questionCount > 0 ? (
-          <Link to={`/subject/${subjectId}/quiz/${reviewer.id}`} style={{ textDecoration: "none", flex: 1, minWidth: "120px" }}>
-            <button className="btn-primary" style={{ width: "100%", padding: "0.65rem 1rem", fontSize: "0.85rem" }}>
-              Start Quiz
-            </button>
-          </Link>
-        ) : reviewer.quizletLink ? null : (
-          <button className="btn-primary" disabled style={{ flex: 1, minWidth: "120px", padding: "0.65rem 1rem", fontSize: "0.85rem" }}>
-            No Questions Yet
-          </button>
+        {!isFlashCard && (
+          questionCount > 0 ? (
+            <Link to={`/subject/${subjectId}/quiz/${reviewer.id}`} style={{ textDecoration: "none", flex: 1, minWidth: "120px" }}>
+              <button className="btn-primary" style={{ width: "100%", padding: "0.65rem 1rem", fontSize: "0.85rem" }}>
+                Start Quiz
+              </button>
+            </Link>
+          ) : (
+            reviewer.quizletLink ? null : (
+              <button className="btn-primary" disabled style={{ flex: 1, minWidth: "120px", padding: "0.65rem 1rem", fontSize: "0.85rem" }}>
+                No Questions Yet
+              </button>
+            )
+          )
         )}
 
         {reviewer.quizletLink && (
@@ -57,10 +68,10 @@ export default function ReviewerCard({ reviewer, subjectId, index }) {
             href={reviewer.quizletLink}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ textDecoration: "none", flex: questionCount > 0 ? "0 0 auto" : 1, minWidth: "120px" }}
+            style={{ textDecoration: "none", flex: isFlashCard || questionCount === 0 ? 1 : "0 0 auto", minWidth: "120px" }}
           >
             <button
-              className={questionCount > 0 ? "btn-ghost" : "btn-primary"}
+              className={isFlashCard || questionCount === 0 ? "btn-primary" : "btn-ghost"}
               style={{ width: "100%", padding: "0.65rem 1rem", fontSize: "0.85rem", gap: "0.4rem" }}
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0 }}>

@@ -110,80 +110,90 @@ export default function SubjectPage() {
         </div>
       </div>
 
-      {/* ── Reviewers section ── */}
-      <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 1.25rem 4rem" }}>
-        {/* Section header */}
-        <div
-          className="anim-fade-up"
-          style={{
-            animationDelay: "80ms",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            marginBottom: "1.25rem",
-          }}
-        >
-          <h2 style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: "1.25rem",
-            fontWeight: 700,
-            color: "#2d1f5e",
-          }}>
-            Reviewers
-          </h2>
-          {hasReviewers && (
-            <span style={{
-              padding: "0.25rem 0.75rem",
-              borderRadius: "999px",
-              fontSize: "0.75rem",
-              fontWeight: 700,
-              background: "var(--lilac-100)",
-              color: "var(--lilac-600)",
-              border: "1.5px solid var(--lilac-200)",
-            }}>
-              {subject.reviewers.length} {subject.reviewers.length === 1 ? "item" : "items"}
-            </span>
-          )}
-        </div>
+      {/* ── Content sections ── */}
+      <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 1.25rem 4rem", display: "flex", flexDirection: "column", gap: "2.5rem" }}>
 
-        {/* Reviewers grid or empty state */}
-        {hasReviewers ? (
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))",
-            gap: "1rem",
-          }}>
-            {subject.reviewers.map((reviewer, i) => (
-              <ReviewerCard
-                key={reviewer.id}
-                reviewer={reviewer}
-                subjectId={subject.id}
-                index={i}
-              />
-            ))}
-          </div>
-        ) : (
+        {/* ── Quizzes section ── */}
+        {(() => {
+          const quizzes = subject.reviewers.filter(r => !r.quizletLink || (r.questions && r.questions.length > 0));
+          return (
+            <div>
+              <div
+                className="anim-fade-up"
+                style={{ animationDelay: "80ms", display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.25rem" }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: "var(--lilac-600)", flexShrink: 0 }}>
+                    <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 6a1.5 1.5 0 1 1 3 0c0 .83-.67 1.26-1.17 1.57C7.9 7.87 7.5 8.1 7.5 8.5v.5h1V8.5c0-.1.08-.19.33-.36.59-.38 1.67-1.08 1.67-2.14a2.5 2.5 0 0 0-5 0h1Zm.5 4.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" fill="currentColor"/>
+                  </svg>
+                  <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#2d1f5e" }}>
+                    Quizzes
+                  </h2>
+                </div>
+                {quizzes.length > 0 && (
+                  <span style={{ padding: "0.25rem 0.75rem", borderRadius: "999px", fontSize: "0.75rem", fontWeight: 700, background: "var(--lilac-100)", color: "var(--lilac-600)", border: "1.5px solid var(--lilac-200)" }}>
+                    {quizzes.length} {quizzes.length === 1 ? "item" : "items"}
+                  </span>
+                )}
+              </div>
+
+              {quizzes.length > 0 ? (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "1rem" }}>
+                  {quizzes.map((reviewer, i) => (
+                    <ReviewerCard key={reviewer.id} reviewer={reviewer} subjectId={subject.id} index={i} />
+                  ))}
+                </div>
+              ) : (
+                <div className="card anim-fade-up" style={{ animationDelay: "120ms", padding: "2.5rem 2rem", textAlign: "center" }}>
+                  <p style={{ fontSize: "0.85rem", color: "var(--text-soft)" }}>No quizzes added yet.</p>
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
+        {/* ── Flash Cards section ── */}
+        {(() => {
+          const flashCards = subject.reviewers.filter(r => r.quizletLink && (!r.questions || r.questions.length === 0));
+          if (flashCards.length === 0) return null;
+          return (
+            <div>
+              <div
+                className="anim-fade-up"
+                style={{ animationDelay: "120ms", display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.25rem" }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: "var(--lilac-600)", flexShrink: 0 }}>
+                    <rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3"/>
+                    <path d="M5 7h6M5 9.5h4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+                  </svg>
+                  <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#2d1f5e" }}>
+                    Flash Cards
+                  </h2>
+                </div>
+                <span style={{ padding: "0.25rem 0.75rem", borderRadius: "999px", fontSize: "0.75rem", fontWeight: 700, background: "var(--lilac-100)", color: "var(--lilac-600)", border: "1.5px solid var(--lilac-200)" }}>
+                  {flashCards.length} {flashCards.length === 1 ? "module" : "modules"}
+                </span>
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "1rem" }}>
+                {flashCards.map((reviewer, i) => (
+                  <ReviewerCard key={reviewer.id} reviewer={reviewer} subjectId={subject.id} index={i} />
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* Empty state — no content at all */}
+        {!hasReviewers && (
           <div
             className="card anim-fade-up"
-            style={{
-              animationDelay: "120ms",
-              padding: "4rem 2rem",
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: "1rem",
-            }}
+            style={{ animationDelay: "120ms", padding: "4rem 2rem", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem" }}
           >
             <img src={SPARKLE} alt="" style={{ width: "80px", opacity: 0.65 }} className="anim-twinkle" />
             <div>
-              <h3 style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "1.2rem",
-                fontWeight: 700,
-                color: "var(--text-mid)",
-                marginBottom: "0.4rem",
-              }}>
+              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.2rem", fontWeight: 700, color: "var(--text-mid)", marginBottom: "0.4rem" }}>
                 No Reviewers Yet
               </h3>
               <p style={{ fontSize: "0.85rem", color: "var(--text-soft)", maxWidth: "320px", lineHeight: 1.6 }}>
@@ -191,13 +201,12 @@ export default function SubjectPage() {
               </p>
             </div>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <button className="btn-ghost" style={{ marginTop: "0.5rem" }}>
-                Back to All Subjects
-              </button>
+              <button className="btn-ghost" style={{ marginTop: "0.5rem" }}>Back to All Subjects</button>
             </Link>
           </div>
         )}
       </div>
+
     </div>
   );
 }

@@ -80,7 +80,7 @@ export default function Navbar() {
               whiteSpace: "nowrap",
             }}
           >
-            AY 2025–26
+            AY 2026–2027
           </span>
         </div>
       </div>
