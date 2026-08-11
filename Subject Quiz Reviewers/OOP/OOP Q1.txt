@@ -1,0 +1,398 @@
+MODULE 1: INTRODUCTION TO OBJECT-ORIENTED PROGRAMMING
+A. Multiple Choice (Definition)
+
+1. What programming approach modularizes code based on a system's processes (e.g., checking in/out books)?
+A. Object-Oriented Programming B. Procedural Programming C. Functional Programming D. Modular Programming
+Answer: B — The module states the procedural approach was "the de facto approach" where "code is modularized based on a system's processes."
+
+2. In OOP, objects interact with each other by exchanging:
+A. Variables B. Messages C. Loops D. Arrays
+Answer: B — OOP is described as "objects and object communication via the exchange of messages."
+
+3. The fundamental object-oriented concepts were first introduced through the class construct in which language?
+A. Java B. Smalltalk-80 C. Simula D. C++
+Answer: C — "The fundamental object-oriented concepts were first introduced via the class construct in the Simula programming language in the 1960s."
+
+4. OOP was widely accepted as a technique with the advent of:
+A. Java B. Smalltalk-80 C. C++ D. Python
+Answer: B — "the programming technique was only accepted with the advent of Smalltalk-80 more than a decade later."
+
+5. What principle states that a message sender does not know how the receiver satisfies the request?
+A. Encapsulation B. Information hiding C. Inheritance D. Polymorphism
+Answer: B — Explicitly defined: "information hiding: the sender of a message does not know how a receiver is going to satisfy the request."
+
+6. In the Benjamin-Sean example, Benjamin is the:
+A. Receiver B. Sender C. Method D. Class
+Answer: B — "Benjamin is thus a message-sending object" (sender), while Sean is the receiver.
+
+7. The accompanying information sent along with a message (e.g., sofa type, delivery date) is called:
+A. Attributes B. Parameters/Arguments C. Constructors D. Fields
+Answer: B — "This information is known as the parameters of the takeOrder message."
+
+8. A message with no corresponding method for the receiver to respond to is called:
+A. Valid message B. Invalid message C. Static message D. Abstract message
+Answer: B — "An invalid message... is one that the receiver does not have the capability to respond to."
+
+B. Identification
+
+9. This is the object that receives a message.
+Answer: Receiver — Sean is labeled the receiver in the example.
+
+10. This term refers to the operations Sean performs to fulfill Benjamin's request.
+Answer: Method — "A method contains a number of operations detailing how Sean is to satisfy the demand."
+
+11. This is the specific message Benjamin sends to Sean to purchase the sofa.
+Answer: takeOrder — Named directly in Figure 1/2 of the module.
+
+12. This approach models objects and their interactions in the problem space rather than processes.
+Answer: Object-Oriented Programming — Defined in Lesson 1.0.
+
+13. This programming approach's problem solving involves "analysis of...procedural tasks carried out."
+Answer: Procedural Programming
+
+MODULE 2: JAVA PROGRAMMING LANGUAGE — A QUICK TOUR
+A. Multiple Choice (Definition)
+
+14. Which primitive type represents an 8-bit integer value?
+A. short B. byte C. int D. long
+Answer: B — "byte, short, int and long... widths 8, 16, 32, and 64 bits, respectively."
+
+15. What is the value range of the int type in Java?
+A. –128 to 127 B. –32768 to 32767 C. –2147483648 to 2147483647 D. 0 to 65535
+Answer: C — Matches the 32-bit int range given in the module.
+
+16. Which types represent single and double-precision floating-point values?
+A. int, long B. float, double C. byte, short D. char, boolean
+Answer: B — "float and double allow for...single and double precision floating-point real values."
+
+17. The char type in Java represents:
+A. 8-bit ASCII only B. 16-bit multi-byte characters C. 32-bit Unicode D. true/false values
+Answer: B — "char and boolean allow for 16-bit multi-byte characters and false/true boolean values."
+
+18. What function/operator is used to create a new object instance?
+A. create() B. new() C. instantiate() D. make()
+Answer: B — "no instances of the class is created, except by calling the object allocator function new()."
+
+19. When a class has multiple methods with the same name but different parameter lists, this is called:
+A. Inheritance B. Overloading C. Overriding D. Polymorphism
+Answer: B — Lesson 4 is explicitly titled "Overloading."
+
+20. Overloaded methods must be distinguishable by:
+A. return type only B. number of parameters or parameter types C. method body only D. access modifier
+Answer: B — "methods may share the same name as long as they may be distinguished either by: the number of parameters, or different parameter types."
+
+21. In the Counter class example, number is an example of a(n):
+A. Method B. Instance variable C. Constructor D. Parameter
+Answer: B — "The number attribute is also known as an instance variable because it occurs in every object or instance."
+
+22. Which loop structure executes its body at least once (posttest loop)?
+A. while B. do-while C. for D. if
+Answer: B — "the do-while statement is a posttest loop... this control flow construct will execute R at least once."
+
+23. Which loop structure checks the condition before executing the body (pretest loop)?
+A. do-while B. while C. switch D. for-each
+Answer: B — "The while-statement is known as a pretest loop."
+
+24. In a switch statement, what keyword causes execution to immediately leave the switch block?
+A. return B. break C. continue D. exit
+Answer: B — "The break statement causes flow-control to leave the switch statement immediately."
+
+25. Arrays in Java are declared using which operator (without specifying size)?
+A. Dot operator B. Subscript operator [] C. New operator alone D. Arrow operator
+Answer: B — "An array is thus declared using the subscript operator, but without indication of the upper bound."
+
+B. Identification
+
+26. This operator returns the remainder of integer division.
+Answer: % (modulus operator)
+
+27. This unary operator negates a numeric operand (e.g., -a).
+Answer: - (minus/negation operator)
+
+28. This operator checks equality and returns true/false, even for objects (comparing references).
+Answer: == (equality operator)
+
+29. This form of the increment operator returns the value after incrementing (e.g., ++f).
+Answer: Prefix form
+
+30. This form of the increment operator returns the value before incrementing (e.g., f++).
+Answer: Postfix form
+
+31. This statement allows multi-way selection based on the value of an expression.
+Answer: switch statement
+
+32. This operator, written as (type)E, converts a value to another specified type at runtime.
+Answer: Typecast operator
+
+33. This construct, indicated by { }, groups a sequence of statements to be treated as one statement.
+Answer: Block 
+
+C. Output Tracing
+
+34. int a = 13; int v = 7; System.out.println(a+v);
+Answer: 20 — Integer addition: 13 + 7 = 20 (as directly shown in the module example).
+
+35. int a = 13; int v = 7; System.out.println(a-v);
+Answer: 6 — 13 – 7 = 6.
+
+36. int a = 13; int v = 7; System.out.println(a*v);
+Answer: 91 — 13 × 7 = 91.
+
+37. int a = 13; int v = 7; System.out.println(a/v);
+Answer: 1 — Integer division truncates the decimal; 13/7 = 1 (remainder discarded).
+
+38. float b = 13; int w = 7; System.out.println(b/w);
+Answer: 1.8571428 — Since one operand is float, the result is widened to floating-point, giving a decimal quotient rather than truncation.
+
+39. int a = 13; int v = 3; System.out.println(a%v);
+Answer: 1 — 13 ÷ 3 = 4 remainder 1; % returns the remainder.
+
+40. int f, g; f = 6; g = f++; What are the final values of f and g?
+Answer: f = 7, g = 6 — Postfix ++ assigns the original value (6) to g, then increments f to 7.
+
+41. int f, g; f = 6; g = --f; What are the final values of f and g?
+Answer: f = 5, g = 5 — Prefix -- decrements f first (to 5), then assigns that new value to g.
+
+42. Counter m = new Counter(); Counter n = new Counter(); System.out.println(m == n);
+Answer: false — "m and n are different objects even if they have the same constituents," so == compares references, not content.
+
+43. Given the Counter class with add() and add(int x), what happens when carpark.add(2) is called?
+Answer: The overloaded method add(int x) executes (matched by the single int parameter), incrementing number by 2 (number = number + x), rather than the no-argument add() which increments by 1.
+
+D. Code Fill-in-the-Blank (Java)
+
+44. class Counter { ____ number; } (declare an integer attribute)
+Answer: int
+
+45. void add() { number = number ____ 1; } (increment number by 1)
+Answer: +
+
+46. Counter gates[]; gates = ____ Counter[8]; (allocate an array of size 8)
+Answer: new
+
+47. Counter carpark; carpark = new ____(); (instantiate a Counter object)
+Answer: Counter
+
+48. public void add(____ x) { number = number+x; } (overloaded add takes an integer parameter)
+Answer: int
+
+49. for (int i=0; i<8; i++) gates[i] = ____ Counter(); (create each array element)
+Answer: new
+
+MODULE 3: UML AND CONSTRUCTORS
+A. Multiple Choice (Definition)
+
+50. UML stands for:
+A. Unified Modeling Language B. Universal Model Language C. Unified Method Language D. United Modeling Logic
+Answer: A
+
+51. UML was developed in the early 1990s by:
+A. James Gosling B. Grady Booch, James Rumbaugh, and Ivar Jacobson C. Bjarne Stroustrup D. Dennis Ritchie
+Answer: B — "three leaders in object-modeling world: Grady Booch, James Rumbaugh, and Ivar Jacobson."
+
+52. UML's standard data representation, which describes UML using UML itself, is called the:
+A. Blueprint B. Metamodel C. Schema D. Notation Set
+Answer: B — "This representation is called the metamodel. The metamodel is a description of UML in UML."
+
+53. In a UML class icon, the topmost compartment contains the:
+A. Attributes B. Operations C. Class name D. Constructor
+Answer: C — "The topmost compartment contains the name of the class."
+
+54. The middle compartment of a UML class icon contains:
+A. The class name B. Attributes (member variables) C. Operations (member functions) D. Nothing
+Answer: B
+
+55. The bottom compartment of a UML class icon contains:
+A. Attributes B. The class name C. Operations (member functions) D. Constructors only
+Answer: C
+
+56. In UML, a black diamond on a relationship line represents:
+A. Inheritance B. Composition C. Simple association D. Interface implementation
+Answer: B — "The black diamond represents composition."
+
+57. In a UML class diagram, what symbol precedes a private field or method?
+A. + B. – (minus sign) C. # D. ~
+Answer: B — "A minus sign (–) is inserted in front of each private field or method."
+
+58. What symbol precedes a public field or method in a UML class diagram?
+A. – B. + (plus sign) C. * D. #
+Answer: B — "a plus sign (+) is inserted in front of each public field or method."
+
+59. A default constructor is one that:
+A. Requires arguments B. Requires no arguments C. Cannot be written by the programmer D. Always returns void
+Answer: B — "a default constructor is one that requires no arguments."
+
+B. Identification
+
+60. This special method establishes an object and provides initial values to its fields.
+Answer: Constructor
+
+61. This is the default value assigned to numeric fields when using the automatic default constructor.
+Answer: 0 (zero)
+
+62. This is the default value assigned to boolean fields.
+Answer: false
+
+63. This is the default value assigned to character fields.
+Answer: Unicode '\u0000'
+
+64. This is the default value assigned to object reference fields (e.g., String).
+Answer: null
+
+65. In a UML diagram, this type of arrow — pointing from the descendant class to the original class — indicates this relationship.
+Answer: Inheritance
+
+C. Output Tracing
+
+Based on the Calculator/Print classes given in the module's evaluation:
+
+java
+public class Calculator{
+  private int numA; private int numB; private double ans;
+  public Calculator(){ this(4,2); }
+  public Calculator(int numA){ this(6.0,3.0); }
+  public Calculator(int numA,int numB){ this.ans=numA-numB; }
+  public Calculator(double numA, double numB){ this.ans=numA+numB; }
+  public double getAns(){ return ans; }
+  public double getAns(int n){ if (n==0) return ans+ans; else return ans*ans; }
+}
+public class Print{
+  public void printAns(Calculator c){ System.out.println(c.getAns()); }
+  public void printAns(Calculator c, int n){ System.out.println(c.getAns(n)); }
+}
+java
+Calculator c1= new Calculator(4.0,2.0);
+Calculator c2= new Calculator(6,3);
+Calculator c4= new Calculator();
+Calculator c5= new Calculator(5);
+
+66. p.printAns(c1);
+Answer: 6.0 — c1 matches Calculator(double,double), so ans = 4.0+2.0 = 6.0; getAns() returns ans.
+
+67. p.printAns(c2);
+Answer: 3.0 — c2 matches Calculator(int,int), so ans = 6-3 = 3, stored as a double → 3.0.
+
+68. p.printAns(c4);
+Answer: 2.0 — c4 uses the default constructor, which calls this(4,2) → Calculator(int,int) → ans = 4-2 = 2 → 2.0.
+
+69. p.printAns(c5);
+Answer: 9.0 — c5 = Calculator(5) calls this(6.0,3.0) → Calculator(double,double) → ans = 6.0+3.0 = 9.0.
+
+70. p.printAns(c1,1);
+Answer: 36.0 — getAns(1) executes the else branch: ans*ans = 6.0*6.0 = 36.0.
+
+D. Code Fill-in-the-Blank (Java)
+
+71. public ____(){ empSalary = 300.00; } (constructor for the Employee class)
+Answer: Employee — A constructor must have the exact same name as its class.
+
+72. public Calculator(){ ____(4,2); } (call another constructor of the same class)
+Answer: this — this(...) is used for constructor chaining within the same class.
+
+73. In UML notation, a ____ sign is placed before private class members.
+Answer: minus (–)
+
+74. A ____ constructor requires no arguments and is auto-generated by Java if the programmer writes none.
+Answer: default
+
+MODULE 4: OBJECTS AND CLASSES
+A. Multiple Choice (Definition)
+
+75. An object is best described as:
+A. An abstract description B. A concrete instance of a class C. A primitive type D. A method
+Answer: B — "An object is an instantiation of a class, or one tangible example of a class."
+
+76. The statement "my goldfish named Moby is a Fish" expresses a(n):
+A. Has-a relationship B. Is-a relationship C. Class relationship D. Static relationship
+Answer: B — "These statements represent is-a relationships."
+
+77. Which keyword makes a data field shared by all objects of a class instead of being unique per object?
+A. private B. static C. public D. final
+Answer: B — "If the keyword static had been inserted there, only one empNum value would be shared by all Employee objects."
+
+78. Data declared within a class but outside any method are called:
+A. Parameters B. Data fields (instance variables) C. Arguments D. Return values
+Answer: B
+
+79. Which access level provides the highest level of security, restricting a field's use to the same class's own methods?
+A. public B. protected C. private D. default
+Answer: C — "most fields...are private, which provides the highest level of security."
+
+80. Methods that set or change field values are called:
+A. Accessors B. Mutators (setters) C. Constructors D. Getters
+Answer: B — "Methods that set or change field values are called mutator methods... called setters."
+
+81. Methods that retrieve field values are called:
+A. Mutators B. Setters C. Accessors (getters) D. Constructors
+Answer: C — "methods that retrieve values are called accessor methods... called getters."
+
+82. Nonstatic methods that behave uniquely for each object are called:
+A. Class methods B. Instance methods C. Static methods D. Abstract methods
+Answer: B — "Nonstatic methods, those methods used with object instantiations, are called instance methods."
+
+83. A class must contain which method to be executed as a standalone application?
+A. A constructor B. public static void main() C. A getter D. A private field
+Answer: B — "You can identify a class that is an application because it contains a public static void main() method."
+
+84. A class/application that instantiates objects of another prewritten class is called a:
+A. Superclass B. Class client (class user) C. Interface D. Abstract class
+Answer: B — "You can call an application or class that instantiates objects of another class a class client or class user."
+
+B. Identification
+
+85. This term describes a type whose implementation is hidden and accessed only through public methods.
+Answer: Abstract Data Type (ADT)
+
+86. This operator is used to allocate memory for an object.
+Answer: new operator
+
+87. This special method shares the same name as its class and initializes new objects.
+Answer: Constructor
+
+88. This is a field for which only one copy exists and is shared among all objects of a class.
+Answer: Static field/variable
+
+89. This principle hides a class's private data so it can be changed only by the class's own methods.
+Answer: Information hiding (encapsulation)
+
+90. This is the term for the memory address assigned to an object's identifier upon instantiation.
+Answer: Reference
+
+C. Output Tracing
+
+Using the same Calculator/Print classes and ProgA as Module 3, evaluate the remaining calls:
+
+91. Calculator c3= new Calculator(3.0,2.0); p.printAns(c3);
+Answer: 5.0 — c3 matches Calculator(double,double): ans = 3.0+2.0 = 5.0.
+
+92. p.printAns(c1,0); (c1 from new Calculator(4.0,2.0))
+Answer: 12.0 — c1's ans = 6.0; getAns(0) returns ans+ans = 6.0+6.0 = 12.0.
+
+93. p.printAns(c2,0); (c2 from new Calculator(6,3))
+Answer: 6.0 — c2's ans = 3.0; getAns(0) returns ans+ans = 3.0+3.0 = 6.0.
+
+94. p.printAns(c2,1);
+Answer: 9.0 — getAns(1) returns ans*ans = 3.0*3.0 = 9.0.
+
+95. p.printAns(c3,0);
+Answer: 10.0 — c3's ans = 5.0; getAns(0) returns 5.0+5.0 = 10.0.
+
+D. Code Fill-in-the-Blank (Java)
+
+Using the Employee class:
+
+96. ____ class Employee { private int empNum; } (make the class accessible to all objects)
+Answer: public
+
+97. private ____ empNum; (employee number is a whole number)
+Answer: int
+
+98. public int getEmpNum(){ ____ empNum; } (return the field's value)
+Answer: return
+
+99. public void setEmpNum(int emp){ empNum = ____; } (assign the parameter's value to the field)
+Answer: emp
+
+100. Employee someEmployee = ____ Employee(); (instantiate a new Employee object)
+Answer: new
+

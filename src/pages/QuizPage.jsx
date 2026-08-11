@@ -52,6 +52,8 @@ function TypeBadge({ type }) {
     mc:             { label: "Multiple Choice", color: "#7c3aed", bg: "#f3e8ff" },
     identification: { label: "Identification",  color: "#0369a1", bg: "#e0f2fe" },
     enumeration:    { label: "Enumeration",     color: "#047857", bg: "#d1fae5" },
+    output_tracing: { label: "Output Tracing",  color: "#b45309", bg: "#fef3c7" },
+    fill_code:      { label: "Fill the Code",   color: "#be185d", bg: "#fce7f3" },
   };
   const t = map[type] || map.mc;
   return (
@@ -203,6 +205,309 @@ function IdentificationQuestion({ q, onAnswer }) {
             >
               ✗ I got it wrong
             </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────── CODE BLOCK ─────────────────────────────────────────────────
+function CodeBlock({ code }) {
+  return (
+    <pre style={{
+      background: "#1e1e2e",
+      color: "#cdd6f4",
+      borderRadius: "12px",
+      padding: "1rem 1.15rem",
+      fontSize: "0.8rem",
+      lineHeight: 1.65,
+      overflowX: "auto",
+      whiteSpace: "pre-wrap",
+      wordBreak: "break-word",
+      fontFamily: "'Fira Code', 'Fira Mono', 'Cascadia Code', monospace",
+      border: "1.5px solid #313244",
+      margin: 0,
+    }}>
+      <code>{code}</code>
+    </pre>
+  );
+}
+
+// ─────────────── OUTPUT TRACING QUESTION ────────────────────────────────────
+function OutputTracingQuestion({ q, onAnswer }) {
+  const [input, setInput] = useState("");
+  const [revealed, setRevealed] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [selfGraded, setSelfGraded] = useState(null);
+  const inputRef = useRef(null);
+
+  useEffect(() => { inputRef.current?.focus(); }, []);
+
+  function handleSubmit() {
+    if (!input.trim() || revealed) return;
+    const correct = checkIdentAnswer(input, q);
+    setIsCorrect(correct);
+    setRevealed(true);
+    if (correct) onAnswer(true);
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === "Enter") handleSubmit();
+  }
+
+  function handleSelfGrade(correct) {
+    setSelfGraded(correct);
+    onAnswer(correct);
+  }
+
+  const showSelfGrade = revealed && isCorrect === false && selfGraded === null;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
+      {/* Code to trace */}
+      <CodeBlock code={q.code} />
+
+      {/* Instruction chip */}
+      <div style={{
+        padding: "0.55rem 0.85rem",
+        borderRadius: "10px",
+        background: "#fef3c7",
+        border: "1.5px solid #fde68a",
+        fontSize: "0.78rem",
+        color: "#92400e",
+        fontWeight: 600,
+      }}>
+        💡 Type exactly what this code prints to the console.
+      </div>
+
+      {/* Input */}
+      <input
+        ref={inputRef}
+        type="text"
+        value={input}
+        onChange={e => setInput(e.target.value)}
+        onKeyDown={handleKeyDown}
+        disabled={revealed}
+        placeholder="Type the output here…"
+        style={{
+          width: "100%",
+          padding: "0.85rem 1rem",
+          borderRadius: "12px",
+          border: revealed
+            ? `2px solid ${isCorrect ? "#86efac" : "#fca5a5"}`
+            : "2px solid #fde68a",
+          background: revealed ? (isCorrect ? "#f0fdf4" : "#fff1f2") : "white",
+          fontSize: "0.95rem",
+          fontWeight: 600,
+          color: revealed ? (isCorrect ? "#15803d" : "#dc2626") : "#2d1f5e",
+          outline: "none",
+          transition: "border-color 200ms, background 200ms",
+          boxSizing: "border-box",
+          fontFamily: "'Fira Code', 'Fira Mono', monospace",
+        }}
+      />
+
+      {/* Submit button */}
+      {!revealed && (
+        <button
+          className="btn-primary"
+          onClick={handleSubmit}
+          disabled={!input.trim()}
+          style={{ width: "100%", padding: "0.8rem", fontSize: "0.875rem" }}
+        >
+          Check Output
+        </button>
+      )}
+
+      {/* Answer reveal panel */}
+      {revealed && (
+        <div style={{
+          padding: "1rem 1.25rem",
+          borderRadius: "14px",
+          background: "#faf5ff",
+          border: "1.5px solid var(--lilac-200)",
+        }}>
+          <p style={{ fontSize: "0.72rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.07em", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
+            Expected Output
+          </p>
+          <p style={{
+            fontSize: "1rem", fontWeight: 700, color: "#2d1f5e",
+            marginBottom: q.explanation ? "0.6rem" : 0,
+            fontFamily: "'Fira Code', 'Fira Mono', monospace",
+          }}>
+            {q.answer}
+            {q.altAnswers?.length > 0 && (
+              <span style={{ fontSize: "0.78rem", color: "var(--text-soft)", fontWeight: 500, marginLeft: "0.5rem" }}>
+                (also: {q.altAnswers.join(", ")})
+              </span>
+            )}
+          </p>
+          {q.explanation && (
+            <p style={{ fontSize: "0.8rem", color: "var(--text-mid)", lineHeight: 1.55 }}>{q.explanation}</p>
+          )}
+        </div>
+      )}
+
+      {/* Self-grade fallback */}
+      {showSelfGrade && (
+        <div style={{
+          padding: "0.85rem 1rem", borderRadius: "12px",
+          background: "#fffbeb", border: "1.5px solid #fde68a",
+          display: "flex", flexDirection: "column", gap: "0.5rem",
+        }}>
+          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
+            Your answer wasn't an exact match — did you get it right?
+          </p>
+          <p style={{ fontSize: "0.8rem", color: "#92400e", fontStyle: "italic" }}>Your answer: "{input}"</p>
+          <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
+            <button
+              onClick={() => handleSelfGrade(true)}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+            >✓ I got it right</button>
+            <button
+              onClick={() => handleSelfGrade(false)}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+            >✗ I got it wrong</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────── FILL CODE QUESTION ─────────────────────────────────────────
+function FillCodeQuestion({ q, onAnswer }) {
+  const [input, setInput] = useState("");
+  const [revealed, setRevealed] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [selfGraded, setSelfGraded] = useState(null);
+  const inputRef = useRef(null);
+
+  useEffect(() => { inputRef.current?.focus(); }, []);
+
+  function handleSubmit() {
+    if (!input.trim() || revealed) return;
+    const correct = checkIdentAnswer(input, q);
+    setIsCorrect(correct);
+    setRevealed(true);
+    if (correct) onAnswer(true);
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === "Enter") handleSubmit();
+  }
+
+  function handleSelfGrade(correct) {
+    setSelfGraded(correct);
+    onAnswer(correct);
+  }
+
+  const showSelfGrade = revealed && isCorrect === false && selfGraded === null;
+
+  // Build the filled-in code to show on reveal
+  const filledCode = q.code.replace("____", `[${q.answer}]`);
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
+      {/* Code with blank */}
+      <CodeBlock code={q.code} />
+
+      {/* Instruction chip */}
+      <div style={{
+        padding: "0.55rem 0.85rem",
+        borderRadius: "10px",
+        background: "#fce7f3",
+        border: "1.5px solid #f9a8d4",
+        fontSize: "0.78rem",
+        color: "#9d174d",
+        fontWeight: 600,
+      }}>
+        ✏️ Type the missing keyword or value to fill the blank (____).
+      </div>
+
+      {/* Input */}
+      <input
+        ref={inputRef}
+        type="text"
+        value={input}
+        onChange={e => setInput(e.target.value)}
+        onKeyDown={handleKeyDown}
+        disabled={revealed}
+        placeholder="Type the missing word…"
+        style={{
+          width: "100%",
+          padding: "0.85rem 1rem",
+          borderRadius: "12px",
+          border: revealed
+            ? `2px solid ${isCorrect ? "#86efac" : "#fca5a5"}`
+            : "2px solid #f9a8d4",
+          background: revealed ? (isCorrect ? "#f0fdf4" : "#fff1f2") : "white",
+          fontSize: "0.95rem",
+          fontWeight: 600,
+          color: revealed ? (isCorrect ? "#15803d" : "#dc2626") : "#2d1f5e",
+          outline: "none",
+          transition: "border-color 200ms, background 200ms",
+          boxSizing: "border-box",
+          fontFamily: "'Fira Code', 'Fira Mono', monospace",
+        }}
+      />
+
+      {/* Submit button */}
+      {!revealed && (
+        <button
+          className="btn-primary"
+          onClick={handleSubmit}
+          disabled={!input.trim()}
+          style={{ width: "100%", padding: "0.8rem", fontSize: "0.875rem" }}
+        >
+          Submit Answer
+        </button>
+      )}
+
+      {/* Answer reveal — show filled-in code */}
+      {revealed && (
+        <div style={{
+          padding: "1rem 1.25rem",
+          borderRadius: "14px",
+          background: "#faf5ff",
+          border: "1.5px solid var(--lilac-200)",
+        }}>
+          <p style={{ fontSize: "0.72rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.07em", color: "var(--text-soft)", marginBottom: "0.5rem" }}>
+            Answer: <span style={{ color: "#be185d", fontFamily: "'Fira Code', monospace", fontSize: "0.85rem" }}>{q.answer}</span>
+            {q.altAnswers?.length > 0 && (
+              <span style={{ fontSize: "0.75rem", color: "var(--text-soft)", fontWeight: 500, marginLeft: "0.5rem" }}>
+                (also: {q.altAnswers.join(", ")})
+              </span>
+            )}
+          </p>
+          <CodeBlock code={filledCode} />
+          {q.explanation && (
+            <p style={{ fontSize: "0.8rem", color: "var(--text-mid)", lineHeight: 1.55, marginTop: "0.6rem" }}>{q.explanation}</p>
+          )}
+        </div>
+      )}
+
+      {/* Self-grade fallback */}
+      {showSelfGrade && (
+        <div style={{
+          padding: "0.85rem 1rem", borderRadius: "12px",
+          background: "#fffbeb", border: "1.5px solid #fde68a",
+          display: "flex", flexDirection: "column", gap: "0.5rem",
+        }}>
+          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
+            Your answer wasn't an exact match — did you get it right?
+          </p>
+          <p style={{ fontSize: "0.8rem", color: "#92400e", fontStyle: "italic" }}>Your answer: "{input}"</p>
+          <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
+            <button
+              onClick={() => handleSelfGrade(true)}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+            >✓ I got it right</button>
+            <button
+              onClick={() => handleSelfGrade(false)}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+            >✗ I got it wrong</button>
           </div>
         </div>
       )}
@@ -408,7 +713,7 @@ export default function QuizPage() {
     setQAnswered(true);
   }
 
-  // Called by Identification and Enumeration handlers
+  // Called by Identification, Enumeration, OutputTracing, and FillCode handlers
   function handleNonMcAnswer(isCorrect) {
     const q = shuffled[current];
     if (isCorrect) setScore(s => s + 1);
@@ -418,6 +723,7 @@ export default function QuizPage() {
       isCorrect,
       answer: q.answer,
       items: q.items,
+      code: q.code,
       explanation: q.explanation,
     }]);
     setQAnswered(true);
@@ -669,6 +975,54 @@ export default function QuizPage() {
                     )}
                   </div>
                 )}
+
+                {/* Output Tracing review */}
+                {a.type === "output_tracing" && (
+                  <div style={{ paddingLeft: "2.1rem" }}>
+                    {a.code && (
+                      <div style={{ marginBottom: "0.5rem" }}>
+                        <pre style={{
+                          background: "#1e1e2e", color: "#cdd6f4",
+                          borderRadius: "10px", padding: "0.65rem 0.9rem",
+                          fontSize: "0.72rem", lineHeight: 1.6,
+                          overflowX: "auto", whiteSpace: "pre-wrap", wordBreak: "break-word",
+                          fontFamily: "'Fira Code', 'Fira Mono', monospace",
+                          border: "1.5px solid #313244", margin: 0,
+                        }}><code>{a.code}</code></pre>
+                      </div>
+                    )}
+                    <p style={{ fontSize: "0.8rem", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
+                      Expected output: <strong style={{ color: "#2d1f5e", fontFamily: "'Fira Code', monospace" }}>{a.answer}</strong>
+                    </p>
+                    {a.explanation && (
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                    )}
+                  </div>
+                )}
+
+                {/* Fill Code review */}
+                {a.type === "fill_code" && (
+                  <div style={{ paddingLeft: "2.1rem" }}>
+                    {a.code && (
+                      <div style={{ marginBottom: "0.5rem" }}>
+                        <pre style={{
+                          background: "#1e1e2e", color: "#cdd6f4",
+                          borderRadius: "10px", padding: "0.65rem 0.9rem",
+                          fontSize: "0.72rem", lineHeight: 1.6,
+                          overflowX: "auto", whiteSpace: "pre-wrap", wordBreak: "break-word",
+                          fontFamily: "'Fira Code', 'Fira Mono', monospace",
+                          border: "1.5px solid #313244", margin: 0,
+                        }}><code>{a.code.replace("____", `[${a.answer}]`)}</code></pre>
+                      </div>
+                    )}
+                    <p style={{ fontSize: "0.8rem", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
+                      Answer: <strong style={{ color: "#be185d", fontFamily: "'Fira Code', monospace" }}>{a.answer}</strong>
+                    </p>
+                    {a.explanation && (
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                    )}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -779,6 +1133,24 @@ export default function QuizPage() {
           {/* ── Enumeration ── */}
           {qType === "enumeration" && (
             <EnumerationQuestion
+              key={current}
+              q={q}
+              onAnswer={(correct) => handleNonMcAnswer(correct)}
+            />
+          )}
+
+          {/* ── Output Tracing ── */}
+          {qType === "output_tracing" && (
+            <OutputTracingQuestion
+              key={current}
+              q={q}
+              onAnswer={(correct) => handleNonMcAnswer(correct)}
+            />
+          )}
+
+          {/* ── Fill Code ── */}
+          {qType === "fill_code" && (
+            <FillCodeQuestion
               key={current}
               q={q}
               onAnswer={(correct) => handleNonMcAnswer(correct)}
