@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { getSubjectById, getReviewerById } from "../data/subjects";
 
@@ -24,6 +24,19 @@ function getGrade(pct) {
   return              { label: "Keep Practicing", color: "#f43f5e", bg: "#fff1f2", border: "#fecdd3" };
 }
 
+/** Normalize a string for loose comparison */
+function normalize(str) {
+  return str.toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+}
+
+/** Check if user's answer matches the correct answer (or any altAnswers) */
+function checkIdentAnswer(userInput, question) {
+  const userNorm = normalize(userInput);
+  if (!userNorm) return false;
+  const allAnswers = [question.answer, ...(question.altAnswers || [])];
+  return allAnswers.some(ans => normalize(ans) === userNorm);
+}
+
 // ── Small breadcrumb arrow ───────────────────────────────────────────────────
 function ChevRight() {
   return (
@@ -33,6 +46,307 @@ function ChevRight() {
   );
 }
 
+// ─────────────── TYPE BADGE ──────────────────────────────────────────────────
+function TypeBadge({ type }) {
+  const map = {
+    mc:             { label: "Multiple Choice", color: "#7c3aed", bg: "#f3e8ff" },
+    identification: { label: "Identification",  color: "#0369a1", bg: "#e0f2fe" },
+    enumeration:    { label: "Enumeration",     color: "#047857", bg: "#d1fae5" },
+  };
+  const t = map[type] || map.mc;
+  return (
+    <span style={{
+      display: "inline-flex", alignItems: "center",
+      padding: "0.2rem 0.65rem",
+      borderRadius: "999px",
+      fontSize: "0.68rem", fontWeight: 800,
+      letterSpacing: "0.06em", textTransform: "uppercase",
+      background: t.bg, color: t.color,
+      border: `1.5px solid ${t.color}22`,
+    }}>
+      {t.label}
+    </span>
+  );
+}
+
+// ─────────────── IDENTIFICATION QUESTION ────────────────────────────────────
+function IdentificationQuestion({ q, onAnswer }) {
+  const [input, setInput] = useState("");
+  const [revealed, setRevealed] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [selfGraded, setSelfGraded] = useState(null); // for after-reveal self-grade
+  const inputRef = useRef(null);
+
+  useEffect(() => { inputRef.current?.focus(); }, []);
+
+  function handleSubmit() {
+    if (!input.trim() || revealed) return;
+    const correct = checkIdentAnswer(input, q);
+    setIsCorrect(correct);
+    setRevealed(true);
+    if (correct) onAnswer(true);
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === "Enter") handleSubmit();
+  }
+
+  function handleSelfGrade(correct) {
+    setSelfGraded(correct);
+    onAnswer(correct);
+  }
+
+  const showSelfGrade = revealed && isCorrect === false && selfGraded === null;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
+      {/* Input area */}
+      <div style={{ position: "relative" }}>
+        <input
+          ref={inputRef}
+          type="text"
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+          disabled={revealed}
+          placeholder="Type your answer here…"
+          style={{
+            width: "100%",
+            padding: "0.85rem 1rem",
+            borderRadius: "12px",
+            border: revealed
+              ? `2px solid ${isCorrect ? "#86efac" : "#fca5a5"}`
+              : "2px solid var(--lilac-200)",
+            background: revealed
+              ? (isCorrect ? "#f0fdf4" : "#fff1f2")
+              : "white",
+            fontSize: "0.95rem",
+            fontWeight: 600,
+            color: revealed
+              ? (isCorrect ? "#15803d" : "#dc2626")
+              : "#2d1f5e",
+            outline: "none",
+            transition: "border-color 200ms, background 200ms",
+            boxSizing: "border-box",
+          }}
+        />
+      </div>
+
+      {/* Submit button (before reveal) */}
+      {!revealed && (
+        <button
+          className="btn-primary"
+          onClick={handleSubmit}
+          disabled={!input.trim()}
+          style={{ width: "100%", padding: "0.8rem", fontSize: "0.875rem" }}
+        >
+          Submit Answer
+        </button>
+      )}
+
+      {/* Reveal panel */}
+      {revealed && (
+        <div style={{
+          padding: "1rem 1.25rem",
+          borderRadius: "14px",
+          background: "#faf5ff",
+          border: "1.5px solid var(--lilac-200)",
+        }}>
+          <p style={{ fontSize: "0.72rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.07em", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
+            Correct Answer
+          </p>
+          <p style={{ fontSize: "1rem", fontWeight: 700, color: "#2d1f5e", marginBottom: q.explanation ? "0.6rem" : 0 }}>
+            {q.answer}
+            {q.altAnswers?.length > 0 && (
+              <span style={{ fontSize: "0.78rem", color: "var(--text-soft)", fontWeight: 500, marginLeft: "0.5rem" }}>
+                (also: {q.altAnswers.join(", ")})
+              </span>
+            )}
+          </p>
+          {q.explanation && (
+            <p style={{ fontSize: "0.8rem", color: "var(--text-mid)", lineHeight: 1.55 }}>{q.explanation}</p>
+          )}
+        </div>
+      )}
+
+      {/* Self-grade for wrong answers */}
+      {showSelfGrade && (
+        <div style={{
+          padding: "0.85rem 1rem",
+          borderRadius: "12px",
+          background: "#fffbeb",
+          border: "1.5px solid #fde68a",
+          display: "flex", flexDirection: "column", gap: "0.5rem",
+        }}>
+          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
+            Your answer wasn't an exact match — did you get it right?
+          </p>
+          <p style={{ fontSize: "0.8rem", color: "#92400e", fontStyle: "italic" }}>Your answer: "{input}"</p>
+          <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
+            <button
+              onClick={() => handleSelfGrade(true)}
+              style={{
+                flex: 1, padding: "0.6rem", borderRadius: "10px",
+                background: "#dcfce7", border: "1.5px solid #86efac",
+                color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
+              }}
+            >
+              ✓ I got it right
+            </button>
+            <button
+              onClick={() => handleSelfGrade(false)}
+              style={{
+                flex: 1, padding: "0.6rem", borderRadius: "10px",
+                background: "#fee2e2", border: "1.5px solid #fca5a5",
+                color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
+              }}
+            >
+              ✗ I got it wrong
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────── ENUMERATION QUESTION ───────────────────────────────────────
+function EnumerationQuestion({ q, onAnswer }) {
+  const [revealed, setRevealed] = useState(false);
+  const [checked, setChecked] = useState(() => q.items.map(() => false));
+
+  function handleReveal() {
+    setRevealed(true);
+  }
+
+  function toggleItem(i) {
+    if (!revealed) return;
+    setChecked(prev => {
+      const next = [...prev];
+      next[i] = !next[i];
+      return next;
+    });
+  }
+
+  function handleSubmit() {
+    const gotCount = checked.filter(Boolean).length;
+    const required = q.minCount ?? q.count;
+    onAnswer(gotCount >= required);
+  }
+
+  const checkedCount = checked.filter(Boolean).length;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
+      {/* Required count info */}
+      <div style={{
+        padding: "0.75rem 1rem",
+        borderRadius: "12px",
+        background: "var(--lilac-50)",
+        border: "1.5px solid var(--lilac-200)",
+        fontSize: "0.8rem",
+        color: "var(--text-mid)",
+        fontWeight: 600,
+      }}>
+        📋 Recall <strong style={{ color: "#7c3aed" }}>{q.minCount ?? q.count}</strong> item{(q.minCount ?? q.count) !== 1 ? "s" : ""}
+        {q.minCount && q.items.length > q.count && ` (from ${q.items.length} possible)`}
+      </div>
+
+      {/* Reveal button */}
+      {!revealed && (
+        <button
+          className="btn-primary"
+          onClick={handleReveal}
+          style={{ width: "100%", padding: "0.8rem", fontSize: "0.875rem" }}
+        >
+          Reveal Answers
+        </button>
+      )}
+
+      {/* Items list */}
+      {revealed && (
+        <>
+          <div style={{
+            padding: "0.75rem 1rem",
+            borderRadius: "12px",
+            background: "#fffbeb",
+            border: "1.5px solid #fde68a",
+            fontSize: "0.8rem",
+            color: "#92400e",
+            fontWeight: 600,
+          }}>
+            ✅ Check off the items you knew — then tap "I'm done grading".
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+            {q.items.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => toggleItem(i)}
+                style={{
+                  display: "flex", alignItems: "center", gap: "0.75rem",
+                  padding: "0.75rem 1rem",
+                  borderRadius: "12px",
+                  background: checked[i] ? "#f0fdf4" : "#faf5ff",
+                  border: `1.5px solid ${checked[i] ? "#86efac" : "var(--lilac-200)"}`,
+                  textAlign: "left", cursor: "pointer",
+                  transition: "all 180ms",
+                }}
+              >
+                <span style={{
+                  width: "22px", height: "22px",
+                  borderRadius: "6px",
+                  background: checked[i] ? "linear-gradient(135deg, #22c55e, #4ade80)" : "white",
+                  border: checked[i] ? "none" : "1.5px solid var(--lilac-300)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  flexShrink: 0, transition: "all 180ms",
+                }}>
+                  {checked[i] && (
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                      <path d="M2 5L4 7L8 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  )}
+                </span>
+                <span style={{ fontSize: "0.875rem", fontWeight: checked[i] ? 700 : 500, color: checked[i] ? "#15803d" : "#2d1f5e" }}>
+                  {item}
+                </span>
+              </button>
+            ))}
+          </div>
+
+          {q.explanation && (
+            <div style={{
+              padding: "0.75rem 1rem",
+              borderRadius: "12px",
+              background: "#faf5ff",
+              border: "1.5px solid var(--lilac-200)",
+              fontSize: "0.8rem",
+              color: "var(--text-mid)",
+              lineHeight: 1.55,
+            }}>
+              {q.explanation}
+            </div>
+          )}
+
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.75rem", flexWrap: "wrap" }}>
+            <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text-mid)" }}>
+              {checkedCount} / {q.minCount ?? q.count} checked
+            </span>
+            <button
+              className="btn-primary"
+              onClick={handleSubmit}
+              style={{ padding: "0.7rem 1.5rem", fontSize: "0.875rem" }}
+            >
+              I'm done grading
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+// ─────────────── MAIN QUIZ PAGE ──────────────────────────────────────────────
 export default function QuizPage() {
   const { subjectId, reviewerId } = useParams();
   const navigate = useNavigate();
@@ -40,14 +354,19 @@ export default function QuizPage() {
   const subject  = getSubjectById(subjectId);
   const reviewer = getReviewerById(subjectId, reviewerId);
 
-  const [quizState, setQuizState]           = useState(STATE.IDLE);
-  const [shuffled, setShuffled]             = useState([]);
-  const [current, setCurrent]               = useState(0);
-  const [selected, setSelected]             = useState(null);
-  const [revealed, setRevealed]             = useState(false);
-  const [score, setScore]                   = useState(0);
-  const [answers, setAnswers]               = useState([]);
-  const [doShuffle, setDoShuffle]           = useState(true);
+  const [quizState, setQuizState] = useState(STATE.IDLE);
+  const [shuffled, setShuffled]   = useState([]);
+  const [current, setCurrent]     = useState(0);
+  const [score, setScore]         = useState(0);
+  const [answers, setAnswers]     = useState([]);
+  const [doShuffle, setDoShuffle] = useState(true);
+
+  // MC-specific state
+  const [selected, setSelected]   = useState(null);
+  const [revealed, setRevealed]   = useState(false);
+
+  // Per-question answered flag (ident/enum self-report before next)
+  const [qAnswered, setQAnswered] = useState(false);
 
   if (!subject || !reviewer) {
     return (
@@ -64,30 +383,63 @@ export default function QuizPage() {
 
   function startQuiz() {
     setShuffled(doShuffle ? shuffleArray(questions) : [...questions]);
-    setCurrent(0); setSelected(null); setRevealed(false); setScore(0); setAnswers([]);
+    setCurrent(0); setScore(0); setAnswers([]);
+    setSelected(null); setRevealed(false); setQAnswered(false);
     setQuizState(STATE.QUIZ);
   }
 
-  function handleSelect(oi) {
+  // Called by MC handler
+  function handleMcSelect(oi) {
     if (revealed) return;
     setSelected(oi);
     setRevealed(true);
     const q = shuffled[current];
     const ok = oi === q.answer;
     if (ok) setScore(s => s + 1);
-    setAnswers(prev => [...prev, { question: q.question, selected: oi, correct: q.answer, isCorrect: ok, options: q.options }]);
+    setAnswers(prev => [...prev, {
+      type: "mc",
+      question: q.question,
+      selected: oi,
+      correct: q.answer,
+      isCorrect: ok,
+      options: q.options,
+      explanation: q.explanation,
+    }]);
+    setQAnswered(true);
+  }
+
+  // Called by Identification and Enumeration handlers
+  function handleNonMcAnswer(isCorrect) {
+    const q = shuffled[current];
+    if (isCorrect) setScore(s => s + 1);
+    setAnswers(prev => [...prev, {
+      type: q.type,
+      question: q.question,
+      isCorrect,
+      answer: q.answer,
+      items: q.items,
+      explanation: q.explanation,
+    }]);
+    setQAnswered(true);
   }
 
   function handleNext() {
-    if (current + 1 >= shuffled.length) setQuizState(STATE.RESULT);
-    else { setCurrent(c => c + 1); setSelected(null); setRevealed(false); }
+    if (current + 1 >= shuffled.length) {
+      setQuizState(STATE.RESULT);
+    } else {
+      setCurrent(c => c + 1);
+      setSelected(null);
+      setRevealed(false);
+      setQAnswered(false);
+    }
   }
 
-  const progress = shuffled.length > 0 ? ((current + (revealed ? 1 : 0)) / shuffled.length) * 100 : 0;
+  const progress = shuffled.length > 0 ? ((current + (qAnswered ? 1 : 0)) / shuffled.length) * 100 : 0;
   const pct      = shuffled.length > 0 ? Math.round((score / shuffled.length) * 100) : 0;
 
   /* ─────────────────── START SCREEN ─────────────────── */
   if (quizState === STATE.IDLE) {
+    const types = [...new Set(questions.map(q => q.type || "mc"))];
     return (
       <div style={{ minHeight: "100vh", paddingTop: "64px", position: "relative", zIndex: 1 }}>
         <div className="blob blob-1" /><div className="blob blob-2" />
@@ -103,10 +455,7 @@ export default function QuizPage() {
           </div>
 
           <div className="card anim-fade-up" style={{ padding: "clamp(1.5rem, 5vw, 2.5rem)", textAlign: "center" }}>
-            {/* Illustration */}
             <img src={CANDY} alt="" className="anim-float" style={{ width: "100px", margin: "0 auto 1.25rem", display: "block" }} />
-
-            {/* Code badge */}
             <span className="badge badge-lilac" style={{ marginBottom: "0.85rem", display: "inline-flex" }}>{subject.code}</span>
 
             <h1 style={{
@@ -125,6 +474,14 @@ export default function QuizPage() {
                 {reviewer.description}
               </p>
             )}
+
+            {/* Type badges */}
+            {types.length > 0 && (
+              <div style={{ display: "flex", gap: "0.4rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "0.6rem" }}>
+                {types.map(t => <TypeBadge key={t} type={t} />)}
+              </div>
+            )}
+
             <p style={{ fontSize: "0.875rem", color: "var(--text-mid)", fontWeight: 600, marginBottom: "1.75rem" }}>
               {questions.length} {questions.length === 1 ? "question" : "questions"} total
             </p>
@@ -161,7 +518,6 @@ export default function QuizPage() {
               </div>
             </div>
 
-            {/* Start button */}
             {questions.length > 0 ? (
               <button className="btn-primary" onClick={startQuiz} style={{ width: "100%", padding: "0.9rem", fontSize: "0.95rem" }}>
                 Start Quiz
@@ -195,10 +551,8 @@ export default function QuizPage() {
       <div style={{ minHeight: "100vh", paddingTop: "64px", position: "relative", zIndex: 1 }}>
         <div className="blob blob-1" /><div className="blob blob-2" />
         <div style={{ maxWidth: "680px", margin: "0 auto", padding: "2.5rem 1.25rem 4rem" }}>
-          {/* Score card */}
           <div className="card anim-scale-in" style={{ padding: "2.5rem", textAlign: "center", marginBottom: "1.5rem" }}>
             <img src={SPARKLE} alt="" className="anim-twinkle" style={{ width: "80px", margin: "0 auto 1rem", display: "block" }} />
-
             <div style={{
               width: "100px", height: "100px",
               borderRadius: "50%",
@@ -214,15 +568,13 @@ export default function QuizPage() {
               </span>
               <span style={{ fontSize: "0.65rem", fontWeight: 700, color: grade.color }}>Score</span>
             </div>
-
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.75rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "0.4rem" }}>
               {grade.label}
             </h2>
             <p style={{ fontSize: "0.9rem", color: "var(--text-mid)", marginBottom: "1.75rem" }}>
               You got <strong style={{ color: grade.color }}>{score}</strong> out of <strong style={{ color: grade.color }}>{shuffled.length}</strong> questions correct.
             </p>
-
-            <div style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
+            <div className="result-actions" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
               <button className="btn-primary" onClick={() => setQuizState(STATE.IDLE)} style={{ padding: "0.75rem 2rem" }}>
                 Try Again
               </button>
@@ -240,11 +592,7 @@ export default function QuizPage() {
           </h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.9rem" }}>
             {answers.map((a, i) => (
-              <div
-                key={i}
-                className="card anim-fade-up"
-                style={{ padding: "1.25rem", animationDelay: `${i * 40}ms` }}
-              >
+              <div key={i} className="card anim-fade-up" style={{ padding: "1.25rem", animationDelay: `${i * 40}ms` }}>
                 <div style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start", marginBottom: "0.85rem" }}>
                   <span style={{
                     minWidth: "26px", height: "26px",
@@ -258,29 +606,69 @@ export default function QuizPage() {
                   }}>
                     {i + 1}
                   </span>
-                  <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "#2d1f5e", lineHeight: 1.5 }}>{a.question}</p>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <TypeBadge type={a.type || "mc"} />
+                    <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "#2d1f5e", lineHeight: 1.5, marginTop: "0.4rem" }}>{a.question}</p>
+                  </div>
                 </div>
-                <div style={{ paddingLeft: "2.1rem", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                  {a.options.map((opt, oi) => {
-                    const isCorrect = oi === a.correct;
-                    const isWrong   = oi === a.selected && !isCorrect;
-                    return (
-                      <div key={oi} style={{
-                        fontSize: "0.8rem",
-                        padding: "0.5rem 0.85rem",
-                        borderRadius: "10px",
-                        background: isCorrect ? "#f0fdf4" : isWrong ? "#fff1f2" : "#faf5ff",
-                        border: `1px solid ${isCorrect ? "#86efac" : isWrong ? "#fca5a5" : "#e9d5ff"}`,
-                        color: isCorrect ? "#166534" : isWrong ? "#991b1b" : "var(--text-soft)",
-                        fontWeight: isCorrect || isWrong ? 700 : 400,
-                      }}>
-                        {isCorrect && "Correct: "}
-                        {isWrong && "Your answer: "}
-                        {opt}
-                      </div>
-                    );
-                  })}
-                </div>
+
+                {/* MC review */}
+                {a.type === "mc" && a.options && (
+                  <div style={{ paddingLeft: "2.1rem", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                    {a.options.map((opt, oi) => {
+                      const isCorrect = oi === a.correct;
+                      const isWrong   = oi === a.selected && !isCorrect;
+                      return (
+                        <div key={oi} style={{
+                          fontSize: "0.8rem",
+                          padding: "0.5rem 0.85rem",
+                          borderRadius: "10px",
+                          background: isCorrect ? "#f0fdf4" : isWrong ? "#fff1f2" : "#faf5ff",
+                          border: `1px solid ${isCorrect ? "#86efac" : isWrong ? "#fca5a5" : "#e9d5ff"}`,
+                          color: isCorrect ? "#166534" : isWrong ? "#991b1b" : "var(--text-soft)",
+                          fontWeight: isCorrect || isWrong ? 700 : 400,
+                        }}>
+                          {isCorrect && "✓ Correct: "}
+                          {isWrong && "✗ Your answer: "}
+                          {opt}
+                        </div>
+                      );
+                    })}
+                    {a.explanation && (
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", marginTop: "0.4rem", lineHeight: 1.5, paddingLeft: "0.25rem" }}>
+                        💡 {a.explanation}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                {/* Identification review */}
+                {a.type === "identification" && (
+                  <div style={{ paddingLeft: "2.1rem" }}>
+                    <p style={{ fontSize: "0.8rem", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
+                      Correct answer: <strong style={{ color: "#2d1f5e" }}>{a.answer}</strong>
+                    </p>
+                    {a.explanation && (
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                    )}
+                  </div>
+                )}
+
+                {/* Enumeration review */}
+                {a.type === "enumeration" && a.items && (
+                  <div style={{ paddingLeft: "2.1rem" }}>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", marginBottom: "0.5rem" }}>
+                      {a.items.map((item, ii) => (
+                        <div key={ii} style={{ fontSize: "0.8rem", color: "#2d1f5e", display: "flex", gap: "0.4rem", alignItems: "center" }}>
+                          <span style={{ color: "var(--lilac-600)", fontWeight: 800 }}>{ii + 1}.</span> {item}
+                        </div>
+                      ))}
+                    </div>
+                    {a.explanation && (
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                    )}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -291,6 +679,7 @@ export default function QuizPage() {
 
   /* ─────────────────── QUIZ SCREEN ─────────────────── */
   const q = shuffled[current];
+  const qType = q.type || "mc";
 
   return (
     <div style={{ minHeight: "100vh", paddingTop: "64px", position: "relative", zIndex: 1 }}>
@@ -329,6 +718,11 @@ export default function QuizPage() {
 
         {/* Question card */}
         <div key={current} className="card anim-scale-in" style={{ padding: "clamp(1.25rem, 4vw, 2rem)", marginBottom: "1rem" }}>
+          {/* Type badge inside card */}
+          <div style={{ marginBottom: "0.75rem" }}>
+            <TypeBadge type={qType} />
+          </div>
+
           <p style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: "clamp(1rem, 3.5vw, 1.2rem)",
@@ -340,41 +734,79 @@ export default function QuizPage() {
             {q.question}
           </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
-            {q.options.map((opt, oi) => {
-              let cls = "quiz-option";
-              if (revealed) {
-                if (oi === q.answer) cls += oi === selected ? " selected-correct" : " correct";
-                else if (oi === selected) cls += " selected-wrong";
-              }
-              return (
-                <button key={oi} className={cls} onClick={() => handleSelect(oi)} disabled={revealed}>
-                  <span className="option-letter">{String.fromCharCode(65 + oi)}</span>
-                  {opt}
-                </button>
-              );
-            })}
-          </div>
+          {/* ── Multiple Choice ── */}
+          {qType === "mc" && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
+              {q.options.map((opt, oi) => {
+                let cls = "quiz-option";
+                if (revealed) {
+                  if (oi === q.answer) cls += oi === selected ? " selected-correct" : " correct";
+                  else if (oi === selected) cls += " selected-wrong";
+                }
+                return (
+                  <button key={oi} className={cls} onClick={() => handleMcSelect(oi)} disabled={revealed}>
+                    <span className="option-letter">{String.fromCharCode(65 + oi)}</span>
+                    {opt}
+                  </button>
+                );
+              })}
+              {revealed && q.explanation && (
+                <div style={{
+                  marginTop: "0.5rem",
+                  padding: "0.75rem 1rem",
+                  borderRadius: "12px",
+                  background: "#faf5ff",
+                  border: "1.5px solid var(--lilac-200)",
+                  fontSize: "0.8rem",
+                  color: "var(--text-mid)",
+                  lineHeight: 1.55,
+                }}>
+                  💡 {q.explanation}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* ── Identification ── */}
+          {qType === "identification" && (
+            <IdentificationQuestion
+              key={current}
+              q={q}
+              onAnswer={(correct) => handleNonMcAnswer(correct)}
+            />
+          )}
+
+          {/* ── Enumeration ── */}
+          {qType === "enumeration" && (
+            <EnumerationQuestion
+              key={current}
+              q={q}
+              onAnswer={(correct) => handleNonMcAnswer(correct)}
+            />
+          )}
         </div>
 
-        {/* Feedback + Next */}
-        {revealed && (
-          <div className="anim-fade-up" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
-            <div style={{
-              display: "flex", alignItems: "center", gap: "0.5rem",
-              padding: "0.6rem 1rem",
-              borderRadius: "12px",
-              background: selected === q.answer ? "#dcfce7" : "#fee2e2",
-              color: selected === q.answer ? "#15803d" : "#dc2626",
-              border: `1.5px solid ${selected === q.answer ? "#86efac" : "#fca5a5"}`,
-              fontSize: "0.875rem",
-              fontWeight: 700,
-            }}>
-              {selected === q.answer
-                ? <><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> Correct</>
-                : <><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg> Incorrect</>
-              }
-            </div>
+        {/* Next button / MC feedback bar */}
+        {qAnswered && (
+          <div className="quiz-action-row anim-fade-up" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
+            {qType === "mc" && (
+              <div style={{
+                display: "flex", alignItems: "center", gap: "0.5rem",
+                padding: "0.6rem 1rem",
+                borderRadius: "12px",
+                background: selected === q.answer ? "#dcfce7" : "#fee2e2",
+                color: selected === q.answer ? "#15803d" : "#dc2626",
+                border: `1.5px solid ${selected === q.answer ? "#86efac" : "#fca5a5"}`,
+                fontSize: "0.875rem",
+                fontWeight: 700,
+              }}>
+                {selected === q.answer
+                  ? <><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> Correct</>
+                  : <><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg> Incorrect</>
+                }
+              </div>
+            )}
+            {qType !== "mc" && <div />}
             <button className="btn-primary" onClick={handleNext} style={{ padding: "0.7rem 1.75rem", fontSize: "0.875rem" }}>
               {current + 1 >= shuffled.length ? "See Results" : "Next"}
             </button>

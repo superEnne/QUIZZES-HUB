@@ -21,7 +21,7 @@ export default function Navbar() {
         style={{
           maxWidth: "72rem",
           margin: "0 auto",
-          padding: "0 1.25rem",
+          padding: "0 clamp(0.75rem, 3vw, 1.25rem)",
           height: "64px",
           display: "flex",
           alignItems: "center",
@@ -69,6 +69,7 @@ export default function Navbar() {
             </Link>
           )}
           <span
+            className="nav-year-badge"
             style={{
               padding: "0.3rem 0.85rem",
               borderRadius: "999px",

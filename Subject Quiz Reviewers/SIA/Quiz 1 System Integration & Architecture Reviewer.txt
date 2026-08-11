@@ -1,0 +1,423 @@
+﻿System Integration and Architecture Reviewer
+Source Materials:
+1. CHAPTER 2 - TYPES OF INTEGRATION.pdf
+2. Lecture 1 (1).pdf
+PART I: MULTIPLE CHOICE (Items 1 - 40)
+Select the best answer from the choices provided.
+1. What is the primary goal of system integration?
+A) To replace all existing systems with one single application
+B) To create a larger, more complex system that performs better and offers more functionality
+C) To reduce the number of hardware components in an enterprise
+D) To separate databases from network components
+* Answer: B
+* Explanation: According to Chapter 2, the goal of system integration is to create a unified and cohesive whole that performs better and offers more functionality than the individual systems would on their own.
+2. In the IT world, what is a Systems Integrator (SI)?
+A) A hardware component used to connect network cables
+B) A company that specializes in implementing, planning, coordinating, and maintaining IT systems
+C) A software package that acts as a firewall
+D) A legacy system database
+* Answer: B
+* Explanation: Chapter 2 defines a Systems Integrator on broad terms as a company (like Deloitte, IBM, Accenture) that specializes in implementing, planning, and managing IT systems.
+3. Which of the following is an example of a Point-to-Point Integration?
+A) An Enterprise Service Bus (ESB) connecting 10 systems
+B) An e-commerce online store directly notifying an order fulfillment system
+C) A common data format translating XML to EDI
+D) A system using an integration silo
+* Answer: B
+* Explanation: Chapter 2 uses the example of an E-commerce Order Processing setup where the online store connects directly to order fulfillment as a classic Point-to-Point Integration.
+4. What is a major drawback of Vertical Integration?
+A) It is too flexible and changes constantly
+B) It requires an Enterprise Service Bus
+C) It creates functional "silos" that are rigid and difficult to manage in the long term
+D) It involves too many third-party systems
+* Answer: C
+* Explanation: Chapter 2 notes that while Vertical Integration is simple for limited systems, it is rigid because any new functionality requires building its own separate functional "silo."
+5. Star Integration is also commonly referred to as:
+A) Spaghetti Integration
+B) Lasagna Integration
+C) Bus Integration
+D) Point-to-Hub Integration
+* Answer: A
+* Explanation: Chapter 2 states that Star Integration is sometimes referred to as "Spaghetti Integration" because the numerous point-to-point connections resemble messy spaghetti code.
+6. If you connect ten systems to each other using Star Integration, how many separate integrations are required?
+A) 10
+B) 20
+C) 45
+D) 100
+* Answer: C
+* Explanation: Chapter 2 provides the specific example that connecting ten systems using the Star integration method requires 45 separate point-to-point integrations.
+7. In Horizontal Integration, what is the separate sub-system used as a common interface layer called?
+A) Enterprise Application Integration (EAI)
+B) Electronic Data Interchange (EDI)
+C) Enterprise Service Bus (ESB)
+D) Product Information Management (PIM)
+* Answer: C
+* Explanation: Chapter 2 specifies that in Horizontal Integration, the common interface layer between all sub-systems is very often referred to as an Enterprise Service Bus (ESB).
+8. If a bank upgrades its mobile app in a Horizontal Integration setup, do the other systems need to be changed?
+A) Yes, all 45 connections must be updated.
+B) No, because they remain connected through the ESB.
+C) Yes, because they share a functional silo.
+D) No, because they are legacy systems.
+* Answer: B
+* Explanation: Chapter 2's bank example explains that with an ESB, upgrading one system (like the mobile app) doesn't require changing other systems since they just talk to the ESB.
+9. How does Common Data Format Integration reduce maintenance?
+A) It connects systems directly to one another.
+B) It allows each system to do only one data conversion from its native format to the common format.
+C) It replaces all systems with a single software application.
+D) It relies entirely on legacy databases.
+* Answer: B
+* Explanation: Chapter 2 explains that this approach allows a system to do only one data conversion to a common format (and vice versa), ensuring the number of transformations equals the number of sub-systems.
+10. Which common data format represents and exchanges structured data, commonly used in web services?
+A) EDI
+B) XML
+C) CAD
+D) PIM
+* Answer: B
+* Explanation: Chapter 2 identifies XML (eXtensible Markup Language) as a common data format for representing and exchanging structured data in web services.
+11. Which type of integration is vital for companies looking to replace paper-based documents like invoices and purchase orders?
+A) Data Integration
+B) Legacy System Integration
+C) Electronic Document Interchange (EDI)
+D) Horizontal Integration
+* Answer: C
+* Explanation: Chapter 2 defines EDI as the system-to-system exchange of business documents intended to replace paper-based documents to save time and avoid manual errors.
+12. What is Data Integration?
+A) Connecting online and in-store sales systems
+B) Gathering data from disparate sources together to provide businesses with a centralized access point
+C) Connecting outdated systems to modern infrastructure
+D) Automating business communication with external partners
+* Answer: B
+* Explanation: Chapter 2 defines Data Integration as gathering data from disparate sources to make it more available and easy to process via a centralized access point.
+13. Enterprise Application Integration (EAI) is all about:
+A) Bridging gaps between different software programs and applications (like ERP and CRM) to streamline processes
+B) Connecting physical hardware components in manufacturing
+C) Upgrading legacy systems to cloud-based systems
+D) Designing new software using CAD
+* Answer: A
+* Explanation: Chapter 2 states EAI is about bridging gaps between different software programs (ERP, CRM, SCM, etc.) to streamline business processes through smooth data flow.
+14. In which industry does system integration enable features like infotainment systems, navigation, and autonomous driving?
+A) Telecommunications
+B) Healthcare
+C) Automotive
+D) Aerospace and Defense
+* Answer: C
+* Explanation: Chapter 2 notes that Automotive industry integration brings together electronics, mechanics, and software for features like infotainment and autonomous driving.
+15. By definition, what are Enterprise Systems (ESs)?
+A) Hardware routers used for wide area networks
+B) Software packages developed to support many aspects of an enterprise's information needs
+C) Siloed applications that only handle human resources
+D) Outdated legacy frameworks
+* Answer: B
+* Explanation: Lecture 1 defines ESs as software packages that are developed to support many aspects of an enterprise's information needs (Davenport, 2000).
+16. Which of the following is a type of ES that facilitates transaction processing in a distributive environment?
+A) CAD
+B) EDI
+C) ERP (Enterprise Resource Planning)
+D) XML
+* Answer: C
+* Explanation: Lecture 1 states that as a type of ES, ERP facilitates transaction processing in a distributive environment to manage enterprise resources.
+17. What system did the Ford Motor Company implement to increase product development efficiency in the mid-1990s?
+A) C3P System
+B) ESB System
+C) EDI System
+D) Legacy Integration System
+* Answer: A
+* Explanation: Lecture 1 describes Ford implementing the CAD/CAE/CAM/PIMS (C3P) ES to achieve high product quality and shorter cycle times.
+18. In Ford's C3P system, what does the "P" stand for?
+A) Product Integration Method
+B) Product Information Management
+C) Process Integration Management
+D) Point-to-Point
+* Answer: B
+* Explanation: Lecture 1 explains that the acronym combines the three "Cs" with PIM, which stands for Product Information Management.
+19. What is a "System of Systems" (SoS)?
+A) A single software package with multiple modules
+B) A collection of joint stand-alone systems designed for specific purposes to create a task needed for a certain objective
+C) A point-to-point network architecture
+D) A legacy system database
+* Answer: B
+* Explanation: Lecture 1 defines SoS as a collection of joint stand-alone systems that were originally designed for specific purposes (Mayk and Madni, 2006).
+20. Which SoS characteristic means the component systems are separately acquired and integrated but maintain continuing existence?
+A) Evolutionary Development
+B) Emergent Behavior
+C) Managerial Independence
+D) Geographic Distribution
+* Answer: C
+* Explanation: Lecture 1 defines Managerial Independence as the component systems not only operating independently but being separately acquired and managed.
+21. "The system performs functions and carries out purposes that do not reside in any component system." This describes which SoS characteristic?
+A) Operational Independence
+B) Geographic Distribution
+C) Emergent Behavior
+D) Evolutionary Development
+* Answer: C
+* Explanation: Lecture 1 notes that Emergent Behaviors are properties of the entire system-of-systems that cannot be localized to any single component.
+22. According to Chapter 2, System Integration in IT helps organizations streamline operations by:
+A) Isolating databases from software
+B) Connecting different software applications, databases, and hardware components
+C) Removing all network components
+D) Utilizing paper-based formats
+* Answer: B
+* Explanation: Chapter 2 states that IT system integration streamlines operations by connecting software, databases, and hardware to enable data sharing.
+23. How does System Integration benefit the Healthcare industry?
+A) By creating autonomous driving capabilities
+B) By connecting learning management systems
+C) By connecting medical systems, electronic health records (EHRs), and diagnostic tools
+D) By monitoring air and water quality
+* Answer: C
+* Explanation: Chapter 2 highlights that healthcare integration connects medical systems and EHRs to improve patient care and reduce errors.
+24. Which industry relies on system integration for Smart Grids and managing power generation?
+A) Telecommunications
+B) Energy
+C) Public Services
+D) Manufacturing
+* Answer: B
+* Explanation: Chapter 2 mentions that the Energy sector uses integration for managing power generation and smart grids.
+25. Which integration type ensures safe and efficient aircraft operation and integrates radar and avionics?
+A) Aerospace and Defense
+B) Transportation and Logistics
+C) Public Services
+D) Smart Cities
+* Answer: A
+* Explanation: Chapter 2 specifically lists avionics, radar, and navigation integration under the Aerospace and Defense domain.
+26. Bridging citizen portals, tax systems, and emergency response systems is an example of integration in:
+A) Environmental Monitoring
+B) Smart Cities
+C) Public Services
+D) Education
+* Answer: C
+* Explanation: Chapter 2 states that government agencies use system integration for Public Services like citizen portals and emergency response.
+27. What integration challenge occurs in Point-to-Point networks as a business grows?
+A) They become too centralized.
+B) They require an ESB to function.
+C) They result in a proliferation of direct connections, leading to maintenance challenges.
+D) They create functional silos.
+* Answer: C
+* Explanation: Chapter 2 points out that adding systems in Point-to-Point integration results in complex direct connections that are hard to maintain.
+28. An alternative to Point-to-Point integration that provides a centralized architecture is:
+A) Vertical Integration
+B) Star Integration
+C) Middleware solutions like Enterprise Service Bus (ESB) or APIs
+D) Legacy System Integration
+* Answer: C
+* Explanation: Chapter 2 notes organizations prefer middleware like ESB or APIs as an alternative to point-to-point to reduce direct connections.
+29. Business-to-Business (B2B) integration enables companies to:
+A) Automate business communication and processes with all stakeholders
+B) Bridge gaps between internal CRM and ERP only
+C) Replace their internal hardware components
+D) Create functional silos
+* Answer: A
+* Explanation: Chapter 2 states B2B integration enables companies to automate business communication with all stakeholders and business partners.
+30. Legacy System Integration implies connectivity between:
+A) Future technologies and APIs
+B) Outdated systems and more modern IT infrastructure
+C) Two identical modern ERP systems
+D) Paper-based documents and EDI
+* Answer: B
+* Explanation: Chapter 2 defines Legacy System Integration as connectivity between outdated legacy systems and more modern IT infrastructure.
+31. What technology provides the infrastructure for distributed and collaborative knowledge acquisition (Lecture 1)?
+A) PIM
+B) Networking technology and Internet of Things (IoT)
+C) CAD and CAM
+D) EDI
+* Answer: B
+* Explanation: Lecture 1 states that Networking technology, IoT, and other new technologies provide the infrastructure for distributed knowledge acquisition.
+32. In the context of SoS, what does "Geographic Distribution" mean?
+A) Components are in the exact same server room.
+B) The system is fully formed upon creation.
+C) The geographic extent of the components is large, exchanging only information, not mass/energy.
+D) The systems share the same exact management.
+* Answer: C
+* Explanation: Lecture 1 defines Geographic Distribution as components being geographically dispersed, exchanging only information.
+33. In the hospital Vertical Integration example (Chapter 2), adding an EMR system would require:
+A) Upgrading the ESB
+B) Creating a new silo
+C) Point-to-point connections to all other systems
+D) Replacing the legacy database
+* Answer: B
+* Explanation: Chapter 2 explains that in vertical integration, adding a new system like an EMR requires creating a new functional silo.
+34. What is the fundamental feature of Smart Cities according to Chapter 2?
+A) Connecting learning management systems
+B) Interconnecting transportation, utilities, security, and public services
+C) Using only point-to-point integration
+D) Eliminating all legacy systems
+* Answer: B
+* Explanation: Chapter 2 states Smart Cities rely on interconnecting systems like transportation, utilities, and security to improve urban living.
+35. How does System Integration optimize Transportation and Logistics?
+A) By creating infotainment systems
+B) By connecting tracking systems, warehouse management, and order processing
+C) By managing EHRs
+D) By monitoring climate conditions
+* Answer: B
+* Explanation: Chapter 2 notes that Transportation and Logistics optimize operations by connecting tracking, warehouse management, and order processing.
+36. According to Lecture 1, System of Systems (SoS) integration involves systems being linked directly or through an intermediary to satisfy the needs of a:
+A) Legacy protocol
+B) Mission capability package
+C) Single hardware vendor
+D) Closed network
+* Answer: B
+* Explanation: Lecture 1 (Madni and Sievers) states systems are organically and dynamically configured to satisfy the needs of a mission capability package.
+37. Which integration method is described as being "relatively simple and easy... but quite rigid"?
+A) Horizontal Integration
+B) Common Data Format Integration
+C) Vertical Integration
+D) Enterprise Application Integration
+* Answer: C
+* Explanation: Chapter 2 describes Vertical Integration as a simple/easy method for limited systems but rigid because new functionality requires new silos.
+38. The emergence of Enterprise Systems (ESs) has been fueled by:
+A) The decline of the internet
+B) The global economy, intense competition, and rapid IT development
+C) The desire to use more paper-based documentation
+D) The reduction in third-party integrations
+* Answer: B
+* Explanation: Lecture 1 states that the emergence of ESs has been fueled by the global economy, intense competition, and the rapid development of IT.
+39. In a Horizontal Integration, if you have ten sub-systems, how many connections are required to the common interface layer?
+A) 45
+B) 100
+C) 10
+D) 1
+* Answer: C
+* Explanation: Chapter 2 explains that in Horizontal Integration, with ten systems, there are only ten connections to the common interface layer (ESB).
+40. Ford's C3P system ultimately contributes to which of the following?
+A) Digital manufacturing based on ES and IIIE
+B) Legacy system removal
+C) Electronic Document Interchange
+D) Smart city development
+* Answer: A
+* Explanation: Lecture 1 features a diagram showing that CAD, CAE, and CAM flow into PIM, which leads to "Digital manufacturing based on ES and IIIE."
+PART II: IDENTIFICATION (Items 41 - 70)
+Identify the term being described based on the provided materials.
+41. The process of combining different individual systems, subsystems, or components into a unified and cohesive whole.
+* Answer: System Integration
+* Explanation: This is the verbatim definition of System Integration from Chapter 2.
+42. Companies such as Deloitte, IBM, Accenture, and TCS that deliver large IT projects and enable data integrations.
+* Answer: Systems Integrator (SI)
+* Explanation: Chapter 2 lists these companies as examples of SIs whose role is to implement and coordinate IT systems.
+43. A type of integration where individual systems are connected directly to each other without middleware to enable data exchange.
+* Answer: Point-to-Point Integration
+* Explanation: Chapter 2 defines this as directly connecting systems, noting it is typically used for simpler scenarios.
+44. The system integration method where components are integrated by creating functional "silos", beginning with the basic bottom function upward.
+* Answer: Vertical Integration
+* Explanation: Chapter 2 describes Vertical Integration as building functional silos from the bottom up.
+45. The integration method where every sub-system is connected to every other sub-system, often requiring complex maintenance (e.g., 45 connections for 10 systems).
+* Answer: Star Integration
+* Explanation: Chapter 2 explains that Star Integration connects every sub-system to others point-to-point, increasing connections exponentially.
+46. Another name for Star Integration, drawing an analogy to messy programming code.
+* Answer: Spaghetti Integration
+* Explanation: Chapter 2 states Star Integration is referred to as "Spaghetti Integration" as an analogy to "Spaghetti code."
+47. The integration method that uses a separate sub-system as a common interface layer for all other sub-systems.
+* Answer: Horizontal Integration
+* Explanation: Chapter 2 defines Horizontal Integration as using a single common interface layer for all connections.
+48. The common interface layer used in Horizontal Integration is very often referred to by this three-letter acronym.
+* Answer: ESB (Enterprise Service Bus)
+* Explanation: Chapter 2 specifies that the separate sub-system layer in horizontal integration is known as an ESB.
+49. The integration approach where data coming out of one system is transformed into one standardized format rather than system-by-system.
+* Answer: Common Data Format Integration
+* Explanation: Chapter 2 explains this method allows systems to do only one conversion to a shared format to reduce the number of transformations.
+50. The data format commonly used to represent and exchange structured data, specifically in web services and configuration files.
+* Answer: XML (eXtensible Markup Language)
+* Explanation: Chapter 2 identifies XML as a standard for structured data exchange in Common Data Format integration.
+51. The system-to-system exchange of business documents in a standard electronic format, intended to replace paper-based documents like invoices.
+* Answer: Electronic Data Interchange (EDI)
+* Explanation: Chapter 2 states EDI replaces paper-based documents (like POs and invoices) with electronic formats to save time and reduce errors.
+52. The type of integration that gathers data from disparate sources into a centralized access point.
+* Answer: Data Integration
+* Explanation: Chapter 2 defines Data Integration as making data more available and easy to process via a centralized access point.
+53. The type of integration that enables companies to automate business communication and processes with external partners and stakeholders.
+* Answer: Business-to-Business (B2B) Integration
+* Explanation: Chapter 2 describes B2B integration as connecting an organization with its business partners for real-time data exchange.
+54. The type of integration that bridges gaps between outdated systems (vital for core business) and more modern IT infrastructure.
+* Answer: Legacy System Integration
+* Explanation: Chapter 2 explains that Legacy System Integration prevents disruption by connecting older systems to modern ones.
+55. The type of integration focused on bridging gaps between different software programs like ERP, CRM, and SCM.
+* Answer: Enterprise Application Integration (EAI)
+* Explanation: Chapter 2 states EAI streamlines business processes by allowing smooth data flow between these specific enterprise applications.
+56. The industry that uses system integration to connect LMS (Learning Management Systems), student databases, and administrative tools.
+* Answer: Education
+* Explanation: Chapter 2 explicitly mentions LMS and student databases as the primary integration targets for the Education sector.
+57. Software packages developed to support many aspects of an enterprise's information needs (e.g., executive direction, customer integration).
+* Answer: Enterprise Systems (ES)
+* Explanation: Lecture 1 cites Davenport (2000) defining ESs as software packages supporting enterprise information needs.
+58. A specific type of ES that facilitates transaction processing in a distributive environment and manages all enterprise resources.
+* Answer: Enterprise Resource Planning (ERP)
+* Explanation: Lecture 1 names ERP as a type of ES used for streamlining business processes and transaction processing.
+59. The automobile company that struggled with isolated design software and successfully implemented a C3P ES.
+* Answer: Ford Motor Company
+* Explanation: Lecture 1 details a case study of the Ford Motor Company implementing the C3P system in the mid-1990s.
+60. In Ford's C3P system, the acronym representing the software used for designing products.
+* Answer: CAD (Computer-Aided Design)
+* Explanation: Lecture 1 outlines CAD as one of the three "C"s in the C3P system.
+61. A collection of joint stand-alone systems originally designed for specific purposes to create a task needed for a certain objective.
+* Answer: System of Systems (SoS)
+* Explanation: Lecture 1 uses Mayk and Madni's (2006) definition for System of Systems.
+62. The SoS characteristic stating that if disassembled, the component systems can usefully operate on their own.
+* Answer: Operational Independence
+* Explanation: Lecture 1 defines Operational Independence as components being independent and useful in their own right.
+63. The SoS characteristic stating that the system is not fully formed at once, but functions and purposes are added and modified over time.
+* Answer: Evolutionary Development
+* Explanation: Lecture 1 defines Evolutionary Development as the system growing and modifying with experience and need.
+64. The SoS characteristic referring to behaviors of the entire system that cannot be localized to any single component system.
+* Answer: Emergent Behavior
+* Explanation: Lecture 1 describes Emergent Behavior as the principal purposes fulfilled by the entire SoS working together.
+65. The industry that relies on integration to manage content distribution across platforms like streaming services and TV channels.
+* Answer: Entertainment and Media
+* Explanation: Chapter 2 lists content distribution and streaming as the main integration goals for the Entertainment and Media industry.
+66. The industry that connects online and in-store sales, inventory management, and CRM.
+* Answer: Retail and E-commerce
+* Explanation: Chapter 2 highlights Retail and E-commerce as the industry combining these specific systems to enhance customer experience.
+67. In SoS Integration, systems are organically and dynamically configured to satisfy the needs of this specific "package".
+* Answer: Mission capability package
+* Explanation: Lecture 1 mentions that systems are configured to satisfy the needs of a "mission capability package" (Madni and Sievers).
+68. The common data format used for exchanging business documents like purchase orders between different partners.
+* Answer: EDI (Electronic Data Interchange)
+* Explanation: Chapter 2 specifies EDI as the standard format for exchanging business documents electronically.
+69. The system utilized by hospitals (as an example of Vertical Integration) to manage digital patient records, adding complexity to functional silos.
+* Answer: Electronic Medical Record (EMR) system
+* Explanation: Chapter 2 notes that adding an EMR system to a hospital's vertical integration requires creating a new silo.
+70. The ultimate outcome of Ford's C3P system (CAD, CAE, CAM, PIM) as shown in the system diagram.
+* Answer: Digital manufacturing
+* Explanation: Lecture 1 contains a diagram showing the components of C3P pointing towards "Digital manufacturing based on ES and IIIE."
+PART III: ENUMERATION (Items 71 - 100)
+Provide the items requested in the lists below based on the text. Each correct item represents one point (Items 71-100).
+Identify the five (5) typical modules that compose an Enterprise System (ES) according to Langenwalter (2000) in Lecture 1:
+* 71. Executive direction and support
+* 72. Customer integration
+* 73. Engineering integration
+* 74. Manufacturing integration
+* 75. Support service integration
+* Explanation (71-75): Lecture 1 explicitly lists these five elements as the typical modules that make up an Enterprise System.
+Identify the four (4) components that make up the acronym for Ford's "C3P System" in Lecture 1:
+* 76. Computer-aided design (CAD)
+* 77. Computer-aided manufacturing (CAM)
+* 78. Computer-aided engineering (CAE)
+* 79. Product information management (PIM)
+* Explanation (76-79): Lecture 1 details the C3P acronym as combining three "Cs" (CAD, CAM, CAE) and PIM.
+Identify the five (5) typical System Integration Methods outlined in Chapter 2:
+* 80. Point-to-Point Integration
+* 81. Vertical Integration
+* 82. Star Integration
+* 83. Horizontal Integration
+* 84. Common Data Format Integration
+* Explanation (80-84): Chapter 2 categorizes standard system integration methods into these five distinct architectures.
+Identify the five (5) most common types of System Integration outlined in Chapter 2:
+* 85. Data Integration
+* 86. Business-to-Business (B2B) Integration
+* 87. Legacy System Integration
+* 88. Electronic Document Interchange (EDI)
+* 89. Enterprise Application Integration (EAI)
+* Explanation (85-89): Chapter 2 provides a specific chart listing these five as the "Most Common Types of System Integration."
+Identify the five (5) Key Characteristics of a System of Systems (SoS) according to Lecture 1:
+* 90. Operational Independence of the Elements
+* 91. Managerial Independence of the Elements
+* 92. Evolutionary Development
+* 93. Emergent Behavior
+* 94. Geographic Distribution
+* Explanation (90-94): Lecture 1 lists these five defining traits to explain how an SoS operates and evolves.
+Identify six (6) of the seven different types of collaboration in a typical business life cycle as listed in Lecture 1:
+(Note: Providing any 6 of the following 7 is correct)
+* 95. Product life cycle collaboration
+* 96. Engineering project collaboration
+* 97. Customer order and inventory collaboration
+* 98. Distributor-reseller collaboration
+* 99. Supplier and procurement collaboration
+* 100. Demand planning collaboration (or Warehouse management and freight collaboration)
+* Explanation (95-100): Lecture 1 outlines these specific collaborations under the heading "Different types of collaboration in a typical business life cycle" for intra- and interenterprise processes.

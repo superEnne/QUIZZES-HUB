@@ -52,10 +52,13 @@ body {
   box-shadow: 0 4px 24px rgba(147,112,219,0.08), 0 1px 4px rgba(147,112,219,0.06);
   transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
-.card:hover {
-  box-shadow: 0 8px 36px rgba(147,112,219,0.18), 0 2px 8px rgba(147,112,219,0.1);
-  border-color: rgba(174,142,240,0.55);
-  transform: translateY(-3px);
+/* Disable hover lift on touch devices to avoid sticky state */
+@media (hover: hover) {
+  .card:hover {
+    box-shadow: 0 8px 36px rgba(147,112,219,0.18), 0 2px 8px rgba(147,112,219,0.1);
+    border-color: rgba(174,142,240,0.55);
+    transform: translateY(-3px);
+  }
 }
 
 /* ── Buttons ───────────────────────────────────────────────────────────────── */
@@ -75,11 +78,19 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 16px rgba(147,112,219,0.4);
   transition: all 0.2s ease;
+  /* Minimum touch target */
+  min-height: 44px;
+  touch-action: manipulation;
 }
-.btn-primary:hover:not(:disabled) {
-  background: linear-gradient(135deg, #7c55c8, #a070e0);
-  box-shadow: 0 6px 24px rgba(147,112,219,0.55);
-  transform: translateY(-1px);
+@media (hover: hover) {
+  .btn-primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #7c55c8, #a070e0);
+    box-shadow: 0 6px 24px rgba(147,112,219,0.55);
+    transform: translateY(-1px);
+  }
+}
+.btn-primary:active:not(:disabled) {
+  transform: scale(0.97);
 }
 .btn-primary:disabled {
   background: linear-gradient(135deg, #c9b4f8, #ddd0f8);
@@ -103,11 +114,18 @@ body {
   border: 1.5px solid var(--lilac-300);
   cursor: pointer;
   transition: all 0.2s ease;
+  min-height: 44px;
+  touch-action: manipulation;
 }
-.btn-ghost:hover {
-  background: var(--lilac-100);
-  border-color: var(--lilac-400);
-  color: var(--lilac-700);
+@media (hover: hover) {
+  .btn-ghost:hover {
+    background: var(--lilac-100);
+    border-color: var(--lilac-400);
+    color: var(--lilac-700);
+  }
+}
+.btn-ghost:active {
+  transform: scale(0.97);
 }
 
 /* ── Badge ─────────────────────────────────────────────────────────────────── */
@@ -142,26 +160,34 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 0.9rem 1rem;
   border-radius: 14px;
   border: 1.5px solid var(--border);
   background: rgba(255,255,255,0.6);
   color: var(--text-mid);
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.925rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
   gap: 0.75rem;
   transition: all 0.18s ease;
   box-shadow: 0 1px 6px rgba(147,112,219,0.06);
+  /* Comfortable tap target */
+  min-height: 52px;
+  touch-action: manipulation;
 }
-.quiz-option:hover:not(:disabled) {
-  background: var(--lilac-100);
-  border-color: var(--lilac-300);
-  color: var(--text-dark);
-  transform: translateX(4px);
-  box-shadow: 0 4px 12px rgba(147,112,219,0.12);
+@media (hover: hover) {
+  .quiz-option:hover:not(:disabled) {
+    background: var(--lilac-100);
+    border-color: var(--lilac-300);
+    color: var(--text-dark);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(147,112,219,0.12);
+  }
+}
+.quiz-option:active:not(:disabled) {
+  transform: scale(0.98);
 }
 .quiz-option:disabled { cursor: not-allowed; }
 .quiz-option.correct {
@@ -300,6 +326,8 @@ body {
   outline: none;
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(147,112,219,0.06);
+  /* prevent iOS zoom on focus */
+  font-size: max(16px, 0.9rem);
 }
 .input-field::placeholder { color: var(--text-soft); }
 .input-field:focus {
@@ -317,4 +345,51 @@ body {
   border-radius: 16px;
   background: rgba(255,255,255,0.7);
   border: 1.5px solid var(--border);
+}
+
+/* ── Mobile-specific overrides ─────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  /* Reduce blob sizes to avoid overflow issues */
+  .blob-1 { width: 280px; height: 280px; top: -60px; left: -40px; }
+  .blob-2 { width: 240px; height: 240px; bottom: -40px; right: -30px; }
+  .blob-3 { display: none; }
+
+  /* Navbar: hide the year badge on tiny screens */
+  .nav-year-badge { display: none; }
+
+  /* Hero padding tighter on small screens */
+  .hero-section { padding: 2rem 1rem 1.5rem !important; }
+
+  /* Stat chips wrap nicely */
+  .stat-chip {
+    padding: 0.6rem 1rem;
+  }
+
+  /* Cards: slightly less radius and padding on mobile */
+  .card { border-radius: 16px; }
+
+  /* Quiz options: full-width comfortable tap targets */
+  .quiz-option {
+    font-size: 0.875rem;
+    padding: 0.85rem 0.9rem;
+  }
+
+  /* Bottom action row in quiz: stack on very small screens */
+  .quiz-action-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .quiz-action-row > * { width: 100%; }
+
+  /* Result screen buttons: stack */
+  .result-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .result-actions > * { width: 100%; }
+}
+
+@media (max-width: 360px) {
+  .quiz-option { font-size: 0.82rem; }
+  .btn-primary, .btn-ghost { font-size: 0.85rem; }
 }
