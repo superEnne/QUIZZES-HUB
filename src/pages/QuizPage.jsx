@@ -193,7 +193,7 @@ function IdentificationQuestion({ q, onAnswer }) {
                 color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
               }}
             >
-              ✓ I got it right
+              I got it right
             </button>
             <button
               onClick={() => handleSelfGrade(false)}
@@ -203,7 +203,7 @@ function IdentificationQuestion({ q, onAnswer }) {
                 color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
               }}
             >
-              ✗ I got it wrong
+              I got it wrong
             </button>
           </div>
         </div>
@@ -278,7 +278,7 @@ function OutputTracingQuestion({ q, onAnswer }) {
         color: "#92400e",
         fontWeight: 600,
       }}>
-        💡 Type exactly what this code prints to the console.
+        Type exactly what this code prints to the console.
       </div>
 
       {/* Input */}
@@ -364,11 +364,11 @@ function OutputTracingQuestion({ q, onAnswer }) {
             <button
               onClick={() => handleSelfGrade(true)}
               style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
-            >✓ I got it right</button>
+            >I got it right</button>
             <button
               onClick={() => handleSelfGrade(false)}
               style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
-            >✗ I got it wrong</button>
+            >I got it wrong</button>
           </div>
         </div>
       )}
@@ -423,7 +423,7 @@ function FillCodeQuestion({ q, onAnswer }) {
         color: "#9d174d",
         fontWeight: 600,
       }}>
-        ✏️ Type the missing keyword or value to fill the blank (____).
+        Type the missing keyword or value to fill the blank (____)
       </div>
 
       {/* Input */}
@@ -503,11 +503,11 @@ function FillCodeQuestion({ q, onAnswer }) {
             <button
               onClick={() => handleSelfGrade(true)}
               style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
-            >✓ I got it right</button>
+            >I got it right</button>
             <button
               onClick={() => handleSelfGrade(false)}
               style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
-            >✗ I got it wrong</button>
+            >I got it wrong</button>
           </div>
         </div>
       )}
@@ -553,7 +553,7 @@ function EnumerationQuestion({ q, onAnswer }) {
         color: "var(--text-mid)",
         fontWeight: 600,
       }}>
-        📋 Recall <strong style={{ color: "#7c3aed" }}>{q.minCount ?? q.count}</strong> item{(q.minCount ?? q.count) !== 1 ? "s" : ""}
+        Recall <strong style={{ color: "#7c3aed" }}>{q.minCount ?? q.count}</strong> item{(q.minCount ?? q.count) !== 1 ? "s" : ""}
         {q.minCount && q.items.length > q.count && ` (from ${q.items.length} possible)`}
       </div>
 
@@ -580,7 +580,7 @@ function EnumerationQuestion({ q, onAnswer }) {
             color: "#92400e",
             fontWeight: 600,
           }}>
-            ✅ Check off the items you knew — then tap "I'm done grading".
+            Check off the items you knew — then tap "I'm done grading".
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
@@ -934,15 +934,15 @@ export default function QuizPage() {
                           color: isCorrect ? "#166534" : isWrong ? "#991b1b" : "var(--text-soft)",
                           fontWeight: isCorrect || isWrong ? 700 : 400,
                         }}>
-                          {isCorrect && "✓ Correct: "}
-                          {isWrong && "✗ Your answer: "}
+                          {isCorrect && "Correct: "}
+                          {isWrong && "Your answer: "}
                           {opt}
                         </div>
                       );
                     })}
                     {a.explanation && (
                       <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", marginTop: "0.4rem", lineHeight: 1.5, paddingLeft: "0.25rem" }}>
-                        💡 {a.explanation}
+                        {a.explanation}
                       </p>
                     )}
                   </div>
@@ -955,7 +955,7 @@ export default function QuizPage() {
                       Correct answer: <strong style={{ color: "#2d1f5e" }}>{a.answer}</strong>
                     </p>
                     {a.explanation && (
-                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>{a.explanation}</p>
                     )}
                   </div>
                 )}
@@ -971,7 +971,7 @@ export default function QuizPage() {
                       ))}
                     </div>
                     {a.explanation && (
-                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>{a.explanation}</p>
                     )}
                   </div>
                 )}
@@ -995,7 +995,7 @@ export default function QuizPage() {
                       Expected output: <strong style={{ color: "#2d1f5e", fontFamily: "'Fira Code', monospace" }}>{a.answer}</strong>
                     </p>
                     {a.explanation && (
-                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>{a.explanation}</p>
                     )}
                   </div>
                 )}
@@ -1019,7 +1019,7 @@ export default function QuizPage() {
                       Answer: <strong style={{ color: "#be185d", fontFamily: "'Fira Code', monospace" }}>{a.answer}</strong>
                     </p>
                     {a.explanation && (
-                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>💡 {a.explanation}</p>
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>{a.explanation}</p>
                     )}
                   </div>
                 )}
@@ -1115,7 +1115,7 @@ export default function QuizPage() {
                   color: "var(--text-mid)",
                   lineHeight: 1.55,
                 }}>
-                  💡 {q.explanation}
+                  {q.explanation}
                 </div>
               )}
             </div>
