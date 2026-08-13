@@ -1164,7 +1164,7 @@ export const subjects = [
             "id": 1,
             "type": "output_tracing",
             "question": "Item 1 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(10, 5000);\nSystem.out.println(e1.getId());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(10, 5000);\nSystem.out.println(e1.getId());",
             "answer": "10",
             "explanation": "Trace result: 10."
           },
@@ -1172,7 +1172,7 @@ export const subjects = [
             "id": 2,
             "type": "output_tracing",
             "question": "Item 2 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId());",
             "answer": "100",
             "explanation": "Trace result: 100."
           },
@@ -1180,7 +1180,7 @@ export const subjects = [
             "id": 3,
             "type": "output_tracing",
             "question": "Item 3 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getSalary());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getSalary());",
             "answer": "500.0",
             "explanation": "Trace result: 500.0."
           },
@@ -1188,7 +1188,7 @@ export const subjects = [
             "id": 4,
             "type": "output_tracing",
             "question": "Item 4 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(20, 3000);\ne1.setSalary(3500);\nSystem.out.println(e1.getSalary());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(20, 3000);\ne1.setSalary(3500);\nSystem.out.println(e1.getSalary());",
             "answer": "3500.0",
             "explanation": "Trace result: 3500.0."
           },
@@ -1196,7 +1196,7 @@ export const subjects = [
             "id": 5,
             "type": "output_tracing",
             "question": "Item 5 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee.message();",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee.message();",
             "answer": "Employee created",
             "altAnswers": [
               "Employee, created",
@@ -1208,7 +1208,7 @@ export const subjects = [
             "id": 6,
             "type": "output_tracing",
             "question": "Item 6 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.message();",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.message();",
             "answer": "Employee created",
             "altAnswers": [
               "Employee, created",
@@ -1220,7 +1220,7 @@ export const subjects = [
             "id": 7,
             "type": "output_tracing",
             "question": "Item 7 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(7, 1000);\ne1.setId(99);\nSystem.out.println(e1.getId());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(7, 1000);\ne1.setId(99);\nSystem.out.println(e1.getId());",
             "answer": "99",
             "explanation": "Trace result: 99."
           },
@@ -1228,7 +1228,7 @@ export const subjects = [
             "id": 8,
             "type": "output_tracing",
             "question": "Item 8 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 2);\nSystem.out.println(c1.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 2);\nSystem.out.println(c1.getAns());",
             "answer": "3.0",
             "explanation": "Trace result: 3.0."
           },
@@ -1236,7 +1236,7 @@ export const subjects = [
             "id": 9,
             "type": "output_tracing",
             "question": "Item 9 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(2.0, 3.0);\nSystem.out.println(c1.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(2.0, 3.0);\nSystem.out.println(c1.getAns());",
             "answer": "5.0",
             "explanation": "Trace result: 5.0."
           },
@@ -1244,7 +1244,7 @@ export const subjects = [
             "id": 10,
             "type": "output_tracing",
             "question": "Item 10 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));",
             "answer": "12",
             "explanation": "Trace result: 12."
           },
@@ -1252,7 +1252,7 @@ export const subjects = [
             "id": 11,
             "type": "output_tracing",
             "question": "Item 11 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(1));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(1));",
             "answer": "4",
             "explanation": "Trace result: 4."
           },
@@ -1260,7 +1260,7 @@ export const subjects = [
             "id": 12,
             "type": "output_tracing",
             "question": "Item 12 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(2));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(2));",
             "answer": "32",
             "explanation": "Trace result: 32."
           },
@@ -1268,7 +1268,7 @@ export const subjects = [
             "id": 13,
             "type": "output_tracing",
             "question": "Item 13 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(3));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(3));",
             "answer": "2",
             "explanation": "Trace result: 2."
           },
@@ -1276,7 +1276,7 @@ export const subjects = [
             "id": 14,
             "type": "output_tracing",
             "question": "Item 14 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nSystem.out.println(c1.getNumber());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nSystem.out.println(c1.getNumber());",
             "answer": "1",
             "explanation": "Trace result: 1."
           },
@@ -1284,7 +1284,7 @@ export const subjects = [
             "id": 15,
             "type": "output_tracing",
             "question": "Item 15 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(5);\nSystem.out.println(c1.getNumber());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(5);\nSystem.out.println(c1.getNumber());",
             "answer": "5",
             "explanation": "Trace result: 5."
           },
@@ -1292,7 +1292,7 @@ export const subjects = [
             "id": 16,
             "type": "output_tracing",
             "question": "Item 16 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add();\nSystem.out.println(c1.getNumber());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add();\nSystem.out.println(c1.getNumber());",
             "answer": "2",
             "explanation": "Trace result: 2."
           },
@@ -1300,7 +1300,7 @@ export const subjects = [
             "id": 17,
             "type": "output_tracing",
             "question": "Item 17 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nSystem.out.println(c1.getReused());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nSystem.out.println(c1.getReused());",
             "answer": "1",
             "explanation": "Trace result: 1."
           },
@@ -1308,7 +1308,7 @@ export const subjects = [
             "id": 18,
             "type": "output_tracing",
             "question": "Item 18 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nSystem.out.println(b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nSystem.out.println(b1.getBalance());",
             "answer": "200.0",
             "explanation": "Trace result: 200.0."
           },
@@ -1316,7 +1316,7 @@ export const subjects = [
             "id": 19,
             "type": "output_tracing",
             "question": "Item 19 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.deposit(50);\nSystem.out.println(b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.deposit(50);\nSystem.out.println(b1.getBalance());",
             "answer": "250.0",
             "explanation": "Trace result: 250.0."
           },
@@ -1324,7 +1324,7 @@ export const subjects = [
             "id": 20,
             "type": "output_tracing",
             "question": "Item 20 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.withdraw(75);\nSystem.out.println(b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.withdraw(75);\nSystem.out.println(b1.getBalance());",
             "answer": "125.0",
             "explanation": "Trace result: 125.0."
           },
@@ -1332,7 +1332,7 @@ export const subjects = [
             "id": 21,
             "type": "output_tracing",
             "question": "Item 21 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getName());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getName());",
             "answer": "Pen",
             "explanation": "Trace result: Pen."
           },
@@ -1340,7 +1340,7 @@ export const subjects = [
             "id": 22,
             "type": "output_tracing",
             "question": "Item 22 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getMyCount());",
             "answer": "1",
             "explanation": "Trace result: 1."
           },
@@ -1348,7 +1348,7 @@ export const subjects = [
             "id": 23,
             "type": "output_tracing",
             "question": "Item 23 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.area());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.area());",
             "answer": "20.0",
             "explanation": "Trace result: 20.0."
           },
@@ -1356,7 +1356,7 @@ export const subjects = [
             "id": 24,
             "type": "output_tracing",
             "question": "Item 24 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.perimeter());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.perimeter());",
             "answer": "18.0",
             "explanation": "Trace result: 18.0."
           },
@@ -1364,7 +1364,7 @@ export const subjects = [
             "id": 25,
             "type": "output_tracing",
             "question": "Item 25 [Part 1 (Easy)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3);\nSystem.out.println(r1.area());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3);\nSystem.out.println(r1.area());",
             "answer": "9.0",
             "explanation": "Trace result: 9.0."
           },
@@ -1372,7 +1372,7 @@ export const subjects = [
             "id": 26,
             "type": "output_tracing",
             "question": "Item 26 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e1.getSalary());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e1.getSalary());",
             "answer": "100 500.0",
             "altAnswers": [
               "100, 500.0",
@@ -1384,7 +1384,7 @@ export const subjects = [
             "id": 27,
             "type": "output_tracing",
             "question": "Item 27 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns());",
             "answer": "2.0",
             "explanation": "Trace result: 2.0."
           },
@@ -1392,7 +1392,7 @@ export const subjects = [
             "id": 28,
             "type": "output_tracing",
             "question": "Item 28 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns());",
             "answer": "9.0",
             "explanation": "Trace result: 9.0."
           },
@@ -1400,7 +1400,7 @@ export const subjects = [
             "id": 29,
             "type": "output_tracing",
             "question": "Item 29 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(0));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(0));",
             "answer": "8.0",
             "explanation": "Trace result: 8.0."
           },
@@ -1408,7 +1408,7 @@ export const subjects = [
             "id": 30,
             "type": "output_tracing",
             "question": "Item 30 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(1));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(1));",
             "answer": "16.0",
             "explanation": "Trace result: 16.0."
           },
@@ -1416,7 +1416,7 @@ export const subjects = [
             "id": 31,
             "type": "output_tracing",
             "question": "Item 31 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(0));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(0));",
             "answer": "4.0",
             "explanation": "Trace result: 4.0."
           },
@@ -1424,7 +1424,7 @@ export const subjects = [
             "id": 32,
             "type": "output_tracing",
             "question": "Item 32 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns(1));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns(1));",
             "answer": "81.0",
             "explanation": "Trace result: 81.0."
           },
@@ -1432,7 +1432,7 @@ export const subjects = [
             "id": 33,
             "type": "output_tracing",
             "question": "Item 33 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(0));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(0));",
             "answer": "12",
             "explanation": "Trace result: 12."
           },
@@ -1440,7 +1440,7 @@ export const subjects = [
             "id": 34,
             "type": "output_tracing",
             "question": "Item 34 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(3));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(3));",
             "answer": "5",
             "explanation": "Trace result: 5."
           },
@@ -1448,7 +1448,7 @@ export const subjects = [
             "id": 35,
             "type": "output_tracing",
             "question": "Item 35 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));\nm1.setCalculate(1, 1);\nSystem.out.println(m1.getCalculate(0));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));\nm1.setCalculate(1, 1);\nSystem.out.println(m1.getCalculate(0));",
             "answer": "12\n2",
             "altAnswers": [
               "12 2",
@@ -1460,7 +1460,7 @@ export const subjects = [
             "id": 36,
             "type": "output_tracing",
             "question": "Item 36 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(3);\nc1.add();\nSystem.out.println(c1.getNumber());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(3);\nc1.add();\nSystem.out.println(c1.getNumber());",
             "answer": "4",
             "explanation": "Trace result: 4."
           },
@@ -1468,7 +1468,7 @@ export const subjects = [
             "id": 37,
             "type": "output_tracing",
             "question": "Item 37 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(4);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(4);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
             "answer": "0 1",
             "altAnswers": [
               "0, 1",
@@ -1480,7 +1480,7 @@ export const subjects = [
             "id": 38,
             "type": "output_tracing",
             "question": "Item 38 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(2);\nc2.add(9);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(2);\nc2.add(9);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
             "answer": "2 9",
             "altAnswers": [
               "2, 9",
@@ -1492,7 +1492,7 @@ export const subjects = [
             "id": 39,
             "type": "output_tracing",
             "question": "Item 39 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
             "answer": "Unknown 100.0",
             "altAnswers": [
               "Unknown, 100.0",
@@ -1504,7 +1504,7 @@ export const subjects = [
             "id": 40,
             "type": "output_tracing",
             "question": "Item 40 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
             "answer": "Jake 100.0",
             "altAnswers": [
               "Jake, 100.0",
@@ -1516,7 +1516,7 @@ export const subjects = [
             "id": 41,
             "type": "output_tracing",
             "question": "Item 41 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nb1.deposit(20);\nb1.withdraw(5);\nSystem.out.println(b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nb1.deposit(20);\nb1.withdraw(5);\nSystem.out.println(b1.getBalance());",
             "answer": "115.0",
             "explanation": "Trace result: 115.0."
           },
@@ -1524,7 +1524,7 @@ export const subjects = [
             "id": 42,
             "type": "output_tracing",
             "question": "Item 42 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(i1.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(i1.getMyCount());",
             "answer": "2",
             "explanation": "Trace result: 2."
           },
@@ -1532,7 +1532,7 @@ export const subjects = [
             "id": 43,
             "type": "output_tracing",
             "question": "Item 43 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i2.getMyCount() + \" \" + i3.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i2.getMyCount() + \" \" + i3.getMyCount());",
             "answer": "3 3",
             "altAnswers": [
               "3, 3",
@@ -1544,7 +1544,7 @@ export const subjects = [
             "id": 44,
             "type": "output_tracing",
             "question": "Item 44 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());",
             "answer": "2",
             "explanation": "Trace result: 2."
           },
@@ -1552,7 +1552,7 @@ export const subjects = [
             "id": 45,
             "type": "output_tracing",
             "question": "Item 45 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.area());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.area());",
             "answer": "1.0",
             "explanation": "Trace result: 1.0."
           },
@@ -1560,7 +1560,7 @@ export const subjects = [
             "id": 46,
             "type": "output_tracing",
             "question": "Item 46 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.perimeter());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.perimeter());",
             "answer": "4.0",
             "explanation": "Trace result: 4.0."
           },
@@ -1568,7 +1568,7 @@ export const subjects = [
             "id": 47,
             "type": "output_tracing",
             "question": "Item 47 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(2, 6);\nr1.setLength(10);\nSystem.out.println(r1.area());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(2, 6);\nr1.setLength(10);\nSystem.out.println(r1.area());",
             "answer": "60.0",
             "explanation": "Trace result: 60.0."
           },
@@ -1576,7 +1576,7 @@ export const subjects = [
             "id": 48,
             "type": "output_tracing",
             "question": "Item 48 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(50, 800);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(50, 800);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
             "answer": "50 100",
             "altAnswers": [
               "50, 100",
@@ -1588,7 +1588,7 @@ export const subjects = [
             "id": 49,
             "type": "output_tracing",
             "question": "Item 49 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.setId(300);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.setId(300);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
             "answer": "300 100",
             "altAnswers": [
               "300, 100",
@@ -1600,7 +1600,7 @@ export const subjects = [
             "id": 50,
             "type": "output_tracing",
             "question": "Item 50 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(3, 8);\nCalculator c2 = new Calculator(3.0, 8.0);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(3, 8);\nCalculator c2 = new Calculator(3.0, 8.0);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns());",
             "answer": "-5.0 11.0",
             "altAnswers": [
               "-5.0, 11.0",
@@ -1612,7 +1612,7 @@ export const subjects = [
             "id": 51,
             "type": "output_tracing",
             "question": "Item 51 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i1.getMyCount() + \" \" + i2.getMyCount() + \" \" + i3.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i1.getMyCount() + \" \" + i2.getMyCount() + \" \" + i3.getMyCount());",
             "answer": "3 3 3",
             "altAnswers": [
               "3, 3, 3",
@@ -1624,7 +1624,7 @@ export const subjects = [
             "id": 52,
             "type": "output_tracing",
             "question": "Item 52 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(Item.getCount());\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());\nSystem.out.println(i1.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(Item.getCount());\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());\nSystem.out.println(i1.getMyCount());",
             "answer": "1\n2\n2",
             "altAnswers": [
               "1 2 2",
@@ -1636,7 +1636,7 @@ export const subjects = [
             "id": 53,
             "type": "output_tracing",
             "question": "Item 53 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 4);\nCalculator c2 = new Calculator();\nCalculator c3 = new Calculator(7);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns() + \" \" + c3.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 4);\nCalculator c2 = new Calculator();\nCalculator c3 = new Calculator(7);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns() + \" \" + c3.getAns());",
             "answer": "6.0 2.0 9.0",
             "altAnswers": [
               "6.0, 2.0, 9.0",
@@ -1648,7 +1648,7 @@ export const subjects = [
             "id": 54,
             "type": "output_tracing",
             "question": "Item 54 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(4, 4);\nSystem.out.println(c1.getAns(0) + \" \" + c1.getAns(1));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(4, 4);\nSystem.out.println(c1.getAns(0) + \" \" + c1.getAns(1));",
             "answer": "0.0 0.0",
             "altAnswers": [
               "0.0, 0.0",
@@ -1660,7 +1660,7 @@ export const subjects = [
             "id": 55,
             "type": "output_tracing",
             "question": "Item 55 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(1));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(1));",
             "answer": "4.0",
             "explanation": "Calculator() -> ans=2.0; getAns(1) -> ans*ans = 4.0"
           },
@@ -1668,7 +1668,7 @@ export const subjects = [
             "id": 56,
             "type": "output_tracing",
             "question": "Item 56 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(7);\nSystem.out.println(c1.getAns(0));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(7);\nSystem.out.println(c1.getAns(0));",
             "answer": "18.0",
             "explanation": "Calculator(7) -> ans=9.0; getAns(0) -> ans+ans = 18.0"
           },
@@ -1676,7 +1676,7 @@ export const subjects = [
             "id": 57,
             "type": "output_tracing",
             "question": "Item 57 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nMDAS m2 = new MDAS();\nm1.setCalculate(20, 5);\nSystem.out.println(m1.getCalculate(3) + \" \" + m2.getCalculate(3));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nMDAS m2 = new MDAS();\nm1.setCalculate(20, 5);\nSystem.out.println(m1.getCalculate(3) + \" \" + m2.getCalculate(3));",
             "answer": "4 2",
             "altAnswers": [
               "4, 2",
@@ -1688,7 +1688,7 @@ export const subjects = [
             "id": 58,
             "type": "output_tracing",
             "question": "Item 58 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(m1.getCalculate(0), m1.getCalculate(1));\nSystem.out.println(m1.getCalculate(2));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(m1.getCalculate(0), m1.getCalculate(1));\nSystem.out.println(m1.getCalculate(2));",
             "answer": "48",
             "explanation": "default numA=8,numB=4: a=getCalculate(0)=12, b=getCalculate(1)=4; setCalculate(12,4); getCalculate(2)=12*4=48"
           },
@@ -1696,7 +1696,7 @@ export const subjects = [
             "id": 59,
             "type": "output_tracing",
             "question": "Item 59 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add(4);\nc1.initialize();\nc1.add(2);\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add(4);\nc1.initialize();\nc1.add(2);\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
             "answer": "2 1",
             "altAnswers": [
               "2, 1",
@@ -1708,7 +1708,7 @@ export const subjects = [
             "id": 60,
             "type": "output_tracing",
             "question": "Item 60 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nc1.initialize();\nc1.add(3);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nc1.initialize();\nc1.add(3);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
             "answer": "0 3",
             "altAnswers": [
               "0, 3",
@@ -1720,7 +1720,7 @@ export const subjects = [
             "id": 61,
             "type": "output_tracing",
             "question": "Item 61 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nBankAccount b2 = new BankAccount(\"Sam\");\nBankAccount b3 = new BankAccount(\"Sam\", 500);\nSystem.out.println(b1.getBalance() + \" \" + b2.getBalance() + \" \" + b3.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nBankAccount b2 = new BankAccount(\"Sam\");\nBankAccount b3 = new BankAccount(\"Sam\", 500);\nSystem.out.println(b1.getBalance() + \" \" + b2.getBalance() + \" \" + b3.getBalance());",
             "answer": "100.0 100.0 500.0",
             "altAnswers": [
               "100.0, 100.0, 500.0",
@@ -1732,7 +1732,7 @@ export const subjects = [
             "id": 62,
             "type": "output_tracing",
             "question": "Item 62 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Ana\");\nb1.deposit(100);\nBankAccount b2 = b1;\nb2.withdraw(50);\nSystem.out.println(b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Ana\");\nb1.deposit(100);\nBankAccount b2 = b1;\nb2.withdraw(50);\nSystem.out.println(b1.getBalance());",
             "answer": "150.0",
             "explanation": "b1 starts at 100.0 via this(\"Ana\",100); deposit(100) -> 200.0; b2=b1 means BOTH names point to the SAME object; b2.withdraw(50) -> 150.0; b1 sees the same change -> 150.0"
           },
@@ -1740,7 +1740,7 @@ export const subjects = [
             "id": 63,
             "type": "output_tracing",
             "question": "Item 63 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nRectangle r2 = new Rectangle(5);\nRectangle r3 = new Rectangle(2, 8);\nSystem.out.println(r1.area() + \" \" + r2.area() + \" \" + r3.area());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nRectangle r2 = new Rectangle(5);\nRectangle r3 = new Rectangle(2, 8);\nSystem.out.println(r1.area() + \" \" + r2.area() + \" \" + r3.area());",
             "answer": "1.0 25.0 16.0",
             "altAnswers": [
               "1.0, 25.0, 16.0",
@@ -1752,7 +1752,7 @@ export const subjects = [
             "id": 64,
             "type": "output_tracing",
             "question": "Item 64 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4);\nr1.setLength(9);\nSystem.out.println(r1.area() + \" \" + r1.perimeter());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4);\nr1.setLength(9);\nSystem.out.println(r1.area() + \" \" + r1.perimeter());",
             "answer": "36.0 26.0",
             "altAnswers": [
               "36.0, 26.0",
@@ -1764,7 +1764,7 @@ export const subjects = [
             "id": 65,
             "type": "output_tracing",
             "question": "Item 65 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nEmployee e2 = new Employee();\ne1.setSalary(999);\nSystem.out.println(e1.getSalary() + \" \" + e2.getSalary());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nEmployee e2 = new Employee();\ne1.setSalary(999);\nSystem.out.println(e1.getSalary() + \" \" + e2.getSalary());",
             "answer": "999.0 500.0",
             "altAnswers": [
               "999.0, 500.0",
@@ -1776,7 +1776,7 @@ export const subjects = [
             "id": 66,
             "type": "output_tracing",
             "question": "Item 66 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(1, 100);\ne1.setId(e1.getId() + 9);\nSystem.out.println(e1.getId());",
+            "code": "// Reference Class:\npublic class Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(1, 100);\ne1.setId(e1.getId() + 9);\nSystem.out.println(e1.getId());",
             "answer": "10",
             "explanation": "Trace result: 10."
           },
@@ -1784,7 +1784,7 @@ export const subjects = [
             "id": 67,
             "type": "output_tracing",
             "question": "Item 67 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(6, 2);\ndouble x = c1.getAns();\nCalculator c2 = new Calculator((int) x, 1);\nSystem.out.println(c2.getAns());",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(6, 2);\ndouble x = c1.getAns();\nCalculator c2 = new Calculator((int) x, 1);\nSystem.out.println(c2.getAns());",
             "answer": "3.0",
             "explanation": "c1=Calculator(6,2) -> ans=4.0; x=4.0; (int)x=4; c2=Calculator(4,1) -> Calculator(int,int) -> ans=4-1=3.0"
           },
@@ -1792,7 +1792,7 @@ export const subjects = [
             "id": 68,
             "type": "output_tracing",
             "question": "Item 68 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nint a = m1.getCalculate(0);\nint b = m1.getCalculate(1);\nm1.setCalculate(a, b);\nSystem.out.println(m1.getCalculate(0));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nint a = m1.getCalculate(0);\nint b = m1.getCalculate(1);\nm1.setCalculate(a, b);\nSystem.out.println(m1.getCalculate(0));",
             "answer": "16",
             "explanation": "a=8+4=12, b=8-4=4; setCalculate(12,4); getCalculate(0)=12+4=16"
           },
@@ -1800,7 +1800,7 @@ export const subjects = [
             "id": 69,
             "type": "output_tracing",
             "question": "Item 69 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = i2;\nItem i4 = new Item(\"C\");\nSystem.out.println(i3.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = i2;\nItem i4 = new Item(\"C\");\nSystem.out.println(i3.getMyCount());",
             "answer": "3",
             "explanation": "i3 = i2 does NOT create a new Item — i3 just points to the same object as i2. The static counter only increases when \"new\" runs, so after i1,i2,i4 are created, count=3; i3.getMyCount() reads that same live count = 3"
           },
@@ -1808,7 +1808,7 @@ export const subjects = [
             "id": 70,
             "type": "output_tracing",
             "question": "Item 70 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(5);\nc2 = c1;\nc2.add(5);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
+            "code": "// Reference Class:\npublic class Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(5);\nc2 = c1;\nc2.add(5);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
             "answer": "10 10",
             "altAnswers": [
               "10, 10",
@@ -1820,7 +1820,7 @@ export const subjects = [
             "id": 71,
             "type": "output_tracing",
             "question": "Item 71 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 5);\nSystem.out.println(c1.getAns(0) + c1.getAns(1));",
+            "code": "// Reference Class:\npublic class Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 5);\nSystem.out.println(c1.getAns(0) + c1.getAns(1));",
             "answer": "35.0",
             "explanation": "ans=10-5=5.0; getAns(0)=5+5=10.0; getAns(1)=5*5=25.0; 10.0 + 25.0 = 35.0, ordinary numeric addition since both are double"
           },
@@ -1828,7 +1828,7 @@ export const subjects = [
             "id": 72,
             "type": "output_tracing",
             "question": "Item 72 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nb1.deposit(b1.getBalance());\nSystem.out.println(b1.getBalance());",
+            "code": "// Reference Class:\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nb1.deposit(b1.getBalance());\nSystem.out.println(b1.getBalance());",
             "answer": "200.0",
             "explanation": "BankAccount() -> this(\"Unknown\") -> this(\"Unknown\",100) -> balance=100.0; deposit(b1.getBalance()) = deposit(100.0) -> balance=200.0"
           },
@@ -1836,7 +1836,7 @@ export const subjects = [
             "id": 73,
             "type": "output_tracing",
             "question": "Item 73 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3, 3);\nr1.setLength(r1.area());\nSystem.out.println(r1.area());",
+            "code": "// Reference Class:\npublic class Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3, 3);\nr1.setLength(r1.area());\nSystem.out.println(r1.area());",
             "answer": "27.0",
             "explanation": "Rectangle(3,3) -> area=9.0; setLength(9.0) -> length=9, width=3 (unchanged); new area = 9.0*3 = 27.0"
           },
@@ -1844,7 +1844,7 @@ export const subjects = [
             "id": 74,
             "type": "output_tracing",
             "question": "Item 74 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0) + m1.getCalculate(1) + m1.getCalculate(2));",
+            "code": "// Reference Class:\npublic class MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0) + m1.getCalculate(1) + m1.getCalculate(2));",
             "answer": "48",
             "explanation": "default numA=8,numB=4: getCalculate(0)=12, getCalculate(1)=4, getCalculate(2)=32; 12+4+32=48"
           },
@@ -1852,7 +1852,7 @@ export const subjects = [
             "id": 75,
             "type": "output_tracing",
             "question": "Item 75 [Part 3 (Hard)] — What is the exact output of this code?",
-            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = new Item(\"C\");\nItem i4 = new Item(\"D\");\nSystem.out.println(i1.getMyCount() + i4.getMyCount());",
+            "code": "// Reference Class:\npublic class Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = new Item(\"C\");\nItem i4 = new Item(\"D\");\nSystem.out.println(i1.getMyCount() + i4.getMyCount());",
             "answer": "8",
             "explanation": "four Items created -> static count=4; i1.getMyCount() and i4.getMyCount() both read the same LIVE count = 4; 4+4=8"
           }
