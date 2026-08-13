@@ -16,1101 +16,826 @@ export const subjects = [
         "questions": [
           {
             "id": 1,
-            "question": "According to the text, which of the following is NOT one of the three major phenomena resulting from the rapid diffusion of ICTs?",
+            "question": "Which of the following best defines an \"Enterprise\"?",
             "options": [
-              "The exponential decrease in the cost of maintaining legacy systems.",
-              "The transformation of people's everyday life and dependence on ICTs.",
-              "An exponential increase in the wealth of knowledge, information, and data.",
-              "The pervasion of ICTs in all sectors for social and economic development."
-            ],
-            "answer": 0
-          },
-          {
-            "id": 2,
-            "question": "It is estimated that what percentage of the data stored worldwide has been generated in the last two years?",
-            "options": [
-              "50%",
-              "75%",
-              "90%",
-              "99%"
+              "An organization that only exists in the private sector.",
+              "A single software system used to manage corporate data.",
+              "An organization or sub-activity whose boundary is defined by commonly-held goals, processes, and resources.",
+              "A strict set of technology standards for network infrastructure."
             ],
             "answer": 2
           },
           {
-            "id": 3,
-            "question": "A large corporation realizes its mission-critical information is consistently out-of-date, and there is immense distrust between the business and technology sides of the organization. What do these issues represent?",
+            "id": 2,
+            "question": "What is the definition of \"Enterprise Architecture\" (EA)?",
             "options": [
-              "The successful implementation of an EA framework.",
-              "Major operational problems existing in many large organizations today.",
-              "The direct result of platform-as-a-service vendors.",
-              "The desired future state of the enterprise."
+              "The process of coding software for enterprise-level deployment.",
+              "The analysis and documentation of an enterprise in its current and future states from an integrated strategy, business, and technology perspective.",
+              "A strictly technology-driven process for upgrading IT systems.",
+              "The physical blueprint for constructing an organization's headquarters."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the equation \"EA = S + B + T\" stand for?",
+            "options": [
+              "Enterprise Architecture = Systems + Budgets + Timelines",
+              "Enterprise Architecture = Strategy + Business + Technology",
+              "Enterprise Architecture = Security + Baselines + Tools",
+              "Enterprise Architecture = Standards + Business + Tactics"
             ],
             "answer": 1
           },
           {
             "id": 4,
-            "question": "How does the text define a \"project\" in the context of an enterprise?",
+            "question": "In the context of the EA management program, what is \"Governance\"?",
             "options": [
-              "A permanent organizational structure.",
-              "A special organization that exists for the period of its implementation.",
-              "A strictly outsourced business operation.",
-              "A technological upgrade to existing infrastructure."
+              "The physical servers that run the enterprise.",
+              "The specific steps used to establish the EA program.",
+              "The planning, decision-making, and oversight processes and groups that determine how the EA is developed and maintained.",
+              "The documentation of the \"as-is\" state of the organization."
+            ],
+            "answer": 2
+          },
+          {
+            "id": 5,
+            "question": "Which core element of EA identifies the specific steps to establish and maintain an EA program?",
+            "options": [
+              "Artifacts",
+              "Methodology",
+              "Framework",
+              "Standards"
             ],
             "answer": 1
           },
           {
-            "id": 5,
-            "question": "Which of the following is considered an \"enterprise\"?",
-            "options": [
-              "A private sector company.",
-              "A government ministry.",
-              "A multinational joint venture.",
-              "All of the above."
-            ],
-            "answer": 3
-          },
-          {
             "id": 6,
-            "question": "The most important aspect of the term \"enterprise\" is that it includes multifaceted socio-technical structures comprising:",
+            "question": "What is the purpose of an EA \"Framework\"?",
             "options": [
-              "Hardware, software, networks, and data.",
-              "People, information, processes, and technologies.",
-              "Executives, managers, staff, and contractors.",
-              "Budgets, schedules, scopes, and risks."
+              "It provides the physical boundaries of the office network.",
+              "It identifies the scope of the overall architecture and the type and relationship of the various sub-architecture levels and threads.",
+              "It stores the financial data of the enterprise.",
+              "It acts as the legal governing body of the organization."
             ],
             "answer": 1
           },
           {
             "id": 7,
-            "question": "In general, what is the primary purpose of enterprise architecture?",
+            "question": "In EA, what are \"Artifacts\"?",
             "options": [
-              "To replace all human resources with automated technologies.",
-              "To design the most elegant technological infrastructure possible.",
-              "The greater alignment between ICT and business concerns, linking strategy formulation to execution.",
-              "To strictly enforce technical coding standards among software developers."
+              "Outdated technology components no longer in use.",
+              "Physical hardware used in network infrastructure.",
+              "The types and methods of documentation used in each sub-architecture area, such as documents, diagrams, and models.",
+              "The employees who manage the EA repository."
             ],
             "answer": 2
           },
           {
             "id": 8,
-            "question": "An enterprise architect is entrusted with assessing and recommending changes that typically include all of the following EXCEPT:",
+            "question": "Which core element identifies proven ways to implement parts of the overall architecture?",
             "options": [
-              "Innovations in the structure or processes of an organization.",
-              "Integration and/or standardization of business processes.",
-              "Decreasing the overall salaries of the human resources department.",
-              "Improving the quality and timeliness of business information."
+              "Best Practices",
+              "Standards",
+              "Governance",
+              "Framework"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "id": 9,
-            "question": "A company is struggling to manage its complex IT environment and make accurate IT investment decisions. How can Enterprise Architecture benefit them?",
+            "question": "How does EA provide \"Strategic Alignment\"?",
             "options": [
-              "By entirely outsourcing their IT department.",
-              "By providing a tool for the assessment of benefits, impacts, and supporting analyses of alternatives and risks.",
-              "By eliminating the need for business processes.",
-              "By allowing the IT department to dictate business strategy."
+              "By ensuring all employees work the same hours.",
+              "By connecting goals, activities, and resources, maximizing efficiency and effectiveness.",
+              "By eliminating all outdated technologies instantly.",
+              "By allowing technology to drive business planning."
             ],
             "answer": 1
           },
           {
             "id": 10,
-            "question": "Which of the following is a benefit of Enterprise Architecture regarding legacy systems?",
+            "question": "Which management program element supports financial control and configuration management?",
             "options": [
-              "It permanently maintains all legacy systems to preserve history.",
-              "It expedites the integration of legacy, migration, and new systems.",
-              "It instantly deletes legacy data to clear server space.",
-              "It prevents the organization from migrating off legacy systems."
+              "Resource Oversight",
+              "Strategic Alignment",
+              "Standardized Policy",
+              "Decision Support"
             ],
-            "answer": 1
+            "answer": 3
           },
           {
             "id": 11,
-            "question": "A government official uses EA to look at their duties from a macro point of view rather than just a micro/process level. Why is this beneficial?",
+            "question": "What is the \"Current Architecture\"?",
             "options": [
-              "It helps them redefine their duties efficiently according to adopted government policies and strategies.",
-              "It allows them to ignore technical IT constraints.",
-              "It guarantees they will receive a larger budget next quarter.",
-              "It proves that government processes do not need technology."
+              "The planned capabilities of the enterprise in five years.",
+              "The \"to-be\" view of the architecture.",
+              "The baseline inventory of EA components that currently exist within the enterprise at each level of the framework (the \"as-is\" view).",
+              "Only the physical hardware currently in use."
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "id": 12,
-            "question": "When identifying the purpose of EA, what is the FIRST step according to the lecture note?",
+            "question": "What does the \"Future Architecture\" document?",
             "options": [
-              "Document the desired future state.",
-              "Construct a transition plan.",
-              "Identify the current state of how ICT is being used and the business value it provides.",
-              "Document the \"gap\"."
+              "The history of the company's technology failures.",
+              "Only the emerging technologies that have not yet been invented.",
+              "The new or modified EA components needed to close an existing performance gap or support a new strategic initiative (the \"to-be\" view).",
+              "The current operating state of the enterprise."
             ],
             "answer": 2
           },
           {
             "id": 13,
-            "question": "In the EA process, what does documenting the \"gap\" refer to?",
+            "question": "What is the purpose of the \"EA Management Plan\"?",
             "options": [
-              "The physical distance between the IT department and the business executives.",
-              "The difference between the budget requested and the budget approved.",
-              "The difference between where the organization is heading (business as usual) and where it would like to be (desired future state).",
-              "The time it takes to implement a new software system."
+              "To hire new IT staff.",
+              "To articulate the EA program and documentation approach, and provide a sequencing plan for managing the transition to the future environment.",
+              "To define the legal structure of the enterprise.",
+              "To strictly monitor employee internet usage."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 14,
-            "question": "An EA initiative fails because the lead architect, despite being highly technical, lacks enthusiasm, communication skills, and strategic thinking. Which pitfall does this represent?",
+            "question": "Which of the following is considered a \"Thread\" in EA documentation?",
             "options": [
-              "Not engaging the business people",
-              "Architecting the \"Boxes\" Only",
-              "The Wrong Lead Architect",
-              "Doing Current-State EA First"
+              "Marketing",
+              "IT-related security",
+              "Facilities management",
+              "Financial auditing"
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 15,
-            "question": "The EA team spends months perfecting a model of how the business currently operates, but loses sight of the company's future vision. Which pitfall did they fall into?",
+            "question": "What is a \"Line of Business\" (LOB)?",
             "options": [
-              "Doing Current-State EA First",
-              "The EA Group Does Most of the Architecting",
-              "Not Measuring the Impact",
-              "Doing Only Technical Domain-Level Architecture"
+              "A single software application.",
+              "A distinct area of activity within the enterprise, such as manufacturing or internal administrative functions.",
+              "The direct reporting line from staff to CEO.",
+              "A strictly external supply chain."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 16,
+            "question": "What defines an \"Architecture Segment\"?",
+            "options": [
+              "A part of the overall EA that documents one or more lines of business at all levels and threads, capable of existing as a stand-alone part.",
+              "A fragment of a broken database.",
+              "A specific time period during which the EA is active.",
+              "A single server rack in the data center."
             ],
             "answer": 0
           },
           {
-            "id": 16,
-            "question": "\"The key is to 'sell' first and architect later\" is a strategy to combat which EA pitfall?",
-            "options": [
-              "The Wrong Lead Architect",
-              "Insufficient Stakeholder Understanding and Support",
-              "Architecting the \"Boxes\" Only",
-              "Not Establishing Effective EA Governance Early"
-            ],
-            "answer": 1
-          },
-          {
             "id": 17,
-            "question": "The IT department works in a \"silo\" and tries to develop an architecture without involving the senior staff members managing the business operations. Which pitfall is this?",
+            "question": "What is a \"Vertical Component\"?",
             "options": [
-              "Doing Only Technical Domain-Level Architecture",
-              "Not Engaging the Business People",
-              "Not Spending Enough Time on Communications",
-              "The EA Group Does Most of the Architecting"
+              "A goal, process, program, or resource that serves several lines of business.",
+              "A hierarchical organizational chart.",
+              "A changeable goal, process, program, or resource that serves exactly one line of business.",
+              "A system that only operates in the cloud."
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "id": 18,
-            "question": "An EA team focuses entirely on software, servers, and networks, completely ignoring business, information, and solutions architecture. This is an example of:",
+            "question": "What is a \"Horizontal (Crosscutting) Component\"?",
             "options": [
-              "Architecting the \"Boxes\" only",
-              "Not engaging the business people",
-              "Doing only technical domain-level architecture",
-              "Doing current-state EA first"
+              "A component that serves only one specific department.",
+              "A changeable goal, process, program, or resource that serves several lines of business.",
+              "The physical floor plan of the enterprise.",
+              "A technology that has been decommissioned."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 19,
-            "question": "What should the primary job of enterprise architects be, rather than imposing EA content on the organization?",
+            "question": "What is a \"Reference Architecture\"?",
             "options": [
-              "To write all the code for new applications.",
-              "To fire non-compliant stakeholders.",
-              "To lead the EA process and form virtual teams to create content and seek consensus.",
-              "To only measure the financial impact of IT."
+              "A dictionary of business terms.",
+              "The part of an EA that provides standards and documentation for a particular type of capability throughout the enterprise (e.g., cloud computing).",
+              "A list of competitors' architectures.",
+              "A textbook used to train new architects."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 20,
-            "question": "An EA program successfully streamlines operations and saves the company $1 million, but the EA team never reports this to the rest of the company. As a result, executives view the EA team as a cost center and cut their budget. What pitfall occurred?",
+            "question": "What is the main function of the \"EA Repository\"?",
             "options": [
-              "Not Establishing Effective EA Governance Early",
-              "Not Measuring and Not Communicating the Impact",
-              "Not Spending Enough Time on Communications",
-              "The Wrong Lead Architect"
+              "To securely destroy old data.",
+              "To act as a website and database that stores EA documentation and provides links to EA tools to make them useable by stakeholders.",
+              "To automatically write code for new applications.",
+              "To manage the company's financial accounts."
             ],
             "answer": 1
           },
           {
             "id": 21,
-            "question": "According to Pitfall 8 (\"Architecting the 'Boxes' Only\"), what is a high priority that must account for more than just technical architecture?",
+            "question": "Why is EA considered a \"Meta-Discipline\"?",
             "options": [
-              "Integration and interoperability standards (the links between the boxes).",
-              "Server rack placement.",
-              "Buying the most expensive software.",
-              "Hiring more programmers."
+              "Because it only deals with metadata.",
+              "Because it is purely theoretical and has no practical application.",
+              "Because it serves as an umbrella or \"meta-context\" for all other management and technology best practices.",
+              "Because it was invented by a company named Meta."
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "id": 22,
-            "question": "What is \"Enterprise Architecture Governance\"?",
+            "question": "Which area is NOT typically listed as a thread present across all levels of the EA3 framework?",
             "options": [
-              "The legal department of the IT team.",
-              "The structure by which an enterprise defines appropriate strategies and ensures development alignment with those strategies.",
-              "The process of auditing employee internet usage.",
-              "A software tool for managing network traffic."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 23,
-            "question": "An EA team is fully funded but struggles to gain traction because the general employee base has no idea what EA is or why it matters. The team failed to execute an education and PR plan. Which pitfall is this?",
-            "options": [
-              "Insufficient Stakeholder Understanding",
-              "Not Spending Enough Time on Communications",
-              "Not Engaging the Business People",
-              "The Wrong Lead Architect"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 24,
-            "question": "According to R. Scot Bittler of Gartner, the key for enterprise architects is to create:",
-            "options": [
-              "The most perfect architecture for the moment.",
-              "The most elegant architecture for the moment.",
-              "The cheapest architecture possible.",
-              "The most adaptable architecture for the future."
+              "Security",
+              "Standards",
+              "Skills",
+              "Sales"
             ],
             "answer": 3
           },
           {
-            "id": 25,
-            "question": "The enterprise architecture team requires people with expertise in three categories. Which of the following is NOT one of those three?",
+            "id": 23,
+            "question": "Under the EA Management Program, what does \"Resource Oversight\" provide?",
             "options": [
-              "Technology (Infrastructure, tools, applications)",
-              "Enterprise (Business and data)",
-              "Marketing (Sales, advertising, PR)",
-              "Policies (Integration and security)"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 26,
-            "question": "According to the lecture note, the expertise and skills for EA will be shared by three categories of people on the team. Which of these is one of those categories?",
-            "options": [
-              "Business leaders",
-              "Graphic designers",
-              "Outside auditors",
-              "Custodial staff"
+              "A lifecycle approach to development/management.",
+              "A way to bypass IT security.",
+              "Financial audits of the CEO.",
+              "Marketing strategies."
             ],
             "answer": 0
           },
           {
-            "id": 27,
-            "question": "How does Gartner define Enterprise Architecture?",
+            "id": 24,
+            "question": "How does EA handle \"Standards\"?",
             "options": [
-              "A technology implementation protocol for hardware.",
-              "A discipline for proactively and holistically leading enterprise responses to disruptive forces by identifying and analyzing the execution of change toward desired business vision and outcomes.",
-              "A financial accounting method for IT depreciation.",
-              "A strict set of rules for employee desktop configurations."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 28,
-            "question": "A business executive wants to start an EA program solely to catalog the company's existing computers and servers. Based on the reading, is this a correct understanding of EA?",
-            "options": [
-              "Yes, EA is strictly an IT asset inventory tool.",
-              "No, EA is a holistic approach considering business, information, process, and technology changes to execute enterprise strategy.",
-              "Yes, but only if they also include software licenses.",
-              "No, EA only deals with future state architecture, never current assets."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 29,
-            "question": "What is a primary reason the chances of obtaining real value from ICT systems have dramatically decreased?",
-            "options": [
-              "Technology has become too cheap.",
-              "The cost and complexity of ICT systems have increased exponentially.",
-              "Employees refuse to use computers.",
-              "There is a lack of available data."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 30,
-            "question": "Which organization cited the statistic about 90% of the world's data being generated in the last two years in their 2013 report?",
-            "options": [
-              "Gartner",
-              "UNDP",
-              "SINTEF",
-              "IBM"
+              "It ignores external standards to focus on internal ones.",
+              "It relies solely on proprietary vendor solutions.",
+              "It draws on accepted international, national, and industry standards to promote non-proprietary solutions and enhance component integration.",
+              "It assumes standards are only relevant to the technology level."
             ],
             "answer": 2
           },
           {
-            "id": 31,
-            "question": "Which of the following is a concern that enterprise architects have to deal with regarding \"Revitalizing the skills base\"?",
+            "id": 25,
+            "question": "Which is an example of a Horizontal (Crosscutting) Component?",
             "options": [
-              "Trimming existing project costs.",
-              "Finding new approaches to outsourcing.",
-              "The growing trend of applying smart technologies requiring advanced technical skills.",
-              "Cutting the budget by 50 percent."
+              "A specialized robotic arm for one manufacturing line.",
+              "An enterprise-wide email system.",
+              "A localized sales database for a single store.",
+              "A custom marketing strategy for a specific product."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 26,
+            "question": "What is the definition of \"Culture\" in an enterprise context?",
+            "options": [
+              "The financial standing of the organization.",
+              "The beliefs, customs, values, structure, normative rules, and material traits of a social organization.",
+              "The specific software programs used by HR.",
+              "The physical architecture of the office building."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 27,
+            "question": "How is a \"Stakeholder\" defined in the EA program?",
+            "options": [
+              "Only the executives who fund the project.",
+              "Only the IT staff who implement the technology.",
+              "Everyone who is or will be affected by a policy, program, project, activity, or resource.",
+              "External customers only."
+            ],
+            "answer": 2
+          },
+          {
+            "id": 28,
+            "question": "According to the Leavitt Diamond, what are the four interacting components of an organization?",
+            "options": [
+              "Task, Structure, People, Technology",
+              "Time, Space, Money, Power",
+              "Teams, Strategy, Products, Tactics",
+              "Task, Security, Policy, Tools"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 29,
+            "question": "In the Parsons/Thompson Model, what is the \"Institutional Level\"?",
+            "options": [
+              "Where the actual \"product\" of the organization is processed.",
+              "Where mediation between the organization and the task environment occurs.",
+              "Where the organization establishes rules and relates to the larger society to secure legitimacy, meaning, and higher-level support.",
+              "Where independent workers form external networks."
+            ],
+            "answer": 2
+          },
+          {
+            "id": 30,
+            "question": "In the Parsons/Thompson Model, what is the function of the \"Managerial Level\"?",
+            "options": [
+              "Processing the actual product of the organization.",
+              "Mediating between the organization and the immediate task environment, administering internal affairs, and handling resources/products.",
+              "Interacting exclusively with society for higher-level meaning.",
+              "Writing software code for the technical level."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 31,
+            "question": "In the Parsons/Thompson Model, what characterizes the \"Technical Level\"?",
+            "options": [
+              "It is where the organization establishes its overarching rules.",
+              "It is a highly political and unformalized area.",
+              "It is where the actual \"product\" is processed, acting \"rationally\" and trying to seal off functions from external uncertainties.",
+              "It strictly handles public relations."
             ],
             "answer": 2
           },
           {
             "id": 32,
-            "question": "Doing more with less is a concern for EA because continuous economic concerns have led companies to cut budgets by 50% or more. This cut must be done without:",
+            "question": "What is the definition of \"Change Management\"?",
             "options": [
-              "Using any open-source software.",
-              "Jeopardizing operations and quality of work.",
-              "Informing the stakeholders.",
-              "Changing any legacy systems."
+              "The automated process of updating software versions.",
+              "The process of setting expectations and involving stakeholders in how a process/activity will change, so they have some control and are more accepting.",
+              "Randomly altering business processes to see what works best.",
+              "Firing employees who resist new technology."
             ],
             "answer": 1
           },
           {
             "id": 33,
-            "question": "What represents the \"transition plan\" in the purpose of Enterprise Architecture?",
+            "question": "Why is the \"Home Architecture Analogy\" relevant to enterprise structure and culture?",
             "options": [
-              "The gap between the two future states.",
-              "The documentation of the current state.",
-              "A list of projects and initiatives to put the ICT infrastructure back on track towards the desired future state.",
-              "The decision to outsource IT to a software-as-a-service vendor."
+              "It proves that businesses should be run from home.",
+              "It shows that an architect must understand the composition, preferences, and activities of the occupants (people) to produce an effective design.",
+              "It implies that building a house is cheaper than building an EA.",
+              "It suggests that IT infrastructure should look like a residential building."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 34,
-            "question": "What is the main concept of Enterprise Architecture as presented in Lecture Note 1?",
+            "question": "According to the text, what happens if an EA program introduces changes without giving stakeholders some level of control?",
             "options": [
-              "It is a technology-driven activity that replaces management.",
-              "It is a strategy and business-driven activity that supports management planning and decision-making.",
-              "It is a process-centric approach to eliminate all hardware.",
-              "It is solely a financial audit mechanism."
+              "The changes are implemented twice as fast.",
+              "The EA program may be resisted by stakeholders.",
+              "The stakeholders will automatically support the EA.",
+              "The technology will fail to run."
             ],
             "answer": 1
           },
           {
             "id": 35,
-            "question": "How is \"Enterprise\" defined in Lecture Note 1?",
+            "question": "Which of the following is a way to successfully manage change and increase stakeholder control?",
             "options": [
-              "A strictly for-profit business entity.",
-              "An organization or sub-activity whose boundary is defined by commonly-held goals, processes, and resources.",
-              "A supply chain consisting of at least 5 different organizations.",
-              "Any group of people working together in an office."
+              "Keeping EA plans a secret until launch.",
+              "Involving stakeholders in EA program establishment and regularly communicating activities.",
+              "Excluding user input from decision-making.",
+              "Overpromising what the EA program can accomplish."
             ],
             "answer": 1
           },
           {
             "id": 36,
-            "question": "What is the \"sound bite\" equation that represents what EA is all about?",
+            "question": "Enterprise Architecture is as much about people and social interaction as it is about:",
             "options": [
-              "EA = HR + IT + Finance",
-              "EA = Strategy + Business + Technology (EA = S + B + T)",
-              "EA = Systems + Boxes + Tools",
-              "EA = Scope + Budget + Timeline"
+              "Marketing and sales.",
+              "Processes and resource utilization.",
+              "Legal compliance and taxation.",
+              "Hardware manufacturing."
             ],
             "answer": 1
           },
           {
             "id": 37,
-            "question": "A home builder decides to build a house one room at a time without blueprints for the whole house. How does this analogy apply to an enterprise?",
+            "question": "How does the presence of an EA program affect organizational change?",
             "options": [
-              "It represents the Agile software development method.",
-              "It represents a highly efficient way to manage resources.",
-              "It is analogous to developing organizations/systems without an enterprise-wide architecture, leading to duplication and inefficiency.",
-              "It shows that EA is completely unnecessary for small businesses."
+              "It completely stops change from occurring.",
+              "It causes change to happen in a disjointed, independent manner.",
+              "It coordinates change so it is driven by new strategies and business requirements, rather than just new technologies.",
+              "It ensures change is only driven by IT departments."
             ],
             "answer": 2
           },
           {
             "id": 38,
-            "question": "Which of the following is NOT one of the eight Major Areas of Integrated Governance?",
+            "question": "When matching the EA3 Cube Framework to the Parsons/Thompson Model, the \"Goals & Initiatives\" level generally aligns with which Parsons/Thompson level?",
             "options": [
-              "Strategic Planning",
-              "Capital Investment Planning",
-              "Marketing and Advertising",
-              "Knowledge Management"
+              "Technical Level",
+              "Managerial Level",
+              "Institutional Level",
+              "Independent Worker"
             ],
             "answer": 2
           },
           {
             "id": 39,
-            "question": "Why is Enterprise Architecture considered a \"Meta-Discipline\"?",
+            "question": "In the Organizational Network Model, what connects the Executive Team to the Functional Teams?",
             "options": [
-              "Because it focuses strictly on metadata.",
-              "Because it serves as an umbrella or \"meta-context\" for all other management and technology best practices.",
-              "Because it was invented by the company Meta (Facebook).",
-              "Because it is a theoretical concept that cannot be implemented."
+              "Physical network cables.",
+              "Lines of communication and organizational structure within the Organizational Boundary.",
+              "External suppliers.",
+              "The Technical Level only."
             ],
             "answer": 1
           },
           {
             "id": 40,
-            "question": "Which of the following sits at the \"Strategic Level\" within the EA Meta-Discipline diagram?",
+            "question": "Why do enterprise cultures differ even within the same organization (sub-enterprises)?",
             "options": [
-              "Six Sigma",
-              "Balanced Scorecard",
-              "ITIL",
-              "Cloud Computing"
+              "Because they use different computers.",
+              "Because culture is an amalgamation of the distinct values, beliefs, habits, and preferences of all people in that specific area.",
+              "Because IT policies enforce different cultures.",
+              "Because stakeholders do not exist in sub-enterprises."
             ],
             "answer": 1
           },
           {
             "id": 41,
-            "question": "How many \"Core Elements\" make up the Enterprise Architecture Approach?",
+            "question": "In the Leavitt Diamond, if the \"Technology\" component is changed, what is the expected result?",
             "options": [
-              "4",
-              "5",
-              "6",
-              "7"
+              "No other components will be affected.",
+              "Only the \"Structure\" will change.",
+              "The Task, Structure, and People components will also be affected.",
+              "The enterprise will automatically fail."
             ],
             "answer": 2
           },
           {
             "id": 42,
-            "question": "Which core element identifies the planning, decision-making, and oversight processes that determine how the EA is developed and maintained?",
+            "question": "Which field is considered a contributing field to the \"Organizational Theory\" influence on EA?",
             "options": [
-              "Framework",
-              "Methodology",
-              "Governance",
-              "Artifacts"
+              "Computer Science",
+              "Engineering",
+              "Sociology",
+              "Information Security"
             ],
             "answer": 2
           },
           {
             "id": 43,
-            "question": "Which core element identifies the scope of the overall architecture and the type/relationship of various sub-architecture levels?",
+            "question": "Which field is considered a contributing field to the \"Systems Theory\" influence on EA?",
             "options": [
-              "Standards",
-              "Framework",
-              "Best Practices",
-              "Artifacts"
+              "Psychology",
+              "Operations Research",
+              "Political Science",
+              "Sociology"
             ],
             "answer": 1
           },
           {
             "id": 44,
-            "question": "What do \"Artifacts\" refer to in the context of the EA Approach?",
+            "question": "What defines an \"Organization\" versus an \"Enterprise\" in the context of the EA3 framework alignment?",
             "options": [
-              "Ancient technological hardware kept for historical purposes.",
-              "The types and methods of documentation used in each sub-architecture area (e.g., models, diagrams, plans).",
-              "The specific software brands chosen by the enterprise.",
-              "The employees who have worked at the company for over 10 years."
+              "Organizations only involve technology.",
+              "Enterprises are types of social organizations where concepts of organizational theory are applicable.",
+              "Organizations have no stakeholders.",
+              "Enterprises do not have a culture."
             ],
             "answer": 1
           },
           {
             "id": 45,
-            "question": "As a management program, EA provides all of the following EXCEPT:",
+            "question": "Which of the following is NOT one of the contributing concepts from Organizational Theory to EA?",
             "options": [
-              "Strategic Alignment",
-              "Standardized Policy",
-              "Micro-management of employee daily tasks",
-              "Resource Oversight"
+              "Beliefs",
+              "Culture",
+              "Systems Lifecycle Development",
+              "Bureaucracy"
             ],
             "answer": 2
           },
           {
             "id": 46,
-            "question": "An enterprise wants to ensure that a newly proposed multi-million dollar software project actually supports the company's long-term business goals. Which function of the EA Management Program provides this?",
+            "question": "In the Parsons/Thompson model, which level tries to \"seal off\" its functions from external uncertainties?",
             "options": [
-              "Strategic Alignment",
-              "Resource Oversight",
-              "Standardized Policy",
-              "Configuration Management"
-            ],
-            "answer": 0
-          },
-          {
-            "id": 47,
-            "question": "According to the \"Standardized Policy\" slide, policy documents are categorized hierarchically. Which of the following is an example of \"detailed process guidance\"?",
-            "options": [
-              "High-level directives",
-              "Memos",
-              "Standard Operating Procedures (SOPs)",
-              "Program manuals"
+              "Institutional",
+              "Managerial",
+              "Technical",
+              "Executive"
             ],
             "answer": 2
           },
           {
-            "id": 48,
-            "question": "In providing \"Decision Support\" at the staff level, EA supports decisions regarding:",
+            "id": 47,
+            "question": "Managing stakeholder expectations involves:",
             "options": [
-              "Large IT initiative visibility for executives.",
-              "Operations, maintenance, and development of IT resources and services.",
-              "Setting the enterprise's overarching strategic direction.",
-              "Global marketing campaigns."
+              "Telling them the EA will fix every problem immediately.",
+              "Ensuring they understand realistically what the EA program can and cannot do.",
+              "Forcing them to read the entire EA framework manual.",
+              "Ignoring their concerns to maintain project speed."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 48,
+            "question": "What is the ultimate risk of ignoring the culture and structure of an enterprise when building an EA?",
+            "options": [
+              "The EA software will crash.",
+              "The EA will not accurately reflect organizational goals or gain stakeholder support.",
+              "The EA will be completed too quickly.",
+              "The enterprise will be forced to change its name."
             ],
             "answer": 1
           },
           {
             "id": 49,
-            "question": "The EA Analysis and Design Method uses how many basic elements?",
+            "question": "An EA program acts as a bridge between different stakeholders, such as:",
             "options": [
-              "3",
-              "4",
-              "6",
-              "8"
+              "Only internal employees.",
+              "Business units, IT teams, and executives.",
+              "Only the CEO and the Chief Architect.",
+              "Only external customers and vendors."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 50,
-            "question": "What is the Highest Level & View in the EA3 Cube Framework?",
+            "question": "What is a key characteristic of the Managerial level in organizational structure?",
             "options": [
-              "Data & Information",
-              "Networks & Infrastructure",
-              "Goals & Initiatives",
-              "Systems & Applications"
+              "It strictly deals with raw material input.",
+              "It is less formalized and more political as it mediates between the organization and the task environment.",
+              "It establishes the highest level of societal rules.",
+              "It is completely isolated from all external forces."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 51,
-            "question": "What is the Lowest Level & View in the EA3 Cube Framework?",
+            "question": "What is the primary overall value of Enterprise Architecture?",
             "options": [
-              "Products & Services",
-              "Systems & Applications",
-              "Data & Information",
-              "Networks & Infrastructure"
+              "It guarantees an immediate increase in stock price.",
+              "It enhances resource-planning capabilities and supports better decision-making.",
+              "It eliminates the need for human workers.",
+              "It allows the enterprise to operate without a budget."
             ],
-            "answer": 3
+            "answer": 1
           },
           {
             "id": 52,
-            "question": "In the EA3 Cube, what is a \"Segment\"?",
+            "question": "Which of the following is considered a Financial Risk associated with implementing an EA?",
             "options": [
-              "A completely outsourced business function.",
-              "A single software application.",
-              "Vertical sub-areas of the enterprise with distinct business activities and resources (e.g., documenting one or more LOBs at all levels).",
-              "A horizontal thread that crosses all lines of business."
+              "The EA tools are too difficult to use.",
+              "Stakeholders refuse to participate in the EA process.",
+              "The significant cost of establishing current/future views, plans, and regular updates.",
+              "The enterprise's strategic goals are too vague."
             ],
             "answer": 2
           },
           {
             "id": 53,
-            "question": "What does LOB stand for in Enterprise Architecture?",
+            "question": "How does EA enhance \"Top-down planning\"?",
             "options": [
-              "Level of Baseline",
-              "Line of Business",
-              "List of Benefits",
-              "Logic of Business"
+              "By starting with technology upgrades first.",
+              "By beginning with considerations for strategy and business, enhanced by holistic perspectives of the enterprise.",
+              "By eliminating the need for executive input.",
+              "By allowing individual programs to plan independently."
             ],
             "answer": 1
           },
           {
             "id": 54,
-            "question": "An email system or an administrative support system that serves the whole enterprise is an example of a:",
+            "question": "How does EA enhance \"Bottom-up planning\"?",
             "options": [
-              "Vertical component",
-              "Horizontal (Crosscutting) component",
-              "Sub-architecture",
-              "Strategic Goal"
+              "It coordinates what would otherwise be disparate and separate program-level planning activities.",
+              "It forces lower-level employees to create the strategic vision.",
+              "It ignores LOB requirements in favor of executive mandates.",
+              "It mandates the use of legacy systems."
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "id": 55,
-            "question": "The manufacturing division of a company uses a specific robot assembly machine that no other division uses. In the EA framework, this machine is a:",
+            "question": "Which of the following is a risk defined as \"Loss of Key Personnel\"?",
             "options": [
-              "Horizontal component",
-              "Vertical component",
-              "Strategic Initiative",
-              "Data component"
+              "Losing executives who do not understand EA.",
+              "The departure of skilled architects, analysts, and developers, creating delays and affecting implementation costs.",
+              "Firing employees who resist change.",
+              "The retirement of the company founder."
             ],
             "answer": 1
           },
           {
             "id": 56,
-            "question": "What does the \"Current Architecture\" view serve to create?",
+            "question": "What is the risk associated with \"Lack of Acceptance\"?",
             "options": [
-              "A 'baseline' inventory of current resources and activities.",
-              "The future operating state of the business.",
-              "The marketing plan for next year.",
-              "The financial budget for the upcoming decade."
+              "The EA tools are incompatible with current hardware.",
+              "The EA represents a new way of looking at resources that stakeholders may reject, preventing the realization of value.",
+              "The budget is not approved by the finance department.",
+              "The strategic goals are not accepted by the public."
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "id": 57,
-            "question": "What document articulates the EA program approach, provides current/future views, and contains a sequencing plan for managing the transition?",
+            "question": "What is \"Risk Mitigation\" in the context of an EA program?",
             "options": [
-              "The Employee Handbook",
-              "The IT Security Policy",
-              "The EA Management Plan",
-              "The Business Continuity Plan"
+              "Ignoring uncertainties until they become problems.",
+              "Actions that lower uncertainty, such as strengthening executive support, ensuring trained backups, and using detailed methodologies.",
+              "Eliminating all technology from the enterprise to prevent cyber attacks.",
+              "Only addressing financial costs."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 58,
-            "question": "EA documentation includes \"threads\" of common activity present in all levels of the framework. What are these three threads?",
+            "question": "How does an EA help quantify value through \"Shortening Planning Cycles\"?",
             "options": [
-              "Hardware, Software, Network",
-              "Security, Standards, Skills",
-              "Planning, Execution, Review",
-              "Cost, Schedule, Scope"
+              "By skipping the planning phase entirely.",
+              "By providing a robust repository of on-line information regarding current and future processes, reducing time spent gathering data separately.",
+              "By limiting the number of people allowed in planning meetings.",
+              "By outsourcing planning to a third party."
             ],
             "answer": 1
           },
           {
             "id": 59,
-            "question": "Why is it important for the EA to draw on accepted international, national, and industry \"Standards\"?",
+            "question": "How does EA contribute to the \"Reduction of Duplicative Resources\"?",
             "options": [
-              "To make the architecture as proprietary and closed as possible.",
-              "To promote the use of non-proprietary solutions, enhancing integration and component switch-out.",
-              "To increase the cost of software development.",
-              "To limit the abilities of the human resource department."
+              "By firing half of the IT staff.",
+              "By aiding the visualization of where current resource value areas overlap, allowing for the elimination of redundant data or systems.",
+              "By buying more servers to handle data overload.",
+              "By isolating business units so they cannot share resources."
             ],
             "answer": 1
           },
           {
             "id": 60,
-            "question": "Under the \"Skills\" thread, what is considered perhaps the greatest resource an enterprise has?",
+            "question": "What is meant by quantifying value through \"Reduced Re-work\"?",
             "options": [
-              "Its data warehouse",
-              "Its server infrastructure",
-              "People",
-              "Financial capital"
+              "Never updating software applications.",
+              "Avoiding conflicting program-level initiatives and misunderstandings through holistic planning and standard modeling techniques.",
+              "Lowering the quality standards of final products.",
+              "Outsourcing all development work."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 61,
-            "question": "What is the difference between a Reference Architecture and a Segment Architecture?",
+            "question": "How does EA quantify value through \"Fewer People in a Process\"?",
             "options": [
-              "They are exactly the same thing.",
-              "Reference focuses on a particular capability (e.g., cloud computing) across the enterprise, while Segment focuses on specific business units (e.g., finance).",
-              "Segment is for IT only, Reference is for Business only.",
-              "Reference is only used for current state, Segment is only used for future state."
+              "By arbitrarily firing employees to meet budget cuts.",
+              "By supporting Business Process Reengineering (BPR) to eliminate repetitive parts of a process, equating to payroll savings.",
+              "By replacing all staff with Artificial Intelligence.",
+              "By making employees work longer hours."
             ],
             "answer": 1
           },
           {
             "id": 62,
-            "question": "Where is EA documentation archived to provide easy access for stakeholders, planning, and decision-making?",
+            "question": "When quantifying EA program costs, which approach is recommended?",
             "options": [
-              "In a locked physical filing cabinet.",
-              "On the lead architect's personal laptop.",
-              "An online EA repository (website and database).",
-              "It is memorized by the EA team and never written down."
+              "Looking only at the initial purchase price of EA software tools.",
+              "Approaching it from a program lifecycle view (implementation, maintenance, and refreshment phases).",
+              "Calculating only the salaries of the IT department.",
+              "Ignoring indirect costs completely."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 63,
-            "question": "What is the name of the example EA repository design provided in the lecture?",
+            "question": "In linking EA and Strategy, what are \"Strategic Goals\"?",
             "options": [
-              "Enterprise Architect Pro",
-              "Living Enterpriseâ„¢",
-              "The Matrix",
-              "SharePoint Architecture"
+              "The business and technology activities that execute the mission.",
+              "The primary objectives of the enterprise, typically requiring several years to accomplish.",
+              "The outcome metrics that identify when a project is finished.",
+              "The daily operational targets of individual workers."
             ],
             "answer": 1
           },
           {
             "id": 64,
-            "question": "According to the Drivers of Architectural Change model, who provides the \"New Direction & Goals\" at the Strategic level?",
+            "question": "In linking EA and Strategy, what are \"Strategic Initiatives\"?",
             "options": [
-              "Management Team",
-              "Support Team",
-              "Leadership Team",
-              "External Consultants"
+              "Outcome measures that define when the enterprise \"wins.\"",
+              "The primary objectives requiring several years to accomplish.",
+              "The business and technology activities, programs, and projects that enable the accomplishment of strategic goals.",
+              "The software applications used by the HR department."
             ],
             "answer": 2
           },
           {
             "id": 65,
-            "question": "In the Drivers of Architectural Change model, what does the Support Team provide at the Tactical level?",
+            "question": "In linking EA and Strategy, what are \"Strategic Measures\"?",
             "options": [
-              "New Direction & Goals",
-              "New Business Priorities",
-              "Emerging Technologies",
-              "Operating Scenarios"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 66,
-            "question": "What does the \"S\" stand for in EA = S + B + T?",
-            "options": [
-              "Systems",
-              "Standards",
-              "Strategy",
-              "Security"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 67,
-            "question": "In the EA3 Cube, what sits between the \"Products & Services\" level and the \"Systems & Applications\" level?",
-            "options": [
-              "Goals & Initiatives",
-              "Data & Information",
-              "Networks & Infrastructure",
-              "Security"
+              "The physical dimensions of the enterprise's facilities.",
+              "Outcome measures that identify when a strategic initiative has successfully met a strategic goal.",
+              "The budget allocated to the EA program.",
+              "The number of employees in a line of business."
             ],
             "answer": 1
           },
           {
-            "id": 68,
-            "question": "Why must enterprise architects understand the role of organizational structure and culture?",
+            "id": 66,
+            "question": "When linking EA and Business Planning, why is it important to document business activities?",
             "options": [
-              "So they can bypass human resources and hire technical staff directly.",
-              "To accurately reflect the true nature of organizational goals, processes, and informal structures that influence the architecture.",
-              "Because IT systems cannot function without a corporate dress code.",
-              "To justify spending more money on technology."
+              "To justify increasing executive bonuses.",
+              "To support Business Process Improvement (BPI) and identify inputs, outputs, outcomes, and links between processes.",
+              "To eliminate the need for technology entirely.",
+              "To find reasons to terminate employees."
+            ],
+            "answer": 1
+          },
+          {
+            "id": 67,
+            "question": "When linking EA and Technology Planning, what is the primary role of technology?",
+            "options": [
+              "To act as the sole catalyst for organizational change.",
+              "To dictate the strategic goals of the enterprise.",
+              "To serve as a resource that enables information and resource flows to support business products/services, which achieve strategic goals.",
+              "To consume as much of the budget as possible."
+            ],
+            "answer": 2
+          },
+          {
+            "id": 68,
+            "question": "Why is \"bottom-up planning\" (technology driving change) considered risky for resource-constrained enterprises?",
+            "options": [
+              "Because technology changes too slowly.",
+              "Because the expense of duplicative, non-strategic technologies cannot be afforded.",
+              "Because it requires hiring too many executives.",
+              "Because strategy is irrelevant in small enterprises."
             ],
             "answer": 1
           },
           {
             "id": 69,
-            "question": "The beliefs, customs, values, structure, normative rules, and material traits of a social organization is the definition of:",
+            "question": "Which of the following is considered a direct cost of an EA program?",
             "options": [
-              "Enterprise Architecture",
-              "Change Management",
-              "Culture",
-              "Stakeholder"
+              "The general electricity bill of the entire company.",
+              "Salary/benefits for a Chief Architect and EA team staff.",
+              "The marketing budget for the enterprise's core product.",
+              "The cost of raw materials for manufacturing."
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "id": 70,
-            "question": "Everyone who is or will be affected by a policy, program, project, activity, or resource is considered a:",
+            "question": "What is a key risk related to \"Documentation Tools\" in EA?",
             "options": [
-              "Shareholder",
-              "Stakeholder",
-              "Developer",
-              "Competitor"
+              "They are too cheap and lack basic functionality.",
+              "They are difficult to use for producing intuitive and informative \"management views\" of detailed EA information.",
+              "They are illegal to use in most countries.",
+              "They automatically delete old data."
             ],
             "answer": 1
           },
           {
             "id": 71,
-            "question": "In the home architecture analogy, why does an architect need to understand the occupants of a home?",
+            "question": "How does EA improve communication?",
             "options": [
-              "To determine their credit score.",
-              "To produce an effective design based on how they use rooms, activity patterns, and storage needs.",
-              "To sell them more expensive building materials.",
-              "To ignore their preferences and build a standardized box."
+              "By creating a common language and standardized approaches across the organization.",
+              "By forcing everyone to learn advanced programming languages.",
+              "By eliminating the need for face-to-face meetings.",
+              "By keeping information restricted to the executive team."
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "id": 72,
-            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, which of the following is a \"Contributing Field\" to Organizational Theory?",
+            "question": "Does EA replace strategic planning or business process improvement?",
             "options": [
-              "Computer Science",
-              "Engineering",
-              "Sociology",
-              "Information Assurance"
+              "Yes, EA completely replaces all other forms of planning.",
+              "Yes, EA makes BPI obsolete.",
+              "No, EA does not replace them, but enhances them by contributing useful, integrated information.",
+              "No, EA has no relationship to strategic planning."
             ],
             "answer": 2
           },
           {
             "id": 73,
-            "question": "In the Leavitt Diamond model, the four components are Task, Structure, People, and:",
+            "question": "What role does an alternatives analysis, cost-benefit analysis, and ROI calculation play in an EA program?",
             "options": [
-              "Money",
-              "Technology",
-              "Culture",
-              "Environment"
+              "They are used to punish failed projects.",
+              "They are the primary measures for evaluating the EA program's contribution to profitability/mission success (building a business case).",
+              "They are only used when closing a business down.",
+              "They are strictly required for IT security purposes."
             ],
             "answer": 1
           },
           {
             "id": 74,
-            "question": "What is Leavitt's primary argument regarding his Diamond model?",
+            "question": "How does EA help with \"More Effective Planning Meetings\"?",
             "options": [
-              "Technology is the only component that matters for success.",
-              "A change in any one of the four components will have an effect on the others.",
-              "People and Tasks have no relation to Structure.",
-              "Organizational success is impossible to achieve."
+              "By providing catered food for the attendees.",
+              "By allowing meetings to be conducted entirely via email.",
+              "By presenting a common baseline of reference information, reducing ambiguity.",
+              "By eliminating the need to have an agenda."
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "id": 75,
-            "question": "In the Parsons/Thompson Model of organizational structure, which level is where the organization establishes rules and relates to the larger society to secure legitimacy?",
+            "question": "What is a key step in identifying supporting technologies through EA?",
             "options": [
-              "Technical Level",
-              "Managerial Level",
-              "Institutional Level",
-              "Independent Level"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 76,
-            "question": "According to the Parsons/Thompson Model, where is the actual \"product\" of an organization processed?",
-            "options": [
-              "Institutional Level",
-              "Managerial Level",
-              "Technical Level",
-              "Executive Level"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 77,
-            "question": "In the Parsons/Thompson Model, the Managerial Level's function involves:",
-            "options": [
-              "Sealing off functions from the outside to protect them from uncertainties.",
-              "A dynamic of mediation where less formalized and more political activities occur.",
-              "Establishing boundaries and securing legitimacy from society.",
-              "Writing software code for internal applications."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 78,
-            "question": "When relating the Parsons/Thompson Model to the EA3 Cube Framework, which levels of the EA3 Cube map directly to the \"Technical Level\"?",
-            "options": [
-              "Goals & Initiatives",
-              "Products & Services and Data & Information",
-              "Systems & Applications and Networks & Infrastructure",
-              "Security and Standards"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 79,
-            "question": "Based on the mapping diagram, the \"Managerial Level\" of the Parsons/Thompson model corresponds to which parts of the EA3 Cube?",
-            "options": [
-              "Goals & Initiatives",
-              "Products & Services and Data & Information",
-              "Networks & Infrastructure",
-              "Security only"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 80,
-            "question": "In the Organizational Network Model, who sits at the center/top communicating directly with Functional Teams and Independent Workers?",
-            "options": [
-              "Functional Team D (External)",
-              "The Executive Team",
-              "The Shareholders",
-              "The Customer"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 81,
-            "question": "According to the Organizational Network Model, can a Functional Team exist outside the primary Organizational Boundary?",
-            "options": [
-              "Yes, the diagram shows a Functional Team (external) outside the boundary.",
-              "No, all teams must be strictly internal.",
-              "Only if they are Independent Workers.",
-              "The model does not address organizational boundaries."
-            ],
-            "answer": 0
-          },
-          {
-            "id": 82,
-            "question": "Why is understanding the culture of an enterprise essential for an enterprise architect?",
-            "options": [
-              "It allows them to enforce a single, global corporate culture on all regional offices.",
-              "It helps develop realistic views of how strategic goals are established, how processes function, and how resources are used.",
-              "Culture dictates which programming language is objectively the best.",
-              "It is legally required by government regulations."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 83,
-            "question": "An EA program is introduced, but employees heavily resist the changes because they feel they have no say in the new processes. What management concept did the EA team fail to implement?",
-            "options": [
-              "Change Management",
-              "Institutional Legitimization",
-              "Technology Upgrades",
-              "The Leavitt Diamond"
-            ],
-            "answer": 0
-          },
-          {
-            "id": 84,
-            "question": "The process of setting expectations and involving stakeholders in how a process or activity will be changed so they have some control and are more accepting of the change is called:",
-            "options": [
-              "Technical Architecture",
-              "Change Management",
-              "Systems Lifecycle Development",
-              "Risk Management"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 85,
-            "question": "What is the effect of an EA program on organizational change?",
-            "options": [
-              "It stops all change from happening.",
-              "It causes change to happen in a disjointed, independent manner.",
-              "It coordinates change so it is driven by new strategies and business requirements, rather than just new technologies.",
-              "It forces change to happen exclusively from the bottom-up."
-            ],
-            "answer": 2
-          },
-          {
-            "id": 86,
-            "question": "How can an EA program successfully manage change and increase stakeholder acceptance?",
-            "options": [
-              "By keeping EA planning secret until launch.",
-              "By forcing stakeholders to accept changes without input.",
-              "By involving stakeholders in the EA program's establishment and allowing input to planning/decision-making.",
-              "By firing anyone who shows resistance to the new architecture."
-            ],
-            "answer": 2
-          },
-          {
-            "id": 87,
-            "question": "In the Leavitt Diamond, if a company completely overhauls its \"Technology\" by introducing AI, what does the model predict will happen?",
-            "options": [
-              "Only the \"Task\" component will be affected.",
-              "The structure, people, and tasks will remain exactly the same.",
-              "The change in technology will have an effect on Task, Structure, and People.",
-              "The company will instantly increase its profit margins."
-            ],
-            "answer": 2
-          },
-          {
-            "id": 88,
-            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, which of the following is considered an \"Emerging Field\"?",
-            "options": [
-              "Information Resources Mgmt",
-              "Psychology",
-              "Political Science",
-              "Business Administration"
-            ],
-            "answer": 0
-          },
-          {
-            "id": 89,
-            "question": "According to the summary of Chapter 2 (Note 2), who actually makes plans and decisions about strategic direction and resource utilization in an enterprise?",
-            "options": [
-              "The IT systems",
-              "The people of the enterprise",
-              "The automated business processes",
-              "The EA software tools"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 90,
-            "question": "A stakeholder is actively resisting the EA program. Based on the notes on managing change, what is a likely reason for this resistance?",
-            "options": [
-              "They feel they have too much control over the changes.",
-              "They feel a loss of input or control over changes in their environment.",
-              "They are overwhelmed by the amount of communication from the EA team.",
-              "The EA program perfectly aligns with their personal goals."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 91,
-            "question": "In the \"Relating Functional Teams to EA Lines of Business\" diagram, where do the Functional Teams map?",
-            "options": [
-              "They map to the IT Infrastructure layer exclusively.",
-              "They map to specific Lines of Business (LOB-1, LOB-2, etc.) in the EA3 Cube.",
-              "They do not map to the EA3 Cube at all.",
-              "They only map to the Executive Team."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 92,
-            "question": "According to the Parsons/Thompson model, which level tries to \"seal off\" its functions from the outside to protect them from external uncertainties?",
-            "options": [
-              "Institutional Level",
-              "Technical Level",
-              "Managerial Level",
-              "Societal Level"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 93,
-            "question": "According to the Parsons/Thompson model, which level is described as \"very open to the environment\"?",
-            "options": [
-              "Technical Level",
-              "Institutional Level",
-              "Managerial Level",
-              "Production Level"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 94,
-            "question": "In the home architecture analogy, which of the following is NOT an example of a factor considered by the architect regarding the \"people aspect\"?",
-            "options": [
-              "How they will use the rooms",
-              "Their activity patterns",
-              "Their storage needs",
-              "The chemical composition of the roof shingles"
-            ],
-            "answer": 3
-          },
-          {
-            "id": 95,
-            "question": "A CEO states that culture is irrelevant to Enterprise Architecture because EA only deals with computer networks. Is this statement supported by the lecture notes?",
-            "options": [
-              "Yes, EA is strictly a technical discipline.",
-              "No, the notes state EA is as much about people, social interaction, and culture as it is about technology.",
-              "Yes, culture only matters in human resources, not in EA.",
-              "No, because EA only deals with financial planning."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 96,
-            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, \"Bureaucracy\" is a contributing concept from which main theory?",
-            "options": [
-              "Systems Theory",
-              "Organizational Theory",
-              "Quantum Theory",
-              "Network Theory"
-            ],
-            "answer": 1
-          },
-          {
-            "id": 97,
-            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, \"Reengineering\" and \"Quality\" are contributing concepts from which main theory?",
-            "options": [
-              "Organizational Theory",
-              "Psychological Theory",
-              "Systems Theory",
-              "Institutional Theory"
-            ],
-            "answer": 2
-          },
-          {
-            "id": 98,
-            "question": "The culture of an enterprise makes every enterprise different. This is because culture is an amalgamation of the values, beliefs, habits, and preferences of:",
-            "options": [
-              "The executive board only.",
-              "The IT department only.",
-              "All of the people throughout the enterprise or sub-enterprise.",
-              "The competitors in the market."
-            ],
-            "answer": 2
-          },
-          {
-            "id": 99,
-            "question": "What will happen to changes within the enterprise if there is NO Enterprise Architecture program in place?",
-            "options": [
-              "No changes will ever occur.",
-              "Changes will happen in a more disjointed or completely independent manner.",
-              "Changes will be perfectly synchronized automatically.",
-              "The enterprise will immediately go bankrupt."
-            ],
-            "answer": 1
-          },
-          {
-            "id": 100,
-            "question": "Managing stakeholder expectations involves being clear about:",
-            "options": [
-              "Which employees will be fired.",
-              "What the EA program can do (and what it cannot do).",
-              "The personal lives of the executive team.",
-              "How to bypass the company firewall."
+              "Buying the most expensive software available.",
+              "Analyzing business requirements and activities to reveal critical dependencies (e.g., marketing needs sales data, manufacturing needs robotics).",
+              "Waiting for vendors to pitch their products.",
+              "Copying the exact technology stack of a competitor."
             ],
             "answer": 1
           }
