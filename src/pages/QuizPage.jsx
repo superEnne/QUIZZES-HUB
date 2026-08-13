@@ -26,7 +26,7 @@ function getGrade(pct) {
 
 /** Normalize a string for loose comparison */
 function normalize(str) {
-  return str.toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+  return str.toLowerCase().replace(/[^a-z0-9.]/g, " ").replace(/\s+/g, " ").trim();
 }
 
 /** Check if user's answer matches the correct answer (or any altAnswers) */
@@ -253,7 +253,10 @@ function OutputTracingQuestion({ q, onAnswer }) {
   }
 
   function handleKeyDown(e) {
-    if (e.key === "Enter") handleSubmit();
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleSubmit();
+    }
   }
 
   function handleSelfGrade(correct) {
@@ -282,14 +285,14 @@ function OutputTracingQuestion({ q, onAnswer }) {
       </div>
 
       {/* Input */}
-      <input
+      <textarea
         ref={inputRef}
-        type="text"
+        rows={q.answer.includes("\n") ? 2 : 1}
         value={input}
         onChange={e => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
         disabled={revealed}
-        placeholder="Type the output here…"
+        placeholder={q.answer.includes("\n") ? "Type output (use Shift+Enter for new line)..." : "Type the output here…"}
         style={{
           width: "100%",
           padding: "0.85rem 1rem",
@@ -305,6 +308,8 @@ function OutputTracingQuestion({ q, onAnswer }) {
           transition: "border-color 200ms, background 200ms",
           boxSizing: "border-box",
           fontFamily: "'Fira Code', 'Fira Mono', monospace",
+          resize: "vertical",
+          minHeight: "48px",
         }}
       />
 
@@ -335,6 +340,7 @@ function OutputTracingQuestion({ q, onAnswer }) {
             fontSize: "1rem", fontWeight: 700, color: "#2d1f5e",
             marginBottom: q.explanation ? "0.6rem" : 0,
             fontFamily: "'Fira Code', 'Fira Mono', monospace",
+            whiteSpace: "pre-wrap",
           }}>
             {q.answer}
             {q.altAnswers?.length > 0 && (
@@ -992,7 +998,7 @@ export default function QuizPage() {
                       </div>
                     )}
                     <p style={{ fontSize: "0.8rem", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
-                      Expected output: <strong style={{ color: "#2d1f5e", fontFamily: "'Fira Code', monospace" }}>{a.answer}</strong>
+                      Expected output: <strong style={{ color: "#2d1f5e", fontFamily: "'Fira Code', monospace", whiteSpace: "pre-wrap" }}>{a.answer}</strong>
                     </p>
                     {a.explanation && (
                       <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5 }}>{a.explanation}</p>
