@@ -2,2585 +2,2802 @@
 
 export const subjects = [
   {
-    id: "ea",
-    code: "EA",
-    name: "Enterprise Architecture",
-    description: "Covers frameworks, models, and strategies for aligning IT infrastructure with business goals.",
-    color: "#7c3aed",
-    reviewers: [
+    "id": "ea",
+    "code": "EA",
+    "name": "Enterprise Architecture",
+    "description": "Covers frameworks, models, and strategies for aligning IT infrastructure with business goals.",
+    "color": "#7c3aed",
+    "reviewers": [
       {
-        id: "quiz1_mc",
-        title: "Quiz 1 — Multiple Choice",
-        description: "100-item multiple choice quiz covering Parts 1–3 of the EA reviewer.",
-        quizletLink: null,
-        questions: [
-          // â”€â”€ PART 1: The Rise of Enterprise Architecture â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        "id": "quiz1_mc",
+        "title": "Quiz 1 — Multiple Choice",
+        "description": "100-item multiple choice quiz covering Parts 1–3 of the EA reviewer.",
+        "quizletLink": null,
+        "questions": [
           {
-            id: 1,
-            question: "According to the text, which of the following is NOT one of the three major phenomena resulting from the rapid diffusion of ICTs?",
-            options: [
+            "id": 1,
+            "question": "According to the text, which of the following is NOT one of the three major phenomena resulting from the rapid diffusion of ICTs?",
+            "options": [
               "The exponential decrease in the cost of maintaining legacy systems.",
               "The transformation of people's everyday life and dependence on ICTs.",
               "An exponential increase in the wealth of knowledge, information, and data.",
-              "The pervasion of ICTs in all sectors for social and economic development.",
+              "The pervasion of ICTs in all sectors for social and economic development."
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 2,
-            question: "It is estimated that what percentage of the data stored worldwide has been generated in the last two years?",
-            options: ["50%", "75%", "90%", "99%"],
-            answer: 2,
+            "id": 2,
+            "question": "It is estimated that what percentage of the data stored worldwide has been generated in the last two years?",
+            "options": [
+              "50%",
+              "75%",
+              "90%",
+              "99%"
+            ],
+            "answer": 2
           },
           {
-            id: 3,
-            question: "A large corporation realizes its mission-critical information is consistently out-of-date, and there is immense distrust between the business and technology sides of the organization. What do these issues represent?",
-            options: [
+            "id": 3,
+            "question": "A large corporation realizes its mission-critical information is consistently out-of-date, and there is immense distrust between the business and technology sides of the organization. What do these issues represent?",
+            "options": [
               "The successful implementation of an EA framework.",
               "Major operational problems existing in many large organizations today.",
               "The direct result of platform-as-a-service vendors.",
-              "The desired future state of the enterprise.",
+              "The desired future state of the enterprise."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 4,
-            question: "How does the text define a \"project\" in the context of an enterprise?",
-            options: [
+            "id": 4,
+            "question": "How does the text define a \"project\" in the context of an enterprise?",
+            "options": [
               "A permanent organizational structure.",
               "A special organization that exists for the period of its implementation.",
               "A strictly outsourced business operation.",
-              "A technological upgrade to existing infrastructure.",
+              "A technological upgrade to existing infrastructure."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 5,
-            question: "Which of the following is considered an \"enterprise\"?",
-            options: [
+            "id": 5,
+            "question": "Which of the following is considered an \"enterprise\"?",
+            "options": [
               "A private sector company.",
               "A government ministry.",
               "A multinational joint venture.",
-              "All of the above.",
+              "All of the above."
             ],
-            answer: 3,
+            "answer": 3
           },
           {
-            id: 6,
-            question: "The most important aspect of the term \"enterprise\" is that it includes multifaceted socio-technical structures comprising:",
-            options: [
+            "id": 6,
+            "question": "The most important aspect of the term \"enterprise\" is that it includes multifaceted socio-technical structures comprising:",
+            "options": [
               "Hardware, software, networks, and data.",
               "People, information, processes, and technologies.",
               "Executives, managers, staff, and contractors.",
-              "Budgets, schedules, scopes, and risks.",
+              "Budgets, schedules, scopes, and risks."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 7,
-            question: "In general, what is the primary purpose of enterprise architecture?",
-            options: [
+            "id": 7,
+            "question": "In general, what is the primary purpose of enterprise architecture?",
+            "options": [
               "To replace all human resources with automated technologies.",
               "To design the most elegant technological infrastructure possible.",
               "The greater alignment between ICT and business concerns, linking strategy formulation to execution.",
-              "To strictly enforce technical coding standards among software developers.",
+              "To strictly enforce technical coding standards among software developers."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 8,
-            question: "An enterprise architect is entrusted with assessing and recommending changes that typically include all of the following EXCEPT:",
-            options: [
+            "id": 8,
+            "question": "An enterprise architect is entrusted with assessing and recommending changes that typically include all of the following EXCEPT:",
+            "options": [
               "Innovations in the structure or processes of an organization.",
               "Integration and/or standardization of business processes.",
               "Decreasing the overall salaries of the human resources department.",
-              "Improving the quality and timeliness of business information.",
+              "Improving the quality and timeliness of business information."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 9,
-            question: "A company is struggling to manage its complex IT environment and make accurate IT investment decisions. How can Enterprise Architecture benefit them?",
-            options: [
+            "id": 9,
+            "question": "A company is struggling to manage its complex IT environment and make accurate IT investment decisions. How can Enterprise Architecture benefit them?",
+            "options": [
               "By entirely outsourcing their IT department.",
               "By providing a tool for the assessment of benefits, impacts, and supporting analyses of alternatives and risks.",
               "By eliminating the need for business processes.",
-              "By allowing the IT department to dictate business strategy.",
+              "By allowing the IT department to dictate business strategy."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 10,
-            question: "Which of the following is a benefit of Enterprise Architecture regarding legacy systems?",
-            options: [
+            "id": 10,
+            "question": "Which of the following is a benefit of Enterprise Architecture regarding legacy systems?",
+            "options": [
               "It permanently maintains all legacy systems to preserve history.",
               "It expedites the integration of legacy, migration, and new systems.",
               "It instantly deletes legacy data to clear server space.",
-              "It prevents the organization from migrating off legacy systems.",
+              "It prevents the organization from migrating off legacy systems."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 11,
-            question: "A government official uses EA to look at their duties from a macro point of view rather than just a micro/process level. Why is this beneficial?",
-            options: [
+            "id": 11,
+            "question": "A government official uses EA to look at their duties from a macro point of view rather than just a micro/process level. Why is this beneficial?",
+            "options": [
               "It helps them redefine their duties efficiently according to adopted government policies and strategies.",
               "It allows them to ignore technical IT constraints.",
               "It guarantees they will receive a larger budget next quarter.",
-              "It proves that government processes do not need technology.",
+              "It proves that government processes do not need technology."
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 12,
-            question: "When identifying the purpose of EA, what is the FIRST step according to the lecture note?",
-            options: [
+            "id": 12,
+            "question": "When identifying the purpose of EA, what is the FIRST step according to the lecture note?",
+            "options": [
               "Document the desired future state.",
               "Construct a transition plan.",
               "Identify the current state of how ICT is being used and the business value it provides.",
-              "Document the \"gap\".",
+              "Document the \"gap\"."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 13,
-            question: "In the EA process, what does documenting the \"gap\" refer to?",
-            options: [
+            "id": 13,
+            "question": "In the EA process, what does documenting the \"gap\" refer to?",
+            "options": [
               "The physical distance between the IT department and the business executives.",
               "The difference between the budget requested and the budget approved.",
               "The difference between where the organization is heading (business as usual) and where it would like to be (desired future state).",
-              "The time it takes to implement a new software system.",
+              "The time it takes to implement a new software system."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 14,
-            question: "An EA initiative fails because the lead architect, despite being highly technical, lacks enthusiasm, communication skills, and strategic thinking. Which pitfall does this represent?",
-            options: [
+            "id": 14,
+            "question": "An EA initiative fails because the lead architect, despite being highly technical, lacks enthusiasm, communication skills, and strategic thinking. Which pitfall does this represent?",
+            "options": [
               "Not engaging the business people",
               "Architecting the \"Boxes\" Only",
               "The Wrong Lead Architect",
-              "Doing Current-State EA First",
+              "Doing Current-State EA First"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 15,
-            question: "The EA team spends months perfecting a model of how the business currently operates, but loses sight of the company's future vision. Which pitfall did they fall into?",
-            options: [
+            "id": 15,
+            "question": "The EA team spends months perfecting a model of how the business currently operates, but loses sight of the company's future vision. Which pitfall did they fall into?",
+            "options": [
               "Doing Current-State EA First",
               "The EA Group Does Most of the Architecting",
               "Not Measuring the Impact",
-              "Doing Only Technical Domain-Level Architecture",
+              "Doing Only Technical Domain-Level Architecture"
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 16,
-            question: "\"The key is to 'sell' first and architect later\" is a strategy to combat which EA pitfall?",
-            options: [
+            "id": 16,
+            "question": "\"The key is to 'sell' first and architect later\" is a strategy to combat which EA pitfall?",
+            "options": [
               "The Wrong Lead Architect",
               "Insufficient Stakeholder Understanding and Support",
               "Architecting the \"Boxes\" Only",
-              "Not Establishing Effective EA Governance Early",
+              "Not Establishing Effective EA Governance Early"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 17,
-            question: "The IT department works in a \"silo\" and tries to develop an architecture without involving the senior staff members managing the business operations. Which pitfall is this?",
-            options: [
+            "id": 17,
+            "question": "The IT department works in a \"silo\" and tries to develop an architecture without involving the senior staff members managing the business operations. Which pitfall is this?",
+            "options": [
               "Doing Only Technical Domain-Level Architecture",
               "Not Engaging the Business People",
               "Not Spending Enough Time on Communications",
-              "The EA Group Does Most of the Architecting",
+              "The EA Group Does Most of the Architecting"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 18,
-            question: "An EA team focuses entirely on software, servers, and networks, completely ignoring business, information, and solutions architecture. This is an example of:",
-            options: [
+            "id": 18,
+            "question": "An EA team focuses entirely on software, servers, and networks, completely ignoring business, information, and solutions architecture. This is an example of:",
+            "options": [
               "Architecting the \"Boxes\" only",
               "Not engaging the business people",
               "Doing only technical domain-level architecture",
-              "Doing current-state EA first",
+              "Doing current-state EA first"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 19,
-            question: "What should the primary job of enterprise architects be, rather than imposing EA content on the organization?",
-            options: [
+            "id": 19,
+            "question": "What should the primary job of enterprise architects be, rather than imposing EA content on the organization?",
+            "options": [
               "To write all the code for new applications.",
               "To fire non-compliant stakeholders.",
               "To lead the EA process and form virtual teams to create content and seek consensus.",
-              "To only measure the financial impact of IT.",
+              "To only measure the financial impact of IT."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 20,
-            question: "An EA program successfully streamlines operations and saves the company $1 million, but the EA team never reports this to the rest of the company. As a result, executives view the EA team as a cost center and cut their budget. What pitfall occurred?",
-            options: [
+            "id": 20,
+            "question": "An EA program successfully streamlines operations and saves the company $1 million, but the EA team never reports this to the rest of the company. As a result, executives view the EA team as a cost center and cut their budget. What pitfall occurred?",
+            "options": [
               "Not Establishing Effective EA Governance Early",
               "Not Measuring and Not Communicating the Impact",
               "Not Spending Enough Time on Communications",
-              "The Wrong Lead Architect",
+              "The Wrong Lead Architect"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 21,
-            question: "According to Pitfall 8 (\"Architecting the 'Boxes' Only\"), what is a high priority that must account for more than just technical architecture?",
-            options: [
+            "id": 21,
+            "question": "According to Pitfall 8 (\"Architecting the 'Boxes' Only\"), what is a high priority that must account for more than just technical architecture?",
+            "options": [
               "Integration and interoperability standards (the links between the boxes).",
               "Server rack placement.",
               "Buying the most expensive software.",
-              "Hiring more programmers.",
+              "Hiring more programmers."
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 22,
-            question: "What is \"Enterprise Architecture Governance\"?",
-            options: [
+            "id": 22,
+            "question": "What is \"Enterprise Architecture Governance\"?",
+            "options": [
               "The legal department of the IT team.",
               "The structure by which an enterprise defines appropriate strategies and ensures development alignment with those strategies.",
               "The process of auditing employee internet usage.",
-              "A software tool for managing network traffic.",
+              "A software tool for managing network traffic."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 23,
-            question: "An EA team is fully funded but struggles to gain traction because the general employee base has no idea what EA is or why it matters. The team failed to execute an education and PR plan. Which pitfall is this?",
-            options: [
+            "id": 23,
+            "question": "An EA team is fully funded but struggles to gain traction because the general employee base has no idea what EA is or why it matters. The team failed to execute an education and PR plan. Which pitfall is this?",
+            "options": [
               "Insufficient Stakeholder Understanding",
               "Not Spending Enough Time on Communications",
               "Not Engaging the Business People",
-              "The Wrong Lead Architect",
+              "The Wrong Lead Architect"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 24,
-            question: "According to R. Scot Bittler of Gartner, the key for enterprise architects is to create:",
-            options: [
+            "id": 24,
+            "question": "According to R. Scot Bittler of Gartner, the key for enterprise architects is to create:",
+            "options": [
               "The most perfect architecture for the moment.",
               "The most elegant architecture for the moment.",
               "The cheapest architecture possible.",
-              "The most adaptable architecture for the future.",
+              "The most adaptable architecture for the future."
             ],
-            answer: 3,
+            "answer": 3
           },
           {
-            id: 25,
-            question: "The enterprise architecture team requires people with expertise in three categories. Which of the following is NOT one of those three?",
-            options: [
+            "id": 25,
+            "question": "The enterprise architecture team requires people with expertise in three categories. Which of the following is NOT one of those three?",
+            "options": [
               "Technology (Infrastructure, tools, applications)",
               "Enterprise (Business and data)",
               "Marketing (Sales, advertising, PR)",
-              "Policies (Integration and security)",
+              "Policies (Integration and security)"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 26,
-            question: "According to the lecture note, the expertise and skills for EA will be shared by three categories of people on the team. Which of these is one of those categories?",
-            options: [
+            "id": 26,
+            "question": "According to the lecture note, the expertise and skills for EA will be shared by three categories of people on the team. Which of these is one of those categories?",
+            "options": [
               "Business leaders",
               "Graphic designers",
               "Outside auditors",
-              "Custodial staff",
+              "Custodial staff"
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 27,
-            question: "How does Gartner define Enterprise Architecture?",
-            options: [
+            "id": 27,
+            "question": "How does Gartner define Enterprise Architecture?",
+            "options": [
               "A technology implementation protocol for hardware.",
               "A discipline for proactively and holistically leading enterprise responses to disruptive forces by identifying and analyzing the execution of change toward desired business vision and outcomes.",
               "A financial accounting method for IT depreciation.",
-              "A strict set of rules for employee desktop configurations.",
+              "A strict set of rules for employee desktop configurations."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 28,
-            question: "A business executive wants to start an EA program solely to catalog the company's existing computers and servers. Based on the reading, is this a correct understanding of EA?",
-            options: [
+            "id": 28,
+            "question": "A business executive wants to start an EA program solely to catalog the company's existing computers and servers. Based on the reading, is this a correct understanding of EA?",
+            "options": [
               "Yes, EA is strictly an IT asset inventory tool.",
               "No, EA is a holistic approach considering business, information, process, and technology changes to execute enterprise strategy.",
               "Yes, but only if they also include software licenses.",
-              "No, EA only deals with future state architecture, never current assets.",
+              "No, EA only deals with future state architecture, never current assets."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 29,
-            question: "What is a primary reason the chances of obtaining real value from ICT systems have dramatically decreased?",
-            options: [
+            "id": 29,
+            "question": "What is a primary reason the chances of obtaining real value from ICT systems have dramatically decreased?",
+            "options": [
               "Technology has become too cheap.",
               "The cost and complexity of ICT systems have increased exponentially.",
               "Employees refuse to use computers.",
-              "There is a lack of available data.",
+              "There is a lack of available data."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 30,
-            question: "Which organization cited the statistic about 90% of the world's data being generated in the last two years in their 2013 report?",
-            options: ["Gartner", "UNDP", "SINTEF", "IBM"],
-            answer: 2,
+            "id": 30,
+            "question": "Which organization cited the statistic about 90% of the world's data being generated in the last two years in their 2013 report?",
+            "options": [
+              "Gartner",
+              "UNDP",
+              "SINTEF",
+              "IBM"
+            ],
+            "answer": 2
           },
           {
-            id: 31,
-            question: "Which of the following is a concern that enterprise architects have to deal with regarding \"Revitalizing the skills base\"?",
-            options: [
+            "id": 31,
+            "question": "Which of the following is a concern that enterprise architects have to deal with regarding \"Revitalizing the skills base\"?",
+            "options": [
               "Trimming existing project costs.",
               "Finding new approaches to outsourcing.",
               "The growing trend of applying smart technologies requiring advanced technical skills.",
-              "Cutting the budget by 50 percent.",
+              "Cutting the budget by 50 percent."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 32,
-            question: "Doing more with less is a concern for EA because continuous economic concerns have led companies to cut budgets by 50% or more. This cut must be done without:",
-            options: [
+            "id": 32,
+            "question": "Doing more with less is a concern for EA because continuous economic concerns have led companies to cut budgets by 50% or more. This cut must be done without:",
+            "options": [
               "Using any open-source software.",
               "Jeopardizing operations and quality of work.",
               "Informing the stakeholders.",
-              "Changing any legacy systems.",
+              "Changing any legacy systems."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 33,
-            question: "What represents the \"transition plan\" in the purpose of Enterprise Architecture?",
-            options: [
+            "id": 33,
+            "question": "What represents the \"transition plan\" in the purpose of Enterprise Architecture?",
+            "options": [
               "The gap between the two future states.",
               "The documentation of the current state.",
               "A list of projects and initiatives to put the ICT infrastructure back on track towards the desired future state.",
-              "The decision to outsource IT to a software-as-a-service vendor.",
+              "The decision to outsource IT to a software-as-a-service vendor."
             ],
-            answer: 2,
+            "answer": 2
           },
-          // â”€â”€ PART 2: An Overview of Enterprise Architecture â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           {
-            id: 34,
-            question: "What is the main concept of Enterprise Architecture as presented in Lecture Note 1?",
-            options: [
+            "id": 34,
+            "question": "What is the main concept of Enterprise Architecture as presented in Lecture Note 1?",
+            "options": [
               "It is a technology-driven activity that replaces management.",
               "It is a strategy and business-driven activity that supports management planning and decision-making.",
               "It is a process-centric approach to eliminate all hardware.",
-              "It is solely a financial audit mechanism.",
+              "It is solely a financial audit mechanism."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 35,
-            question: "How is \"Enterprise\" defined in Lecture Note 1?",
-            options: [
+            "id": 35,
+            "question": "How is \"Enterprise\" defined in Lecture Note 1?",
+            "options": [
               "A strictly for-profit business entity.",
               "An organization or sub-activity whose boundary is defined by commonly-held goals, processes, and resources.",
               "A supply chain consisting of at least 5 different organizations.",
-              "Any group of people working together in an office.",
+              "Any group of people working together in an office."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 36,
-            question: "What is the \"sound bite\" equation that represents what EA is all about?",
-            options: [
+            "id": 36,
+            "question": "What is the \"sound bite\" equation that represents what EA is all about?",
+            "options": [
               "EA = HR + IT + Finance",
               "EA = Strategy + Business + Technology (EA = S + B + T)",
               "EA = Systems + Boxes + Tools",
-              "EA = Scope + Budget + Timeline",
+              "EA = Scope + Budget + Timeline"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 37,
-            question: "A home builder decides to build a house one room at a time without blueprints for the whole house. How does this analogy apply to an enterprise?",
-            options: [
+            "id": 37,
+            "question": "A home builder decides to build a house one room at a time without blueprints for the whole house. How does this analogy apply to an enterprise?",
+            "options": [
               "It represents the Agile software development method.",
               "It represents a highly efficient way to manage resources.",
               "It is analogous to developing organizations/systems without an enterprise-wide architecture, leading to duplication and inefficiency.",
-              "It shows that EA is completely unnecessary for small businesses.",
+              "It shows that EA is completely unnecessary for small businesses."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 38,
-            question: "Which of the following is NOT one of the eight Major Areas of Integrated Governance?",
-            options: [
+            "id": 38,
+            "question": "Which of the following is NOT one of the eight Major Areas of Integrated Governance?",
+            "options": [
               "Strategic Planning",
               "Capital Investment Planning",
               "Marketing and Advertising",
-              "Knowledge Management",
+              "Knowledge Management"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 39,
-            question: "Why is Enterprise Architecture considered a \"Meta-Discipline\"?",
-            options: [
+            "id": 39,
+            "question": "Why is Enterprise Architecture considered a \"Meta-Discipline\"?",
+            "options": [
               "Because it focuses strictly on metadata.",
               "Because it serves as an umbrella or \"meta-context\" for all other management and technology best practices.",
               "Because it was invented by the company Meta (Facebook).",
-              "Because it is a theoretical concept that cannot be implemented.",
+              "Because it is a theoretical concept that cannot be implemented."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 40,
-            question: "Which of the following sits at the \"Strategic Level\" within the EA Meta-Discipline diagram?",
-            options: ["Six Sigma", "Balanced Scorecard", "ITIL", "Cloud Computing"],
-            answer: 1,
+            "id": 40,
+            "question": "Which of the following sits at the \"Strategic Level\" within the EA Meta-Discipline diagram?",
+            "options": [
+              "Six Sigma",
+              "Balanced Scorecard",
+              "ITIL",
+              "Cloud Computing"
+            ],
+            "answer": 1
           },
           {
-            id: 41,
-            question: "How many \"Core Elements\" make up the Enterprise Architecture Approach?",
-            options: ["4", "5", "6", "7"],
-            answer: 2,
+            "id": 41,
+            "question": "How many \"Core Elements\" make up the Enterprise Architecture Approach?",
+            "options": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "answer": 2
           },
           {
-            id: 42,
-            question: "Which core element identifies the planning, decision-making, and oversight processes that determine how the EA is developed and maintained?",
-            options: ["Framework", "Methodology", "Governance", "Artifacts"],
-            answer: 2,
+            "id": 42,
+            "question": "Which core element identifies the planning, decision-making, and oversight processes that determine how the EA is developed and maintained?",
+            "options": [
+              "Framework",
+              "Methodology",
+              "Governance",
+              "Artifacts"
+            ],
+            "answer": 2
           },
           {
-            id: 43,
-            question: "Which core element identifies the scope of the overall architecture and the type/relationship of various sub-architecture levels?",
-            options: ["Standards", "Framework", "Best Practices", "Artifacts"],
-            answer: 1,
+            "id": 43,
+            "question": "Which core element identifies the scope of the overall architecture and the type/relationship of various sub-architecture levels?",
+            "options": [
+              "Standards",
+              "Framework",
+              "Best Practices",
+              "Artifacts"
+            ],
+            "answer": 1
           },
           {
-            id: 44,
-            question: "What do \"Artifacts\" refer to in the context of the EA Approach?",
-            options: [
+            "id": 44,
+            "question": "What do \"Artifacts\" refer to in the context of the EA Approach?",
+            "options": [
               "Ancient technological hardware kept for historical purposes.",
               "The types and methods of documentation used in each sub-architecture area (e.g., models, diagrams, plans).",
               "The specific software brands chosen by the enterprise.",
-              "The employees who have worked at the company for over 10 years.",
+              "The employees who have worked at the company for over 10 years."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 45,
-            question: "As a management program, EA provides all of the following EXCEPT:",
-            options: [
+            "id": 45,
+            "question": "As a management program, EA provides all of the following EXCEPT:",
+            "options": [
               "Strategic Alignment",
               "Standardized Policy",
               "Micro-management of employee daily tasks",
-              "Resource Oversight",
+              "Resource Oversight"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 46,
-            question: "An enterprise wants to ensure that a newly proposed multi-million dollar software project actually supports the company's long-term business goals. Which function of the EA Management Program provides this?",
-            options: [
+            "id": 46,
+            "question": "An enterprise wants to ensure that a newly proposed multi-million dollar software project actually supports the company's long-term business goals. Which function of the EA Management Program provides this?",
+            "options": [
               "Strategic Alignment",
               "Resource Oversight",
               "Standardized Policy",
-              "Configuration Management",
+              "Configuration Management"
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 47,
-            question: "According to the \"Standardized Policy\" slide, policy documents are categorized hierarchically. Which of the following is an example of \"detailed process guidance\"?",
-            options: [
+            "id": 47,
+            "question": "According to the \"Standardized Policy\" slide, policy documents are categorized hierarchically. Which of the following is an example of \"detailed process guidance\"?",
+            "options": [
               "High-level directives",
               "Memos",
               "Standard Operating Procedures (SOPs)",
-              "Program manuals",
+              "Program manuals"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 48,
-            question: "In providing \"Decision Support\" at the staff level, EA supports decisions regarding:",
-            options: [
+            "id": 48,
+            "question": "In providing \"Decision Support\" at the staff level, EA supports decisions regarding:",
+            "options": [
               "Large IT initiative visibility for executives.",
               "Operations, maintenance, and development of IT resources and services.",
               "Setting the enterprise's overarching strategic direction.",
-              "Global marketing campaigns.",
+              "Global marketing campaigns."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 49,
-            question: "The EA Analysis and Design Method uses how many basic elements?",
-            options: ["3", "4", "6", "8"],
-            answer: 2,
+            "id": 49,
+            "question": "The EA Analysis and Design Method uses how many basic elements?",
+            "options": [
+              "3",
+              "4",
+              "6",
+              "8"
+            ],
+            "answer": 2
           },
           {
-            id: 50,
-            question: "What is the Highest Level & View in the EA3 Cube Framework?",
-            options: [
+            "id": 50,
+            "question": "What is the Highest Level & View in the EA3 Cube Framework?",
+            "options": [
               "Data & Information",
               "Networks & Infrastructure",
               "Goals & Initiatives",
-              "Systems & Applications",
+              "Systems & Applications"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 51,
-            question: "What is the Lowest Level & View in the EA3 Cube Framework?",
-            options: [
+            "id": 51,
+            "question": "What is the Lowest Level & View in the EA3 Cube Framework?",
+            "options": [
               "Products & Services",
               "Systems & Applications",
               "Data & Information",
-              "Networks & Infrastructure",
+              "Networks & Infrastructure"
             ],
-            answer: 3,
+            "answer": 3
           },
           {
-            id: 52,
-            question: "In the EA3 Cube, what is a \"Segment\"?",
-            options: [
+            "id": 52,
+            "question": "In the EA3 Cube, what is a \"Segment\"?",
+            "options": [
               "A completely outsourced business function.",
               "A single software application.",
               "Vertical sub-areas of the enterprise with distinct business activities and resources (e.g., documenting one or more LOBs at all levels).",
-              "A horizontal thread that crosses all lines of business.",
+              "A horizontal thread that crosses all lines of business."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 53,
-            question: "What does LOB stand for in Enterprise Architecture?",
-            options: [
+            "id": 53,
+            "question": "What does LOB stand for in Enterprise Architecture?",
+            "options": [
               "Level of Baseline",
               "Line of Business",
               "List of Benefits",
-              "Logic of Business",
+              "Logic of Business"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 54,
-            question: "An email system or an administrative support system that serves the whole enterprise is an example of a:",
-            options: [
+            "id": 54,
+            "question": "An email system or an administrative support system that serves the whole enterprise is an example of a:",
+            "options": [
               "Vertical component",
               "Horizontal (Crosscutting) component",
               "Sub-architecture",
-              "Strategic Goal",
+              "Strategic Goal"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 55,
-            question: "The manufacturing division of a company uses a specific robot assembly machine that no other division uses. In the EA framework, this machine is a:",
-            options: [
+            "id": 55,
+            "question": "The manufacturing division of a company uses a specific robot assembly machine that no other division uses. In the EA framework, this machine is a:",
+            "options": [
               "Horizontal component",
               "Vertical component",
               "Strategic Initiative",
-              "Data component",
+              "Data component"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 56,
-            question: "What does the \"Current Architecture\" view serve to create?",
-            options: [
+            "id": 56,
+            "question": "What does the \"Current Architecture\" view serve to create?",
+            "options": [
               "A 'baseline' inventory of current resources and activities.",
               "The future operating state of the business.",
               "The marketing plan for next year.",
-              "The financial budget for the upcoming decade.",
+              "The financial budget for the upcoming decade."
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 57,
-            question: "What document articulates the EA program approach, provides current/future views, and contains a sequencing plan for managing the transition?",
-            options: [
+            "id": 57,
+            "question": "What document articulates the EA program approach, provides current/future views, and contains a sequencing plan for managing the transition?",
+            "options": [
               "The Employee Handbook",
               "The IT Security Policy",
               "The EA Management Plan",
-              "The Business Continuity Plan",
+              "The Business Continuity Plan"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 58,
-            question: "EA documentation includes \"threads\" of common activity present in all levels of the framework. What are these three threads?",
-            options: [
+            "id": 58,
+            "question": "EA documentation includes \"threads\" of common activity present in all levels of the framework. What are these three threads?",
+            "options": [
               "Hardware, Software, Network",
               "Security, Standards, Skills",
               "Planning, Execution, Review",
-              "Cost, Schedule, Scope",
+              "Cost, Schedule, Scope"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 59,
-            question: "Why is it important for the EA to draw on accepted international, national, and industry \"Standards\"?",
-            options: [
+            "id": 59,
+            "question": "Why is it important for the EA to draw on accepted international, national, and industry \"Standards\"?",
+            "options": [
               "To make the architecture as proprietary and closed as possible.",
               "To promote the use of non-proprietary solutions, enhancing integration and component switch-out.",
               "To increase the cost of software development.",
-              "To limit the abilities of the human resource department.",
+              "To limit the abilities of the human resource department."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 60,
-            question: "Under the \"Skills\" thread, what is considered perhaps the greatest resource an enterprise has?",
-            options: [
+            "id": 60,
+            "question": "Under the \"Skills\" thread, what is considered perhaps the greatest resource an enterprise has?",
+            "options": [
               "Its data warehouse",
               "Its server infrastructure",
               "People",
-              "Financial capital",
+              "Financial capital"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 61,
-            question: "What is the difference between a Reference Architecture and a Segment Architecture?",
-            options: [
+            "id": 61,
+            "question": "What is the difference between a Reference Architecture and a Segment Architecture?",
+            "options": [
               "They are exactly the same thing.",
               "Reference focuses on a particular capability (e.g., cloud computing) across the enterprise, while Segment focuses on specific business units (e.g., finance).",
               "Segment is for IT only, Reference is for Business only.",
-              "Reference is only used for current state, Segment is only used for future state.",
+              "Reference is only used for current state, Segment is only used for future state."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 62,
-            question: "Where is EA documentation archived to provide easy access for stakeholders, planning, and decision-making?",
-            options: [
+            "id": 62,
+            "question": "Where is EA documentation archived to provide easy access for stakeholders, planning, and decision-making?",
+            "options": [
               "In a locked physical filing cabinet.",
               "On the lead architect's personal laptop.",
               "An online EA repository (website and database).",
-              "It is memorized by the EA team and never written down.",
+              "It is memorized by the EA team and never written down."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 63,
-            question: "What is the name of the example EA repository design provided in the lecture?",
-            options: [
+            "id": 63,
+            "question": "What is the name of the example EA repository design provided in the lecture?",
+            "options": [
               "Enterprise Architect Pro",
               "Living Enterpriseâ„¢",
               "The Matrix",
-              "SharePoint Architecture",
+              "SharePoint Architecture"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 64,
-            question: "According to the Drivers of Architectural Change model, who provides the \"New Direction & Goals\" at the Strategic level?",
-            options: [
+            "id": 64,
+            "question": "According to the Drivers of Architectural Change model, who provides the \"New Direction & Goals\" at the Strategic level?",
+            "options": [
               "Management Team",
               "Support Team",
               "Leadership Team",
-              "External Consultants",
+              "External Consultants"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 65,
-            question: "In the Drivers of Architectural Change model, what does the Support Team provide at the Tactical level?",
-            options: [
+            "id": 65,
+            "question": "In the Drivers of Architectural Change model, what does the Support Team provide at the Tactical level?",
+            "options": [
               "New Direction & Goals",
               "New Business Priorities",
               "Emerging Technologies",
-              "Operating Scenarios",
+              "Operating Scenarios"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 66,
-            question: "What does the \"S\" stand for in EA = S + B + T?",
-            options: ["Systems", "Standards", "Strategy", "Security"],
-            answer: 2,
+            "id": 66,
+            "question": "What does the \"S\" stand for in EA = S + B + T?",
+            "options": [
+              "Systems",
+              "Standards",
+              "Strategy",
+              "Security"
+            ],
+            "answer": 2
           },
           {
-            id: 67,
-            question: "In the EA3 Cube, what sits between the \"Products & Services\" level and the \"Systems & Applications\" level?",
-            options: [
+            "id": 67,
+            "question": "In the EA3 Cube, what sits between the \"Products & Services\" level and the \"Systems & Applications\" level?",
+            "options": [
               "Goals & Initiatives",
               "Data & Information",
               "Networks & Infrastructure",
-              "Security",
+              "Security"
             ],
-            answer: 1,
+            "answer": 1
           },
-          // â”€â”€ PART 3: The Structure and Culture of Enterprises â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           {
-            id: 68,
-            question: "Why must enterprise architects understand the role of organizational structure and culture?",
-            options: [
+            "id": 68,
+            "question": "Why must enterprise architects understand the role of organizational structure and culture?",
+            "options": [
               "So they can bypass human resources and hire technical staff directly.",
               "To accurately reflect the true nature of organizational goals, processes, and informal structures that influence the architecture.",
               "Because IT systems cannot function without a corporate dress code.",
-              "To justify spending more money on technology.",
+              "To justify spending more money on technology."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 69,
-            question: "The beliefs, customs, values, structure, normative rules, and material traits of a social organization is the definition of:",
-            options: [
+            "id": 69,
+            "question": "The beliefs, customs, values, structure, normative rules, and material traits of a social organization is the definition of:",
+            "options": [
               "Enterprise Architecture",
               "Change Management",
               "Culture",
-              "Stakeholder",
+              "Stakeholder"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 70,
-            question: "Everyone who is or will be affected by a policy, program, project, activity, or resource is considered a:",
-            options: ["Shareholder", "Stakeholder", "Developer", "Competitor"],
-            answer: 1,
+            "id": 70,
+            "question": "Everyone who is or will be affected by a policy, program, project, activity, or resource is considered a:",
+            "options": [
+              "Shareholder",
+              "Stakeholder",
+              "Developer",
+              "Competitor"
+            ],
+            "answer": 1
           },
           {
-            id: 71,
-            question: "In the home architecture analogy, why does an architect need to understand the occupants of a home?",
-            options: [
+            "id": 71,
+            "question": "In the home architecture analogy, why does an architect need to understand the occupants of a home?",
+            "options": [
               "To determine their credit score.",
               "To produce an effective design based on how they use rooms, activity patterns, and storage needs.",
               "To sell them more expensive building materials.",
-              "To ignore their preferences and build a standardized box.",
+              "To ignore their preferences and build a standardized box."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 72,
-            question: "According to the \"Influences on the Field of Enterprise Architecture\" diagram, which of the following is a \"Contributing Field\" to Organizational Theory?",
-            options: [
+            "id": 72,
+            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, which of the following is a \"Contributing Field\" to Organizational Theory?",
+            "options": [
               "Computer Science",
               "Engineering",
               "Sociology",
-              "Information Assurance",
+              "Information Assurance"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 73,
-            question: "In the Leavitt Diamond model, the four components are Task, Structure, People, and:",
-            options: ["Money", "Technology", "Culture", "Environment"],
-            answer: 1,
+            "id": 73,
+            "question": "In the Leavitt Diamond model, the four components are Task, Structure, People, and:",
+            "options": [
+              "Money",
+              "Technology",
+              "Culture",
+              "Environment"
+            ],
+            "answer": 1
           },
           {
-            id: 74,
-            question: "What is Leavitt's primary argument regarding his Diamond model?",
-            options: [
+            "id": 74,
+            "question": "What is Leavitt's primary argument regarding his Diamond model?",
+            "options": [
               "Technology is the only component that matters for success.",
               "A change in any one of the four components will have an effect on the others.",
               "People and Tasks have no relation to Structure.",
-              "Organizational success is impossible to achieve.",
+              "Organizational success is impossible to achieve."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 75,
-            question: "In the Parsons/Thompson Model of organizational structure, which level is where the organization establishes rules and relates to the larger society to secure legitimacy?",
-            options: [
+            "id": 75,
+            "question": "In the Parsons/Thompson Model of organizational structure, which level is where the organization establishes rules and relates to the larger society to secure legitimacy?",
+            "options": [
               "Technical Level",
               "Managerial Level",
               "Institutional Level",
-              "Independent Level",
+              "Independent Level"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 76,
-            question: "According to the Parsons/Thompson Model, where is the actual \"product\" of an organization processed?",
-            options: [
+            "id": 76,
+            "question": "According to the Parsons/Thompson Model, where is the actual \"product\" of an organization processed?",
+            "options": [
               "Institutional Level",
               "Managerial Level",
               "Technical Level",
-              "Executive Level",
+              "Executive Level"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 77,
-            question: "In the Parsons/Thompson Model, the Managerial Level's function involves:",
-            options: [
+            "id": 77,
+            "question": "In the Parsons/Thompson Model, the Managerial Level's function involves:",
+            "options": [
               "Sealing off functions from the outside to protect them from uncertainties.",
               "A dynamic of mediation where less formalized and more political activities occur.",
               "Establishing boundaries and securing legitimacy from society.",
-              "Writing software code for internal applications.",
+              "Writing software code for internal applications."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 78,
-            question: "When relating the Parsons/Thompson Model to the EA3 Cube Framework, which levels of the EA3 Cube map directly to the \"Technical Level\"?",
-            options: [
+            "id": 78,
+            "question": "When relating the Parsons/Thompson Model to the EA3 Cube Framework, which levels of the EA3 Cube map directly to the \"Technical Level\"?",
+            "options": [
               "Goals & Initiatives",
               "Products & Services and Data & Information",
               "Systems & Applications and Networks & Infrastructure",
-              "Security and Standards",
+              "Security and Standards"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 79,
-            question: "Based on the mapping diagram, the \"Managerial Level\" of the Parsons/Thompson model corresponds to which parts of the EA3 Cube?",
-            options: [
+            "id": 79,
+            "question": "Based on the mapping diagram, the \"Managerial Level\" of the Parsons/Thompson model corresponds to which parts of the EA3 Cube?",
+            "options": [
               "Goals & Initiatives",
               "Products & Services and Data & Information",
               "Networks & Infrastructure",
-              "Security only",
+              "Security only"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 80,
-            question: "In the Organizational Network Model, who sits at the center/top communicating directly with Functional Teams and Independent Workers?",
-            options: [
+            "id": 80,
+            "question": "In the Organizational Network Model, who sits at the center/top communicating directly with Functional Teams and Independent Workers?",
+            "options": [
               "Functional Team D (External)",
               "The Executive Team",
               "The Shareholders",
-              "The Customer",
+              "The Customer"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 81,
-            question: "According to the Organizational Network Model, can a Functional Team exist outside the primary Organizational Boundary?",
-            options: [
+            "id": 81,
+            "question": "According to the Organizational Network Model, can a Functional Team exist outside the primary Organizational Boundary?",
+            "options": [
               "Yes, the diagram shows a Functional Team (external) outside the boundary.",
               "No, all teams must be strictly internal.",
               "Only if they are Independent Workers.",
-              "The model does not address organizational boundaries.",
+              "The model does not address organizational boundaries."
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 82,
-            question: "Why is understanding the culture of an enterprise essential for an enterprise architect?",
-            options: [
+            "id": 82,
+            "question": "Why is understanding the culture of an enterprise essential for an enterprise architect?",
+            "options": [
               "It allows them to enforce a single, global corporate culture on all regional offices.",
               "It helps develop realistic views of how strategic goals are established, how processes function, and how resources are used.",
               "Culture dictates which programming language is objectively the best.",
-              "It is legally required by government regulations.",
+              "It is legally required by government regulations."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 83,
-            question: "An EA program is introduced, but employees heavily resist the changes because they feel they have no say in the new processes. What management concept did the EA team fail to implement?",
-            options: [
+            "id": 83,
+            "question": "An EA program is introduced, but employees heavily resist the changes because they feel they have no say in the new processes. What management concept did the EA team fail to implement?",
+            "options": [
               "Change Management",
               "Institutional Legitimization",
               "Technology Upgrades",
-              "The Leavitt Diamond",
+              "The Leavitt Diamond"
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 84,
-            question: "The process of setting expectations and involving stakeholders in how a process or activity will be changed so they have some control and are more accepting of the change is called:",
-            options: [
+            "id": 84,
+            "question": "The process of setting expectations and involving stakeholders in how a process or activity will be changed so they have some control and are more accepting of the change is called:",
+            "options": [
               "Technical Architecture",
               "Change Management",
               "Systems Lifecycle Development",
-              "Risk Management",
+              "Risk Management"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 85,
-            question: "What is the effect of an EA program on organizational change?",
-            options: [
+            "id": 85,
+            "question": "What is the effect of an EA program on organizational change?",
+            "options": [
               "It stops all change from happening.",
               "It causes change to happen in a disjointed, independent manner.",
               "It coordinates change so it is driven by new strategies and business requirements, rather than just new technologies.",
-              "It forces change to happen exclusively from the bottom-up.",
+              "It forces change to happen exclusively from the bottom-up."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 86,
-            question: "How can an EA program successfully manage change and increase stakeholder acceptance?",
-            options: [
+            "id": 86,
+            "question": "How can an EA program successfully manage change and increase stakeholder acceptance?",
+            "options": [
               "By keeping EA planning secret until launch.",
               "By forcing stakeholders to accept changes without input.",
               "By involving stakeholders in the EA program's establishment and allowing input to planning/decision-making.",
-              "By firing anyone who shows resistance to the new architecture.",
+              "By firing anyone who shows resistance to the new architecture."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 87,
-            question: "In the Leavitt Diamond, if a company completely overhauls its \"Technology\" by introducing AI, what does the model predict will happen?",
-            options: [
+            "id": 87,
+            "question": "In the Leavitt Diamond, if a company completely overhauls its \"Technology\" by introducing AI, what does the model predict will happen?",
+            "options": [
               "Only the \"Task\" component will be affected.",
               "The structure, people, and tasks will remain exactly the same.",
               "The change in technology will have an effect on Task, Structure, and People.",
-              "The company will instantly increase its profit margins.",
+              "The company will instantly increase its profit margins."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 88,
-            question: "According to the \"Influences on the Field of Enterprise Architecture\" diagram, which of the following is considered an \"Emerging Field\"?",
-            options: [
+            "id": 88,
+            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, which of the following is considered an \"Emerging Field\"?",
+            "options": [
               "Information Resources Mgmt",
               "Psychology",
               "Political Science",
-              "Business Administration",
+              "Business Administration"
             ],
-            answer: 0,
+            "answer": 0
           },
           {
-            id: 89,
-            question: "According to the summary of Chapter 2 (Note 2), who actually makes plans and decisions about strategic direction and resource utilization in an enterprise?",
-            options: [
+            "id": 89,
+            "question": "According to the summary of Chapter 2 (Note 2), who actually makes plans and decisions about strategic direction and resource utilization in an enterprise?",
+            "options": [
               "The IT systems",
               "The people of the enterprise",
               "The automated business processes",
-              "The EA software tools",
+              "The EA software tools"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 90,
-            question: "A stakeholder is actively resisting the EA program. Based on the notes on managing change, what is a likely reason for this resistance?",
-            options: [
+            "id": 90,
+            "question": "A stakeholder is actively resisting the EA program. Based on the notes on managing change, what is a likely reason for this resistance?",
+            "options": [
               "They feel they have too much control over the changes.",
               "They feel a loss of input or control over changes in their environment.",
               "They are overwhelmed by the amount of communication from the EA team.",
-              "The EA program perfectly aligns with their personal goals.",
+              "The EA program perfectly aligns with their personal goals."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 91,
-            question: "In the \"Relating Functional Teams to EA Lines of Business\" diagram, where do the Functional Teams map?",
-            options: [
+            "id": 91,
+            "question": "In the \"Relating Functional Teams to EA Lines of Business\" diagram, where do the Functional Teams map?",
+            "options": [
               "They map to the IT Infrastructure layer exclusively.",
               "They map to specific Lines of Business (LOB-1, LOB-2, etc.) in the EA3 Cube.",
               "They do not map to the EA3 Cube at all.",
-              "They only map to the Executive Team.",
+              "They only map to the Executive Team."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 92,
-            question: "According to the Parsons/Thompson model, which level tries to \"seal off\" its functions from the outside to protect them from external uncertainties?",
-            options: [
+            "id": 92,
+            "question": "According to the Parsons/Thompson model, which level tries to \"seal off\" its functions from the outside to protect them from external uncertainties?",
+            "options": [
               "Institutional Level",
               "Technical Level",
               "Managerial Level",
-              "Societal Level",
+              "Societal Level"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 93,
-            question: "According to the Parsons/Thompson model, which level is described as \"very open to the environment\"?",
-            options: [
+            "id": 93,
+            "question": "According to the Parsons/Thompson model, which level is described as \"very open to the environment\"?",
+            "options": [
               "Technical Level",
               "Institutional Level",
               "Managerial Level",
-              "Production Level",
+              "Production Level"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 94,
-            question: "In the home architecture analogy, which of the following is NOT an example of a factor considered by the architect regarding the \"people aspect\"?",
-            options: [
+            "id": 94,
+            "question": "In the home architecture analogy, which of the following is NOT an example of a factor considered by the architect regarding the \"people aspect\"?",
+            "options": [
               "How they will use the rooms",
               "Their activity patterns",
               "Their storage needs",
-              "The chemical composition of the roof shingles",
+              "The chemical composition of the roof shingles"
             ],
-            answer: 3,
+            "answer": 3
           },
           {
-            id: 95,
-            question: "A CEO states that culture is irrelevant to Enterprise Architecture because EA only deals with computer networks. Is this statement supported by the lecture notes?",
-            options: [
+            "id": 95,
+            "question": "A CEO states that culture is irrelevant to Enterprise Architecture because EA only deals with computer networks. Is this statement supported by the lecture notes?",
+            "options": [
               "Yes, EA is strictly a technical discipline.",
               "No, the notes state EA is as much about people, social interaction, and culture as it is about technology.",
               "Yes, culture only matters in human resources, not in EA.",
-              "No, because EA only deals with financial planning.",
+              "No, because EA only deals with financial planning."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 96,
-            question: "According to the \"Influences on the Field of Enterprise Architecture\" diagram, \"Bureaucracy\" is a contributing concept from which main theory?",
-            options: [
+            "id": 96,
+            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, \"Bureaucracy\" is a contributing concept from which main theory?",
+            "options": [
               "Systems Theory",
               "Organizational Theory",
               "Quantum Theory",
-              "Network Theory",
+              "Network Theory"
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 97,
-            question: "According to the \"Influences on the Field of Enterprise Architecture\" diagram, \"Reengineering\" and \"Quality\" are contributing concepts from which main theory?",
-            options: [
+            "id": 97,
+            "question": "According to the \"Influences on the Field of Enterprise Architecture\" diagram, \"Reengineering\" and \"Quality\" are contributing concepts from which main theory?",
+            "options": [
               "Organizational Theory",
               "Psychological Theory",
               "Systems Theory",
-              "Institutional Theory",
+              "Institutional Theory"
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 98,
-            question: "The culture of an enterprise makes every enterprise different. This is because culture is an amalgamation of the values, beliefs, habits, and preferences of:",
-            options: [
+            "id": 98,
+            "question": "The culture of an enterprise makes every enterprise different. This is because culture is an amalgamation of the values, beliefs, habits, and preferences of:",
+            "options": [
               "The executive board only.",
               "The IT department only.",
               "All of the people throughout the enterprise or sub-enterprise.",
-              "The competitors in the market.",
+              "The competitors in the market."
             ],
-            answer: 2,
+            "answer": 2
           },
           {
-            id: 99,
-            question: "What will happen to changes within the enterprise if there is NO Enterprise Architecture program in place?",
-            options: [
+            "id": 99,
+            "question": "What will happen to changes within the enterprise if there is NO Enterprise Architecture program in place?",
+            "options": [
               "No changes will ever occur.",
               "Changes will happen in a more disjointed or completely independent manner.",
               "Changes will be perfectly synchronized automatically.",
-              "The enterprise will immediately go bankrupt.",
+              "The enterprise will immediately go bankrupt."
             ],
-            answer: 1,
+            "answer": 1
           },
           {
-            id: 100,
-            question: "Managing stakeholder expectations involves being clear about:",
-            options: [
+            "id": 100,
+            "question": "Managing stakeholder expectations involves being clear about:",
+            "options": [
               "Which employees will be fired.",
               "What the EA program can do (and what it cannot do).",
               "The personal lives of the executive team.",
-              "How to bypass the company firewall.",
+              "How to bypass the company firewall."
             ],
-            answer: 1,
-          },
-        ],
+            "answer": 1
+          }
+        ]
       },
       {
-        id: "quiz_quizlet_mod1",
-        title: "Mod 1 — Quizlet Flash Cards",
-        description: "EA 1 flash cards on Quizlet — study and review Module 1 using the Quizlet set.",
-        quizletLink: "https://quizlet.com/ph/1198950424/ea-1-flash-cards/?i=719e9i&x=1jqt",
-        questions: [],
+        "id": "quiz_quizlet_mod1",
+        "title": "Mod 1 — Quizlet Flash Cards",
+        "description": "EA 1 flash cards on Quizlet — study and review Module 1 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1198950424/ea-1-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
       },
       {
-        id: "quiz_quizlet_mod2",
-        title: "Mod 2 — Quizlet Flash Cards",
-        description: "EA 2 flash cards on Quizlet — study and review Module 2 using the Quizlet set.",
-        quizletLink: "https://quizlet.com/ph/1198955731/ea-2-flash-cards/?i=719e9i&x=1jqt",
-        questions: [],
+        "id": "quiz_quizlet_mod2",
+        "title": "Mod 2 — Quizlet Flash Cards",
+        "description": "EA 2 flash cards on Quizlet — study and review Module 2 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1198955731/ea-2-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
       },
-    ],
-  },
-  {
-    id: "cc6",
-    code: "CC 6",
-    name: "Information Management Lec",
-    description: "Covers database design, data modeling, SQL, and information systems management.",
-    color: "#9333ea",
-    reviewers: [],
-  },
-  {
-    id: "oop",
-    code: "OOP",
-    name: "Object Oriented Programming",
-    description: "Covers OOP principles, Java fundamentals, UML, constructors, classes, and objects.",
-    color: "#0369a1",
-    reviewers: [
       {
-        id: "oop_output_tracing_v2",
-        title: "OOP Output Tracing Quiz (75 Items)",
-        description: "75-item output tracing reviewer (Easy, Intermediate, Hard) covering Constructors, this() chaining, Method Overloading, Static vs Instance state, and Object Reference mutability.",
-        quizletLink: null,
-        questions: [
-          {
-            id: 1,
-            type: "output_tracing",
-            question: "Item 1 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(10, 5000);\nSystem.out.println(e1.getId());",
-            answer: "10",
-            explanation: "Trace result: 10.",
-          },
-          {
-            id: 2,
-            type: "output_tracing",
-            question: "Item 2 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId());",
-            answer: "100",
-            explanation: "Trace result: 100.",
-          },
-          {
-            id: 3,
-            type: "output_tracing",
-            question: "Item 3 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getSalary());",
-            answer: "500.0",
-            explanation: "Trace result: 500.0.",
-          },
-          {
-            id: 4,
-            type: "output_tracing",
-            question: "Item 4 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(20, 3000);\ne1.setSalary(3500);\nSystem.out.println(e1.getSalary());",
-            answer: "3500.0",
-            explanation: "Trace result: 3500.0.",
-          },
-          {
-            id: 5,
-            type: "output_tracing",
-            question: "Item 5 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee.message();",
-            answer: "Employee created",
-            altAnswers: ["Employee, created","Employee\ncreated"],
-            explanation: "Trace result: Employee created.",
-          },
-          {
-            id: 6,
-            type: "output_tracing",
-            question: "Item 6 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.message();",
-            answer: "Employee created",
-            altAnswers: ["Employee, created","Employee\ncreated"],
-            explanation: "Trace result: Employee created.",
-          },
-          {
-            id: 7,
-            type: "output_tracing",
-            question: "Item 7 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(7, 1000);\ne1.setId(99);\nSystem.out.println(e1.getId());",
-            answer: "99",
-            explanation: "Trace result: 99.",
-          },
-          {
-            id: 8,
-            type: "output_tracing",
-            question: "Item 8 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 2);\nSystem.out.println(c1.getAns());",
-            answer: "3.0",
-            explanation: "Trace result: 3.0.",
-          },
-          {
-            id: 9,
-            type: "output_tracing",
-            question: "Item 9 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(2.0, 3.0);\nSystem.out.println(c1.getAns());",
-            answer: "5.0",
-            explanation: "Trace result: 5.0.",
-          },
-          {
-            id: 10,
-            type: "output_tracing",
-            question: "Item 10 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));",
-            answer: "12",
-            explanation: "Trace result: 12.",
-          },
-          {
-            id: 11,
-            type: "output_tracing",
-            question: "Item 11 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(1));",
-            answer: "4",
-            explanation: "Trace result: 4.",
-          },
-          {
-            id: 12,
-            type: "output_tracing",
-            question: "Item 12 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(2));",
-            answer: "32",
-            explanation: "Trace result: 32.",
-          },
-          {
-            id: 13,
-            type: "output_tracing",
-            question: "Item 13 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(3));",
-            answer: "2",
-            explanation: "Trace result: 2.",
-          },
-          {
-            id: 14,
-            type: "output_tracing",
-            question: "Item 14 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nSystem.out.println(c1.getNumber());",
-            answer: "1",
-            explanation: "Trace result: 1.",
-          },
-          {
-            id: 15,
-            type: "output_tracing",
-            question: "Item 15 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(5);\nSystem.out.println(c1.getNumber());",
-            answer: "5",
-            explanation: "Trace result: 5.",
-          },
-          {
-            id: 16,
-            type: "output_tracing",
-            question: "Item 16 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add();\nSystem.out.println(c1.getNumber());",
-            answer: "2",
-            explanation: "Trace result: 2.",
-          },
-          {
-            id: 17,
-            type: "output_tracing",
-            question: "Item 17 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nSystem.out.println(c1.getReused());",
-            answer: "1",
-            explanation: "Trace result: 1.",
-          },
-          {
-            id: 18,
-            type: "output_tracing",
-            question: "Item 18 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nSystem.out.println(b1.getBalance());",
-            answer: "200.0",
-            explanation: "Trace result: 200.0.",
-          },
-          {
-            id: 19,
-            type: "output_tracing",
-            question: "Item 19 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.deposit(50);\nSystem.out.println(b1.getBalance());",
-            answer: "250.0",
-            explanation: "Trace result: 250.0.",
-          },
+        "id": "quiz_quizlet_mod3",
+        "title": "Mod 3 — Quizlet Flash Cards",
+        "description": "EA 3 flash cards on Quizlet — study and review Module 3 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199322177/ea-3-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
+      }
+    ]
+  },
+  {
+    "id": "cc6",
+    "code": "CC 6",
+    "name": "Information Management Lec",
+    "description": "Covers database design, data modeling, SQL, and information systems management.",
+    "color": "#9333ea",
+    "reviewers": []
+  },
+  {
+    "id": "oop",
+    "code": "OOP",
+    "name": "Object Oriented Programming",
+    "description": "Covers OOP principles, Java fundamentals, UML, constructors, classes, and objects.",
+    "color": "#0369a1",
+    "reviewers": [
+      {
+        "id": "oop_output_tracing_v2",
+        "title": "OOP Output Tracing Quiz (75 Items)",
+        "description": "75-item output tracing reviewer (Easy, Intermediate, Hard) covering Constructors, this() chaining, Method Overloading, Static vs Instance state, and Object Reference mutability.",
+        "quizletLink": null,
+        "questions": [
+          {
+            "id": 1,
+            "type": "output_tracing",
+            "question": "Item 1 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(10, 5000);\nSystem.out.println(e1.getId());",
+            "answer": "10",
+            "explanation": "Trace result: 10."
+          },
+          {
+            "id": 2,
+            "type": "output_tracing",
+            "question": "Item 2 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId());",
+            "answer": "100",
+            "explanation": "Trace result: 100."
+          },
+          {
+            "id": 3,
+            "type": "output_tracing",
+            "question": "Item 3 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getSalary());",
+            "answer": "500.0",
+            "explanation": "Trace result: 500.0."
+          },
+          {
+            "id": 4,
+            "type": "output_tracing",
+            "question": "Item 4 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(20, 3000);\ne1.setSalary(3500);\nSystem.out.println(e1.getSalary());",
+            "answer": "3500.0",
+            "explanation": "Trace result: 3500.0."
+          },
+          {
+            "id": 5,
+            "type": "output_tracing",
+            "question": "Item 5 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee.message();",
+            "answer": "Employee created",
+            "altAnswers": [
+              "Employee, created",
+              "Employee\ncreated"
+            ],
+            "explanation": "Trace result: Employee created."
+          },
+          {
+            "id": 6,
+            "type": "output_tracing",
+            "question": "Item 6 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.message();",
+            "answer": "Employee created",
+            "altAnswers": [
+              "Employee, created",
+              "Employee\ncreated"
+            ],
+            "explanation": "Trace result: Employee created."
+          },
+          {
+            "id": 7,
+            "type": "output_tracing",
+            "question": "Item 7 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(7, 1000);\ne1.setId(99);\nSystem.out.println(e1.getId());",
+            "answer": "99",
+            "explanation": "Trace result: 99."
+          },
+          {
+            "id": 8,
+            "type": "output_tracing",
+            "question": "Item 8 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 2);\nSystem.out.println(c1.getAns());",
+            "answer": "3.0",
+            "explanation": "Trace result: 3.0."
+          },
           {
-            id: 20,
-            type: "output_tracing",
-            question: "Item 20 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.withdraw(75);\nSystem.out.println(b1.getBalance());",
-            answer: "125.0",
-            explanation: "Trace result: 125.0.",
+            "id": 9,
+            "type": "output_tracing",
+            "question": "Item 9 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(2.0, 3.0);\nSystem.out.println(c1.getAns());",
+            "answer": "5.0",
+            "explanation": "Trace result: 5.0."
           },
           {
-            id: 21,
-            type: "output_tracing",
-            question: "Item 21 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getName());",
-            answer: "Pen",
-            explanation: "Trace result: Pen.",
+            "id": 10,
+            "type": "output_tracing",
+            "question": "Item 10 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));",
+            "answer": "12",
+            "explanation": "Trace result: 12."
           },
           {
-            id: 22,
-            type: "output_tracing",
-            question: "Item 22 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getMyCount());",
-            answer: "1",
-            explanation: "Trace result: 1.",
+            "id": 11,
+            "type": "output_tracing",
+            "question": "Item 11 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(1));",
+            "answer": "4",
+            "explanation": "Trace result: 4."
           },
           {
-            id: 23,
-            type: "output_tracing",
-            question: "Item 23 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.area());",
-            answer: "20.0",
-            explanation: "Trace result: 20.0.",
+            "id": 12,
+            "type": "output_tracing",
+            "question": "Item 12 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(2));",
+            "answer": "32",
+            "explanation": "Trace result: 32."
           },
           {
-            id: 24,
-            type: "output_tracing",
-            question: "Item 24 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.perimeter());",
-            answer: "18.0",
-            explanation: "Trace result: 18.0.",
+            "id": 13,
+            "type": "output_tracing",
+            "question": "Item 13 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(3));",
+            "answer": "2",
+            "explanation": "Trace result: 2."
           },
-          {
-            id: 25,
-            type: "output_tracing",
-            question: "Item 25 [Part 1 (Easy)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3);\nSystem.out.println(r1.area());",
-            answer: "9.0",
-            explanation: "Trace result: 9.0.",
-          },
-          {
-            id: 26,
-            type: "output_tracing",
-            question: "Item 26 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e1.getSalary());",
-            answer: "100 500.0",
-            altAnswers: ["100, 500.0","100\n500.0"],
-            explanation: "Trace result: 100 500.0.",
-          },
           {
-            id: 27,
-            type: "output_tracing",
-            question: "Item 27 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns());",
-            answer: "2.0",
-            explanation: "Trace result: 2.0.",
-          },
-          {
-            id: 28,
-            type: "output_tracing",
-            question: "Item 28 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns());",
-            answer: "9.0",
-            explanation: "Trace result: 9.0.",
-          },
-          {
-            id: 29,
-            type: "output_tracing",
-            question: "Item 29 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(0));",
-            answer: "8.0",
-            explanation: "Trace result: 8.0.",
-          },
-          {
-            id: 30,
-            type: "output_tracing",
-            question: "Item 30 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(1));",
-            answer: "16.0",
-            explanation: "Trace result: 16.0.",
-          },
-          {
-            id: 31,
-            type: "output_tracing",
-            question: "Item 31 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(0));",
-            answer: "4.0",
-            explanation: "Trace result: 4.0.",
-          },
-          {
-            id: 32,
-            type: "output_tracing",
-            question: "Item 32 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns(1));",
-            answer: "81.0",
-            explanation: "Trace result: 81.0.",
-          },
-          {
-            id: 33,
-            type: "output_tracing",
-            question: "Item 33 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(0));",
-            answer: "12",
-            explanation: "Trace result: 12.",
-          },
-          {
-            id: 34,
-            type: "output_tracing",
-            question: "Item 34 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(3));",
-            answer: "5",
-            explanation: "Trace result: 5.",
-          },
-          {
-            id: 35,
-            type: "output_tracing",
-            question: "Item 35 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));\nm1.setCalculate(1, 1);\nSystem.out.println(m1.getCalculate(0));",
-            answer: "12\n2",
-            altAnswers: ["12 2","12, 2"],
-            explanation: "two separate println calls -> two lines: default numA=8,numB=4 gives getCalculate(0)=12 first; after setCalculate(1,1), getCalculate(0)=2",
-          },
-          {
-            id: 36,
-            type: "output_tracing",
-            question: "Item 36 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(3);\nc1.add();\nSystem.out.println(c1.getNumber());",
-            answer: "4",
-            explanation: "Trace result: 4.",
-          },
-          {
-            id: 37,
-            type: "output_tracing",
-            question: "Item 37 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(4);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
-            answer: "0 1",
-            altAnswers: ["0, 1","0\n1"],
-            explanation: "Trace result: 0 1.",
-          },
-          {
-            id: 38,
-            type: "output_tracing",
-            question: "Item 38 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(2);\nc2.add(9);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
-            answer: "2 9",
-            altAnswers: ["2, 9","2\n9"],
-            explanation: "Trace result: 2 9.",
-          },
-          {
-            id: 39,
-            type: "output_tracing",
-            question: "Item 39 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
-            answer: "Unknown 100.0",
-            altAnswers: ["Unknown, 100.0","Unknown\n100.0"],
-            explanation: "Trace result: Unknown 100.0.",
-          },
-          {
-            id: 40,
-            type: "output_tracing",
-            question: "Item 40 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
-            answer: "Jake 100.0",
-            altAnswers: ["Jake, 100.0","Jake\n100.0"],
-            explanation: "Trace result: Jake 100.0.",
-          },
-          {
-            id: 41,
-            type: "output_tracing",
-            question: "Item 41 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nb1.deposit(20);\nb1.withdraw(5);\nSystem.out.println(b1.getBalance());",
-            answer: "115.0",
-            explanation: "Trace result: 115.0.",
-          },
-          {
-            id: 42,
-            type: "output_tracing",
-            question: "Item 42 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(i1.getMyCount());",
-            answer: "2",
-            explanation: "Trace result: 2.",
-          },
-          {
-            id: 43,
-            type: "output_tracing",
-            question: "Item 43 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i2.getMyCount() + \" \" + i3.getMyCount());",
-            answer: "3 3",
-            altAnswers: ["3, 3","3\n3"],
-            explanation: "Trace result: 3 3.",
-          },
-          {
-            id: 44,
-            type: "output_tracing",
-            question: "Item 44 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());",
-            answer: "2",
-            explanation: "Trace result: 2.",
-          },
-          {
-            id: 45,
-            type: "output_tracing",
-            question: "Item 45 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.area());",
-            answer: "1.0",
-            explanation: "Trace result: 1.0.",
-          },
-          {
-            id: 46,
-            type: "output_tracing",
-            question: "Item 46 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.perimeter());",
-            answer: "4.0",
-            explanation: "Trace result: 4.0.",
-          },
-          {
-            id: 47,
-            type: "output_tracing",
-            question: "Item 47 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(2, 6);\nr1.setLength(10);\nSystem.out.println(r1.area());",
-            answer: "60.0",
-            explanation: "Trace result: 60.0.",
-          },
-          {
-            id: 48,
-            type: "output_tracing",
-            question: "Item 48 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(50, 800);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
-            answer: "50 100",
-            altAnswers: ["50, 100","50\n100"],
-            explanation: "Trace result: 50 100.",
-          },
-          {
-            id: 49,
-            type: "output_tracing",
-            question: "Item 49 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.setId(300);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
-            answer: "300 100",
-            altAnswers: ["300, 100","300\n100"],
-            explanation: "Trace result: 300 100.",
-          },
-          {
-            id: 50,
-            type: "output_tracing",
-            question: "Item 50 [Part 2 (Intermediate)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(3, 8);\nCalculator c2 = new Calculator(3.0, 8.0);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns());",
-            answer: "-5.0 11.0",
-            altAnswers: ["-5.0, 11.0","-5.0\n11.0"],
-            explanation: "Trace result: -5.0 11.0.",
-          },
-          {
-            id: 51,
-            type: "output_tracing",
-            question: "Item 51 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i1.getMyCount() + \" \" + i2.getMyCount() + \" \" + i3.getMyCount());",
-            answer: "3 3 3",
-            altAnswers: ["3, 3, 3","3\n3\n3"],
-            explanation: "static count is shared by all objects — every object reports the current total, not the count at the moment it was created",
-          },
-          {
-            id: 52,
-            type: "output_tracing",
-            question: "Item 52 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(Item.getCount());\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());\nSystem.out.println(i1.getMyCount());",
-            answer: "1\n2\n2",
-            altAnswers: ["1 2 2","1, 2, 2"],
-            explanation: "i1.getMyCount() reports the LIVE static count, not the count frozen at i1's own creation — this is the key static-field trap",
-          },
-          {
-            id: 53,
-            type: "output_tracing",
-            question: "Item 53 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 4);\nCalculator c2 = new Calculator();\nCalculator c3 = new Calculator(7);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns() + \" \" + c3.getAns());",
-            answer: "6.0 2.0 9.0",
-            altAnswers: ["6.0, 2.0, 9.0","6.0\n2.0\n9.0"],
-            explanation: "c1: Calculator(10,4) -> ans = 10-4 = 6.0 c2: Calculator() -> this(4,2) -> ans = 4-2 = 2.0 c3: Calculator(7) -> this(6.0,3.0) -> ans = 6.0+3.0 = 9.0",
-          },
-          {
-            id: 54,
-            type: "output_tracing",
-            question: "Item 54 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(4, 4);\nSystem.out.println(c1.getAns(0) + \" \" + c1.getAns(1));",
-            answer: "0.0 0.0",
-            altAnswers: ["0.0, 0.0","0.0\n0.0"],
-            explanation: "Calculator(4,4) -> ans = 4-4 = 0.0; getAns(0)=0+0=0.0, getAns(1)=0*0=0.0",
-          },
-          {
-            id: 55,
-            type: "output_tracing",
-            question: "Item 55 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(1));",
-            answer: "4.0",
-            explanation: "Calculator() -> ans=2.0; getAns(1) -> ans*ans = 4.0",
-          },
-          {
-            id: 56,
-            type: "output_tracing",
-            question: "Item 56 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(7);\nSystem.out.println(c1.getAns(0));",
-            answer: "18.0",
-            explanation: "Calculator(7) -> ans=9.0; getAns(0) -> ans+ans = 18.0",
-          },
-          {
-            id: 57,
-            type: "output_tracing",
-            question: "Item 57 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nMDAS m2 = new MDAS();\nm1.setCalculate(20, 5);\nSystem.out.println(m1.getCalculate(3) + \" \" + m2.getCalculate(3));",
-            answer: "4 2",
-            altAnswers: ["4, 2","4\n2"],
-            explanation: "m1.setCalculate(20,5) changes ONLY m1 -> m1.getCalculate(3)=20/5=4; m2 is untouched, still default 8,4 -> m2.getCalculate(3)=8/4=2",
-          },
-          {
-            id: 58,
-            type: "output_tracing",
-            question: "Item 58 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(m1.getCalculate(0), m1.getCalculate(1));\nSystem.out.println(m1.getCalculate(2));",
-            answer: "48",
-            explanation: "default numA=8,numB=4: a=getCalculate(0)=12, b=getCalculate(1)=4; setCalculate(12,4); getCalculate(2)=12*4=48",
-          },
-          {
-            id: 59,
-            type: "output_tracing",
-            question: "Item 59 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add(4);\nc1.initialize();\nc1.add(2);\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
-            answer: "2 1",
-            altAnswers: ["2, 1","2\n1"],
-            explanation: "Trace result: 2 1.",
-          },
-          {
-            id: 60,
-            type: "output_tracing",
-            question: "Item 60 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nc1.initialize();\nc1.add(3);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
-            answer: "0 3",
-            altAnswers: ["0, 3","0\n3"],
-            explanation: "Trace result: 0 3.",
-          },
-          {
-            id: 61,
-            type: "output_tracing",
-            question: "Item 61 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nBankAccount b2 = new BankAccount(\"Sam\");\nBankAccount b3 = new BankAccount(\"Sam\", 500);\nSystem.out.println(b1.getBalance() + \" \" + b2.getBalance() + \" \" + b3.getBalance());",
-            answer: "100.0 100.0 500.0",
-            altAnswers: ["100.0, 100.0, 500.0","100.0\n100.0\n500.0"],
-            explanation: "Trace result: 100.0 100.0 500.0.",
-          },
-          {
-            id: 62,
-            type: "output_tracing",
-            question: "Item 62 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Ana\");\nb1.deposit(100);\nBankAccount b2 = b1;\nb2.withdraw(50);\nSystem.out.println(b1.getBalance());",
-            answer: "150.0",
-            explanation: "b1 starts at 100.0 via this(\"Ana\",100); deposit(100) -> 200.0; b2=b1 means BOTH names point to the SAME object; b2.withdraw(50) -> 150.0; b1 sees the same change -> 150.0",
-          },
-          {
-            id: 63,
-            type: "output_tracing",
-            question: "Item 63 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nRectangle r2 = new Rectangle(5);\nRectangle r3 = new Rectangle(2, 8);\nSystem.out.println(r1.area() + \" \" + r2.area() + \" \" + r3.area());",
-            answer: "1.0 25.0 16.0",
-            altAnswers: ["1.0, 25.0, 16.0","1.0\n25.0\n16.0"],
-            explanation: "Trace result: 1.0 25.0 16.0.",
-          },
-          {
-            id: 64,
-            type: "output_tracing",
-            question: "Item 64 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4);\nr1.setLength(9);\nSystem.out.println(r1.area() + \" \" + r1.perimeter());",
-            answer: "36.0 26.0",
-            altAnswers: ["36.0, 26.0","36.0\n26.0"],
-            explanation: "Rectangle(4) -> this(4,4): length=4,width=4; setLength(9) changes ONLY length -> length=9, width=4 (unchanged); area=9*4=36.0; perimeter=2*(9+4)=26.0",
-          },
-          {
-            id: 65,
-            type: "output_tracing",
-            question: "Item 65 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nEmployee e2 = new Employee();\ne1.setSalary(999);\nSystem.out.println(e1.getSalary() + \" \" + e2.getSalary());",
-            answer: "999.0 500.0",
-            altAnswers: ["999.0, 500.0","999.0\n500.0"],
-            explanation: "Trace result: 999.0 500.0.",
-          },
-          {
-            id: 66,
-            type: "output_tracing",
-            question: "Item 66 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(1, 100);\ne1.setId(e1.getId() + 9);\nSystem.out.println(e1.getId());",
-            answer: "10",
-            explanation: "Trace result: 10.",
-          },
-          {
-            id: 67,
-            type: "output_tracing",
-            question: "Item 67 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(6, 2);\ndouble x = c1.getAns();\nCalculator c2 = new Calculator((int) x, 1);\nSystem.out.println(c2.getAns());",
-            answer: "3.0",
-            explanation: "c1=Calculator(6,2) -> ans=4.0; x=4.0; (int)x=4; c2=Calculator(4,1) -> Calculator(int,int) -> ans=4-1=3.0",
-          },
-          {
-            id: 68,
-            type: "output_tracing",
-            question: "Item 68 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nint a = m1.getCalculate(0);\nint b = m1.getCalculate(1);\nm1.setCalculate(a, b);\nSystem.out.println(m1.getCalculate(0));",
-            answer: "16",
-            explanation: "a=8+4=12, b=8-4=4; setCalculate(12,4); getCalculate(0)=12+4=16",
-          },
-          {
-            id: 69,
-            type: "output_tracing",
-            question: "Item 69 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = i2;\nItem i4 = new Item(\"C\");\nSystem.out.println(i3.getMyCount());",
-            answer: "3",
-            explanation: "i3 = i2 does NOT create a new Item — i3 just points to the same object as i2. The static counter only increases when \"new\" runs, so after i1,i2,i4 are created, count=3; i3.getMyCount() reads that same live count = 3",
-          },
-          {
-            id: 70,
-            type: "output_tracing",
-            question: "Item 70 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(5);\nc2 = c1;\nc2.add(5);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
-            answer: "10 10",
-            altAnswers: ["10, 10","10\n10"],
-            explanation: "c2 = c1 makes c2 point to the SAME Counter object as c1; c1.add(5) -> number=5; c2.add(5) on the same object -> number=10; both c1 and c2 report 10",
-          },
-          {
-            id: 71,
-            type: "output_tracing",
-            question: "Item 71 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 5);\nSystem.out.println(c1.getAns(0) + c1.getAns(1));",
-            answer: "35.0",
-            explanation: "ans=10-5=5.0; getAns(0)=5+5=10.0; getAns(1)=5*5=25.0; 10.0 + 25.0 = 35.0, ordinary numeric addition since both are double",
-          },
-          {
-            id: 72,
-            type: "output_tracing",
-            question: "Item 72 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nb1.deposit(b1.getBalance());\nSystem.out.println(b1.getBalance());",
-            answer: "200.0",
-            explanation: "BankAccount() -> this(\"Unknown\") -> this(\"Unknown\",100) -> balance=100.0; deposit(b1.getBalance()) = deposit(100.0) -> balance=200.0",
-          },
-          {
-            id: 73,
-            type: "output_tracing",
-            question: "Item 73 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3, 3);\nr1.setLength(r1.area());\nSystem.out.println(r1.area());",
-            answer: "27.0",
-            explanation: "Rectangle(3,3) -> area=9.0; setLength(9.0) -> length=9, width=3 (unchanged); new area = 9.0*3 = 27.0",
-          },
-          {
-            id: 74,
-            type: "output_tracing",
-            question: "Item 74 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0) + m1.getCalculate(1) + m1.getCalculate(2));",
-            answer: "48",
-            explanation: "default numA=8,numB=4: getCalculate(0)=12, getCalculate(1)=4, getCalculate(2)=32; 12+4+32=48",
-          },
-          {
-            id: 75,
-            type: "output_tracing",
-            question: "Item 75 [Part 3 (Hard)] — What is the exact output of this code?",
-            code: "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = new Item(\"C\");\nItem i4 = new Item(\"D\");\nSystem.out.println(i1.getMyCount() + i4.getMyCount());",
-            answer: "8",
-            explanation: "four Items created -> static count=4; i1.getMyCount() and i4.getMyCount() both read the same LIVE count = 4; 4+4=8",
-          },
-        ],
+            "id": 14,
+            "type": "output_tracing",
+            "question": "Item 14 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nSystem.out.println(c1.getNumber());",
+            "answer": "1",
+            "explanation": "Trace result: 1."
+          },
+          {
+            "id": 15,
+            "type": "output_tracing",
+            "question": "Item 15 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(5);\nSystem.out.println(c1.getNumber());",
+            "answer": "5",
+            "explanation": "Trace result: 5."
+          },
+          {
+            "id": 16,
+            "type": "output_tracing",
+            "question": "Item 16 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add();\nSystem.out.println(c1.getNumber());",
+            "answer": "2",
+            "explanation": "Trace result: 2."
+          },
+          {
+            "id": 17,
+            "type": "output_tracing",
+            "question": "Item 17 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nSystem.out.println(c1.getReused());",
+            "answer": "1",
+            "explanation": "Trace result: 1."
+          },
+          {
+            "id": 18,
+            "type": "output_tracing",
+            "question": "Item 18 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nSystem.out.println(b1.getBalance());",
+            "answer": "200.0",
+            "explanation": "Trace result: 200.0."
+          },
+          {
+            "id": 19,
+            "type": "output_tracing",
+            "question": "Item 19 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.deposit(50);\nSystem.out.println(b1.getBalance());",
+            "answer": "250.0",
+            "explanation": "Trace result: 250.0."
+          },
+          {
+            "id": 20,
+            "type": "output_tracing",
+            "question": "Item 20 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Maria\", 200);\nb1.withdraw(75);\nSystem.out.println(b1.getBalance());",
+            "answer": "125.0",
+            "explanation": "Trace result: 125.0."
+          },
+          {
+            "id": 21,
+            "type": "output_tracing",
+            "question": "Item 21 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getName());",
+            "answer": "Pen",
+            "explanation": "Trace result: Pen."
+          },
+          {
+            "id": 22,
+            "type": "output_tracing",
+            "question": "Item 22 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(i1.getMyCount());",
+            "answer": "1",
+            "explanation": "Trace result: 1."
+          },
+          {
+            "id": 23,
+            "type": "output_tracing",
+            "question": "Item 23 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.area());",
+            "answer": "20.0",
+            "explanation": "Trace result: 20.0."
+          },
+          {
+            "id": 24,
+            "type": "output_tracing",
+            "question": "Item 24 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4, 5);\nSystem.out.println(r1.perimeter());",
+            "answer": "18.0",
+            "explanation": "Trace result: 18.0."
+          },
+          {
+            "id": 25,
+            "type": "output_tracing",
+            "question": "Item 25 [Part 1 (Easy)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3);\nSystem.out.println(r1.area());",
+            "answer": "9.0",
+            "explanation": "Trace result: 9.0."
+          },
+          {
+            "id": 26,
+            "type": "output_tracing",
+            "question": "Item 26 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e1.getSalary());",
+            "answer": "100 500.0",
+            "altAnswers": [
+              "100, 500.0",
+              "100\n500.0"
+            ],
+            "explanation": "Trace result: 100 500.0."
+          },
+          {
+            "id": 27,
+            "type": "output_tracing",
+            "question": "Item 27 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns());",
+            "answer": "2.0",
+            "explanation": "Trace result: 2.0."
+          },
+          {
+            "id": 28,
+            "type": "output_tracing",
+            "question": "Item 28 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns());",
+            "answer": "9.0",
+            "explanation": "Trace result: 9.0."
+          },
+          {
+            "id": 29,
+            "type": "output_tracing",
+            "question": "Item 29 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(0));",
+            "answer": "8.0",
+            "explanation": "Trace result: 8.0."
+          },
+          {
+            "id": 30,
+            "type": "output_tracing",
+            "question": "Item 30 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(5, 1);\nSystem.out.println(c1.getAns(1));",
+            "answer": "16.0",
+            "explanation": "Trace result: 16.0."
+          },
+          {
+            "id": 31,
+            "type": "output_tracing",
+            "question": "Item 31 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(0));",
+            "answer": "4.0",
+            "explanation": "Trace result: 4.0."
+          },
+          {
+            "id": 32,
+            "type": "output_tracing",
+            "question": "Item 32 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(9);\nSystem.out.println(c1.getAns(1));",
+            "answer": "81.0",
+            "explanation": "Trace result: 81.0."
+          },
+          {
+            "id": 33,
+            "type": "output_tracing",
+            "question": "Item 33 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(0));",
+            "answer": "12",
+            "explanation": "Trace result: 12."
+          },
+          {
+            "id": 34,
+            "type": "output_tracing",
+            "question": "Item 34 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(10, 2);\nSystem.out.println(m1.getCalculate(3));",
+            "answer": "5",
+            "explanation": "Trace result: 5."
+          },
+          {
+            "id": 35,
+            "type": "output_tracing",
+            "question": "Item 35 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0));\nm1.setCalculate(1, 1);\nSystem.out.println(m1.getCalculate(0));",
+            "answer": "12\n2",
+            "altAnswers": [
+              "12 2",
+              "12, 2"
+            ],
+            "explanation": "two separate println calls -> two lines: default numA=8,numB=4 gives getCalculate(0)=12 first; after setCalculate(1,1), getCalculate(0)=2"
+          },
+          {
+            "id": 36,
+            "type": "output_tracing",
+            "question": "Item 36 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(3);\nc1.add();\nSystem.out.println(c1.getNumber());",
+            "answer": "4",
+            "explanation": "Trace result: 4."
+          },
+          {
+            "id": 37,
+            "type": "output_tracing",
+            "question": "Item 37 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add(4);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
+            "answer": "0 1",
+            "altAnswers": [
+              "0, 1",
+              "0\n1"
+            ],
+            "explanation": "Trace result: 0 1."
+          },
+          {
+            "id": 38,
+            "type": "output_tracing",
+            "question": "Item 38 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(2);\nc2.add(9);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
+            "answer": "2 9",
+            "altAnswers": [
+              "2, 9",
+              "2\n9"
+            ],
+            "explanation": "Trace result: 2 9."
+          },
+          {
+            "id": 39,
+            "type": "output_tracing",
+            "question": "Item 39 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
+            "answer": "Unknown 100.0",
+            "altAnswers": [
+              "Unknown, 100.0",
+              "Unknown\n100.0"
+            ],
+            "explanation": "Trace result: Unknown 100.0."
+          },
+          {
+            "id": 40,
+            "type": "output_tracing",
+            "question": "Item 40 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nSystem.out.println(b1.getOwner() + \" \" + b1.getBalance());",
+            "answer": "Jake 100.0",
+            "altAnswers": [
+              "Jake, 100.0",
+              "Jake\n100.0"
+            ],
+            "explanation": "Trace result: Jake 100.0."
+          },
+          {
+            "id": 41,
+            "type": "output_tracing",
+            "question": "Item 41 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Jake\");\nb1.deposit(20);\nb1.withdraw(5);\nSystem.out.println(b1.getBalance());",
+            "answer": "115.0",
+            "explanation": "Trace result: 115.0."
+          },
+          {
+            "id": 42,
+            "type": "output_tracing",
+            "question": "Item 42 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(i1.getMyCount());",
+            "answer": "2",
+            "explanation": "Trace result: 2."
+          },
+          {
+            "id": 43,
+            "type": "output_tracing",
+            "question": "Item 43 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i2.getMyCount() + \" \" + i3.getMyCount());",
+            "answer": "3 3",
+            "altAnswers": [
+              "3, 3",
+              "3\n3"
+            ],
+            "explanation": "Trace result: 3 3."
+          },
+          {
+            "id": 44,
+            "type": "output_tracing",
+            "question": "Item 44 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());",
+            "answer": "2",
+            "explanation": "Trace result: 2."
+          },
+          {
+            "id": 45,
+            "type": "output_tracing",
+            "question": "Item 45 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.area());",
+            "answer": "1.0",
+            "explanation": "Trace result: 1.0."
+          },
+          {
+            "id": 46,
+            "type": "output_tracing",
+            "question": "Item 46 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nSystem.out.println(r1.perimeter());",
+            "answer": "4.0",
+            "explanation": "Trace result: 4.0."
+          },
+          {
+            "id": 47,
+            "type": "output_tracing",
+            "question": "Item 47 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(2, 6);\nr1.setLength(10);\nSystem.out.println(r1.area());",
+            "answer": "60.0",
+            "explanation": "Trace result: 60.0."
+          },
+          {
+            "id": 48,
+            "type": "output_tracing",
+            "question": "Item 48 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(50, 800);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
+            "answer": "50 100",
+            "altAnswers": [
+              "50, 100",
+              "50\n100"
+            ],
+            "explanation": "Trace result: 50 100."
+          },
+          {
+            "id": 49,
+            "type": "output_tracing",
+            "question": "Item 49 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\ne1.setId(300);\nEmployee e2 = new Employee();\nSystem.out.println(e1.getId() + \" \" + e2.getId());",
+            "answer": "300 100",
+            "altAnswers": [
+              "300, 100",
+              "300\n100"
+            ],
+            "explanation": "Trace result: 300 100."
+          },
+          {
+            "id": 50,
+            "type": "output_tracing",
+            "question": "Item 50 [Part 2 (Intermediate)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(3, 8);\nCalculator c2 = new Calculator(3.0, 8.0);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns());",
+            "answer": "-5.0 11.0",
+            "altAnswers": [
+              "-5.0, 11.0",
+              "-5.0\n11.0"
+            ],
+            "explanation": "Trace result: -5.0 11.0."
+          },
+          {
+            "id": 51,
+            "type": "output_tracing",
+            "question": "Item 51 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nItem i2 = new Item(\"Notebook\");\nItem i3 = new Item(\"Eraser\");\nSystem.out.println(i1.getMyCount() + \" \" + i2.getMyCount() + \" \" + i3.getMyCount());",
+            "answer": "3 3 3",
+            "altAnswers": [
+              "3, 3, 3",
+              "3\n3\n3"
+            ],
+            "explanation": "static count is shared by all objects — every object reports the current total, not the count at the moment it was created"
+          },
+          {
+            "id": 52,
+            "type": "output_tracing",
+            "question": "Item 52 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"Pen\");\nSystem.out.println(Item.getCount());\nItem i2 = new Item(\"Notebook\");\nSystem.out.println(Item.getCount());\nSystem.out.println(i1.getMyCount());",
+            "answer": "1\n2\n2",
+            "altAnswers": [
+              "1 2 2",
+              "1, 2, 2"
+            ],
+            "explanation": "i1.getMyCount() reports the LIVE static count, not the count frozen at i1's own creation — this is the key static-field trap"
+          },
+          {
+            "id": 53,
+            "type": "output_tracing",
+            "question": "Item 53 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 4);\nCalculator c2 = new Calculator();\nCalculator c3 = new Calculator(7);\nSystem.out.println(c1.getAns() + \" \" + c2.getAns() + \" \" + c3.getAns());",
+            "answer": "6.0 2.0 9.0",
+            "altAnswers": [
+              "6.0, 2.0, 9.0",
+              "6.0\n2.0\n9.0"
+            ],
+            "explanation": "c1: Calculator(10,4) -> ans = 10-4 = 6.0 c2: Calculator() -> this(4,2) -> ans = 4-2 = 2.0 c3: Calculator(7) -> this(6.0,3.0) -> ans = 6.0+3.0 = 9.0"
+          },
+          {
+            "id": 54,
+            "type": "output_tracing",
+            "question": "Item 54 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(4, 4);\nSystem.out.println(c1.getAns(0) + \" \" + c1.getAns(1));",
+            "answer": "0.0 0.0",
+            "altAnswers": [
+              "0.0, 0.0",
+              "0.0\n0.0"
+            ],
+            "explanation": "Calculator(4,4) -> ans = 4-4 = 0.0; getAns(0)=0+0=0.0, getAns(1)=0*0=0.0"
+          },
+          {
+            "id": 55,
+            "type": "output_tracing",
+            "question": "Item 55 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator();\nSystem.out.println(c1.getAns(1));",
+            "answer": "4.0",
+            "explanation": "Calculator() -> ans=2.0; getAns(1) -> ans*ans = 4.0"
+          },
+          {
+            "id": 56,
+            "type": "output_tracing",
+            "question": "Item 56 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(7);\nSystem.out.println(c1.getAns(0));",
+            "answer": "18.0",
+            "explanation": "Calculator(7) -> ans=9.0; getAns(0) -> ans+ans = 18.0"
+          },
+          {
+            "id": 57,
+            "type": "output_tracing",
+            "question": "Item 57 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nMDAS m2 = new MDAS();\nm1.setCalculate(20, 5);\nSystem.out.println(m1.getCalculate(3) + \" \" + m2.getCalculate(3));",
+            "answer": "4 2",
+            "altAnswers": [
+              "4, 2",
+              "4\n2"
+            ],
+            "explanation": "m1.setCalculate(20,5) changes ONLY m1 -> m1.getCalculate(3)=20/5=4; m2 is untouched, still default 8,4 -> m2.getCalculate(3)=8/4=2"
+          },
+          {
+            "id": 58,
+            "type": "output_tracing",
+            "question": "Item 58 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nm1.setCalculate(m1.getCalculate(0), m1.getCalculate(1));\nSystem.out.println(m1.getCalculate(2));",
+            "answer": "48",
+            "explanation": "default numA=8,numB=4: a=getCalculate(0)=12, b=getCalculate(1)=4; setCalculate(12,4); getCalculate(2)=12*4=48"
+          },
+          {
+            "id": 59,
+            "type": "output_tracing",
+            "question": "Item 59 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.add();\nc1.add(4);\nc1.initialize();\nc1.add(2);\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
+            "answer": "2 1",
+            "altAnswers": [
+              "2, 1",
+              "2\n1"
+            ],
+            "explanation": "Trace result: 2 1."
+          },
+          {
+            "id": 60,
+            "type": "output_tracing",
+            "question": "Item 60 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nc1.initialize();\nc1.initialize();\nc1.add(3);\nc1.initialize();\nSystem.out.println(c1.getNumber() + \" \" + c1.getReused());",
+            "answer": "0 3",
+            "altAnswers": [
+              "0, 3",
+              "0\n3"
+            ],
+            "explanation": "Trace result: 0 3."
+          },
+          {
+            "id": 61,
+            "type": "output_tracing",
+            "question": "Item 61 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nBankAccount b2 = new BankAccount(\"Sam\");\nBankAccount b3 = new BankAccount(\"Sam\", 500);\nSystem.out.println(b1.getBalance() + \" \" + b2.getBalance() + \" \" + b3.getBalance());",
+            "answer": "100.0 100.0 500.0",
+            "altAnswers": [
+              "100.0, 100.0, 500.0",
+              "100.0\n100.0\n500.0"
+            ],
+            "explanation": "Trace result: 100.0 100.0 500.0."
+          },
+          {
+            "id": 62,
+            "type": "output_tracing",
+            "question": "Item 62 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount(\"Ana\");\nb1.deposit(100);\nBankAccount b2 = b1;\nb2.withdraw(50);\nSystem.out.println(b1.getBalance());",
+            "answer": "150.0",
+            "explanation": "b1 starts at 100.0 via this(\"Ana\",100); deposit(100) -> 200.0; b2=b1 means BOTH names point to the SAME object; b2.withdraw(50) -> 150.0; b1 sees the same change -> 150.0"
+          },
+          {
+            "id": 63,
+            "type": "output_tracing",
+            "question": "Item 63 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle();\nRectangle r2 = new Rectangle(5);\nRectangle r3 = new Rectangle(2, 8);\nSystem.out.println(r1.area() + \" \" + r2.area() + \" \" + r3.area());",
+            "answer": "1.0 25.0 16.0",
+            "altAnswers": [
+              "1.0, 25.0, 16.0",
+              "1.0\n25.0\n16.0"
+            ],
+            "explanation": "Trace result: 1.0 25.0 16.0."
+          },
+          {
+            "id": 64,
+            "type": "output_tracing",
+            "question": "Item 64 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(4);\nr1.setLength(9);\nSystem.out.println(r1.area() + \" \" + r1.perimeter());",
+            "answer": "36.0 26.0",
+            "altAnswers": [
+              "36.0, 26.0",
+              "36.0\n26.0"
+            ],
+            "explanation": "Rectangle(4) -> this(4,4): length=4,width=4; setLength(9) changes ONLY length -> length=9, width=4 (unchanged); area=9*4=36.0; perimeter=2*(9+4)=26.0"
+          },
+          {
+            "id": 65,
+            "type": "output_tracing",
+            "question": "Item 65 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee();\nEmployee e2 = new Employee();\ne1.setSalary(999);\nSystem.out.println(e1.getSalary() + \" \" + e2.getSalary());",
+            "answer": "999.0 500.0",
+            "altAnswers": [
+              "999.0, 500.0",
+              "999.0\n500.0"
+            ],
+            "explanation": "Trace result: 999.0 500.0."
+          },
+          {
+            "id": 66,
+            "type": "output_tracing",
+            "question": "Item 66 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Employee {\n    private int id;\n    private double salary;\n\n    public Employee() {\n        this(100, 500);\n    }\n    public Employee(int id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n    public void setId(int idNum) { id = idNum; }\n    public int getId() { return id; }\n    public void setSalary(double salary) { this.salary = salary; }\n    public double getSalary() { return salary; }\n    public static void message() {\n        System.out.println(\"Employee created\");\n    }\n}\n\n// Code to trace:\nEmployee e1 = new Employee(1, 100);\ne1.setId(e1.getId() + 9);\nSystem.out.println(e1.getId());",
+            "answer": "10",
+            "explanation": "Trace result: 10."
+          },
+          {
+            "id": 67,
+            "type": "output_tracing",
+            "question": "Item 67 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(6, 2);\ndouble x = c1.getAns();\nCalculator c2 = new Calculator((int) x, 1);\nSystem.out.println(c2.getAns());",
+            "answer": "3.0",
+            "explanation": "c1=Calculator(6,2) -> ans=4.0; x=4.0; (int)x=4; c2=Calculator(4,1) -> Calculator(int,int) -> ans=4-1=3.0"
+          },
+          {
+            "id": 68,
+            "type": "output_tracing",
+            "question": "Item 68 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nint a = m1.getCalculate(0);\nint b = m1.getCalculate(1);\nm1.setCalculate(a, b);\nSystem.out.println(m1.getCalculate(0));",
+            "answer": "16",
+            "explanation": "a=8+4=12, b=8-4=4; setCalculate(12,4); getCalculate(0)=12+4=16"
+          },
+          {
+            "id": 69,
+            "type": "output_tracing",
+            "question": "Item 69 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = i2;\nItem i4 = new Item(\"C\");\nSystem.out.println(i3.getMyCount());",
+            "answer": "3",
+            "explanation": "i3 = i2 does NOT create a new Item — i3 just points to the same object as i2. The static counter only increases when \"new\" runs, so after i1,i2,i4 are created, count=3; i3.getMyCount() reads that same live count = 3"
+          },
+          {
+            "id": 70,
+            "type": "output_tracing",
+            "question": "Item 70 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Counter {\n    private int number = 0;\n    private int reused = 0;\n\n    public void add() { number = number + 1; }\n    public void add(int x) { number = number + x; }\n    public void initialize() {\n        number = 0;\n        reused = reused + 1;\n    }\n    public int getNumber() { return number; }\n    public int getReused() { return reused; }\n}\n\n// Code to trace:\nCounter c1 = new Counter();\nCounter c2 = new Counter();\nc1.add(5);\nc2 = c1;\nc2.add(5);\nSystem.out.println(c1.getNumber() + \" \" + c2.getNumber());",
+            "answer": "10 10",
+            "altAnswers": [
+              "10, 10",
+              "10\n10"
+            ],
+            "explanation": "c2 = c1 makes c2 point to the SAME Counter object as c1; c1.add(5) -> number=5; c2.add(5) on the same object -> number=10; both c1 and c2 report 10"
+          },
+          {
+            "id": 71,
+            "type": "output_tracing",
+            "question": "Item 71 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Calculator {\n    private int numA;\n    private int numB;\n    private double ans;\n\n    public Calculator() {\n        this(4, 2);\n    }\n    public Calculator(int numA) {\n        this(6.0, 3.0);\n    }\n    public Calculator(int numA, int numB) {\n        this.ans = numA - numB;\n    }\n    public Calculator(double numA, double numB) {\n        this.ans = numA + numB;\n    }\n    public double getAns() {\n        return ans;\n    }\n    public double getAns(int n) {\n        if (n == 0)\n            return ans + ans;\n        else\n            return ans * ans;\n    }\n}\n\n// Code to trace:\nCalculator c1 = new Calculator(10, 5);\nSystem.out.println(c1.getAns(0) + c1.getAns(1));",
+            "answer": "35.0",
+            "explanation": "ans=10-5=5.0; getAns(0)=5+5=10.0; getAns(1)=5*5=25.0; 10.0 + 25.0 = 35.0, ordinary numeric addition since both are double"
+          },
+          {
+            "id": 72,
+            "type": "output_tracing",
+            "question": "Item 72 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount() {\n        this(\"Unknown\");\n    }\n    public BankAccount(String owner) {\n        this(owner, 100);\n    }\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n    public void deposit(double amt) { balance = balance + amt; }\n    public void withdraw(double amt) { balance = balance - amt; }\n    public double getBalance() { return balance; }\n    public String getOwner() { return owner; }\n}\n\n// Code to trace:\nBankAccount b1 = new BankAccount();\nb1.deposit(b1.getBalance());\nSystem.out.println(b1.getBalance());",
+            "answer": "200.0",
+            "explanation": "BankAccount() -> this(\"Unknown\") -> this(\"Unknown\",100) -> balance=100.0; deposit(b1.getBalance()) = deposit(100.0) -> balance=200.0"
+          },
+          {
+            "id": 73,
+            "type": "output_tracing",
+            "question": "Item 73 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        this(1, 1);\n    }\n    public Rectangle(double side) {\n        this(side, side);\n    }\n    public Rectangle(double length, double width) {\n        this.length = length;\n        this.width = width;\n    }\n    public double area() { return length * width; }\n    public double perimeter() { return 2 * (length + width); }\n    public void setLength(double length) { this.length = length; }\n}\n\n// Code to trace:\nRectangle r1 = new Rectangle(3, 3);\nr1.setLength(r1.area());\nSystem.out.println(r1.area());",
+            "answer": "27.0",
+            "explanation": "Rectangle(3,3) -> area=9.0; setLength(9.0) -> length=9, width=3 (unchanged); new area = 9.0*3 = 27.0"
+          },
+          {
+            "id": 74,
+            "type": "output_tracing",
+            "question": "Item 74 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass MDAS {\n    private int numA;\n    private int numB;\n\n    public MDAS() {\n        numA = 8;\n        numB = 4;\n    }\n    public void setCalculate(int numA, int numB) {\n        this.numA = numA;\n        this.numB = numB;\n    }\n    public int getCalculate(int n) {\n        if (n == 0) return numA + numB;\n        else if (n == 1) return numA - numB;\n        else if (n == 2) return numA * numB;\n        else return numA / numB;\n    }\n}\n\n// Code to trace:\nMDAS m1 = new MDAS();\nSystem.out.println(m1.getCalculate(0) + m1.getCalculate(1) + m1.getCalculate(2));",
+            "answer": "48",
+            "explanation": "default numA=8,numB=4: getCalculate(0)=12, getCalculate(1)=4, getCalculate(2)=32; 12+4+32=48"
+          },
+          {
+            "id": 75,
+            "type": "output_tracing",
+            "question": "Item 75 [Part 3 (Hard)] — What is the exact output of this code?",
+            "code": "// Reference Class:\nclass Item {\n    private String name;\n    private static int count = 0;\n\n    public Item(String name) {\n        this.name = name;\n        count = count + 1;\n    }\n    public String getName() { return name; }\n    public int getMyCount() { return count; }\n    public static int getCount() { return count; }\n}\n\n// Code to trace:\nItem i1 = new Item(\"A\");\nItem i2 = new Item(\"B\");\nItem i3 = new Item(\"C\");\nItem i4 = new Item(\"D\");\nSystem.out.println(i1.getMyCount() + i4.getMyCount());",
+            "answer": "8",
+            "explanation": "four Items created -> static count=4; i1.getMyCount() and i4.getMyCount() both read the same LIVE count = 4; 4+4=8"
+          }
+        ]
       },
-    ],
-  },
-  {
-    id: "comprog3",
-    code: "COMPROG 3",
-    name: "Computer Programming 3 Lec",
-    description: "Covers advanced programming concepts, data structures, and algorithm design.",
-    color: "#7c3aed",
-    reviewers: [],
-  },
-  {
-    id: "ipt1",
-    code: "IPT1",
-    name: "Integrative Programming Technologies 1",
-    description: "Covers web services, APIs, system integration, and modern programming frameworks.",
-    color: "#6d28d9",
-    reviewers: [],
-  },
-  {
-    id: "wd",
-    code: "WD",
-    name: "Web Development Lec",
-    description: "Covers front-end and back-end web development, HTTP, and web application architecture.",
-    color: "#8b5cf6",
-    reviewers: [],
-  },
-  {
-    id: "sia",
-    code: "SIA",
-    name: "Systems Integration and Architecture",
-    description: "Covers enterprise systems integration, middleware, SOA, and microservices architecture.",
-    color: "#7c3aed",
-    reviewers: [
-      // â”€â”€ Quiz 1: Combined (MC + Identification + Enumeration) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       {
-        id: "sia_quiz1",
-        title: "Quiz 1 — System Integration & Architecture",
-        description: "100-item quiz: 40 Multiple Choice, 30 Identification, and 6 Enumeration groups (items 71–100).",
-        quizletLink: null,
-        questions: [
+        "id": "oop_quizlet_1",
+        "title": "OOP 1 — Quizlet Flash Cards",
+        "description": "OOP 1 flash cards on Quizlet — study and review Module 1 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199330018/oop-1-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
+      },
+      {
+        "id": "oop_quizlet_2",
+        "title": "OOP 2 — Quizlet Flash Cards",
+        "description": "OOP 2 flash cards on Quizlet — study and review Module 2 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199330494/oop-2-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
+      },
+      {
+        "id": "oop_quizlet_3",
+        "title": "OOP 3 — Quizlet Flash Cards",
+        "description": "OOP 3 flash cards on Quizlet — study and review Module 3 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199330895/oop-3-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
+      },
+      {
+        "id": "oop_quizlet_4",
+        "title": "OOP 4 — Quizlet Flash Cards",
+        "description": "OOP 4 flash cards on Quizlet — study and review Module 4 using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199331228/oop-4-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
+      }
+    ]
+  },
+  {
+    "id": "comprog3",
+    "code": "COMPROG 3",
+    "name": "Computer Programming 3 Lec",
+    "description": "Covers advanced programming concepts, data structures, and algorithm design.",
+    "color": "#7c3aed",
+    "reviewers": []
+  },
+  {
+    "id": "ipt1",
+    "code": "IPT1",
+    "name": "Integrative Programming Technologies 1",
+    "description": "Covers web services, APIs, system integration, and modern programming frameworks.",
+    "color": "#6d28d9",
+    "reviewers": []
+  },
+  {
+    "id": "wd",
+    "code": "WD",
+    "name": "Web Development Lec",
+    "description": "Covers front-end and back-end web development, HTTP, and web application architecture.",
+    "color": "#8b5cf6",
+    "reviewers": []
+  },
+  {
+    "id": "sia",
+    "code": "SIA",
+    "name": "Systems Integration and Architecture",
+    "description": "Covers enterprise systems integration, middleware, SOA, and microservices architecture.",
+    "color": "#7c3aed",
+    "reviewers": [
+      {
+        "id": "sia_quiz1",
+        "title": "Quiz 1 — System Integration & Architecture",
+        "description": "100-item quiz: 40 Multiple Choice, 30 Identification, and 6 Enumeration groups (items 71–100).",
+        "quizletLink": null,
+        "questions": [
           {
-            id: 1,
-            type: "mc",
-            question: "What is the primary goal of system integration?",
-            options: [
+            "id": 1,
+            "type": "mc",
+            "question": "What is the primary goal of system integration?",
+            "options": [
               "To replace all existing systems with one single application",
               "To create a larger, more complex system that performs better and offers more functionality",
               "To reduce the number of hardware components in an enterprise",
-              "To separate databases from network components",
+              "To separate databases from network components"
             ],
-            answer: 1,
-            explanation: "According to Chapter 2, the goal of system integration is to create a unified and cohesive whole that performs better and offers more functionality than the individual systems would on their own.",
+            "answer": 1,
+            "explanation": "According to Chapter 2, the goal of system integration is to create a unified and cohesive whole that performs better and offers more functionality than the individual systems would on their own."
           },
           {
-            id: 2,
-            type: "mc",
-            question: "In the IT world, what is a Systems Integrator (SI)?",
-            options: [
+            "id": 2,
+            "type": "mc",
+            "question": "In the IT world, what is a Systems Integrator (SI)?",
+            "options": [
               "A hardware component used to connect network cables",
               "A company that specializes in implementing, planning, coordinating, and maintaining IT systems",
               "A software package that acts as a firewall",
-              "A legacy system database",
+              "A legacy system database"
             ],
-            answer: 1,
-            explanation: "Chapter 2 defines a Systems Integrator on broad terms as a company (like Deloitte, IBM, Accenture) that specializes in implementing, planning, and managing IT systems.",
+            "answer": 1,
+            "explanation": "Chapter 2 defines a Systems Integrator on broad terms as a company (like Deloitte, IBM, Accenture) that specializes in implementing, planning, and managing IT systems."
           },
           {
-            id: 3,
-            type: "mc",
-            question: "Which of the following is an example of a Point-to-Point Integration?",
-            options: [
+            "id": 3,
+            "type": "mc",
+            "question": "Which of the following is an example of a Point-to-Point Integration?",
+            "options": [
               "An Enterprise Service Bus (ESB) connecting 10 systems",
               "An e-commerce online store directly notifying an order fulfillment system",
               "A common data format translating XML to EDI",
-              "A system using an integration silo",
+              "A system using an integration silo"
             ],
-            answer: 1,
-            explanation: "Chapter 2 uses the example of an E-commerce Order Processing setup where the online store connects directly to order fulfillment as a classic Point-to-Point Integration.",
+            "answer": 1,
+            "explanation": "Chapter 2 uses the example of an E-commerce Order Processing setup where the online store connects directly to order fulfillment as a classic Point-to-Point Integration."
           },
           {
-            id: 4,
-            type: "mc",
-            question: "What is a major drawback of Vertical Integration?",
-            options: [
+            "id": 4,
+            "type": "mc",
+            "question": "What is a major drawback of Vertical Integration?",
+            "options": [
               "It is too flexible and changes constantly",
               "It requires an Enterprise Service Bus",
               "It creates functional \"silos\" that are rigid and difficult to manage in the long term",
-              "It involves too many third-party systems",
+              "It involves too many third-party systems"
             ],
-            answer: 2,
-            explanation: "Chapter 2 notes that while Vertical Integration is simple for limited systems, it is rigid because any new functionality requires building its own separate functional \"silo.\"",
+            "answer": 2,
+            "explanation": "Chapter 2 notes that while Vertical Integration is simple for limited systems, it is rigid because any new functionality requires building its own separate functional \"silo.\""
           },
           {
-            id: 5,
-            type: "mc",
-            question: "Star Integration is also commonly referred to as:",
-            options: [
+            "id": 5,
+            "type": "mc",
+            "question": "Star Integration is also commonly referred to as:",
+            "options": [
               "Spaghetti Integration",
               "Lasagna Integration",
               "Bus Integration",
-              "Point-to-Hub Integration",
+              "Point-to-Hub Integration"
             ],
-            answer: 0,
-            explanation: "Chapter 2 states that Star Integration is sometimes referred to as \"Spaghetti Integration\" because the numerous point-to-point connections resemble messy spaghetti code.",
+            "answer": 0,
+            "explanation": "Chapter 2 states that Star Integration is sometimes referred to as \"Spaghetti Integration\" because the numerous point-to-point connections resemble messy spaghetti code."
           },
           {
-            id: 6,
-            type: "mc",
-            question: "If you connect ten systems to each other using Star Integration, how many separate integrations are required?",
-            options: ["10", "20", "45", "100"],
-            answer: 2,
-            explanation: "Chapter 2 provides the specific example that connecting ten systems using the Star integration method requires 45 separate point-to-point integrations.",
+            "id": 6,
+            "type": "mc",
+            "question": "If you connect ten systems to each other using Star Integration, how many separate integrations are required?",
+            "options": [
+              "10",
+              "20",
+              "45",
+              "100"
+            ],
+            "answer": 2,
+            "explanation": "Chapter 2 provides the specific example that connecting ten systems using the Star integration method requires 45 separate point-to-point integrations."
           },
           {
-            id: 7,
-            type: "mc",
-            question: "In Horizontal Integration, what is the separate sub-system used as a common interface layer called?",
-            options: [
+            "id": 7,
+            "type": "mc",
+            "question": "In Horizontal Integration, what is the separate sub-system used as a common interface layer called?",
+            "options": [
               "Enterprise Application Integration (EAI)",
               "Electronic Data Interchange (EDI)",
               "Enterprise Service Bus (ESB)",
-              "Product Information Management (PIM)",
+              "Product Information Management (PIM)"
             ],
-            answer: 2,
-            explanation: "Chapter 2 specifies that in Horizontal Integration, the common interface layer between all sub-systems is very often referred to as an Enterprise Service Bus (ESB).",
+            "answer": 2,
+            "explanation": "Chapter 2 specifies that in Horizontal Integration, the common interface layer between all sub-systems is very often referred to as an Enterprise Service Bus (ESB)."
           },
           {
-            id: 8,
-            type: "mc",
-            question: "If a bank upgrades its mobile app in a Horizontal Integration setup, do the other systems need to be changed?",
-            options: [
+            "id": 8,
+            "type": "mc",
+            "question": "If a bank upgrades its mobile app in a Horizontal Integration setup, do the other systems need to be changed?",
+            "options": [
               "Yes, all 45 connections must be updated.",
               "No, because they remain connected through the ESB.",
               "Yes, because they share a functional silo.",
-              "No, because they are legacy systems.",
+              "No, because they are legacy systems."
             ],
-            answer: 1,
-            explanation: "Chapter 2's bank example explains that with an ESB, upgrading one system (like the mobile app) doesn't require changing other systems since they just talk to the ESB.",
+            "answer": 1,
+            "explanation": "Chapter 2's bank example explains that with an ESB, upgrading one system (like the mobile app) doesn't require changing other systems since they just talk to the ESB."
           },
           {
-            id: 9,
-            type: "mc",
-            question: "How does Common Data Format Integration reduce maintenance?",
-            options: [
+            "id": 9,
+            "type": "mc",
+            "question": "How does Common Data Format Integration reduce maintenance?",
+            "options": [
               "It connects systems directly to one another.",
               "It allows each system to do only one data conversion from its native format to the common format.",
               "It replaces all systems with a single software application.",
-              "It relies entirely on legacy databases.",
+              "It relies entirely on legacy databases."
             ],
-            answer: 1,
-            explanation: "Chapter 2 explains that this approach allows a system to do only one data conversion to a common format (and vice versa), ensuring the number of transformations equals the number of sub-systems.",
+            "answer": 1,
+            "explanation": "Chapter 2 explains that this approach allows a system to do only one data conversion to a common format (and vice versa), ensuring the number of transformations equals the number of sub-systems."
           },
           {
-            id: 10,
-            type: "mc",
-            question: "Which common data format represents and exchanges structured data, commonly used in web services?",
-            options: ["EDI", "XML", "CAD", "PIM"],
-            answer: 1,
-            explanation: "Chapter 2 identifies XML (eXtensible Markup Language) as a common data format for representing and exchanging structured data in web services.",
+            "id": 10,
+            "type": "mc",
+            "question": "Which common data format represents and exchanges structured data, commonly used in web services?",
+            "options": [
+              "EDI",
+              "XML",
+              "CAD",
+              "PIM"
+            ],
+            "answer": 1,
+            "explanation": "Chapter 2 identifies XML (eXtensible Markup Language) as a common data format for representing and exchanging structured data in web services."
           },
           {
-            id: 11,
-            type: "mc",
-            question: "Which type of integration is vital for companies looking to replace paper-based documents like invoices and purchase orders?",
-            options: [
+            "id": 11,
+            "type": "mc",
+            "question": "Which type of integration is vital for companies looking to replace paper-based documents like invoices and purchase orders?",
+            "options": [
               "Data Integration",
               "Legacy System Integration",
               "Electronic Document Interchange (EDI)",
-              "Horizontal Integration",
+              "Horizontal Integration"
             ],
-            answer: 2,
-            explanation: "Chapter 2 defines EDI as the system-to-system exchange of business documents intended to replace paper-based documents to save time and avoid manual errors.",
+            "answer": 2,
+            "explanation": "Chapter 2 defines EDI as the system-to-system exchange of business documents intended to replace paper-based documents to save time and avoid manual errors."
           },
           {
-            id: 12,
-            type: "mc",
-            question: "What is Data Integration?",
-            options: [
+            "id": 12,
+            "type": "mc",
+            "question": "What is Data Integration?",
+            "options": [
               "Connecting online and in-store sales systems",
               "Gathering data from disparate sources together to provide businesses with a centralized access point",
               "Connecting outdated systems to modern infrastructure",
-              "Automating business communication with external partners",
+              "Automating business communication with external partners"
             ],
-            answer: 1,
-            explanation: "Chapter 2 defines Data Integration as gathering data from disparate sources to make it more available and easy to process via a centralized access point.",
+            "answer": 1,
+            "explanation": "Chapter 2 defines Data Integration as gathering data from disparate sources to make it more available and easy to process via a centralized access point."
           },
           {
-            id: 13,
-            type: "mc",
-            question: "Enterprise Application Integration (EAI) is all about:",
-            options: [
+            "id": 13,
+            "type": "mc",
+            "question": "Enterprise Application Integration (EAI) is all about:",
+            "options": [
               "Bridging gaps between different software programs and applications (like ERP and CRM) to streamline processes",
               "Connecting physical hardware components in manufacturing",
               "Upgrading legacy systems to cloud-based systems",
-              "Designing new software using CAD",
+              "Designing new software using CAD"
             ],
-            answer: 0,
-            explanation: "Chapter 2 states EAI is about bridging gaps between different software programs (ERP, CRM, SCM, etc.) to streamline business processes through smooth data flow.",
+            "answer": 0,
+            "explanation": "Chapter 2 states EAI is about bridging gaps between different software programs (ERP, CRM, SCM, etc.) to streamline business processes through smooth data flow."
           },
           {
-            id: 14,
-            type: "mc",
-            question: "In which industry does system integration enable features like infotainment systems, navigation, and autonomous driving?",
-            options: ["Telecommunications", "Healthcare", "Automotive", "Aerospace and Defense"],
-            answer: 2,
-            explanation: "Chapter 2 notes that Automotive industry integration brings together electronics, mechanics, and software for features like infotainment and autonomous driving.",
+            "id": 14,
+            "type": "mc",
+            "question": "In which industry does system integration enable features like infotainment systems, navigation, and autonomous driving?",
+            "options": [
+              "Telecommunications",
+              "Healthcare",
+              "Automotive",
+              "Aerospace and Defense"
+            ],
+            "answer": 2,
+            "explanation": "Chapter 2 notes that Automotive industry integration brings together electronics, mechanics, and software for features like infotainment and autonomous driving."
           },
           {
-            id: 15,
-            type: "mc",
-            question: "By definition, what are Enterprise Systems (ESs)?",
-            options: [
+            "id": 15,
+            "type": "mc",
+            "question": "By definition, what are Enterprise Systems (ESs)?",
+            "options": [
               "Hardware routers used for wide area networks",
               "Software packages developed to support many aspects of an enterprise's information needs",
               "Siloed applications that only handle human resources",
-              "Outdated legacy frameworks",
+              "Outdated legacy frameworks"
             ],
-            answer: 1,
-            explanation: "Lecture 1 defines ESs as software packages that are developed to support many aspects of an enterprise's information needs (Davenport, 2000).",
+            "answer": 1,
+            "explanation": "Lecture 1 defines ESs as software packages that are developed to support many aspects of an enterprise's information needs (Davenport, 2000)."
           },
           {
-            id: 16,
-            type: "mc",
-            question: "Which of the following is a type of ES that facilitates transaction processing in a distributive environment?",
-            options: ["CAD", "EDI", "ERP (Enterprise Resource Planning)", "XML"],
-            answer: 2,
-            explanation: "Lecture 1 states that as a type of ES, ERP facilitates transaction processing in a distributive environment to manage enterprise resources.",
+            "id": 16,
+            "type": "mc",
+            "question": "Which of the following is a type of ES that facilitates transaction processing in a distributive environment?",
+            "options": [
+              "CAD",
+              "EDI",
+              "ERP (Enterprise Resource Planning)",
+              "XML"
+            ],
+            "answer": 2,
+            "explanation": "Lecture 1 states that as a type of ES, ERP facilitates transaction processing in a distributive environment to manage enterprise resources."
           },
           {
-            id: 17,
-            type: "mc",
-            question: "What system did the Ford Motor Company implement to increase product development efficiency in the mid-1990s?",
-            options: ["C3P System", "ESB System", "EDI System", "Legacy Integration System"],
-            answer: 0,
-            explanation: "Lecture 1 describes Ford implementing the CAD/CAE/CAM/PIMS (C3P) ES to achieve high product quality and shorter cycle times.",
+            "id": 17,
+            "type": "mc",
+            "question": "What system did the Ford Motor Company implement to increase product development efficiency in the mid-1990s?",
+            "options": [
+              "C3P System",
+              "ESB System",
+              "EDI System",
+              "Legacy Integration System"
+            ],
+            "answer": 0,
+            "explanation": "Lecture 1 describes Ford implementing the CAD/CAE/CAM/PIMS (C3P) ES to achieve high product quality and shorter cycle times."
           },
           {
-            id: 18,
-            type: "mc",
-            question: "In Ford's C3P system, what does the \"P\" stand for?",
-            options: [
+            "id": 18,
+            "type": "mc",
+            "question": "In Ford's C3P system, what does the \"P\" stand for?",
+            "options": [
               "Product Integration Method",
               "Product Information Management",
               "Process Integration Management",
-              "Point-to-Point",
+              "Point-to-Point"
             ],
-            answer: 1,
-            explanation: "Lecture 1 explains that the acronym combines the three \"Cs\" with PIM, which stands for Product Information Management.",
+            "answer": 1,
+            "explanation": "Lecture 1 explains that the acronym combines the three \"Cs\" with PIM, which stands for Product Information Management."
           },
           {
-            id: 19,
-            type: "mc",
-            question: "What is a \"System of Systems\" (SoS)?",
-            options: [
+            "id": 19,
+            "type": "mc",
+            "question": "What is a \"System of Systems\" (SoS)?",
+            "options": [
               "A single software package with multiple modules",
               "A collection of joint stand-alone systems designed for specific purposes to create a task needed for a certain objective",
               "A point-to-point network architecture",
-              "A legacy system database",
+              "A legacy system database"
             ],
-            answer: 1,
-            explanation: "Lecture 1 defines SoS as a collection of joint stand-alone systems that were originally designed for specific purposes (Mayk and Madni, 2006).",
+            "answer": 1,
+            "explanation": "Lecture 1 defines SoS as a collection of joint stand-alone systems that were originally designed for specific purposes (Mayk and Madni, 2006)."
           },
           {
-            id: 20,
-            type: "mc",
-            question: "Which SoS characteristic means the component systems are separately acquired and integrated but maintain continuing existence?",
-            options: [
+            "id": 20,
+            "type": "mc",
+            "question": "Which SoS characteristic means the component systems are separately acquired and integrated but maintain continuing existence?",
+            "options": [
               "Evolutionary Development",
               "Emergent Behavior",
               "Managerial Independence",
-              "Geographic Distribution",
+              "Geographic Distribution"
             ],
-            answer: 2,
-            explanation: "Lecture 1 defines Managerial Independence as the component systems not only operating independently but being separately acquired and managed.",
+            "answer": 2,
+            "explanation": "Lecture 1 defines Managerial Independence as the component systems not only operating independently but being separately acquired and managed."
           },
           {
-            id: 21,
-            type: "mc",
-            question: "\"The system performs functions and carries out purposes that do not reside in any component system.\" This describes which SoS characteristic?",
-            options: [
+            "id": 21,
+            "type": "mc",
+            "question": "\"The system performs functions and carries out purposes that do not reside in any component system.\" This describes which SoS characteristic?",
+            "options": [
               "Operational Independence",
               "Geographic Distribution",
               "Emergent Behavior",
-              "Evolutionary Development",
+              "Evolutionary Development"
             ],
-            answer: 2,
-            explanation: "Lecture 1 notes that Emergent Behaviors are properties of the entire system-of-systems that cannot be localized to any single component.",
+            "answer": 2,
+            "explanation": "Lecture 1 notes that Emergent Behaviors are properties of the entire system-of-systems that cannot be localized to any single component."
           },
           {
-            id: 22,
-            type: "mc",
-            question: "According to Chapter 2, System Integration in IT helps organizations streamline operations by:",
-            options: [
+            "id": 22,
+            "type": "mc",
+            "question": "According to Chapter 2, System Integration in IT helps organizations streamline operations by:",
+            "options": [
               "Isolating databases from software",
               "Connecting different software applications, databases, and hardware components",
               "Removing all network components",
-              "Utilizing paper-based formats",
+              "Utilizing paper-based formats"
             ],
-            answer: 1,
-            explanation: "Chapter 2 states that IT system integration streamlines operations by connecting software, databases, and hardware to enable data sharing.",
+            "answer": 1,
+            "explanation": "Chapter 2 states that IT system integration streamlines operations by connecting software, databases, and hardware to enable data sharing."
           },
           {
-            id: 23,
-            type: "mc",
-            question: "How does System Integration benefit the Healthcare industry?",
-            options: [
+            "id": 23,
+            "type": "mc",
+            "question": "How does System Integration benefit the Healthcare industry?",
+            "options": [
               "By creating autonomous driving capabilities",
               "By connecting learning management systems",
               "By connecting medical systems, electronic health records (EHRs), and diagnostic tools",
-              "By monitoring air and water quality",
+              "By monitoring air and water quality"
             ],
-            answer: 2,
-            explanation: "Chapter 2 highlights that healthcare integration connects medical systems and EHRs to improve patient care and reduce errors.",
+            "answer": 2,
+            "explanation": "Chapter 2 highlights that healthcare integration connects medical systems and EHRs to improve patient care and reduce errors."
           },
           {
-            id: 24,
-            type: "mc",
-            question: "Which industry relies on system integration for Smart Grids and managing power generation?",
-            options: ["Telecommunications", "Energy", "Public Services", "Manufacturing"],
-            answer: 1,
-            explanation: "Chapter 2 mentions that the Energy sector uses integration for managing power generation and smart grids.",
+            "id": 24,
+            "type": "mc",
+            "question": "Which industry relies on system integration for Smart Grids and managing power generation?",
+            "options": [
+              "Telecommunications",
+              "Energy",
+              "Public Services",
+              "Manufacturing"
+            ],
+            "answer": 1,
+            "explanation": "Chapter 2 mentions that the Energy sector uses integration for managing power generation and smart grids."
           },
           {
-            id: 25,
-            type: "mc",
-            question: "Which integration type ensures safe and efficient aircraft operation and integrates radar and avionics?",
-            options: [
+            "id": 25,
+            "type": "mc",
+            "question": "Which integration type ensures safe and efficient aircraft operation and integrates radar and avionics?",
+            "options": [
               "Aerospace and Defense",
               "Transportation and Logistics",
               "Public Services",
-              "Smart Cities",
+              "Smart Cities"
             ],
-            answer: 0,
-            explanation: "Chapter 2 specifically lists avionics, radar, and navigation integration under the Aerospace and Defense domain.",
+            "answer": 0,
+            "explanation": "Chapter 2 specifically lists avionics, radar, and navigation integration under the Aerospace and Defense domain."
           },
           {
-            id: 26,
-            type: "mc",
-            question: "Bridging citizen portals, tax systems, and emergency response systems is an example of integration in:",
-            options: ["Environmental Monitoring", "Smart Cities", "Public Services", "Education"],
-            answer: 2,
-            explanation: "Chapter 2 states that government agencies use system integration for Public Services like citizen portals and emergency response.",
+            "id": 26,
+            "type": "mc",
+            "question": "Bridging citizen portals, tax systems, and emergency response systems is an example of integration in:",
+            "options": [
+              "Environmental Monitoring",
+              "Smart Cities",
+              "Public Services",
+              "Education"
+            ],
+            "answer": 2,
+            "explanation": "Chapter 2 states that government agencies use system integration for Public Services like citizen portals and emergency response."
           },
           {
-            id: 27,
-            type: "mc",
-            question: "What integration challenge occurs in Point-to-Point networks as a business grows?",
-            options: [
+            "id": 27,
+            "type": "mc",
+            "question": "What integration challenge occurs in Point-to-Point networks as a business grows?",
+            "options": [
               "They become too centralized.",
               "They require an ESB to function.",
               "They result in a proliferation of direct connections, leading to maintenance challenges.",
-              "They create functional silos.",
+              "They create functional silos."
             ],
-            answer: 2,
-            explanation: "Chapter 2 points out that adding systems in Point-to-Point integration results in complex direct connections that are hard to maintain.",
+            "answer": 2,
+            "explanation": "Chapter 2 points out that adding systems in Point-to-Point integration results in complex direct connections that are hard to maintain."
           },
           {
-            id: 28,
-            type: "mc",
-            question: "An alternative to Point-to-Point integration that provides a centralized architecture is:",
-            options: [
+            "id": 28,
+            "type": "mc",
+            "question": "An alternative to Point-to-Point integration that provides a centralized architecture is:",
+            "options": [
               "Vertical Integration",
               "Star Integration",
               "Middleware solutions like Enterprise Service Bus (ESB) or APIs",
-              "Legacy System Integration",
+              "Legacy System Integration"
             ],
-            answer: 2,
-            explanation: "Chapter 2 notes organizations prefer middleware like ESB or APIs as an alternative to point-to-point to reduce direct connections.",
+            "answer": 2,
+            "explanation": "Chapter 2 notes organizations prefer middleware like ESB or APIs as an alternative to point-to-point to reduce direct connections."
           },
           {
-            id: 29,
-            type: "mc",
-            question: "Business-to-Business (B2B) integration enables companies to:",
-            options: [
+            "id": 29,
+            "type": "mc",
+            "question": "Business-to-Business (B2B) integration enables companies to:",
+            "options": [
               "Automate business communication and processes with all stakeholders",
               "Bridge gaps between internal CRM and ERP only",
               "Replace their internal hardware components",
-              "Create functional silos",
+              "Create functional silos"
             ],
-            answer: 0,
-            explanation: "Chapter 2 states B2B integration enables companies to automate business communication with all stakeholders and business partners.",
+            "answer": 0,
+            "explanation": "Chapter 2 states B2B integration enables companies to automate business communication with all stakeholders and business partners."
           },
           {
-            id: 30,
-            type: "mc",
-            question: "Legacy System Integration implies connectivity between:",
-            options: [
+            "id": 30,
+            "type": "mc",
+            "question": "Legacy System Integration implies connectivity between:",
+            "options": [
               "Future technologies and APIs",
               "Outdated systems and more modern IT infrastructure",
               "Two identical modern ERP systems",
-              "Paper-based documents and EDI",
+              "Paper-based documents and EDI"
             ],
-            answer: 1,
-            explanation: "Chapter 2 defines Legacy System Integration as connectivity between outdated legacy systems and more modern IT infrastructure.",
+            "answer": 1,
+            "explanation": "Chapter 2 defines Legacy System Integration as connectivity between outdated legacy systems and more modern IT infrastructure."
           },
           {
-            id: 31,
-            type: "mc",
-            question: "What technology provides the infrastructure for distributed and collaborative knowledge acquisition (Lecture 1)?",
-            options: [
+            "id": 31,
+            "type": "mc",
+            "question": "What technology provides the infrastructure for distributed and collaborative knowledge acquisition (Lecture 1)?",
+            "options": [
               "PIM",
               "Networking technology and Internet of Things (IoT)",
               "CAD and CAM",
-              "EDI",
+              "EDI"
             ],
-            answer: 1,
-            explanation: "Lecture 1 states that Networking technology, IoT, and other new technologies provide the infrastructure for distributed knowledge acquisition.",
+            "answer": 1,
+            "explanation": "Lecture 1 states that Networking technology, IoT, and other new technologies provide the infrastructure for distributed knowledge acquisition."
           },
           {
-            id: 32,
-            type: "mc",
-            question: "In the context of SoS, what does \"Geographic Distribution\" mean?",
-            options: [
+            "id": 32,
+            "type": "mc",
+            "question": "In the context of SoS, what does \"Geographic Distribution\" mean?",
+            "options": [
               "Components are in the exact same server room.",
               "The system is fully formed upon creation.",
               "The geographic extent of the components is large, exchanging only information, not mass/energy.",
-              "The systems share the same exact management.",
+              "The systems share the same exact management."
             ],
-            answer: 2,
-            explanation: "Lecture 1 defines Geographic Distribution as components being geographically dispersed, exchanging only information.",
+            "answer": 2,
+            "explanation": "Lecture 1 defines Geographic Distribution as components being geographically dispersed, exchanging only information."
           },
           {
-            id: 33,
-            type: "mc",
-            question: "In the hospital Vertical Integration example (Chapter 2), adding an EMR system would require:",
-            options: [
+            "id": 33,
+            "type": "mc",
+            "question": "In the hospital Vertical Integration example (Chapter 2), adding an EMR system would require:",
+            "options": [
               "Upgrading the ESB",
               "Creating a new silo",
               "Point-to-point connections to all other systems",
-              "Replacing the legacy database",
+              "Replacing the legacy database"
             ],
-            answer: 1,
-            explanation: "Chapter 2 explains that in vertical integration, adding a new system like an EMR requires creating a new functional silo.",
+            "answer": 1,
+            "explanation": "Chapter 2 explains that in vertical integration, adding a new system like an EMR requires creating a new functional silo."
           },
           {
-            id: 34,
-            type: "mc",
-            question: "What is the fundamental feature of Smart Cities according to Chapter 2?",
-            options: [
+            "id": 34,
+            "type": "mc",
+            "question": "What is the fundamental feature of Smart Cities according to Chapter 2?",
+            "options": [
               "Connecting learning management systems",
               "Interconnecting transportation, utilities, security, and public services",
               "Using only point-to-point integration",
-              "Eliminating all legacy systems",
+              "Eliminating all legacy systems"
             ],
-            answer: 1,
-            explanation: "Chapter 2 states Smart Cities rely on interconnecting systems like transportation, utilities, and security to improve urban living.",
+            "answer": 1,
+            "explanation": "Chapter 2 states Smart Cities rely on interconnecting systems like transportation, utilities, and security to improve urban living."
           },
           {
-            id: 35,
-            type: "mc",
-            question: "How does System Integration optimize Transportation and Logistics?",
-            options: [
+            "id": 35,
+            "type": "mc",
+            "question": "How does System Integration optimize Transportation and Logistics?",
+            "options": [
               "By creating infotainment systems",
               "By connecting tracking systems, warehouse management, and order processing",
               "By managing EHRs",
-              "By monitoring climate conditions",
+              "By monitoring climate conditions"
             ],
-            answer: 1,
-            explanation: "Chapter 2 notes that Transportation and Logistics optimize operations by connecting tracking, warehouse management, and order processing.",
+            "answer": 1,
+            "explanation": "Chapter 2 notes that Transportation and Logistics optimize operations by connecting tracking, warehouse management, and order processing."
           },
           {
-            id: 36,
-            type: "mc",
-            question: "According to Lecture 1, System of Systems (SoS) integration involves systems being linked directly or through an intermediary to satisfy the needs of a:",
-            options: [
+            "id": 36,
+            "type": "mc",
+            "question": "According to Lecture 1, System of Systems (SoS) integration involves systems being linked directly or through an intermediary to satisfy the needs of a:",
+            "options": [
               "Legacy protocol",
               "Mission capability package",
               "Single hardware vendor",
-              "Closed network",
+              "Closed network"
             ],
-            answer: 1,
-            explanation: "Lecture 1 (Madni and Sievers) states systems are organically and dynamically configured to satisfy the needs of a mission capability package.",
+            "answer": 1,
+            "explanation": "Lecture 1 (Madni and Sievers) states systems are organically and dynamically configured to satisfy the needs of a mission capability package."
           },
           {
-            id: 37,
-            type: "mc",
-            question: "Which integration method is described as being \"relatively simple and easy... but quite rigid\"?",
-            options: [
+            "id": 37,
+            "type": "mc",
+            "question": "Which integration method is described as being \"relatively simple and easy... but quite rigid\"?",
+            "options": [
               "Horizontal Integration",
               "Common Data Format Integration",
               "Vertical Integration",
-              "Enterprise Application Integration",
+              "Enterprise Application Integration"
             ],
-            answer: 2,
-            explanation: "Chapter 2 describes Vertical Integration as a simple/easy method for limited systems but rigid because new functionality requires new silos.",
+            "answer": 2,
+            "explanation": "Chapter 2 describes Vertical Integration as a simple/easy method for limited systems but rigid because new functionality requires new silos."
           },
           {
-            id: 38,
-            type: "mc",
-            question: "The emergence of Enterprise Systems (ESs) has been fueled by:",
-            options: [
+            "id": 38,
+            "type": "mc",
+            "question": "The emergence of Enterprise Systems (ESs) has been fueled by:",
+            "options": [
               "The decline of the internet",
               "The global economy, intense competition, and rapid IT development",
               "The desire to use more paper-based documentation",
-              "The reduction in third-party integrations",
+              "The reduction in third-party integrations"
             ],
-            answer: 1,
-            explanation: "Lecture 1 states that the emergence of ESs has been fueled by the global economy, intense competition, and the rapid development of IT.",
+            "answer": 1,
+            "explanation": "Lecture 1 states that the emergence of ESs has been fueled by the global economy, intense competition, and the rapid development of IT."
           },
           {
-            id: 39,
-            type: "mc",
-            question: "In a Horizontal Integration, if you have ten sub-systems, how many connections are required to the common interface layer?",
-            options: ["45", "100", "10", "1"],
-            answer: 2,
-            explanation: "Chapter 2 explains that in Horizontal Integration, with ten systems, there are only ten connections to the common interface layer (ESB).",
+            "id": 39,
+            "type": "mc",
+            "question": "In a Horizontal Integration, if you have ten sub-systems, how many connections are required to the common interface layer?",
+            "options": [
+              "45",
+              "100",
+              "10",
+              "1"
+            ],
+            "answer": 2,
+            "explanation": "Chapter 2 explains that in Horizontal Integration, with ten systems, there are only ten connections to the common interface layer (ESB)."
           },
           {
-            id: 40,
-            type: "mc",
-            question: "Ford's C3P system ultimately contributes to which of the following?",
-            options: [
+            "id": 40,
+            "type": "mc",
+            "question": "Ford's C3P system ultimately contributes to which of the following?",
+            "options": [
               "Digital manufacturing based on ES and IIIE",
               "Legacy system removal",
               "Electronic Document Interchange",
-              "Smart city development",
+              "Smart city development"
             ],
-            answer: 0,
-            explanation: "Lecture 1 features a diagram showing that CAD, CAE, and CAM flow into PIM, which leads to \"Digital manufacturing based on ES and IIIE.\"",
-          },
-          // â”€â”€ Identification (Items 41–70) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          {
-            id: 41,
-            type: "identification",
-            question: "The process of combining different individual systems, subsystems, or components into a unified and cohesive whole.",
-            answer: "System Integration",
-            explanation: "This is the verbatim definition of System Integration from Chapter 2.",
+            "answer": 0,
+            "explanation": "Lecture 1 features a diagram showing that CAD, CAE, and CAM flow into PIM, which leads to \"Digital manufacturing based on ES and IIIE.\""
           },
           {
-            id: 42,
-            type: "identification",
-            question: "Companies such as Deloitte, IBM, Accenture, and TCS that deliver large IT projects and enable data integrations.",
-            answer: "Systems Integrator (SI)",
-            explanation: "Chapter 2 lists these companies as examples of SIs whose role is to implement and coordinate IT systems.",
+            "id": 41,
+            "type": "identification",
+            "question": "The process of combining different individual systems, subsystems, or components into a unified and cohesive whole.",
+            "answer": "System Integration",
+            "explanation": "This is the verbatim definition of System Integration from Chapter 2."
           },
           {
-            id: 43,
-            type: "identification",
-            question: "A type of integration where individual systems are connected directly to each other without middleware to enable data exchange.",
-            answer: "Point-to-Point Integration",
-            explanation: "Chapter 2 defines this as directly connecting systems, noting it is typically used for simpler scenarios.",
+            "id": 42,
+            "type": "identification",
+            "question": "Companies such as Deloitte, IBM, Accenture, and TCS that deliver large IT projects and enable data integrations.",
+            "answer": "Systems Integrator (SI)",
+            "explanation": "Chapter 2 lists these companies as examples of SIs whose role is to implement and coordinate IT systems."
           },
           {
-            id: 44,
-            type: "identification",
-            question: "The system integration method where components are integrated by creating functional \"silos\", beginning with the basic bottom function upward.",
-            answer: "Vertical Integration",
-            explanation: "Chapter 2 describes Vertical Integration as building functional silos from the bottom up.",
+            "id": 43,
+            "type": "identification",
+            "question": "A type of integration where individual systems are connected directly to each other without middleware to enable data exchange.",
+            "answer": "Point-to-Point Integration",
+            "explanation": "Chapter 2 defines this as directly connecting systems, noting it is typically used for simpler scenarios."
           },
           {
-            id: 45,
-            type: "identification",
-            question: "The integration method where every sub-system is connected to every other sub-system, often requiring complex maintenance (e.g., 45 connections for 10 systems).",
-            answer: "Star Integration",
-            explanation: "Chapter 2 explains that Star Integration connects every sub-system to others point-to-point, increasing connections exponentially.",
+            "id": 44,
+            "type": "identification",
+            "question": "The system integration method where components are integrated by creating functional \"silos\", beginning with the basic bottom function upward.",
+            "answer": "Vertical Integration",
+            "explanation": "Chapter 2 describes Vertical Integration as building functional silos from the bottom up."
           },
           {
-            id: 46,
-            type: "identification",
-            question: "Another name for Star Integration, drawing an analogy to messy programming code.",
-            answer: "Spaghetti Integration",
-            explanation: "Chapter 2 states Star Integration is referred to as \"Spaghetti Integration\" as an analogy to \"Spaghetti code.\"",
+            "id": 45,
+            "type": "identification",
+            "question": "The integration method where every sub-system is connected to every other sub-system, often requiring complex maintenance (e.g., 45 connections for 10 systems).",
+            "answer": "Star Integration",
+            "explanation": "Chapter 2 explains that Star Integration connects every sub-system to others point-to-point, increasing connections exponentially."
           },
           {
-            id: 47,
-            type: "identification",
-            question: "The integration method that uses a separate sub-system as a common interface layer for all other sub-systems.",
-            answer: "Horizontal Integration",
-            explanation: "Chapter 2 defines Horizontal Integration as using a single common interface layer for all connections.",
+            "id": 46,
+            "type": "identification",
+            "question": "Another name for Star Integration, drawing an analogy to messy programming code.",
+            "answer": "Spaghetti Integration",
+            "explanation": "Chapter 2 states Star Integration is referred to as \"Spaghetti Integration\" as an analogy to \"Spaghetti code.\""
           },
           {
-            id: 48,
-            type: "identification",
-            question: "The common interface layer used in Horizontal Integration is very often referred to by this three-letter acronym.",
-            answer: "ESB",
-            altAnswers: ["Enterprise Service Bus"],
-            explanation: "Chapter 2 specifies that the separate sub-system layer in horizontal integration is known as an ESB.",
+            "id": 47,
+            "type": "identification",
+            "question": "The integration method that uses a separate sub-system as a common interface layer for all other sub-systems.",
+            "answer": "Horizontal Integration",
+            "explanation": "Chapter 2 defines Horizontal Integration as using a single common interface layer for all connections."
           },
           {
-            id: 49,
-            type: "identification",
-            question: "The integration approach where data coming out of one system is transformed into one standardized format rather than system-by-system.",
-            answer: "Common Data Format Integration",
-            explanation: "Chapter 2 explains this method allows systems to do only one conversion to a shared format to reduce the number of transformations.",
+            "id": 48,
+            "type": "identification",
+            "question": "The common interface layer used in Horizontal Integration is very often referred to by this three-letter acronym.",
+            "answer": "ESB",
+            "altAnswers": [
+              "Enterprise Service Bus"
+            ],
+            "explanation": "Chapter 2 specifies that the separate sub-system layer in horizontal integration is known as an ESB."
           },
           {
-            id: 50,
-            type: "identification",
-            question: "The data format commonly used to represent and exchange structured data, specifically in web services and configuration files.",
-            answer: "XML",
-            altAnswers: ["eXtensible Markup Language"],
-            explanation: "Chapter 2 identifies XML as a standard for structured data exchange in Common Data Format integration.",
+            "id": 49,
+            "type": "identification",
+            "question": "The integration approach where data coming out of one system is transformed into one standardized format rather than system-by-system.",
+            "answer": "Common Data Format Integration",
+            "explanation": "Chapter 2 explains this method allows systems to do only one conversion to a shared format to reduce the number of transformations."
           },
           {
-            id: 51,
-            type: "identification",
-            question: "The system-to-system exchange of business documents in a standard electronic format, intended to replace paper-based documents like invoices.",
-            answer: "Electronic Data Interchange (EDI)",
-            altAnswers: ["EDI"],
-            explanation: "Chapter 2 states EDI replaces paper-based documents (like POs and invoices) with electronic formats to save time and reduce errors.",
+            "id": 50,
+            "type": "identification",
+            "question": "The data format commonly used to represent and exchange structured data, specifically in web services and configuration files.",
+            "answer": "XML",
+            "altAnswers": [
+              "eXtensible Markup Language"
+            ],
+            "explanation": "Chapter 2 identifies XML as a standard for structured data exchange in Common Data Format integration."
           },
           {
-            id: 52,
-            type: "identification",
-            question: "The type of integration that gathers data from disparate sources into a centralized access point.",
-            answer: "Data Integration",
-            explanation: "Chapter 2 defines Data Integration as making data more available and easy to process via a centralized access point.",
+            "id": 51,
+            "type": "identification",
+            "question": "The system-to-system exchange of business documents in a standard electronic format, intended to replace paper-based documents like invoices.",
+            "answer": "Electronic Data Interchange (EDI)",
+            "altAnswers": [
+              "EDI"
+            ],
+            "explanation": "Chapter 2 states EDI replaces paper-based documents (like POs and invoices) with electronic formats to save time and reduce errors."
           },
           {
-            id: 53,
-            type: "identification",
-            question: "The type of integration that enables companies to automate business communication and processes with external partners and stakeholders.",
-            answer: "Business-to-Business (B2B) Integration",
-            altAnswers: ["B2B Integration"],
-            explanation: "Chapter 2 describes B2B integration as connecting an organization with its business partners for real-time data exchange.",
+            "id": 52,
+            "type": "identification",
+            "question": "The type of integration that gathers data from disparate sources into a centralized access point.",
+            "answer": "Data Integration",
+            "explanation": "Chapter 2 defines Data Integration as making data more available and easy to process via a centralized access point."
           },
           {
-            id: 54,
-            type: "identification",
-            question: "The type of integration that bridges gaps between outdated systems (vital for core business) and more modern IT infrastructure.",
-            answer: "Legacy System Integration",
-            explanation: "Chapter 2 explains that Legacy System Integration prevents disruption by connecting older systems to modern ones.",
+            "id": 53,
+            "type": "identification",
+            "question": "The type of integration that enables companies to automate business communication and processes with external partners and stakeholders.",
+            "answer": "Business-to-Business (B2B) Integration",
+            "altAnswers": [
+              "B2B Integration"
+            ],
+            "explanation": "Chapter 2 describes B2B integration as connecting an organization with its business partners for real-time data exchange."
           },
           {
-            id: 55,
-            type: "identification",
-            question: "The type of integration focused on bridging gaps between different software programs like ERP, CRM, and SCM.",
-            answer: "Enterprise Application Integration (EAI)",
-            altAnswers: ["EAI"],
-            explanation: "Chapter 2 states EAI streamlines business processes by allowing smooth data flow between these specific enterprise applications.",
+            "id": 54,
+            "type": "identification",
+            "question": "The type of integration that bridges gaps between outdated systems (vital for core business) and more modern IT infrastructure.",
+            "answer": "Legacy System Integration",
+            "explanation": "Chapter 2 explains that Legacy System Integration prevents disruption by connecting older systems to modern ones."
           },
           {
-            id: 56,
-            type: "identification",
-            question: "The industry that uses system integration to connect LMS (Learning Management Systems), student databases, and administrative tools.",
-            answer: "Education",
-            explanation: "Chapter 2 explicitly mentions LMS and student databases as the primary integration targets for the Education sector.",
+            "id": 55,
+            "type": "identification",
+            "question": "The type of integration focused on bridging gaps between different software programs like ERP, CRM, and SCM.",
+            "answer": "Enterprise Application Integration (EAI)",
+            "altAnswers": [
+              "EAI"
+            ],
+            "explanation": "Chapter 2 states EAI streamlines business processes by allowing smooth data flow between these specific enterprise applications."
           },
           {
-            id: 57,
-            type: "identification",
-            question: "Software packages developed to support many aspects of an enterprise's information needs (e.g., executive direction, customer integration).",
-            answer: "Enterprise Systems (ES)",
-            altAnswers: ["Enterprise Systems", "ES"],
-            explanation: "Lecture 1 cites Davenport (2000) defining ESs as software packages supporting enterprise information needs.",
+            "id": 56,
+            "type": "identification",
+            "question": "The industry that uses system integration to connect LMS (Learning Management Systems), student databases, and administrative tools.",
+            "answer": "Education",
+            "explanation": "Chapter 2 explicitly mentions LMS and student databases as the primary integration targets for the Education sector."
           },
           {
-            id: 58,
-            type: "identification",
-            question: "A specific type of ES that facilitates transaction processing in a distributive environment and manages all enterprise resources.",
-            answer: "Enterprise Resource Planning (ERP)",
-            altAnswers: ["ERP"],
-            explanation: "Lecture 1 names ERP as a type of ES used for streamlining business processes and transaction processing.",
+            "id": 57,
+            "type": "identification",
+            "question": "Software packages developed to support many aspects of an enterprise's information needs (e.g., executive direction, customer integration).",
+            "answer": "Enterprise Systems (ES)",
+            "altAnswers": [
+              "Enterprise Systems",
+              "ES"
+            ],
+            "explanation": "Lecture 1 cites Davenport (2000) defining ESs as software packages supporting enterprise information needs."
           },
           {
-            id: 59,
-            type: "identification",
-            question: "The automobile company that struggled with isolated design software and successfully implemented a C3P ES.",
-            answer: "Ford Motor Company",
-            altAnswers: ["Ford"],
-            explanation: "Lecture 1 details a case study of the Ford Motor Company implementing the C3P system in the mid-1990s.",
+            "id": 58,
+            "type": "identification",
+            "question": "A specific type of ES that facilitates transaction processing in a distributive environment and manages all enterprise resources.",
+            "answer": "Enterprise Resource Planning (ERP)",
+            "altAnswers": [
+              "ERP"
+            ],
+            "explanation": "Lecture 1 names ERP as a type of ES used for streamlining business processes and transaction processing."
           },
           {
-            id: 60,
-            type: "identification",
-            question: "In Ford's C3P system, the acronym representing the software used for designing products.",
-            answer: "CAD",
-            altAnswers: ["Computer-Aided Design"],
-            explanation: "Lecture 1 outlines CAD as one of the three \"C\"s in the C3P system.",
+            "id": 59,
+            "type": "identification",
+            "question": "The automobile company that struggled with isolated design software and successfully implemented a C3P ES.",
+            "answer": "Ford Motor Company",
+            "altAnswers": [
+              "Ford"
+            ],
+            "explanation": "Lecture 1 details a case study of the Ford Motor Company implementing the C3P system in the mid-1990s."
           },
           {
-            id: 61,
-            type: "identification",
-            question: "A collection of joint stand-alone systems originally designed for specific purposes to create a task needed for a certain objective.",
-            answer: "System of Systems (SoS)",
-            altAnswers: ["SoS", "System of Systems"],
-            explanation: "Lecture 1 uses Mayk and Madni's (2006) definition for System of Systems.",
+            "id": 60,
+            "type": "identification",
+            "question": "In Ford's C3P system, the acronym representing the software used for designing products.",
+            "answer": "CAD",
+            "altAnswers": [
+              "Computer-Aided Design"
+            ],
+            "explanation": "Lecture 1 outlines CAD as one of the three \"C\"s in the C3P system."
           },
           {
-            id: 62,
-            type: "identification",
-            question: "The SoS characteristic stating that if disassembled, the component systems can usefully operate on their own.",
-            answer: "Operational Independence",
-            explanation: "Lecture 1 defines Operational Independence as components being independent and useful in their own right.",
+            "id": 61,
+            "type": "identification",
+            "question": "A collection of joint stand-alone systems originally designed for specific purposes to create a task needed for a certain objective.",
+            "answer": "System of Systems (SoS)",
+            "altAnswers": [
+              "SoS",
+              "System of Systems"
+            ],
+            "explanation": "Lecture 1 uses Mayk and Madni's (2006) definition for System of Systems."
           },
           {
-            id: 63,
-            type: "identification",
-            question: "The SoS characteristic stating that the system is not fully formed at once, but functions and purposes are added and modified over time.",
-            answer: "Evolutionary Development",
-            explanation: "Lecture 1 defines Evolutionary Development as the system growing and modifying with experience and need.",
+            "id": 62,
+            "type": "identification",
+            "question": "The SoS characteristic stating that if disassembled, the component systems can usefully operate on their own.",
+            "answer": "Operational Independence",
+            "explanation": "Lecture 1 defines Operational Independence as components being independent and useful in their own right."
           },
           {
-            id: 64,
-            type: "identification",
-            question: "The SoS characteristic referring to behaviors of the entire system that cannot be localized to any single component system.",
-            answer: "Emergent Behavior",
-            explanation: "Lecture 1 describes Emergent Behavior as the principal purposes fulfilled by the entire SoS working together.",
+            "id": 63,
+            "type": "identification",
+            "question": "The SoS characteristic stating that the system is not fully formed at once, but functions and purposes are added and modified over time.",
+            "answer": "Evolutionary Development",
+            "explanation": "Lecture 1 defines Evolutionary Development as the system growing and modifying with experience and need."
           },
           {
-            id: 65,
-            type: "identification",
-            question: "The industry that relies on integration to manage content distribution across platforms like streaming services and TV channels.",
-            answer: "Entertainment and Media",
-            explanation: "Chapter 2 lists content distribution and streaming as the main integration goals for the Entertainment and Media industry.",
+            "id": 64,
+            "type": "identification",
+            "question": "The SoS characteristic referring to behaviors of the entire system that cannot be localized to any single component system.",
+            "answer": "Emergent Behavior",
+            "explanation": "Lecture 1 describes Emergent Behavior as the principal purposes fulfilled by the entire SoS working together."
           },
           {
-            id: 66,
-            type: "identification",
-            question: "The industry that connects online and in-store sales, inventory management, and CRM.",
-            answer: "Retail and E-commerce",
-            explanation: "Chapter 2 highlights Retail and E-commerce as the industry combining these specific systems to enhance customer experience.",
+            "id": 65,
+            "type": "identification",
+            "question": "The industry that relies on integration to manage content distribution across platforms like streaming services and TV channels.",
+            "answer": "Entertainment and Media",
+            "explanation": "Chapter 2 lists content distribution and streaming as the main integration goals for the Entertainment and Media industry."
           },
           {
-            id: 67,
-            type: "identification",
-            question: "In SoS Integration, systems are organically and dynamically configured to satisfy the needs of this specific \"package\".",
-            answer: "Mission capability package",
-            explanation: "Lecture 1 mentions that systems are configured to satisfy the needs of a \"mission capability package\" (Madni and Sievers).",
+            "id": 66,
+            "type": "identification",
+            "question": "The industry that connects online and in-store sales, inventory management, and CRM.",
+            "answer": "Retail and E-commerce",
+            "explanation": "Chapter 2 highlights Retail and E-commerce as the industry combining these specific systems to enhance customer experience."
           },
           {
-            id: 68,
-            type: "identification",
-            question: "The common data format used for exchanging business documents like purchase orders between different partners.",
-            answer: "EDI",
-            altAnswers: ["Electronic Data Interchange"],
-            explanation: "Chapter 2 specifies EDI as the standard format for exchanging business documents electronically.",
+            "id": 67,
+            "type": "identification",
+            "question": "In SoS Integration, systems are organically and dynamically configured to satisfy the needs of this specific \"package\".",
+            "answer": "Mission capability package",
+            "explanation": "Lecture 1 mentions that systems are configured to satisfy the needs of a \"mission capability package\" (Madni and Sievers)."
           },
           {
-            id: 69,
-            type: "identification",
-            question: "The system utilized by hospitals (as an example of Vertical Integration) to manage digital patient records, adding complexity to functional silos.",
-            answer: "Electronic Medical Record (EMR) system",
-            altAnswers: ["EMR", "Electronic Medical Record"],
-            explanation: "Chapter 2 notes that adding an EMR system to a hospital's vertical integration requires creating a new silo.",
+            "id": 68,
+            "type": "identification",
+            "question": "The common data format used for exchanging business documents like purchase orders between different partners.",
+            "answer": "EDI",
+            "altAnswers": [
+              "Electronic Data Interchange"
+            ],
+            "explanation": "Chapter 2 specifies EDI as the standard format for exchanging business documents electronically."
           },
           {
-            id: 70,
-            type: "identification",
-            question: "The ultimate outcome of Ford's C3P system (CAD, CAE, CAM, PIM) as shown in the system diagram.",
-            answer: "Digital manufacturing",
-            explanation: "Lecture 1 contains a diagram showing the components of C3P pointing towards \"Digital manufacturing based on ES and IIIE.\"",
+            "id": 69,
+            "type": "identification",
+            "question": "The system utilized by hospitals (as an example of Vertical Integration) to manage digital patient records, adding complexity to functional silos.",
+            "answer": "Electronic Medical Record (EMR) system",
+            "altAnswers": [
+              "EMR",
+              "Electronic Medical Record"
+            ],
+            "explanation": "Chapter 2 notes that adding an EMR system to a hospital's vertical integration requires creating a new silo."
           },
-          // â”€â”€ Enumeration (Items 71–100) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           {
-            id: 71,
-            type: "enumeration",
-            question: "Identify the five (5) typical modules that compose an Enterprise System (ES) according to Langenwalter (2000) in Lecture 1.",
-            count: 5,
-            items: [
+            "id": 70,
+            "type": "identification",
+            "question": "The ultimate outcome of Ford's C3P system (CAD, CAE, CAM, PIM) as shown in the system diagram.",
+            "answer": "Digital manufacturing",
+            "explanation": "Lecture 1 contains a diagram showing the components of C3P pointing towards \"Digital manufacturing based on ES and IIIE.\""
+          },
+          {
+            "id": 71,
+            "type": "enumeration",
+            "question": "Identify the five (5) typical modules that compose an Enterprise System (ES) according to Langenwalter (2000) in Lecture 1.",
+            "count": 5,
+            "items": [
               "Executive direction and support",
               "Customer integration",
               "Engineering integration",
               "Manufacturing integration",
-              "Support service integration",
+              "Support service integration"
             ],
-            explanation: "Lecture 1 explicitly lists these five elements as the typical modules that make up an Enterprise System.",
+            "explanation": "Lecture 1 explicitly lists these five elements as the typical modules that make up an Enterprise System."
           },
           {
-            id: 72,
-            type: "enumeration",
-            question: "Identify the four (4) components that make up the acronym for Ford's \"C3P System\" in Lecture 1.",
-            count: 4,
-            items: [
+            "id": 72,
+            "type": "enumeration",
+            "question": "Identify the four (4) components that make up the acronym for Ford's \"C3P System\" in Lecture 1.",
+            "count": 4,
+            "items": [
               "Computer-aided design (CAD)",
               "Computer-aided manufacturing (CAM)",
               "Computer-aided engineering (CAE)",
-              "Product information management (PIM)",
+              "Product information management (PIM)"
             ],
-            explanation: "Lecture 1 details the C3P acronym as combining three \"Cs\" (CAD, CAM, CAE) and PIM.",
+            "explanation": "Lecture 1 details the C3P acronym as combining three \"Cs\" (CAD, CAM, CAE) and PIM."
           },
           {
-            id: 73,
-            type: "enumeration",
-            question: "Identify the five (5) typical System Integration Methods outlined in Chapter 2.",
-            count: 5,
-            items: [
+            "id": 73,
+            "type": "enumeration",
+            "question": "Identify the five (5) typical System Integration Methods outlined in Chapter 2.",
+            "count": 5,
+            "items": [
               "Point-to-Point Integration",
               "Vertical Integration",
               "Star Integration",
               "Horizontal Integration",
-              "Common Data Format Integration",
+              "Common Data Format Integration"
             ],
-            explanation: "Chapter 2 categorizes standard system integration methods into these five distinct architectures.",
+            "explanation": "Chapter 2 categorizes standard system integration methods into these five distinct architectures."
           },
           {
-            id: 74,
-            type: "enumeration",
-            question: "Identify the five (5) most common types of System Integration outlined in Chapter 2.",
-            count: 5,
-            items: [
+            "id": 74,
+            "type": "enumeration",
+            "question": "Identify the five (5) most common types of System Integration outlined in Chapter 2.",
+            "count": 5,
+            "items": [
               "Data Integration",
               "Business-to-Business (B2B) Integration",
               "Legacy System Integration",
               "Electronic Document Interchange (EDI)",
-              "Enterprise Application Integration (EAI)",
+              "Enterprise Application Integration (EAI)"
             ],
-            explanation: "Chapter 2 provides a specific chart listing these five as the \"Most Common Types of System Integration.\"",
+            "explanation": "Chapter 2 provides a specific chart listing these five as the \"Most Common Types of System Integration.\""
           },
           {
-            id: 75,
-            type: "enumeration",
-            question: "Identify the five (5) Key Characteristics of a System of Systems (SoS) according to Lecture 1.",
-            count: 5,
-            items: [
+            "id": 75,
+            "type": "enumeration",
+            "question": "Identify the five (5) Key Characteristics of a System of Systems (SoS) according to Lecture 1.",
+            "count": 5,
+            "items": [
               "Operational Independence of the Elements",
               "Managerial Independence of the Elements",
               "Evolutionary Development",
               "Emergent Behavior",
-              "Geographic Distribution",
+              "Geographic Distribution"
             ],
-            explanation: "Lecture 1 lists these five defining traits to explain how an SoS operates and evolves.",
+            "explanation": "Lecture 1 lists these five defining traits to explain how an SoS operates and evolves."
           },
           {
-            id: 76,
-            type: "enumeration",
-            question: "Identify six (6) of the seven different types of collaboration in a typical business life cycle as listed in Lecture 1. (Any 6 of the 7 correct answers accepted.)",
-            count: 6,
-            items: [
+            "id": 76,
+            "type": "enumeration",
+            "question": "Identify six (6) of the seven different types of collaboration in a typical business life cycle as listed in Lecture 1. (Any 6 of the 7 correct answers accepted.)",
+            "count": 6,
+            "items": [
               "Product life cycle collaboration",
               "Engineering project collaboration",
               "Customer order and inventory collaboration",
               "Distributor-reseller collaboration",
               "Supplier and procurement collaboration",
               "Demand planning collaboration",
-              "Warehouse management and freight collaboration",
+              "Warehouse management and freight collaboration"
             ],
-            minCount: 6,
-            explanation: "Lecture 1 outlines these specific collaborations under the heading \"Different types of collaboration in a typical business life cycle\" for intra- and interenterprise processes. Any 6 of the 7 is correct.",
-          },
-        ],
-      },
-      // â”€â”€ Quizlet Flash Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-      {
-        id: "sia_quizlet_1",
-        title: "SIA 1 — Quizlet Flash Cards",
-        description: "SIA 1 flash cards on Quizlet — study and review using the Quizlet set.",
-        quizletLink: "https://quizlet.com/ph/1199020846/sia-1-flash-cards/?i=719e9i&x=1jqt",
-        questions: [],
+            "minCount": 6,
+            "explanation": "Lecture 1 outlines these specific collaborations under the heading \"Different types of collaboration in a typical business life cycle\" for intra- and interenterprise processes. Any 6 of the 7 is correct."
+          }
+        ]
       },
       {
-        id: "sia_quizlet_2",
-        title: "SIA 2 — Quizlet Flash Cards",
-        description: "SIA 2 flash cards on Quizlet — study and review using the Quizlet set.",
-        quizletLink: "https://quizlet.com/ph/1199018961/sia-2-flash-cards/?i=719e9i&x=1jqt",
-        questions: [],
+        "id": "sia_quizlet_1",
+        "title": "SIA 1 — Quizlet Flash Cards",
+        "description": "SIA 1 flash cards on Quizlet — study and review using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199020846/sia-1-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
       },
-    ],
-  },
+      {
+        "id": "sia_quizlet_2",
+        "title": "SIA 2 — Quizlet Flash Cards",
+        "description": "SIA 2 flash cards on Quizlet — study and review using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1199018961/sia-2-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
+      }
+    ]
+  }
 ];
 
 export function getSubjectById(id) {
