@@ -1627,7 +1627,1090 @@ export const subjects = [
     "name": "Integrative Programming Technologies 1",
     "description": "Covers web services, APIs, system integration, and modern programming frameworks.",
     "color": "#6d28d9",
-    "reviewers": []
+    "reviewers": [
+      {
+        "id": "ipt1_quiz1",
+        "title": "Quiz 1 — Systems Integration Reviewer",
+        "description": "97-item reviewer covering Introduction to Modern Systems Integration and Review Materials Week 2 and 3: 52 multiple choice (Parts A & B) and 45 true/false (Part C).",
+        "quizletLink": null,
+        "questions": [
+          {
+            "id": 1,
+            "type": "mc",
+            "question": "What is the window for another app to communicate?",
+            "options": [
+              "Virus",
+              "API",
+              "Delete",
+              "Coupling"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 2,
+            "type": "mc",
+            "question": "A program or application that does one certain job on its own.",
+            "options": [
+              "System",
+              "Server",
+              "Message",
+              "Network"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 3,
+            "type": "mc",
+            "question": "Connecting separate systems so they share information and act as one.",
+            "options": [
+              "Encryption",
+              "Debugging",
+              "Systems integration",
+              "Data entry"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 4,
+            "type": "mc",
+            "question": "The agreed method one system uses to ask another for something and get an answer back.",
+            "options": [
+              "Firewall",
+              "Markup language",
+              "Communication mechanism",
+              "Static page"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 5,
+            "type": "mc",
+            "question": "Arranging shared data in a common, agreed format so different systems can understand it.",
+            "options": [
+              "Compression",
+              "Data standardization",
+              "Backup",
+              "Coupling"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 6,
+            "type": "mc",
+            "question": "An API that can be reached over the internet, so systems anywhere can call it.",
+            "options": [
+              "Database",
+              "Middleware",
+              "Hub",
+              "Web service"
+            ],
+            "answer": 3
+          },
+          {
+            "id": 7,
+            "type": "mc",
+            "question": "Being able to exchange information and also actually understand it.",
+            "options": [
+              "Interoperability",
+              "Reliability",
+              "Formatting",
+              "Hosting"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 8,
+            "type": "mc",
+            "question": "How dependent two systems are on each other.",
+            "options": [
+              "Bandwidth",
+              "Coupling",
+              "Latency",
+              "Storage"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 9,
+            "type": "mc",
+            "question": "Systems depend on each other's inner details, so a change in one breaks the other.",
+            "options": [
+              "Loose coupling",
+              "Microservices",
+              "Tight coupling",
+              "Middleware"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 10,
+            "type": "mc",
+            "question": "Systems depend only on an agreed message, so each can change safely inside itself.",
+            "options": [
+              "Loose coupling",
+              "Tight coupling",
+              "Point-to-point",
+              "Static coupling"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 11,
+            "type": "mc",
+            "question": "The agreed shape of the data that systems pass to each other, often written in JSON.",
+            "options": [
+              "Password",
+              "Cookie",
+              "Session",
+              "Message"
+            ],
+            "answer": 3
+          },
+          {
+            "id": 12,
+            "type": "mc",
+            "question": "Software that sits between systems and passes messages for them, like a translator and post office in one.",
+            "options": [
+              "Middleware",
+              "Antivirus",
+              "Browser",
+              "Compiler"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 13,
+            "type": "mc",
+            "question": "The cycle where a client asks and a server answers, usually with JSON.",
+            "options": [
+              "Copy and paste",
+              "Request and response",
+              "Login and logout",
+              "Save and exit"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 14,
+            "type": "mc",
+            "question": "The side that sends the request.",
+            "options": [
+              "Server",
+              "Hub",
+              "Client",
+              "Message"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 15,
+            "type": "mc",
+            "question": "The side that sends back the response.",
+            "options": [
+              "Client",
+              "Server",
+              "Middleware",
+              "Spoke"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 16,
+            "type": "mc",
+            "question": "Small independent services that each do one job and talk through APIs.",
+            "options": [
+              "Mainframes",
+              "Macros",
+              "Microservices",
+              "Modules"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 17,
+            "type": "mc",
+            "question": "Shared services hosted online, where you pay for what you use and scale when you need to.",
+            "options": [
+              "The cloud",
+              "The hub",
+              "The client",
+              "The cache"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 18,
+            "type": "mc",
+            "question": "Systems that react to something happening, such as an order being placed, instead of constantly checking for updates.",
+            "options": [
+              "Schedule-driven",
+              "Event-driven",
+              "Data-driven",
+              "Static"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 19,
+            "type": "mc",
+            "question": "Every system is wired directly to every other system.",
+            "options": [
+              "Hub-and-spoke",
+              "Middleware",
+              "Point-to-point",
+              "Cloud"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 20,
+            "type": "mc",
+            "question": "All systems connect to one central piece that routes messages between them.",
+            "options": [
+              "Point-to-point",
+              "Hub-and-spoke",
+              "Microservices",
+              "Peer-to-peer"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 21,
+            "type": "mc",
+            "question": "A site that shows the same thing to everyone and never changes on its own.",
+            "options": [
+              "Dynamic website",
+              "Broken website",
+              "Static website",
+              "Secure website"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 22,
+            "type": "mc",
+            "question": "A site whose content changes based on who is looking and what is happening.",
+            "options": [
+              "Dynamic website",
+              "Static website",
+              "Landing page",
+              "Portal"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 23,
+            "type": "mc",
+            "question": "The language that lays out the structure and content, like the skeleton of the page.",
+            "options": [
+              "CSS",
+              "JavaScript",
+              "SQL",
+              "HTML"
+            ],
+            "answer": 3
+          },
+          {
+            "id": 24,
+            "type": "mc",
+            "question": "The language that handles the look and design, like the clothes and colors.",
+            "options": [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "JSON"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 25,
+            "type": "mc",
+            "question": "The language that adds the behavior and logic, like the muscles that make things move.",
+            "options": [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "XML"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 26,
+            "type": "mc",
+            "question": "The two common formats for shaping data that systems share.",
+            "options": [
+              "HTML and CSS",
+              "XML and JSON",
+              "PDF and DOCX",
+              "SQL and PHP"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 27,
+            "type": "mc",
+            "question": "The shape of the data, which both sides must agree on.",
+            "options": [
+              "Meaning",
+              "Speed",
+              "Format",
+              "Size"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 28,
+            "type": "mc",
+            "question": "What each field actually stands for, which both sides must also agree on.",
+            "options": [
+              "Format",
+              "Meaning",
+              "Volume",
+              "Syntax"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 29,
+            "type": "mc",
+            "question": "The single agreed place where the correct data lives.",
+            "options": [
+              "Backup file",
+              "Source of truth",
+              "Master password",
+              "Main server"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 30,
+            "type": "mc",
+            "question": "Systems share the same database or files.",
+            "options": [
+              "Data level",
+              "Application level",
+              "Process level",
+              "Presentation level"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 31,
+            "type": "mc",
+            "question": "Systems call each other's functions or APIs.",
+            "options": [
+              "Data level",
+              "Application level",
+              "Process level",
+              "Presentation level"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 32,
+            "type": "mc",
+            "question": "Systems coordinate one full workflow together.",
+            "options": [
+              "Data level",
+              "Application level",
+              "Process level",
+              "Presentation level"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 33,
+            "type": "mc",
+            "question": "Many systems are combined into one screen or portal.",
+            "options": [
+              "Data level",
+              "Application level",
+              "Process level",
+              "Presentation level"
+            ],
+            "answer": 3
+          },
+          {
+            "id": 34,
+            "type": "mc",
+            "question": "One system sends XML while another expects JSON, so the data must be mapped from one shape to the other.",
+            "options": [
+              "Security",
+              "Reliability",
+              "Format mismatch",
+              "Coupling"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 35,
+            "type": "mc",
+            "question": "The challenge of who is allowed to call a service and how the data is protected while it travels.",
+            "options": [
+              "Format mismatch",
+              "Security",
+              "Reliability",
+              "Standardization"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 36,
+            "type": "mc",
+            "question": "The challenge of what happens when the other system is slow or down.",
+            "options": [
+              "Reliability",
+              "Security",
+              "Format mismatch",
+              "Interoperability"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 37,
+            "type": "mc",
+            "question": "A food app asks a payment provider to process money without knowing how that provider works inside. What is it using?",
+            "options": [
+              "Virus",
+              "API",
+              "Middleware",
+              "Cookie"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 38,
+            "type": "mc",
+            "question": "A function has the units locked inside it, so it keeps returning the old amount even after the units change. What does this show?",
+            "options": [
+              "Loose coupling",
+              "Interoperability",
+              "Tight coupling",
+              "Reliability"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 39,
+            "type": "mc",
+            "question": "A function reads the units from the message handed to it, so it stays correct when the units change. What does this show?",
+            "options": [
+              "Loose coupling",
+              "Tight coupling",
+              "Format mismatch",
+              "Security"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 40,
+            "type": "mc",
+            "question": "One system stores an amount in pesos and the other reads it as dollars. What has failed?",
+            "options": [
+              "Security",
+              "Interoperability",
+              "Reliability",
+              "Coupling"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 41,
+            "type": "mc",
+            "question": "Three school offices re-type information by hand because their systems cannot share data. What is missing?",
+            "options": [
+              "Systems integration",
+              "Data standardization",
+              "Encryption",
+              "Middleware"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 42,
+            "type": "mc",
+            "question": "A school portal shows grades, enrollment, and accounts together on one dashboard. Which level is this?",
+            "options": [
+              "Data level",
+              "Process level",
+              "Application level",
+              "Presentation level"
+            ],
+            "answer": 3
+          },
+          {
+            "id": 43,
+            "type": "mc",
+            "question": "A payment company will not hand over its private code, so it offers a safe doorway others can connect to instead. What is the doorway?",
+            "options": [
+              "Password",
+              "API",
+              "Database",
+              "Backup"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 44,
+            "type": "mc",
+            "question": "Your system sends out a call for user number one, and the other system sends back JSON. What is this cycle?",
+            "options": [
+              "Request and response",
+              "Hub-and-spoke",
+              "Event-driven",
+              "Coupling"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 45,
+            "type": "mc",
+            "question": "HTML, CSS, and JavaScript work together to build one page. What does this already demonstrate?",
+            "options": [
+              "Integration",
+              "Encryption",
+              "Standardization",
+              "Debugging"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 46,
+            "type": "mc",
+            "question": "A company keeps adding systems, and the direct wires between them explode into a tangled mess. Which design is this?",
+            "options": [
+              "Hub-and-spoke",
+              "Point-to-point",
+              "Middleware",
+              "Microservices"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 47,
+            "type": "mc",
+            "question": "The same company adds one central piece so every system connects there instead of to each other. Which design is this now?",
+            "options": [
+              "Point-to-point",
+              "Microservices",
+              "Hub-and-spoke",
+              "Event-driven"
+            ],
+            "answer": 2
+          },
+          {
+            "id": 48,
+            "type": "mc",
+            "question": "An online checkout talks to payment, inventory, and shipping all at once so the user sees one smooth process. What is this?",
+            "options": [
+              "Data standardization",
+              "Systems integration",
+              "Tight coupling",
+              "Static design"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 49,
+            "type": "mc",
+            "question": "A store's system reacts the moment an order is placed instead of checking for new orders over and over. What kind of system is it?",
+            "options": [
+              "Event-driven",
+              "Schedule-based",
+              "Point-to-point",
+              "Static"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 50,
+            "type": "mc",
+            "question": "A business rents server power online and scales up only during peak season. What is it using?",
+            "options": [
+              "Middleware",
+              "The cloud",
+              "A hub",
+              "A web service"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 51,
+            "type": "mc",
+            "question": "System A never talks to System B directly. It hands its message to something in between, which delivers it. What is that something?",
+            "options": [
+              "Middleware",
+              "API",
+              "Client",
+              "Format"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 52,
+            "type": "mc",
+            "question": "A restaurant system, a payment app, a mapping service, and a messaging service all work together so an order feels like one smooth app. What is this?",
+            "options": [
+              "One giant program",
+              "Systems integration",
+              "A static website",
+              "Tight coupling"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 53,
+            "type": "mc",
+            "question": "A system is a program or application that performs a specific job on its own.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 54,
+            "type": "mc",
+            "question": "Systems integration means building every part of a program from zero.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 55,
+            "type": "mc",
+            "question": "Integration connects parts that already exist so they cooperate.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 56,
+            "type": "mc",
+            "question": "A communication mechanism is the agreed method for one system to send a request and receive a response.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 57,
+            "type": "mc",
+            "question": "When choosing how two systems will communicate, the platform each runs on does not matter.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 58,
+            "type": "mc",
+            "question": "Matching data is easier to pass between systems than mismatched data.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 59,
+            "type": "mc",
+            "question": "Data standardization arranges shared data in a common, agreed format.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 60,
+            "type": "mc",
+            "question": "Systems can throw raw data at each other as long as both are online.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 61,
+            "type": "mc",
+            "question": "A static website changes its content depending on who is looking at it.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 62,
+            "type": "mc",
+            "question": "A dynamic website changes based on the user or the situation.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 63,
+            "type": "mc",
+            "question": "CSS lays out the structure and content, like the skeleton.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 64,
+            "type": "mc",
+            "question": "JavaScript adds the behavior and logic, like the muscles.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 65,
+            "type": "mc",
+            "question": "A dynamic website can be built properly using only one language.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 66,
+            "type": "mc",
+            "question": "An API lets one system request data while the complex work stays hidden.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 67,
+            "type": "mc",
+            "question": "A web service is an API that can be reached over the internet.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 68,
+            "type": "mc",
+            "question": "To use another system's API, you must first understand how it works inside.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 69,
+            "type": "mc",
+            "question": "Interoperability means exchanging information, and exchanging alone is enough.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 70,
+            "type": "mc",
+            "question": "For interoperability, both the format and the meaning must agree.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 71,
+            "type": "mc",
+            "question": "If one system reads an amount as pesos and the other as dollars, interoperability has failed.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 72,
+            "type": "mc",
+            "question": "Coupling is how dependent two systems are on each other.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 73,
+            "type": "mc",
+            "question": "In tight coupling, a change in one system can break the other.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 74,
+            "type": "mc",
+            "question": "Loose coupling means systems depend only on an agreed message.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 75,
+            "type": "mc",
+            "question": "Tight coupling is what we aim for.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 76,
+            "type": "mc",
+            "question": "Loose coupling makes a setup easier to maintain and grow.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 77,
+            "type": "mc",
+            "question": "A message is the agreed shape of the data that systems pass to each other.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 78,
+            "type": "mc",
+            "question": "At the data level, systems share the same database or files.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 79,
+            "type": "mc",
+            "question": "At the presentation level, systems coordinate one full workflow together.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 80,
+            "type": "mc",
+            "question": "At the application level, systems call each other's functions or APIs.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 81,
+            "type": "mc",
+            "question": "Without integration, copies of data drift out of sync.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 82,
+            "type": "mc",
+            "question": "With integration, there is one source of truth.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 83,
+            "type": "mc",
+            "question": "In a well-integrated setup, the user should be able to tell how many systems are working behind the scenes.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 84,
+            "type": "mc",
+            "question": "In point-to-point, every system is wired directly to every other system.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 85,
+            "type": "mc",
+            "question": "Point-to-point stays manageable no matter how many systems you add.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 86,
+            "type": "mc",
+            "question": "In hub-and-spoke, one central hub routes messages between all the systems.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 87,
+            "type": "mc",
+            "question": "Middleware works like a translator and a post office combined.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 88,
+            "type": "mc",
+            "question": "With middleware in place, System A still talks to System B directly.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 89,
+            "type": "mc",
+            "question": "Middleware lets each system change on its own without breaking the other.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 90,
+            "type": "mc",
+            "question": "Microservices are small independent services that each do one job.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 91,
+            "type": "mc",
+            "question": "With the cloud, you pay for what you use and scale when you need to.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 92,
+            "type": "mc",
+            "question": "Event-driven systems constantly check for updates rather than reacting to events.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 93,
+            "type": "mc",
+            "question": "In the request and response cycle, your system acts as the server.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 94,
+            "type": "mc",
+            "question": "The response usually comes back as JSON.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 95,
+            "type": "mc",
+            "question": "Format mismatch happens when one system sends XML while another expects JSON.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": 96,
+            "type": "mc",
+            "question": "Reliability asks who is allowed to call a service and how data is protected in transit.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": 97,
+            "type": "mc",
+            "question": "Integration evolved from point-to-point wiring toward shared, standard services.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "wd",

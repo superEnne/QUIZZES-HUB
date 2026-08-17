@@ -1,0 +1,479 @@
+# Systems Integration Reviewer
+**Integrative Programming and Technologies 1**
+Covers: *Introduction to Modern Systems Integration* + *Review Materials Week 2 and 3*
+
+Every item gives a plain description — you pick the term. Answer key and the full term list are at the end.
+
+---
+
+## PART A — Name the Term
+
+**1.** What is the window for another app to communicate?
+- A. Virus
+- B. API
+- C. Delete
+- D. Coupling
+
+**2.** A program or application that does one certain job on its own.
+- A. System
+- B. Server
+- C. Message
+- D. Network
+
+**3.** Connecting separate systems so they share information and act as one.
+- A. Encryption
+- B. Debugging
+- C. Systems integration
+- D. Data entry
+
+**4.** The agreed method one system uses to ask another for something and get an answer back.
+- A. Firewall
+- B. Markup language
+- C. Communication mechanism
+- D. Static page
+
+**5.** Arranging shared data in a common, agreed format so different systems can understand it.
+- A. Compression
+- B. Data standardization
+- C. Backup
+- D. Coupling
+
+**6.** An API that can be reached over the internet, so systems anywhere can call it.
+- A. Database
+- B. Middleware
+- C. Hub
+- D. Web service
+
+**7.** Being able to exchange information and also actually understand it.
+- A. Interoperability
+- B. Reliability
+- C. Formatting
+- D. Hosting
+
+**8.** How dependent two systems are on each other.
+- A. Bandwidth
+- B. Coupling
+- C. Latency
+- D. Storage
+
+**9.** Systems depend on each other's inner details, so a change in one breaks the other.
+- A. Loose coupling
+- B. Microservices
+- C. Tight coupling
+- D. Middleware
+
+**10.** Systems depend only on an agreed message, so each can change safely inside itself.
+- A. Loose coupling
+- B. Tight coupling
+- C. Point-to-point
+- D. Static coupling
+
+**11.** The agreed shape of the data that systems pass to each other, often written in JSON.
+- A. Password
+- B. Cookie
+- C. Session
+- D. Message
+
+**12.** Software that sits between systems and passes messages for them, like a translator and post office in one.
+- A. Middleware
+- B. Antivirus
+- C. Browser
+- D. Compiler
+
+**13.** The cycle where a client asks and a server answers, usually with JSON.
+- A. Copy and paste
+- B. Request and response
+- C. Login and logout
+- D. Save and exit
+
+**14.** The side that sends the request.
+- A. Server
+- B. Hub
+- C. Client
+- D. Message
+
+**15.** The side that sends back the response.
+- A. Client
+- B. Server
+- C. Middleware
+- D. Spoke
+
+**16.** Small independent services that each do one job and talk through APIs.
+- A. Mainframes
+- B. Macros
+- C. Microservices
+- D. Modules
+
+**17.** Shared services hosted online, where you pay for what you use and scale when you need to.
+- A. The cloud
+- B. The hub
+- C. The client
+- D. The cache
+
+**18.** Systems that react to something happening, such as an order being placed, instead of constantly checking for updates.
+- A. Schedule-driven
+- B. Event-driven
+- C. Data-driven
+- D. Static
+
+**19.** Every system is wired directly to every other system.
+- A. Hub-and-spoke
+- B. Middleware
+- C. Point-to-point
+- D. Cloud
+
+**20.** All systems connect to one central piece that routes messages between them.
+- A. Point-to-point
+- B. Hub-and-spoke
+- C. Microservices
+- D. Peer-to-peer
+
+**21.** A site that shows the same thing to everyone and never changes on its own.
+- A. Dynamic website
+- B. Broken website
+- C. Static website
+- D. Secure website
+
+**22.** A site whose content changes based on who is looking and what is happening.
+- A. Dynamic website
+- B. Static website
+- C. Landing page
+- D. Portal
+
+**23.** The language that lays out the structure and content, like the skeleton of the page.
+- A. CSS
+- B. JavaScript
+- C. SQL
+- D. HTML
+
+**24.** The language that handles the look and design, like the clothes and colors.
+- A. HTML
+- B. CSS
+- C. JavaScript
+- D. JSON
+
+**25.** The language that adds the behavior and logic, like the muscles that make things move.
+- A. HTML
+- B. CSS
+- C. JavaScript
+- D. XML
+
+**26.** The two common formats for shaping data that systems share.
+- A. HTML and CSS
+- B. XML and JSON
+- C. PDF and DOCX
+- D. SQL and PHP
+
+**27.** The shape of the data, which both sides must agree on.
+- A. Meaning
+- B. Speed
+- C. Format
+- D. Size
+
+**28.** What each field actually stands for, which both sides must also agree on.
+- A. Format
+- B. Meaning
+- C. Volume
+- D. Syntax
+
+**29.** The single agreed place where the correct data lives.
+- A. Backup file
+- B. Source of truth
+- C. Master password
+- D. Main server
+
+**30.** Systems share the same database or files.
+- A. Data level
+- B. Application level
+- C. Process level
+- D. Presentation level
+
+**31.** Systems call each other's functions or APIs.
+- A. Data level
+- B. Application level
+- C. Process level
+- D. Presentation level
+
+**32.** Systems coordinate one full workflow together.
+- A. Data level
+- B. Application level
+- C. Process level
+- D. Presentation level
+
+**33.** Many systems are combined into one screen or portal.
+- A. Data level
+- B. Application level
+- C. Process level
+- D. Presentation level
+
+**34.** One system sends XML while another expects JSON, so the data must be mapped from one shape to the other.
+- A. Security
+- B. Reliability
+- C. Format mismatch
+- D. Coupling
+
+**35.** The challenge of who is allowed to call a service and how the data is protected while it travels.
+- A. Format mismatch
+- B. Security
+- C. Reliability
+- D. Standardization
+
+**36.** The challenge of what happens when the other system is slow or down.
+- A. Reliability
+- B. Security
+- C. Format mismatch
+- D. Interoperability
+
+---
+
+## PART B — Name the Term in a Situation
+
+**37.** A food app asks a payment provider to process money without knowing how that provider works inside. What is it using?
+- A. Virus
+- B. API
+- C. Middleware
+- D. Cookie
+
+**38.** A function has the units locked inside it, so it keeps returning the old amount even after the units change. What does this show?
+- A. Loose coupling
+- B. Interoperability
+- C. Tight coupling
+- D. Reliability
+
+**39.** A function reads the units from the message handed to it, so it stays correct when the units change. What does this show?
+- A. Loose coupling
+- B. Tight coupling
+- C. Format mismatch
+- D. Security
+
+**40.** One system stores an amount in pesos and the other reads it as dollars. What has failed?
+- A. Security
+- B. Interoperability
+- C. Reliability
+- D. Coupling
+
+**41.** Three school offices re-type information by hand because their systems cannot share data. What is missing?
+- A. Systems integration
+- B. Data standardization
+- C. Encryption
+- D. Middleware
+
+**42.** A school portal shows grades, enrollment, and accounts together on one dashboard. Which level is this?
+- A. Data level
+- B. Process level
+- C. Application level
+- D. Presentation level
+
+**43.** A payment company will not hand over its private code, so it offers a safe doorway others can connect to instead. What is the doorway?
+- A. Password
+- B. API
+- C. Database
+- D. Backup
+
+**44.** Your system sends out a call for user number one, and the other system sends back JSON. What is this cycle?
+- A. Request and response
+- B. Hub-and-spoke
+- C. Event-driven
+- D. Coupling
+
+**45.** HTML, CSS, and JavaScript work together to build one page. What does this already demonstrate?
+- A. Integration
+- B. Encryption
+- C. Standardization
+- D. Debugging
+
+**46.** A company keeps adding systems, and the direct wires between them explode into a tangled mess. Which design is this?
+- A. Hub-and-spoke
+- B. Point-to-point
+- C. Middleware
+- D. Microservices
+
+**47.** The same company adds one central piece so every system connects there instead of to each other. Which design is this now?
+- A. Point-to-point
+- B. Microservices
+- C. Hub-and-spoke
+- D. Event-driven
+
+**48.** An online checkout talks to payment, inventory, and shipping all at once so the user sees one smooth process. What is this?
+- A. Data standardization
+- B. Systems integration
+- C. Tight coupling
+- D. Static design
+
+**49.** A store's system reacts the moment an order is placed instead of checking for new orders over and over. What kind of system is it?
+- A. Event-driven
+- B. Schedule-based
+- C. Point-to-point
+- D. Static
+
+**50.** A business rents server power online and scales up only during peak season. What is it using?
+- A. Middleware
+- B. The cloud
+- C. A hub
+- D. A web service
+
+**51.** System A never talks to System B directly. It hands its message to something in between, which delivers it. What is that something?
+- A. Middleware
+- B. API
+- C. Client
+- D. Format
+
+**52.** A restaurant system, a payment app, a mapping service, and a messaging service all work together so an order feels like one smooth app. What is this?
+- A. One giant program
+- B. Systems integration
+- C. A static website
+- D. Tight coupling
+
+---
+
+## PART C — True or False
+
+Write **T** if correct, **F** if wrong. Several are correct statements with one term swapped.
+
+**T1.** A system is a program or application that performs a specific job on its own.
+**T2.** Systems integration means building every part of a program from zero.
+**T3.** Integration connects parts that already exist so they cooperate.
+**T4.** A communication mechanism is the agreed method for one system to send a request and receive a response.
+**T5.** When choosing how two systems will communicate, the platform each runs on does not matter.
+**T6.** Matching data is easier to pass between systems than mismatched data.
+**T7.** Data standardization arranges shared data in a common, agreed format.
+**T8.** Systems can throw raw data at each other as long as both are online.
+**T9.** A static website changes its content depending on who is looking at it.
+**T10.** A dynamic website changes based on the user or the situation.
+**T11.** CSS lays out the structure and content, like the skeleton.
+**T12.** JavaScript adds the behavior and logic, like the muscles.
+**T13.** A dynamic website can be built properly using only one language.
+**T14.** An API lets one system request data while the complex work stays hidden.
+**T15.** A web service is an API that can be reached over the internet.
+**T16.** To use another system's API, you must first understand how it works inside.
+**T17.** Interoperability means exchanging information, and exchanging alone is enough.
+**T18.** For interoperability, both the format and the meaning must agree.
+**T19.** If one system reads an amount as pesos and the other as dollars, interoperability has failed.
+**T20.** Coupling is how dependent two systems are on each other.
+**T21.** In tight coupling, a change in one system can break the other.
+**T22.** Loose coupling means systems depend only on an agreed message.
+**T23.** Tight coupling is what we aim for.
+**T24.** Loose coupling makes a setup easier to maintain and grow.
+**T25.** A message is the agreed shape of the data that systems pass to each other.
+**T26.** At the data level, systems share the same database or files.
+**T27.** At the presentation level, systems coordinate one full workflow together.
+**T28.** At the application level, systems call each other's functions or APIs.
+**T29.** Without integration, copies of data drift out of sync.
+**T30.** With integration, there is one source of truth.
+**T31.** In a well-integrated setup, the user should be able to tell how many systems are working behind the scenes.
+**T32.** In point-to-point, every system is wired directly to every other system.
+**T33.** Point-to-point stays manageable no matter how many systems you add.
+**T34.** In hub-and-spoke, one central hub routes messages between all the systems.
+**T35.** Middleware works like a translator and a post office combined.
+**T36.** With middleware in place, System A still talks to System B directly.
+**T37.** Middleware lets each system change on its own without breaking the other.
+**T38.** Microservices are small independent services that each do one job.
+**T39.** With the cloud, you pay for what you use and scale when you need to.
+**T40.** Event-driven systems constantly check for updates rather than reacting to events.
+**T41.** In the request and response cycle, your system acts as the server.
+**T42.** The response usually comes back as JSON.
+**T43.** Format mismatch happens when one system sends XML while another expects JSON.
+**T44.** Reliability asks who is allowed to call a service and how data is protected in transit.
+**T45.** Integration evolved from point-to-point wiring toward shared, standard services.
+
+---
+
+## ANSWER KEY
+
+### Multiple Choice
+
+| # | Ans | # | Ans | # | Ans | # | Ans |
+|---|---|---|---|---|---|---|---|
+| 1 | B | 14 | C | 27 | C | 40 | B |
+| 2 | A | 15 | B | 28 | B | 41 | A |
+| 3 | C | 16 | C | 29 | B | 42 | D |
+| 4 | C | 17 | A | 30 | A | 43 | B |
+| 5 | B | 18 | B | 31 | B | 44 | A |
+| 6 | D | 19 | C | 32 | C | 45 | A |
+| 7 | A | 20 | B | 33 | D | 46 | B |
+| 8 | B | 21 | C | 34 | C | 47 | C |
+| 9 | C | 22 | A | 35 | B | 48 | B |
+| 10 | A | 23 | D | 36 | A | 49 | A |
+| 11 | D | 24 | B | 37 | B | 50 | B |
+| 12 | A | 25 | C | 38 | C | 51 | A |
+| 13 | B | 26 | B | 39 | A | 52 | B |
+
+### True or False
+
+| # | Ans | # | Ans | # | Ans | # | Ans |
+|---|---|---|---|---|---|---|---|
+| T1 | T | T13 | F | T25 | T | T37 | T |
+| T2 | F | T14 | T | T26 | T | T38 | T |
+| T3 | T | T15 | T | T27 | F | T39 | T |
+| T4 | T | T16 | F | T28 | T | T40 | F |
+| T5 | F | T17 | F | T29 | T | T41 | F |
+| T6 | T | T18 | T | T30 | T | T42 | T |
+| T7 | T | T19 | T | T31 | F | T43 | T |
+| T8 | F | T20 | T | T32 | T | T44 | F |
+| T9 | F | T21 | T | T33 | F | T45 | T |
+| T10 | T | T22 | T | T34 | T | | |
+| T11 | F | T23 | F | T35 | T | | |
+| T12 | T | T24 | T | T36 | F | | |
+
+**Why the false ones are false**
+- **T2** — you connect parts that already exist rather than build from zero.
+- **T5** — the platform is one of the things you do look at.
+- **T8** — they need a common format both sides understand.
+- **T9** — that describes a dynamic site; a static one never changes on its own.
+- **T11** — that is HTML's role; CSS handles look and design.
+- **T13** — HTML, CSS, and JavaScript each do a part; none can do the whole job alone.
+- **T16** — you only need to know how to ask; the internals stay hidden.
+- **T17** — exchanging is not enough; they must also understand.
+- **T23** — loose coupling is the goal; tight is the danger.
+- **T27** — that is the process level; presentation is many systems on one screen.
+- **T31** — it should feel like one seamless system to the user.
+- **T33** — connections explode into a tangled mess as systems are added.
+- **T36** — with middleware, systems never talk directly.
+- **T40** — event-driven systems react to events instead of constantly checking.
+- **T41** — your system is the client; the other is the server.
+- **T44** — that is security; reliability is about a system being slow or down.
+
+---
+
+## COMPLETE TERM LIST
+
+Cover the right column and define each one from memory. This is the whole set from both modules.
+
+| Term | In one line |
+|---|---|
+| System | A program or application that performs a specific job on its own |
+| Systems integration | Connecting separate systems so they share information and act as one |
+| Communication mechanism | The agreed method for one system to request and receive an answer from another |
+| Data standardization | Arranging shared data in a common, agreed format so systems can understand it |
+| Interoperability | Exchanging information *and* understanding it |
+| Format | The shape of the data, such as JSON or XML |
+| Meaning | What each field actually stands for |
+| Coupling | How dependent two systems are on each other |
+| Tight coupling | Systems depend on each other's inner details; a change in one breaks the other |
+| Loose coupling | Systems depend only on an agreed message and can change safely inside |
+| Message | The agreed shape of the data systems pass to each other, often JSON |
+| Middleware | Software between systems that passes messages — translator and post office in one |
+| API | A service window for asking another system without seeing the internals |
+| Web service | An API reachable over the internet |
+| Request and response | The cycle where a client asks and a server answers |
+| Client | The system sending the request |
+| Server | The system sending back the response |
+| Point-to-point | Every system wired directly to every other system |
+| Hub-and-spoke | All systems connect to one central hub that routes messages |
+| Microservices | Small independent services, each doing one job, talking through APIs |
+| Cloud | Shared services hosted online; pay for what you use and scale as needed |
+| Event-driven | Systems that react to events instead of constantly checking |
+| Data level | Systems share the same database or files |
+| Application level | Systems call each other's functions or APIs |
+| Process level | Systems coordinate one full workflow together |
+| Presentation level | Many systems combined into one screen or portal |
+| Static website | Shows the same thing to everyone and never changes on its own |
+| Dynamic website | Content changes based on the user or the situation |
+| Markup language (HTML) | Structure and content — the skeleton |
+| Styling language (CSS) | Look and design — the clothes and colors |
+| Programming language (JavaScript) | Behavior and logic — the muscles |
+| XML / JSON | The two common shared data formats |
+| Source of truth | The single agreed place the correct data lives |
+| Format mismatch | One system sends one shape, another expects a different one |
+| Security | Who may call a service, and how data is protected in transit |
+| Reliability | What happens when the other system is slow or down |
