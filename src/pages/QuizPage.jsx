@@ -17,6 +17,18 @@ function shuffleArray(arr) {
   return a;
 }
 
+/**
+ * Format a score for display.
+ * Matching questions award partial credit (e.g. 2/3 = 0.6666666666666666), so the
+ * running total can be a long float. Round to at most 2 decimals and drop a
+ * trailing zero so it reads as "1.3" / "4" instead of "1.2984848484848486".
+ */
+function fmtScore(n) {
+  const rounded = Math.round((n + Number.EPSILON) * 100) / 100;
+  if (Number.isInteger(rounded)) return String(rounded);
+  return rounded.toFixed(2).replace(/0$/, "");
+}
+
 function getGrade(pct) {
   if (pct >= 90) return { label: "Excellent!", color: "#22c55e", bg: "#dcfce7", border: "#86efac" };
   if (pct >= 75) return { label: "Good Job!", color: "#9370db", bg: "#f3eeff", border: "#c9b4f8" };
@@ -526,13 +538,14 @@ function FillCodeQuestion({ q, onAnswer }) {
 function EnumerationQuestion({ q, onAnswer }) {
   const [revealed, setRevealed] = useState(false);
   const [checked, setChecked] = useState(() => q.items.map(() => false));
+  const [graded, setGraded] = useState(false);
 
   function handleReveal() {
     setRevealed(true);
   }
 
   function toggleItem(i) {
-    if (!revealed) return;
+    if (!revealed || graded) return;
     setChecked(prev => {
       const next = [...prev];
       next[i] = !next[i];
@@ -541,6 +554,10 @@ function EnumerationQuestion({ q, onAnswer }) {
   }
 
   function handleSubmit() {
+    // Guard: without this, tapping "I'm done grading" more than once scored the
+    // question again each time (and duplicated it in the answer review).
+    if (graded) return;
+    setGraded(true);
     const gotCount = checked.filter(Boolean).length;
     const required = q.minCount ?? q.count;
     onAnswer(gotCount >= required);
@@ -640,16 +657,17 @@ function EnumerationQuestion({ q, onAnswer }) {
             </div>
           )}
 
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.75rem", flexWrap: "wrap" }}>
+          <div className="quiz-action-row" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.75rem", flexWrap: "wrap" }}>
             <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text-mid)" }}>
               {checkedCount} / {q.minCount ?? q.count} checked
             </span>
             <button
               className="btn-primary"
               onClick={handleSubmit}
+              disabled={graded}
               style={{ padding: "0.7rem 1.5rem", fontSize: "0.875rem" }}
             >
-              I'm done grading
+              {graded ? "Graded" : "I'm done grading"}
             </button>
           </div>
         </>
@@ -1045,7 +1063,7 @@ export default function QuizPage() {
               {grade.label}
             </h2>
             <p style={{ fontSize: "0.9rem", color: "var(--text-mid)", marginBottom: "1.75rem" }}>
-              You got <strong style={{ color: grade.color }}>{score}</strong> out of <strong style={{ color: grade.color }}>{shuffled.length}</strong> questions correct.
+              You got <strong style={{ color: grade.color }}>{fmtScore(score)}</strong> out of <strong style={{ color: grade.color }}>{shuffled.length}</strong> questions correct.
             </p>
             <div className="result-actions" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
               <button className="btn-primary" onClick={() => setQuizState(STATE.IDLE)} style={{ padding: "0.75rem 2rem" }}>
@@ -1261,7 +1279,7 @@ export default function QuizPage() {
             <span style={{ fontSize: "0.8rem", fontWeight: 600, color: "var(--text-mid)" }}>
               Question {current + 1} <span style={{ color: "var(--text-soft)" }}>/ {shuffled.length}</span>
             </span>
-            <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9370db" }}>{score} correct</span>
+            <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9370db", whiteSpace: "nowrap" }}>{fmtScore(score)} correct</span>
           </div>
           <div className="progress-track">
             <div className="progress-fill" style={{ width: `${progress}%` }} />
