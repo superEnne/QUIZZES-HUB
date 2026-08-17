@@ -18,11 +18,24 @@ function shuffleArray(arr) {
 }
 
 /**
- * Format a score for display.
- * Matching questions award partial credit (e.g. 2/3 = 0.6666666666666666), so the
- * running total can be a long float. Round to at most 2 decimals and drop a
- * trailing zero so it reads as "1.3" / "4" instead of "1.2984848484848486".
+ * How many scoreable ITEMS a question is worth.
+ * A 6-pair matching set is worth 6, an "enumerate 3" is worth 3, everything
+ * else is worth 1. Scoring in items keeps every score a whole number and makes
+ * "2 correct" mean 2 actual items, not a fraction of a question.
  */
+function questionPoints(q) {
+  const type = q.type || "mc";
+  if (type === "matching")    return q.pairs?.length || 1;
+  if (type === "enumeration") return q.minCount ?? q.count ?? q.items?.length ?? 1;
+  return 1;
+}
+
+/** Total items in a set of questions. */
+function totalPointsOf(qs) {
+  return qs.reduce((sum, q) => sum + questionPoints(q), 0);
+}
+
+/** Safety net: scores are whole numbers now, but never print a long float. */
 function fmtScore(n) {
   const rounded = Math.round((n + Number.EPSILON) * 100) / 100;
   if (Number.isInteger(rounded)) return String(rounded);
@@ -558,9 +571,15 @@ function EnumerationQuestion({ q, onAnswer }) {
     // question again each time (and duplicated it in the answer review).
     if (graded) return;
     setGraded(true);
-    const gotCount = checked.filter(Boolean).length;
     const required = q.minCount ?? q.count;
-    onAnswer(gotCount >= required);
+    // One point per item you knew, capped at the number required.
+    const gotCount = Math.min(checked.filter(Boolean).length, required);
+    onAnswer({
+      correct: gotCount >= required,
+      scoreDelta: gotCount,
+      correctCount: gotCount,
+      totalCount: required,
+    });
   }
 
   const checkedCount = checked.filter(Boolean).length;
@@ -699,7 +718,8 @@ function MatchingQuestion({ q, onAnswer }) {
     const correctCount = q.pairs.reduce((acc, p, i) => acc + (selections[i] === p.correct ? 1 : 0), 0);
     onAnswer({
       correct: correctCount === total,
-      scoreDelta: total > 0 ? correctCount / total : 0,
+      // One point per correctly matched pair — 2 of 6 right scores 2, not 0.33.
+      scoreDelta: correctCount,
       userSelections: selections,
       correctCount,
       totalCount: total,
@@ -925,8 +945,10 @@ export default function QuizPage() {
     }
   }
 
-  const progress = shuffled.length > 0 ? ((current + (qAnswered ? 1 : 0)) / shuffled.length) * 100 : 0;
-  const pct      = shuffled.length > 0 ? Math.round((score / shuffled.length) * 100) : 0;
+  const progress    = shuffled.length > 0 ? ((current + (qAnswered ? 1 : 0)) / shuffled.length) * 100 : 0;
+  // Scored in items, not questions: a 6-pair matching set contributes 6.
+  const totalPoints = totalPointsOf(shuffled);
+  const pct         = totalPoints > 0 ? Math.round((score / totalPoints) * 100) : 0;
 
   /* ─────────────────── START SCREEN ─────────────────── */
   if (quizState === STATE.IDLE) {
@@ -975,6 +997,9 @@ export default function QuizPage() {
 
             <p style={{ fontSize: "0.875rem", color: "var(--text-mid)", fontWeight: 600, marginBottom: "1.75rem" }}>
               {questions.length} {questions.length === 1 ? "question" : "questions"} total
+              {totalPointsOf(questions) !== questions.length && (
+                <span style={{ color: "var(--text-soft)", fontWeight: 500 }}> · {totalPointsOf(questions)} scoreable items</span>
+              )}
             </p>
 
             {/* Shuffle toggle */}
@@ -1063,7 +1088,8 @@ export default function QuizPage() {
               {grade.label}
             </h2>
             <p style={{ fontSize: "0.9rem", color: "var(--text-mid)", marginBottom: "1.75rem" }}>
-              You got <strong style={{ color: grade.color }}>{fmtScore(score)}</strong> out of <strong style={{ color: grade.color }}>{shuffled.length}</strong> questions correct.
+              You got <strong style={{ color: grade.color }}>{fmtScore(score)}</strong> out of <strong style={{ color: grade.color }}>{totalPoints}</strong> items correct
+              {totalPoints !== shuffled.length && <> across <strong style={{ color: grade.color }}>{shuffled.length}</strong> questions</>}.
             </p>
             <div className="result-actions" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
               <button className="btn-primary" onClick={() => setQuizState(STATE.IDLE)} style={{ padding: "0.75rem 2rem" }}>
@@ -1148,6 +1174,11 @@ export default function QuizPage() {
                 {/* Enumeration review */}
                 {a.type === "enumeration" && a.items && (
                   <div style={{ paddingLeft: "2.1rem" }}>
+                    {a.totalCount != null && (
+                      <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--lilac-700)", marginBottom: "0.5rem" }}>
+                        {a.correctCount} / {a.totalCount} recalled
+                      </p>
+                    )}
                     <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", marginBottom: "0.5rem" }}>
                       {a.items.map((item, ii) => (
                         <div key={ii} style={{ fontSize: "0.8rem", color: "#2d1f5e", display: "flex", gap: "0.4rem", alignItems: "center" }}>
@@ -1279,7 +1310,9 @@ export default function QuizPage() {
             <span style={{ fontSize: "0.8rem", fontWeight: 600, color: "var(--text-mid)" }}>
               Question {current + 1} <span style={{ color: "var(--text-soft)" }}>/ {shuffled.length}</span>
             </span>
-            <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9370db", whiteSpace: "nowrap" }}>{fmtScore(score)} correct</span>
+            <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9370db", whiteSpace: "nowrap" }}>
+              {fmtScore(score)} <span style={{ color: "var(--text-soft)" }}>/ {totalPoints}</span> correct
+            </span>
           </div>
           <div className="progress-track">
             <div className="progress-fill" style={{ width: `${progress}%` }} />
