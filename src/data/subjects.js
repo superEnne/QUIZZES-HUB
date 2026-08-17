@@ -2718,7 +2718,1199 @@ export const subjects = [
     "name": "Web Development Lec",
     "description": "Covers front-end and back-end web development, HTTP, and web application architecture.",
     "color": "#8b5cf6",
-    "reviewers": []
+    "reviewers": [
+      {
+        "id": "wd_ch1_reviewer",
+        "title": "Quiz 1 — Chapter 1 Reviewer",
+        "description": "54-item reviewer covering Introduction to Web, HTML Structures, and IDEs: 12 Matching sets, 27 Enumeration items, and 15 Output Tracing items.",
+        "quizletLink": null,
+        "questions": [
+          {
+            "id": 1,
+            "type": "matching",
+            "question": "SET A — Match each description to the correct web era.",
+            "pairs": [
+              {
+                "left": "Read-only, static",
+                "correct": "A"
+              },
+              {
+                "left": "Read-write, interactive",
+                "correct": "B"
+              },
+              {
+                "left": "Read-write-trust, verifiable",
+                "correct": "C"
+              },
+              {
+                "left": "1990s – Early 2000s",
+                "correct": "A"
+              },
+              {
+                "left": "Mid-2000s – Present",
+                "correct": "B"
+              },
+              {
+                "left": "Emerging",
+                "correct": "C"
+              },
+              {
+                "left": "The Static Web",
+                "correct": "A"
+              },
+              {
+                "left": "The Social Web",
+                "correct": "B"
+              },
+              {
+                "left": "The Decentralized Web",
+                "correct": "C"
+              },
+              {
+                "left": "Facebook, YouTube, Wikipedia, Amazon",
+                "correct": "B"
+              },
+              {
+                "left": "Ethereum, Solana, DeFi, OpenSea",
+                "correct": "C"
+              },
+              {
+                "left": "Early corporate or personal websites that looked like online brochures",
+                "correct": "A"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Web 1.0"
+              },
+              {
+                "key": "B",
+                "label": "Web 2.0"
+              },
+              {
+                "key": "C",
+                "label": "Web 3.0"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "type": "matching",
+            "question": "SET B — Match each characteristic to the web era it belongs to.",
+            "pairs": [
+              {
+                "left": "Static HTML Pages (Read-only)",
+                "correct": "A"
+              },
+              {
+                "left": "Limited Interactivity",
+                "correct": "A"
+              },
+              {
+                "left": "Centralized Hosting",
+                "correct": "A"
+              },
+              {
+                "left": "Text & Images Only",
+                "correct": "A"
+              },
+              {
+                "left": "Dynamic Content (AJAX, JavaScript, PHP)",
+                "correct": "B"
+              },
+              {
+                "left": "User-Generated Content",
+                "correct": "B"
+              },
+              {
+                "left": "Social Networking Platforms",
+                "correct": "B"
+              },
+              {
+                "left": "APIs & Interoperability",
+                "correct": "B"
+              },
+              {
+                "left": "Mobile Web Adoption",
+                "correct": "B"
+              },
+              {
+                "left": "Blockchain & Decentralization",
+                "correct": "C"
+              },
+              {
+                "left": "Enhanced Privacy & Security",
+                "correct": "C"
+              },
+              {
+                "left": "Smart Contracts",
+                "correct": "C"
+              },
+              {
+                "left": "Tokenization & Digital Ownership (NFTs)",
+                "correct": "C"
+              },
+              {
+                "left": "AI & Machine Learning Integration",
+                "correct": "C"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Web 1.0"
+              },
+              {
+                "key": "B",
+                "label": "Web 2.0"
+              },
+              {
+                "key": "C",
+                "label": "Web 3.0"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "type": "matching",
+            "question": "SET C — Match each type of website to its description.",
+            "pairs": [
+              {
+                "left": "Homepage / Corporate Website",
+                "correct": "A"
+              },
+              {
+                "left": "Blog / Online Magazine / Portfolio",
+                "correct": "E"
+              },
+              {
+                "left": "E-Commerce Website",
+                "correct": "C"
+              },
+              {
+                "left": "Landing Page / Microsite",
+                "correct": "D"
+              },
+              {
+                "left": "Web Platform",
+                "correct": "B"
+              },
+              {
+                "left": "Web App",
+                "correct": "F"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Web Presence"
+              },
+              {
+                "key": "B",
+                "label": "Social media websites"
+              },
+              {
+                "key": "C",
+                "label": "Site built for online buying and selling"
+              },
+              {
+                "key": "D",
+                "label": "Single-purpose page or small standalone site"
+              },
+              {
+                "key": "E",
+                "label": "Content-publishing or showcase site"
+              },
+              {
+                "key": "F",
+                "label": "Website that functions like an application"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "type": "matching",
+            "question": "SET D — Match each description to Static or Dynamic websites.",
+            "pairs": [
+              {
+                "left": "Content stored unchangeably as individual files on the server",
+                "correct": "A"
+              },
+              {
+                "left": "Changes need manual editing and uploading",
+                "correct": "A"
+              },
+              {
+                "left": "Cost-effective, faster loading, but design changes can be tough",
+                "correct": "A"
+              },
+              {
+                "left": "CMS generates web pages dynamically",
+                "correct": "B"
+              },
+              {
+                "left": "Content and layout separated, assembled from a database",
+                "correct": "B"
+              },
+              {
+                "left": "Requires scripting languages (e.g., PHP) and databases (e.g., MySQL)",
+                "correct": "B"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Static Website"
+              },
+              {
+                "key": "B",
+                "label": "Dynamic Website"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "type": "matching",
+            "question": "SET E — Match each of the four elements of a webpage to its role.",
+            "pairs": [
+              {
+                "left": "Content",
+                "correct": "B"
+              },
+              {
+                "left": "Structure",
+                "correct": "A"
+              },
+              {
+                "left": "Presentation (Style)",
+                "correct": "C"
+              },
+              {
+                "left": "Behavior (Interactivity)",
+                "correct": "D"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "HTML — defines meaning (headings, lists, links)"
+              },
+              {
+                "key": "B",
+                "label": "HTML — all visible elements (text, images, audio, video, docs)"
+              },
+              {
+                "key": "C",
+                "label": "CSS — how it looks (colors, size, layout, design)"
+              },
+              {
+                "key": "D",
+                "label": "JavaScript — user interaction via scripts"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "type": "matching",
+            "question": "SET F — Match each web language to its role.",
+            "pairs": [
+              {
+                "left": "HTML",
+                "correct": "A"
+              },
+              {
+                "left": "CSS",
+                "correct": "B"
+              },
+              {
+                "left": "JavaScript",
+                "correct": "C"
+              },
+              {
+                "left": "PHP",
+                "correct": "D"
+              },
+              {
+                "left": "MySQL",
+                "correct": "E"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Text-based markup language for structuring content; uses markers (tags), not commands or statements"
+              },
+              {
+                "key": "B",
+                "label": "Design language separating structure and layout; defines how HTML elements are displayed visually"
+              },
+              {
+                "key": "C",
+                "label": "Client-side scripting language that enhances HTML with interactive elements"
+              },
+              {
+                "key": "D",
+                "label": "Server-side scripting language that generates dynamic content and interacts with databases"
+              },
+              {
+                "key": "E",
+                "label": "Database used together with scripting languages in dynamic websites"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "type": "matching",
+            "question": "SET G — Match each \"New Trend\" term to its description.",
+            "pairs": [
+              {
+                "left": "Full Stack",
+                "correct": "C"
+              },
+              {
+                "left": "Front-End",
+                "correct": "A"
+              },
+              {
+                "left": "Back-End",
+                "correct": "B"
+              },
+              {
+                "left": "API",
+                "correct": "D"
+              },
+              {
+                "left": "Database",
+                "correct": "E"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Focuses on user interface and experience in the browser; uses HTML, CSS, and JavaScript"
+              },
+              {
+                "key": "B",
+                "label": "Handles server logic, databases, and application processing; uses PHP, Python, or Node.js"
+              },
+              {
+                "key": "C",
+                "label": "Covers both client and server development; handles the entire web application workflow"
+              },
+              {
+                "key": "D",
+                "label": "Set of rules that allow applications to communicate and integrate"
+              },
+              {
+                "key": "E",
+                "label": "Organized collection of data for easy access, storing, retrieving, and updating"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "type": "matching",
+            "question": "SET H — Match each HTML document structure element to its description.",
+            "pairs": [
+              {
+                "left": "<!DOCTYPE>",
+                "correct": "B"
+              },
+              {
+                "left": "<html>",
+                "correct": "A"
+              },
+              {
+                "left": "<head>",
+                "correct": "C"
+              },
+              {
+                "left": "<title>",
+                "correct": "D"
+              },
+              {
+                "left": "<body>",
+                "correct": "E"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Root element of an HTML document; contains all other HTML elements"
+              },
+              {
+                "key": "B",
+                "label": "Not an HTML tag; an instruction telling the browser which HTML version is used"
+              },
+              {
+                "key": "C",
+                "label": "Container for metadata; placed between the root element and the body; not displayed on the page"
+              },
+              {
+                "key": "D",
+                "label": "Defines the document title; appears on the browser tab, bookmarks, and search results"
+              },
+              {
+                "key": "E",
+                "label": "Contains all visible content; only one is allowed per HTML document"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "type": "matching",
+            "question": "SET I — Match each element inside the <head> to its description.",
+            "pairs": [
+              {
+                "left": "<title>",
+                "correct": "F"
+              },
+              {
+                "left": "<base>",
+                "correct": "A"
+              },
+              {
+                "left": "<link>",
+                "correct": "B"
+              },
+              {
+                "left": "<style>",
+                "correct": "C"
+              },
+              {
+                "left": "<script>",
+                "correct": "D"
+              },
+              {
+                "left": "<meta>",
+                "correct": "E"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Defines the base URL for links"
+              },
+              {
+                "key": "B",
+                "label": "Connects external files (e.g., CSS)"
+              },
+              {
+                "key": "C",
+                "label": "Adds internal CSS styles"
+              },
+              {
+                "key": "D",
+                "label": "Embeds or links JavaScript"
+              },
+              {
+                "key": "E",
+                "label": "Provides metadata (keywords, charset, viewport)"
+              },
+              {
+                "key": "F",
+                "label": "Sets the page title (browser tab / SEO)"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "type": "matching",
+            "question": "SET J — Given: <b> DIGNOS </b>. Match each part to its name.",
+            "pairs": [
+              {
+                "left": "<b>",
+                "correct": "B"
+              },
+              {
+                "left": "b",
+                "correct": "A"
+              },
+              {
+                "left": "DIGNOS",
+                "correct": "C"
+              },
+              {
+                "left": "</b>",
+                "correct": "D"
+              },
+              {
+                "left": "<b> DIGNOS </b>",
+                "correct": "E"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Tag name"
+              },
+              {
+                "key": "B",
+                "label": "Start tag"
+              },
+              {
+                "key": "C",
+                "label": "Content"
+              },
+              {
+                "key": "D",
+                "label": "End tag"
+              },
+              {
+                "key": "E",
+                "label": "Element"
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "type": "matching",
+            "question": "SET K — Match each tool, server, or editor to its description.",
+            "pairs": [
+              {
+                "left": "XAMPP",
+                "correct": "A"
+              },
+              {
+                "left": "WAMP",
+                "correct": "B"
+              },
+              {
+                "left": "MAMP",
+                "correct": "C"
+              },
+              {
+                "left": "LAMP",
+                "correct": "D"
+              },
+              {
+                "left": "Notepad++",
+                "correct": "E"
+              },
+              {
+                "left": "TextMate",
+                "correct": "F"
+              },
+              {
+                "left": "Aptana Studio 3",
+                "correct": "G"
+              },
+              {
+                "left": "Brackets 1.0",
+                "correct": "H"
+              },
+              {
+                "left": "Visual Studio Code / Atom / NetBeans",
+                "correct": "I"
+              },
+              {
+                "left": "http://validator.w3.org",
+                "correct": "J"
+              },
+              {
+                "left": "Browser engine (HTML renderer)",
+                "correct": "K"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "Local host server whose control panel manages Apache, MySQL, FileZilla, Mercury, and Tomcat"
+              },
+              {
+                "key": "B",
+                "label": "Local host server for Windows"
+              },
+              {
+                "key": "C",
+                "label": "Local host server for Mac"
+              },
+              {
+                "key": "D",
+                "label": "Local host server for Linux"
+              },
+              {
+                "key": "E",
+                "label": "Text editor for Windows"
+              },
+              {
+                "key": "F",
+                "label": "Text editor for Mac"
+              },
+              {
+                "key": "G",
+                "label": "Cross-platform text editor / IDE"
+              },
+              {
+                "key": "H",
+                "label": "Cross-platform text editor (version 1.0)"
+              },
+              {
+                "key": "I",
+                "label": "IDEs used to create HTML files"
+              },
+              {
+                "key": "J",
+                "label": "W3C online tool for validating HTML code"
+              },
+              {
+                "key": "K",
+                "label": "Converts the server's code into a visible web page"
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "type": "matching",
+            "question": "SET L — Match each key term to its definition.",
+            "pairs": [
+              {
+                "left": "Markup language",
+                "correct": "A"
+              },
+              {
+                "left": "Tag",
+                "correct": "B"
+              },
+              {
+                "left": "Paired tag",
+                "correct": "C"
+              },
+              {
+                "left": "Singular tag",
+                "correct": "D"
+              },
+              {
+                "left": "Metadata",
+                "correct": "E"
+              },
+              {
+                "left": "CMS",
+                "correct": "F"
+              },
+              {
+                "left": "Responsive design",
+                "correct": "G"
+              },
+              {
+                "left": "HTML validation",
+                "correct": "H"
+              }
+            ],
+            "rightOptions": [
+              {
+                "key": "A",
+                "label": "A set of markup tags that describe how text should be displayed"
+              },
+              {
+                "key": "B",
+                "label": "Basic building block of HTML that defines how content is displayed in a browser"
+              },
+              {
+                "key": "C",
+                "label": "Tag with both opening < > and closing </ > — e.g., <p> ... </p>"
+              },
+              {
+                "key": "D",
+                "label": "Tag that does not require closing — e.g., <img />"
+              },
+              {
+                "key": "E",
+                "label": "Information about the page that is not displayed on the page"
+              },
+              {
+                "key": "F",
+                "label": "Software that generates web pages dynamically"
+              },
+              {
+                "key": "G",
+                "label": "Adaptation of a website's display to various devices"
+              },
+              {
+                "key": "H",
+                "label": "Checking code to identify and learn from mistakes"
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "type": "enumeration",
+            "question": "Identify the three (3) stages in the evolution of the web.",
+            "count": 3,
+            "items": [
+              "Web 1.0",
+              "Web 2.0",
+              "Web 3.0"
+            ]
+          },
+          {
+            "id": 14,
+            "type": "enumeration",
+            "question": "Identify the four (4) characteristics of Web 1.0.",
+            "count": 4,
+            "items": [
+              "Static HTML Pages (Read-only)",
+              "Limited Interactivity",
+              "Centralized Hosting",
+              "Text & Images Only"
+            ]
+          },
+          {
+            "id": 15,
+            "type": "enumeration",
+            "question": "Identify the five (5) characteristics of Web 2.0.",
+            "count": 5,
+            "items": [
+              "Dynamic Content (AJAX, JavaScript, PHP)",
+              "User-Generated Content",
+              "Social Networking Platforms",
+              "APIs & Interoperability",
+              "Mobile Web Adoption"
+            ]
+          },
+          {
+            "id": 16,
+            "type": "enumeration",
+            "question": "Identify the five (5) characteristics of Web 3.0.",
+            "count": 5,
+            "items": [
+              "Blockchain & Decentralization",
+              "Enhanced Privacy & Security",
+              "Smart Contracts",
+              "Tokenization & Digital Ownership (NFTs)",
+              "AI & Machine Learning Integration"
+            ]
+          },
+          {
+            "id": 17,
+            "type": "enumeration",
+            "question": "Identify the six (6) types of websites based on goals and technology.",
+            "count": 6,
+            "items": [
+              "Web Presence (Homepage / Corporate Website)",
+              "Blog / Online Magazine / Portfolio",
+              "E-Commerce Websites",
+              "Landing Page / Microsite",
+              "Web Platform (Social Media Websites)",
+              "Web Apps"
+            ]
+          },
+          {
+            "id": 18,
+            "type": "enumeration",
+            "question": "Identify the four (4) languages for designing and developing on the web (Set F).",
+            "count": 4,
+            "items": [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "PHP"
+            ]
+          },
+          {
+            "id": 19,
+            "type": "enumeration",
+            "question": "Identify the four (4) elements that make up a webpage.",
+            "count": 4,
+            "items": [
+              "Content (HTML)",
+              "Structure (HTML)",
+              "Presentation / Style (CSS)",
+              "Behavior / Interactivity (JavaScript)"
+            ]
+          },
+          {
+            "id": 20,
+            "type": "enumeration",
+            "question": "Identify the five (5) New Trends discussed in the chapter.",
+            "count": 5,
+            "items": [
+              "Full Stack",
+              "Front-End",
+              "Back-End",
+              "APIs (Application Programming Interfaces)",
+              "Database"
+            ]
+          },
+          {
+            "id": 21,
+            "type": "enumeration",
+            "question": "Identify the three (3) back-end languages mentioned.",
+            "count": 3,
+            "items": [
+              "PHP",
+              "Python",
+              "Node.js"
+            ]
+          },
+          {
+            "id": 22,
+            "type": "enumeration",
+            "question": "Identify the common database types and their examples.",
+            "count": 2,
+            "items": [
+              "Relational — MySQL, PostgreSQL",
+              "NoSQL — MongoDB"
+            ]
+          },
+          {
+            "id": 23,
+            "type": "enumeration",
+            "question": "Identify the six (6) points under \"Understanding the HTML in the Basic Page.\"",
+            "count": 6,
+            "items": [
+              "HTML Basics",
+              "Universal Format",
+              "Describing Document Meaning",
+              "Separation of Meaning and Layout",
+              "Ease of Writing",
+              "Free and Open"
+            ]
+          },
+          {
+            "id": 24,
+            "type": "enumeration",
+            "question": "Identify the seven (7) facts about HTML.",
+            "count": 7,
+            "items": [
+              "HTML stands for Hyper Text Markup Language",
+              "HTML is a language for creating web pages",
+              "HTML is not a programming language",
+              "It is a markup language",
+              "A markup language is a set of markup tags",
+              "The markup tags describe how text should be displayed",
+              "The purpose of HTML is to create static websites"
+            ]
+          },
+          {
+            "id": 25,
+            "type": "enumeration",
+            "question": "Identify the four (4) main web browsers.",
+            "count": 4,
+            "items": [
+              "Google Chrome",
+              "Mozilla Firefox",
+              "Apple Safari",
+              "Microsoft Edge"
+            ]
+          },
+          {
+            "id": 26,
+            "type": "enumeration",
+            "question": "Identify three (3) other browsers with smaller market share.",
+            "count": 3,
+            "items": [
+              "Vivaldi",
+              "Opera",
+              "Brave"
+            ]
+          },
+          {
+            "id": 27,
+            "type": "enumeration",
+            "question": "Identify the three (3) ways to validate HTML at the W3C validator.",
+            "count": 3,
+            "items": [
+              "By URI (web address)",
+              "By file upload",
+              "By direct input"
+            ]
+          },
+          {
+            "id": 28,
+            "type": "enumeration",
+            "question": "Identify the two (2) types of tags.",
+            "count": 2,
+            "items": [
+              "Paired tags (have opening < > and closing </ >)",
+              "Singular tags (do not require closing)"
+            ]
+          },
+          {
+            "id": 29,
+            "type": "enumeration",
+            "question": "Identify the four (4) parts of an HTML element.",
+            "count": 4,
+            "items": [
+              "Start tag",
+              "Tag name",
+              "Content",
+              "End tag"
+            ]
+          },
+          {
+            "id": 30,
+            "type": "enumeration",
+            "question": "Give the order of the basic HTML document structure (5 tags).",
+            "count": 5,
+            "items": [
+              "<!DOCTYPE html>",
+              "<html>",
+              "<head> ... </head>",
+              "<body> ... </body>",
+              "</html>"
+            ]
+          },
+          {
+            "id": 31,
+            "type": "enumeration",
+            "question": "Identify the three (3) places where the <title> appears.",
+            "count": 3,
+            "items": [
+              "Browser tab / toolbar",
+              "Favorites / bookmarks",
+              "Search engine results (SEO)"
+            ]
+          },
+          {
+            "id": 32,
+            "type": "enumeration",
+            "question": "Identify three (3) tips for writing good titles.",
+            "count": 3,
+            "items": [
+              "Use descriptive text (not too short)",
+              "Keep within 50–60 characters",
+              "Avoid keyword stuffing (a list of random words)"
+            ]
+          },
+          {
+            "id": 33,
+            "type": "enumeration",
+            "question": "Identify the six (6) elements that can be placed inside the <head>.",
+            "count": 6,
+            "items": [
+              "<title> (required)",
+              "<style>",
+              "<base>",
+              "<link>",
+              "<meta>",
+              "<script>"
+            ]
+          },
+          {
+            "id": 34,
+            "type": "enumeration",
+            "question": "Identify the seven (7) local host servers mentioned.",
+            "count": 7,
+            "items": [
+              "XAMPP",
+              "LAMP",
+              "LEMP",
+              "MAMP",
+              "WAMP",
+              "AMPSS",
+              "EasyPHP"
+            ]
+          },
+          {
+            "id": 35,
+            "type": "enumeration",
+            "question": "Identify the five (5) modules shown in the XAMPP Control Panel.",
+            "count": 5,
+            "items": [
+              "Apache",
+              "MySQL",
+              "FileZilla",
+              "Mercury",
+              "Tomcat"
+            ]
+          },
+          {
+            "id": 36,
+            "type": "enumeration",
+            "question": "Identify the four (4) text editors and their platforms.",
+            "count": 4,
+            "items": [
+              "Aptana Studio 3 (Cross-Platform)",
+              "Brackets 1.0 (Cross-Platform)",
+              "Notepad++ (Windows)",
+              "TextMate (Mac)"
+            ]
+          },
+          {
+            "id": 37,
+            "type": "enumeration",
+            "question": "Identify the three (3) IDEs featured in the chapter.",
+            "count": 3,
+            "items": [
+              "NetBeans",
+              "Visual Studio Code",
+              "Atom"
+            ]
+          },
+          {
+            "id": 38,
+            "type": "enumeration",
+            "question": "Identify the four (4) common coding errors.",
+            "count": 4,
+            "items": [
+              "Missing closing tag (e.g., <p> without </p>)",
+              "Misspelled tag or attribute names",
+              "Unpaired quotation marks",
+              "Wrong file references (in <link>, <img>, <a>)"
+            ]
+          },
+          {
+            "id": 39,
+            "type": "enumeration",
+            "question": "Identify the three (3) ways to run a web page stored on your computer.",
+            "count": 3,
+            "items": [
+              "Open in browser via File → Open File, or type the full file path",
+              "Use File Explorer and double-click the .html file",
+              "From an IDE/Text Editor (e.g., Aptana, VS Code), click Run / Open in Browser"
+            ]
+          },
+          {
+            "id": 40,
+            "type": "output_tracing",
+            "question": "What is displayed, and how is it formatted?",
+            "code": "<b> DIGNOS </b>",
+            "answer": "DIGNOS — displayed in bold.",
+            "explanation": "<b> is the start tag, b is the tag name, DIGNOS is the content, </b> is the end tag; together they form one element."
+          },
+          {
+            "id": 41,
+            "type": "output_tracing",
+            "question": "a) What appears on the browser tab? b) What appears on the page itself?",
+            "code": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>Tutorial4us Home</title>\n    </head>\n    <body>\n        My first web page\n    </body>\n</html>",
+            "answer": "a) Tutorial4us Home\nb) My first web page",
+            "altAnswers": [
+              "a) Tutorial4us Home b) My first web page"
+            ],
+            "explanation": "The title is never printed on the page itself."
+          },
+          {
+            "id": 42,
+            "type": "output_tracing",
+            "question": "a) What appears on the browser tab? b) What appears on the page?",
+            "code": "<html>\n<title>\nHELLO QUELLOS\n</title>\n<body>\n    I LOVE WEB DEV\n</body>\n</html>",
+            "answer": "a) HELLO QUELLOS\nb) I LOVE WEB DEV",
+            "altAnswers": [
+              "a) HELLO QUELLOS b) I LOVE WEB DEV"
+            ]
+          },
+          {
+            "id": 43,
+            "type": "output_tracing",
+            "question": "How many lines appear in the browser?",
+            "code": "<!DOCTYPE html>\n<html>\n<body>\n<p>\nThis paragraph\ncontains a lot of lines\nin the source code,\nbut the browser\nignores it.\n</p>\n</body>\n</html>",
+            "answer": "One line (wraps only if the window is too narrow).",
+            "altAnswers": [
+              "One line",
+              "1 line",
+              "One"
+            ],
+            "explanation": "The browser ignores the line breaks in the source code."
+          },
+          {
+            "id": 44,
+            "type": "output_tracing",
+            "question": "How are the extra spaces displayed?",
+            "code": "<p>\nThis paragraph\ncontains      a lot of spaces\nin the source      code,\nbut the      browser\nignores it.\n</p>",
+            "answer": "They collapse into single spaces.",
+            "altAnswers": [
+              "Single spaces",
+              "Collapsed into single spaces"
+            ],
+            "explanation": "The output reads as one normal sentence — the browser ignores extra spaces."
+          },
+          {
+            "id": 45,
+            "type": "output_tracing",
+            "question": "What text appears in the page area (the white space of the browser)?",
+            "code": "<html>\n<head>\n<title>My Page</title>\n<meta charset=\"UTF-8\">\n<link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n</body>\n</html>",
+            "answer": "Nothing.",
+            "altAnswers": [
+              "Nothing is displayed",
+              "Blank",
+              "Empty"
+            ],
+            "explanation": "Everything inside <head> is metadata and is not displayed on the page; the body is empty."
+          },
+          {
+            "id": 46,
+            "type": "output_tracing",
+            "question": "Identify the error and state whether the browser still displays the text.",
+            "code": "<html>\n<head>\n<title>Site</title>\n</head>\n<body>\n<p>Hello World\n</body>\n</html>",
+            "answer": "Missing closing tag (</p> is absent); the browser still displays \"Hello World.\"",
+            "explanation": "The code is invalid and would be flagged by the W3C validator."
+          },
+          {
+            "id": 47,
+            "type": "output_tracing",
+            "question": "Describe the difference in appearance between the two lines of output.",
+            "code": "<body>\n<h1>Example of body tag</h1>\n<p>This paragraph is written between the body tag</p>\n</body>",
+            "answer": "\"Example of body tag\" appears large and bold as a heading; \"This paragraph is written between the body tag\" appears in normal-sized body text below it."
+          },
+          {
+            "id": 48,
+            "type": "output_tracing",
+            "question": "Why is this invalid according to the module?",
+            "code": "<html>\n<body>Content A</body>\n<body>Content B</body>\n</html>",
+            "answer": "There can only be one <body> element in an HTML document."
+          },
+          {
+            "id": 49,
+            "type": "output_tracing",
+            "question": "Identify the structural error.",
+            "code": "<html>\n<!DOCTYPE html>\n<head><title>Test</title></head>\n<body>Test Page</body>\n</html>",
+            "answer": "<!DOCTYPE html> is in the wrong place; it must appear before <html>, not inside it."
+          },
+          {
+            "id": 50,
+            "type": "output_tracing",
+            "question": "The stylesheet does not load. Which of the four common coding errors is this?",
+            "code": "<link rel=\"stylesheet\" href=\"stlye.css\">",
+            "answer": "Wrong file reference — \"stlye.css\" is a misspelling of \"style.css,\" so the <link> points to a file that does not exist.",
+            "altAnswers": [
+              "Wrong file reference"
+            ]
+          },
+          {
+            "id": 51,
+            "type": "output_tracing",
+            "question": "What type of tag is this, and does it need a closing tag?",
+            "code": "<img src=\"logo.png\" />",
+            "answer": "A singular tag; it does not require a closing tag.",
+            "altAnswers": [
+              "Singular tag"
+            ]
+          },
+          {
+            "id": 52,
+            "type": "output_tracing",
+            "question": "a) What is shown on the tab? b) What is shown on the page? c) Which file controls how the heading looks?",
+            "code": "<html>\n<head>\n<title>Dreamweaver book</title>\n<link rel=\"stylesheet\" href=\"book.css\">\n</head>\n<body>\n<h1>Dreamweaver CC 2014</h1>\n</body>\n</html>",
+            "answer": "a) Dreamweaver book\nb) Dreamweaver CC 2014 (as a large heading)\nc) book.css",
+            "altAnswers": [
+              "a) Dreamweaver book b) Dreamweaver CC 2014 c) book.css"
+            ]
+          },
+          {
+            "id": 53,
+            "type": "output_tracing",
+            "question": "What is displayed on the page, and what is displayed on the tab?",
+            "code": "<html>\n<head><title>TODO supply a title</title></head>\n<body>\n<div>TODO write content</div>\n</body>\n</html>",
+            "answer": "Page: TODO write content\nTab: TODO supply a title",
+            "altAnswers": [
+              "Page TODO write content, Tab TODO supply a title"
+            ]
+          },
+          {
+            "id": 54,
+            "type": "output_tracing",
+            "question": "A page is written with no <!DOCTYPE html> at all. According to the module, what information is the browser missing?",
+            "answer": "Which HTML version is being used.",
+            "altAnswers": [
+              "The HTML version"
+            ],
+            "explanation": "Every HTML document must start with <!DOCTYPE>."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sia",

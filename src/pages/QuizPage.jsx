@@ -54,6 +54,7 @@ function TypeBadge({ type }) {
     enumeration:    { label: "Enumeration",     color: "#047857", bg: "#d1fae5" },
     output_tracing: { label: "Output Tracing",  color: "#b45309", bg: "#fef3c7" },
     fill_code:      { label: "Fill the Code",   color: "#be185d", bg: "#fce7f3" },
+    matching:       { label: "Matching Type",   color: "#0e7490", bg: "#cffafe" },
   };
   const t = map[type] || map.mc;
   return (
@@ -657,6 +658,158 @@ function EnumerationQuestion({ q, onAnswer }) {
   );
 }
 
+// ─────────────── MATCHING TYPE QUESTION ─────────────────────────────────────
+function MatchingQuestion({ q, onAnswer }) {
+  const [selections, setSelections] = useState(() => q.pairs.map(() => null));
+  const [revealed, setRevealed] = useState(false);
+
+  function selectOption(rowIndex, key) {
+    if (revealed) return;
+    setSelections(prev => {
+      const next = [...prev];
+      next[rowIndex] = key;
+      return next;
+    });
+  }
+
+  const allAnswered = selections.every(s => s !== null);
+
+  function handleCheck() {
+    if (revealed || !allAnswered) return;
+    setRevealed(true);
+    const total = q.pairs.length;
+    const correctCount = q.pairs.reduce((acc, p, i) => acc + (selections[i] === p.correct ? 1 : 0), 0);
+    onAnswer({
+      correct: correctCount === total,
+      scoreDelta: total > 0 ? correctCount / total : 0,
+      userSelections: selections,
+      correctCount,
+      totalCount: total,
+    });
+  }
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
+      {/* Column B legend */}
+      <div style={{
+        padding: "0.85rem 1rem",
+        borderRadius: "12px",
+        background: "var(--lilac-50)",
+        border: "1.5px solid var(--lilac-200)",
+      }}>
+        <p style={{ fontSize: "0.72rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--text-soft)", marginBottom: "0.5rem" }}>
+          Column B
+        </p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
+          {q.rightOptions.map(opt => (
+            <div key={opt.key} style={{ fontSize: "0.8rem", color: "#2d1f5e", display: "flex", gap: "0.5rem", lineHeight: 1.5 }}>
+              <strong style={{ color: "#0e7490", minWidth: "1.3em", flexShrink: 0 }}>{opt.key}.</strong>
+              <span>{opt.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Instruction chip */}
+      {!revealed && (
+        <div style={{
+          padding: "0.55rem 0.85rem",
+          borderRadius: "10px",
+          background: "#cffafe",
+          border: "1.5px solid #a5f3fc",
+          fontSize: "0.78rem",
+          color: "#0e7490",
+          fontWeight: 600,
+        }}>
+          Tap a letter next to each item in Column A to match it with Column B.
+        </div>
+      )}
+
+      {/* Column A rows with selectable options */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+        {q.pairs.map((p, i) => {
+          const sel = selections[i];
+          const isRowCorrect = revealed && sel === p.correct;
+          return (
+            <div key={i} style={{
+              padding: "0.75rem 0.9rem",
+              borderRadius: "12px",
+              background: revealed ? (isRowCorrect ? "#f0fdf4" : "#fff1f2") : "#faf5ff",
+              border: `1.5px solid ${revealed ? (isRowCorrect ? "#86efac" : "#fca5a5") : "var(--lilac-200)"}`,
+              transition: "all 180ms",
+            }}>
+              <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#2d1f5e", marginBottom: "0.55rem" }}>
+                {i + 1}. {p.left}
+              </p>
+              <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
+                {q.rightOptions.map(opt => {
+                  const isSelected = sel === opt.key;
+                  const showAsCorrect = revealed && opt.key === p.correct;
+                  const showAsWrongSelected = revealed && isSelected && opt.key !== p.correct;
+                  return (
+                    <button
+                      key={opt.key}
+                      onClick={() => selectOption(i, opt.key)}
+                      disabled={revealed}
+                      style={{
+                        minWidth: "34px",
+                        padding: "0.4rem 0.6rem",
+                        borderRadius: "8px",
+                        fontSize: "0.78rem",
+                        fontWeight: 700,
+                        cursor: revealed ? "default" : "pointer",
+                        background: showAsCorrect ? "#22c55e" : showAsWrongSelected ? "#f43f5e" : isSelected ? "#0e7490" : "white",
+                        color: (showAsCorrect || showAsWrongSelected || isSelected) ? "white" : "#0e7490",
+                        border: `1.5px solid ${showAsCorrect ? "#22c55e" : showAsWrongSelected ? "#f43f5e" : isSelected ? "#0e7490" : "var(--lilac-200)"}`,
+                        transition: "all 150ms",
+                      }}
+                    >
+                      {opt.key}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Check button */}
+      {!revealed && (
+        <button
+          className="btn-primary"
+          onClick={handleCheck}
+          disabled={!allAnswered}
+          style={{ width: "100%", padding: "0.8rem", fontSize: "0.875rem" }}
+        >
+          Check Answers
+        </button>
+      )}
+
+      {/* Result summary */}
+      {revealed && (
+        <div style={{
+          padding: "0.85rem 1rem",
+          borderRadius: "12px",
+          background: "#faf5ff",
+          border: "1.5px solid var(--lilac-200)",
+          fontSize: "0.85rem",
+          fontWeight: 700,
+          color: "#2d1f5e",
+          textAlign: "center",
+        }}>
+          {q.pairs.filter((p, i) => selections[i] === p.correct).length} / {q.pairs.length} correct
+          {q.explanation && (
+            <p style={{ fontSize: "0.78rem", fontWeight: 500, color: "var(--text-mid)", marginTop: "0.5rem", lineHeight: 1.55 }}>
+              {q.explanation}
+            </p>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─────────────── MAIN QUIZ PAGE ──────────────────────────────────────────────
 export default function QuizPage() {
   const { subjectId, reviewerId } = useParams();
@@ -719,16 +872,24 @@ export default function QuizPage() {
     setQAnswered(true);
   }
 
-  // Called by Identification, Enumeration, OutputTracing, and FillCode handlers
-  function handleNonMcAnswer(isCorrect) {
+  // Called by Identification, Enumeration, OutputTracing, FillCode (boolean),
+  // and Matching (object: { correct, scoreDelta, userSelections, correctCount, totalCount })
+  function handleNonMcAnswer(result) {
     const q = shuffled[current];
-    if (isCorrect) setScore(s => s + 1);
+    const isObject = typeof result === "object" && result !== null;
+    const isCorrect = isObject ? result.correct : result;
+    const scoreDelta = isObject ? result.scoreDelta : (result ? 1 : 0);
+    setScore(s => s + scoreDelta);
     setAnswers(prev => [...prev, {
       type: q.type,
       question: q.question,
       isCorrect,
       answer: q.answer,
       items: q.items,
+      pairs: q.pairs,
+      userSelections: isObject ? result.userSelections : undefined,
+      correctCount: isObject ? result.correctCount : undefined,
+      totalCount: isObject ? result.totalCount : undefined,
       code: q.code,
       explanation: q.explanation,
     }]);
@@ -1029,6 +1190,37 @@ export default function QuizPage() {
                     )}
                   </div>
                 )}
+
+                {/* Matching review */}
+                {a.type === "matching" && a.pairs && (
+                  <div style={{ paddingLeft: "2.1rem" }}>
+                    <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text-mid)", marginBottom: "0.5rem" }}>
+                      {a.correctCount} / {a.totalCount} correct
+                    </p>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                      {a.pairs.map((p, ii) => {
+                        const userSel = a.userSelections?.[ii];
+                        const ok = userSel === p.correct;
+                        return (
+                          <div key={ii} style={{
+                            fontSize: "0.78rem",
+                            padding: "0.4rem 0.65rem",
+                            borderRadius: "8px",
+                            background: ok ? "#f0fdf4" : "#fff1f2",
+                            border: `1px solid ${ok ? "#86efac" : "#fca5a5"}`,
+                            color: ok ? "#166534" : "#991b1b",
+                          }}>
+                            {ii + 1}. {p.left} — <strong>{userSel ?? "—"}</strong>
+                            {!ok && <span style={{ color: "var(--text-soft)" }}> (correct: {p.correct})</span>}
+                          </div>
+                        );
+                      })}
+                    </div>
+                    {a.explanation && (
+                      <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", lineHeight: 1.5, marginTop: "0.5rem" }}>{a.explanation}</p>
+                    )}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -1160,6 +1352,15 @@ export default function QuizPage() {
               key={current}
               q={q}
               onAnswer={(correct) => handleNonMcAnswer(correct)}
+            />
+          )}
+
+          {/* ── Matching Type ── */}
+          {qType === "matching" && (
+            <MatchingQuestion
+              key={current}
+              q={q}
+              onAnswer={(result) => handleNonMcAnswer(result)}
             />
           )}
         </div>

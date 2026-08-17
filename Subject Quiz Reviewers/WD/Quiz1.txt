@@ -1,0 +1,607 @@
+# WEB DEVELOPMENT — CHAPTER 1 REVIEWER
+### Introduction to Web, Understanding HTML Structures, and Different IDEs
+
+**Coverage:** 1.1 Introduction to Web · 1.1.1 New Trends · 1.2 Understanding HTML Structures · 1.3 Local Host Servers · 1.4 Text Editors and IDEs
+
+**Quiz types:** Matching Type · Enumeration · Output Tracing
+
+---
+---
+
+# PART I — MATCHING TYPE
+
+---
+
+## SET A — Web Eras and Their Descriptions
+
+| # | Column A |
+|---|---|
+| 1 | Read-only, static |
+| 2 | Read-write, interactive |
+| 3 | Read-write-trust, verifiable |
+| 4 | 1990s – Early 2000s |
+| 5 | Mid-2000s – Present |
+| 6 | Emerging |
+| 7 | The Static Web |
+| 8 | The Social Web |
+| 9 | The Decentralized Web |
+| 10 | Facebook, YouTube, Wikipedia, Amazon |
+| 11 | Ethereum, Solana, DeFi, OpenSea |
+| 12 | Early corporate or personal websites that looked like online brochures |
+
+**Column B:** A. Web 1.0 B. Web 2.0 C. Web 3.0
+
+---
+
+## SET B — Web Era Characteristics
+
+| # | Column A |
+|---|---|
+| 1 | Static HTML Pages (Read-only) |
+| 2 | Limited Interactivity |
+| 3 | Centralized Hosting |
+| 4 | Text & Images Only |
+| 5 | Dynamic Content (AJAX, JavaScript, PHP) |
+| 6 | User-Generated Content |
+| 7 | Social Networking Platforms |
+| 8 | APIs & Interoperability |
+| 9 | Mobile Web Adoption |
+| 10 | Blockchain & Decentralization |
+| 11 | Enhanced Privacy & Security |
+| 12 | Smart Contracts |
+| 13 | Tokenization & Digital Ownership (NFTs) |
+| 14 | AI & Machine Learning Integration |
+
+**Column B:** A. Web 1.0 B. Web 2.0 C. Web 3.0
+
+---
+
+## SET C — Types of Websites
+
+| # | Column A |
+|---|---|
+| 1 | Homepage / Corporate Website |
+| 2 | Blog / Online Magazine / Portfolio |
+| 3 | E-Commerce Website |
+| 4 | Landing Page / Microsite |
+| 5 | Web Platform |
+| 6 | Web App |
+
+**Column B:** A. Web Presence B. Social media websites C. Site built for online buying and selling D. Single-purpose page or small standalone site E. Content-publishing or showcase site F. Website that functions like an application
+
+---
+
+## SET D — Static vs. Dynamic Websites
+
+| # | Column A |
+|---|---|
+| 1 | Content stored unchangeably as individual files on the server |
+| 2 | Changes need manual editing and uploading |
+| 3 | Cost-effective, faster loading, but design changes can be tough |
+| 4 | CMS generates web pages dynamically |
+| 5 | Content and layout separated, assembled from a database |
+| 6 | Requires scripting languages (e.g., PHP) and databases (e.g., MySQL) |
+
+**Column B:** A. Static Website B. Dynamic Website
+
+---
+
+## SET E — The Four Elements of a Webpage
+
+| # | Column A |
+|---|---|
+| 1 | Content |
+| 2 | Structure |
+| 3 | Presentation (Style) |
+| 4 | Behavior (Interactivity) |
+
+**Column B:** A. HTML — defines meaning (headings, lists, links) B. HTML — all visible elements (text, images, audio, video, docs) C. CSS — how it looks (colors, size, layout, design) D. JavaScript — user interaction via scripts
+
+---
+
+## SET F — Web Languages and Their Roles
+
+| # | Column A |
+|---|---|
+| 1 | HTML |
+| 2 | CSS |
+| 3 | JavaScript |
+| 4 | PHP |
+| 5 | MySQL |
+
+**Column B:**
+A. Text-based markup language for structuring content; uses markers (tags), not commands or statements
+B. Design language separating structure and layout; defines how HTML elements are displayed visually
+C. Client-side scripting language that enhances HTML with interactive elements
+D. Server-side scripting language that generates dynamic content and interacts with databases
+E. Database used together with scripting languages in dynamic websites
+
+---
+
+## SET G — New Trends
+
+| # | Column A |
+|---|---|
+| 1 | Full Stack |
+| 2 | Front-End |
+| 3 | Back-End |
+| 4 | API |
+| 5 | Database |
+
+**Column B:**
+A. Focuses on user interface and experience in the browser; uses HTML, CSS, and JavaScript
+B. Handles server logic, databases, and application processing; uses PHP, Python, or Node.js
+C. Covers both client and server development; handles the entire web application workflow
+D. Set of rules that allow applications to communicate and integrate
+E. Organized collection of data for easy access, storing, retrieving, and updating
+
+---
+
+## SET H — HTML Document Structure Elements
+
+| # | Column A |
+|---|---|
+| 1 | `<!DOCTYPE>` |
+| 2 | `<html>` |
+| 3 | `<head>` |
+| 4 | `<title>` |
+| 5 | `<body>` |
+
+**Column B:**
+A. Root element of an HTML document; contains all other HTML elements
+B. Not an HTML tag; an instruction telling the browser which HTML version is used
+C. Container for metadata; placed between the root element and the body; not displayed on the page
+D. Defines the document title; appears on the browser tab, bookmarks, and search results
+E. Contains all visible content; only one is allowed per HTML document
+
+---
+
+## SET I — Elements Inside the `<head>`
+
+| # | Column A |
+|---|---|
+| 1 | `<title>` |
+| 2 | `<base>` |
+| 3 | `<link>` |
+| 4 | `<style>` |
+| 5 | `<script>` |
+| 6 | `<meta>` |
+
+**Column B:**
+A. Defines the base URL for links
+B. Connects external files (e.g., CSS)
+C. Adds internal CSS styles
+D. Embeds or links JavaScript
+E. Provides metadata (keywords, charset, viewport)
+F. Sets the page title (browser tab / SEO)
+
+---
+
+## SET J — Parts of an HTML Element
+
+Given: `<b> DIGNOS </b>`
+
+| # | Column A |
+|---|---|
+| 1 | `<b>` |
+| 2 | `b` |
+| 3 | `DIGNOS` |
+| 4 | `</b>` |
+| 5 | `<b> DIGNOS </b>` |
+
+**Column B:** A. Tag name B. Start tag C. Content D. End tag E. Element
+
+---
+
+## SET K — Tools, Servers, and Editors
+
+| # | Column A |
+|---|---|
+| 1 | XAMPP |
+| 2 | WAMP |
+| 3 | MAMP |
+| 4 | LAMP |
+| 5 | Notepad++ |
+| 6 | TextMate |
+| 7 | Aptana Studio 3 |
+| 8 | Brackets 1.0 |
+| 9 | Visual Studio Code / Atom / NetBeans |
+| 10 | http://validator.w3.org |
+| 11 | Browser engine (HTML renderer) |
+
+**Column B:**
+A. Local host server whose control panel manages Apache, MySQL, FileZilla, Mercury, and Tomcat
+B. Local host server for Windows
+C. Local host server for Mac
+D. Local host server for Linux
+E. Text editor for Windows
+F. Text editor for Mac
+G. Cross-platform text editor / IDE
+H. Cross-platform text editor (version 1.0)
+I. IDEs used to create HTML files
+J. W3C online tool for validating HTML code
+K. Converts the server's code into a visible web page
+
+---
+
+## SET L — Key Terms
+
+| # | Column A |
+|---|---|
+| 1 | Markup language |
+| 2 | Tag |
+| 3 | Paired tag |
+| 4 | Singular tag |
+| 5 | Metadata |
+| 6 | CMS |
+| 7 | Responsive design |
+| 8 | HTML validation |
+
+**Column B:**
+A. A set of markup tags that describe how text should be displayed
+B. Basic building block of HTML that defines how content is displayed in a browser
+C. Tag with both opening `< >` and closing `</ >` — e.g., `<p> ... </p>`
+D. Tag that does not require closing — e.g., `<img />`
+E. Information about the page that is not displayed on the page
+F. Software that generates web pages dynamically
+G. Adaptation of a website's display to various devices
+H. Checking code to identify and learn from mistakes
+
+---
+---
+
+# PART II — ENUMERATION
+### (The lists most likely to be asked — discrete, named, countable items)
+
+---
+
+**1. The three stages in the evolution of the web** — Web 1.0; Web 2.0; Web 3.0.
+
+**2. Characteristics of Web 1.0 (4)** — Static HTML Pages (Read-only); Limited Interactivity; Centralized Hosting; Text & Images Only.
+
+**3. Characteristics of Web 2.0 (5)** — Dynamic Content (AJAX, JavaScript, PHP); User-Generated Content; Social Networking Platforms; APIs & Interoperability; Mobile Web Adoption.
+
+**4. Characteristics of Web 3.0 (5)** — Blockchain & Decentralization; Enhanced Privacy & Security; Smart Contracts; Tokenization & Digital Ownership (NFTs); AI & Machine Learning Integration.
+
+**5. Types of websites based on goals and technology (6)** — Web Presence (Homepage / Corporate Website); Blog / Online Magazine / Portfolio; E-Commerce Websites; Landing Page / Microsite; Web Platform (Social Media Websites); Web Apps.
+
+**6. Languages for designing and developing on the web (4)** — HTML; CSS; JavaScript; PHP.
+
+**7. The four elements that make up a webpage (4)** — Content (HTML); Structure (HTML); Presentation / Style (CSS); Behavior / Interactivity (JavaScript).
+
+**8. New Trends discussed in the chapter (5)** — Full Stack; Front-End; Back-End; APIs (Application Programming Interfaces); Database.
+
+**9. Back-end languages mentioned (3)** — PHP; Python; Node.js.
+
+**10. Common database types and their examples** — Relational: MySQL, PostgreSQL · NoSQL: MongoDB.
+
+**11. Understanding the HTML in the Basic Page (6)** — HTML Basics; Universal Format; Describing Document Meaning; Separation of Meaning and Layout; Ease of Writing; Free and Open.
+
+**12. Facts about HTML (7)** — HTML stands for Hyper Text Markup Language; HTML is a language for creating web pages; HTML is not a programming language; It is a markup language; A markup language is a set of markup tags; The markup tags describe how text should be displayed; The purpose of HTML is to create static websites.
+
+**13. Main web browsers (4)** — Google Chrome; Mozilla Firefox; Apple Safari; Microsoft Edge.
+
+**14. Other browsers with smaller market share (3)** — Vivaldi; Opera; Brave.
+
+**15. Ways to validate HTML at the W3C validator (3)** — By URI (web address); By file upload; By direct input.
+
+**16. Types of tags (2)** — Paired tags (have opening `< >` and closing `</ >`); Singular tags (do not require closing).
+
+**17. Parts of an HTML element (4)** — Start tag; Tag name; Content; End tag.
+
+**18. Order of the basic HTML document structure (5 tags)** — `<!DOCTYPE html>` → `<html>` → `<head>` … `</head>` → `<body>` … `</body>` → `</html>`.
+
+**19. Where the `<title>` appears (3)** — Browser tab / toolbar; Favorites / bookmarks; Search engine results (SEO).
+
+**20. Tips for writing good titles (3)** — Use descriptive text (not too short); Keep within 50–60 characters; Avoid keyword stuffing (a list of random words).
+
+**21. Elements that can be placed inside the `<head>` (6)** — `<title>` (required); `<style>`; `<base>`; `<link>`; `<meta>`; `<script>`.
+
+**22. Local host servers (7)** — XAMPP; LAMP; LEMP; MAMP; WAMP; AMPSS; EasyPHP.
+
+**23. Modules shown in the XAMPP Control Panel (5)** — Apache; MySQL; FileZilla; Mercury; Tomcat.
+
+**24. Text editors and their platforms (4)** — Aptana Studio 3 (Cross-Platform); Brackets 1.0 (Cross-Platform); Notepad++ (Windows); TextMate (Mac).
+
+**25. IDEs featured in the chapter (3)** — NetBeans; Visual Studio Code; Atom.
+
+**26. Common coding errors (4)** — Missing closing tag (e.g., `<p>` without `</p>`); Misspelled tag or attribute names; Unpaired quotation marks; Wrong file references (in `<link>`, `<img>`, `<a>`).
+
+**27. Ways to run a web page stored on your computer (3)** — Open in browser via File → Open File, or type the full file path; Use File Explorer and double-click the `.html` file; From an IDE/Text Editor (e.g., Aptana, VS Code), click Run / Open in Browser.
+
+
+---
+---
+
+# PART III — OUTPUT TRACING
+
+> For each item, state what the browser displays — and where it displays it.
+
+---
+
+**1.**
+```html
+<b> DIGNOS </b>
+```
+What is displayed, and how is it formatted?
+
+---
+
+**2.**
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial4us Home</title>
+    </head>
+    <body>
+        My first web page
+    </body>
+</html>
+```
+a) What appears on the browser tab?
+b) What appears on the page itself?
+
+---
+
+**3.**
+```html
+<html>
+<title>
+HELLO QUELLOS
+</title>
+<body>
+    I LOVE WEB DEV
+</body>
+</html>
+```
+a) What appears on the browser tab?
+b) What appears on the page?
+
+---
+
+**4.**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+</body>
+</html>
+```
+How many lines appear in the browser?
+
+---
+
+**5.**
+```html
+<p>
+This paragraph
+contains      a lot of spaces
+in the source      code,
+but the      browser
+ignores it.
+</p>
+```
+How are the extra spaces displayed?
+
+---
+
+**6.**
+```html
+<html>
+<head>
+<title>My Page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
+```
+What text appears in the page area (the white space of the browser)?
+
+---
+
+**7.**
+```html
+<html>
+<head>
+<title>Site</title>
+</head>
+<body>
+<p>Hello World
+</body>
+</html>
+```
+Identify the error and state whether the browser still displays the text.
+
+---
+
+**8.**
+```html
+<body>
+<h1>Example of body tag</h1>
+<p>This paragraph is written between the body tag</p>
+</body>
+```
+Describe the difference in appearance between the two lines of output.
+
+---
+
+**9.**
+```html
+<html>
+<body>Content A</body>
+<body>Content B</body>
+</html>
+```
+Why is this invalid according to the module?
+
+---
+
+**10.**
+```html
+<html>
+<!DOCTYPE html>
+<head><title>Test</title></head>
+<body>Test Page</body>
+</html>
+```
+Identify the structural error.
+
+---
+
+**11.**
+```html
+<link rel="stylesheet" href="stlye.css">
+```
+The stylesheet does not load. Which of the four common coding errors is this?
+
+---
+
+**12.**
+```html
+<img src="logo.png" />
+```
+What type of tag is this, and does it need a closing tag?
+
+---
+
+**13.**
+```html
+<html>
+<head>
+<title>Dreamweaver book</title>
+<link rel="stylesheet" href="book.css">
+</head>
+<body>
+<h1>Dreamweaver CC 2014</h1>
+</body>
+</html>
+```
+a) What is shown on the tab?
+b) What is shown on the page?
+c) Which file controls how the heading looks?
+
+---
+
+**14.**
+```html
+<html>
+<head><title>TODO supply a title</title></head>
+<body>
+<div>TODO write content</div>
+</body>
+</html>
+```
+What is displayed on the page, and what is displayed on the tab?
+
+---
+
+**15.** A page is written with no `<!DOCTYPE html>` at all. According to the module, what information is the browser missing?
+
+---
+---
+---
+
+# ANSWER KEYS
+
+## Part I — Matching Type
+
+**Set A:** 1-A · 2-B · 3-C · 4-A · 5-B · 6-C · 7-A · 8-B · 9-C · 10-B · 11-C · 12-A
+
+**Set B:** 1-A · 2-A · 3-A · 4-A · 5-B · 6-B · 7-B · 8-B · 9-B · 10-C · 11-C · 12-C · 13-C · 14-C
+
+**Set C:** 1-A · 2-E · 3-C · 4-D · 5-B · 6-F
+
+**Set D:** 1-A · 2-A · 3-A · 4-B · 5-B · 6-B
+
+**Set E:** 1-B · 2-A · 3-C · 4-D
+
+**Set F:** 1-A · 2-B · 3-C · 4-D · 5-E
+
+**Set G:** 1-C · 2-A · 3-B · 4-D · 5-E
+
+**Set H:** 1-B · 2-A · 3-C · 4-D · 5-E
+
+**Set I:** 1-F · 2-A · 3-B · 4-C · 5-D · 6-E
+
+**Set J:** 1-B · 2-A · 3-C · 4-D · 5-E
+
+**Set K:** 1-A · 2-B · 3-C · 4-D · 5-E · 6-F · 7-G · 8-H · 9-I · 10-J · 11-K
+
+**Set L:** 1-A · 2-B · 3-C · 4-D · 5-E · 6-F · 7-G · 8-H
+
+---
+
+## Part III — Output Tracing
+
+1. The word **DIGNOS** appears in **bold**. `<b>` is the start tag, `b` is the tag name, `DIGNOS` is the content, `</b>` is the end tag; together they form one element.
+
+2. a) The tab shows **Tutorial4us Home**. b) The page shows **My first web page**. The title is never printed on the page itself.
+
+3. a) The tab shows **HELLO QUELLOS**. b) The page shows **I LOVE WEB DEV**.
+
+4. **One line** (which wraps only if the window is too narrow). The browser ignores the line breaks in the source code.
+
+5. They collapse into **single spaces** — the browser ignores extra spaces. The output reads as one normal sentence.
+
+6. **Nothing.** Everything inside `<head>` is metadata and is not displayed on the page; the body is empty.
+
+7. Missing closing tag — `</p>` is absent. The browser will still display "Hello World," but the code is invalid and would be flagged by the W3C validator.
+
+8. "Example of body tag" appears **large and bold** as a heading; "This paragraph is written between the body tag" appears in **normal-sized body text** below it.
+
+9. There can only be **one `<body>` element** in an HTML document.
+
+10. `<!DOCTYPE html>` is in the wrong place. It **must appear before `<html>`**, not inside it.
+
+11. **Wrong file reference** — "stlye.css" is a misspelling of "style.css," so the `<link>` points to a file that does not exist.
+
+12. A **singular tag** — it does not require a closing tag.
+
+13. a) **Dreamweaver book** on the tab. b) **Dreamweaver CC 2014** as a large heading on the page. c) **book.css**, the external stylesheet linked in the head.
+
+14. The page displays **TODO write content**; the tab displays **TODO supply a title**.
+
+15. The browser is not told **which HTML version is being used**. Every HTML document must start with `<!DOCTYPE>`.
+
+---
+
+## Part II — Quick Count Sheet (for drilling)
+
+| Topic | Count |
+|---|---|
+| Stages of web evolution | 3 |
+| Web 1.0 characteristics | 4 |
+| Web 2.0 characteristics | 5 |
+| Web 3.0 characteristics | 5 |
+| Types of websites | 6 |
+| Web languages | 4 |
+| Elements of a webpage | 4 |
+| New Trends | 5 |
+| Back-end languages | 3 |
+| Understanding HTML in the Basic Page | 6 |
+| Facts about HTML | 7 |
+| Main browsers | 4 |
+| Other browsers | 3 |
+| W3C validation methods | 3 |
+| Types of tags | 2 |
+| Parts of an element | 4 |
+| Tags in the basic structure | 5 |
+| Where `<title>` appears | 3 |
+| Title-writing tips | 3 |
+| Elements inside `<head>` | 6 |
+| Local host servers | 7 |
+| XAMPP modules | 5 |
+| Text editors | 4 |
+| IDEs featured | 3 |
+| Common coding errors | 4 |
+| Ways to run a web page | 3 |
