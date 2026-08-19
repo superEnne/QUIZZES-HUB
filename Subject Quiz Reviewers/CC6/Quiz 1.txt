@@ -1,0 +1,740 @@
+================================================================================
+                INFORMATION MANAGEMENT - CHAPTER 1 REVIEWER
+        CC6 Information Management | TSU - CCS | Part 1 & Part 2 (Week 2-3)
+================================================================================
+
+
+################################################################################
+PART I - TERMS AND DEFINITIONS (IDENTIFICATION)
+################################################################################
+
+
+------------------------------------------------------------
+A. DATA MANAGEMENT: INTRODUCTION, BUSINESS DRIVERS AND GOALS
+------------------------------------------------------------
+
+1. Data Management - The development, execution, and supervision of plans,
+   policies, programs, and practices that deliver, control, protect, and enhance
+   the value of data and information assets throughout their lifecycles.
+
+2. Data Management Professional - Any person who works in any aspect of data
+   management - from the technical management of data throughout its lifecycle
+   to ensuring that data is properly utilized and leveraged - to meet strategic
+   organizational goals.
+
+3. Business Driver of Data Management - Information and knowledge hold the key
+   to competitive advantage; organizations with reliable, high quality data
+   about their customers, products, services, and operations can make better
+   decisions than those without data or with unreliable data.
+
+4. Primary Driver for Data Management - To enable organizations to get value
+   from their data assets, just as effective management of financial and
+   physical assets enables organizations to get value from those assets.
+
+
+------------------------------------------------------------
+B. ESSENTIAL CONCEPTS
+------------------------------------------------------------
+
+5. Data - In relation to information technology, information that has been
+   stored in digital form (though data is not limited to information that has
+   been digitized - data management principles apply to data captured on paper
+   as well as in databases).
+
+6. Raw Material of Information - What data has been called, because data becomes
+   meaningful only when it is placed in context.
+
+7. Information - Data in context.
+
+8. Asset - An economic resource that can be owned or controlled, and that holds
+   or produces value. Assets can be converted to money.
+
+9. Data as an Organizational Asset - Data is widely recognized as an enterprise
+   asset, though understanding of what it means to manage data as an asset is
+   still evolving.
+
+10. Data Management Principles - A set of principles that recognize the salient
+    features of data management and guide data management practice; data
+    management shares characteristics with other forms of asset management - it
+    involves knowing what data an organization has and what might be accomplished
+    with it, then determining how best to use data assets to reach organizational
+    goals.
+
+11. Data Management Challenges - The difficulties in following the data
+    management principles, which arise because data management has distinct
+    characteristics derived from the properties of data itself.
+
+
+------------------------------------------------------------
+C. THE THIRTEEN DATA MANAGEMENT CHALLENGES (5.1 - 5.13)
+------------------------------------------------------------
+
+12. Data Differs from Other Assets - Data is not tangible, yet it is durable -
+    it does not wear out, though its value often changes as it ages. Data is easy
+    to copy and transport, but it is not easy to reproduce if it is lost or
+    destroyed.
+
+13. Value - The difference between the cost of a thing and the benefit derived
+    from that thing.
+
+14. Data Valuation - Calculating the value of data is complicated because neither
+    the costs nor the benefits of data are standardized (unlike an asset such as
+    stock, whose value is simply the difference between purchase price and
+    selling price).
+
+15. Data Quality (as a challenge) - Ensuring data is fit for use; because data is
+    intangible but durable, easy to copy and transport, yet difficult to
+    reproduce once lost or destroyed, maintaining its quality requires deliberate
+    management.
+
+16. Planning for Better Data - Deriving value from data does not happen by
+    accident - it requires planning in many forms. It starts with the recognition
+    that organizations can control how they obtain and create data; if they view
+    data as a product that they create, they will make better decisions about it
+    throughout its lifecycle.
+
+17. Metadata - Data that describes what data an organization has, what it
+    represents, how it is classified, where it came from, how it moves within the
+    organization, how it evolves through use, who can and cannot use it, and
+    whether it is of high quality. Metadata makes data, the data lifecycle, and
+    the complex systems that contain data comprehensible.
+
+18. Data Management is Cross-functional - Data management is a complex process;
+    data is managed in different places within an organization by teams
+    responsible for different phases of the data lifecycle, requiring design
+    skills, highly technical skills, data analysis skills, analytic skills,
+    language skills, and strategic thinking.
+
+19. Establishing an Enterprise Perspective - Managing data requires understanding
+    the scope and range of data within an organization. Data is one of the
+    'horizontals' of an organization - it moves across verticals such as sales,
+    marketing, and operations.
+
+20. Accounting for Other Perspectives - Today's organizations use data they
+    create internally as well as data acquired from external sources, so they
+    must account for different legal and compliance requirements across national
+    and industry lines.
+
+21. The Data Lifecycle - Like other assets, data has a lifecycle. To effectively
+    manage data assets, organizations need to understand and plan for the data
+    lifecycle. Well-managed data is managed strategically, with a vision of how
+    the organization will use its data.
+
+22. Different Types of Data - Managing data is made more complicated by the fact
+    that there are different types of data that have different lifecycle
+    management requirements; any management system needs to classify the objects
+    that are managed.
+
+23. Data and Risk - Data not only represents value, it also represents risk. Low
+    quality data (inaccurate, incomplete, or out-of-date) represents risk because
+    its information is not right, but data is also risky because it can be
+    misunderstood and misused.
+
+24. Data Management and Technology - Data management activities are wide-ranging
+    and require both technical and business skills. Because almost all of today's
+    data is stored electronically, data management tactics are strongly
+    influenced by technology; from its inception the concept of data management
+    has been deeply intertwined with the management of technology.
+
+25. Effective Data Management Requires Leadership and Commitment - Although most
+    organizations recognize their data as an asset, they are far from being
+    data-driven; leadership commitment is required for effective data management.
+
+26. The Leader's Data Manifesto (2017) - The document which recognized that an
+    organization's best opportunities for organic growth lie in data.
+
+
+------------------------------------------------------------
+D. DATA MANAGEMENT STRATEGY
+------------------------------------------------------------
+
+27. Strategy - A set of choices and decisions that together chart a high-level
+    course of action to achieve high-level goals. (In the game of chess, a
+    strategy is a sequenced set of moves to win by checkmate or to survive by
+    stalemate.)
+
+28. Strategic Plan - A high-level course of action to achieve high-level goals.
+
+29. Data Management Program Strategy - The supporting strategy required by a data
+    strategy - a plan for maintaining and improving the quality of data, data
+    integrity, access, and security while mitigating known and implied risks; it
+    must also address known challenges related to data management.
+
+30. SMART - The quality required of short-term (12-24 months) Data Management
+    program objectives: Specific, Measurable, Actionable, Realistic, and
+    Time-bound.
+
+31. Data Management Charter - A formal document that outlines an organization's
+    principles, guidelines, and framework for managing its data, defining roles,
+    responsibilities, and processes to ensure data quality, security, compliance,
+    and accessibility across the entire data lifecycle, aligning with the
+    organization's overall strategy and goals.
+
+32. Data Management Scope Statement - A document that clearly defines the
+    boundaries and parameters of a data management project - outlining what data
+    will be included, the processes to be implemented, the expected deliverables,
+    and any limitations or exclusions - ensuring all stakeholders have a shared
+    understanding of what is and is not included within the project scope.
+
+33. Data Management Implementation Roadmap - A structured plan for an
+    organization to effectively manage its data, including key phases like data
+    assessment, governance establishment, data quality improvement, integration,
+    storage, and security measures, with defined timelines and responsible
+    parties to achieve optimal data utilization for informed decision-making.
+
+
+------------------------------------------------------------
+E. DATA MANAGEMENT FRAMEWORKS (PART 2)
+------------------------------------------------------------
+
+34. Data Management Frameworks - Frameworks developed at different levels of
+    abstraction that provide a range of perspectives on how to approach data
+    management; these perspectives provide insight that can be used to clarify
+    strategy, develop roadmaps, organize teams, and align functions.
+
+35. Strategic Alignment Model - A framework by Henderson and Venkatraman (1999)
+    that abstracts the fundamental drivers for any approach to data management.
+    At its center is the relationship between data and information: information
+    is most often associated with business strategy and the operational use of
+    data, while data is associated with information technology and the processes
+    which support physical management of systems that make data accessible for
+    use.
+
+36. The Amsterdam Information Model (AIM) - A framework by Abcouwer, Maes, and
+    Truijens (1997) that, like the Strategic Alignment Model, takes a strategic
+    perspective on business and IT alignment. Known as the 9-cell, it recognizes
+    a middle layer that focuses on structure and tactics, including planning and
+    architecture.
+
+37. 9-cell - The other name for the Amsterdam Information Model, referring to its
+    three-by-three arrangement of cells.
+
+38. The DAMA-DMBOK Framework - The framework that goes into more depth about the
+    Knowledge Areas that make up the overall scope of data management; it is
+    depicted through three visuals - the DAMA Wheel, the Environmental Factors
+    hexagon, and the Knowledge Area Context Diagram.
+
+39. The DAMA Wheel - The visual that defines the Data Management Knowledge Areas.
+    It places data governance at the center of data management activities, since
+    governance is required for consistency within and balance between the
+    functions. The other Knowledge Areas are balanced around the Wheel; they are
+    all necessary parts of a mature data management function, but may be
+    implemented at different times depending on the requirements of the
+    organization.
+
+40. The Environmental Factors Hexagon - The visual that shows the relationship
+    between people, process, and technology and provides a key for reading the
+    DMBOK context diagrams. It puts goals and principles at the center, since
+    these provide guidance for how people should execute activities and
+    effectively use the tools required for successful data management.
+
+41. The Knowledge Area Context Diagram - The visual that describes the detail of
+    the Knowledge Areas, including detail related to people, processes and
+    technology. Context Diagrams put activities at the center, since they produce
+    the deliverables that meet the requirements of stakeholders.
+
+42. SIPOC Diagram - The concept used for product management on which the
+    Knowledge Area Context Diagrams are based, standing for Suppliers, Inputs,
+    Processes, Outputs, and Consumers.
+
+43. DMBOK Pyramid (Aiken) - The framework showing that the golden pyramid of
+    advanced practices (data mining, analytics, etc.) is only the top of a larger
+    structure - a pinnacle on a foundation. Most organizations do not have the
+    luxury of defining a data management strategy before they start having to
+    manage data; instead they build toward that capability, most times under less
+    than optimal conditions, through a logical progression of steps.
+
+44. Phase 1 (Aiken Pyramid) - The organization purchases an application that
+    includes database capabilities, which means it has a starting point for data
+    modeling / design, data storage, and data security.
+
+45. Phase 2 (Aiken Pyramid) - Once they start using the application, they will
+    find challenges with the quality of their data; but getting to higher quality
+    data depends on reliable Metadata and consistent Data Architecture.
+
+46. Phase 3 (Aiken Pyramid) - Disciplined practices for managing Data Quality,
+    Metadata, and architecture require Data Governance that provides structural
+    support for data management activities.
+
+47. Phase 4 (Aiken Pyramid) - The organization leverages the benefits of
+    well-managed data and advances its analytic capabilities.
+
+48. DAMA Data Management Framework Evolved (Sue Geuens) - A framework that
+    explores the dependencies between the DAMA Knowledge Areas, recognizing that
+    Business Intelligence and Analytic functions have dependencies on all other
+    data management functions.
+
+49. DAMA Data Management Function Framework - A third alternative to the DAMA
+    Wheel that draws on architectural concepts to propose a set of relationships
+    between the DAMA Knowledge Areas. It starts with the guiding purpose of data
+    management - to enable organizations to get value from their data assets as
+    they do from other assets - and because deriving value requires lifecycle
+    management, the functions related to the data lifecycle are depicted in the
+    center of the diagram.
+
+50. Data Governance (as oversight) - The form of oversight many organizations
+    establish to successfully support data production and use and to ensure that
+    foundational activities are executed with discipline. A data governance
+    program enables an organization to be data-driven by putting in place the
+    strategy and supporting principles, policies, and stewardship practices that
+    ensure the organization recognizes and acts on opportunities to get value
+    from its data.
+
+51. DAMA Wheel Evolved - A depiction of the DAMA Data Management Framework as an
+    evolution of the DAMA Wheel, with core activities surrounded by lifecycle and
+    usage activities, contained within the strictures of governance.
+
+
+------------------------------------------------------------
+F. DAMA AND THE DMBOK
+------------------------------------------------------------
+
+52. DAMA - The association founded to address the challenges of data management;
+    since at least the 1980s organizations have recognized that managing data is
+    central to their success.
+
+53. DMBOK (Data Management Body of Knowledge) - An accessible, authoritative
+    reference book for data management professionals that supports DAMA's mission
+    by providing a functional framework, establishing a common vocabulary, and
+    serving as the fundamental reference guide for certification exams. It is
+    structured around the eleven Knowledge Areas of the DAMA-DMBOK Data
+    Management Framework (also known as the DAMA Wheel).
+
+54. CDMP - Certified Data Management Professional - the certification exam for
+    which the DMBOK serves as the fundamental reference guide.
+
+55. Knowledge Areas - The areas that describe the scope and context of sets of
+    data management activities. Embedded in them are the fundamental goals and
+    principles of data management. Because data moves horizontally within
+    organizations, Knowledge Area activities intersect with each other and with
+    other organizational functions.
+
+56. Data Handling Ethics - The DMBOK chapter that describes the central role that
+    data ethics plays in making informed, socially responsible decisions about
+    data and its uses; awareness of the ethics of data collection, analysis, and
+    use should guide all data management professionals.
+
+57. Big Data and Data Science - The DMBOK chapter that describes the technologies
+    and business processes that emerge as our ability to collect and analyze
+    large and diverse data sets increases.
+
+58. Data Management Maturity Assessment - The DMBOK chapter that outlines an
+    approach to evaluating and improving an organization's data management
+    capabilities.
+
+59. Data Management Organization and Role Expectations - The DMBOK chapter that
+    provides best practices and considerations for organizing data management
+    teams and enabling successful data management practices.
+
+60. Data Management and Organizational Change Management - The DMBOK chapter that
+    describes how to plan for and successfully move through the cultural changes
+    that are necessary to embed effective data management practices within an
+    organization.
+
+
+################################################################################
+PART II - TRUE OR FALSE
+################################################################################
+
+Write TRUE if the statement is correct and FALSE if it is not.
+The answer key with corrections is at the end of this file.
+
+
+------------------------------------------------------------
+A. DATA MANAGEMENT, BUSINESS DRIVERS AND GOALS
+------------------------------------------------------------
+
+_______ 1. Data Management is the development, execution, and supervision of
+           plans, policies, programs, and practices that deliver, control,
+           protect, and enhance the value of data and information assets
+           throughout their lifecycles.
+
+_______ 2. A Data Management Professional fills only highly technical roles such
+           as database administrators, network administrators, and programmers.
+
+_______ 3. Data management requires both technical and non-technical (business)
+           skills.
+
+_______ 4. Responsibility for managing data belongs to information technology
+           roles alone.
+
+_______ 5. Data and information have been called the 'currency', the 'life
+           blood', and the 'new oil' of the information economy.
+
+_______ 6. As long as an organization gets value from its analytics, it can
+           transact business even without data.
+
+_______ 7. Failure to manage data is similar to failure to manage capital - it
+           results in waste and lost opportunity.
+
+_______ 8. The primary driver for data management is to enable organizations to
+           get value from their data assets.
+
+_______ 9. Ensuring the privacy and confidentiality of stakeholder data is one of
+           the goals of data management.
+
+
+------------------------------------------------------------
+B. ESSENTIAL CONCEPTS
+------------------------------------------------------------
+
+_______ 10. Data management principles apply only to data that has been
+            digitized.
+
+_______ 11. Data has been called "data in context" while information has been
+            called the "raw material of information."
+
+_______ 12. An asset is an economic resource that can be owned or controlled, and
+            that holds or produces value.
+
+_______ 13. Assets cannot be converted to money.
+
+_______ 14. Data is widely recognized as an enterprise asset, though
+            understanding of what it means to manage data as an asset is still
+            evolving.
+
+_______ 15. It takes Metadata to manage data.
+
+_______ 16. Data management is cross-functional and requires a range of skills
+            and expertise.
+
+_______ 17. Different types of data have different lifecycle characteristics.
+
+_______ 18. Information Technology decisions must drive data management
+            requirements.
+
+
+------------------------------------------------------------
+C. DATA MANAGEMENT CHALLENGES
+------------------------------------------------------------
+
+_______ 19. Data is tangible and wears out over time, just like physical assets.
+
+_______ 20. Data is easy to copy and transport, but it is not easy to reproduce
+            if it is lost or destroyed.
+
+_______ 21. Value is the difference between the cost of a thing and the benefit
+            derived from that thing.
+
+_______ 22. Calculating the value of data is easy because the costs and the
+            benefits of data are standardized.
+
+_______ 23. Deriving value from data happens by accident and does not require
+            planning.
+
+_______ 24. If organizations view data as a product that they create, they will
+            make better decisions about it throughout its lifecycle.
+
+_______ 25. Metadata describes what data an organization has, what it represents,
+            how it is classified, where it came from, and whether it is of high
+            quality.
+
+_______ 26. Data is concrete, so it needs no definitions or descriptions of
+            context in order to be understood.
+
+_______ 27. Data is managed in different places within an organization by teams
+            that have responsibility for different phases of the data lifecycle.
+
+_______ 28. Data is one of the 'horizontals' of an organization - it moves across
+            verticals such as sales, marketing, and operations.
+
+_______ 29. Today's organizations use only the data that they create internally.
+
+_______ 30. Well-managed data is managed strategically, with a vision of how the
+            organization will use its data.
+
+_______ 31. Creation and usage are the most critical points in the data
+            lifecycle.
+
+_______ 32. Low quality data represents value rather than cost and risk.
+
+_______ 33. Because Metadata is a form of data, Metadata quality must be managed
+            in the same way as the quality of other data.
+
+_______ 34. Organizations produce a lot of data, a large portion of which is
+            never actually used.
+
+_______ 35. All types of data have exactly the same lifecycle management
+            requirements.
+
+_______ 36. Data represents value but never represents risk.
+
+_______ 37. Data is risky because it can be misunderstood and misused, not only
+            because it may be of low quality.
+
+_______ 38. Because almost all of today's data is stored electronically, data
+            management tactics are strongly influenced by technology.
+
+_______ 39. The Leader's Data Manifesto (2017) recognized that an organization's
+            best opportunities for organic growth lie in data.
+
+_______ 40. Most organizations recognize their data as an asset and are already
+            fully data-driven.
+
+
+------------------------------------------------------------
+D. DATA MANAGEMENT STRATEGY
+------------------------------------------------------------
+
+_______ 41. A strategy is a set of choices and decisions that together chart a
+            high-level course of action to achieve high-level goals.
+
+_______ 42. A data strategy typically requires a supporting Data Management
+            program strategy.
+
+_______ 43. Data Management program objectives should be SMART - specific,
+            measurable, actionable, realistic, and time-bound - and short-term,
+            covering 12 to 24 months.
+
+_______ 44. A Data Management Charter is the document that clearly defines the
+            boundaries and parameters of a data management project.
+
+_______ 45. A Data Management Implementation Roadmap includes defined timelines
+            and responsible parties.
+
+
+------------------------------------------------------------
+E. DATA MANAGEMENT FRAMEWORKS
+------------------------------------------------------------
+
+_______ 46. Frameworks developed at different levels of abstraction provide a
+            range of perspectives that can be used to clarify strategy, develop
+            roadmaps, organize teams, and align functions.
+
+_______ 47. The Strategic Alignment Model was developed by Abcouwer, Maes, and
+            Truijens in 1997.
+
+_______ 48. At the center of the Strategic Alignment Model is the relationship
+            between data and information.
+
+_______ 49. In the Strategic Alignment Model, information is most often
+            associated with business strategy and the operational use of data.
+
+_______ 50. The Amsterdam Information Model is also known as the 9-cell.
+
+_______ 51. The Amsterdam Information Model recognizes a middle layer that
+            focuses on structure and tactics, including planning and
+            architecture.
+
+_______ 52. The DAMA Wheel places Data Quality at the center of data management
+            activities.
+
+_______ 53. All the Knowledge Areas on the DAMA Wheel must be implemented at the
+            same time.
+
+_______ 54. The Environmental Factors hexagon puts goals and principles at the
+            center.
+
+_______ 55. The Environmental Factors hexagon shows the relationship between
+            people, process, and technology.
+
+_______ 56. The Knowledge Area Context Diagrams put deliverables at the center.
+
+_______ 57. Context Diagrams are based on the concept of a SIPOC diagram used for
+            product management.
+
+_______ 58. In the DMBOK Pyramid (Aiken), advanced practices such as mining,
+            analytics, and big data belong to Phase 1.
+
+_______ 59. In Aiken's pyramid, getting to higher quality data depends on
+            reliable Metadata and consistent Data Architecture.
+
+_______ 60. In Aiken's pyramid, Data Governance provides structural support for
+            data management activities in Phase 3.
+
+_______ 61. Most organizations have the luxury of defining a data management
+            strategy before they start having to manage data.
+
+_______ 62. The DAMA Data Management Framework Evolved shown as functional area
+            dependencies was developed by Sue Geuens.
+
+_______ 63. Business Intelligence and Analytic functions have dependencies on all
+            other data management functions.
+
+_______ 64. The guiding purpose of data management is to enable organizations to
+            get value from their data assets as they do from other assets.
+
+_______ 65. A data governance program enables an organization to be data-driven
+            by putting in place strategy, principles, policies, and stewardship
+            practices.
+
+
+------------------------------------------------------------
+F. DAMA AND THE DMBOK
+------------------------------------------------------------
+
+_______ 66. The challenges of data management are entirely new; organizations
+            only began recognizing the importance of managing data very recently.
+
+_______ 67. The DMBOK establishes a common vocabulary for data management
+            concepts.
+
+_______ 68. The DMBOK serves as the fundamental reference guide for the CDMP
+            (Certified Data Management Professional) and other certification
+            exams.
+
+_______ 69. The DMBOK is structured around the eleven Knowledge Areas of the
+            DAMA-DMBOK Data Management Framework, also known as the DAMA Wheel.
+
+_______ 70. Knowledge Area activities never intersect with each other or with
+            other organizational functions.
+
+_______ 71. Data Handling Ethics is the chapter that describes the technologies
+            and business processes that emerge as our ability to collect and
+            analyze large and diverse data sets increases.
+
+_______ 72. Data Management Maturity Assessment outlines an approach to
+            evaluating and improving an organization's data management
+            capabilities.
+
+_______ 73. Each Knowledge Area chapter begins with an Introduction covering
+            Business Drivers, Goals and Principles, and Essential Concepts.
+
+_______ 74. The DAMA Wheel Evolved depicts core activities surrounded by
+            lifecycle and usage activities, contained within the strictures of
+            governance.
+
+
+################################################################################
+ANSWER KEY - TRUE OR FALSE
+################################################################################
+
+1.  TRUE
+2.  FALSE - They also fill strategic business roles such as Data Stewards, Data
+    Strategists, and Chief Data Officers.
+3.  TRUE
+4.  FALSE - It must be shared between business and information technology roles.
+5.  TRUE
+6.  FALSE - Whether or not an organization gets value from its analytics, it
+    cannot even transact business without data.
+7.  TRUE
+8.  TRUE
+9.  TRUE
+10. FALSE - They apply to data captured on paper as well as in databases.
+11. FALSE - It is reversed: data is the "raw material of information" and
+    information is "data in context."
+12. TRUE
+13. FALSE - Assets can be converted to money.
+14. TRUE
+15. TRUE
+16. TRUE
+17. TRUE
+18. FALSE - It is the reverse: data management requirements must drive
+    Information Technology decisions.
+19. FALSE - Data is not tangible, and it is durable; it does not wear out, though
+    its value often changes as it ages.
+20. TRUE
+21. TRUE
+22. FALSE - The calculations are more complicated because neither the costs nor
+    the benefits of data are standardized.
+23. FALSE - It does not happen by accident; it requires planning in many forms.
+24. TRUE
+25. TRUE
+26. FALSE - Data is abstract; definitions and other descriptions of context
+    enable it to be understood.
+27. TRUE
+28. TRUE
+29. FALSE - They also use data acquired from external sources, and must account
+    for different legal and compliance requirements across national and industry
+    lines.
+30. TRUE
+31. TRUE
+32. FALSE - Low quality data represents cost and risk, rather than value.
+33. TRUE
+34. TRUE
+35. FALSE - Different types of data have different lifecycle management
+    requirements, so any management system needs to classify the objects that are
+    managed.
+36. FALSE - Data not only represents value, it also represents risk.
+37. TRUE
+38. TRUE
+39. TRUE
+40. FALSE - Although most organizations recognize their data as an asset, they
+    are far from being data-driven.
+41. TRUE
+42. TRUE
+43. TRUE
+44. FALSE - That is the Data Management Scope Statement; the Charter outlines the
+    organization's principles, guidelines, and framework for managing its data.
+45. TRUE
+46. TRUE
+47. FALSE - It was developed by Henderson and Venkatraman (1999); Abcouwer, Maes,
+    and Truijens developed the Amsterdam Information Model.
+48. TRUE
+49. TRUE
+50. TRUE
+51. TRUE
+52. FALSE - It places Data Governance at the center, since governance is required
+    for consistency within and balance between the functions.
+53. FALSE - They are all necessary parts of a mature data management function,
+    but they may be implemented at different times depending on the requirements
+    of the organization.
+54. TRUE
+55. TRUE
+56. FALSE - They put activities at the center, since activities produce the
+    deliverables that meet the requirements of stakeholders.
+57. TRUE
+58. FALSE - They belong to Phase 4; Phase 1 is the purchase of an application
+    that includes database capabilities.
+59. TRUE
+60. TRUE
+61. FALSE - Most organizations do not have that luxury; instead they build toward
+    that capability, most times under less than optimal conditions.
+62. TRUE
+63. TRUE
+64. TRUE
+65. TRUE
+66. FALSE - Few of the challenges are new; since at least the 1980s organizations
+    have recognized that managing data is central to their success.
+67. TRUE
+68. TRUE
+69. TRUE
+70. FALSE - Because data moves horizontally within organizations, Knowledge Area
+    activities intersect with each other and with other organizational functions.
+71. FALSE - That is Big Data and Data Science; Data Handling Ethics describes the
+    central role of data ethics in making informed, socially responsible
+    decisions about data.
+72. TRUE
+73. TRUE
+74. TRUE
+
+
+================================================================================
+NOTES TO WATCH OUT FOR
+================================================================================
+
+1. The module lists 10 Knowledge Areas on its slide but states that the DMBOK is
+   structured around ELEVEN. The DAMA Wheel figure shows 11 (Data Governance at
+   the center plus 10 around it). Be ready for either version.
+
+2. In the data lifecycle implications, items 4 and 5 carry the same heading in
+   the deck ("Data Security must be managed throughout the data lifecycle"),
+   though item 5's text is about the large volume of data that is never used.
+
+3. Definitions not explicitly given in the slides (Information, Asset as a
+   standalone term, DAMA, the Aiken phases as named terms) were built from the
+   surrounding module text.
+
+
+================================================================================
+REFERENCES (from the modules)
+================================================================================
+
+DAMA-DMBOK: Data Management Body of Knowledge 2nd Edition. 2017.
+   DAMA International. ISBN-13: 978-1634622349 / ISBN-10: 1634622340
+
+Data, Information And Knowledge Management Framework And The Data Management
+   Book Of Knowledge (DMBOK). 2019, Alan McSweeney.
+
+Database Processing: Fundamentals, Design, and Implementation. 2018,
+   David M. Kroenke, David J. Auer, Scott L. Vandenberg, Robert C. Yoder.
+   Prentice Hall, 15th edition.
+
+Database Systems: Design, Implementation, and Management. 2019,
+   Carlos Coronel, Steven Morris. Cengage Learning, 13th Edition.
+
+Data & Information Management Framework Guide. 2018, Regine Deleu.
+
+================================================================================
+END OF REVIEWER
+================================================================================ 

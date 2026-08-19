@@ -870,7 +870,1258 @@ export const subjects = [
     "name": "Information Management Lec",
     "description": "Covers database design, data modeling, SQL, and information systems management.",
     "color": "#9333ea",
-    "reviewers": []
+    "reviewers": [
+      {
+        "id": "cc6_quiz1_ch1",
+        "title": "Quiz 1 — Chapter 1 Reviewer",
+        "description": "134-item reviewer on Data Management fundamentals (Parts 1 & 2, Weeks 2–3): 60 identification items and 74 true-or-false items covering business drivers, essential concepts, the 13 data management challenges, strategy, frameworks, and DAMA/DMBOK.",
+        "quizletLink": null,
+        "questions": [
+          {
+            "id": 1,
+            "type": "identification",
+            "question": "The development, execution, and supervision of plans, policies, programs, and practices that deliver, control, protect, and enhance the value of data and information assets throughout their lifecycles.",
+            "answer": "Data Management"
+          },
+          {
+            "id": 2,
+            "type": "identification",
+            "question": "Any person who works in any aspect of data management - from the technical management of data throughout its lifecycle to ensuring that data is properly utilized and leveraged - to meet strategic organizational goals.",
+            "answer": "Data Management Professional"
+          },
+          {
+            "id": 3,
+            "type": "identification",
+            "question": "Information and knowledge hold the key to competitive advantage; organizations with reliable, high quality data about their customers, products, services, and operations can make better decisions than those without data or with unreliable data.",
+            "answer": "Business Driver of Data Management"
+          },
+          {
+            "id": 4,
+            "type": "identification",
+            "question": "To enable organizations to get value from their data assets, just as effective management of financial and physical assets enables organizations to get value from those assets.",
+            "answer": "Primary Driver for Data Management"
+          },
+          {
+            "id": 5,
+            "type": "identification",
+            "question": "In relation to information technology, information that has been stored in digital form (though data is not limited to information that has been digitized - data management principles apply to data captured on paper as well as in databases).",
+            "answer": "Data"
+          },
+          {
+            "id": 6,
+            "type": "identification",
+            "question": "What data has been called, because data becomes meaningful only when it is placed in context.",
+            "answer": "Raw Material of Information"
+          },
+          {
+            "id": 7,
+            "type": "identification",
+            "question": "Data in context.",
+            "answer": "Information"
+          },
+          {
+            "id": 8,
+            "type": "identification",
+            "question": "An economic resource that can be owned or controlled, and that holds or produces value. Assets can be converted to money.",
+            "answer": "Asset"
+          },
+          {
+            "id": 9,
+            "type": "identification",
+            "question": "Data is widely recognized as an enterprise asset, though understanding of what it means to manage data as an asset is still evolving.",
+            "answer": "Data as an Organizational Asset"
+          },
+          {
+            "id": 10,
+            "type": "identification",
+            "question": "A set of principles that recognize the salient features of data management and guide data management practice; data management shares characteristics with other forms of asset management - it involves knowing what data an organization has and what might be accomplished with it, then determining how best to use data assets to reach organizational goals.",
+            "answer": "Data Management Principles"
+          },
+          {
+            "id": 11,
+            "type": "identification",
+            "question": "The difficulties in following the data management principles, which arise because data management has distinct characteristics derived from the properties of data itself.",
+            "answer": "Data Management Challenges"
+          },
+          {
+            "id": 12,
+            "type": "identification",
+            "question": "Data is not tangible, yet it is durable - it does not wear out, though its value often changes as it ages. Data is easy to copy and transport, but it is not easy to reproduce if it is lost or destroyed.",
+            "answer": "Data Differs from Other Assets"
+          },
+          {
+            "id": 13,
+            "type": "identification",
+            "question": "The difference between the cost of a thing and the benefit derived from that thing.",
+            "answer": "Value"
+          },
+          {
+            "id": 14,
+            "type": "identification",
+            "question": "Calculating the value of data is complicated because neither the costs nor the benefits of data are standardized (unlike an asset such as stock, whose value is simply the difference between purchase price and selling price).",
+            "answer": "Data Valuation"
+          },
+          {
+            "id": 15,
+            "type": "identification",
+            "question": "Ensuring data is fit for use; because data is intangible but durable, easy to copy and transport, yet difficult to reproduce once lost or destroyed, maintaining its quality requires deliberate management.",
+            "answer": "Data Quality (as a challenge)",
+            "altAnswers": [
+              "Data Quality",
+              "as a challenge"
+            ]
+          },
+          {
+            "id": 16,
+            "type": "identification",
+            "question": "Deriving value from data does not happen by accident - it requires planning in many forms. It starts with the recognition that organizations can control how they obtain and create data; if they view data as a product that they create, they will make better decisions about it throughout its lifecycle.",
+            "answer": "Planning for Better Data"
+          },
+          {
+            "id": 17,
+            "type": "identification",
+            "question": "Data that describes what data an organization has, what it represents, how it is classified, where it came from, how it moves within the organization, how it evolves through use, who can and cannot use it, and whether it is of high quality. Metadata makes data, the data lifecycle, and the complex systems that contain data comprehensible.",
+            "answer": "Metadata"
+          },
+          {
+            "id": 18,
+            "type": "identification",
+            "question": "Data management is a complex process; data is managed in different places within an organization by teams responsible for different phases of the data lifecycle, requiring design skills, highly technical skills, data analysis skills, analytic skills, language skills, and strategic thinking.",
+            "answer": "Data Management is Cross-functional"
+          },
+          {
+            "id": 19,
+            "type": "identification",
+            "question": "Managing data requires understanding the scope and range of data within an organization. Data is one of the 'horizontals' of an organization - it moves across verticals such as sales, marketing, and operations.",
+            "answer": "Establishing an Enterprise Perspective"
+          },
+          {
+            "id": 20,
+            "type": "identification",
+            "question": "Today's organizations use data they create internally as well as data acquired from external sources, so they must account for different legal and compliance requirements across national and industry lines.",
+            "answer": "Accounting for Other Perspectives"
+          },
+          {
+            "id": 21,
+            "type": "identification",
+            "question": "Like other assets, data has a lifecycle. To effectively manage data assets, organizations need to understand and plan for the data lifecycle. Well-managed data is managed strategically, with a vision of how the organization will use its data.",
+            "answer": "The Data Lifecycle"
+          },
+          {
+            "id": 22,
+            "type": "identification",
+            "question": "Managing data is made more complicated by the fact that there are different types of data that have different lifecycle management requirements; any management system needs to classify the objects that are managed.",
+            "answer": "Different Types of Data"
+          },
+          {
+            "id": 23,
+            "type": "identification",
+            "question": "Data not only represents value, it also represents risk. Low quality data (inaccurate, incomplete, or out-of-date) represents risk because its information is not right, but data is also risky because it can be misunderstood and misused.",
+            "answer": "Data and Risk"
+          },
+          {
+            "id": 24,
+            "type": "identification",
+            "question": "Data management activities are wide-ranging and require both technical and business skills. Because almost all of today's data is stored electronically, data management tactics are strongly influenced by technology; from its inception the concept of data management has been deeply intertwined with the management of technology.",
+            "answer": "Data Management and Technology"
+          },
+          {
+            "id": 25,
+            "type": "identification",
+            "question": "Although most organizations recognize their data as an asset, they are far from being data-driven; leadership commitment is required for effective data management.",
+            "answer": "Effective Data Management Requires Leadership and Commitment"
+          },
+          {
+            "id": 26,
+            "type": "identification",
+            "question": "The document which recognized that an organization's best opportunities for organic growth lie in data.",
+            "answer": "The Leader's Data Manifesto (2017)",
+            "altAnswers": [
+              "2017",
+              "Leader's Data Manifesto",
+              "The Leader's Data Manifesto"
+            ]
+          },
+          {
+            "id": 27,
+            "type": "identification",
+            "question": "A set of choices and decisions that together chart a high-level course of action to achieve high-level goals. (In the game of chess, a strategy is a sequenced set of moves to win by checkmate or to survive by stalemate.)",
+            "answer": "Strategy"
+          },
+          {
+            "id": 28,
+            "type": "identification",
+            "question": "A high-level course of action to achieve high-level goals.",
+            "answer": "Strategic Plan"
+          },
+          {
+            "id": 29,
+            "type": "identification",
+            "question": "The supporting strategy required by a data strategy - a plan for maintaining and improving the quality of data, data integrity, access, and security while mitigating known and implied risks; it must also address known challenges related to data management.",
+            "answer": "Data Management Program Strategy"
+          },
+          {
+            "id": 30,
+            "type": "identification",
+            "question": "The quality required of short-term (12-24 months) Data Management program objectives: Specific, Measurable, Actionable, Realistic, and Time-bound.",
+            "answer": "SMART"
+          },
+          {
+            "id": 31,
+            "type": "identification",
+            "question": "A formal document that outlines an organization's principles, guidelines, and framework for managing its data, defining roles, responsibilities, and processes to ensure data quality, security, compliance, and accessibility across the entire data lifecycle, aligning with the organization's overall strategy and goals.",
+            "answer": "Data Management Charter"
+          },
+          {
+            "id": 32,
+            "type": "identification",
+            "question": "A document that clearly defines the boundaries and parameters of a data management project - outlining what data will be included, the processes to be implemented, the expected deliverables, and any limitations or exclusions - ensuring all stakeholders have a shared understanding of what is and is not included within the project scope.",
+            "answer": "Data Management Scope Statement"
+          },
+          {
+            "id": 33,
+            "type": "identification",
+            "question": "A structured plan for an organization to effectively manage its data, including key phases like data assessment, governance establishment, data quality improvement, integration, storage, and security measures, with defined timelines and responsible parties to achieve optimal data utilization for informed decision-making.",
+            "answer": "Data Management Implementation Roadmap"
+          },
+          {
+            "id": 34,
+            "type": "identification",
+            "question": "Frameworks developed at different levels of abstraction that provide a range of perspectives on how to approach data management; these perspectives provide insight that can be used to clarify strategy, develop roadmaps, organize teams, and align functions.",
+            "answer": "Data Management Frameworks"
+          },
+          {
+            "id": 35,
+            "type": "identification",
+            "question": "A framework by Henderson and Venkatraman (1999) that abstracts the fundamental drivers for any approach to data management. At its center is the relationship between data and information: information is most often associated with business strategy and the operational use of data, while data is associated with information technology and the processes which support physical management of systems that make data accessible for use.",
+            "answer": "Strategic Alignment Model",
+            "altAnswers": [
+              "SAM"
+            ]
+          },
+          {
+            "id": 36,
+            "type": "identification",
+            "question": "A framework by Abcouwer, Maes, and Truijens (1997) that, like the Strategic Alignment Model, takes a strategic perspective on business and IT alignment. Known as the 9-cell, it recognizes a middle layer that focuses on structure and tactics, including planning and architecture.",
+            "answer": "The Amsterdam Information Model (AIM)",
+            "altAnswers": [
+              "9-cell",
+              "AIM",
+              "Amsterdam Information Model",
+              "The Amsterdam Information Model",
+              "nine cell"
+            ]
+          },
+          {
+            "id": 37,
+            "type": "identification",
+            "question": "The other name for the Amsterdam Information Model, referring to its three-by-three arrangement of cells.",
+            "answer": "9-cell",
+            "altAnswers": [
+              "9 cell",
+              "AIM",
+              "Amsterdam Information Model",
+              "nine cell"
+            ]
+          },
+          {
+            "id": 38,
+            "type": "identification",
+            "question": "The framework that goes into more depth about the Knowledge Areas that make up the overall scope of data management; it is depicted through three visuals - the DAMA Wheel, the Environmental Factors hexagon, and the Knowledge Area Context Diagram.",
+            "answer": "The DAMA-DMBOK Framework"
+          },
+          {
+            "id": 39,
+            "type": "identification",
+            "question": "The visual that defines the Data Management Knowledge Areas. It places data governance at the center of data management activities, since governance is required for consistency within and balance between the functions. The other Knowledge Areas are balanced around the Wheel; they are all necessary parts of a mature data management function, but may be implemented at different times depending on the requirements of the organization.",
+            "answer": "The DAMA Wheel",
+            "altAnswers": [
+              "DAMA Wheel"
+            ]
+          },
+          {
+            "id": 40,
+            "type": "identification",
+            "question": "The visual that shows the relationship between people, process, and technology and provides a key for reading the DMBOK context diagrams. It puts goals and principles at the center, since these provide guidance for how people should execute activities and effectively use the tools required for successful data management.",
+            "answer": "The Environmental Factors Hexagon"
+          },
+          {
+            "id": 41,
+            "type": "identification",
+            "question": "The visual that describes the detail of the Knowledge Areas, including detail related to people, processes and technology. Context Diagrams put activities at the center, since they produce the deliverables that meet the requirements of stakeholders.",
+            "answer": "The Knowledge Area Context Diagram",
+            "altAnswers": [
+              "Knowledge Area Context Diagram"
+            ]
+          },
+          {
+            "id": 42,
+            "type": "identification",
+            "question": "The concept used for product management on which the Knowledge Area Context Diagrams are based, standing for Suppliers, Inputs, Processes, Outputs, and Consumers.",
+            "answer": "SIPOC Diagram"
+          },
+          {
+            "id": 43,
+            "type": "identification",
+            "question": "The framework showing that the golden pyramid of advanced practices (data mining, analytics, etc.) is only the top of a larger structure - a pinnacle on a foundation. Most organizations do not have the luxury of defining a data management strategy before they start having to manage data; instead they build toward that capability, most times under less than optimal conditions, through a logical progression of steps.",
+            "answer": "DMBOK Pyramid (Aiken)",
+            "altAnswers": [
+              "Aiken",
+              "Aiken Pyramid",
+              "Aiken's Pyramid",
+              "DMBOK Pyramid"
+            ]
+          },
+          {
+            "id": 44,
+            "type": "identification",
+            "question": "The organization purchases an application that includes database capabilities, which means it has a starting point for data modeling / design, data storage, and data security.",
+            "answer": "Phase 1 (Aiken Pyramid)",
+            "altAnswers": [
+              "Aiken Pyramid",
+              "Phase 1"
+            ]
+          },
+          {
+            "id": 45,
+            "type": "identification",
+            "question": "Once they start using the application, they will find challenges with the quality of their data; but getting to higher quality data depends on reliable Metadata and consistent Data Architecture.",
+            "answer": "Phase 2 (Aiken Pyramid)",
+            "altAnswers": [
+              "Aiken Pyramid",
+              "Phase 2"
+            ]
+          },
+          {
+            "id": 46,
+            "type": "identification",
+            "question": "Disciplined practices for managing Data Quality, Metadata, and architecture require Data Governance that provides structural support for data management activities.",
+            "answer": "Phase 3 (Aiken Pyramid)",
+            "altAnswers": [
+              "Aiken Pyramid",
+              "Phase 3"
+            ]
+          },
+          {
+            "id": 47,
+            "type": "identification",
+            "question": "The organization leverages the benefits of well-managed data and advances its analytic capabilities.",
+            "answer": "Phase 4 (Aiken Pyramid)",
+            "altAnswers": [
+              "Aiken Pyramid",
+              "Phase 4"
+            ]
+          },
+          {
+            "id": 48,
+            "type": "identification",
+            "question": "A framework that explores the dependencies between the DAMA Knowledge Areas, recognizing that Business Intelligence and Analytic functions have dependencies on all other data management functions.",
+            "answer": "DAMA Data Management Framework Evolved (Sue Geuens)",
+            "altAnswers": [
+              "DAMA Data Management Framework Evolved",
+              "Sue Geuens"
+            ]
+          },
+          {
+            "id": 49,
+            "type": "identification",
+            "question": "A third alternative to the DAMA Wheel that draws on architectural concepts to propose a set of relationships between the DAMA Knowledge Areas. It starts with the guiding purpose of data management - to enable organizations to get value from their data assets as they do from other assets - and because deriving value requires lifecycle management, the functions related to the data lifecycle are depicted in the center of the diagram.",
+            "answer": "DAMA Data Management Function Framework"
+          },
+          {
+            "id": 50,
+            "type": "identification",
+            "question": "The form of oversight many organizations establish to successfully support data production and use and to ensure that foundational activities are executed with discipline. A data governance program enables an organization to be data-driven by putting in place the strategy and supporting principles, policies, and stewardship practices that ensure the organization recognizes and acts on opportunities to get value from its data.",
+            "answer": "Data Governance (as oversight)",
+            "altAnswers": [
+              "Data Governance",
+              "as oversight"
+            ]
+          },
+          {
+            "id": 51,
+            "type": "identification",
+            "question": "A depiction of the DAMA Data Management Framework as an evolution of the DAMA Wheel, with core activities surrounded by lifecycle and usage activities, contained within the strictures of governance.",
+            "answer": "DAMA Wheel Evolved"
+          },
+          {
+            "id": 52,
+            "type": "identification",
+            "question": "The association founded to address the challenges of data management; since at least the 1980s organizations have recognized that managing data is central to their success.",
+            "answer": "DAMA"
+          },
+          {
+            "id": 53,
+            "type": "identification",
+            "question": "An accessible, authoritative reference book for data management professionals that supports DAMA's mission by providing a functional framework, establishing a common vocabulary, and serving as the fundamental reference guide for certification exams. It is structured around the eleven Knowledge Areas of the DAMA Wheel.",
+            "answer": "DMBOK (Data Management Body of Knowledge)",
+            "altAnswers": [
+              "DMBOK",
+              "Data Management Body of Knowledge"
+            ]
+          },
+          {
+            "id": 54,
+            "type": "identification",
+            "question": "The certification exam for data management professionals, for which the DMBOK serves as the fundamental reference guide.",
+            "answer": "CDMP",
+            "altAnswers": [
+              "Certified Data Management Professional"
+            ]
+          },
+          {
+            "id": 55,
+            "type": "identification",
+            "question": "The areas that describe the scope and context of sets of data management activities. Embedded in them are the fundamental goals and principles of data management. Because data moves horizontally within organizations, Knowledge Area activities intersect with each other and with other organizational functions.",
+            "answer": "Knowledge Areas"
+          },
+          {
+            "id": 56,
+            "type": "identification",
+            "question": "The DMBOK chapter that describes the central role that data ethics plays in making informed, socially responsible decisions about data and its uses; awareness of the ethics of data collection, analysis, and use should guide all data management professionals.",
+            "answer": "Data Handling Ethics"
+          },
+          {
+            "id": 57,
+            "type": "identification",
+            "question": "The DMBOK chapter that describes the technologies and business processes that emerge as our ability to collect and analyze large and diverse data sets increases.",
+            "answer": "Big Data and Data Science"
+          },
+          {
+            "id": 58,
+            "type": "identification",
+            "question": "The DMBOK chapter that outlines an approach to evaluating and improving an organization's data management capabilities.",
+            "answer": "Data Management Maturity Assessment"
+          },
+          {
+            "id": 59,
+            "type": "identification",
+            "question": "The DMBOK chapter that provides best practices and considerations for organizing data management teams and enabling successful data management practices.",
+            "answer": "Data Management Organization and Role Expectations"
+          },
+          {
+            "id": 60,
+            "type": "identification",
+            "question": "The DMBOK chapter that describes how to plan for and successfully move through the cultural changes that are necessary to embed effective data management practices within an organization.",
+            "answer": "Data Management and Organizational Change Management"
+          },
+          {
+            "id": 61,
+            "type": "true_false",
+            "question": "Data Management is the development, execution, and supervision of plans, policies, programs, and practices that deliver, control, protect, and enhance the value of data and information assets throughout their lifecycles.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 62,
+            "type": "true_false",
+            "question": "A Data Management Professional fills only highly technical roles such as database administrators, network administrators, and programmers.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: They also fill strategic business roles such as Data Stewards, Data Strategists, and Chief Data Officers."
+          },
+          {
+            "id": 63,
+            "type": "true_false",
+            "question": "Data management requires both technical and non-technical (business) skills.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 64,
+            "type": "true_false",
+            "question": "Responsibility for managing data belongs to information technology roles alone.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: It must be shared between business and information technology roles."
+          },
+          {
+            "id": 65,
+            "type": "true_false",
+            "question": "Data and information have been called the 'currency', the 'life blood', and the 'new oil' of the information economy.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 66,
+            "type": "true_false",
+            "question": "As long as an organization gets value from its analytics, it can transact business even without data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Whether or not an organization gets value from its analytics, it cannot even transact business without data."
+          },
+          {
+            "id": 67,
+            "type": "true_false",
+            "question": "Failure to manage data is similar to failure to manage capital - it results in waste and lost opportunity.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 68,
+            "type": "true_false",
+            "question": "The primary driver for data management is to enable organizations to get value from their data assets.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 69,
+            "type": "true_false",
+            "question": "Ensuring the privacy and confidentiality of stakeholder data is one of the goals of data management.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 70,
+            "type": "true_false",
+            "question": "Data management principles apply only to data that has been digitized.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: They apply to data captured on paper as well as in databases."
+          },
+          {
+            "id": 71,
+            "type": "true_false",
+            "question": "Data has been called \"data in context\" while information has been called the \"raw material of information.\"",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: It is reversed: data is the \"raw material of information\" and information is \"data in context.\""
+          },
+          {
+            "id": 72,
+            "type": "true_false",
+            "question": "An asset is an economic resource that can be owned or controlled, and that holds or produces value.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 73,
+            "type": "true_false",
+            "question": "Assets cannot be converted to money.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Assets can be converted to money."
+          },
+          {
+            "id": 74,
+            "type": "true_false",
+            "question": "Data is widely recognized as an enterprise asset, though understanding of what it means to manage data as an asset is still evolving.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 75,
+            "type": "true_false",
+            "question": "It takes Metadata to manage data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 76,
+            "type": "true_false",
+            "question": "Data management is cross-functional and requires a range of skills and expertise.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 77,
+            "type": "true_false",
+            "question": "Different types of data have different lifecycle characteristics.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 78,
+            "type": "true_false",
+            "question": "Information Technology decisions must drive data management requirements.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: It is the reverse: data management requirements must drive Information Technology decisions."
+          },
+          {
+            "id": 79,
+            "type": "true_false",
+            "question": "Data is tangible and wears out over time, just like physical assets.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Data is not tangible, and it is durable; it does not wear out, though its value often changes as it ages."
+          },
+          {
+            "id": 80,
+            "type": "true_false",
+            "question": "Data is easy to copy and transport, but it is not easy to reproduce if it is lost or destroyed.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 81,
+            "type": "true_false",
+            "question": "Value is the difference between the cost of a thing and the benefit derived from that thing.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 82,
+            "type": "true_false",
+            "question": "Calculating the value of data is easy because the costs and the benefits of data are standardized.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: The calculations are more complicated because neither the costs nor the benefits of data are standardized."
+          },
+          {
+            "id": 83,
+            "type": "true_false",
+            "question": "Deriving value from data happens by accident and does not require planning.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: It does not happen by accident; it requires planning in many forms."
+          },
+          {
+            "id": 84,
+            "type": "true_false",
+            "question": "If organizations view data as a product that they create, they will make better decisions about it throughout its lifecycle.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 85,
+            "type": "true_false",
+            "question": "Metadata describes what data an organization has, what it represents, how it is classified, where it came from, and whether it is of high quality.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 86,
+            "type": "true_false",
+            "question": "Data is concrete, so it needs no definitions or descriptions of context in order to be understood.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Data is abstract; definitions and other descriptions of context enable it to be understood."
+          },
+          {
+            "id": 87,
+            "type": "true_false",
+            "question": "Data is managed in different places within an organization by teams that have responsibility for different phases of the data lifecycle.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 88,
+            "type": "true_false",
+            "question": "Data is one of the 'horizontals' of an organization - it moves across verticals such as sales, marketing, and operations.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 89,
+            "type": "true_false",
+            "question": "Today's organizations use only the data that they create internally.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: They also use data acquired from external sources, and must account for different legal and compliance requirements across national and industry lines."
+          },
+          {
+            "id": 90,
+            "type": "true_false",
+            "question": "Well-managed data is managed strategically, with a vision of how the organization will use its data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 91,
+            "type": "true_false",
+            "question": "Creation and usage are the most critical points in the data lifecycle.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 92,
+            "type": "true_false",
+            "question": "Low quality data represents value rather than cost and risk.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Low quality data represents cost and risk, rather than value."
+          },
+          {
+            "id": 93,
+            "type": "true_false",
+            "question": "Because Metadata is a form of data, Metadata quality must be managed in the same way as the quality of other data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 94,
+            "type": "true_false",
+            "question": "Organizations produce a lot of data, a large portion of which is never actually used.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 95,
+            "type": "true_false",
+            "question": "All types of data have exactly the same lifecycle management requirements.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Different types of data have different lifecycle management requirements, so any management system needs to classify the objects that are managed."
+          },
+          {
+            "id": 96,
+            "type": "true_false",
+            "question": "Data represents value but never represents risk.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Data not only represents value, it also represents risk."
+          },
+          {
+            "id": 97,
+            "type": "true_false",
+            "question": "Data is risky because it can be misunderstood and misused, not only because it may be of low quality.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 98,
+            "type": "true_false",
+            "question": "Because almost all of today's data is stored electronically, data management tactics are strongly influenced by technology.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 99,
+            "type": "true_false",
+            "question": "The Leader's Data Manifesto (2017) recognized that an organization's best opportunities for organic growth lie in data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 100,
+            "type": "true_false",
+            "question": "Most organizations recognize their data as an asset and are already fully data-driven.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Although most organizations recognize their data as an asset, they are far from being data-driven."
+          },
+          {
+            "id": 101,
+            "type": "true_false",
+            "question": "A strategy is a set of choices and decisions that together chart a high-level course of action to achieve high-level goals.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 102,
+            "type": "true_false",
+            "question": "A data strategy typically requires a supporting Data Management program strategy.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 103,
+            "type": "true_false",
+            "question": "Data Management program objectives should be SMART - specific, measurable, actionable, realistic, and time-bound - and short-term, covering 12 to 24 months.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 104,
+            "type": "true_false",
+            "question": "A Data Management Charter is the document that clearly defines the boundaries and parameters of a data management project.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: That is the Data Management Scope Statement; the Charter outlines the organization's principles, guidelines, and framework for managing its data."
+          },
+          {
+            "id": 105,
+            "type": "true_false",
+            "question": "A Data Management Implementation Roadmap includes defined timelines and responsible parties.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 106,
+            "type": "true_false",
+            "question": "Frameworks developed at different levels of abstraction provide a range of perspectives that can be used to clarify strategy, develop roadmaps, organize teams, and align functions.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 107,
+            "type": "true_false",
+            "question": "The Strategic Alignment Model was developed by Abcouwer, Maes, and Truijens in 1997.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: It was developed by Henderson and Venkatraman (1999); Abcouwer, Maes, and Truijens developed the Amsterdam Information Model."
+          },
+          {
+            "id": 108,
+            "type": "true_false",
+            "question": "At the center of the Strategic Alignment Model is the relationship between data and information.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 109,
+            "type": "true_false",
+            "question": "In the Strategic Alignment Model, information is most often associated with business strategy and the operational use of data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 110,
+            "type": "true_false",
+            "question": "The Amsterdam Information Model is also known as the 9-cell.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 111,
+            "type": "true_false",
+            "question": "The Amsterdam Information Model recognizes a middle layer that focuses on structure and tactics, including planning and architecture.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 112,
+            "type": "true_false",
+            "question": "The DAMA Wheel places Data Quality at the center of data management activities.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: It places Data Governance at the center, since governance is required for consistency within and balance between the functions."
+          },
+          {
+            "id": 113,
+            "type": "true_false",
+            "question": "All the Knowledge Areas on the DAMA Wheel must be implemented at the same time.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: They are all necessary parts of a mature data management function, but they may be implemented at different times depending on the requirements of the organization."
+          },
+          {
+            "id": 114,
+            "type": "true_false",
+            "question": "The Environmental Factors hexagon puts goals and principles at the center.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 115,
+            "type": "true_false",
+            "question": "The Environmental Factors hexagon shows the relationship between people, process, and technology.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 116,
+            "type": "true_false",
+            "question": "The Knowledge Area Context Diagrams put deliverables at the center.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: They put activities at the center, since activities produce the deliverables that meet the requirements of stakeholders."
+          },
+          {
+            "id": 117,
+            "type": "true_false",
+            "question": "Context Diagrams are based on the concept of a SIPOC diagram used for product management.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 118,
+            "type": "true_false",
+            "question": "In the DMBOK Pyramid (Aiken), advanced practices such as mining, analytics, and big data belong to Phase 1.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: They belong to Phase 4; Phase 1 is the purchase of an application that includes database capabilities."
+          },
+          {
+            "id": 119,
+            "type": "true_false",
+            "question": "In Aiken's pyramid, getting to higher quality data depends on reliable Metadata and consistent Data Architecture.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 120,
+            "type": "true_false",
+            "question": "In Aiken's pyramid, Data Governance provides structural support for data management activities in Phase 3.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 121,
+            "type": "true_false",
+            "question": "Most organizations have the luxury of defining a data management strategy before they start having to manage data.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Most organizations do not have that luxury; instead they build toward that capability, most times under less than optimal conditions."
+          },
+          {
+            "id": 122,
+            "type": "true_false",
+            "question": "The DAMA Data Management Framework Evolved shown as functional area dependencies was developed by Sue Geuens.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 123,
+            "type": "true_false",
+            "question": "Business Intelligence and Analytic functions have dependencies on all other data management functions.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 124,
+            "type": "true_false",
+            "question": "The guiding purpose of data management is to enable organizations to get value from their data assets as they do from other assets.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 125,
+            "type": "true_false",
+            "question": "A data governance program enables an organization to be data-driven by putting in place strategy, principles, policies, and stewardship practices.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 126,
+            "type": "true_false",
+            "question": "The challenges of data management are entirely new; organizations only began recognizing the importance of managing data very recently.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Few of the challenges are new; since at least the 1980s organizations have recognized that managing data is central to their success."
+          },
+          {
+            "id": 127,
+            "type": "true_false",
+            "question": "The DMBOK establishes a common vocabulary for data management concepts.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 128,
+            "type": "true_false",
+            "question": "The DMBOK serves as the fundamental reference guide for the CDMP (Certified Data Management Professional) and other certification exams.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 129,
+            "type": "true_false",
+            "question": "The DMBOK is structured around the eleven Knowledge Areas of the DAMA-DMBOK Data Management Framework, also known as the DAMA Wheel.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 130,
+            "type": "true_false",
+            "question": "Knowledge Area activities never intersect with each other or with other organizational functions.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: Because data moves horizontally within organizations, Knowledge Area activities intersect with each other and with other organizational functions."
+          },
+          {
+            "id": 131,
+            "type": "true_false",
+            "question": "Data Handling Ethics is the chapter that describes the technologies and business processes that emerge as our ability to collect and analyze large and diverse data sets increases.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Correction: That is Big Data and Data Science; Data Handling Ethics describes the central role of data ethics in making informed, socially responsible decisions about data."
+          },
+          {
+            "id": 132,
+            "type": "true_false",
+            "question": "Data Management Maturity Assessment outlines an approach to evaluating and improving an organization's data management capabilities.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 133,
+            "type": "true_false",
+            "question": "Each Knowledge Area chapter begins with an Introduction covering Business Drivers, Goals and Principles, and Essential Concepts.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 134,
+            "type": "true_false",
+            "question": "The DAMA Wheel Evolved depicts core activities surrounded by lifecycle and usage activities, contained within the strictures of governance.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "oop",

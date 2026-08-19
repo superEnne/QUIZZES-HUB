@@ -30,6 +30,11 @@ function questionPoints(q) {
   return 1;
 }
 
+/** Types that render + score like multiple choice (option buttons + answer index). */
+function isChoiceType(type) {
+  return type === "mc" || type === "true_false";
+}
+
 /** Total items in a set of questions. */
 function totalPointsOf(qs) {
   return qs.reduce((sum, q) => sum + questionPoints(q), 0);
@@ -76,6 +81,7 @@ function TypeBadge({ type }) {
   const map = {
     mc:             { label: "Multiple Choice", color: "#7c3aed", bg: "#f3e8ff" },
     identification: { label: "Identification",  color: "#0369a1", bg: "#e0f2fe" },
+    true_false:     { label: "True or False",   color: "#c2410c", bg: "#ffedd5" },
     enumeration:    { label: "Enumeration",     color: "#047857", bg: "#d1fae5" },
     output_tracing: { label: "Output Tracing",  color: "#b45309", bg: "#fef3c7" },
     fill_code:      { label: "Fill the Code",   color: "#be185d", bg: "#fce7f3" },
@@ -899,7 +905,7 @@ export default function QuizPage() {
     const ok = oi === q.answer;
     if (ok) setScore(s => s + 1);
     setAnswers(prev => [...prev, {
-      type: "mc",
+      type: q.type || "mc",
       question: q.question,
       selected: oi,
       correct: q.answer,
@@ -1130,7 +1136,7 @@ export default function QuizPage() {
                 </div>
 
                 {/* MC review */}
-                {a.type === "mc" && a.options && (
+                {isChoiceType(a.type || "mc") && a.options && (
                   <div style={{ paddingLeft: "2.1rem", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                     {a.options.map((opt, oi) => {
                       const isCorrect = oi === a.correct;
@@ -1338,7 +1344,7 @@ export default function QuizPage() {
           </p>
 
           {/* ── Multiple Choice ── */}
-          {qType === "mc" && (
+          {isChoiceType(qType) && (
             <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
               {q.options.map((opt, oi) => {
                 let cls = "quiz-option";
@@ -1419,7 +1425,7 @@ export default function QuizPage() {
         {/* Next button / MC feedback bar */}
         {qAnswered && (
           <div className="quiz-action-row anim-fade-up" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
-            {qType === "mc" && (
+            {isChoiceType(qType) && (
               <div style={{
                 display: "flex", alignItems: "center", gap: "0.5rem",
                 padding: "0.6rem 1rem",
@@ -1436,7 +1442,7 @@ export default function QuizPage() {
                 }
               </div>
             )}
-            {qType !== "mc" && <div />}
+            {!isChoiceType(qType) && <div />}
             <button className="btn-primary" onClick={handleNext} style={{ padding: "0.7rem 1.75rem", fontSize: "0.875rem" }}>
               {current + 1 >= shuffled.length ? "See Results" : "Next"}
             </button>
