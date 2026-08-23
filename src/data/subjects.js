@@ -2870,7 +2870,2072 @@ export const subjects = [
     "name": "Computer Programming 3 Lec",
     "description": "Covers advanced programming concepts, data structures, and algorithm design.",
     "color": "#7c3aed",
-    "reviewers": []
+    "reviewers": [
+      {
+        "id": "comprog3_quiz1_ch1",
+        "title": "Quiz 1 — Chapter 1 Reviewer",
+        "description": "215-item reviewer on Chapter One: Introduction to Visual Basic .NET — 110 identification items (definition → term) and 105 true-or-false items covering VB.NET and the .NET Framework, solutions/projects/files, the IDE windows, form and control properties, the Format menu, and events, procedures, and code.",
+        "quizletLink": null,
+        "questions": [
+          {
+            "id": 1,
+            "type": "identification",
+            "question": "An object-oriented computer programming language implemented on the .NET Framework.",
+            "answer": "VB.NET",
+            "altAnswers": [
+              "Visual Basic .NET",
+              "VB.Net",
+              "Visual Basic.NET",
+              "VB .NET"
+            ]
+          },
+          {
+            "id": 2,
+            "type": "identification",
+            "question": "The Microsoft framework that implements VB.NET and provides the libraries that VB.NET has full access to.",
+            "answer": ".NET Framework",
+            "altAnswers": [
+              ".Net Framework",
+              "NET Framework",
+              "Dot Net Framework"
+            ]
+          },
+          {
+            "id": 3,
+            "type": "identification",
+            "question": "Everything in VB.NET is one of these — it includes all of the primitive types (Short, Integer, Long, String, Boolean, etc.), user-defined types, events, and even assemblies. It is also defined as an instance with behaviors and attributes.",
+            "answer": "Object"
+          },
+          {
+            "id": 4,
+            "type": "identification",
+            "question": "The base class from which all objects in VB.NET inherit.",
+            "answer": "Object",
+            "altAnswers": [
+              "Object base class",
+              "The Object class"
+            ]
+          },
+          {
+            "id": 5,
+            "type": "identification",
+            "question": "The basic built-in data types of VB.NET such as Short, Integer, Long, String, and Boolean.",
+            "answer": "Primitive types",
+            "altAnswers": [
+              "Primitive type",
+              "Primitives"
+            ]
+          },
+          {
+            "id": 6,
+            "type": "identification",
+            "question": "The Integrated Development Environment (IDE) used for VB.NET.",
+            "answer": "Visual Studio 2017",
+            "altAnswers": [
+              "Microsoft Visual Studio 2017",
+              "Visual Studio 2017 Professional"
+            ]
+          },
+          {
+            "id": 7,
+            "type": "identification",
+            "question": "A Windows application that has a Windows user interface; it typically closes automatically and does not usually contain an Exit button.",
+            "answer": "Splash screen",
+            "altAnswers": [
+              "Splash Screen"
+            ]
+          },
+          {
+            "id": 8,
+            "type": "identification",
+            "question": "An application composed of solutions, projects, and files, and which has a Windows user interface.",
+            "answer": "Windows application",
+            "altAnswers": [
+              "Windows app"
+            ]
+          },
+          {
+            "id": 9,
+            "type": "identification",
+            "question": "A container that stores the application's projects and files; it can contain several projects.",
+            "answer": "Solution"
+          },
+          {
+            "id": 10,
+            "type": "identification",
+            "question": "A container storing associated files.",
+            "answer": "Project"
+          },
+          {
+            "id": 11,
+            "type": "identification",
+            "question": "A file containing program instructions (code).",
+            "answer": "Source file"
+          },
+          {
+            "id": 12,
+            "type": "identification",
+            "question": "A file that contains the code associated with a form.",
+            "answer": "Form file"
+          },
+          {
+            "id": 13,
+            "type": "identification",
+            "question": "The file where the first form's code is stored.",
+            "answer": "Form1.vb",
+            "altAnswers": [
+              "Form1"
+            ]
+          },
+          {
+            "id": 14,
+            "type": "identification",
+            "question": "The file where the second form's code is stored.",
+            "answer": "Form2.vb",
+            "altAnswers": [
+              "Form2"
+            ]
+          },
+          {
+            "id": 15,
+            "type": "identification",
+            "question": "The file extension in which names of solution files end.",
+            "answer": ".sln",
+            "altAnswers": [
+              "sln"
+            ]
+          },
+          {
+            "id": 16,
+            "type": "identification",
+            "question": "The file name extension of an executable file.",
+            "answer": ".exe",
+            "altAnswers": [
+              "exe"
+            ]
+          },
+          {
+            "id": 17,
+            "type": "identification",
+            "question": "A file that can be run outside of the IDE; its file name ends with .exe and it is automatically created when starting a Visual Basic application.",
+            "answer": "Executable file"
+          },
+          {
+            "id": 18,
+            "type": "identification",
+            "question": "The project file that contains imported images.",
+            "answer": "Resource file"
+          },
+          {
+            "id": 19,
+            "type": "identification",
+            "question": "The window shown on the Microsoft Visual Studio 2017 Professional startup screen.",
+            "answer": "Start Page window",
+            "altAnswers": [
+              "Start Page",
+              "Start Page Window"
+            ]
+          },
+          {
+            "id": 20,
+            "type": "identification",
+            "question": "The window used to create the graphical user interface (GUI).",
+            "answer": "Windows Form Designer window",
+            "altAnswers": [
+              "Windows Form Designer"
+            ]
+          },
+          {
+            "id": 21,
+            "type": "identification",
+            "question": "The window that displays the list of projects contained in the current solution, and the items contained in each project.",
+            "answer": "Solution Explorer window",
+            "altAnswers": [
+              "Solution Explorer"
+            ]
+          },
+          {
+            "id": 22,
+            "type": "identification",
+            "question": "The window that lists an object's properties.",
+            "answer": "Properties window",
+            "altAnswers": [
+              "Properties Window"
+            ]
+          },
+          {
+            "id": 23,
+            "type": "identification",
+            "question": "The window that contains the tools for designing the user interface; each tool represents a class.",
+            "answer": "Toolbox window",
+            "altAnswers": [
+              "Toolbox"
+            ]
+          },
+          {
+            "id": 24,
+            "type": "identification",
+            "question": "The window that provides templates for creating event procedures.",
+            "answer": "Code Editor window",
+            "altAnswers": [
+              "Code Editor"
+            ]
+          },
+          {
+            "id": 25,
+            "type": "identification",
+            "question": "The window that specifies the startup form or executable code to be run.",
+            "answer": "Project Designer window",
+            "altAnswers": [
+              "Project Designer"
+            ]
+          },
+          {
+            "id": 26,
+            "type": "identification",
+            "question": "A special area below the form design area in the IDE that stores controls not visible in the user interface at run time.",
+            "answer": "Component tray"
+          },
+          {
+            "id": 27,
+            "type": "identification",
+            "question": "The button clicked on a window (such as the Solution Explorer window) to minimize the window to a tab.",
+            "answer": "Auto Hide (push-pin) button",
+            "altAnswers": [
+              "Auto Hide button",
+              "Auto Hide",
+              "Push-pin button",
+              "Push pin button"
+            ]
+          },
+          {
+            "id": 28,
+            "type": "identification",
+            "question": "The button in the Solution Explorer window used to display all files of the project (Folder View).",
+            "answer": "Show All Files button",
+            "altAnswers": [
+              "Show All Files"
+            ]
+          },
+          {
+            "id": 29,
+            "type": "identification",
+            "question": "The tab in the Project Designer window used to specify the startup form.",
+            "answer": "Application tab",
+            "altAnswers": [
+              "Application"
+            ]
+          },
+          {
+            "id": 30,
+            "type": "identification",
+            "question": "Lists the tasks associated with the picture box; it is used to import an image into the project.",
+            "answer": "Task box"
+          },
+          {
+            "id": 31,
+            "type": "identification",
+            "question": "Clicking View on the menu bar and then clicking Properties Window — or mousing over the Solution Explorer tab when it is auto-hidden.",
+            "answer": "Opening a window in the IDE",
+            "altAnswers": [
+              "Opening a window",
+              "How to open a window"
+            ]
+          },
+          {
+            "id": 32,
+            "type": "identification",
+            "question": "Clicking the Close button on the window's title bar.",
+            "answer": "Closing a window in the IDE",
+            "altAnswers": [
+              "Closing a window",
+              "How to close a window"
+            ]
+          },
+          {
+            "id": 33,
+            "type": "identification",
+            "question": "The part of the Properties window that contains the name of the selected object.",
+            "answer": "Object box"
+          },
+          {
+            "id": 34,
+            "type": "identification",
+            "question": "The part of the Properties window that helps identify and access properties.",
+            "answer": "Properties list"
+          },
+          {
+            "id": 35,
+            "type": "identification",
+            "question": "The part of the Properties window that shows the current values of properties.",
+            "answer": "Settings box"
+          },
+          {
+            "id": 36,
+            "type": "identification",
+            "question": "The part of the Properties window that displays a description of the selected property (for example, \"The text associated with the control.\").",
+            "answer": "Description pane"
+          },
+          {
+            "id": 37,
+            "type": "identification",
+            "question": "The button in the Properties window that lists the properties by category.",
+            "answer": "Categorized button",
+            "altAnswers": [
+              "Categorized"
+            ]
+          },
+          {
+            "id": 38,
+            "type": "identification",
+            "question": "The button clicked to list the properties alphabetically.",
+            "answer": "Alphabetical button",
+            "altAnswers": [
+              "Alphabetical"
+            ]
+          },
+          {
+            "id": 39,
+            "type": "identification",
+            "question": "The foundation for the user interface in a Windows application; you create the UI by adding objects such as buttons and text boxes to it.",
+            "answer": "Windows Form object",
+            "altAnswers": [
+              "Form",
+              "Windows Form"
+            ]
+          },
+          {
+            "id": 40,
+            "type": "identification",
+            "question": "The part of the form that contains the default caption, as well as the minimize, maximize, and close buttons.",
+            "answer": "Title bar"
+          },
+          {
+            "id": 41,
+            "type": "identification",
+            "question": "Attributes of an object that determine its appearance and behavior.",
+            "answer": "Properties",
+            "altAnswers": [
+              "Property"
+            ]
+          },
+          {
+            "id": 42,
+            "type": "identification",
+            "question": "Specifies the attributes and behaviors.",
+            "answer": "Class definition"
+          },
+          {
+            "id": 43,
+            "type": "identification",
+            "question": "Code defining a group of classes.",
+            "answer": "Namespace"
+          },
+          {
+            "id": 44,
+            "type": "identification",
+            "question": "Specifies the hierarchy of namespaces, as in System.Windows.Forms.Form.",
+            "answer": "Dot member access operator",
+            "altAnswers": [
+              "Dot member access",
+              "Dot operator"
+            ]
+          },
+          {
+            "id": 45,
+            "type": "identification",
+            "question": "The property that refers to the object in code; each object has a unique one, it must begin with a letter, and it contains only letters, numbers, and underscores.",
+            "answer": "Name property",
+            "altAnswers": [
+              "Name"
+            ]
+          },
+          {
+            "id": 46,
+            "type": "identification",
+            "question": "A naming convention in which the first three characters represent the object's type and the remaining characters represent the object's purpose, as in frmCalculateTaxes.",
+            "answer": "Hungarian notation"
+          },
+          {
+            "id": 47,
+            "type": "identification",
+            "question": "The style in which a name such as frmCalculateTaxes is written (named for the camel's hump).",
+            "answer": "Camel case",
+            "altAnswers": [
+              "Camel casing",
+              "camelCase"
+            ]
+          },
+          {
+            "id": 48,
+            "type": "identification",
+            "question": "The property that controls the text displayed in the form's title bar; it also appears on the application's taskbar button, and its default value is Form1.",
+            "answer": "Text property",
+            "altAnswers": [
+              "Text"
+            ]
+          },
+          {
+            "id": 49,
+            "type": "identification",
+            "question": "The property that determines the form's initial position on the screen.",
+            "answer": "StartPosition property",
+            "altAnswers": [
+              "StartPosition"
+            ]
+          },
+          {
+            "id": 50,
+            "type": "identification",
+            "question": "The property that determines the type, style, and size of the font used on the form.",
+            "answer": "Font property",
+            "altAnswers": [
+              "Font"
+            ]
+          },
+          {
+            "id": 51,
+            "type": "identification",
+            "question": "Indicates the general shape of the characters.",
+            "answer": "Font"
+          },
+          {
+            "id": 52,
+            "type": "identification",
+            "question": "The unit in which font size is measured.",
+            "answer": "Point",
+            "altAnswers": [
+              "Points"
+            ]
+          },
+          {
+            "id": 53,
+            "type": "identification",
+            "question": "The property expressed as two numbers separated by a comma and a space, where the first number is the width in pixels and the second is the height in pixels.",
+            "answer": "Size property",
+            "altAnswers": [
+              "Size"
+            ]
+          },
+          {
+            "id": 54,
+            "type": "identification",
+            "question": "The property that determines the form's background color.",
+            "answer": "BackColor property",
+            "altAnswers": [
+              "BackColor"
+            ]
+          },
+          {
+            "id": 55,
+            "type": "identification",
+            "question": "The property that specifies the location of the control on the form; it includes an X value and a Y value.",
+            "answer": "Location property",
+            "altAnswers": [
+              "Location"
+            ]
+          },
+          {
+            "id": 56,
+            "type": "identification",
+            "question": "The property that determines the border style of a form.",
+            "answer": "FormBorderStyle property",
+            "altAnswers": [
+              "FormBorderStyle"
+            ]
+          },
+          {
+            "id": 57,
+            "type": "identification",
+            "question": "The FormBorderStyle setting that allows the user to change the form's size by dragging its borders at run time.",
+            "answer": "Sizable"
+          },
+          {
+            "id": 58,
+            "type": "identification",
+            "question": "The FormBorderStyle setting that produces a fixed, thin border line.",
+            "answer": "FixedSingle",
+            "altAnswers": [
+              "Fixed Single"
+            ]
+          },
+          {
+            "id": 59,
+            "type": "identification",
+            "question": "The FormBorderStyle setting that produces no border.",
+            "answer": "None"
+          },
+          {
+            "id": 60,
+            "type": "identification",
+            "question": "The property that determines whether the Minimize button appears on the form's title bar.",
+            "answer": "MinimizeBox property",
+            "altAnswers": [
+              "MinimizeBox"
+            ]
+          },
+          {
+            "id": 61,
+            "type": "identification",
+            "question": "The property that determines whether the Maximize button appears on the form's title bar.",
+            "answer": "MaximizeBox property",
+            "altAnswers": [
+              "MaximizeBox"
+            ]
+          },
+          {
+            "id": 62,
+            "type": "identification",
+            "question": "The property that determines whether the title bar appears on the form.",
+            "answer": "ControlBox property",
+            "altAnswers": [
+              "ControlBox"
+            ]
+          },
+          {
+            "id": 63,
+            "type": "identification",
+            "question": "Indicates that the form has been changed since the last time it was saved.",
+            "answer": "Asterisk (*)",
+            "altAnswers": [
+              "Asterisk",
+              "*"
+            ]
+          },
+          {
+            "id": 64,
+            "type": "identification",
+            "question": "The handles dragged to size a form after selecting it; alternatively you may select the object and press and hold the Shift key as you press the desired arrow key.",
+            "answer": "Sizing handles",
+            "altAnswers": [
+              "Sizing handle"
+            ]
+          },
+          {
+            "id": 65,
+            "type": "identification",
+            "question": "A pattern from which an object is created.",
+            "answer": "Class"
+          },
+          {
+            "id": 66,
+            "type": "identification",
+            "question": "GUI objects that appear on a form; they are instantiated using tools from the toolbox.",
+            "answer": "Controls",
+            "altAnswers": [
+              "Control"
+            ]
+          },
+          {
+            "id": 67,
+            "type": "identification",
+            "question": "The tool used to create a label control.",
+            "answer": "Label tool"
+          },
+          {
+            "id": 68,
+            "type": "identification",
+            "question": "Displays text that cannot be edited at run time; it provides run-time information or descriptive text for a control.",
+            "answer": "Label control",
+            "altAnswers": [
+              "Label"
+            ]
+          },
+          {
+            "id": 69,
+            "type": "identification",
+            "question": "The tool that creates a picture box control.",
+            "answer": "PictureBox tool",
+            "altAnswers": [
+              "Picture box tool"
+            ]
+          },
+          {
+            "id": 70,
+            "type": "identification",
+            "question": "Displays an image on a form.",
+            "answer": "Picture box control",
+            "altAnswers": [
+              "PictureBox control",
+              "Picture box",
+              "PictureBox"
+            ]
+          },
+          {
+            "id": 71,
+            "type": "identification",
+            "question": "The tool used to create a button control.",
+            "answer": "Button tool"
+          },
+          {
+            "id": 72,
+            "type": "identification",
+            "question": "Used to perform an action when clicked; the OK and Cancel buttons are examples.",
+            "answer": "Button control",
+            "altAnswers": [
+              "Button"
+            ]
+          },
+          {
+            "id": 73,
+            "type": "identification",
+            "question": "The tool used to create a timer control.",
+            "answer": "Timer tool"
+          },
+          {
+            "id": 74,
+            "type": "identification",
+            "question": "Processes code at regular time intervals; it does not appear on the user interface at run time and is used to remove the splash screen.",
+            "answer": "Timer control",
+            "altAnswers": [
+              "Timer"
+            ]
+          },
+          {
+            "id": 75,
+            "type": "identification",
+            "question": "The timer property specified in milliseconds; it is the frequency of Elapsed events.",
+            "answer": "Interval property",
+            "altAnswers": [
+              "Interval"
+            ]
+          },
+          {
+            "id": 76,
+            "type": "identification",
+            "question": "The property that allows the timer to run if set to True.",
+            "answer": "Enabled property",
+            "altAnswers": [
+              "Enabled"
+            ]
+          },
+          {
+            "id": 77,
+            "type": "identification",
+            "question": "Occurs each time an interval has elapsed, provided that the timer is running (enabled).",
+            "answer": "Tick event",
+            "altAnswers": [
+              "Tick"
+            ]
+          },
+          {
+            "id": 78,
+            "type": "identification",
+            "question": "Provides options to manipulate form controls.",
+            "answer": "Format menu",
+            "altAnswers": [
+              "Format"
+            ]
+          },
+          {
+            "id": 79,
+            "type": "identification",
+            "question": "The Format menu option that aligns selected controls by their left, right, top, or bottom borders.",
+            "answer": "Align"
+          },
+          {
+            "id": 80,
+            "type": "identification",
+            "question": "The Format menu option that makes the width and/or height of selected controls uniform.",
+            "answer": "Make Same Size"
+          },
+          {
+            "id": 81,
+            "type": "identification",
+            "question": "The Format menu option that centers one or more controls.",
+            "answer": "Center in Form"
+          },
+          {
+            "id": 82,
+            "type": "identification",
+            "question": "The first control selected, whose size or location you want to match.",
+            "answer": "Reference control"
+          },
+          {
+            "id": 83,
+            "type": "identification",
+            "question": "Displays when the application is first started.",
+            "answer": "Startup form"
+          },
+          {
+            "id": 84,
+            "type": "identification",
+            "question": "The menu-bar way to start an application in the IDE: click Debug on the menu bar, then click this option.",
+            "answer": "Start Debugging"
+          },
+          {
+            "id": 85,
+            "type": "identification",
+            "question": "The key pressed to start an application in the IDE.",
+            "answer": "F5",
+            "altAnswers": [
+              "F5 key",
+              "The F5 key"
+            ]
+          },
+          {
+            "id": 86,
+            "type": "identification",
+            "question": "The common means of doing this are the Exit option on the File menu and an Exit button.",
+            "answer": "Exiting a Windows application",
+            "altAnswers": [
+              "Exiting an application",
+              "Exit"
+            ]
+          },
+          {
+            "id": 87,
+            "type": "identification",
+            "question": "A user action such as double-clicking.",
+            "answer": "Event"
+          },
+          {
+            "id": 88,
+            "type": "identification",
+            "question": "A set of program instructions that are processed when an event occurs.",
+            "answer": "Event procedure"
+          },
+          {
+            "id": 89,
+            "type": "identification",
+            "question": "Lists the names of objects included in the UI.",
+            "answer": "Class Name list box",
+            "altAnswers": [
+              "Class Name list",
+              "Class Name"
+            ]
+          },
+          {
+            "id": 90,
+            "type": "identification",
+            "question": "Lists the appropriate events for the selected object.",
+            "answer": "Method Name list box",
+            "altAnswers": [
+              "Method Name list",
+              "Method Name"
+            ]
+          },
+          {
+            "id": 91,
+            "type": "identification",
+            "question": "Select the class name first and then select the method name.",
+            "answer": "Selecting a control's event in the Code Editor window",
+            "altAnswers": [
+              "Selecting a control's event"
+            ]
+          },
+          {
+            "id": 92,
+            "type": "identification",
+            "question": "The rules of a programming language.",
+            "answer": "Syntax"
+          },
+          {
+            "id": 93,
+            "type": "identification",
+            "question": "The first line in the code template for an event procedure.",
+            "answer": "Procedure header"
+          },
+          {
+            "id": 94,
+            "type": "identification",
+            "question": "The last line in the code template for an event procedure.",
+            "answer": "Procedure footer"
+          },
+          {
+            "id": 95,
+            "type": "identification",
+            "question": "A word that has a special meaning in a programming language; it is color-coded in the IDE.",
+            "answer": "Keyword"
+          },
+          {
+            "id": 96,
+            "type": "identification",
+            "question": "A block of code that performs a specific task.",
+            "answer": "Sub procedure",
+            "altAnswers": [
+              "Sub"
+            ]
+          },
+          {
+            "id": 97,
+            "type": "identification",
+            "question": "The keyword that starts a sub procedure.",
+            "answer": "Sub"
+          },
+          {
+            "id": 98,
+            "type": "identification",
+            "question": "The keyword that restricts the use of the procedure to the form where it appears.",
+            "answer": "Private"
+          },
+          {
+            "id": 99,
+            "type": "identification",
+            "question": "The keyword that indicates the end of a sub procedure.",
+            "answer": "End Sub"
+          },
+          {
+            "id": 100,
+            "type": "identification",
+            "question": "Includes the object name and the event name, as in btnExit_Click.",
+            "answer": "Event sub procedure name",
+            "altAnswers": [
+              "Event procedure name"
+            ]
+          },
+          {
+            "id": 101,
+            "type": "identification",
+            "question": "A predefined procedure that can be called (or invoked) when needed.",
+            "answer": "Method"
+          },
+          {
+            "id": 102,
+            "type": "identification",
+            "question": "Causes the current form to close; if it is the only form in the application, the application terminates.",
+            "answer": "Me.Close() method",
+            "altAnswers": [
+              "Me.Close()",
+              "Me.Close"
+            ]
+          },
+          {
+            "id": 103,
+            "type": "identification",
+            "question": "Provides appropriate selections as pop-up lists — type the first few letters of the choice, then use the arrow keys to select an item in the list.",
+            "answer": "IntelliSense feature",
+            "altAnswers": [
+              "IntelliSense"
+            ]
+          },
+          {
+            "id": 104,
+            "type": "identification",
+            "question": "The box clicked to collapse code in the Code Editor window.",
+            "answer": "Minus box",
+            "altAnswers": [
+              "Minus",
+              "- box"
+            ]
+          },
+          {
+            "id": 105,
+            "type": "identification",
+            "question": "The box clicked to expand code in the Code Editor window.",
+            "answer": "Plus box",
+            "altAnswers": [
+              "Plus",
+              "+ box"
+            ]
+          },
+          {
+            "id": 106,
+            "type": "identification",
+            "question": "Should be done at regular intervals, for example every 10 minutes, by clicking File and then Save All.",
+            "answer": "Saving a Solution",
+            "altAnswers": [
+              "Saving the solution",
+              "Save All"
+            ]
+          },
+          {
+            "id": 107,
+            "type": "identification",
+            "question": "When this is done, all projects and files contained within are closed as well.",
+            "answer": "Closing the Current Solution",
+            "altAnswers": [
+              "Closing the current solution",
+              "Close Solution"
+            ]
+          },
+          {
+            "id": 108,
+            "type": "identification",
+            "question": "The option that just closes the IDE designer window, as opposed to the Close Solution option.",
+            "answer": "Close option",
+            "altAnswers": [
+              "Close"
+            ]
+          },
+          {
+            "id": 109,
+            "type": "identification",
+            "question": "Only one can be open at any one time — the currently open one closes before another opens. You do this by clicking File, then Open Project.",
+            "answer": "Opening an Existing Solution",
+            "altAnswers": [
+              "Opening an existing solution",
+              "Open Project"
+            ]
+          },
+          {
+            "id": 110,
+            "type": "identification",
+            "question": "Done by clicking File, then New Project.",
+            "answer": "Creating an application",
+            "altAnswers": [
+              "Creating a new application",
+              "New Project"
+            ]
+          },
+          {
+            "id": 111,
+            "type": "true_false",
+            "question": "VB.NET is an object-oriented computer programming language implemented on the .NET Framework.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 112,
+            "type": "true_false",
+            "question": "Not everything in VB.NET is an object; primitive types such as Integer and Boolean are excluded.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Everything in VB.NET is an object, including all of the primitive types."
+          },
+          {
+            "id": 113,
+            "type": "true_false",
+            "question": "All objects in VB.NET inherit from the base class Object.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 114,
+            "type": "true_false",
+            "question": "Because VB.NET is implemented by Microsoft's .NET Framework, it has full access to all the libraries in the .NET Framework.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 115,
+            "type": "true_false",
+            "question": "VB.Net is a structured language and it produces efficient programs.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 116,
+            "type": "true_false",
+            "question": "VB.Net can only be compiled on a single computer platform.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "It can be compiled on a variety of computer platforms."
+          },
+          {
+            "id": 117,
+            "type": "true_false",
+            "question": "Automatic Garbage Collection is one of the strong programming features of VB.Net.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 118,
+            "type": "true_false",
+            "question": "Simple Multithreading is one of the strong programming features of VB.Net.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 119,
+            "type": "true_false",
+            "question": "The Integrated Development Environment (IDE) used for VB.Net in this course is Visual Studio 2017.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 120,
+            "type": "true_false",
+            "question": "A splash screen is a Windows application and has a Windows user interface.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 121,
+            "type": "true_false",
+            "question": "Windows applications are composed of solutions, projects, and files.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 122,
+            "type": "true_false",
+            "question": "A solution can contain several projects.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 123,
+            "type": "true_false",
+            "question": "A project is a container that stores the application's solutions and files.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "A project is a container storing associated files; a SOLUTION is the container that stores the application's projects and files."
+          },
+          {
+            "id": 124,
+            "type": "true_false",
+            "question": "A source file is a file containing program instructions (code).",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 125,
+            "type": "true_false",
+            "question": "A form file contains the code associated with a form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 126,
+            "type": "true_false",
+            "question": "The first form's code is stored in Form2.vb.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The first form's code is stored in Form1.vb."
+          },
+          {
+            "id": 127,
+            "type": "true_false",
+            "question": "Names of solution files end with .sln.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 128,
+            "type": "true_false",
+            "question": "To open a window in the IDE, you may click View on the menu bar and then click Properties Window.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 129,
+            "type": "true_false",
+            "question": "To minimize a window to a tab, you click the Auto Hide (push-pin) button.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 130,
+            "type": "true_false",
+            "question": "The Close button on a window's title bar is used to close the window.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 131,
+            "type": "true_false",
+            "question": "The Windows Form Designer window is used to create the graphical user interface (GUI).",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 132,
+            "type": "true_false",
+            "question": "The Solution Explorer window displays the list of projects contained in the current solution and the items contained in each project.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 133,
+            "type": "true_false",
+            "question": "The Windows Form object is the foundation for the user interface in a Windows application.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 134,
+            "type": "true_false",
+            "question": "The title bar of a form contains a default caption as well as the minimize, maximize, and close buttons.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 135,
+            "type": "true_false",
+            "question": "Properties are attributes of an object that determine its appearance and behavior.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 136,
+            "type": "true_false",
+            "question": "The Object box contains the current values of properties.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The Object box contains the name of the selected object."
+          },
+          {
+            "id": 137,
+            "type": "true_false",
+            "question": "The Settings box shows the current values of properties.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 138,
+            "type": "true_false",
+            "question": "The Properties list helps identify and access properties.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 139,
+            "type": "true_false",
+            "question": "Clicking the Alphabetical button lists the form's properties alphabetically.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 140,
+            "type": "true_false",
+            "question": "A class definition specifies the attributes and behaviors.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 141,
+            "type": "true_false",
+            "question": "A namespace is code defining a group of classes.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 142,
+            "type": "true_false",
+            "question": "The dot member access operator specifies the hierarchy of namespaces, as in System.Windows.Forms.Form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 143,
+            "type": "true_false",
+            "question": "The Name property refers to the object in code and each object has a unique name.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 144,
+            "type": "true_false",
+            "question": "An object's name may begin with a number.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "It must begin with a letter."
+          },
+          {
+            "id": 145,
+            "type": "true_false",
+            "question": "An object's name contains only letters, numbers, and underscores.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 146,
+            "type": "true_false",
+            "question": "In Hungarian notation, the first three characters represent the object's purpose and the remaining characters represent the object's type.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The first three characters represent the object's TYPE and the remaining characters represent the object's PURPOSE."
+          },
+          {
+            "id": 147,
+            "type": "true_false",
+            "question": "frmCalculateTaxes is an example of a name written using camel case.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 148,
+            "type": "true_false",
+            "question": "The Text property controls the text displayed in the form's title bar and also appears on the application's taskbar button.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 149,
+            "type": "true_false",
+            "question": "The default value of the form's Text property is Form1, and it should always be changed to a meaningful value.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 150,
+            "type": "true_false",
+            "question": "The StartPosition property determines the form's initial position on the screen.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 151,
+            "type": "true_false",
+            "question": "A splash screen's StartPosition typically appears in the middle of the screen.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 152,
+            "type": "true_false",
+            "question": "The Font property determines the type, style, and size of the font used on the form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 153,
+            "type": "true_false",
+            "question": "Font size is measured in pixels.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Size is measured in points."
+          },
+          {
+            "id": 154,
+            "type": "true_false",
+            "question": "In the Size property, the first number represents the height and the second number represents the width.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The first number is the width in pixels; the second is the height in pixels."
+          },
+          {
+            "id": 155,
+            "type": "true_false",
+            "question": "The BackColor property determines the form's background color.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 156,
+            "type": "true_false",
+            "question": "You can size a form by selecting it and dragging its sizing handles, or by selecting the object and pressing and holding the Shift key as you press the desired arrow key.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 157,
+            "type": "true_false",
+            "question": "An asterisk indicates that the form has been changed since the last time it was saved.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 158,
+            "type": "true_false",
+            "question": "It is recommended to save the solution at regular intervals, for example, every 10 minutes.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 159,
+            "type": "true_false",
+            "question": "When you close the current solution, all projects and files contained within are also closed.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 160,
+            "type": "true_false",
+            "question": "The Close option closes the entire solution, while the Close Solution option only closes the IDE designer window.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "It is the reverse: the Close option just closes the IDE designer window."
+          },
+          {
+            "id": 161,
+            "type": "true_false",
+            "question": "More than one solution can be open at any one time.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Only one solution can be open at any one time."
+          },
+          {
+            "id": 162,
+            "type": "true_false",
+            "question": "To open an existing solution, you click File, then Open Project.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 163,
+            "type": "true_false",
+            "question": "A class is a pattern from which an object is created.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 164,
+            "type": "true_false",
+            "question": "An object is an instance with behaviors and attributes.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 165,
+            "type": "true_false",
+            "question": "The toolbox contains the tools for designing the user interface, and each tool represents a class.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 166,
+            "type": "true_false",
+            "question": "Controls are GUI objects that appear on a form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 167,
+            "type": "true_false",
+            "question": "A label control displays text that CAN be edited at run time.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "A label control displays text that CANNOT be edited at run time."
+          },
+          {
+            "id": 168,
+            "type": "true_false",
+            "question": "The Location property specifies the location of a control on the form and includes an X value and a Y value.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 169,
+            "type": "true_false",
+            "question": "A control inherits the Font attribute of the form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 170,
+            "type": "true_false",
+            "question": "You cannot set the properties of multiple controls simultaneously.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "You can set the properties of multiple controls simultaneously."
+          },
+          {
+            "id": 171,
+            "type": "true_false",
+            "question": "The Format menu's Make Same Size option makes the width and/or height of selected controls uniform.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 172,
+            "type": "true_false",
+            "question": "The Center in Form option centers one or more controls.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 173,
+            "type": "true_false",
+            "question": "The reference control is the last control you select.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The reference control is the FIRST control you select, the one whose size or location you want to match."
+          },
+          {
+            "id": 174,
+            "type": "true_false",
+            "question": "The task box lists the tasks associated with the picture box and can be used to import an image into the project.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 175,
+            "type": "true_false",
+            "question": "The project's resource file contains imported images.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 176,
+            "type": "true_false",
+            "question": "A picture box control displays an image on a form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 177,
+            "type": "true_false",
+            "question": "A button control is used to perform an action when clicked.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 178,
+            "type": "true_false",
+            "question": "The startup form displays when the application is first started.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 179,
+            "type": "true_false",
+            "question": "The Project Designer window specifies the startup form or executable code to be run.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 180,
+            "type": "true_false",
+            "question": "An executable file can be run outside of the IDE and its file name ends with .exe.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 181,
+            "type": "true_false",
+            "question": "The executable file is automatically created when starting a Visual Basic application.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 182,
+            "type": "true_false",
+            "question": "Pressing the F5 key is one way to start an application in the IDE.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 183,
+            "type": "true_false",
+            "question": "An event is a user action such as double-clicking.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 184,
+            "type": "true_false",
+            "question": "An event procedure is a set of program instructions that are processed when an event occurs.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 185,
+            "type": "true_false",
+            "question": "The Code Editor window provides templates for creating event procedures.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 186,
+            "type": "true_false",
+            "question": "Clicking the plus box collapses the code in the Code Editor window.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Clicking the plus box EXPANDS the code; the minus box collapses it."
+          },
+          {
+            "id": 187,
+            "type": "true_false",
+            "question": "The Class Name list box lists the appropriate events for the selected object.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The Class Name list box lists the names of objects included in the UI."
+          },
+          {
+            "id": 188,
+            "type": "true_false",
+            "question": "The Method Name list box lists the appropriate events for the selected object.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 189,
+            "type": "true_false",
+            "question": "To select a control's event in the Code Editor window, select the method name first and then select the class name.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Select the class name first and then select the method name."
+          },
+          {
+            "id": 190,
+            "type": "true_false",
+            "question": "Syntax refers to the rules of a programming language.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 191,
+            "type": "true_false",
+            "question": "The procedure header is the first line in the code template for an event procedure.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 192,
+            "type": "true_false",
+            "question": "The procedure footer is the last line in the code template for an event procedure.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 193,
+            "type": "true_false",
+            "question": "A keyword is a word that has a special meaning in a programming language and is color-coded in the IDE.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 194,
+            "type": "true_false",
+            "question": "A Sub procedure is a block of code that performs a specific task.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 195,
+            "type": "true_false",
+            "question": "The keyword Private restricts the use of the procedure to the form where it appears.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 196,
+            "type": "true_false",
+            "question": "End Sub indicates the end of a sub procedure.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 197,
+            "type": "true_false",
+            "question": "Event sub procedure names include the object name and the event name, such as btnExit_Click.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 198,
+            "type": "true_false",
+            "question": "A method is a predefined procedure that can be called (or invoked) when needed.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 199,
+            "type": "true_false",
+            "question": "The Me.Close() method causes the current form to close, and if it is the only form in the application, the application terminates.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 200,
+            "type": "true_false",
+            "question": "The IntelliSense feature provides appropriate selections as pop-up lists.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 201,
+            "type": "true_false",
+            "question": "Splash screens typically close automatically and do not usually contain an Exit button.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 202,
+            "type": "true_false",
+            "question": "The timer control is used to remove the splash screen.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 203,
+            "type": "true_false",
+            "question": "The timer control appears on the user interface at run time.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "It does not appear on the user interface at run time."
+          },
+          {
+            "id": 204,
+            "type": "true_false",
+            "question": "The timer control's Interval property is specified in seconds.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "The Interval property is specified in milliseconds."
+          },
+          {
+            "id": 205,
+            "type": "true_false",
+            "question": "The Enabled property allows the timer to run if set to True.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 206,
+            "type": "true_false",
+            "question": "The Tick event occurs each time an interval has elapsed, provided the timer is running.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 207,
+            "type": "true_false",
+            "question": "The component tray is a special area below the form design area in the IDE that stores controls not visible in the user interface at run time.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 208,
+            "type": "true_false",
+            "question": "The FormBorderStyle setting \"Sizable\" allows the user to change the form's size by dragging its borders at run time.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 209,
+            "type": "true_false",
+            "question": "The FormBorderStyle setting \"FixedSingle\" means no border.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "FixedSingle is a fixed, thin border line; \"None\" means no border."
+          },
+          {
+            "id": 210,
+            "type": "true_false",
+            "question": "The MinimizeBox property determines whether the Minimize button appears on the form's title bar.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 211,
+            "type": "true_false",
+            "question": "The MaximizeBox property determines whether the Maximize button appears on the form's title bar.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 212,
+            "type": "true_false",
+            "question": "The ControlBox property determines whether the title bar appears on the form.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 213,
+            "type": "true_false",
+            "question": "Splash screens typically contain a title bar.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 1,
+            "explanation": "Splash screens typically do NOT contain a title bar."
+          },
+          {
+            "id": 214,
+            "type": "true_false",
+            "question": "To remove the title bar, you delete the contents of the form's Text property.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          },
+          {
+            "id": 215,
+            "type": "true_false",
+            "question": "Visual Basic code is printed from the Code Editor window, and the user interface is printed from the designer window.",
+            "options": [
+              "TRUE",
+              "FALSE"
+            ],
+            "answer": 0,
+            "explanation": "This statement is correct as written in the module."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ipt1",

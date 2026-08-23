@@ -1,0 +1,819 @@
+================================================================================
+COMPROG3 - COMPUTER PROGRAMMING 3
+Programming with Visual Basic .NET
+CHAPTER ONE: INTRODUCTION TO VISUAL BASIC .NET
+QUIZ REVIEWER (Identification + True or False)
+================================================================================
+
+
+################################################################################
+PART I - TERMS AND DEFINITIONS (FOR IDENTIFICATION)
+################################################################################
+
+--------------------------------------------------------------------------------
+A. VB.NET AND THE .NET FRAMEWORK
+--------------------------------------------------------------------------------
+
+1. VB.NET
+   - An object-oriented computer programming language implemented on the .NET
+     Framework.
+
+2. .NET Framework
+   - The Microsoft framework that implements VB.NET and provides the libraries
+     that VB.NET has full access to.
+
+3. Object
+   - Everything in VB.NET; includes all of the primitive types (Short, Integer,
+     Long, String, Boolean, etc.) and user-defined types, events, and even
+     assemblies. Also defined as an instance with behaviors and attributes.
+
+4. Object (base class)
+   - The base class from which all objects in VB.NET inherit.
+
+5. Primitive types
+   - The basic built-in data types of VB.NET such as Short, Integer, Long,
+     String, and Boolean.
+
+6. Integrated Development Environment (IDE) for VB.Net
+   - Visual Studio 2017.
+
+
+--------------------------------------------------------------------------------
+B. WINDOWS APPLICATION, SOLUTIONS, PROJECTS, AND FILES
+--------------------------------------------------------------------------------
+
+7. Splash screen
+    - A Windows application that has a Windows user interface; it typically
+      closes automatically and does not usually contain an Exit button.
+
+8. Windows application
+    - An application composed of solutions, projects, and files, and which has
+      a Windows user interface.
+
+9. Solution
+    - A container that stores the application's projects and files; it can
+      contain several projects.
+
+10. Project
+    - A container storing associated files.
+
+11. Source file
+    - A file containing program instructions (code).
+
+12. Form file
+    - A file that contains code associated with a form. The first form's code
+      is stored in Form1.vb, the second form's code in Form2.vb, and so on.
+
+13. Form1.vb
+    - The file where the first form's code is stored.
+
+14. Form2.vb
+    - The file where the second form's code is stored.
+
+15. .sln
+    - The file extension in which names of solution files end.
+
+16. .exe
+    - The file name extension of an executable file.
+
+17. Executable file
+    - A file that can be run outside of the IDE; its file name ends with .exe
+      and it is automatically created when starting a Visual Basic application.
+
+18. Resource file
+    - The project file that contains imported images.
+
+
+--------------------------------------------------------------------------------
+C. WINDOWS IN THE IDE
+--------------------------------------------------------------------------------
+
+19. Start Page Window
+    - The window shown on the Microsoft Visual Studio 2017 Professional startup
+      screen.
+
+20. Windows Form Designer window
+    - The window used to create the graphical user interface (GUI).
+
+21. Solution Explorer window
+    - The window that displays the list of projects contained in the current
+      solution, and the items contained in each project.
+
+22. Properties window
+    - The window that lists an object's properties.
+
+23. Toolbox window (or toolbox)
+    - The window that contains the tools for designing the user interface; each
+      tool represents a class.
+
+24. Code Editor window
+    - The window that provides templates for creating event procedures.
+
+25. Project Designer window
+    - The window that specifies the startup form or executable code to be run.
+
+26. Component tray
+    - A special area below the form design area in the IDE that stores controls
+      not visible in the user interface at run time.
+
+27. Auto Hide (push-pin) button
+    - The button clicked on a window (e.g., the Solution Explorer window) to
+      minimize the window to a tab.
+
+28. Show All Files button
+    - The button in the Solution Explorer window used to display all files of
+      the project (Folder View).
+
+29. Application tab
+    - The tab in the Project Designer window used to specify the startup form.
+
+30. Task box
+    - Lists the tasks associated with the picture box; used to import an image
+      into the project.
+
+31. Managing the windows in the IDE
+    - To OPEN a window: Click View on the menu bar, click Properties Window; or
+      mouseover the Solution Explorer tab if auto-hidden.
+    - To CLOSE a window: Use the Close button on the window's title bar.
+    - To MINIMIZE a window to a tab: Click the Auto Hide (push-pin) button on
+      the Solution Explorer window.
+
+
+--------------------------------------------------------------------------------
+D. PARTS OF THE PROPERTIES WINDOW
+--------------------------------------------------------------------------------
+
+32. Object box
+    - Contains the name of the selected object.
+
+33. Properties list
+    - Helps identify and access properties.
+
+34. Settings box
+    - Shows the current values of properties.
+
+35. Description pane
+    - The part of the Properties window that displays a description of the
+      selected property (e.g., "The text associated with the control.").
+
+36. Categorized button
+    - The button in the Properties window that lists the properties by category.
+
+37. Alphabetical button
+    - The button clicked to list the properties alphabetically.
+
+
+--------------------------------------------------------------------------------
+E. THE WINDOWS FORM AND ITS PROPERTIES
+--------------------------------------------------------------------------------
+
+38. Windows Form object (or Form)
+    - The foundation for the user interface in a Windows application; you create
+      the UI by adding objects such as buttons and text boxes to it.
+
+39. Title bar
+    - The part of the form that contains the default caption, as well as the
+      minimize, maximize, and close buttons.
+
+40. Properties
+    - Attributes of an object that determine its appearance and behavior.
+
+41. Class definition
+    - Specifies the attributes and behaviors.
+
+42. Namespace
+    - Code defining a group of classes.
+
+43. Dot member access operator
+    - Specifies the hierarchy of namespaces. Example:
+      System.Windows.Forms.Form
+
+44. Name property
+    - Refers to the object in code. Each object has a unique name, must begin
+      with a letter, and contains only letters, numbers, and underscores.
+
+45. Hungarian notation
+    - A naming convention in which the first three characters represent the
+      object's type and the remaining characters represent the object's purpose.
+      Example: frmCalculateTaxes
+
+46. Camel case
+    - The style in which a name is written (for camel's hump).
+      Example: frmCalculateTaxes
+
+47. Text property
+    - Controls the text displayed in the form's title bar; it also appears on
+      the application's taskbar button. Its default value is Form1 and it should
+      always be changed to a meaningful value.
+
+48. StartPosition property
+    - Determines the form's initial position on the screen. A splash screen's
+      StartPosition typically appears in the middle of the screen.
+
+49. Font property
+    - Determines the type, style, and size of the font used on the form.
+
+50. Font
+    - Indicates the general shape of the characters.
+
+51. Point
+    - The unit in which font size is measured.
+
+52. Size property
+    - Two numbers separated by a comma and a space; the first number represents
+      the width in pixels and the second number represents the height in pixels.
+
+53. BackColor property
+    - Determines the form's background color.
+
+54. Location property
+    - Specifies the location of the control on the form; includes an X value and
+      a Y value.
+
+55. FormBorderStyle property
+    - Determines the border style of a form.
+      * Sizable  - Allows the user to change the form's size by dragging its
+                   borders at run time
+      * FixedSingle - Fixed, thin border line
+      * None     - No border
+
+56. MinimizeBox property
+    - Determines whether the Minimize button appears on the form's title bar.
+
+57. MaximizeBox property
+    - Determines whether the Maximize button appears on the form's title bar.
+
+58. ControlBox property
+    - Determines whether the title bar appears on the form.
+
+59. Asterisk (*)
+    - Indicates that the form has been changed since the last time it was saved.
+
+60. Sizing handles
+    - The handles dragged to size a form after selecting it. (You may also select
+      the object and press and hold the Shift key as you press the desired arrow
+      key.)
+
+
+--------------------------------------------------------------------------------
+F. CLASSES, CONTROLS, AND TOOLS
+--------------------------------------------------------------------------------
+
+61. Class
+    - A pattern from which an object is created.
+
+62. Controls
+    - GUI objects that appear on a form; they are instantiated using tools from
+      the toolbox.
+
+63. Label tool
+    - Used to create a label control.
+
+64. Label control
+    - Displays text that cannot be edited at run time. (Provides run-time
+      information or descriptive text for a control.)
+
+65. PictureBox tool
+    - Creates a picture box control.
+
+66. Picture box control
+    - Displays an image on a form.
+
+67. Button tool
+    - Used to create a button control.
+
+68. Button control
+    - Used to perform an action when clicked. Examples: OK and Cancel buttons.
+
+69. Timer tool
+    - Used to create a timer control.
+
+70. Timer control
+    - Processes code at regular time intervals; it does not appear on the user
+      interface at run time. (It is used to remove the splash screen.)
+
+71. Interval property
+    - The timer property specified in milliseconds. (The frequency of Elapsed
+      events in milliseconds.)
+
+72. Enabled property
+    - Allows the timer to run if set to True.
+
+73. Tick event
+    - Occurs each time an interval has elapsed; the condition is that the timer
+      must be running (enabled).
+
+
+--------------------------------------------------------------------------------
+G. THE FORMAT MENU
+--------------------------------------------------------------------------------
+
+74.  Format menu
+     - Provides options to manipulate form controls.
+
+75. Align
+     - Aligns selected controls by left, right, top, or bottom borders.
+
+76. Make Same Size
+     - Makes the width and/or height of selected controls uniform.
+
+77. Center in Form
+     - Centers one or more controls.
+
+78. Reference control
+     - The first control selected, whose size or location you want to match.
+
+
+--------------------------------------------------------------------------------
+H. STARTING AND ENDING AN APPLICATION
+--------------------------------------------------------------------------------
+
+79. Startup form
+     - Displays when the application is first started.
+
+80. Two ways to start an application in the IDE
+     - (1) Click Debug on the menu bar and then click Start Debugging
+     - (2) Press the F5 key
+
+81. Exiting a Windows application
+     - Common means: Exit option on the File menu, and an Exit button.
+
+
+--------------------------------------------------------------------------------
+I. CODE, EVENTS, AND PROCEDURES
+--------------------------------------------------------------------------------
+
+82. Event
+     - A user action such as double-clicking.
+
+83. Event procedure
+     - A set of program instructions that are processed when an event occurs.
+
+84. Class Name list box
+     - Lists the names of objects included in the UI.
+
+85. Method Name list box
+     - Lists the appropriate events for the selected object.
+
+86. Selecting a control's event in the Code Editor window
+     - Select the class name first and then select the method name.
+
+87. Syntax
+     - The rules of a programming language.
+
+88. Procedure header
+     - The first line in the code template for an event procedure.
+
+89. Procedure footer
+     - The last line in the code template for an event procedure.
+
+90. Keyword
+     - A word that has a special meaning in a programming language; it is
+       color-coded in the IDE.
+
+91. Sub procedure
+     - A block of code that performs a specific task.
+
+92. Sub
+     - The keyword that starts a sub procedure.
+
+93. Private
+     - The keyword that restricts the use of the procedure to the form where it
+       appears.
+
+94. End Sub
+     - The keyword that indicates the end of a sub procedure.
+
+95. Event sub procedure name
+     - Includes the object name and the event name. Example: btnExit_Click
+
+96. Method
+     - A predefined procedure that can be called (or invoked) when needed.
+
+97. Me.Close() method
+     - Causes the current form to close; if it is the only form in the
+       application, the application terminates.
+
+98. IntelliSense feature
+     - Provides appropriate selections as pop-up lists. Type the first few
+       letters of the choice, then use the arrow keys to select an item in list.
+
+99. Collapsing / expanding code
+     - Click the minus box to collapse code; click the plus box to expand code.
+
+
+--------------------------------------------------------------------------------
+J. SAVING, CLOSING, AND OPENING SOLUTIONS
+--------------------------------------------------------------------------------
+
+100. Saving a Solution
+     - Save the solution at regular intervals, for example, every 10 minutes.
+       (To save, click File, then Save All.)
+
+101. Closing the Current Solution
+     - All projects and files contained within are closed.
+     - Close Solution option vs. Close option: the Close option just closes the
+       IDE designer window.
+
+102. Opening an Existing Solution
+     - Only one solution can be open at any one time; the currently open
+       solution closes before another opens. (To open, click File, then Open
+       Project.)
+
+103. Creating an application
+     - Use File, New Project.
+
+
+################################################################################
+PART II - TRUE OR FALSE
+################################################################################
+
+INSTRUCTIONS: Write TRUE if the statement is correct and FALSE if it is
+incorrect. (Answer key is found at the end of this section.)
+
+--------------------------------------------------------------------------------
+
+1.  VB.NET is an object-oriented computer programming language implemented on
+    the .NET Framework.
+
+2.  Not everything in VB.NET is an object; primitive types such as Integer and
+    Boolean are excluded.
+
+3.  All objects in VB.NET inherit from the base class Object.
+
+4.  Because VB.NET is implemented by Microsoft's .NET framework, it has full
+    access to all the libraries in the .Net Framework.
+
+5.  VB.Net is a structured language and it produces efficient programs.
+
+6.  VB.Net can only be compiled on a single computer platform.
+
+7.  Automatic Garbage Collection is one of the strong programming features of
+    VB.Net.
+
+8.  Simple Multithreading is one of the strong programming features of VB.Net.
+
+9.  The Integrated Development Environment (IDE) used for VB.Net in this course
+    is Visual Studio 2017.
+
+10. A splash screen is a Windows application and has a Windows user interface.
+
+11. Windows applications are composed of solutions, projects, and files.
+
+12. A solution can contain several projects.
+
+13. A project is a container that stores the application's solutions and files.
+
+14. A source file is a file containing program instructions (code).
+
+15. A form file contains the code associated with a form.
+
+16. The first form's code is stored in Form2.vb.
+
+17. Names of solution files end with .sln.
+
+18. To open a window in the IDE, you may click View on the menu bar and then
+    click Properties Window.
+
+19. To minimize a window to a tab, you click the Auto Hide (push-pin) button.
+
+20. The Close button on a window's title bar is used to close the window.
+
+21. The Windows Form Designer window is used to create the graphical user
+    interface (GUI).
+
+22. The Solution Explorer window displays the list of projects contained in the
+    current solution and the items contained in each project.
+
+23. The Windows Form object is the foundation for the user interface in a
+    Windows application.
+
+24. The title bar of a form contains a default caption as well as the minimize,
+    maximize, and close buttons.
+
+25. Properties are attributes of an object that determine its appearance and
+    behavior.
+
+26. The Object box contains the current values of properties.
+
+27. The Settings box shows the current values of properties.
+
+28. The Properties list helps identify and access properties.
+
+29. Clicking the Alphabetical button lists the form's properties alphabetically.
+
+30. A class definition specifies the attributes and behaviors.
+
+31. A namespace is code defining a group of classes.
+
+32. The dot member access operator specifies the hierarchy of namespaces, as in
+    System.Windows.Forms.Form.
+
+33. The Name property refers to the object in code and each object has a unique
+    name.
+
+34. An object's name may begin with a number.
+
+35. An object's name contains only letters, numbers, and underscores.
+
+36. In Hungarian notation, the first three characters represent the object's
+    purpose and the remaining characters represent the object's type.
+
+37. frmCalculateTaxes is an example of a name written using camel case.
+
+38. The Text property controls the text displayed in the form's title bar and
+    also appears on the application's taskbar button.
+
+39. The default value of the form's Text property is Form1, and it should always
+    be changed to a meaningful value.
+
+40. The StartPosition property determines the form's initial position on the
+    screen.
+
+41. A splash screen's StartPosition typically appears in the middle of the
+    screen.
+
+42. The Font property determines the type, style, and size of the font used on
+    the form.
+
+43. Font size is measured in pixels.
+
+44. In the Size property, the first number represents the height and the second
+    number represents the width.
+
+45. The BackColor property determines the form's background color.
+
+46. You can size a form by selecting it and dragging its sizing handles, or by
+    selecting the object and pressing and holding the Shift key as you press the
+    desired arrow key.
+
+47. An asterisk indicates that the form has been changed since the last time it
+    was saved.
+
+48. It is recommended to save the solution at regular intervals, for example,
+    every 10 minutes.
+
+49. When you close the current solution, all projects and files contained within
+    are also closed.
+
+50. The Close option closes the entire solution, while the Close Solution option
+    only closes the IDE designer window.
+
+51. More than one solution can be open at any one time.
+
+52. To open an existing solution, you click File, then Open Project.
+
+53. A class is a pattern from which an object is created.
+
+54. An object is an instance with behaviors and attributes.
+
+55. The toolbox contains the tools for designing the user interface, and each
+    tool represents a class.
+
+56. Controls are GUI objects that appear on a form.
+
+57. A label control displays text that CAN be edited at run time.
+
+58. The Location property specifies the location of a control on the form and
+    includes an X value and a Y value.
+
+59. A control inherits the Font attribute of the form.
+
+60. You cannot set the properties of multiple controls simultaneously.
+
+61. The Format menu's Make Same Size option makes the width and/or height of
+    selected controls uniform.
+
+62. The Center in Form option centers one or more controls.
+
+63. The reference control is the last control you select.
+
+64. The task box lists the tasks associated with the picture box and can be used
+    to import an image into the project.
+
+65. The project's resource file contains imported images.
+
+66. A picture box control displays an image on a form.
+
+67. A button control is used to perform an action when clicked.
+
+68. The startup form displays when the application is first started.
+
+69. The Project Designer window specifies the startup form or executable code to
+    be run.
+
+70. An executable file can be run outside of the IDE and its file name ends with
+    .exe.
+
+71. The executable file is automatically created when starting a Visual Basic
+    application.
+
+72. Pressing the F5 key is one way to start an application in the IDE.
+
+73. An event is a user action such as double-clicking.
+
+74. An event procedure is a set of program instructions that are processed when
+    an event occurs.
+
+75. The Code Editor window provides templates for creating event procedures.
+
+76. Clicking the plus box collapses the code in the Code Editor window.
+
+77. The Class Name list box lists the appropriate events for the selected object.
+
+78. The Method Name list box lists the appropriate events for the selected
+    object.
+
+79. To select a control's event in the Code Editor window, select the method name
+    first and then select the class name.
+
+80. Syntax refers to the rules of a programming language.
+
+81. The procedure header is the first line in the code template for an event
+    procedure.
+
+82. The procedure footer is the last line in the code template for an event
+    procedure.
+
+83. A keyword is a word that has a special meaning in a programming language and
+    is color-coded in the IDE.
+
+84. A Sub procedure is a block of code that performs a specific task.
+
+85. The keyword Private restricts the use of the procedure to the form where it
+    appears.
+
+86. End Sub indicates the end of a sub procedure.
+
+87. Event sub procedure names include the object name and the event name, such
+    as btnExit_Click.
+
+88. A method is a predefined procedure that can be called (or invoked) when
+    needed.
+
+89. The Me.Close() method causes the current form to close, and if it is the
+    only form in the application, the application terminates.
+
+90. The IntelliSense feature provides appropriate selections as pop-up lists.
+
+91. Splash screens typically close automatically and do not usually contain an
+    Exit button.
+
+92. The timer control is used to remove the splash screen.
+
+93. The timer control appears on the user interface at run time.
+
+94. The timer control's Interval property is specified in seconds.
+
+95. The Enabled property allows the timer to run if set to True.
+
+96. The Tick event occurs each time an interval has elapsed, provided the timer
+    is running.
+
+97. The component tray is a special area below the form design area in the IDE
+    that stores controls not visible in the user interface at run time.
+
+98. The FormBorderStyle setting "Sizable" allows the user to change the form's
+    size by dragging its borders at run time.
+
+99. The FormBorderStyle setting "FixedSingle" means no border.
+
+100. The MinimizeBox property determines whether the Minimize button appears on
+     the form's title bar.
+
+101. The MaximizeBox property determines whether the Maximize button appears on
+     the form's title bar.
+
+102. The ControlBox property determines whether the title bar appears on the
+     form.
+
+103. Splash screens typically contain a title bar.
+
+104. To remove the title bar, you delete the contents of the form's Text
+     property.
+
+105. Visual Basic code is printed from the Code Editor window, and the user
+     interface is printed from the designer window.
+
+
+--------------------------------------------------------------------------------
+ANSWER KEY - TRUE OR FALSE
+--------------------------------------------------------------------------------
+
+1.  TRUE
+2.  FALSE - Everything in VB.NET is an object, including all of the primitive
+            types.
+3.  TRUE
+4.  TRUE
+5.  TRUE
+6.  FALSE - It can be compiled on a variety of computer platforms.
+7.  TRUE
+8.  TRUE
+9.  TRUE
+10. TRUE
+11. TRUE
+12. TRUE
+13. FALSE - A project is a container storing associated files; a SOLUTION is the
+            container that stores the application's projects and files.
+14. TRUE
+15. TRUE
+16. FALSE - The first form's code is stored in Form1.vb.
+17. TRUE
+18. TRUE
+19. TRUE
+20. TRUE
+21. TRUE
+22. TRUE
+23. TRUE
+24. TRUE
+25. TRUE
+26. FALSE - The Object box contains the name of the selected object.
+27. TRUE
+28. TRUE
+29. TRUE
+30. TRUE
+31. TRUE
+32. TRUE
+33. TRUE
+34. FALSE - It must begin with a letter.
+35. TRUE
+36. FALSE - The first three characters represent the object's TYPE and the
+            remaining characters represent the object's PURPOSE.
+37. TRUE
+38. TRUE
+39. TRUE
+40. TRUE
+41. TRUE
+42. TRUE
+43. FALSE - Size is measured in points.
+44. FALSE - The first number is the width in pixels; the second is the height in
+            pixels.
+45. TRUE
+46. TRUE
+47. TRUE
+48. TRUE
+49. TRUE
+50. FALSE - It is the reverse: the Close option just closes the IDE designer
+            window.
+51. FALSE - Only one solution can be open at any one time.
+52. TRUE
+53. TRUE
+54. TRUE
+55. TRUE
+56. TRUE
+57. FALSE - A label control displays text that CANNOT be edited at run time.
+58. TRUE
+59. TRUE
+60. FALSE - You can set the properties of multiple controls simultaneously.
+61. TRUE
+62. TRUE
+63. FALSE - The reference control is the FIRST control you select, the one whose
+            size or location you want to match.
+64. TRUE
+65. TRUE
+66. TRUE
+67. TRUE
+68. TRUE
+69. TRUE
+70. TRUE
+71. TRUE
+72. TRUE
+73. TRUE
+74. TRUE
+75. TRUE
+76. FALSE - Clicking the plus box EXPANDS the code; the minus box collapses it.
+77. FALSE - The Class Name list box lists the names of objects included in the
+            UI.
+78. TRUE
+79. FALSE - Select the class name first and then select the method name.
+80. TRUE
+81. TRUE
+82. TRUE
+83. TRUE
+84. TRUE
+85. TRUE
+86. TRUE
+87. TRUE
+88. TRUE
+89. TRUE
+90. TRUE
+91. TRUE
+92. TRUE
+93. FALSE - It does not appear on the user interface at run time.
+94. FALSE - The Interval property is specified in milliseconds.
+95. TRUE
+96. TRUE
+97. TRUE
+98. TRUE
+99. FALSE - FixedSingle is a fixed, thin border line; "None" means no border.
+100. TRUE
+101. TRUE
+102. TRUE
+103. FALSE - Splash screens typically do NOT contain a title bar.
+104. TRUE
+105. TRUE
+
+
+================================================================================
+END OF REVIEWER
+================================================================================
