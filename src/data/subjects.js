@@ -2120,6 +2120,13 @@ export const subjects = [
             "explanation": "This statement is correct as written in the module."
           }
         ]
+      },
+      {
+        "id": "cc6_quizlet_1",
+        "title": "CC6 1 — Quizlet Flash Cards",
+        "description": "CC6 1 flash cards on Quizlet — study and review using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1201240214/cc6-1-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
       }
     ]
   },
@@ -4934,6 +4941,13 @@ export const subjects = [
             "explanation": "This statement is correct as written in the module."
           }
         ]
+      },
+      {
+        "id": "comprog3_quizlet_1",
+        "title": "COMPROG3 1 — Quizlet Flash Cards",
+        "description": "COMPROG3 1 flash cards on Quizlet — study and review using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1201238160/comprog-1-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
       }
     ]
   },
@@ -6025,6 +6039,13 @@ export const subjects = [
             "answer": 0
           }
         ]
+      },
+      {
+        "id": "ipt1_quizlet_1",
+        "title": "IPT 1 — Quizlet Flash Cards",
+        "description": "IPT 1 flash cards on Quizlet — study and review using the Quizlet set.",
+        "quizletLink": "https://quizlet.com/ph/1201388633/ipt-1-flash-cards/?i=719e9i&x=1jqt",
+        "questions": []
       }
     ]
   },
