@@ -1,0 +1,1008 @@
+{
+  "nodes": [
+    {
+      "id": "docs_project_knowledge_doc",
+      "label": "Project Knowledge (doc)",
+      "file_type": "document",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_quizhub",
+      "label": "QuizHub study site",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_vercel_deployment",
+      "label": "Vercel deployment (quizzes-hub.vercel.app)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Changes go live only after a commit + push (or redeploy); Vercel rebuilds the site."
+    },
+    {
+      "id": "docs_project_knowledge_lilac_glass_theme",
+      "label": "Lilac / pink glass-card theme",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_subject_page_order",
+      "label": "Subject page section order",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "User asked for Exam Reviewers and Reviewer Pointers at the top, above Quizzes and Flash Cards."
+    },
+    {
+      "id": "docs_project_knowledge_quiz_mode",
+      "label": "Quiz mode",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_mock_exam_mode",
+      "label": "Mock exam mode",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_timer_end_timestamp",
+      "label": "Timer counts down to a fixed end time",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Browsers throttle timers in background tabs; checking against endsAt keeps the countdown accurate."
+    },
+    {
+      "id": "docs_project_knowledge_finals_only",
+      "label": "Finals-only exam slots",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "User: this is the finals exam - Prelim and Midterm slots were removed."
+    },
+    {
+      "id": "docs_project_knowledge_question_types",
+      "label": "Seven question types",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_per_item_scoring",
+      "label": "Per-item scoring",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A matching set or enumeration is worth one point per item, so scores stay whole numbers."
+    },
+    {
+      "id": "docs_project_knowledge_quiz_vs_flashcard",
+      "label": "Quiz vs Flash Card rule",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_cc6_finals_exam",
+      "label": "CC6 Finals mock exam (179 MC, 120 min)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_cc6_ch5",
+      "label": "Ch 5 - Database Query Languages",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_cc6_ch6",
+      "label": "Ch 6 - Data Organization and Architecture",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_cc6_ch7",
+      "label": "Ch 7 - Data Governance",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_cc6_ch8",
+      "label": "Ch 8 - Special Purpose Databases and Trends",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_ch8_slide_gaps",
+      "label": "Chapter 8 slide gaps",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Cloud-native slide repeats serverless text, multimedia has no definition, temporal slide contradicts itself - left out of questions."
+    },
+    {
+      "id": "docs_project_knowledge_cc6_pointers_pdf",
+      "label": "CC6 Finals Pointers PDF (7 pages)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_quiz_writing_rules",
+      "label": "Quiz writing rules",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "No learning-objective questions; skip redundant/overcomplicated details; wording exactly or close to the modules; plausible same-chapter distractors; balanced answer letters."
+    },
+    {
+      "id": "docs_project_knowledge_pointers_pdf_rules",
+      "label": "Pointers PDF rules",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Times New Roman 12, proper indentation, black text only, clear and not text heavy, all modules compacted into one."
+    },
+    {
+      "id": "docs_project_knowledge_review_material_format",
+      "label": "Review Material layout (IPT1 Week 6/7)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Format basis only: centered title, italic subtitle, numbered ruled headings, Term - meaning bullets."
+    },
+    {
+      "id": "docs_project_knowledge_pointers_as_section",
+      "label": "Pointers shown as a PDF section, not on-page notes",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "User preferred a Reviewer Pointers card section (like Flash Cards) over the Study Notes tab."
+    },
+    {
+      "id": "docs_project_knowledge_linux_build_check",
+      "label": "Build verified in a Linux scratch copy",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Local node_modules is a Windows install, so npm ci + vite build + oxlint run in a separate copy."
+    },
+    {
+      "id": "docs_project_knowledge_times_font_fallback",
+      "label": "PDF-standard Times font fallback",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Real TNR needs the font files copied into the project; Windows viewers show standard Times as TNR."
+    },
+    {
+      "id": "docs_project_knowledge_new_subject_workflow",
+      "label": "Workflow for a new subject reviewer",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "label": "How to add an exam reviewer (guide)",
+      "file_type": "document",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry",
+      "label": "Mock exam entry format",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry",
+      "label": "Reviewer Pointers entry format",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder",
+      "label": "Per-subject source/ folder",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "index_html_shell",
+      "label": "index.html app shell",
+      "file_type": "document",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_project_knowledge_doc",
+      "target": "docs_project_knowledge_quizhub",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quizhub",
+      "target": "src_app_app",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quizhub",
+      "target": "docs_project_knowledge_vercel_deployment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quizhub",
+      "target": "docs_project_knowledge_lilac_glass_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_lilac_glass_theme",
+      "target": "src_components_subjectcard_colors",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_subject_page_order",
+      "target": "src_pages_subjectpage_subjectpage",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_mode",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_mode",
+      "target": "src_data_subjects_getreviewerbyid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_mock_exam_mode",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_mock_exam_mode",
+      "target": "src_data_exams_getexambyid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_mock_exam_mode",
+      "target": "src_components_examcard_examcard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_timer_end_timestamp",
+      "target": "src_pages_quizpage_quizpage_update",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_timer_end_timestamp",
+      "target": "src_pages_quizpage_fmtclock",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_timer_end_timestamp",
+      "target": "docs_project_knowledge_mock_exam_mode",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_finals_only",
+      "target": "src_data_exams_exams",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_finals_only",
+      "target": "src_data_exams_termstyle",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_question_types",
+      "target": "src_components_typebadge_types",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_question_types",
+      "target": "src_pages_quizpage_ischoicetype",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_per_item_scoring",
+      "target": "src_pages_quizpage_questionpoints",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_per_item_scoring",
+      "target": "src_pages_quizpage_totalpointsof",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_vs_flashcard",
+      "target": "src_components_reviewercard_reviewercard",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_vs_flashcard",
+      "target": "src_data_subjects_subjects",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_finals_exam",
+      "target": "src_data_exams_exams",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_finals_exam",
+      "target": "subject_exam_reviewers_cc6_source_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_finals_exam",
+      "target": "subject_exam_reviewers_cc6_source_make_exam_build_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch5",
+      "target": "docs_project_knowledge_cc6_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch5",
+      "target": "docs_project_knowledge_cc6_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch6",
+      "target": "docs_project_knowledge_cc6_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch6",
+      "target": "docs_project_knowledge_cc6_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch7",
+      "target": "docs_project_knowledge_cc6_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch7",
+      "target": "docs_project_knowledge_cc6_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch8",
+      "target": "docs_project_knowledge_cc6_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_ch8",
+      "target": "docs_project_knowledge_cc6_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ch8_slide_gaps",
+      "target": "docs_project_knowledge_cc6_ch8",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_pointers_pdf",
+      "target": "src_data_exams_pointers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_pointers_pdf",
+      "target": "src_components_pointerscard_pointerscard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_pointers_pdf",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cc6_pointers_pdf",
+      "target": "subject_exam_reviewers_cc6_source_pointers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_writing_rules",
+      "target": "subject_exam_reviewers_cc6_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_writing_rules",
+      "target": "subject_exam_reviewers_cc6_source_make_exam_build_questions",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_cc6_source_pointers",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_review_material_format",
+      "target": "docs_project_knowledge_pointers_pdf_rules",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_review_material_format",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_as_section",
+      "target": "src_components_pointerscard_pointerscard",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_as_section",
+      "target": "src_data_exams_getpointersbysubject",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_as_section",
+      "target": "docs_project_knowledge_subject_page_order",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_times_font_fallback",
+      "target": "docs_project_knowledge_pointers_pdf_rules",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_linux_build_check",
+      "target": "package_scripts_build",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_linux_build_check",
+      "target": "package_scripts_lint",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_new_subject_workflow",
+      "target": "subject_exam_reviewers_cc6_source_make_exam",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_new_subject_workflow",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "target": "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "target": "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "target": "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry",
+      "target": "src_data_exams_exams",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry",
+      "target": "src_data_exams_pointers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder",
+      "target": "subject_exam_reviewers_cc6_source_questions",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "target": "src_pages_subjectpage_subjectpage",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "target": "docs_project_knowledge_new_subject_workflow",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_html_shell",
+      "target": "src_main",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/index.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "reviewer_build_pipeline",
+      "label": "Reviewer build pipeline",
+      "nodes": [
+        "subject_exam_reviewers_cc6_source_questions",
+        "subject_exam_reviewers_cc6_source_pointers",
+        "subject_exam_reviewers_cc6_source_make_exam",
+        "subject_exam_reviewers_cc6_source_make_pdf",
+        "src_data_exams_exams",
+        "src_data_exams_pointers"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    },
+    {
+      "id": "mock_exam_flow",
+      "label": "Mock exam flow",
+      "nodes": [
+        "src_components_examcard_examcard",
+        "src_data_exams_getexambyid",
+        "src_pages_quizpage_quizpage",
+        "src_pages_quizpage_quizpage_update"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "coverage": {
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md": 89,
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt": 50,
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/index.html": 14
+  }
+}

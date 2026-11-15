@@ -1,0 +1,89 @@
+# QuizHub - Project Knowledge
+
+What has been learned about this project while building the Exam Reviewer feature and the CC6 Finals reviewer. Read this before changing the site or making a new reviewer.
+
+## 1. Project Overview
+
+QuizHub is a study site for 3rd Year, 1st Semester (AY 2026-2027) subjects. It is deployed on Vercel at quizzes-hub.vercel.app and lives locally in `D:\QUIZZES HUB`.
+
+- Stack: React 19, Vite 8, react-router-dom 7, Tailwind v4 (barely used).
+- Styling: mostly inline styles plus shared classes in `src/index.css` (card, btn-primary, btn-ghost, badge-lilac / badge-pink / badge-blue, quiz-option, stat-chip, input-field, anim-* animations).
+- Theme: lilac / pink glass cards, Playfair Display headings, Plus Jakarta Sans body, floating PNG decorations from `public/` ("Untitled design*.png").
+- Lint: oxlint. One known pre-existing warning: unused `HEARTS` constant in QuizPage.jsx.
+
+## 2. Routes and Pages
+
+- `/` -> HomePage: subject grid with search and stat chips (subjects, reviewers, questions).
+- `/subject/:subjectId` -> SubjectPage: sections in this order - Exam Reviewers, Reviewer Pointers, Quizzes, Flash Cards.
+- `/subject/:subjectId/quiz/:reviewerId` -> QuizPage (quiz mode) for a reviewer from subjects.js.
+- `/subject/:subjectId/exam/:examId` -> QuizPage with `mode="exam"` for a mock exam from exams.js.
+
+## 3. Data Model
+
+### subjects.js (quizzes and flash cards)
+- 7 subjects: ea, cc6, oop, comprog3, ipt1, wd, sia. Each has id, code, name, description, color, reviewers[].
+- A reviewer with questions is a Quiz. A reviewer with only a quizletLink and no questions is a Flash Card.
+- File is about 360 KB of JSON-style data.
+
+### exams.js (exam reviewers and PDF pointers)
+- `exams[subjectId]` -> list of mock exams. Fields: id, term, title, description, timeLimit (minutes or null), questions[].
+- Only Finals slots exist (Prelim and Midterm were removed by request). Empty exams show "Coming soon".
+- `pointers[subjectId]` -> downloadable PDF reviewers. Fields: id, term, title, description, file (path under /public), pages.
+- Helpers: getExamsBySubject, getExamById, getPointersBySubject, termStyle (term colors: Prelim blue, Midterm lilac, Pre-Finals orange, Finals pink).
+
+### Question types (shared by quizzes and mock exams)
+mc, true_false, identification, enumeration, output_tracing, fill_code, matching. Scoring is per item: a matching set or enumeration is worth one point per item. mc / true_false use `answer` as the option index; identification supports `altAnswers`; any question can have `explanation`.
+
+## 4. Components
+
+- Navbar: fixed top bar, logo, back-to-subjects button.
+- SubjectCard: home page subject tile.
+- ReviewerCard: quiz or Quizlet flash card tile.
+- ExamCard: mock exam tile with term badge, time limit, question count, "Start Mock Exam" (or "Coming Soon").
+- PointersCard: PDF reviewer tile with "View PDF" (new tab) and "Download".
+- TypeBadge: question-type pill, shared by QuizPage.
+
+## 5. Mock Exam Mode (QuizPage)
+
+- QuizPage reads the exam with getExamById when `mode="exam"`, otherwise getReviewerById.
+- Timer counts down to a fixed end timestamp (endsAt) checked every 250 ms, so it stays accurate when a browser throttles timers in background tabs. A tick-by-tick setTimeout would drift.
+- Timer pill turns amber at 5 minutes and red at 1 minute. When time runs out the exam ends, shows "Time's up", and unanswered questions count as wrong.
+- Exit and "Back to <code>" return to the subject page.
+
+## 6. CC6 Finals Exam Reviewer
+
+- Subject: CC 6 - Information Management. Coverage: Chapters 5 to 8.
+  - Chapter 5 - Database Query Languages (query language, procedural vs declarative, SQL sub-languages DQL/DDL/DCL/DML/TCL, NoSQL, GraphQL, SPARQL, PL/SQL, Prisma, MQL, use cases).
+  - Chapter 6 - Data Organization and Architecture (data architecture, conceptual/logical/physical models, TOGAF and its 4 pillars, DAMA-DMBOK 2, Zachman, warehouse/mart/lake, data fabric vs mesh, data organization and classification).
+  - Chapter 7 - Data Governance (definition, program scope, business drivers, goals and principles, operating models, data stewardship, data policies, data asset valuation, DG activities).
+  - Chapter 8 - Special Purpose Databases (real-time, temporal, spatial and its operations, XML, graph, active, mobile) and Trends (serverless, cloud-native, embedding AI, data analytics, data mining).
+- Mock exam: 179 multiple choice questions (Ch5 35, Ch6 39, Ch7 70, Ch8 35), 120-minute limit, answer letters balanced (45/45/44/45), each explanation names its chapter.
+- Pointers PDF: `public/pointers/CC6_Finals_Pointers.pdf`, 7 pages.
+- Sources: `Subject Exam Reviewers/CC6/source/` holds questions.py, pointers.py, make_pdf.py, make_exam.py. `cc6_finals.json` is the generated exam object.
+- Gaps in the Chapter 8 slides: the cloud-native slide repeats the serverless text, multimedia databases have no definition, and the temporal database slide has a self-contradicting sentence. These were left out of the questions.
+
+## 7. Reviewer-Making Rules (the user's preferences)
+
+The user provides the modules per subject and decides the question types.
+
+### Quiz / mock exam rules
+- Do not turn learning objectives into questions.
+- Leave out redundant or overcomplicated details that will not end up in the exam.
+- Word usage must be exactly or very close to the module materials.
+- Distractors should be real terms from the same chapter so they are plausible.
+- Balance the correct answer letters, and avoid making the correct option the longest one.
+
+### Pointers PDF rules
+- Times New Roman 12, proper indentation, black text only.
+- A clear module summary explanation that is not text heavy.
+- Compact all the modules into one document.
+- Layout follows the user's "Review Material" PDFs (for example the IPT1 Week 6 and Week 7 reviews): centered bold title, italic subtitle, numbered part headings with a rule under them, short intro paragraphs, "Term - meaning" bullets. The review files are a format basis only; their content is unrelated to the modules.
+- The PDF is shown on the site as a Reviewer Pointers card (like a Flash Card), not as on-page notes.
+
+## 8. Workflow and Gotchas
+
+- The site files are on the user's Windows PC. The local node_modules is a Windows install, so builds are verified in a separate Linux scratch copy (`npm ci` then `vite build` and `oxlint`).
+- Times New Roman cannot be embedded unless the font files are copied into the project; the PDF currently uses the PDF-standard Times font, which Windows viewers display as Times New Roman.
+- Deleting files in the project needs the user's permission each session.
+- To publish changes: commit and push to the repository connected to Vercel (or redeploy). Vercel then rebuilds the site.
+- To add a new subject's reviewer: write questions and pointers in a `source/` folder like CC6, generate the PDF and exam JSON, add the exam under `exams[subjectId]` and the PDF under `pointers[subjectId]`, put the PDF in `public/pointers/`.

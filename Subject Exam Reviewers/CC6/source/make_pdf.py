@@ -1,4 +1,4 @@
-"""Build the CC6 Midterm pointers PDF: Times 12, black text only, review-material layout."""
+"""Build the CC6 Finals pointers PDF: Times 12, black text only, review-material layout."""
 import sys
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
@@ -10,7 +10,7 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, Tab
 from xml.sax.saxutils import escape
 import pointers as P
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "CC6_Midterm_Pointers.pdf"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "CC6_Finals_Pointers.pdf"
 R, B, I = "Times-Roman", "Times-Bold", "Times-Italic"
 SIZE, LEAD = 12, 15
 IND = 0.25 * inch          # body indent under a section heading
@@ -101,12 +101,12 @@ def build():
         canv.saveState()
         canv.setFont(R, 10)
         canv.setFillColor(black)
-        canv.drawCentredString(letter[0] / 2, 0.55 * inch, f"CC 6 Midterm Pointers  |  Page {doc.page}")
+        canv.drawCentredString(letter[0] / 2, 0.55 * inch, f"CC 6 Finals Pointers  |  Page {doc.page}")
         canv.restoreState()
 
     doc = SimpleDocTemplate(OUT, pagesize=letter, leftMargin=inch, rightMargin=inch,
                             topMargin=0.9 * inch, bottomMargin=0.9 * inch,
-                            title="CC 6 Midterm Exam Pointers - Chapters 5 to 8",
+                            title="CC 6 Finals Exam Pointers - Chapters 5 to 8",
                             author="QuizHub", subject="Information Management")
     from functools import partial
     from reportlab.pdfgen.canvas import Canvas

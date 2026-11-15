@@ -1,0 +1,13 @@
+# graphify: map the app code, reviewer sources and project docs only
+node_modules/
+dist/
+public/
+forbg/
+src/assets/
+Subject Quiz Reviewers/
+Subject Exam Reviewers/**/*.json
+README.md
+package-lock.json
+*.png
+*.svg
+*.pdf

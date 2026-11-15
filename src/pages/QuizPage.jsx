@@ -847,7 +847,7 @@ export default function QuizPage({ mode = "quiz" }) {
 
   const subject  = getSubjectById(subjectId);
   const reviewer = isExam ? getExamById(subjectId, examId) : getReviewerById(subjectId, reviewerId);
-  const backPath  = isExam ? `/subject/${subjectId}/exam/${examId}?tab=mock` : `/subject/${subjectId}`;
+  const backPath  = `/subject/${subjectId}`;
 
   const [quizState, setQuizState] = useState(STATE.IDLE);
   const [shuffled, setShuffled]   = useState([]);
@@ -982,15 +982,7 @@ export default function QuizPage({ mode = "quiz" }) {
             <ChevRight />
             <Link to={`/subject/${subjectId}`} style={{ color: "var(--text-mid)", textDecoration: "none", fontWeight: 600 }}>{subject.code}</Link>
             <ChevRight />
-            {isExam ? (
-              <>
-                <Link to={backPath} style={{ color: "var(--text-mid)", textDecoration: "none", fontWeight: 600 }}>{reviewer.title}</Link>
-                <ChevRight />
-                <span style={{ color: "var(--lilac-600)", fontWeight: 700 }}>Mock Exam</span>
-              </>
-            ) : (
-              <span style={{ color: "var(--lilac-600)", fontWeight: 700 }}>{reviewer.title}</span>
-            )}
+            <span style={{ color: "var(--lilac-600)", fontWeight: 700 }}>{reviewer.title}</span>
           </div>
 
           <div className="card anim-fade-up" style={{ padding: "clamp(1.5rem, 5vw, 2.5rem)", textAlign: "center" }}>
@@ -1165,7 +1157,7 @@ export default function QuizPage({ mode = "quiz" }) {
               </button>
               <Link to={backPath} style={{ textDecoration: "none" }}>
                 <button className="btn-ghost" style={{ padding: "0.75rem 1.5rem" }}>
-                  {isExam ? "Back to Reviewer" : `Back to ${subject.code}`}
+                  Back to {subject.code}
                 </button>
               </Link>
             </div>

@@ -1,4 +1,4 @@
-# CC6 Midterm mock exam - Chapters 5 to 8 (multiple choice).
+# CC6 Finals mock exam - Chapters 5 to 8 (multiple choice).
 # Each item: (question, correct_answer, [distractors x3], optional_note)
 # Wording follows the module slides as closely as possible.
 

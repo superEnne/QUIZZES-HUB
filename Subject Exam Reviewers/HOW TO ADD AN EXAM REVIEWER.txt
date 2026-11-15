@@ -1,45 +1,50 @@
 HOW TO ADD AN EXAM REVIEWER
 ===========================
 
-1. Put your raw exam notes in the subject's folder here, for example:
-     Subject Exam Reviewers/EA/Midterm.txt
+Each subject page shows, from top to bottom:
+  1. Exam Reviewers     - timed mock exams
+  2. Reviewer Pointers  - downloadable PDF reviewers
+  3. Quizzes
+  4. Flash Cards
 
-2. The content goes into  src/data/exams.js  (not subjects.js).
-   Every subject already has three slots: Prelim, Midterm, Finals.
-   A slot with no notes and no questions shows "Coming soon" on the site.
-   As soon as it has either one, the card becomes "Open Reviewer".
+Everything for sections 1 and 2 lives in  src/data/exams.js.
 
-3. Fill in a slot like this:
+-- 1. MOCK EXAM ------------------------------------------------------------
+
+Every subject has a Finals slot. A slot with no questions shows "Coming soon".
 
     {
-      "id": "ea_midterm",
-      "term": "Midterm",
-      "title": "Midterm Exam Reviewer",
-      "description": "Modules 4-6: EA frameworks and governance.",
-      "timeLimit": 60,                 <- minutes; use null for no timer
-      "pointersPdf": "/pointers/EA_Midterm_Pointers.pdf",   <- optional; put the PDF in public/pointers/
-      "notes": [                       <- STUDY NOTES tab
-        {
-          "heading": "What is an Enterprise?",
-          "summary": "First paragraph.\n\nSecond paragraph.",
-          "points": ["Key point one", "Key point two"],
-          "terms": [
-            { "term": "Enterprise", "definition": "An organization whose boundary is defined by shared goals, processes and resources." }
-          ],
-          "code": "System.out.println(\"optional code example\");"
-        }
-      ],
-      "questions": [                   <- MOCK EXAM tab (same format as subjects.js)
-        { "id": 1, "question": "...", "options": ["A", "B", "C", "D"], "answer": 2 },
+      "id": "ea_finals",
+      "term": "Finals",
+      "title": "Finals Exam Reviewer",
+      "description": "Chapters 5-8: ...",
+      "timeLimit": 120,                <- minutes; use null for no timer
+      "questions": [                   <- same format as subjects.js
+        { "id": 1, "question": "...", "options": ["A", "B", "C", "D"], "answer": 2, "explanation": "Chapter 5 - ..." },
         { "id": 2, "type": "true_false", "question": "...", "options": ["True", "False"], "answer": 0 },
-        { "id": 3, "type": "identification", "question": "...", "answer": "API", "altAnswers": ["Application Programming Interface"] },
-        { "id": 4, "type": "enumeration", "question": "...", "count": 3, "items": ["a", "b", "c"] }
+        { "id": 3, "type": "identification", "question": "...", "answer": "API" }
       ]
     }
 
-   Only "heading" is required in a topic; summary, points, terms and code are optional.
-   All 7 question types from the quizzes work in mock exams:
-   mc, true_false, identification, enumeration, output_tracing, fill_code, matching.
+All 7 question types work: mc, true_false, identification, enumeration,
+output_tracing, fill_code, matching.
 
-4. Want a different term (e.g. "Pre-Finals")? Add another slot with that "term" and a
-   unique "id". Don't need Prelim? Delete that slot.
+-- 2. REVIEWER POINTERS (PDF) -------------------------------------------------
+
+Put the PDF in  public/pointers/  and add an entry under "pointers":
+
+    "ea": [
+      {
+        "id": "ea_finals_pointers",
+        "term": "Finals",
+        "title": "Finals Pointers - Chapters 5 to 8",
+        "description": "Short description.",
+        "file": "/pointers/EA_Finals_Pointers.pdf",
+        "pages": 6
+      }
+    ]
+
+-- SOURCE FILES ---------------------------------------------------------------
+
+Subject Exam Reviewers/<SUBJECT>/source/ keeps the editable sources
+(questions.py, pointers.py) and the scripts that build the PDF and the exam JSON.

@@ -1,9 +1,9 @@
-# CC6 Midterm pointers - Chapters 5 to 8.
+# CC6 Finals pointers - Chapters 5 to 8.
 # One source for both the downloadable PDF and the site's Study Notes tab.
 # Each section: heading, optional text, optional terms [(term, meaning)], optional points, optional code.
 
 TITLE = "CC 6 - Information Management"
-SUBTITLE = "Midterm Exam Pointers - Chapters 5 to 8"
+SUBTITLE = "Finals Exam Pointers - Chapters 5 to 8"
 INTRO = ("This reviewer compacts Chapters 5 to 8 into one place. Each part starts with the big idea, "
          "followed by the key terms you need to remember. Quick comparisons for commonly confused "
          "terms are at the end.")

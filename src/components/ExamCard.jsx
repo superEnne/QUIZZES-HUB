@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { examStats, termStyle } from "../data/exams";
+import { termStyle } from "../data/exams";
 
 function ClockIcon() {
   return (
@@ -10,9 +10,11 @@ function ClockIcon() {
   );
 }
 
+// Card for a timed mock exam. "Start Mock Exam" opens the exam's start screen.
 export default function ExamCard({ exam, subjectId, index }) {
   const t = termStyle(exam.term);
-  const s = examStats(exam);
+  const count = exam.questions?.length || 0;
+  const ready = count > 0;
 
   return (
     <div
@@ -69,24 +71,14 @@ export default function ExamCard({ exam, subjectId, index }) {
           {exam.title}
         </h3>
         <p style={{ fontSize: "0.82rem", color: "var(--text-soft)", lineHeight: 1.5 }}>
-          {exam.description || (s.ready
-            ? "Study notes and a timed mock exam."
-            : "Study notes and a mock exam will appear here once they're added.")}
+          {exam.description || (ready ? "Timed mock exam." : "The mock exam will appear here once it's added.")}
         </p>
       </div>
 
       {/* Tags */}
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-        {s.ready ? (
-          <>
-            {s.topics > 0 && (
-              <span className="badge badge-pink">{s.topics} {s.topics === 1 ? "topic" : "topics"}</span>
-            )}
-            {s.questions > 0 && (
-              <span className="badge badge-lilac">{s.questions} {s.questions === 1 ? "question" : "questions"}</span>
-            )}
-            {s.pdf && <span className="badge badge-blue">PDF Pointers</span>}
-          </>
+        {ready ? (
+          <span className="badge badge-lilac">{count} {count === 1 ? "question" : "questions"}</span>
         ) : (
           <span className="badge" style={{ background: "#f5f5f5", color: "#aaa", border: "1.5px solid #eee" }}>
             Coming soon
@@ -96,10 +88,10 @@ export default function ExamCard({ exam, subjectId, index }) {
 
       {/* Action */}
       <div style={{ marginTop: "auto" }}>
-        {s.ready ? (
+        {ready ? (
           <Link to={`/subject/${subjectId}/exam/${exam.id}`} style={{ textDecoration: "none", display: "block" }}>
             <button className="btn-primary" style={{ width: "100%", padding: "0.65rem 1rem", fontSize: "0.85rem" }}>
-              Open Reviewer
+              Start Mock Exam
             </button>
           </Link>
         ) : (

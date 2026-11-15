@@ -1,8 +1,7 @@
-"""Turn questions.py + pointers.py into the cc6_midterm exam object (JSON) for src/data/exams.js."""
+"""Turn questions.py into the cc6_finals exam object (JSON) for src/data/exams.js."""
 import json, random
 from collections import Counter
 import questions as Q
-import pointers as P
 
 rng = random.Random(6)  # fixed seed -> same answer letters every rebuild
 
@@ -23,33 +22,16 @@ def build_questions():
             qid += 1
     return out
 
-def build_notes():
-    notes = []
-    for ch in P.CHAPTERS:
-        short = ch["chapter"].replace("Chapter ", "Ch. ")
-        for s in ch["sections"]:
-            t = {"heading": f"{short} · {s['heading']}"}
-            if s.get("text"): t["summary"] = s["text"]
-            if s.get("points"): t["points"] = s["points"]
-            if s.get("terms"): t["terms"] = [{"term": a, "definition": b} for a, b in s["terms"]]
-            notes.append(t)
-    notes.append({"heading": "Quick Comparisons",
-                  "terms": [{"term": a, "definition": b} for a, b in P.COMPARISONS]})
-    return notes
-
 if __name__ == "__main__":
     qs = build_questions()
     exam = {
-        "id": "cc6_midterm",
-        "term": "Midterm",
-        "title": "Midterm Exam Reviewer",
+        "id": "cc6_finals",
+        "term": "Finals",
+        "title": "Finals Exam Reviewer",
         "description": "Chapters 5–8: Database Query Languages, Data Organization and Architecture, Data Governance, and Special Purpose Databases.",
         "timeLimit": 120,
-        "pointersPdf": "/pointers/CC6_Midterm_Pointers.pdf",
-        "notes": build_notes(),
         "questions": qs,
     }
-    json.dump(exam, open("out/cc6_midterm.json", "w"), ensure_ascii=False, indent=2)
+    json.dump(exam, open("out/cc6_finals.json", "w"), ensure_ascii=False, indent=2)
     print("questions:", len(qs), "| per chapter:", {k.split(' - ')[0]: len(v) for k, v in Q.QUESTIONS.items()})
     print("answer letters:", dict(sorted(Counter("ABCD"[q["answer"]] for q in qs).items())))
-    print("topics:", len(exam["notes"]))

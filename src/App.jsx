@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import SubjectPage from "./pages/SubjectPage";
 import QuizPage from "./pages/QuizPage";
-import ExamPage from "./pages/ExamPage";
 
 export default function App() {
   return (
@@ -20,8 +19,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/subject/:subjectId" element={<SubjectPage />} />
           <Route path="/subject/:subjectId/quiz/:reviewerId" element={<QuizPage />} />
-          <Route path="/subject/:subjectId/exam/:examId" element={<ExamPage />} />
-          <Route path="/subject/:subjectId/exam/:examId/mock" element={<QuizPage mode="exam" />} />
+          <Route path="/subject/:subjectId/exam/:examId" element={<QuizPage mode="exam" />} />
         </Routes>
       </main>
     </BrowserRouter>

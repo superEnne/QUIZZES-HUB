@@ -2,7 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { getSubjectById } from "../data/subjects";
 import ReviewerCard from "../components/ReviewerCard";
 import ExamCard from "../components/ExamCard";
-import { getExamsBySubject, examStats } from "../data/exams";
+import PointersCard from "../components/PointersCard";
+import { getExamsBySubject, getPointersBySubject } from "../data/exams";
 
 const FLOWER  = "/Untitled design.png";
 const SPARKLE = "/Untitled design (3).png";
@@ -115,6 +116,73 @@ export default function SubjectPage() {
       {/* ── Content sections ── */}
       <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 1.25rem 4rem", display: "flex", flexDirection: "column", gap: "2.5rem" }}>
 
+        {/* ── Exam Reviewers section ── */}
+        {(() => {
+          const subjectExams = getExamsBySubject(subject.id);
+          if (subjectExams.length === 0) return null;
+          const readyCount = subjectExams.filter(e => e.questions?.length > 0).length;
+          return (
+            <div>
+              <div
+                className="anim-fade-up"
+                style={{ animationDelay: "60ms", display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.25rem", gap: "0.75rem" }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: "var(--lilac-600)", flexShrink: 0 }}>
+                    <path d="M8 2.5L1.5 5.75 8 9l6.5-3.25L8 2.5Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+                    <path d="M4 7v3.25c0 .9 1.8 2.25 4 2.25s4-1.35 4-2.25V7M14.5 5.75V9.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#2d1f5e" }}>
+                    Exam Reviewers
+                  </h2>
+                </div>
+                <span style={{ padding: "0.25rem 0.75rem", borderRadius: "999px", fontSize: "0.75rem", fontWeight: 700, background: "var(--lilac-100)", color: "var(--lilac-600)", border: "1.5px solid var(--lilac-200)", whiteSpace: "nowrap" }}>
+                  {readyCount} / {subjectExams.length} ready
+                </span>
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "1rem" }}>
+                {subjectExams.map((exam, i) => (
+                  <ExamCard key={exam.id} exam={exam} subjectId={subject.id} index={i} />
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ── Reviewer Pointers section (downloadable PDFs) ── */}
+        {(() => {
+          const items = getPointersBySubject(subject.id);
+          if (items.length === 0) return null;
+          return (
+            <div>
+              <div
+                className="anim-fade-up"
+                style={{ animationDelay: "80ms", display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.25rem", gap: "0.75rem" }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: "var(--lilac-600)", flexShrink: 0 }}>
+                    <path d="M9.5 1.75H4.25c-.55 0-1 .45-1 1v10.5c0 .55.45 1 1 1h7.5c.55 0 1-.45 1-1V5L9.5 1.75Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+                    <path d="M9.5 1.75V5h3.25M5.75 8.5h4.5M5.75 11h3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#2d1f5e" }}>
+                    Reviewer Pointers
+                  </h2>
+                </div>
+                <span style={{ padding: "0.25rem 0.75rem", borderRadius: "999px", fontSize: "0.75rem", fontWeight: 700, background: "var(--lilac-100)", color: "var(--lilac-600)", border: "1.5px solid var(--lilac-200)", whiteSpace: "nowrap" }}>
+                  {items.length} {items.length === 1 ? "PDF" : "PDFs"}
+                </span>
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "1rem" }}>
+                {items.map((item, i) => (
+                  <PointersCard key={item.id} item={item} index={i} />
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
         {/* ── Quizzes section ── */}
         {(() => {
           const quizzes = subject.reviewers.filter(r => !r.quizletLink || (r.questions && r.questions.length > 0));
@@ -150,40 +218,6 @@ export default function SubjectPage() {
                   <p style={{ fontSize: "0.85rem", color: "var(--text-soft)" }}>No quizzes added yet.</p>
                 </div>
               )}
-            </div>
-          );
-        })()}
-
-        {/* ── Exam Reviewers section ── */}
-        {(() => {
-          const subjectExams = getExamsBySubject(subject.id);
-          if (subjectExams.length === 0) return null;
-          const readyCount = subjectExams.filter(e => examStats(e).ready).length;
-          return (
-            <div>
-              <div
-                className="anim-fade-up"
-                style={{ animationDelay: "100ms", display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.25rem", gap: "0.75rem" }}
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: "var(--lilac-600)", flexShrink: 0 }}>
-                    <path d="M8 2.5L1.5 5.75 8 9l6.5-3.25L8 2.5Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
-                    <path d="M4 7v3.25c0 .9 1.8 2.25 4 2.25s4-1.35 4-2.25V7M14.5 5.75V9.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#2d1f5e" }}>
-                    Exam Reviewers
-                  </h2>
-                </div>
-                <span style={{ padding: "0.25rem 0.75rem", borderRadius: "999px", fontSize: "0.75rem", fontWeight: 700, background: "var(--lilac-100)", color: "var(--lilac-600)", border: "1.5px solid var(--lilac-200)", whiteSpace: "nowrap" }}>
-                  {readyCount} / {subjectExams.length} ready
-                </span>
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "1rem" }}>
-                {subjectExams.map((exam, i) => (
-                  <ExamCard key={exam.id} exam={exam} subjectId={subject.id} index={i} />
-                ))}
-              </div>
             </div>
           );
         })()}

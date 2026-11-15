@@ -1,0 +1,3664 @@
+{
+  "nodes": [
+    {
+      "id": "oxlintrc",
+      "label": ".oxlintrc.json",
+      "file_type": "code",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "oxlintrc_schema",
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "oxlintrc_plugins",
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "oxlintrc_rules",
+      "label": "rules",
+      "file_type": "code",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "oxlintrc_rules_react_rules_of_hooks",
+      "label": "react/rules-of-hooks",
+      "file_type": "code",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "oxlintrc_rules_react_only_export_components",
+      "label": "react/only-export-components",
+      "file_type": "code",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_exam",
+      "label": "make_exam.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_exam_build_questions",
+      "label": "build_questions()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_exam_rationale_1",
+      "label": "Turn questions.py into the cc6_finals exam object (JSON) for src/data/exams.js.",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf",
+      "label": "make_pdf.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "label": "Rule",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L31",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "flowable",
+      "label": "Flowable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_rule_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_rule_wrap",
+      "label": ".wrap()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_rule_draw",
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_esc",
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
+      "label": "bullets_for()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L64",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_build_footer",
+      "label": "footer()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_rationale_1",
+      "label": "Build the CC6 Finals pointers PDF: Times 12, black text only, review-material…",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_rationale_32",
+      "label": "Thin black line under a part heading, like the review material.",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_pointers",
+      "label": "pointers.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/pointers.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_questions",
+      "label": "questions.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_questions_sub",
+      "label": "sub()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_cc6_source_questions_rationale_14",
+      "label": "Distractors for SQL sub-language items: the other four minus one.",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_type",
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_lint",
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_preview",
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_react",
+      "label": "react@^19.2.8",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_react_dom",
+      "label": "react-dom@^19.2.8",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_react_dom",
+      "label": "react-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_react_router_dom",
+      "label": "react-router-dom@^7.18.2",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_react_router_dom",
+      "label": "react-router-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss_vite",
+      "label": "@tailwindcss/vite@^4.3.3",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_tailwindcss_vite",
+      "label": "@tailwindcss/vite",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_types_react",
+      "label": "@types/react@^19.2.17",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_react",
+      "label": "@types/react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_types_react_dom",
+      "label": "@types/react-dom@^19.2.3",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_react_dom",
+      "label": "@types/react-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react@^6.0.4",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_oxlint",
+      "label": "oxlint@^1.75.0",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_oxlint",
+      "label": "oxlint",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss",
+      "label": "tailwindcss@^4.3.3",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_tailwindcss",
+      "label": "tailwindcss",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_vite",
+      "label": "vite@^8.2.0",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_vite",
+      "label": "vite",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_app",
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "src/App.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.jsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_examcard",
+      "label": "ExamCard.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_examcard_clockicon",
+      "label": "ClockIcon()",
+      "file_type": "code",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_examcard_examcard",
+      "label": "ExamCard()",
+      "file_type": "code",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_navbar",
+      "label": "Navbar.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Navbar.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_navbar_navbar",
+      "label": "Navbar()",
+      "file_type": "code",
+      "source_file": "src/components/Navbar.jsx",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_pointerscard",
+      "label": "PointersCard.jsx",
+      "file_type": "code",
+      "source_file": "src/components/PointersCard.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_pointerscard_pointerscard",
+      "label": "PointersCard()",
+      "file_type": "code",
+      "source_file": "src/components/PointersCard.jsx",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_reviewercard",
+      "label": "ReviewerCard.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ReviewerCard.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_reviewercard_reviewercard",
+      "label": "ReviewerCard()",
+      "file_type": "code",
+      "source_file": "src/components/ReviewerCard.jsx",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_subjectcard",
+      "label": "SubjectCard.jsx",
+      "file_type": "code",
+      "source_file": "src/components/SubjectCard.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_subjectcard_colors",
+      "label": "COLORS",
+      "file_type": "code",
+      "source_file": "src/components/SubjectCard.jsx",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_subjectcard_subjectcard",
+      "label": "SubjectCard()",
+      "file_type": "code",
+      "source_file": "src/components/SubjectCard.jsx",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_typebadge",
+      "label": "TypeBadge.jsx",
+      "file_type": "code",
+      "source_file": "src/components/TypeBadge.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_typebadge_types",
+      "label": "TYPES",
+      "file_type": "code",
+      "source_file": "src/components/TypeBadge.jsx",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_typebadge_typebadge",
+      "label": "TypeBadge()",
+      "file_type": "code",
+      "source_file": "src/components/TypeBadge.jsx",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams",
+      "label": "exams.js",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_exams",
+      "label": "exams",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_pointers",
+      "label": "pointers",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2243",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_getexamsbysubject",
+      "label": "getExamsBySubject()",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2258",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_getexambyid",
+      "label": "getExamById()",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2262",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_getpointersbysubject",
+      "label": "getPointersBySubject()",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2266",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_term_colors",
+      "label": "TERM_COLORS",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2271",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_exams_termstyle",
+      "label": "termStyle()",
+      "file_type": "code",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2278",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_subjects",
+      "label": "subjects.js",
+      "file_type": "code",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_subjects_subjects",
+      "label": "subjects",
+      "file_type": "code",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_subjects_getsubjectbyid",
+      "label": "getSubjectById()",
+      "file_type": "code",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L8140",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_data_subjects_getreviewerbyid",
+      "label": "getReviewerById()",
+      "file_type": "code",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L8144",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_main",
+      "label": "main.jsx",
+      "file_type": "code",
+      "source_file": "src/main.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_homepage",
+      "label": "HomePage.jsx",
+      "file_type": "code",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_homepage_homepage",
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage",
+      "label": "QuizPage.jsx",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_state",
+      "label": "STATE",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_shufflearray",
+      "label": "shuffleArray()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_questionpoints",
+      "label": "questionPoints()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_ischoicetype",
+      "label": "isChoiceType()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_totalpointsof",
+      "label": "totalPointsOf()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_fmtscore",
+      "label": "fmtScore()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_fmtclock",
+      "label": "fmtClock()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_getgrade",
+      "label": "getGrade()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L61",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_normalize",
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L69",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_checkidentanswer",
+      "label": "checkIdentAnswer()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L74",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_chevright",
+      "label": "ChevRight()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L82",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_identificationquestion",
+      "label": "IdentificationQuestion()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_identificationquestion_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_identificationquestion_handlekeydown",
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L108",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_identificationquestion_handleselfgrade",
+      "label": "handleSelfGrade()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L112",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_codeblock",
+      "label": "CodeBlock()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L232",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_outputtracingquestion",
+      "label": "OutputTracingQuestion()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L254",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_outputtracingquestion_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L263",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_outputtracingquestion_handlekeydown",
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L271",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_outputtracingquestion_handleselfgrade",
+      "label": "handleSelfGrade()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L278",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_fillcodequestion",
+      "label": "FillCodeQuestion()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L402",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_fillcodequestion_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L411",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_fillcodequestion_handlekeydown",
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L419",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_fillcodequestion_handleselfgrade",
+      "label": "handleSelfGrade()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L423",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_enumerationquestion",
+      "label": "EnumerationQuestion()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L541",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_enumerationquestion_handlereveal",
+      "label": "handleReveal()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L546",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_enumerationquestion_toggleitem",
+      "label": "toggleItem()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L550",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_enumerationquestion_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L559",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_matchingquestion",
+      "label": "MatchingQuestion()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L689",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_matchingquestion_selectoption",
+      "label": "selectOption()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L693",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_matchingquestion_handlecheck",
+      "label": "handleCheck()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L704",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_quizpage",
+      "label": "QuizPage()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L842",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_quizpage_update",
+      "label": "update()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L874",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_quizpage_startquiz",
+      "label": "startQuiz()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L900",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_quizpage_handlemcselect",
+      "label": "handleMcSelect()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L912",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_quizpage_handlenonmcanswer",
+      "label": "handleNonMcAnswer()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L933",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_quizpage_handlenext",
+      "label": "handleNext()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L955",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_subjectpage",
+      "label": "SubjectPage.jsx",
+      "file_type": "code",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_subjectpage_subjectpage",
+      "label": "SubjectPage()",
+      "file_type": "code",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "vite_config",
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "oxlintrc",
+      "target": "oxlintrc_schema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "oxlintrc",
+      "target": "oxlintrc_plugins",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "oxlintrc",
+      "target": "oxlintrc_rules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "oxlintrc_rules",
+      "target": "oxlintrc_rules_react_rules_of_hooks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "oxlintrc_rules",
+      "target": "oxlintrc_rules_react_only_export_components",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_exam",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_exam",
+      "target": "random",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_exam",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_exam",
+      "target": "subject_exam_reviewers_cc6_source_questions",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_exam",
+      "target": "subject_exam_reviewers_cc6_source_make_exam_build_questions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_exam_rationale_1",
+      "target": "subject_exam_reviewers_cc6_source_make_exam",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_exam.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "reportlab_lib_pagesizes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "reportlab_lib_units",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "reportlab_lib_colors",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "reportlab_lib_enums",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "reportlab_lib_styles",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "reportlab_platypus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "xml_sax_saxutils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "subject_exam_reviewers_cc6_source_pointers",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "target": "flowable",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule_wrap",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule_draw",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_esc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_build_footer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_esc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_esc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_build_footer",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_rationale_1",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_make_pdf_rationale_32",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_rule",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_questions",
+      "target": "subject_exam_reviewers_cc6_source_questions_sub",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_cc6_source_questions_rationale_14",
+      "target": "subject_exam_reviewers_cc6_source_questions_sub",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_lint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_react",
+      "target": "ref_react",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_react_dom",
+      "target": "ref_react_dom",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_router_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_react_router_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_react_router_dom",
+      "target": "ref_react_router_dom",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss_vite",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_tailwindcss_vite",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_tailwindcss_vite",
+      "target": "ref_tailwindcss_vite",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_types_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_types_react",
+      "target": "ref_types_react",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_types_react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_types_react_dom",
+      "target": "ref_types_react_dom",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitejs_plugin_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_vitejs_plugin_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_vitejs_plugin_react",
+      "target": "ref_vitejs_plugin_react",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_oxlint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_oxlint",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_oxlint",
+      "target": "ref_oxlint",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_tailwindcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_tailwindcss",
+      "target": "ref_tailwindcss",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "ref_vite",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_devdependencies_vite",
+      "target": "ref_vite",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_components_navbar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_homepage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_subjectpage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_quizpage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_app_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard",
+      "target": "src_data_exams",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard",
+      "target": "src_data_exams_termstyle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard",
+      "target": "src_components_examcard_clockicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard",
+      "target": "src_components_examcard_examcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard_examcard",
+      "target": "src_components_examcard_clockicon",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_navbar",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navbar.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_navbar",
+      "target": "src_components_navbar_navbar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navbar.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_pointerscard",
+      "target": "src_data_exams",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PointersCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_pointerscard",
+      "target": "src_data_exams_termstyle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PointersCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_pointerscard",
+      "target": "src_components_pointerscard_pointerscard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PointersCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_reviewercard",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ReviewerCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_reviewercard",
+      "target": "src_components_reviewercard_reviewercard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ReviewerCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_subjectcard",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SubjectCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_subjectcard",
+      "target": "src_components_subjectcard_colors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SubjectCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_subjectcard",
+      "target": "src_components_subjectcard_subjectcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SubjectCard.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_typebadge",
+      "target": "src_components_typebadge_types",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TypeBadge.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_typebadge",
+      "target": "src_components_typebadge_typebadge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TypeBadge.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_exams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_pointers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2243",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_getexamsbysubject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2258",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_getexambyid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2262",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_getpointersbysubject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2266",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_term_colors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2271",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams",
+      "target": "src_data_exams_termstyle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2278",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_exams_getexambyid",
+      "target": "src_data_exams_getexamsbysubject",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/exams.js",
+      "source_location": "L2263",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_subjects",
+      "target": "src_data_subjects_subjects",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_subjects",
+      "target": "src_data_subjects_getsubjectbyid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L8140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_subjects",
+      "target": "src_data_subjects_getreviewerbyid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L8144",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_data_subjects_getreviewerbyid",
+      "target": "src_data_subjects_getsubjectbyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/subjects.js",
+      "source_location": "L8145",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_main",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_main",
+      "target": "ref_react_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_main",
+      "target": "src_index",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_main",
+      "target": "src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage",
+      "target": "src_data_subjects",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage",
+      "target": "src_data_subjects_subjects",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage",
+      "target": "src_components_subjectcard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage",
+      "target": "src_pages_homepage_homepage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_data_subjects",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_data_subjects_getsubjectbyid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_data_subjects_getreviewerbyid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_data_exams",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_data_exams_getexambyid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_components_typebadge",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_state",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_shufflearray",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_questionpoints",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_ischoicetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_totalpointsof",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_fmtscore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_fmtclock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_getgrade",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_normalize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_checkidentanswer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_chevright",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_identificationquestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_identificationquestion",
+      "target": "src_pages_quizpage_identificationquestion_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_identificationquestion",
+      "target": "src_pages_quizpage_identificationquestion_handlekeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_identificationquestion",
+      "target": "src_pages_quizpage_identificationquestion_handleselfgrade",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_codeblock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_outputtracingquestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L254",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion",
+      "target": "src_pages_quizpage_outputtracingquestion_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L263",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion",
+      "target": "src_pages_quizpage_outputtracingquestion_handlekeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L271",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion",
+      "target": "src_pages_quizpage_outputtracingquestion_handleselfgrade",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L278",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_fillcodequestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L402",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion",
+      "target": "src_pages_quizpage_fillcodequestion_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L411",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion",
+      "target": "src_pages_quizpage_fillcodequestion_handlekeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L419",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion",
+      "target": "src_pages_quizpage_fillcodequestion_handleselfgrade",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L423",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_enumerationquestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L541",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_enumerationquestion",
+      "target": "src_pages_quizpage_enumerationquestion_handlereveal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L546",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_enumerationquestion",
+      "target": "src_pages_quizpage_enumerationquestion_toggleitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L550",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_enumerationquestion",
+      "target": "src_pages_quizpage_enumerationquestion_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L559",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_matchingquestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L689",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_matchingquestion",
+      "target": "src_pages_quizpage_matchingquestion_selectoption",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L693",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_matchingquestion",
+      "target": "src_pages_quizpage_matchingquestion_handlecheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L704",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L842",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_update",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L874",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_startquiz",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L900",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_handlemcselect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L912",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_handlenonmcanswer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L933",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_handlenext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L955",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_totalpointsof",
+      "target": "src_pages_quizpage_questionpoints",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_checkidentanswer",
+      "target": "src_pages_quizpage_normalize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_identificationquestion",
+      "target": "src_pages_quizpage_identificationquestion_handleselfgrade",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L205",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_identificationquestion_handlesubmit",
+      "target": "src_pages_quizpage_checkidentanswer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_identificationquestion_handlekeydown",
+      "target": "src_pages_quizpage_identificationquestion_handlesubmit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion",
+      "target": "src_pages_quizpage_codeblock",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion",
+      "target": "src_pages_quizpage_outputtracingquestion_handleselfgrade",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L387",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion_handlesubmit",
+      "target": "src_pages_quizpage_checkidentanswer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion_handlekeydown",
+      "target": "src_pages_quizpage_outputtracingquestion_handlesubmit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L274",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion",
+      "target": "src_pages_quizpage_codeblock",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L436",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion",
+      "target": "src_pages_quizpage_fillcodequestion_handleselfgrade",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L526",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion_handlesubmit",
+      "target": "src_pages_quizpage_checkidentanswer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L413",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_fillcodequestion_handlekeydown",
+      "target": "src_pages_quizpage_fillcodequestion_handlesubmit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L420",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_enumerationquestion",
+      "target": "src_pages_quizpage_enumerationquestion_toggleitem",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L623",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_matchingquestion",
+      "target": "src_pages_quizpage_matchingquestion_selectoption",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L780",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_update",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L882",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_totalpointsof",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L968",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_chevright",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L982",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_getgrade",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_fmtscore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1134",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_ischoicetype",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1195",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_fmtclock",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1382",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_handlemcselect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1441",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_identificationquestion",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1466",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_quizpage_handlenonmcanswer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1469",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_enumerationquestion",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1475",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_outputtracingquestion",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1484",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_fillcodequestion",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1493",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_matchingquestion",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1502",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage_startquiz",
+      "target": "src_pages_quizpage_shufflearray",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L901",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "ref_react_router_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_data_subjects",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_data_subjects_getsubjectbyid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_components_reviewercard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_components_examcard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_components_pointerscard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_data_exams",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_data_exams_getexamsbysubject",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_data_exams_getpointersbysubject",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_pages_subjectpage_subjectpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vite_config",
+      "target": "ref_vite",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vite.config.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vite_config",
+      "target": "ref_vitejs_plugin_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vite.config.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vite_config",
+      "target": "ref_tailwindcss_vite",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "vite.config.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_components_navbar_navbar",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_homepage_homepage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_subjectpage_subjectpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_main",
+      "target": "src_app_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage",
+      "target": "src_components_subjectcard_subjectcard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_components_typebadge_typebadge",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_components_reviewercard_reviewercard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_components_examcard_examcard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage",
+      "target": "src_components_pointerscard_pointerscard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_examcard_examcard",
+      "target": "src_data_exams_termstyle",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamCard.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_pointerscard_pointerscard",
+      "target": "src_data_exams_termstyle",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PointersCard.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_data_subjects_getsubjectbyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L848",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_data_exams_getexambyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L849",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_data_subjects_getreviewerbyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L849",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage_subjectpage",
+      "target": "src_data_subjects_getsubjectbyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage_subjectpage",
+      "target": "src_data_exams_getexamsbysubject",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage_subjectpage",
+      "target": "src_data_exams_getpointersbysubject",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app_app",
+      "target": "src_components_navbar_navbar",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app_app",
+      "target": "src_pages_homepage_homepage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app_app",
+      "target": "src_pages_subjectpage_subjectpage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_app_app",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_homepage_homepage",
+      "target": "src_components_subjectcard_subjectcard",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/HomePage.jsx",
+      "source_location": "L205",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_components_typebadge_typebadge",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1012",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage_subjectpage",
+      "target": "src_components_examcard_examcard",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage_subjectpage",
+      "target": "src_components_pointerscard_pointerscard",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_subjectpage_subjectpage",
+      "target": "src_components_reviewercard_reviewercard",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/SubjectPage.jsx",
+      "source_location": "L213",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": [],
+  "skipped_sources": [],
+  "extracted_sources": [
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/.oxlintrc.json",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/CC6/source/make_exam.py",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/CC6/source/make_pdf.py",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/CC6/source/pointers.py",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/CC6/source/questions.py",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/package.json",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/App.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/components/ExamCard.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/components/Navbar.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/components/PointersCard.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/components/ReviewerCard.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/components/SubjectCard.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/components/TypeBadge.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/data/exams.js",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/data/subjects.js",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/main.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/pages/HomePage.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/pages/QuizPage.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/src/pages/SubjectPage.jsx",
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/vite.config.js"
+  ]
+}
