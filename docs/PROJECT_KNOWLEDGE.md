@@ -80,6 +80,15 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - Pointers PDF: `public/pointers/WD_Finals_Pointers.pdf`, 6 pages, with a "Tips for Output Tracing" section.
 - Sources: `Subject Exam Reviewers/WD/source/` (questions.py, pointers.py, make_pdf.py, make_exam.py). make_exam.py needs Node and a folder with jsdom installed.
 
+## 6c. EA Finals Exam Reviewer
+
+- Subject: EA - Enterprise Architecture. Coverage (instructor's announcement): Chapters 9-11. Exam type: MC and T/F.
+- Modules: Week 9 Developing Future Architecture Views, Week 10 Developing an EA Management Plan, Lecture 11 The Role of Investment Planning and Project Management. The CPIC phase diagram on Lecture 11 slide 8 is an image (Planning, Selection, Control, Evaluation around the Project Management Plan) and was read from the picture.
+- Mock exam: 146 questions = 97 multiple choice (Ch9 45, Ch10 36, Ch11 16) + 49 True or False (28 true, 21 false). MC letters balanced 24/24/24/25. Optional 90-minute timer.
+- False statements change one key fact, and their explanation gives the correct fact.
+- Distractors were lengthened until the correct option is the longest in only 37% of MC items (it started at 50%).
+- Pointers PDF: `public/pointers/EA_Finals_Pointers.pdf`, 6 pages. Sources: `Subject Exam Reviewers/EA/source/`.
+
 ## 7. Reviewer-Making Rules (the user's preferences)
 
 The user provides the modules per subject and decides the question types.
@@ -91,7 +100,8 @@ The user provides the modules per subject and decides the question types.
 - Distractors should be real terms from the same chapter so they are plausible.
 - Balance the correct answer letters, and avoid making the correct option the longest one.
 - When the user provides quizzes for the subject, include their items in the exam (same wording) and match the quiz's output-tracing difficulty.
-- The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing).
+- The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing; EA: multiple choice + True or False).
+- Keep True/False roughly balanced (about 40-50% false) so guessing "True" does not pay off.
 
 ### Pointers PDF rules
 - Times New Roman 12, proper indentation, black text only.

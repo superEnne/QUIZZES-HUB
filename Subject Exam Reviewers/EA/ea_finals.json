@@ -1,0 +1,1712 @@
+{
+  "id": "ea_finals",
+  "term": "Finals",
+  "title": "Finals Exam Reviewer",
+  "description": "Chapters 9–11: Developing Future Architecture Views, Developing an EA Management Plan, and the Role of Investment Planning and Project Management. Multiple choice + True or False.",
+  "timeLimit": 90,
+  "questions": [
+    {
+      "question": "The future view of the EA, which documents the IT resources that will be active in the operating environment several years in the future, is also known as the:",
+      "options": [
+        "legacy view",
+        "\"as-is\" view",
+        "baseline view",
+        "\"to-be\" view"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 1
+    },
+    {
+      "question": "The \"as-is\" view of the EA documents:",
+      "options": [
+        "Candidate initiatives only",
+        "Approved EA Change Requests",
+        "Current IT resources",
+        "IT resources several years in the future"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 2
+    },
+    {
+      "question": "If little EA planning has occurred, the future view of the EA should show how this will be eliminated:",
+      "options": [
+        "Strategic goals",
+        "Duplication in function",
+        "Executive sponsorship",
+        "Business services"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 3
+    },
+    {
+      "question": "In the home architecture analogy, having future EA views is like having:",
+      "options": [
+        "A full set of blueprints for the modification of an existing home or for building a new home",
+        "The owner's budget and the builder's schedule",
+        "The architect's project plan showing the design, approach, timeframe, and sequencing of work",
+        "A list of furniture for each room of the house"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. The architect's project plan is the analogy for the EA Management Plan (Chapter 10).",
+      "id": 4
+    },
+    {
+      "question": "The development of future EA views is important to an enterprise because it supports:",
+      "options": [
+        "Software coding, testing, and debugging",
+        "Hardware repair",
+        "Resource planning and decision-making",
+        "Payroll processing"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 5
+    },
+    {
+      "question": "Initiatives in the very early stages of consideration can be left out of future views until they have:",
+      "options": [
+        "Approval from all end-users, the webmaster, the research analyst, and the data architect",
+        "A signed vendor contract, installed hardware, and trained end-users",
+        "A completed Post-Implementation Review and a lessons-learned report",
+        "Firm backing from sponsors, strong business cases, and viable technical solutions"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 6
+    },
+    {
+      "question": "Candidate initiatives are better documented in:",
+      "options": [
+        "A special section of the EA Management Plan",
+        "The Data Dictionary",
+        "The Network Inventory",
+        "The current view of the Strategic Plan"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 7
+    },
+    {
+      "question": "CONOPS stands for:",
+      "options": [
+        "Continuity of Operations",
+        "Concept of Operations",
+        "Configuration of Operating Systems",
+        "Control of Operations"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 8
+    },
+    {
+      "question": "CONOPS scenarios looking into the future have been used for millennia as a:",
+      "options": [
+        "Software testing tool",
+        "Military planning tool",
+        "Network design tool",
+        "Financial accounting tool"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 9
+    },
+    {
+      "question": "The role that future scenarios play in developing EA future views is identifying:",
+      "options": [
+        "A range of operating options and planning assumptions for the enterprise",
+        "The single exact operating environment the enterprise will face in the future",
+        "The final cost and schedule of every planned IT project",
+        "The complete list of IT resources currently in operation"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 10
+    },
+    {
+      "question": "When an enterprise thinks through its scenarios in advance, its initiatives are described as:",
+      "options": [
+        "Counter-moves",
+        "Defensive moves",
+        "Offensive moves",
+        "Neutral moves"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. Probable responses are defensive moves.",
+      "id": 11
+    },
+    {
+      "question": "Enterprises should identify a range of internal and external factors from this analysis in deciding which future CONOPS scenarios to document.",
+      "options": [
+        "Post-Implementation Review",
+        "Cost-Benefit Analysis",
+        "CRUD Matrix",
+        "SWOT Analysis"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 12
+    },
+    {
+      "question": "Why is having a number of future scenarios helpful to an enterprise?",
+      "options": [
+        "It reduces the number of EA artifacts that must be documented and maintained at each level of the framework",
+        "It is impossible to predict which internal/external factors will create a helpful or hostile operating environment",
+        "Each scenario replaces the need for a separate Strategic Plan document",
+        "Only one scenario can be documented per year, so several years are needed"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 13
+    },
+    {
+      "question": "Which of the following is a Strategic Level EA artifact?",
+      "options": [
+        "Rack Elevation Diagram (NI-7)",
+        "Logical Data Model (D-5)",
+        "Balanced Scorecard (S-5)",
+        "Swim Lane Process Diagram (B-3)"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 14
+    },
+    {
+      "question": "Which plan provides more detailed descriptions of how IT initiatives will support the enterprise's Strategic Plan?",
+      "options": [
+        "Knowledge Management Plan",
+        "Security Plan",
+        "COOP Plan",
+        "E-Business or E-Government Plan"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 15
+    },
+    {
+      "question": "How often should updated strategic plans be published to reflect changes in direction and priorities?",
+      "options": [
+        "Every few years",
+        "Every week",
+        "Only once",
+        "Every month"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 16
+    },
+    {
+      "question": "Future scenarios should be documented the same way as the current scenario, which is as:",
+      "options": [
+        "An integrated narrative and set of planning assumptions",
+        "A list of hardware and software products",
+        "A data dictionary of entities and formats",
+        "A network connectivity diagram and an equipment inventory"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 17
+    },
+    {
+      "question": "High-level resource planning supported by IT-related strategic initiatives is also known as the:",
+      "options": [
+        "Systems analysis and design method (SADM) process",
+        "Capital planning and investment control (CPIC) process",
+        "Post-implementation review (PIR) process",
+        "EA configuration management (CM) process"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 18
+    },
+    {
+      "question": "Changes to strategic goals and initiatives in the future views will require new or modified:",
+      "options": [
+        "Hardware and software product lists",
+        "Data dictionaries and object libraries",
+        "Cable plant and network diagrams",
+        "Outcome and output measures of success"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 19
+    },
+    {
+      "question": "Which of the following is a Business Level EA artifact?",
+      "options": [
+        "Network Inventory (NI-2)",
+        "SWOT Analysis (S-2)",
+        "Investment Business Case (B-8)",
+        "System Interface Matrix (SA-3)"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 20
+    },
+    {
+      "question": "Influencing factors such as new customer requirements, competitive strategies, new technologies, and changes in resource availability are also known as:",
+      "options": [
+        "Drivers",
+        "Baselines",
+        "Waivers",
+        "Artifacts"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 21
+    },
+    {
+      "question": "Which is NOT one of the four general types of changes to business services?",
+      "options": [
+        "Major reengineering of an existing process",
+        "Minor improvement of an existing process",
+        "Introduction of a completely new process",
+        "Outsourcing of an existing process to a vendor"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. The four types: new process, elimination, major reengineering, and minor improvement.",
+      "id": 22
+    },
+    {
+      "question": "Reviews of existing business services, to find those that are obsolete or duplicative, should be performed periodically by:",
+      "options": [
+        "End-user representatives",
+        "The EA tool expert",
+        "Line-of-business managers",
+        "The webmaster"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 23
+    },
+    {
+      "question": "Documenting approved changes to business services helps maintain this kind of alignment with strategic goals and initiatives.",
+      "options": [
+        "Horizontal alignment",
+        "Upward alignment",
+        "Downward alignment",
+        "External alignment"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. Downward alignment ensures the lower three levels are adjusted to support the process changes.",
+      "id": 24
+    },
+    {
+      "question": "The Project Management Plan (PMP) is described as a:",
+      "options": [
+        "Network diagram",
+        "One-time document",
+        "Legal contract",
+        "Living document"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 25
+    },
+    {
+      "question": "The current view of the PMP is developed in this stage of the project lifecycle.",
+      "options": [
+        "Maintenance stage",
+        "Disposal stage",
+        "Requirements planning stage",
+        "Evaluation stage"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 26
+    },
+    {
+      "question": "SADM stands for:",
+      "options": [
+        "Systems Analysis and Design Methods",
+        "Software Application Delivery Management",
+        "Strategic Architecture Development Model",
+        "System Audit and Data Monitoring"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 27
+    },
+    {
+      "question": "A future view of a PMP may NOT be needed with methods that develop the entire system capability in one effort, such as:",
+      "options": [
+        "Evolutionary (spiral) development",
+        "Waterfall or rapid application development",
+        "Incremental (phased) development",
+        "Phased ERP implementation"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 28
+    },
+    {
+      "question": "Which is an example where having both a current and future view of the PMP would be beneficial?",
+      "options": [
+        "A one-time purchase of desktop computers",
+        "Phased implementation of large ERP projects with several modules",
+        "A waterfall project where the whole system is delivered in one release",
+        "A small website developed in a single effort"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 29
+    },
+    {
+      "question": "The part of the PMP that documents the value of the investment to the enterprise.",
+      "options": [
+        "Sequencing plan",
+        "Data dictionary",
+        "Investment business case",
+        "Network inventory"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 30
+    },
+    {
+      "question": "The determination that another use of the invested funds is not warranted relates to:",
+      "options": [
+        "Opportunity cost",
+        "Total cost of ownership",
+        "Sunk cost",
+        "Replacement cost"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 31
+    },
+    {
+      "question": "Which of the following is an Information Level EA artifact?",
+      "options": [
+        "Use Case Narrative and Diagram (B-7)",
+        "Concept of Operations Diagram (S-4)",
+        "Cable Plant Diagram (NI-6)",
+        "Activity/Entity (CRUD) Matrix (D-7)"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 32
+    },
+    {
+      "question": "Future changes in data models can be integrated into current views by using special notation such as:",
+      "options": [
+        "Dashed lines and symbols",
+        "Colored backgrounds",
+        "Page numbers",
+        "Different fonts"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 33
+    },
+    {
+      "question": "One of the most powerful reasons for adopting an Object-Oriented (OO) approach is that:",
+      "options": [
+        "OO removes the need for logical and physical data models in system design",
+        "Objects never need to be changed once they are created",
+        "Objects can be modified with minimal effort to reflect changes in requirements",
+        "OO only works with proprietary products from one vendor"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 34
+    },
+    {
+      "question": "These provide taxonomies and standard formats for data entities but do not store actual data.",
+      "options": [
+        "Object Libraries",
+        "Data Dictionaries",
+        "Knowledge Warehouses",
+        "Databases"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 35
+    },
+    {
+      "question": "These store both the formats/standards and the actual modules of code that constitute an object.",
+      "options": [
+        "Network Inventories",
+        "Data Dictionaries",
+        "Swim Lane Diagrams",
+        "Object Libraries"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 36
+    },
+    {
+      "question": "The protection of parts of the code module from alteration is called:",
+      "options": [
+        "Configuration management",
+        "Interoperability",
+        "Encapsulation",
+        "Inheritance"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 37
+    },
+    {
+      "question": "Which of the following is a Systems/Services Level EA artifact?",
+      "options": [
+        "System Evolution Diagram (SA-8)",
+        "Business Plan (B-1)",
+        "Building Blueprints (NI-4)",
+        "Physical Data Model (D-6)"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 38
+    },
+    {
+      "question": "These are where the designed interface points in the programming code of commercial software are located.",
+      "options": [
+        "System Interface Matrices (SA-3)",
+        "Application Program Interfaces (APIs)",
+        "Data Dictionaries / Object Libraries",
+        "Network Center Diagrams (NI-5)"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 39
+    },
+    {
+      "question": "Web-based services exchange information through the:",
+      "options": [
+        "OSI and TCP/IP network models",
+        "Cable plant and wiring closets",
+        "COOP Plan and security plan",
+        "NAP/ESB Web Service Platform"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 40
+    },
+    {
+      "question": "WSDL descriptions of web services are kept in the:",
+      "options": [
+        "UDDI Registry",
+        "EA repository glossary",
+        "Network Inventory",
+        "Data Dictionary"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 41
+    },
+    {
+      "question": "Which of the following is an Infrastructure Level EA artifact?",
+      "options": [
+        "System Data Flow Diagram (SA-4)",
+        "Rack Elevation Diagram (NI-7)",
+        "Strategic Plan (S-1)",
+        "Information Exchange Matrix (D-2)"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 42
+    },
+    {
+      "question": "Network technical standards in the future view include changes reflected in models such as:",
+      "options": [
+        "IDEF-0 and swim lane models",
+        "The waterfall and spiral models",
+        "The Balanced Scorecard and SWOT",
+        "The OSI model and TCP/IP model"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 43
+    },
+    {
+      "question": "Future views of security documentation include the related security documentation for applications and databases, and the:",
+      "options": [
+        "Balanced Scorecard",
+        "Use Case Diagram",
+        "COOP Plan",
+        "Business Plan"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 44
+    },
+    {
+      "question": "The future view of EACRs consists of an archive of:",
+      "options": [
+        "Approved, but yet to be implemented EA Change Requests",
+        "Current hardware and software inventories",
+        "Completed projects and their post-implementation reviews",
+        "Rejected EA Change Requests from previous years"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 45
+    },
+    {
+      "type": "true_false",
+      "question": "The future view of the EA is also known as the \"as-is\" view.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. The future view is the \"to-be\" view; the \"as-is\" view documents current IT resources.",
+      "id": 46
+    },
+    {
+      "type": "true_false",
+      "question": "Future EA views provide an authoritative reference for the architect and homeowner to use in discussing options and changes during development.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 47
+    },
+    {
+      "type": "true_false",
+      "question": "Initiatives in the very early stages of consideration should always be included in future EA views.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. They can be left out until they have firm sponsor backing, strong business cases, and viable technical solutions.",
+      "id": 48
+    },
+    {
+      "type": "true_false",
+      "question": "Cluttering future EA views with initiatives that have little chance of being implemented can detract from the perceived value of the EA.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 49
+    },
+    {
+      "type": "true_false",
+      "question": "CONOPS scenarios looking into the future have mainly been used as a financial accounting tool.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. They have been used as a military planning tool for millennia.",
+      "id": 50
+    },
+    {
+      "type": "true_false",
+      "question": "CONOPS scenarios document both the current operating environment and a number of plausible future operating environments.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 51
+    },
+    {
+      "type": "true_false",
+      "question": "It is possible to predict exactly which internal and external factors will create a helpful or hostile operating environment.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. It is impossible to predict, which is why several future scenarios are helpful.",
+      "id": 52
+    },
+    {
+      "type": "true_false",
+      "question": "The future view of strategic plans can serve as draft documents where potential changes that have executive sponsorship are recorded.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 53
+    },
+    {
+      "type": "true_false",
+      "question": "Strategic scenarios can be added or deleted from the Strategic Plan's future view in response to changes in the operating environment.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 54
+    },
+    {
+      "type": "true_false",
+      "question": "Updated strategic plans should be published every month.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. Updated plans should be published every few years.",
+      "id": 55
+    },
+    {
+      "type": "true_false",
+      "question": "New strategic goals serve to direct the development of future operating scenarios.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 56
+    },
+    {
+      "type": "true_false",
+      "question": "There are six general types of changes to business services.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. There are four: new process, elimination, major reengineering, and minor improvement.",
+      "id": 57
+    },
+    {
+      "type": "true_false",
+      "question": "At the Business Level, all potential changes to business services should be documented, even those without executive sponsorship.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. Only potential changes that have executive sponsorship should be documented.",
+      "id": 58
+    },
+    {
+      "type": "true_false",
+      "question": "Downward alignment ensures that EA components and artifacts at the lower three levels are adjusted to support anticipated process changes.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 59
+    },
+    {
+      "type": "true_false",
+      "question": "PMPs are maintained on systems throughout the lifecycle, until the system is disposed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 60
+    },
+    {
+      "type": "true_false",
+      "question": "The investment business case usually requires a review at least annually.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 61
+    },
+    {
+      "type": "true_false",
+      "question": "If an investment no longer generates sufficient benefits, it should be cancelled or modified.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 62
+    },
+    {
+      "type": "true_false",
+      "question": "Object reuse increases the cost of systems upgrade projects.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. Object reuse lowers the cost of systems upgrade projects.",
+      "id": 63
+    },
+    {
+      "type": "true_false",
+      "question": "Data Dictionaries store the actual data of the enterprise's IT systems.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. Data Dictionaries do not store actual data; they list entities, attributes, data field formats, and standards.",
+      "id": 64
+    },
+    {
+      "type": "true_false",
+      "question": "Various versions of an object can be separately stored for use in different systems and applications.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 65
+    },
+    {
+      "type": "true_false",
+      "question": "APIs can never include open standards.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 9 - Developing Future Architecture Views. APIs may include open standards if maximum integration is desired, or be proprietary and limit interoperability.",
+      "id": 66
+    },
+    {
+      "type": "true_false",
+      "question": "The same documentation techniques should be used for current and future views so that changes are easier to highlight and compare.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 9 - Developing Future Architecture Views",
+      "id": 67
+    },
+    {
+      "question": "The document that describes how an enterprise will manage the transition of its current processes and resources to those that will be needed in the future.",
+      "options": [
+        "Strategic Plan",
+        "Project Management Plan",
+        "EA Management Plan",
+        "Knowledge Management Plan"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 68
+    },
+    {
+      "question": "The transition from the current EA to the future EA is:",
+      "options": [
+        "A one-time event that is completed within a single fiscal year",
+        "Not part of EA management, since it belongs only to project management and the PMP",
+        "Handled only by the webmaster when the EA website is updated",
+        "An ongoing activity, as new resources are implemented and become part of the current EA"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 69
+    },
+    {
+      "question": "The EA Management Plan is updated at regular intervals (e.g., annually) to provide:",
+      "options": [
+        "A completely new EA framework for each year",
+        "Clear version control for changes in current and future views",
+        "New hardware and software purchases for every department and office",
+        "Daily status reports for every ongoing project"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 70
+    },
+    {
+      "question": "Where should the EA Management Plan be archived?",
+      "options": [
+        "In the on-line EA repository",
+        "In the UDDI Registry",
+        "In the Data Dictionary",
+        "In the CIO's personal files"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 71
+    },
+    {
+      "question": "In the home architecture analogy, the EA Management Plan is like:",
+      "options": [
+        "A full set of blueprints for modifying an existing home or for building a completely new one",
+        "The architect's project plan, showing design, approach, timeframe, and sequencing of work",
+        "The homeowner's insurance policy that covers damage during remodeling",
+        "The builder's list of tools and materials needed for each room"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 72
+    },
+    {
+      "question": "Which part of the EA Management Plan contains Governance and Principles, EA Roles and Responsibilities, and the EA Program Budget?",
+      "options": [
+        "Part 2. EA Current Architecture Summary",
+        "Part 3. EA Future Architecture Summary",
+        "Part 4. EA Glossary and References",
+        "Part 1. EA Program Management"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 73
+    },
+    {
+      "question": "Which part of the EA Management Plan contains Future Operating Scenarios, Planning Assumptions, and the Sequencing Plan?",
+      "options": [
+        "Part 4. EA Glossary and References",
+        "Part 2. EA Current Architecture Summary",
+        "Part 3. EA Future Architecture Summary",
+        "Part 1. EA Program Management"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 74
+    },
+    {
+      "question": "EA governance is best described through a narrative that provides EA program policy and an accompanying:",
+      "options": [
+        "Data dictionary of all EA entities",
+        "Flow chart that shows how and when decisions are made",
+        "Cable plant diagram of each building",
+        "Rack elevation diagram of the enterprise network center"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 75
+    },
+    {
+      "question": "These articulate the enterprise's values as they relate to the EA and guide the EA program's establishment and management.",
+      "options": [
+        "EA output measures",
+        "EA waivers",
+        "EA principles",
+        "EA artifacts"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 76
+    },
+    {
+      "question": "Which is an example of an EA principle?",
+      "options": [
+        "Only proprietary products should be used",
+        "Stakeholders should not participate in EA",
+        "IT should always be purchased first, before a business case is written",
+        "The recognition that IT is normally a means and not an end in itself"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 77
+    },
+    {
+      "question": "For EA to be viewed as part of the strategic planning process, business executives must:",
+      "options": [
+        "See the value of the EA program in supporting the outcomes that matter to them",
+        "Personally approve every hardware and software purchase in the enterprise",
+        "Write all of the EA documentation themselves at every level",
+        "Manage the EA repository and the EA software application"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 78
+    },
+    {
+      "question": "An effective format for showing EA roles and responsibilities is a:",
+      "options": [
+        "Table",
+        "Swim lane",
+        "Pie chart",
+        "Rack elevation"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 79
+    },
+    {
+      "question": "EA team position whose role is to be the champion of the EA program, provide resources, and assist in resolving high-level EA issues.",
+      "options": [
+        "Chief Architect",
+        "Research Analyst",
+        "Webmaster",
+        "Sponsor"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 80
+    },
+    {
+      "question": "EA team position that facilitates the establishment of the EA program, leads the resolution of high-level issues, and integrates EA and other governance.",
+      "options": [
+        "Solutions Architect",
+        "Executive Sponsor",
+        "Chief Information Officer (CIO)",
+        "Line of Business Manager"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 81
+    },
+    {
+      "question": "EA team position that manages the EA program, selects the EA framework, identifies EA standards, and manages the EA configuration management sub-process.",
+      "options": [
+        "Chief Information Officer (CIO)",
+        "Chief Architect",
+        "Line of Business Manager",
+        "Systems Architect"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 82
+    },
+    {
+      "question": "EA team position responsible for maintenance of the EA software application and the EA repository.",
+      "options": [
+        "Data Architect",
+        "EA Tool Expert",
+        "Research Analyst",
+        "Webmaster"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 83
+    },
+    {
+      "question": "EA team position that provides technical analysis and design support for database-related EA components.",
+      "options": [
+        "Systems Architect",
+        "Solutions Architect",
+        "EA Tool Expert",
+        "Data Architect"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 84
+    },
+    {
+      "question": "EA team position whose role is Requirements Identification / QA, identifying end-user requirements and giving feedback on solutions.",
+      "options": [
+        "Sponsor",
+        "Research Analyst",
+        "End-User Representative",
+        "Webmaster"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 85
+    },
+    {
+      "question": "The EA program budget is documented by fiscal year and over the total lifecycle so that this is identified.",
+      "options": [
+        "Total cost of ownership (TCO)",
+        "Market value",
+        "Opportunity cost",
+        "Return on investment (ROI)"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 86
+    },
+    {
+      "question": "The initial estimate of EA program costs represents the:",
+      "options": [
+        "Output measure",
+        "Final cost of the EA program",
+        "Waiver",
+        "\"Baseline\" for EA program funding"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 87
+    },
+    {
+      "question": "These measures identify progress being made toward some new end-state, such as better EA component integration.",
+      "options": [
+        "Outcome measures",
+        "Output measures",
+        "Baseline measures",
+        "Cost measures"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 88
+    },
+    {
+      "question": "These measures provide data on activities and things, such as how many databases exist.",
+      "options": [
+        "Outcome measures",
+        "Output measures",
+        "Strategic measures",
+        "Qualitative measures"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 89
+    },
+    {
+      "question": "\"Reduce IT project planning average costs by ten percent within one year\" is an example of a(n):",
+      "options": [
+        "Planning assumption",
+        "Output measure",
+        "Outcome measure",
+        "EA principle"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 90
+    },
+    {
+      "question": "Part 2 of the EA Management Plan helps the present role of IT to be analyzed from either a:",
+      "options": [
+        "Top-down or bottom-up perspective",
+        "Daily or weekly perspective",
+        "Vendor or customer perspective",
+        "Left-to-right or right-to-left perspective"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 91
+    },
+    {
+      "question": "According to section 2.2, EA components should not be procured unless:",
+      "options": [
+        "They are proprietary products from a single vendor",
+        "There is a strong business case that supports investment",
+        "They appear in the hardware/software list",
+        "The webmaster requests them for the EA website"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 92
+    },
+    {
+      "question": "In section 2.3 (Systems and applications), comments should focus on degree of integration, potential scalability, user satisfaction, and:",
+      "options": [
+        "The number of office chairs",
+        "Employee birthdays",
+        "The color scheme of applications",
+        "Any reliance on proprietary solutions"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 93
+    },
+    {
+      "question": "Section 2.4 discusses how well internal and external networks, systems, and cable plants integrate to create a:",
+      "options": [
+        "Manual infrastructure",
+        "Temporary infrastructure",
+        "\"Seamless\" infrastructure",
+        "Proprietary infrastructure"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 94
+    },
+    {
+      "question": "Why should specific IT security information NOT be part of the EA Management Plan?",
+      "options": [
+        "Security is not part of EA",
+        "It belongs in the glossary",
+        "It is too expensive to print",
+        "It could reveal vulnerabilities"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 95
+    },
+    {
+      "question": "The standards section documents this, which provides EA standards for voice, data, video, and IT security.",
+      "options": [
+        "Balanced Scorecard (S-5)",
+        "Data Dictionary / Object Library",
+        "Technical Standards Reference Model (TSRM)",
+        "Capital Equipment Inventory (NI-3)"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 96
+    },
+    {
+      "question": "According to section 2.7, the most valuable resource an enterprise often has is its:",
+      "options": [
+        "Hardware",
+        "People",
+        "Software licenses",
+        "Buildings"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 97
+    },
+    {
+      "question": "In the example of three future operating scenarios, Scenario 2 represents:",
+      "options": [
+        "An aggressive business strategy in a good market environment",
+        "A defensive business strategy during a market down-turn",
+        "Continuing with the status quo",
+        "Closing the enterprise"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 98
+    },
+    {
+      "question": "In the EA3 framework, updates to current and future views should be accomplished in this manner to preserve the emphasis on strategy and business.",
+      "options": [
+        "Top-down",
+        "Bottom-up",
+        "Random order",
+        "Alphabetical order"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Updates begin with the enterprise's strategic goals and initiatives.",
+      "id": 99
+    },
+    {
+      "question": "This section documents the tasks, milestones, and timeframe for implementing new EA components and artifacts.",
+      "options": [
+        "Planning Assumptions",
+        "EA Glossary",
+        "EA Sequencing Plan",
+        "EA Program Budget"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 100
+    },
+    {
+      "question": "This section supports the sub-process by which changes to the EA are managed and the standards in the TSRM are applied.",
+      "options": [
+        "EA Sequencing Plan",
+        "EA Configuration Management (CM)",
+        "Future Operating Scenarios",
+        "Workforce Skill Requirements"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 101
+    },
+    {
+      "question": "Configuration management ensures that waivers have specific time limits so that:",
+      "options": [
+        "Projects finish faster",
+        "No documentation is needed",
+        "Waivers can be used forever",
+        "EA standards are eventually realized"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 102
+    },
+    {
+      "question": "Part 4 of the EA Management Plan provides a Glossary of EA terms along with a(n):",
+      "options": [
+        "Network Inventory",
+        "Acronym List",
+        "Sequencing Plan",
+        "Business Case"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Because EA is still an emerging area of practice, these create a common set of terms.",
+      "id": 103
+    },
+    {
+      "type": "true_false",
+      "question": "The EA Management Plan documents the enterprise's performance gaps, resource requirements, planned solutions, a sequencing plan, and a summary of the current and future architecture.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 104
+    },
+    {
+      "type": "true_false",
+      "question": "The EA Management Plan is a one-time document that is never updated.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. It is a living document updated at regular intervals (e.g., annually).",
+      "id": 105
+    },
+    {
+      "type": "true_false",
+      "question": "Large and mid-size enterprises often have many IT projects underway at any given time, which requires coordination, prioritization, and oversight.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 106
+    },
+    {
+      "type": "true_false",
+      "question": "The EA Management Plan has four parts.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Program Management, Current Architecture Summary, Future Architecture Summary, Glossary and References.",
+      "id": 107
+    },
+    {
+      "type": "true_false",
+      "question": "An emphasis on using commercial products that are based on open standards is an example of an EA principle.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 108
+    },
+    {
+      "type": "true_false",
+      "question": "The Webmaster is responsible for selecting and implementing the EA framework and documentation methodology.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. That is the Chief Architect's responsibility; the Webmaster maintains the EA website.",
+      "id": 109
+    },
+    {
+      "type": "true_false",
+      "question": "The EA Tool Expert participates in EA program decision-making and promotes the identification of IT-related requirements for each LOB.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. That describes Line of Business Managers; the EA Tool Expert maintains the EA software application and repository.",
+      "id": 110
+    },
+    {
+      "type": "true_false",
+      "question": "If the scope of the EA program changes, a corresponding change in the funding baseline should also be made.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 111
+    },
+    {
+      "type": "true_false",
+      "question": "Output measures often have both quantitative and qualitative elements, while outcome measures are usually quantitative.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. It is the reverse: outcome measures have both elements; output measures are usually quantitative.",
+      "id": 112
+    },
+    {
+      "type": "true_false",
+      "question": "The attainment of outcomes correlates to goal attainment, which is the most important thing to an enterprise.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 113
+    },
+    {
+      "type": "true_false",
+      "question": "\"Number of IT projects planned that year\" is an example of an output measure.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 114
+    },
+    {
+      "type": "true_false",
+      "question": "Part 2 of the EA Management Plan should duplicate all of the extensive documentation of the current EA.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Its objective is not to duplicate it, but to give an integrated view of how components and artifacts support each other.",
+      "id": 115
+    },
+    {
+      "type": "true_false",
+      "question": "IT security should be part of any strategic goal or initiative that depends on accurate, properly authenticated information.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 116
+    },
+    {
+      "type": "true_false",
+      "question": "In the example scenarios, Scenario 1 is an aggressive business strategy in a good market environment.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Scenario 1 is continuing with the status quo; Scenario 2 is the aggressive strategy.",
+      "id": 117
+    },
+    {
+      "type": "true_false",
+      "question": "If Future Scenario 2 is pursued in the example, several new e-commerce systems may need to be built and new manufacturing capacity supported.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 118
+    },
+    {
+      "type": "true_false",
+      "question": "Updates to the current and future views of the EA should begin with the technology infrastructure.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Updates are done top-down, beginning with the strategic goals and initiatives.",
+      "id": 119
+    },
+    {
+      "type": "true_false",
+      "question": "Changes to the EA include the addition, upgrade, and retirement of EA components or artifacts.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 120
+    },
+    {
+      "type": "true_false",
+      "question": "Configuration management allows waivers with no time limits.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 10 - Developing an EA Management Plan. Waivers have specific time limits so that EA standards are eventually realized.",
+      "id": 121
+    },
+    {
+      "type": "true_false",
+      "question": "A bibliographical list of reference books and articles is included in Part 4 of the EA Management Plan.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 10 - Developing an EA Management Plan",
+      "id": 122
+    },
+    {
+      "question": "The management and decision-making process associated with the planning, selection, control, and evaluation of investments in resources, including EA components.",
+      "options": [
+        "Capital Planning",
+        "Strategic Planning",
+        "Project Management",
+        "Configuration Management"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 123
+    },
+    {
+      "question": "What are the four phases of the CPIC process?",
+      "options": [
+        "Analyze, design, implement, maintain",
+        "Plan, design, build, test",
+        "Plan, select, control, and evaluate",
+        "Select, fund, build, retire"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 124
+    },
+    {
+      "question": "The EA program is only effective if the enterprise's resources are effectively applied to:",
+      "options": [
+        "Marketing campaigns only",
+        "Office decorations",
+        "Employee recreation",
+        "Gaps in operational performance"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. If there were no gaps, there would be no requirement for new or upgraded EA components.",
+      "id": 125
+    },
+    {
+      "question": "In the home architecture analogy for this chapter, for an architect's design to be approved:",
+      "options": [
+        "The owner must draw all of the blueprints without the help of the architect",
+        "The house must be larger than any other house in the area",
+        "The owner's requirements must be met within the budget that is available",
+        "The builder must finish construction before the design is made"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 126
+    },
+    {
+      "question": "Which of the following is promoted by the CPIC process?",
+      "options": [
+        "Encouraging a culture of learning by evaluating each completed investment",
+        "Avoiding business cases so that investments can be approved faster",
+        "Approving every proposed investment regardless of its value",
+        "Ignoring operational performance gaps until projects are completed"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 127
+    },
+    {
+      "question": "In which CPIC phase are requirements, the business case, and the project plan developed?",
+      "options": [
+        "Control Phase",
+        "Planning Phase",
+        "Evaluation Phase",
+        "Selection Phase"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 128
+    },
+    {
+      "question": "The CPIC phase where a funding decision is made for a proposed investment in an EA component.",
+      "options": [
+        "Control Phase",
+        "Planning Phase",
+        "Evaluation Phase",
+        "Selection Phase"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 129
+    },
+    {
+      "question": "The CPIC phase where ongoing projects are evaluated for how closely cost, schedule, and performance milestones are being met, and how well risk is managed.",
+      "options": [
+        "Control Phase",
+        "Planning Phase",
+        "Selection Phase",
+        "Evaluation Phase"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 130
+    },
+    {
+      "question": "The CPIC phase where completed IT projects receive a Post-Implementation Review (PIR) and operational systems are reviewed for continuing value.",
+      "options": [
+        "Selection Phase",
+        "Planning Phase",
+        "Evaluation Phase",
+        "Control Phase"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 131
+    },
+    {
+      "question": "In the CPIC cycle diagram, what is at the center connecting all four phases?",
+      "options": [
+        "Data Dictionary",
+        "Project Management Plan",
+        "Balanced Scorecard",
+        "EA Management Plan"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 132
+    },
+    {
+      "question": "Governance processes, including CPIC, should be overseen by a(n):",
+      "options": [
+        "External vendor that supplies the enterprise's ERP solution",
+        "Webmaster and research analyst of the EA team",
+        "Group of end-user representatives chosen from each line of business",
+        "Executive Steering Committee comprised of the enterprise's top executives"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 133
+    },
+    {
+      "question": "Project and Program Managers control successful outcomes by managing five primary aspects. Which of the following is one of them?",
+      "options": [
+        "Mitigating risk",
+        "Designing the logo",
+        "Hiring the CIO",
+        "Writing the glossary"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. The five: managing scope, controlling costs, maintaining the schedule, achieving product performance, mitigating risk.",
+      "id": 134
+    },
+    {
+      "question": "A temporary endeavor undertaken to create a unique product, service, or result.",
+      "options": [
+        "Portfolio",
+        "Project",
+        "Process",
+        "Program"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 135
+    },
+    {
+      "question": "An ongoing endeavor that manages existing processes/resources, or oversees the development of new processes/resources via projects.",
+      "options": [
+        "Plan",
+        "Project",
+        "Program",
+        "Phase"
+      ],
+      "answer": 2,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 136
+    },
+    {
+      "question": "In the Project Management Plan outline, Alternatives Analysis, Cost-Benefit Analysis, and Return on Investment Analysis are part of the:",
+      "options": [
+        "Security and Privacy",
+        "Project Controls",
+        "Architectural Alignment",
+        "Business Case"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 137
+    },
+    {
+      "question": "In the Project Management Plan outline, the Schedule and Work Breakdown Structure and Risk Management are part of:",
+      "options": [
+        "Strategic Alignment",
+        "Project Requirements",
+        "Business Case",
+        "Project Controls"
+      ],
+      "answer": 3,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 138
+    },
+    {
+      "type": "true_false",
+      "question": "The CPIC process is a cyclic process.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 139
+    },
+    {
+      "type": "true_false",
+      "question": "If there were no gaps in operational performance, there would still be a requirement for new or upgraded EA components.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. If there were no gaps, there would be no requirement for new or upgraded EA components.",
+      "id": 140
+    },
+    {
+      "type": "true_false",
+      "question": "A significant part of IT governance is implemented through the CPIC process.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 141
+    },
+    {
+      "type": "true_false",
+      "question": "In the CPIC Selection Phase, completed IT projects receive a Post-Implementation Review.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. The PIR happens in the Evaluation Phase; the Selection Phase makes the funding decision.",
+      "id": 142
+    },
+    {
+      "type": "true_false",
+      "question": "Project management focuses on developing, implementing, operating, improving, and/or retiring enterprise resources.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 143
+    },
+    {
+      "type": "true_false",
+      "question": "A program is a temporary endeavor, while a project is an ongoing endeavor.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. A project is temporary; a program is ongoing.",
+      "id": 144
+    },
+    {
+      "type": "true_false",
+      "question": "The Project Management Plan includes a Security and Privacy section.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 145
+    },
+    {
+      "type": "true_false",
+      "question": "In the home architecture analogy, the architect works with a builder to ensure the design is properly constructed, the schedule is met, and the budget is not exceeded.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+      "id": 146
+    }
+  ]
+}

@@ -513,6 +513,85 @@
       "captured_at": null,
       "author": null,
       "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_ea_finals_exam",
+      "label": "EA Finals mock exam (97 MC + 49 True/False)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_ea_ch9",
+      "label": "EA Ch 9 - Developing Future Architecture Views",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_ea_ch10",
+      "label": "EA Ch 10 - Developing an EA Management Plan",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_ea_ch11",
+      "label": "EA Ch 11 - Investment Planning and Project Management",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_ea_pointers_pdf",
+      "label": "EA Finals Pointers PDF (6 pages)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_cpic_diagram_image",
+      "label": "CPIC phase diagram read from slide image",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Lecture 11 slide 8 is a picture; its four phases and flow were read visually."
+    },
+    {
+      "id": "docs_project_knowledge_balanced_true_false",
+      "label": "Balanced True/False with one-fact false statements",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "About 40-50% false so guessing True does not pay off; explanations give the correct fact."
     }
   ],
   "edges": [
@@ -1505,6 +1584,196 @@
       "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
       "source_location": null,
       "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_finals_exam",
+      "target": "src_data_exams_exams",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_finals_exam",
+      "target": "subject_exam_reviewers_ea_source_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_finals_exam",
+      "target": "subject_exam_reviewers_ea_source_make_exam_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_ch9",
+      "target": "docs_project_knowledge_ea_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_ch9",
+      "target": "docs_project_knowledge_ea_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_ch10",
+      "target": "docs_project_knowledge_ea_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_ch10",
+      "target": "docs_project_knowledge_ea_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_ch11",
+      "target": "docs_project_knowledge_ea_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_ch11",
+      "target": "docs_project_knowledge_ea_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_cpic_diagram_image",
+      "target": "docs_project_knowledge_ea_ch11",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_balanced_true_false",
+      "target": "subject_exam_reviewers_ea_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_balanced_true_false",
+      "target": "src_components_typebadge_types",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_pointers_pdf",
+      "target": "src_data_exams_pointers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_pointers_pdf",
+      "target": "subject_exam_reviewers_ea_source_pointers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_ea_pointers_pdf",
+      "target": "subject_exam_reviewers_ea_source_make_pdf_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_writing_rules",
+      "target": "subject_exam_reviewers_ea_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_ea_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_generic_make_pdf",
+      "target": "subject_exam_reviewers_ea_source_make_pdf_build",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_optional_timer",
+      "target": "docs_project_knowledge_ea_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [
@@ -1567,12 +1836,28 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    },
+    {
+      "id": "ea_reviewer_build_pipeline",
+      "label": "EA reviewer build pipeline",
+      "nodes": [
+        "subject_exam_reviewers_ea_source_questions",
+        "subject_exam_reviewers_ea_source_pointers",
+        "subject_exam_reviewers_ea_source_make_exam",
+        "subject_exam_reviewers_ea_source_make_pdf",
+        "src_data_exams_exams",
+        "src_data_exams_pointers"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
     }
   ],
   "input_tokens": 0,
   "output_tokens": 0,
   "coverage": {
-    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md": 112,
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md": 122,
     "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt": 50,
     "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/index.html": 14
   }
