@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { getSubjectById, getReviewerById } from "../data/subjects";
+import { getExamById } from "../data/exams";
+import TypeBadge from "../components/TypeBadge";
 
 const SPARKLE = "/Untitled design (3).png";
 const CANDY   = "/Untitled design (1).png";
@@ -47,6 +49,15 @@ function fmtScore(n) {
   return rounded.toFixed(2).replace(/0$/, "");
 }
 
+/** Seconds → "m:ss" (or "h:mm:ss" for long exams). */
+function fmtClock(total) {
+  const t = Math.max(0, total);
+  const h = Math.floor(t / 3600);
+  const m = Math.floor((t % 3600) / 60);
+  const sec = String(t % 60).padStart(2, "0");
+  return h > 0 ? `${h}:${String(m).padStart(2, "0")}:${sec}` : `${m}:${sec}`;
+}
+
 function getGrade(pct) {
   if (pct >= 90) return { label: "Excellent!", color: "#22c55e", bg: "#dcfce7", border: "#86efac" };
   if (pct >= 75) return { label: "Good Job!", color: "#9370db", bg: "#f3eeff", border: "#c9b4f8" };
@@ -73,33 +84,6 @@ function ChevRight() {
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ flexShrink: 0 }}>
       <path d="M4 2L8 6L4 10" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
-  );
-}
-
-// ─────────────── TYPE BADGE ──────────────────────────────────────────────────
-function TypeBadge({ type }) {
-  const map = {
-    mc:             { label: "Multiple Choice", color: "#7c3aed", bg: "#f3e8ff" },
-    identification: { label: "Identification",  color: "#0369a1", bg: "#e0f2fe" },
-    true_false:     { label: "True or False",   color: "#c2410c", bg: "#ffedd5" },
-    enumeration:    { label: "Enumeration",     color: "#047857", bg: "#d1fae5" },
-    output_tracing: { label: "Output Tracing",  color: "#b45309", bg: "#fef3c7" },
-    fill_code:      { label: "Fill the Code",   color: "#be185d", bg: "#fce7f3" },
-    matching:       { label: "Matching Type",   color: "#0e7490", bg: "#cffafe" },
-  };
-  const t = map[type] || map.mc;
-  return (
-    <span style={{
-      display: "inline-flex", alignItems: "center",
-      padding: "0.2rem 0.65rem",
-      borderRadius: "999px",
-      fontSize: "0.68rem", fontWeight: 800,
-      letterSpacing: "0.06em", textTransform: "uppercase",
-      background: t.bg, color: t.color,
-      border: `1.5px solid ${t.color}22`,
-    }}>
-      {t.label}
-    </span>
   );
 }
 
@@ -855,12 +839,15 @@ function MatchingQuestion({ q, onAnswer }) {
 }
 
 // ─────────────── MAIN QUIZ PAGE ──────────────────────────────────────────────
-export default function QuizPage() {
-  const { subjectId, reviewerId } = useParams();
+export default function QuizPage({ mode = "quiz" }) {
+  const { subjectId, reviewerId, examId } = useParams();
+  // "exam" mode = mock exam from data/exams.js (adds a countdown timer)
+  const isExam = mode === "exam";
   const navigate = useNavigate();
 
   const subject  = getSubjectById(subjectId);
-  const reviewer = getReviewerById(subjectId, reviewerId);
+  const reviewer = isExam ? getExamById(subjectId, examId) : getReviewerById(subjectId, reviewerId);
+  const backPath  = isExam ? `/subject/${subjectId}/exam/${examId}?tab=mock` : `/subject/${subjectId}`;
 
   const [quizState, setQuizState] = useState(STATE.IDLE);
   const [shuffled, setShuffled]   = useState([]);
@@ -875,6 +862,27 @@ export default function QuizPage() {
 
   // Per-question answered flag (ident/enum self-report before next)
   const [qAnswered, setQAnswered] = useState(false);
+
+  // Mock exam timer. Counts down to a fixed end time (not tick-by-tick), so it
+  // stays accurate even when the browser throttles timers in a background tab.
+  const [endsAt, setEndsAt]     = useState(null); // ms timestamp, null = untimed
+  const [timeLeft, setTimeLeft] = useState(null); // seconds left, for display
+  const [timedOut, setTimedOut] = useState(false);
+
+  useEffect(() => {
+    if (quizState !== STATE.QUIZ || endsAt === null) return;
+    function update() {
+      const left = Math.max(0, Math.ceil((endsAt - Date.now()) / 1000));
+      setTimeLeft(left);
+      if (left <= 0) {
+        setTimedOut(true);
+        setQuizState(STATE.RESULT);
+      }
+    }
+    update();
+    const id = setInterval(update, 250);
+    return () => clearInterval(id);
+  }, [quizState, endsAt]);
 
   if (!subject || !reviewer) {
     return (
@@ -893,6 +901,10 @@ export default function QuizPage() {
     setShuffled(doShuffle ? shuffleArray(questions) : [...questions]);
     setCurrent(0); setScore(0); setAnswers([]);
     setSelected(null); setRevealed(false); setQAnswered(false);
+    setTimedOut(false);
+    const seconds = isExam && reviewer.timeLimit ? reviewer.timeLimit * 60 : null;
+    setTimeLeft(seconds);
+    setEndsAt(seconds ? Date.now() + seconds * 1000 : null);
     setQuizState(STATE.QUIZ);
   }
 
@@ -970,7 +982,15 @@ export default function QuizPage() {
             <ChevRight />
             <Link to={`/subject/${subjectId}`} style={{ color: "var(--text-mid)", textDecoration: "none", fontWeight: 600 }}>{subject.code}</Link>
             <ChevRight />
-            <span style={{ color: "var(--lilac-600)", fontWeight: 700 }}>{reviewer.title}</span>
+            {isExam ? (
+              <>
+                <Link to={backPath} style={{ color: "var(--text-mid)", textDecoration: "none", fontWeight: 600 }}>{reviewer.title}</Link>
+                <ChevRight />
+                <span style={{ color: "var(--lilac-600)", fontWeight: 700 }}>Mock Exam</span>
+              </>
+            ) : (
+              <span style={{ color: "var(--lilac-600)", fontWeight: 700 }}>{reviewer.title}</span>
+            )}
           </div>
 
           <div className="card anim-fade-up" style={{ padding: "clamp(1.5rem, 5vw, 2.5rem)", textAlign: "center" }}>
@@ -1008,6 +1028,31 @@ export default function QuizPage() {
               )}
             </p>
 
+            {/* Mock exam time limit */}
+            {isExam && (
+              <div style={{
+                display: "flex", alignItems: "center", gap: "0.6rem",
+                padding: "0.85rem 1.1rem",
+                borderRadius: "14px",
+                background: "#fffbeb",
+                border: "1.5px solid #fde68a",
+                marginBottom: "0.85rem",
+                textAlign: "left",
+                fontSize: "0.82rem",
+                color: "#92400e",
+                fontWeight: 600,
+                lineHeight: 1.5,
+              }}>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}>
+                  <circle cx="8" cy="8.5" r="5.75" stroke="currentColor" strokeWidth="1.4"/>
+                  <path d="M8 5.5v3l2 1.5M6.5 1.75h3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                {reviewer.timeLimit
+                  ? <span>{reviewer.timeLimit}-minute time limit. The exam ends automatically when time runs out.</span>
+                  : <span>No time limit for this mock exam.</span>}
+              </div>
+            )}
+
             {/* Shuffle toggle */}
             <div style={{
               display: "flex", alignItems: "center", gap: "0.85rem",
@@ -1042,7 +1087,7 @@ export default function QuizPage() {
 
             {questions.length > 0 ? (
               <button className="btn-primary" onClick={startQuiz} style={{ width: "100%", padding: "0.9rem", fontSize: "0.95rem" }}>
-                Start Quiz
+                {isExam ? "Start Mock Exam" : "Start Quiz"}
               </button>
             ) : (
               <button className="btn-primary" disabled style={{ width: "100%", padding: "0.9rem", fontSize: "0.95rem" }}>
@@ -1097,22 +1142,41 @@ export default function QuizPage() {
               You got <strong style={{ color: grade.color }}>{fmtScore(score)}</strong> out of <strong style={{ color: grade.color }}>{totalPoints}</strong> items correct
               {totalPoints !== shuffled.length && <> across <strong style={{ color: grade.color }}>{shuffled.length}</strong> questions</>}.
             </p>
+            {timedOut && (
+              <div style={{
+                padding: "0.75rem 1rem",
+                borderRadius: "12px",
+                background: "#fff1f2",
+                border: "1.5px solid #fecdd3",
+                color: "#be123c",
+                fontSize: "0.85rem",
+                fontWeight: 700,
+                marginBottom: "1.5rem",
+              }}>
+                Time's up!
+                {shuffled.length - answers.length > 0 && (
+                  <> {shuffled.length - answers.length} {shuffled.length - answers.length === 1 ? "question was" : "questions were"} left unanswered.</>
+                )}
+              </div>
+            )}
             <div className="result-actions" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
               <button className="btn-primary" onClick={() => setQuizState(STATE.IDLE)} style={{ padding: "0.75rem 2rem" }}>
                 Try Again
               </button>
-              <Link to={`/subject/${subjectId}`} style={{ textDecoration: "none" }}>
+              <Link to={backPath} style={{ textDecoration: "none" }}>
                 <button className="btn-ghost" style={{ padding: "0.75rem 1.5rem" }}>
-                  Back to {subject.code}
+                  {isExam ? "Back to Reviewer" : `Back to ${subject.code}`}
                 </button>
               </Link>
             </div>
           </div>
 
           {/* Answer review */}
-          <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "1rem" }}>
-            Answer Review
-          </h3>
+          {answers.length > 0 && (
+            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "1rem" }}>
+              Answer Review
+            </h3>
+          )}
           <div style={{ display: "flex", flexDirection: "column", gap: "0.9rem" }}>
             {answers.map((a, i) => (
               <div key={i} className="card anim-fade-up" style={{ padding: "1.25rem", animationDelay: `${i * 40}ms` }}>
@@ -1299,15 +1363,44 @@ export default function QuizPage() {
             <span className="badge badge-lilac" style={{ marginBottom: "0.25rem", display: "inline-flex" }}>{subject.code}</span>
             <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", fontWeight: 500 }}>{reviewer.title}</p>
           </div>
-          <button
-            className="btn-ghost"
-            style={{ padding: "0.5rem 1rem", fontSize: "0.78rem" }}
-            onClick={() => {
-              if (window.confirm("Exit quiz? Your progress will be lost.")) navigate(`/subject/${subjectId}`);
-            }}
-          >
-            Exit
-          </button>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            {timeLeft !== null && (() => {
+              const urgent = timeLeft <= 60, low = timeLeft <= 300;
+              const c = urgent
+                ? { bg: "#fee2e2", fg: "#dc2626", bd: "#fca5a5" }
+                : low
+                  ? { bg: "#fffbeb", fg: "#b45309", bd: "#fde68a" }
+                  : { bg: "var(--lilac-100)", fg: "var(--lilac-600)", bd: "var(--lilac-200)" };
+              return (
+                <span
+                  title="Time left"
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: "0.35rem",
+                    padding: "0.45rem 0.85rem",
+                    borderRadius: "999px",
+                    fontSize: "0.8rem", fontWeight: 800,
+                    fontVariantNumeric: "tabular-nums",
+                    background: c.bg, color: c.fg, border: `1.5px solid ${c.bd}`,
+                  }}
+                >
+                  <svg width="13" height="13" viewBox="0 0 12 12" fill="none" style={{ flexShrink: 0 }}>
+                    <circle cx="6" cy="6" r="4.75" stroke="currentColor" strokeWidth="1.2"/>
+                    <path d="M6 3.5V6l1.75 1.25" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  {fmtClock(timeLeft)}
+                </span>
+              );
+            })()}
+            <button
+              className="btn-ghost"
+              style={{ padding: "0.5rem 1rem", fontSize: "0.78rem" }}
+              onClick={() => {
+                if (window.confirm(`Exit ${isExam ? "mock exam" : "quiz"}? Your progress will be lost.`)) navigate(backPath);
+              }}
+            >
+              Exit
+            </button>
+          </div>
         </div>
 
         {/* Progress */}
