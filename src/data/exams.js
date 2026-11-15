@@ -8,7 +8,7 @@
 //                 "term": "Finals",            label on the card
 //                 "title": "Finals Exam Reviewer",
 //                 "description": "Chapters 5-8 ...",
-//                 "timeLimit": 120,            minutes; null = no timer
+//                 "timeLimit": 120,            minutes for the OPTIONAL timer (off by default); null = no timer option
 //                 "questions": [ ... ]         same format as subjects.js, all 7 types work
 //               }
 //             An exam with no questions shows as "Coming soon".
@@ -2223,9 +2223,2220 @@ export const exams = {
       "id": "wd_finals",
       "term": "Finals",
       "title": "Finals Exam Reviewer",
-      "description": "",
-      "timeLimit": 60,
-      "questions": []
+      "description": "Chapters 5–7: Advanced CSS, Introduction to JavaScript (incl. DOM), and Web Hosting. Multiple choice + JavaScript output tracing.",
+      "timeLimit": 120,
+      "questions": [
+        {
+          "question": "It defines the intermediate styles that an animation passes through during execution.",
+          "options": [
+            "transition-duration",
+            "animation-fill-mode",
+            "@keyframes",
+            "animation-iteration-count"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 1
+        },
+        {
+          "question": "It allows a flex item to occupy more of the available container space relative to other items.",
+          "options": [
+            "flex-grow",
+            "justify-content",
+            "justify-self",
+            "flex-wrap"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 2
+        },
+        {
+          "question": "It removes an element from the rendered layout, so it does not occupy space.",
+          "options": [
+            "skew()",
+            "display: none",
+            "float",
+            "transition-delay"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 3
+        },
+        {
+          "question": "It controls how long a transition waits before it starts.",
+          "options": [
+            "animation-fill-mode",
+            "transition-duration",
+            "linear",
+            "transition-delay"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 4
+        },
+        {
+          "question": "It divides a grid container into columns whose widths can be expressed as fractions of available space.",
+          "options": [
+            "grid-template-columns",
+            "flex-wrap",
+            "grid gap",
+            "justify-self"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 5
+        },
+        {
+          "question": "It changes an element's position horizontally without changing the surrounding document flow.",
+          "options": [
+            "skew()",
+            "float",
+            "scale()",
+            "translate()"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 6
+        },
+        {
+          "question": "It specifies whether a flex container places items on a single line or allows them to wrap.",
+          "options": [
+            "flex-grow",
+            "flex-wrap",
+            "justify-content",
+            "grid-template-columns"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 7
+        },
+        {
+          "question": "It determines whether an animated element keeps the styles from its final keyframe after the animation finishes.",
+          "options": [
+            "@keyframes",
+            "transition-delay",
+            "animation-fill-mode",
+            "animation-iteration-count"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 8
+        },
+        {
+          "question": "It makes an element respond when a pointer is positioned over it.",
+          "options": [
+            "Media Queries",
+            ":hover",
+            "transition-duration",
+            "transform: rotate()"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 9
+        },
+        {
+          "question": "It establishes the spacing between rows and columns in a grid layout.",
+          "options": [
+            "repeat()",
+            "justify-self",
+            "grid gap",
+            "grid-template-columns"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 10
+        },
+        {
+          "question": "It makes an element rotate around its transformation origin.",
+          "options": [
+            "transform: rotate()",
+            "translate(x,y)",
+            "scaleX()",
+            "skew()"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 11
+        },
+        {
+          "question": "It applies layout rules conditionally according to characteristics such as viewport width.",
+          "options": [
+            "CSS Grid",
+            "float",
+            "Flexbox",
+            "Media Queries"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 12
+        },
+        {
+          "question": "It controls the alignment of an individual grid item along the inline axis.",
+          "options": [
+            "justify-content",
+            "justify-self",
+            "flex-grow",
+            "grid gap"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 13
+        },
+        {
+          "question": "It specifies the amount of time a transition takes to complete.",
+          "options": [
+            "animation-iteration-count",
+            "transition-delay",
+            "transition-duration",
+            "linear"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 14
+        },
+        {
+          "question": "It arranges items primarily along one dimension, either horizontally or vertically.",
+          "options": [
+            "Flexbox",
+            "Media Queries",
+            "float",
+            "CSS Grid"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 15
+        },
+        {
+          "question": "It changes the apparent width and height of an element through scaling.",
+          "options": [
+            "transform: rotate()",
+            "skew()",
+            "translate()",
+            "scale()"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 16
+        },
+        {
+          "question": "It controls how flex items are distributed along the main axis.",
+          "options": [
+            "justify-content",
+            "flex-wrap",
+            "justify-self",
+            "flex-grow"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 17
+        },
+        {
+          "question": "It places an element toward one side so surrounding content can flow around it.",
+          "options": [
+            "display: none",
+            "justify-self",
+            "float",
+            "translate()"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 18
+        },
+        {
+          "question": "It defines the number of times an animation runs, including the option to repeat indefinitely.",
+          "options": [
+            "animation-fill-mode",
+            "@keyframes",
+            "transition-duration",
+            "animation-iteration-count"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 19
+        },
+        {
+          "question": "It uses a function to generate repeated track patterns in a grid definition.",
+          "options": [
+            "grid gap",
+            "repeat()",
+            "scaleX()",
+            "translate(x,y)"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 20
+        },
+        {
+          "question": "It produces a transition that maintains a constant rate of change.",
+          "options": [
+            "ease-in-out",
+            "ease-out",
+            "linear",
+            "ease"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 21
+        },
+        {
+          "question": "It relocates an element horizontally and vertically using two coordinate values.",
+          "options": [
+            "transform: rotate()",
+            "translate(x,y)",
+            "skew()",
+            "scale()"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 22
+        },
+        {
+          "question": "It resizes an element using a proportional factor along its horizontal axis.",
+          "options": [
+            "scaleX()",
+            "translate()",
+            "skew()",
+            "scale()"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 23
+        },
+        {
+          "question": "It slants an element by changing the angle of its axes.",
+          "options": [
+            "transform: rotate()",
+            "translate(x,y)",
+            "scaleX()",
+            "skew()"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 24
+        },
+        {
+          "question": "It creates a two-dimensional layout based on rows and columns.",
+          "options": [
+            "float",
+            "Media Queries",
+            "CSS Grid",
+            "Flexbox"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 25
+        },
+        {
+          "question": "Which of the following are transition timing function values?",
+          "options": [
+            "none, forwards, backwards, both",
+            "normal, reverse, alternate, alternate-reverse",
+            "rotate, translate, scale, skew",
+            "ease, linear, ease-in, ease-out, ease-in-out"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 26
+        },
+        {
+          "question": "Which of the following are CSS transform functions?",
+          "options": [
+            "rotate, translate, scale, skew",
+            "wrap, nowrap, wrap-reverse, row",
+            "block, inline, inline-block, none",
+            "ease, linear, ease-in, ease-out"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 27
+        },
+        {
+          "question": "What are the three main techniques of responsive web design?",
+          "options": [
+            "Rotate, Translate, Scale",
+            "Media Queries, CSS Grid, CSS Flexbox",
+            "Hover, Transition, Animation",
+            "Block, Inline, Inline-block"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS. From WD FT Quiz 1",
+          "id": 28
+        },
+        {
+          "question": "The :hover selector in CSS is classified as a:",
+          "options": [
+            "Pseudo-class",
+            "Pseudo-element",
+            "Keyframe",
+            "Property"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 29
+        },
+        {
+          "question": "Which pseudo-class styles a link at the moment it is selected (being clicked)?",
+          "options": [
+            "a:visited",
+            "a:link",
+            "a:active",
+            "a:hover"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 30
+        },
+        {
+          "question": "Which pseudo-class styles links that the user has already visited?",
+          "options": [
+            "a:link",
+            "a:visited",
+            "a:active",
+            "a:hover"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 31
+        },
+        {
+          "question": "It allows you to change property values smoothly (over a given duration) rather than having those changes take place instantly.",
+          "options": [
+            "Animation",
+            "Float",
+            "Transform",
+            "Transition"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 32
+        },
+        {
+          "question": "A shorthand property for setting the four transition properties into a single property.",
+          "options": [
+            "animation",
+            "transition-timing-function",
+            "transition",
+            "transition-property"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 33
+        },
+        {
+          "question": "Specifies the CSS property or properties to which the transition should apply.",
+          "options": [
+            "transition",
+            "transition-property",
+            "transition-duration",
+            "transition-timing-function"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 34
+        },
+        {
+          "question": "Specifies the speed curve of the transition effect.",
+          "options": [
+            "transition-timing-function",
+            "transition-delay",
+            "animation-direction",
+            "transition-property"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 35
+        },
+        {
+          "question": "What is the default value of transition-timing-function?",
+          "options": [
+            "linear",
+            "ease-in-out",
+            "step-start",
+            "ease"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 36
+        },
+        {
+          "question": "What is the default value of transition-delay?",
+          "options": [
+            "0s",
+            "0.5s",
+            "none",
+            "1s"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 37
+        },
+        {
+          "question": "Timing function with a slow start, fast middle, and slow end (default).",
+          "options": [
+            "ease-out",
+            "ease",
+            "linear",
+            "ease-in"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 38
+        },
+        {
+          "question": "Timing function with a slow start; useful when you want to gently introduce an element.",
+          "options": [
+            "ease-in-out",
+            "linear",
+            "ease-in",
+            "ease-out"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 39
+        },
+        {
+          "question": "Timing function with a slow end; often used for elements that are disappearing or fading out.",
+          "options": [
+            "ease",
+            "linear",
+            "ease-in",
+            "ease-out"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 40
+        },
+        {
+          "question": "Timing function with a slow start and end.",
+          "options": [
+            "ease-out",
+            "linear",
+            "ease",
+            "ease-in-out"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 41
+        },
+        {
+          "question": "CSS3 Transforms give a way to:",
+          "options": [
+            "Change property values smoothly over a given duration instead of instantly",
+            "Rotate, relocate, resize, and skew HTML elements in two- and three-dimensional space",
+            "Define the specific steps of an animation sequence with keyframes",
+            "Apply different styles based on the device's screen width or orientation"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 42
+        },
+        {
+          "question": "The value of the rotate() function is specified in:",
+          "options": [
+            "Pixels",
+            "Unitless ratios",
+            "Positive or negative degrees",
+            "Percent of the parent width"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 43
+        },
+        {
+          "question": "Which translate function moves an element along the vertical axis?",
+          "options": [
+            "translateY",
+            "skewY",
+            "scaleY",
+            "translateX"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 44
+        },
+        {
+          "question": "transform: scale(2, .5); makes an element:",
+          "options": [
+            "Twice as tall but half as wide",
+            "Move 2px right and 0.5px down",
+            "Twice as wide but half as tall",
+            "Twice as big in both directions"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 45
+        },
+        {
+          "question": "If you provide only one value for scale(), that value is:",
+          "options": [
+            "Used for scaleY only, and scaleX stays at 1",
+            "Ignored, because scale needs two values",
+            "Used for scaleX only, and scaleY stays at 1",
+            "Used as the scaling factor in both directions"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS. scale(2) is the same as scaleX(2) and scaleY(2).",
+          "id": 46
+        },
+        {
+          "question": "If you provide only one value for skew(), it is:",
+          "options": [
+            "Used for skewY, and skewX is set to zero",
+            "Used for skewX, and skewY is set to zero",
+            "Ignored",
+            "Used for both skewX and skewY"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 47
+        },
+        {
+          "question": "To use CSS animation, you must first specify some:",
+          "options": [
+            "Keyframes",
+            "Transitions",
+            "Grid tracks",
+            "Media queries"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS. Keyframes hold what styles the element will have at certain times.",
+          "id": 48
+        },
+        {
+          "question": "To get an animation to work, you must:",
+          "options": [
+            "Set display: grid",
+            "Bind the animation to an element",
+            "Add a :hover pseudo-class",
+            "Use JavaScript"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 49
+        },
+        {
+          "question": "Specifies the name of the @keyframes animation to apply to the element.",
+          "options": [
+            "animation-name",
+            "animation-duration",
+            "animation-fill-mode",
+            "animation-direction"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 50
+        },
+        {
+          "question": "Defines how long the animation should take to complete one cycle.",
+          "options": [
+            "animation-iteration-count",
+            "transition-duration",
+            "animation-delay",
+            "animation-duration"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 51
+        },
+        {
+          "question": "Defines whether the animation should play in reverse on alternate iterations.",
+          "options": [
+            "animation-fill-mode",
+            "animation-iteration-count",
+            "animation-direction",
+            "animation-timing-function"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 52
+        },
+        {
+          "question": "animation-direction value where the animation alternates between playing forward and backward.",
+          "options": [
+            "reverse",
+            "forwards",
+            "alternate",
+            "normal"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 53
+        },
+        {
+          "question": "animation-fill-mode value where the animation retains the styles set in the first keyframe before it starts.",
+          "options": [
+            "backwards",
+            "forwards",
+            "none",
+            "both"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 54
+        },
+        {
+          "question": "Which value makes an animation loop indefinitely?",
+          "options": [
+            "animation-delay: 0s;",
+            "animation-direction: alternate;",
+            "animation-fill-mode: forwards;",
+            "animation-iteration-count: infinite;"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 55
+        },
+        {
+          "question": "The element starts on a new line and takes up the full width available.",
+          "options": [
+            "display: inline",
+            "display: block",
+            "display: none",
+            "display: inline-block"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 56
+        },
+        {
+          "question": "The element does not start on a new line and only takes up as much width as necessary.",
+          "options": [
+            "display: inline",
+            "display: grid",
+            "display: none",
+            "display: block"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 57
+        },
+        {
+          "question": "It allows setting width and height while remaining inline with other elements.",
+          "options": [
+            "display: block",
+            "display: flex",
+            "display: inline",
+            "display: inline-block"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 58
+        },
+        {
+          "question": "Which of the following is a block-level element?",
+          "options": [
+            "<a>",
+            "<span>",
+            "<section>",
+            "<img>"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 59
+        },
+        {
+          "question": "Which of the following is an inline element?",
+          "options": [
+            "<p>",
+            "<span>",
+            "<header>",
+            "<div>"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 60
+        },
+        {
+          "question": "With float: left; the element floats to the left of its container and other content:",
+          "options": [
+            "Starts on a new line below it",
+            "Wraps around it on the right",
+            "Wraps around it on the left",
+            "Is hidden behind it"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 61
+        },
+        {
+          "question": "It allows websites to adjust layout and content based on the screen size of the device being used.",
+          "options": [
+            "Web hosting",
+            "CSS Animation",
+            "Responsive web design",
+            "CSS Transforms"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 62
+        },
+        {
+          "question": "Which media query targets mobile devices (portrait and small phones)?",
+          "options": [
+            "@media screen and (max-width: 480px)",
+            "@media screen and (max-width: 1024px)",
+            "@media screen and (min-width: 1921px)",
+            "@media screen and (max-width: 1366px)"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 63
+        },
+        {
+          "question": "To start using Flexbox, you define a flex container by setting:",
+          "options": [
+            "position: flex;",
+            "float: left;",
+            "display: grid; or display: inline-grid;",
+            "display: flex; or display: inline-flex;"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 64
+        },
+        {
+          "question": "Defines in which direction the container wants to stack the flex items.",
+          "options": [
+            "order",
+            "flex-wrap",
+            "flex-direction",
+            "align-items"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 65
+        },
+        {
+          "question": "A shorthand property for setting both the flex-direction and flex-wrap properties.",
+          "options": [
+            "grid-template",
+            "flex-basis",
+            "flex",
+            "flex-flow"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 66
+        },
+        {
+          "question": "Aligns the flex items along the cross axis (vertical by default).",
+          "options": [
+            "justify-content",
+            "align-items",
+            "order",
+            "flex-direction"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 67
+        },
+        {
+          "question": "Specifies the order of the flex items.",
+          "options": [
+            "order",
+            "flex-basis",
+            "flex-shrink",
+            "align-self"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 68
+        },
+        {
+          "question": "Specifies how much a flex item will shrink relative to the rest of the flex items.",
+          "options": [
+            "flex-shrink",
+            "flex-grow",
+            "flex-basis",
+            "order"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 69
+        },
+        {
+          "question": "Specifies the initial length of a flex item.",
+          "options": [
+            "flex-shrink",
+            "flex-flow",
+            "align-content",
+            "flex-basis"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 70
+        },
+        {
+          "question": "A shorthand property for the flex-grow, flex-shrink, and flex-basis properties.",
+          "options": [
+            "grid-area",
+            "flex-flow",
+            "flex",
+            "flex-direction"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 71
+        },
+        {
+          "question": "An HTML element becomes a grid container when its display property is set to:",
+          "options": [
+            "block",
+            "grid",
+            "flex",
+            "inline-block"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 72
+        },
+        {
+          "question": "The fr unit sets the size of a track as:",
+          "options": [
+            "A percentage of the viewport height",
+            "A fraction of the free space of the grid container",
+            "A multiple of the font size of the parent",
+            "A fixed number of pixels set by the browser"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 73
+        },
+        {
+          "question": "Shorthand for grid-column-start + grid-column-end.",
+          "options": [
+            "grid-area",
+            "grid-template-columns",
+            "grid-column",
+            "column-gap"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 74
+        },
+        {
+          "question": "Gives an item a name so that it can be referenced by a template created with the grid-template-areas property.",
+          "options": [
+            "justify-self",
+            "grid-column",
+            "grid-template",
+            "grid-area"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 75
+        },
+        {
+          "question": "Aligns a grid item inside a cell along the block (column) axis.",
+          "options": [
+            "align-self",
+            "justify-self",
+            "justify-content",
+            "align-content"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 76
+        },
+        {
+          "question": "repeat() keyword: fit as many possible columns as possible on a row, even if they are empty.",
+          "options": [
+            "span",
+            "minmax",
+            "auto-fill",
+            "auto-fit"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 77
+        },
+        {
+          "question": "repeat() keyword: fit whatever columns there are into the space, preferring to expand columns to fill space.",
+          "options": [
+            "auto-fit",
+            "minmax",
+            "auto-fill",
+            "fr"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 5 - Advanced CSS",
+          "id": 78
+        },
+        {
+          "question": "A programming language commonly used to add interactivity and dynamic behavior to web pages.",
+          "options": [
+            "External JavaScript",
+            "JavaScript",
+            "Document Object Model (DOM)",
+            "Validation"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 79
+        },
+        {
+          "question": "A declaration keyword used for variables that can be reassigned and are limited to block scope.",
+          "options": [
+            "Function",
+            "var",
+            "constant",
+            "let"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 80
+        },
+        {
+          "question": "A declaration keyword used for variables whose values should not be reassigned after initialization.",
+          "options": [
+            "null",
+            "constant",
+            "let",
+            "undefined"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 81
+        },
+        {
+          "question": "A JavaScript statement used to display information in the browser console.",
+          "options": [
+            "console.log",
+            "style",
+            "addEventListener()",
+            "innerText"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 82
+        },
+        {
+          "question": "A way of inserting JavaScript directly into an HTML element using an event attribute.",
+          "options": [
+            "External JavaScript",
+            "defer",
+            "Nested Function",
+            "Inline JavaScript"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 83
+        },
+        {
+          "question": "A method of including JavaScript by linking a .js file outside of an HTML document.",
+          "options": [
+            "Document Object Model (DOM)",
+            "async",
+            "External JavaScript",
+            "Inline JavaScript"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 84
+        },
+        {
+          "question": "A primitive value that intentionally represents the absence of an object value.",
+          "options": [
+            "value",
+            "undefined",
+            "String",
+            "null"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 85
+        },
+        {
+          "question": "A variable has been declared but has not yet been assigned a value.",
+          "options": [
+            "constant",
+            "Validation",
+            "undefined",
+            "null"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 86
+        },
+        {
+          "question": "A data type that represents text enclosed in quotation marks.",
+          "options": [
+            "value",
+            "String",
+            "null",
+            "Function"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 87
+        },
+        {
+          "question": "A method that formats a number using a specified number of decimal places.",
+          "options": [
+            "toFixed()",
+            "querySelectorAll()",
+            "charAt()",
+            "charCodeAt()"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 88
+        },
+        {
+          "question": "A method that returns the Unicode value of a character at a specified position.",
+          "options": [
+            "charAt()",
+            "charCodeAt()",
+            "innerText",
+            "toFixed()"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 89
+        },
+        {
+          "question": "A method that returns the character at a specified position in a string.",
+          "options": [
+            "getElementById()",
+            "charCodeAt()",
+            "toFixed()",
+            "charAt()"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 90
+        },
+        {
+          "question": "A reusable block of code designed to perform a particular task.",
+          "options": [
+            "Function",
+            "String",
+            "Nested Function",
+            "Validation"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 91
+        },
+        {
+          "question": "A programming structure in which a function is declared inside another function.",
+          "options": [
+            "addEventListener()",
+            "Function",
+            "Nested Function",
+            "Inline JavaScript"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 92
+        },
+        {
+          "question": "It represents an HTML document as a structured tree of objects.",
+          "options": [
+            "JavaScript",
+            "External JavaScript",
+            "innerHTML",
+            "Document Object Model (DOM)"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 93
+        },
+        {
+          "question": "A property that retrieves or changes the visible text content of an element without interpreting HTML tags.",
+          "options": [
+            "innerText",
+            "style",
+            "value",
+            "innerHTML"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 94
+        },
+        {
+          "question": "A property that retrieves or changes the HTML content inside an element, including HTML tags.",
+          "options": [
+            "innerText",
+            "innerHTML",
+            "console.log",
+            "value"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 95
+        },
+        {
+          "question": "A method used to register an event handler for a specified event on an element.",
+          "options": [
+            "getElementById()",
+            "querySelectorAll()",
+            "addEventListener()",
+            "console.log"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 96
+        },
+        {
+          "question": "A method that returns all elements matching a specified CSS selector.",
+          "options": [
+            "addEventListener()",
+            "querySelectorAll()",
+            "charAt()",
+            "getElementById()"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 97
+        },
+        {
+          "question": "A method that retrieves an HTML element using its unique ID.",
+          "options": [
+            "getElementById()",
+            "querySelectorAll()",
+            "charAt()",
+            "innerHTML"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 98
+        },
+        {
+          "question": "A property used to modify CSS styles of an HTML element through JavaScript.",
+          "options": [
+            "innerText",
+            "value",
+            "style",
+            "innerHTML"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 99
+        },
+        {
+          "question": "A process that checks whether user input meets specified requirements before submission.",
+          "options": [
+            "Function",
+            "defer",
+            "Document Object Model (DOM)",
+            "Validation"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 100
+        },
+        {
+          "question": "It instructs the browser to execute an external script after the HTML document has been parsed.",
+          "options": [
+            "External JavaScript",
+            "addEventListener()",
+            "defer",
+            "async"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 101
+        },
+        {
+          "question": "It allows a script to be downloaded while the HTML document is being parsed and executed as soon as it is available.",
+          "options": [
+            "async",
+            "Inline JavaScript",
+            "defer",
+            "console.log"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 102
+        },
+        {
+          "question": "A property commonly used to retrieve or modify the value entered into an HTML form field.",
+          "options": [
+            "style",
+            "innerText",
+            "innerHTML",
+            "value"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2",
+          "id": 103
+        },
+        {
+          "question": "Compared with Java, JavaScript is:",
+          "options": [
+            "Built around the class as its key construct",
+            "Interpreted, not compiled",
+            "Compiled, not interpreted",
+            "Strongly typed"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. In JavaScript the key construct is the function rather than the class.",
+          "id": 104
+        },
+        {
+          "question": "Where does JavaScript code run, compared to PHP?",
+          "options": [
+            "Both run only on the client's browser",
+            "JS runs on the client's browser; PHP runs on the web server",
+            "Both run only on the web server",
+            "JS runs on the web server; PHP runs on the client's browser"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 105
+        },
+        {
+          "question": "How are single-line comments written in JavaScript?",
+          "options": [
+            "// comment",
+            "<!-- comment -->",
+            "/* comment */",
+            "# comment"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 106
+        },
+        {
+          "question": "What naming convention should be followed for JavaScript variables and functions?",
+          "options": [
+            "snake_case (e.g., my_variable)",
+            "PascalCase only (e.g., MyVariable)",
+            "ALL CAPS (e.g., MYVARIABLE)",
+            "camelCase (e.g., myVariable, calculateTotal)"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 107
+        },
+        {
+          "question": "Semicolons at the end of JavaScript statements are:",
+          "options": [
+            "Required, or the code will not run",
+            "Only used inside functions",
+            "Optional, but good practice to use",
+            "Not allowed"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 108
+        },
+        {
+          "question": "JavaScript enables interactivity by responding to user actions (clicks, key presses, etc.). This is called:",
+          "options": [
+            "Object-oriented programming",
+            "Event-driven programming",
+            "Server-side programming",
+            "Procedural programming"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 109
+        },
+        {
+          "question": "Variables declared with var are:",
+          "options": [
+            "Function-scoped and hoisted (initialized with undefined)",
+            "Block-scoped and in the temporal dead zone",
+            "Block-scoped and cannot be reassigned",
+            "Global only"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 110
+        },
+        {
+          "question": "let and const variables exist in this state until the line where they are declared.",
+          "options": [
+            "Global scope",
+            "Hoisting",
+            "Function scope",
+            "Temporal dead zone"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 111
+        },
+        {
+          "question": "const obj = { name: 'John' }; obj.name = 'Jane'; What happens?",
+          "options": [
+            "obj is reset and becomes undefined",
+            "Error: Assignment to constant variable is thrown",
+            "It is allowed, because a property is changed, not the object itself",
+            "obj.name stays 'John' because const objects cannot change"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 112
+        },
+        {
+          "question": "A variable declared without the var keyword (e.g., one = 1;) becomes:",
+          "options": [
+            "A constant",
+            "undefined",
+            "A block-scoped variable",
+            "A global variable"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 113
+        },
+        {
+          "question": "JavaScript variables do not require a data type to be declared. This means they are:",
+          "options": [
+            "Loosely-typed",
+            "Hoisted",
+            "Immutable",
+            "Strongly typed"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 114
+        },
+        {
+          "question": "Which of the following is a non-primitive data type in JavaScript?",
+          "options": [
+            "Number",
+            "Boolean",
+            "Array",
+            "Undefined"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript. Primitive: String, Number, Boolean, Null, Undefined. Non-primitive: Object, Date, Array.",
+          "id": 115
+        },
+        {
+          "question": "A string in JavaScript is immutable and can be concatenated using the:",
+          "options": [
+            "Dot (.) operator",
+            "Plus (+) operator",
+            "Ampersand (&) operator",
+            "Asterisk (*) operator"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 116
+        },
+        {
+          "question": "indexOf() and lastIndexOf() return this value when the search string is not found.",
+          "options": [
+            "null",
+            "undefined",
+            "-1",
+            "0"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 117
+        },
+        {
+          "question": "Which string method searches a string value and returns a new string with the search value replaced?",
+          "options": [
+            "match()",
+            "charAt()",
+            "concat()",
+            "replace()"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 118
+        },
+        {
+          "question": "Which Number method returns the number as a string with a specified total number of digits?",
+          "options": [
+            "valueOf()",
+            "toPrecision()",
+            "toFixed()",
+            "toExponential()"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. var num = 100; num.toPrecision(4) returns '100.0'.",
+          "id": 119
+        },
+        {
+          "question": "A Boolean can have only these two values:",
+          "options": [
+            "true or false",
+            "null or undefined",
+            "yes or no",
+            "0 or 1"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 120
+        },
+        {
+          "question": "date.getMonth() returns 3 for April because:",
+          "options": [
+            "Months start at 0 with January",
+            "It returns the quarter of the year",
+            "Months start at 1 with January",
+            "It counts weeks, not months"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 121
+        },
+        {
+          "question": "Array index starts at:",
+          "options": [
+            "1",
+            "-1",
+            "The array length",
+            "0"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 122
+        },
+        {
+          "question": "Which property returns the number of elements in an array?",
+          "options": [
+            "size",
+            "length",
+            "index",
+            "count"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 123
+        },
+        {
+          "question": "A null value in a conditional expression (e.g., if (myVar)) evaluates to:",
+          "options": [
+            "undefined",
+            "true",
+            "false",
+            "An error"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 124
+        },
+        {
+          "question": "A function that does not return anything is assigned to a variable: var result = Sum(5, 5); The value of result is:",
+          "options": [
+            "0",
+            "null",
+            "undefined",
+            "10"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 125
+        },
+        {
+          "question": "If you pass fewer arguments than parameters when calling a function, the rest of the parameters will be:",
+          "options": [
+            "Ignored with an error",
+            "null",
+            "0",
+            "undefined"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript. If you pass more arguments, the additional arguments are ignored.",
+          "id": 126
+        },
+        {
+          "question": "All functions can use this array-like object, which includes the value of each parameter.",
+          "options": [
+            "arguments",
+            "parameters",
+            "values",
+            "this"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript. It can be accessed by index but does not support array methods.",
+          "id": 127
+        },
+        {
+          "question": "How many values can a function return using the return keyword?",
+          "options": [
+            "Only numbers",
+            "Zero or one value",
+            "Exactly two values",
+            "Unlimited values separated by commas"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 128
+        },
+        {
+          "question": "In a nested function, the inner function:",
+          "options": [
+            "Must be declared with const",
+            "Can access variables and parameters of the outer function",
+            "Runs before the outer function",
+            "Cannot access any variable of the outer function"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 129
+        },
+        {
+          "question": "JavaScript written inside a <script> tag within the HTML file's <head> or <body> section.",
+          "options": [
+            "External JavaScript",
+            "Nested JavaScript",
+            "Inline JavaScript",
+            "Internal JavaScript"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 130
+        },
+        {
+          "question": "If the script is external, which attribute must be used to specify the file path?",
+          "options": [
+            "src",
+            "href",
+            "link",
+            "path"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 131
+        },
+        {
+          "question": "The DOM is a tree-like model where every element is a:",
+          "options": [
+            "String",
+            "Function",
+            "Node",
+            "Class"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 132
+        },
+        {
+          "question": "In the DOM, these are functions associated with objects that can perform actions on elements.",
+          "options": [
+            "Attributes",
+            "Methods",
+            "Properties",
+            "Events"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript. Properties retrieve or set the value of an element's attributes or characteristics.",
+          "id": 133
+        },
+        {
+          "question": "Which method selects the first element that matches an ID, class, or tag (CSS selector)?",
+          "options": [
+            "querySelectorAll()",
+            "getElementsByClassName()",
+            "getElementsByTagName()",
+            "querySelector()"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 134
+        },
+        {
+          "question": "Which method returns all the elements having the given class name?",
+          "options": [
+            "getElementsByClassName()",
+            "querySelector()",
+            "getElementsByName()",
+            "getElementById()"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 135
+        },
+        {
+          "question": "Which method returns all the elements of a specified tag name?",
+          "options": [
+            "getElementsByClassName()",
+            "querySelector()",
+            "getElementsByTagName()",
+            "getElementById()"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 136
+        },
+        {
+          "question": "Why do most web developers prefer JavaScript (client-side) form validation?",
+          "options": [
+            "It replaces the need for a web server",
+            "It stores the data directly in the database",
+            "It can never be bypassed by the user",
+            "Data processing is faster than server-side validation"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 137
+        },
+        {
+          "question": "The change in the state of an object is known as a(n):",
+          "options": [
+            "Node",
+            "Event",
+            "Method",
+            "Property"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 138
+        },
+        {
+          "question": "The process of reacting over events is called:",
+          "options": [
+            "Event Bubbling",
+            "Validation",
+            "Event Handling",
+            "Hoisting"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 139
+        },
+        {
+          "question": "In element.addEventListener(event, function, useCapture), what is the default value of useCapture?",
+          "options": [
+            "false (event bubbling)",
+            "undefined",
+            "null",
+            "true (event capturing)"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 140
+        },
+        {
+          "question": "Mouse event triggered when an element is double-clicked.",
+          "options": [
+            "click",
+            "mousemove",
+            "mouseover",
+            "dblclick"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 141
+        },
+        {
+          "question": "Mouse event triggered when the mouse pointer leaves an element.",
+          "options": [
+            "mouseover",
+            "mouseout",
+            "mousemove",
+            "click"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 6 - Introduction to JavaScript",
+          "id": 142
+        },
+        {
+          "type": "output_tracing",
+          "question": "num_functions.js - Determine the exact output produced by the program.",
+          "code": "let number = 50;\nfunction firstFunction() {\n   let number = 5;\n   number += 10;\n   return number;\n}\nfunction secondFunction() {\n   number *= 2 ;\n   return number;\n}\nconsole.log(number);\nconsole.log(firstFunction());\nconsole.log(secondFunction());\nconsole.log(number - firstFunction());\nconsole.log(firstFunction () + secondFunction())",
+          "answer": "50\n15\n100\n85\n215",
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2.",
+          "id": 143
+        },
+        {
+          "type": "output_tracing",
+          "question": "num_functions2.js - Determine the exact output produced by the program.",
+          "code": "let value = 5;\nfunction outerFunction() {\n   let value = 10;\n   function innerFunction() {\n      let value = 25;\n      return value * 2;\n   }\n   return innerFunction() + value;\n}\nlet result = outerFunction();\nconsole.log(result);\nconsole.log(value);\nconsole.log(result + result);\nconsole.log(value + value);\nconsole.log(result + value);",
+          "answer": "60\n5\n120\n10\n65",
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2.",
+          "id": 144
+        },
+        {
+          "type": "output_tracing",
+          "question": "message.js - Determine the exact output produced by the program.",
+          "code": "let message = \"Sabi ko sa sarili ko wala lang to!\";\nlet first = message.charAt(0);\nlet second = message.charAt(3);\nlet pos1 = message.indexOf(\"a\");\nlet pos2 = message.lastIndexOf(\"aray\");\nlet combined = first.concat(second);\nlet combined1= second.concat(first);\nlet finalText = combined.toUpperCase();\nconsole.log(first);\nconsole.log(second);\nconsole.log(pos1);\nconsole.log(pos2);\nconsole.log(finalText);",
+          "answer": "S\ni\n1\n-1\nSI",
+          "explanation": "Chapter 6 - Introduction to JavaScript. From WD FT Quiz 2.",
+          "id": 145
+        },
+        {
+          "type": "output_tracing",
+          "question": "score.js - Determine the exact output produced by the program.",
+          "code": "let score = 20;\nfunction addPoints(points) {\n   score += points;\n   return score;\n}\nfunction resetScore() {\n   let score = 0;\n   return score;\n}\nconsole.log(addPoints(5));\nconsole.log(resetScore());\nconsole.log(score);\nconsole.log(addPoints(score));\nconsole.log(score - resetScore());",
+          "answer": "25\n0\n25\n50\n50",
+          "explanation": "Chapter 6 - Introduction to JavaScript. Global vs local variables.",
+          "id": 146
+        },
+        {
+          "type": "output_tracing",
+          "question": "nested_count.js - Determine the exact output produced by the program.",
+          "code": "let count = 3;\nfunction outer(num) {\n   let count = num * 2;\n   function inner() {\n      return count + 4;\n   }\n   return inner() * 2;\n}\nconsole.log(outer(5));\nconsole.log(count);\nconsole.log(outer(count));\nconsole.log(outer(1) + count);\nconsole.log(count * outer(0));",
+          "answer": "28\n3\n20\n15\n24",
+          "explanation": "Chapter 6 - Introduction to JavaScript. Nested functions.",
+          "id": 147
+        },
+        {
+          "type": "output_tracing",
+          "question": "block_scope.js - Determine the exact output produced by the program.",
+          "code": "let x = 10;\nvar y = 5;\nif (true) {\n   let x = 20;\n   var y = 15;\n   console.log(x);\n   console.log(y);\n}\nconsole.log(x);\nconsole.log(y);\nconsole.log(x + y);",
+          "answer": "20\n15\n10\n15\n25",
+          "explanation": "Chapter 6 - Introduction to JavaScript. let is block-scoped; var is not.",
+          "id": 148
+        },
+        {
+          "type": "output_tracing",
+          "question": "hoisting.js - Determine the exact output produced by the program.",
+          "code": "function showValues() {\n   console.log(a);\n   var a = 8;\n   console.log(a);\n   a += 4;\n   console.log(a * 2);\n}\nshowValues();\nvar total = 3;\ntotal = total + \"3\";\nconsole.log(total);\nconsole.log(total + 1);",
+          "answer": "undefined\n8\n24\n33\n331",
+          "explanation": "Chapter 6 - Introduction to JavaScript. var hoisting and string concatenation.",
+          "id": 149
+        },
+        {
+          "type": "output_tracing",
+          "question": "greet.js - Determine the exact output produced by the program.",
+          "code": "function greet(firstName, lastName) {\n   return \"Hello \" + firstName + \" \" + lastName;\n}\nfunction countArgs() {\n   return arguments.length;\n}\nconsole.log(greet(\"Steve\", \"Jobs\"));\nconsole.log(greet(\"Bill\"));\nconsole.log(greet(\"Ada\", \"Lovelace\", \"Ms.\"));\nconsole.log(greet());\nconsole.log(countArgs(\"a\", \"b\", \"c\"));",
+          "answer": "Hello Steve Jobs\nHello Bill undefined\nHello Ada Lovelace\nHello undefined undefined\n3",
+          "explanation": "Chapter 6 - Introduction to JavaScript. Fewer or more arguments, and the arguments object.",
+          "id": 150
+        },
+        {
+          "type": "output_tracing",
+          "question": "returns.js - Determine the exact output produced by the program.",
+          "code": "function sum(a, b) {\n   return a + b;\n}\nfunction multiply(a, b) {\n   console.log(a * b);\n}\nlet result = sum(10, 20);\nconsole.log(result);\nlet product = multiply(4, 5);\nconsole.log(product);\nconsole.log(sum(result, 5));\nconsole.log(sum(\"10\", 20));",
+          "answer": "30\n20\nundefined\n35\n1020",
+          "explanation": "Chapter 6 - Introduction to JavaScript. return vs console.log.",
+          "id": 151
+        },
+        {
+          "type": "output_tracing",
+          "question": "word.js - Determine the exact output produced by the program.",
+          "code": "let word = \"JavaScript\";\nconsole.log(word.length);\nconsole.log(word.charAt(4));\nconsole.log(word.indexOf(\"a\"));\nconsole.log(word.lastIndexOf(\"a\"));\nconsole.log(word.toUpperCase());",
+          "answer": "10\nS\n1\n3\nJAVASCRIPT",
+          "explanation": "Chapter 6 - Introduction to JavaScript. String length and methods.",
+          "id": 152
+        },
+        {
+          "type": "output_tracing",
+          "question": "final_exam.js - Determine the exact output produced by the program.",
+          "code": "let text = \"Final exam na bukas!\";\nlet a = text.charAt(6);\nlet b = text.indexOf(\"a\");\nlet c = text.lastIndexOf(\"a\");\nlet d = text.indexOf(\"Exam\");\nlet e = a.concat(text.charAt(0)).toUpperCase();\nconsole.log(a);\nconsole.log(b);\nconsole.log(c);\nconsole.log(d);\nconsole.log(e);",
+          "answer": "e\n3\n17\n-1\nEF",
+          "explanation": "Chapter 6 - Introduction to JavaScript. String methods.",
+          "id": 153
+        },
+        {
+          "type": "output_tracing",
+          "question": "web_dev.js - Determine the exact output produced by the program.",
+          "code": "let first = \"Web\";\nlet second = \"Dev\";\nlet joined = first.concat(\" \", second);\nconsole.log(joined);\nconsole.log(joined.replace(\"Dev\", \"Design\"));\nconsole.log(joined.charCodeAt(0));\nconsole.log(joined.toLowerCase());\nconsole.log(joined.indexOf(\"dev\"));",
+          "answer": "Web Dev\nWeb Design\n87\nweb dev\n-1",
+          "explanation": "Chapter 6 - Introduction to JavaScript. concat, replace, charCodeAt, toLowerCase.",
+          "id": 154
+        },
+        {
+          "type": "output_tracing",
+          "question": "prices.js - Determine the exact output produced by the program.",
+          "code": "let price = 125.456;\nlet qty = 2;\nlet total = price * qty;\nconsole.log(price.toFixed(2));\nconsole.log(total.toFixed(1));\nconsole.log(qty.toFixed(2));\nconsole.log((100).toPrecision(4));\nconsole.log(qty.toString() + qty);",
+          "answer": "125.46\n250.9\n2.00\n100.0\n22",
+          "explanation": "Chapter 6 - Introduction to JavaScript. Number methods.",
+          "id": 155
+        },
+        {
+          "type": "output_tracing",
+          "question": "fruits.js - Determine the exact output produced by the program.",
+          "code": "let fruits = [\"apple\", \"banana\", \"cherry\"];\nconsole.log(fruits.length);\nconsole.log(fruits[1]);\nfruits.push(\"mango\");\nconsole.log(fruits.length);\nconsole.log(fruits[fruits.length - 1]);\nconsole.log(fruits.indexOf(\"cherry\"));",
+          "answer": "3\nbanana\n4\nmango\n2",
+          "explanation": "Chapter 6 - Introduction to JavaScript. Arrays.",
+          "id": 156
+        },
+        {
+          "type": "output_tracing",
+          "question": "student.js - Determine the exact output produced by the program.",
+          "code": "const student = { name: \"Ana\", grade: 85 };\nstudent.grade = 90;\nconsole.log(student.name);\nconsole.log(student.grade);\nstudent.name = \"Ben\";\nconsole.log(student.name + \" \" + student.grade);\nlet bonus = 5;\nbonus = bonus * 2;\nconsole.log(student.grade + bonus);\nconsole.log(student.name.charAt(0));",
+          "answer": "Ana\n90\nBen 90\n100\nB",
+          "explanation": "Chapter 6 - Introduction to JavaScript. const objects can change properties.",
+          "id": 157
+        },
+        {
+          "type": "output_tracing",
+          "question": "null_check.js - Determine the exact output produced by the program.",
+          "code": "let a;\nlet b = null;\nconsole.log(a);\nconsole.log(b);\nif (b) {\n   console.log(\"has value\");\n} else {\n   console.log(\"no value\");\n}\nconsole.log(a + \"!\");\nb = 10;\nconsole.log(b * 2);",
+          "answer": "undefined\nnull\nno value\nundefined!\n20",
+          "explanation": "Chapter 6 - Introduction to JavaScript. null and undefined.",
+          "id": 158
+        },
+        {
+          "type": "output_tracing",
+          "question": "list.html + script.js - What text does each element display after script.js runs?",
+          "code": "<!-- index.html -->\n<ul>\n   <li class=\"li1\" id=\"idL1\">ONE</li>\n   <li class=\"li1\" id=\"idL2\">TWO</li>\n   <li class=\"li1\" id=\"idL3\">THREE</li>\n</ul>\n\n// script.js\ndocument.getElementsByClassName('li1')[1].innerHTML = \"2\";\ndocument.getElementsByTagName('li')[2].innerHTML = \"3\";\ndocument.getElementById('idL1').innerHTML = \"1\";",
+          "answer": "1\n2\n3",
+          "instruction": "Type the text each element displays on the page, top to bottom, one per line.",
+          "explanation": "Chapter 6 - Introduction to JavaScript. DOM selectors and innerHTML.",
+          "id": 159
+        },
+        {
+          "type": "output_tracing",
+          "question": "headings.html + script.js - What text does each element display after script.js runs?",
+          "code": "<!-- index.html -->\n<h1 class=\"title\" id=\"h1\">First</h1>\n<h1 class=\"title\" id=\"h2\">Second</h1>\n<p class=\"note\">Note A</p>\n<p class=\"note\">Note B</p>\n\n// script.js\ndocument.getElementById(\"h2\").innerHTML = \"Updated\";\ndocument.querySelector(\".note\").innerText = \"Changed\";\ndocument.getElementsByTagName(\"h1\")[0].innerHTML = \"Top\";\ndocument.querySelectorAll(\".note\")[1].innerHTML = \"Last\";",
+          "answer": "Top\nUpdated\nChanged\nLast",
+          "instruction": "Type the text each element displays on the page, top to bottom, one per line.",
+          "explanation": "Chapter 6 - Introduction to JavaScript. getElementById, querySelector, getElementsByTagName.",
+          "id": 160
+        },
+        {
+          "question": "A service that allows individuals or organizations to publish their websites on the internet or make them accessible via the World Wide Web.",
+          "options": [
+            "Web hosting",
+            "Web design",
+            "Domain name",
+            "File Transfer Protocol"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 161
+        },
+        {
+          "question": "In the business analogy of a website, the 'name' of the business is the:",
+          "options": [
+            "Webmaster",
+            "Website content",
+            "Domain name",
+            "Web server"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 162
+        },
+        {
+          "question": "In the business analogy, the 'location' of the business is the:",
+          "options": [
+            "Web server",
+            "Control panel",
+            "Domain name",
+            "Website content"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 163
+        },
+        {
+          "question": "In the business analogy, the 'staff' is:",
+          "options": [
+            "The visitors",
+            "The domain registrar",
+            "The hosting provider",
+            "You or the webmaster"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 164
+        },
+        {
+          "question": "In the business analogy, the 'product' is the:",
+          "options": [
+            "Backup system",
+            "Website content",
+            "Web server",
+            "Domain name"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 165
+        },
+        {
+          "question": "If your website is your business, your host providers can be thought of as your:",
+          "options": [
+            "Customers",
+            "Competitors",
+            "Landlords",
+            "Employees"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 166
+        },
+        {
+          "question": "Among the additional things a website needs, the 'insurance' is the:",
+          "options": [
+            "Hosting account control panel",
+            "Username and password",
+            "Design of your site",
+            "Backup system"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 167
+        },
+        {
+          "question": "Among the additional things a website needs, the 'office' is the:",
+          "options": [
+            "Hosting account control panel",
+            "Tools to update content",
+            "Design of your site",
+            "Backup system"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 168
+        },
+        {
+          "question": "Among the additional things a website needs, the 'keys' are the:",
+          "options": [
+            "Domain name",
+            "Username and password",
+            "Web server",
+            "Backup system"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 169
+        },
+        {
+          "question": "Also called website address, it is the name that people type in the browser to open a certain website.",
+          "options": [
+            "Subdomain",
+            "Web host",
+            "Domain name",
+            "IP address"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 170
+        },
+        {
+          "question": "These are the highest level in the hierarchy of domain names.",
+          "options": [
+            "Internationalized Domain Names (IDNs)",
+            "Second-Level Domains (SLDs)",
+            "Top-Level Domains (TLDs)",
+            "Subdomains"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 171
+        },
+        {
+          "question": "Which generic TLD is used by accredited educational institutions?",
+          "options": [
+            ".edu",
+            ".gov",
+            ".org",
+            ".net"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 172
+        },
+        {
+          "question": ".ph, .jp, .uk, and .us are examples of:",
+          "options": [
+            "Second-Level Domains",
+            "New gTLDs",
+            "Sponsored TLDs (sTLDs)",
+            "Country-Code TLDs (ccTLDs)"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 173
+        },
+        {
+          "question": "In \"example.com,\" the part \"example\" is the:",
+          "options": [
+            "Sponsored TLD",
+            "Second-Level Domain (SLD)",
+            "Subdomain",
+            "Top-Level Domain (TLD)"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 174
+        },
+        {
+          "question": "In \"blog.example.com,\" the part \"blog\" is a:",
+          "options": [
+            "Third-Level Domain (Subdomain)",
+            "Sponsored TLD (sTLD)",
+            "Second-Level Domain (SLD)",
+            "Top-Level Domain (TLD)"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 175
+        },
+        {
+          "question": ".tech, .store, .app, .xyz, and .guru are examples of:",
+          "options": [
+            "Country-Code TLDs",
+            "New gTLDs",
+            "Internationalized Domain Names",
+            "Sponsored TLDs (sTLDs)"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 176
+        },
+        {
+          "question": "Specialized domains restricted to certain groups or organizations, such as .aero, .museum, and .coop.",
+          "options": [
+            "Generic TLDs",
+            "Subdomains",
+            "Sponsored TLDs (sTLDs)",
+            "New gTLDs"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 177
+        },
+        {
+          "question": "Domains that support non-ASCII characters, such as Chinese, Arabic, or Cyrillic characters.",
+          "options": [
+            "New Generic TLDs (gTLDs)",
+            "Sponsored TLDs (sTLDs)",
+            "Country-Code TLDs (ccTLDs)",
+            "Internationalized Domain Names (IDNs)"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 178
+        },
+        {
+          "question": "Which platform is recommended for creating an ecommerce website?",
+          "options": [
+            "Drupal",
+            "PrestaShop",
+            "Joomla",
+            "Web builders"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 179
+        },
+        {
+          "question": "Which platforms are recommended for creating a standard website or a blog?",
+          "options": [
+            "WordPress and Joomla",
+            "OpenCart and OsCommerce",
+            "PrestaShop and Magento",
+            "Drupal and Magento"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 180
+        },
+        {
+          "question": "FTP, the credentials you get from your hosting dashboard or cPanel, stands for:",
+          "options": [
+            "File Text Protocol",
+            "Folder Transfer Path",
+            "Fast Transfer Program",
+            "File Transfer Protocol"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 181
+        },
+        {
+          "question": "What is the usual port number for FTP?",
+          "options": [
+            "443",
+            "80",
+            "21",
+            "3306"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 182
+        },
+        {
+          "question": "When uploading through the File Manager, website files go into the root directory, usually named:",
+          "options": [
+            "system32 or bin",
+            "root_files or www_data",
+            "public_html or htdocs",
+            "uploads or assets"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 183
+        },
+        {
+          "question": "If your website is compressed into a .zip file, you should:",
+          "options": [
+            "Import it into the database using phpMyAdmin",
+            "Upload and extract it within the file manager",
+            "Send it to the hosting provider by email",
+            "Rename it to .html and upload it as it is"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 184
+        },
+        {
+          "question": "For dynamic websites, the .sql file is imported using:",
+          "options": [
+            "phpMyAdmin or a similar database management tool",
+            "The DNS settings at the domain registrar",
+            "The File Manager's extract option",
+            "The FTP host and port number"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 185
+        },
+        {
+          "question": "When updating the database connection in your code, the database host is usually:",
+          "options": [
+            "public_html",
+            "ns1.yourhost.com",
+            "ftp.yourwebsite.com",
+            "localhost"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 186
+        },
+        {
+          "question": "To use a custom domain, you point it to the hosting nameservers by updating the:",
+          "options": [
+            "File permissions of public_html",
+            "DNS settings at your domain registrar",
+            "Database settings in phpMyAdmin",
+            "FTP port number in cPanel"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 187
+        },
+        {
+          "question": "DNS propagation can take up to:",
+          "options": [
+            "5 minutes",
+            "7 days",
+            "30 days",
+            "48 hours"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 188
+        },
+        {
+          "question": "Which file permissions allow public access, as recommended when troubleshooting?",
+          "options": [
+            "755 for directories, 644 for files",
+            "777 for directories, 777 for files",
+            "644 for directories, 755 for files",
+            "000 for directories, 111 for files"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 189
+        },
+        {
+          "question": "Step 8 (Maintain Your Website) includes:",
+          "options": [
+            "Choosing a web hosting provider and signing up",
+            "Getting the FTP credentials from cPanel",
+            "Monitoring performance and backing up regularly",
+            "Importing the .sql file into the database"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 7 - Web Hosting",
+          "id": 190
+        }
+      ]
     }
   ],
   "sia": [
@@ -2249,6 +4460,16 @@ export const pointers = {
       "description": "Compact reviewer for Query Languages, Data Organization and Architecture, Data Governance, and Special Purpose Databases.",
       "file": "/pointers/CC6_Finals_Pointers.pdf",
       "pages": 7
+    }
+  ],
+  "wd": [
+    {
+      "id": "wd_finals_pointers",
+      "term": "Finals",
+      "title": "Finals Pointers — Chapters 5 to 7",
+      "description": "Compact reviewer for Advanced CSS, Introduction to JavaScript and the DOM (with output tracing tips), and Web Hosting.",
+      "file": "/pointers/WD_Finals_Pointers.pdf",
+      "pages": 6
     }
   ]
 };

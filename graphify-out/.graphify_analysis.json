@@ -1,6 +1,10 @@
 {
   "communities": {
     "0": [
+      "docs_project_knowledge_exact_output_match",
+      "docs_project_knowledge_mock_exam_mode",
+      "docs_project_knowledge_optional_timer",
+      "docs_project_knowledge_output_line_scoring",
       "docs_project_knowledge_per_item_scoring",
       "docs_project_knowledge_question_types",
       "docs_project_knowledge_quiz_mode",
@@ -8,20 +12,37 @@
       "src_components_typebadge",
       "src_components_typebadge_typebadge",
       "src_components_typebadge_types",
+      "src_data_subjects",
       "src_data_subjects_getreviewerbyid",
+      "src_data_subjects_getsubjectbyid",
       "src_pages_quizpage",
+      "src_pages_quizpage_checkidentanswer",
       "src_pages_quizpage_chevright",
+      "src_pages_quizpage_codeblock",
       "src_pages_quizpage_enumerationquestion",
       "src_pages_quizpage_enumerationquestion_handlereveal",
       "src_pages_quizpage_enumerationquestion_handlesubmit",
       "src_pages_quizpage_enumerationquestion_toggleitem",
+      "src_pages_quizpage_fillcodequestion",
+      "src_pages_quizpage_fillcodequestion_handlekeydown",
+      "src_pages_quizpage_fillcodequestion_handleselfgrade",
+      "src_pages_quizpage_fillcodequestion_handlesubmit",
       "src_pages_quizpage_fmtclock",
       "src_pages_quizpage_fmtscore",
       "src_pages_quizpage_getgrade",
+      "src_pages_quizpage_identificationquestion",
+      "src_pages_quizpage_identificationquestion_handlekeydown",
+      "src_pages_quizpage_identificationquestion_handleselfgrade",
+      "src_pages_quizpage_identificationquestion_handlesubmit",
       "src_pages_quizpage_ischoicetype",
       "src_pages_quizpage_matchingquestion",
       "src_pages_quizpage_matchingquestion_handlecheck",
       "src_pages_quizpage_matchingquestion_selectoption",
+      "src_pages_quizpage_normalize",
+      "src_pages_quizpage_outputtracingquestion",
+      "src_pages_quizpage_outputtracingquestion_finish",
+      "src_pages_quizpage_outputtracingquestion_handlekeydown",
+      "src_pages_quizpage_outputtracingquestion_handlesubmit",
       "src_pages_quizpage_questionpoints",
       "src_pages_quizpage_quizpage",
       "src_pages_quizpage_quizpage_handlemcselect",
@@ -30,41 +51,15 @@
       "src_pages_quizpage_quizpage_startquiz",
       "src_pages_quizpage_quizpage_update",
       "src_pages_quizpage_shufflearray",
+      "src_pages_quizpage_squash",
       "src_pages_quizpage_state",
       "src_pages_quizpage_totalpointsof"
     ],
     "1": [
-      "collections",
-      "docs_project_knowledge_cc6_ch5",
-      "docs_project_knowledge_cc6_ch6",
-      "docs_project_knowledge_cc6_ch7",
-      "docs_project_knowledge_cc6_ch8",
-      "docs_project_knowledge_cc6_finals_exam",
-      "docs_project_knowledge_cc6_pointers_pdf",
-      "docs_project_knowledge_ch8_slide_gaps",
-      "docs_project_knowledge_finals_only",
-      "docs_project_knowledge_new_subject_workflow",
-      "docs_project_knowledge_quiz_writing_rules",
-      "json",
-      "random",
-      "src_data_exams_exams",
-      "src_data_exams_pointers",
-      "subject_exam_reviewers_cc6_source_make_exam",
-      "subject_exam_reviewers_cc6_source_make_exam_build_questions",
-      "subject_exam_reviewers_cc6_source_make_exam_rationale_1",
-      "subject_exam_reviewers_cc6_source_questions",
-      "subject_exam_reviewers_cc6_source_questions_rationale_14",
-      "subject_exam_reviewers_cc6_source_questions_sub",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder"
-    ],
-    "2": [
+      "docs_project_knowledge_generic_make_pdf",
       "docs_project_knowledge_pointers_pdf_rules",
       "docs_project_knowledge_review_material_format",
       "docs_project_knowledge_times_font_fallback",
-      "flowable",
       "reportlab_lib_colors",
       "reportlab_lib_enums",
       "reportlab_lib_pagesizes",
@@ -76,67 +71,68 @@
       "subject_exam_reviewers_cc6_source_make_pdf_build_footer",
       "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
       "subject_exam_reviewers_cc6_source_make_pdf_esc",
+      "subject_exam_reviewers_cc6_source_make_pdf_py_flowable",
       "subject_exam_reviewers_cc6_source_make_pdf_rationale_1",
       "subject_exam_reviewers_cc6_source_make_pdf_rationale_32",
       "subject_exam_reviewers_cc6_source_make_pdf_rule",
       "subject_exam_reviewers_cc6_source_make_pdf_rule_draw",
       "subject_exam_reviewers_cc6_source_make_pdf_rule_init",
       "subject_exam_reviewers_cc6_source_make_pdf_rule_wrap",
-      "subject_exam_reviewers_cc6_source_pointers",
+      "subject_exam_reviewers_wd_source_make_pdf",
+      "subject_exam_reviewers_wd_source_make_pdf_build",
+      "subject_exam_reviewers_wd_source_make_pdf_build_footer",
+      "subject_exam_reviewers_wd_source_make_pdf_bullets_for",
+      "subject_exam_reviewers_wd_source_make_pdf_esc",
+      "subject_exam_reviewers_wd_source_make_pdf_py_flowable",
+      "subject_exam_reviewers_wd_source_make_pdf_rationale_1",
+      "subject_exam_reviewers_wd_source_make_pdf_rationale_33",
+      "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "subject_exam_reviewers_wd_source_make_pdf_rule_draw",
+      "subject_exam_reviewers_wd_source_make_pdf_rule_init",
+      "subject_exam_reviewers_wd_source_make_pdf_rule_wrap",
+      "subject_exam_reviewers_wd_source_pointers",
       "sys",
       "xml_sax_saxutils"
     ],
+    "2": [
+      "collections",
+      "docs_project_knowledge_new_subject_workflow",
+      "docs_project_knowledge_output_tracing_tips",
+      "docs_project_knowledge_quiz_writing_rules",
+      "docs_project_knowledge_run_to_answer",
+      "docs_project_knowledge_wd_ch5",
+      "docs_project_knowledge_wd_ch6",
+      "docs_project_knowledge_wd_ch7",
+      "docs_project_knowledge_wd_finals_exam",
+      "docs_project_knowledge_wd_ft_quizzes",
+      "docs_project_knowledge_wd_pointers_pdf",
+      "json",
+      "os",
+      "random",
+      "subject_exam_reviewers_cc6_source_make_exam",
+      "subject_exam_reviewers_cc6_source_make_exam_build_questions",
+      "subject_exam_reviewers_cc6_source_make_exam_rationale_1",
+      "subject_exam_reviewers_cc6_source_questions",
+      "subject_exam_reviewers_cc6_source_questions_rationale_14",
+      "subject_exam_reviewers_cc6_source_questions_sub",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder",
+      "subject_exam_reviewers_wd_source_make_exam",
+      "subject_exam_reviewers_wd_source_make_exam_build_mc",
+      "subject_exam_reviewers_wd_source_make_exam_build_output",
+      "subject_exam_reviewers_wd_source_make_exam_rationale_1",
+      "subject_exam_reviewers_wd_source_make_exam_run_console",
+      "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "subject_exam_reviewers_wd_source_questions",
+      "subprocess",
+      "tempfile"
+    ],
     "3": [
-      "docs_project_knowledge_doc",
-      "docs_project_knowledge_lilac_glass_theme",
-      "docs_project_knowledge_quizhub",
-      "docs_project_knowledge_vercel_deployment",
-      "index_html_shell",
+      "package",
       "package_dependencies",
       "package_dependencies_react",
       "package_dependencies_react_dom",
       "package_dependencies_react_router_dom",
-      "ref_react",
-      "ref_react_dom",
-      "ref_react_router_dom",
-      "src_app",
-      "src_app_app",
-      "src_components_navbar",
-      "src_components_navbar_navbar",
-      "src_components_subjectcard",
-      "src_components_subjectcard_colors",
-      "src_components_subjectcard_subjectcard",
-      "src_index",
-      "src_main",
-      "src_pages_homepage",
-      "src_pages_homepage_homepage"
-    ],
-    "4": [
-      "docs_project_knowledge_mock_exam_mode",
-      "docs_project_knowledge_pointers_as_section",
-      "docs_project_knowledge_quiz_vs_flashcard",
-      "docs_project_knowledge_subject_page_order",
-      "src_components_examcard",
-      "src_components_examcard_clockicon",
-      "src_components_examcard_examcard",
-      "src_components_pointerscard",
-      "src_components_pointerscard_pointerscard",
-      "src_components_reviewercard",
-      "src_components_reviewercard_reviewercard",
-      "src_data_exams",
-      "src_data_exams_getexambyid",
-      "src_data_exams_getexamsbysubject",
-      "src_data_exams_getpointersbysubject",
-      "src_data_exams_term_colors",
-      "src_data_exams_termstyle",
-      "src_data_subjects",
-      "src_data_subjects_getsubjectbyid",
-      "src_data_subjects_subjects",
-      "src_pages_subjectpage",
-      "src_pages_subjectpage_subjectpage"
-    ],
-    "5": [
-      "package",
       "package_devdependencies",
       "package_devdependencies_oxlint",
       "package_devdependencies_tailwindcss",
@@ -150,6 +146,8 @@
       "package_type",
       "package_version",
       "ref_oxlint",
+      "ref_react",
+      "ref_react_dom",
       "ref_tailwindcss",
       "ref_tailwindcss_vite",
       "ref_types_react",
@@ -158,22 +156,64 @@
       "ref_vitejs_plugin_react",
       "vite_config"
     ],
+    "4": [
+      "docs_project_knowledge_doc",
+      "docs_project_knowledge_graphify_usage",
+      "docs_project_knowledge_lilac_glass_theme",
+      "docs_project_knowledge_quiz_vs_flashcard",
+      "docs_project_knowledge_quizhub",
+      "docs_project_knowledge_vercel_deployment",
+      "docs_project_knowledge_vercel_spa_rewrite",
+      "index_html_shell",
+      "src_app",
+      "src_app_app",
+      "src_components_navbar",
+      "src_components_navbar_navbar",
+      "src_components_subjectcard",
+      "src_components_subjectcard_colors",
+      "src_components_subjectcard_subjectcard",
+      "src_data_subjects_subjects",
+      "src_index",
+      "src_main",
+      "src_pages_homepage",
+      "src_pages_homepage_homepage",
+      "vercel",
+      "vercel_rewrites"
+    ],
+    "5": [
+      "docs_project_knowledge_finals_only",
+      "docs_project_knowledge_pointers_as_section",
+      "docs_project_knowledge_subject_page_order",
+      "ref_react_router_dom",
+      "src_components_examcard",
+      "src_components_examcard_clockicon",
+      "src_components_examcard_examcard",
+      "src_components_pointerscard",
+      "src_components_pointerscard_pointerscard",
+      "src_components_reviewercard",
+      "src_components_reviewercard_reviewercard",
+      "src_data_exams",
+      "src_data_exams_exams",
+      "src_data_exams_getexambyid",
+      "src_data_exams_getexamsbysubject",
+      "src_data_exams_getpointersbysubject",
+      "src_data_exams_term_colors",
+      "src_data_exams_termstyle",
+      "src_pages_subjectpage",
+      "src_pages_subjectpage_subjectpage",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry"
+    ],
     "6": [
-      "src_pages_quizpage_checkidentanswer",
-      "src_pages_quizpage_codeblock",
-      "src_pages_quizpage_fillcodequestion",
-      "src_pages_quizpage_fillcodequestion_handlekeydown",
-      "src_pages_quizpage_fillcodequestion_handleselfgrade",
-      "src_pages_quizpage_fillcodequestion_handlesubmit",
-      "src_pages_quizpage_identificationquestion",
-      "src_pages_quizpage_identificationquestion_handlekeydown",
-      "src_pages_quizpage_identificationquestion_handleselfgrade",
-      "src_pages_quizpage_identificationquestion_handlesubmit",
-      "src_pages_quizpage_normalize",
-      "src_pages_quizpage_outputtracingquestion",
-      "src_pages_quizpage_outputtracingquestion_handlekeydown",
-      "src_pages_quizpage_outputtracingquestion_handleselfgrade",
-      "src_pages_quizpage_outputtracingquestion_handlesubmit"
+      "docs_project_knowledge_cc6_ch5",
+      "docs_project_knowledge_cc6_ch6",
+      "docs_project_knowledge_cc6_ch7",
+      "docs_project_knowledge_cc6_ch8",
+      "docs_project_knowledge_cc6_finals_exam",
+      "docs_project_knowledge_cc6_pointers_pdf",
+      "docs_project_knowledge_ch8_slide_gaps",
+      "src_data_exams_pointers",
+      "subject_exam_reviewers_cc6_source_pointers",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry"
     ],
     "7": [
       "docs_project_knowledge_linux_build_check",
@@ -193,13 +233,13 @@
     ]
   },
   "cohesion": {
-    "0": 0.1010752688172043,
-    "1": 0.10666666666666667,
-    "2": 0.10507246376811594,
-    "3": 0.1383399209486166,
-    "4": 0.19480519480519481,
-    "5": 0.1380952380952381,
-    "6": 0.17142857142857143,
+    "0": 0.06676342525399129,
+    "1": 0.08258258258258258,
+    "2": 0.10752688172043011,
+    "3": 0.10541310541310542,
+    "4": 0.12554112554112554,
+    "5": 0.20476190476190476,
+    "6": 0.26666666666666666,
     "7": 0.4,
     "8": 0.3333333333333333
   },
@@ -220,6 +260,11 @@
       "degree": 9
     },
     {
+      "id": "docs_project_knowledge_wd_finals_exam",
+      "label": "WD Finals mock exam (172 MC + 18 output tracing)",
+      "degree": 9
+    },
+    {
       "id": "subject_exam_reviewers_cc6_source_make_pdf_rule",
       "label": "Rule",
       "degree": 8
@@ -230,42 +275,37 @@
       "degree": 8
     },
     {
-      "id": "src_app_app",
-      "label": "App()",
-      "degree": 7
-    },
-    {
-      "id": "docs_project_knowledge_cc6_finals_exam",
-      "label": "CC6 Finals mock exam (179 MC, 120 min)",
-      "degree": 7
-    },
-    {
       "id": "subject_exam_reviewers_cc6_source_make_pdf_build",
       "label": "build()",
-      "degree": 6
+      "degree": 7
     },
     {
-      "id": "src_components_examcard_examcard",
-      "label": "ExamCard()",
-      "degree": 6
+      "id": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "label": "run_dom()",
+      "degree": 7
     },
     {
-      "id": "src_components_pointerscard_pointerscard",
-      "label": "PointersCard()",
-      "degree": 6
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "label": "Rule",
+      "degree": 7
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "label": "build()",
+      "degree": 7
     }
   ],
   "surprises": [
     {
-      "source": "Finals-only exam slots",
-      "target": "termStyle()",
+      "source": "Generic pointers PDF builder",
+      "target": "build()",
       "source_files": [
         "docs/PROJECT_KNOWLEDGE.md",
-        "src/data/exams.js"
+        "Subject Exam Reviewers/CC6/source/make_pdf.py"
       ],
       "confidence": "INFERRED",
-      "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities; peripheral node `Finals-only exam slots` unexpectedly reaches hub `termStyle()`"
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `Generic pointers PDF builder` unexpectedly reaches hub `build()`"
     },
     {
       "source": "Review Material layout (IPT1 Week 6/7)",
@@ -279,6 +319,28 @@
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `Review Material layout (IPT1 Week 6/7)` unexpectedly reaches hub `Rule`"
     },
     {
+      "source": "Optional timer toggle (off by default)",
+      "target": "ExamCard()",
+      "source_files": [
+        "docs/PROJECT_KNOWLEDGE.md",
+        "src/components/ExamCard.jsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "rationale_for",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Finals-only exam slots",
+      "target": "termStyle()",
+      "source_files": [
+        "docs/PROJECT_KNOWLEDGE.md",
+        "src/data/exams.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `Finals-only exam slots` unexpectedly reaches hub `termStyle()`"
+    },
+    {
       "source": "How to add an exam reviewer (guide)",
       "target": "SubjectPage()",
       "source_files": [
@@ -288,65 +350,43 @@
       "confidence": "INFERRED",
       "relation": "references",
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "Quiz writing rules",
-      "target": "build_questions()",
-      "source_files": [
-        "docs/PROJECT_KNOWLEDGE.md",
-        "Subject Exam Reviewers/CC6/source/make_exam.py"
-      ],
-      "confidence": "INFERRED",
-      "relation": "rationale_for",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
-    },
-    {
-      "source": "CC6 Finals Pointers PDF (7 pages)",
-      "target": "build()",
-      "source_files": [
-        "docs/PROJECT_KNOWLEDGE.md",
-        "Subject Exam Reviewers/CC6/source/make_pdf.py"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react-router-dom` connect `Community 3` to `Community 0`, `Community 4`, `Community 5`?",
-      "why": "High betweenness centrality (0.227) - this node is a cross-community bridge."
+      "question": "Why does `react-router-dom` connect `Community 5` to `Community 0`, `Community 3`, `Community 4`?",
+      "why": "High betweenness centrality (0.193) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Project Knowledge (doc)`, `Vercel deployment (quizzes-hub.vercel.app)`, `Chapter 8 slide gaps` to the rest of the system?",
-      "why": "5 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `Chapter 8 slide gaps`, `PDF-standard Times font fallback`, `index.html app shell` to the rest of the system?",
+      "why": "4 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 0` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.1010752688172043 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.06676342525399129 - nodes in this community are weakly interconnected."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `CC6 Finals Pointers PDF (7 pages)` connect `Community 1` to `Community 2`, `Community 4`?",
-      "why": "High betweenness centrality (0.179) - this node is a cross-community bridge."
+      "question": "Why does `SubjectPage()` connect `Community 5` to `Community 0`, `Community 2`, `Community 4`?",
+      "why": "High betweenness centrality (0.160) - this node is a cross-community bridge."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 1` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.10666666666666667 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.08258258258258258 - nodes in this community are weakly interconnected."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `SubjectPage()` connect `Community 4` to `Community 1`, `Community 3`?",
-      "why": "High betweenness centrality (0.176) - this node is a cross-community bridge."
+      "question": "Why does `pointers` connect `Community 6` to `Community 2`, `Community 5`?",
+      "why": "High betweenness centrality (0.139) - this node is a cross-community bridge."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 2` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.10507246376811594 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.10752688172043011 - nodes in this community are weakly interconnected."
     }
   ]
 }

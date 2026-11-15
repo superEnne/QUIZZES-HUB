@@ -92,7 +92,7 @@
       "_origin": "ast"
     },
     {
-      "id": "flowable",
+      "id": "subject_exam_reviewers_cc6_source_make_pdf_py_flowable",
       "label": "Flowable",
       "file_type": "code",
       "source_file": "",
@@ -209,6 +209,179 @@
       "file_type": "rationale",
       "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
       "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_exam",
+      "label": "make_exam.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_exam_run_console",
+      "label": "run_console()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "label": "run_dom()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_exam_build_mc",
+      "label": "build_mc()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_exam_build_output",
+      "label": "build_output()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_exam_rationale_1",
+      "label": "Build the wd_finals exam object (JSON) for src/data/exams.js. Output-tracing…",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf",
+      "label": "make_pdf.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "label": "Rule",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_py_flowable",
+      "label": "Flowable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rule_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rule_wrap",
+      "label": ".wrap()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rule_draw",
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L40",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_esc",
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_bullets_for",
+      "label": "bullets_for()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_build_footer",
+      "label": "footer()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L98",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rationale_1",
+      "label": "Build a subject's pointers PDF from pointers.py: Times 12, black text only,…",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_make_pdf_rationale_33",
+      "label": "Thin black line under a part heading, like the review material.",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_pointers",
+      "label": "pointers.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/pointers.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_wd_source_questions",
+      "label": "questions.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/WD/source/questions.py",
+      "source_location": "L1",
       "_origin": "ast"
     },
     {
@@ -632,7 +805,7 @@
       "label": "pointers",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L2243",
+      "source_location": "L4454",
       "_origin": "ast"
     },
     {
@@ -640,7 +813,7 @@
       "label": "getExamsBySubject()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L2258",
+      "source_location": "L4479",
       "_callable": true,
       "_origin": "ast"
     },
@@ -649,7 +822,7 @@
       "label": "getExamById()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L2262",
+      "source_location": "L4483",
       "_callable": true,
       "_origin": "ast"
     },
@@ -658,7 +831,7 @@
       "label": "getPointersBySubject()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L2266",
+      "source_location": "L4487",
       "_callable": true,
       "_origin": "ast"
     },
@@ -667,7 +840,7 @@
       "label": "TERM_COLORS",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L2271",
+      "source_location": "L4492",
       "_origin": "ast"
     },
     {
@@ -675,7 +848,7 @@
       "label": "termStyle()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L2278",
+      "source_location": "L4499",
       "_callable": true,
       "_origin": "ast"
     },
@@ -777,7 +950,7 @@
       "label": "isChoiceType()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L36",
+      "source_location": "L37",
       "_callable": true,
       "_origin": "ast"
     },
@@ -786,7 +959,7 @@
       "label": "totalPointsOf()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L41",
+      "source_location": "L42",
       "_callable": true,
       "_origin": "ast"
     },
@@ -795,7 +968,7 @@
       "label": "fmtScore()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L46",
+      "source_location": "L47",
       "_callable": true,
       "_origin": "ast"
     },
@@ -804,7 +977,7 @@
       "label": "fmtClock()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L53",
+      "source_location": "L54",
       "_callable": true,
       "_origin": "ast"
     },
@@ -813,7 +986,7 @@
       "label": "getGrade()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L61",
+      "source_location": "L62",
       "_callable": true,
       "_origin": "ast"
     },
@@ -822,7 +995,7 @@
       "label": "normalize()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L69",
+      "source_location": "L70",
       "_callable": true,
       "_origin": "ast"
     },
@@ -831,7 +1004,7 @@
       "label": "checkIdentAnswer()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L74",
+      "source_location": "L75",
       "_callable": true,
       "_origin": "ast"
     },
@@ -840,7 +1013,7 @@
       "label": "ChevRight()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L82",
+      "source_location": "L83",
       "_callable": true,
       "_origin": "ast"
     },
@@ -849,7 +1022,7 @@
       "label": "IdentificationQuestion()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L91",
+      "source_location": "L92",
       "_callable": true,
       "_origin": "ast"
     },
@@ -858,7 +1031,7 @@
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L100",
+      "source_location": "L101",
       "_callable": true,
       "_origin": "ast"
     },
@@ -867,7 +1040,7 @@
       "label": "handleKeyDown()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L108",
+      "source_location": "L109",
       "_callable": true,
       "_origin": "ast"
     },
@@ -876,7 +1049,7 @@
       "label": "handleSelfGrade()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L112",
+      "source_location": "L113",
       "_callable": true,
       "_origin": "ast"
     },
@@ -885,7 +1058,16 @@
       "label": "CodeBlock()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L232",
+      "source_location": "L233",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_squash",
+      "label": "squash()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L256",
       "_callable": true,
       "_origin": "ast"
     },
@@ -894,7 +1076,7 @@
       "label": "OutputTracingQuestion()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L254",
+      "source_location": "L264",
       "_callable": true,
       "_origin": "ast"
     },
@@ -903,7 +1085,16 @@
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L263",
+      "source_location": "L275",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_quizpage_outputtracingquestion_finish",
+      "label": "finish()",
+      "file_type": "code",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L285",
       "_callable": true,
       "_origin": "ast"
     },
@@ -912,16 +1103,7 @@
       "label": "handleKeyDown()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L271",
-      "_callable": true,
-      "_origin": "ast"
-    },
-    {
-      "id": "src_pages_quizpage_outputtracingquestion_handleselfgrade",
-      "label": "handleSelfGrade()",
-      "file_type": "code",
-      "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L278",
+      "source_location": "L296",
       "_callable": true,
       "_origin": "ast"
     },
@@ -930,7 +1112,7 @@
       "label": "FillCodeQuestion()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L402",
+      "source_location": "L434",
       "_callable": true,
       "_origin": "ast"
     },
@@ -939,7 +1121,7 @@
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L411",
+      "source_location": "L443",
       "_callable": true,
       "_origin": "ast"
     },
@@ -948,7 +1130,7 @@
       "label": "handleKeyDown()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L419",
+      "source_location": "L451",
       "_callable": true,
       "_origin": "ast"
     },
@@ -957,7 +1139,7 @@
       "label": "handleSelfGrade()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L423",
+      "source_location": "L455",
       "_callable": true,
       "_origin": "ast"
     },
@@ -966,7 +1148,7 @@
       "label": "EnumerationQuestion()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L541",
+      "source_location": "L573",
       "_callable": true,
       "_origin": "ast"
     },
@@ -975,7 +1157,7 @@
       "label": "handleReveal()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L546",
+      "source_location": "L578",
       "_callable": true,
       "_origin": "ast"
     },
@@ -984,7 +1166,7 @@
       "label": "toggleItem()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L550",
+      "source_location": "L582",
       "_callable": true,
       "_origin": "ast"
     },
@@ -993,7 +1175,7 @@
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L559",
+      "source_location": "L591",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1002,7 +1184,7 @@
       "label": "MatchingQuestion()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L689",
+      "source_location": "L721",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1011,7 +1193,7 @@
       "label": "selectOption()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L693",
+      "source_location": "L725",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1020,7 +1202,7 @@
       "label": "handleCheck()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L704",
+      "source_location": "L736",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1029,7 +1211,7 @@
       "label": "QuizPage()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L842",
+      "source_location": "L874",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1038,7 +1220,7 @@
       "label": "update()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L874",
+      "source_location": "L907",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1047,7 +1229,7 @@
       "label": "startQuiz()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L900",
+      "source_location": "L933",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1056,7 +1238,7 @@
       "label": "handleMcSelect()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L912",
+      "source_location": "L945",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1065,7 +1247,7 @@
       "label": "handleNonMcAnswer()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L933",
+      "source_location": "L966",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1074,7 +1256,7 @@
       "label": "handleNext()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L955",
+      "source_location": "L988",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1093,6 +1275,22 @@
       "source_file": "src/pages/SubjectPage.jsx",
       "source_location": "L11",
       "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "vercel",
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "vercel_rewrites",
+      "label": "rewrites",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
       "_origin": "ast"
     },
     {
@@ -1486,6 +1684,181 @@
       "author": null,
       "contributor": null,
       "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_optional_timer",
+      "label": "Optional timer toggle (off by default)",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "User: don't add a timer, or add a toggle so students choose.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_output_line_scoring",
+      "label": "One point per output line",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Matches the written quiz, where a 5-line snippet is worth 5 points.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_exact_output_match",
+      "label": "Exact per-line output matching",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The loose normalize() dropped symbols, so '1' matched '-1'; output must match exactly.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_wd_finals_exam",
+      "label": "WD Finals mock exam (172 MC + 18 output tracing)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_wd_ch5",
+      "label": "WD Ch 5 - Advanced CSS",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_wd_ch6",
+      "label": "WD Ch 6 - Introduction to JavaScript and DOM",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_wd_ch7",
+      "label": "WD Ch 7 - Web Hosting",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_wd_ft_quizzes",
+      "label": "WD FT Quiz 1 and 2 items",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "User asked to include the quiz reviewers in the exam and match their output-tracing difficulty.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_run_to_answer",
+      "label": "Answer keys generated by running the code",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Node runs console snippets and jsdom runs DOM snippets, so no answer is typed by hand.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_wd_pointers_pdf",
+      "label": "WD Finals Pointers PDF (6 pages)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_output_tracing_tips",
+      "label": "Tips for Output Tracing (pointers section)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_vercel_spa_rewrite",
+      "label": "SPA rewrite to /index.html",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Direct links like /subject/cc6 returned 404 on Vercel until every path was rewritten to index.html.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_generic_make_pdf",
+      "label": "Generic pointers PDF builder",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "make_pdf.py reads title, footer and content from each subject's pointers.py.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_graphify_usage",
+      "label": "graphify query and rebuild",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
     }
   ],
   "edges": [
@@ -1714,7 +2087,7 @@
     },
     {
       "source": "subject_exam_reviewers_cc6_source_make_pdf_rule",
-      "target": "flowable",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_py_flowable",
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "Subject Exam Reviewers/CC6/source/make_pdf.py",
@@ -1885,6 +2258,431 @@
       "confidence": "EXTRACTED",
       "source_file": "Subject Exam Reviewers/CC6/source/questions.py",
       "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "random",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "tempfile",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "subject_exam_reviewers_wd_source_questions",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "subject_exam_reviewers_wd_source_make_exam_run_console",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "subject_exam_reviewers_wd_source_make_exam_build_mc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam",
+      "target": "subject_exam_reviewers_wd_source_make_exam_build_output",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_build_output",
+      "target": "subject_exam_reviewers_wd_source_make_exam_run_console",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_build_output",
+      "target": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_rationale_1",
+      "target": "subject_exam_reviewers_wd_source_make_exam",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "reportlab_lib_pagesizes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "reportlab_lib_units",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "reportlab_lib_colors",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "reportlab_lib_enums",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "reportlab_lib_styles",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "reportlab_platypus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "xml_sax_saxutils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "subject_exam_reviewers_wd_source_pointers",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_py_flowable",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_rule_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_rule_wrap",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_rule_draw",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_esc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_bullets_for",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_build_footer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_bullets_for",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_esc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_esc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_bullets_for",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_build_footer",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_rationale_1",
+      "target": "subject_exam_reviewers_wd_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_pdf_rationale_33",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_rule",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/WD/source/make_pdf.py",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2578,7 +3376,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2243",
+      "source_location": "L4454",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2588,7 +3386,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2258",
+      "source_location": "L4479",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2598,7 +3396,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2262",
+      "source_location": "L4483",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2608,7 +3406,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2266",
+      "source_location": "L4487",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2618,7 +3416,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2271",
+      "source_location": "L4492",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2628,7 +3426,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2278",
+      "source_location": "L4499",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2639,7 +3437,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L2263",
+      "source_location": "L4484",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2906,7 +3704,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2916,7 +3714,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2926,7 +3724,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2936,7 +3734,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2946,7 +3744,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2956,7 +3754,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L69",
+      "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2966,7 +3764,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L74",
+      "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2976,7 +3774,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2986,7 +3784,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2996,7 +3794,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L100",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3006,7 +3804,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L108",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3016,7 +3814,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L112",
+      "source_location": "L113",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3026,7 +3824,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L232",
+      "source_location": "L233",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage",
+      "target": "src_pages_quizpage_squash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L256",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3036,7 +3844,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L254",
+      "source_location": "L264",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3046,7 +3854,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L263",
+      "source_location": "L275",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion",
+      "target": "src_pages_quizpage_outputtracingquestion_finish",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L285",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3056,17 +3874,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L271",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_pages_quizpage_outputtracingquestion",
-      "target": "src_pages_quizpage_outputtracingquestion_handleselfgrade",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L278",
+      "source_location": "L296",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3076,7 +3884,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L402",
+      "source_location": "L434",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3086,7 +3894,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L411",
+      "source_location": "L443",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3096,7 +3904,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L419",
+      "source_location": "L451",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3106,7 +3914,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L423",
+      "source_location": "L455",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3116,7 +3924,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L541",
+      "source_location": "L573",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3126,7 +3934,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L546",
+      "source_location": "L578",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3136,7 +3944,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L550",
+      "source_location": "L582",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3146,7 +3954,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L559",
+      "source_location": "L591",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3156,7 +3964,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L689",
+      "source_location": "L721",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3166,7 +3974,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L693",
+      "source_location": "L725",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3176,7 +3984,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L704",
+      "source_location": "L736",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3186,7 +3994,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L842",
+      "source_location": "L874",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3196,7 +4004,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L874",
+      "source_location": "L907",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3206,7 +4014,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L900",
+      "source_location": "L933",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3216,7 +4024,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L912",
+      "source_location": "L945",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3226,7 +4034,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L933",
+      "source_location": "L966",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3236,7 +4044,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L955",
+      "source_location": "L988",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3247,7 +4055,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3258,7 +4066,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L75",
+      "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3269,7 +4077,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L205",
+      "source_location": "L206",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3280,7 +4088,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L102",
+      "source_location": "L103",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3291,7 +4099,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L109",
+      "source_location": "L110",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3302,29 +4110,40 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L288",
+      "source_location": "L315",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "src_pages_quizpage_outputtracingquestion",
-      "target": "src_pages_quizpage_outputtracingquestion_handleselfgrade",
+      "target": "src_pages_quizpage_outputtracingquestion_finish",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L387",
+      "source_location": "L419",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "src_pages_quizpage_outputtracingquestion_handlesubmit",
-      "target": "src_pages_quizpage_checkidentanswer",
+      "target": "src_pages_quizpage_squash",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L265",
+      "source_location": "L278",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_outputtracingquestion_handlesubmit",
+      "target": "src_pages_quizpage_outputtracingquestion_finish",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L282",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3335,7 +4154,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L274",
+      "source_location": "L300",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3346,7 +4165,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L436",
+      "source_location": "L468",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3357,7 +4176,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L526",
+      "source_location": "L558",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3368,7 +4187,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L413",
+      "source_location": "L445",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3379,7 +4198,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L420",
+      "source_location": "L452",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3390,7 +4209,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L623",
+      "source_location": "L655",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3401,7 +4220,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L780",
+      "source_location": "L812",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3412,7 +4231,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L882",
+      "source_location": "L915",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3423,7 +4242,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L968",
+      "source_location": "L1001",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3434,7 +4253,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L982",
+      "source_location": "L1015",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3445,7 +4264,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1108",
+      "source_location": "L1153",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3456,7 +4275,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1134",
+      "source_location": "L1179",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3467,7 +4286,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1195",
+      "source_location": "L1240",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3478,7 +4297,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1382",
+      "source_location": "L1432",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3489,7 +4308,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1441",
+      "source_location": "L1491",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3500,7 +4319,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1466",
+      "source_location": "L1516",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3511,7 +4330,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1469",
+      "source_location": "L1519",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3522,7 +4341,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1475",
+      "source_location": "L1525",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3533,7 +4352,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1484",
+      "source_location": "L1534",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3544,7 +4363,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1493",
+      "source_location": "L1543",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3555,7 +4374,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1502",
+      "source_location": "L1552",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3566,7 +4385,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L901",
+      "source_location": "L934",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3676,6 +4495,16 @@
       "confidence": "EXTRACTED",
       "source_file": "src/pages/SubjectPage.jsx",
       "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_rewrites",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3851,7 +4680,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L848",
+      "source_location": "L880",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3862,7 +4691,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L849",
+      "source_location": "L881",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3873,7 +4702,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L849",
+      "source_location": "L881",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3978,7 +4807,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1012",
+      "source_location": "L1045",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4015,6 +4844,66 @@
       "confidence_score": 1.0,
       "source_file": "src/pages/SubjectPage.jsx",
       "source_location": "L213",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_run_console",
+      "target": "subprocess",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "target": "tempfile",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "target": "subprocess",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "target": "json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "target": "os",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/WD/source/make_exam.py",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4688,6 +5577,424 @@
       "source_location": null,
       "weight": 1.0,
       "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_optional_timer",
+      "target": "src_pages_quizpage_quizpage_startquiz",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_optional_timer",
+      "target": "src_components_examcard_examcard",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_optional_timer",
+      "target": "docs_project_knowledge_timer_end_timestamp",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_output_line_scoring",
+      "target": "src_pages_quizpage_questionpoints",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_output_line_scoring",
+      "target": "src_pages_quizpage_outputtracingquestion_finish",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_output_line_scoring",
+      "target": "docs_project_knowledge_per_item_scoring",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_exact_output_match",
+      "target": "src_pages_quizpage_squash",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_exact_output_match",
+      "target": "src_pages_quizpage_normalize",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_exact_output_match",
+      "target": "src_pages_quizpage_outputtracingquestion_handlesubmit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_finals_exam",
+      "target": "src_data_exams_exams",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_finals_exam",
+      "target": "subject_exam_reviewers_wd_source_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_finals_exam",
+      "target": "subject_exam_reviewers_wd_source_make_exam_build_mc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_finals_exam",
+      "target": "subject_exam_reviewers_wd_source_make_exam_build_output",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_finals_exam",
+      "target": "docs_project_knowledge_output_line_scoring",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ch5",
+      "target": "docs_project_knowledge_wd_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ch5",
+      "target": "docs_project_knowledge_wd_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ch6",
+      "target": "docs_project_knowledge_wd_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ch6",
+      "target": "docs_project_knowledge_wd_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ch7",
+      "target": "docs_project_knowledge_wd_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ch7",
+      "target": "docs_project_knowledge_wd_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ft_quizzes",
+      "target": "docs_project_knowledge_wd_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_ft_quizzes",
+      "target": "subject_exam_reviewers_wd_source_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_run_to_answer",
+      "target": "subject_exam_reviewers_wd_source_make_exam_run_console",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_run_to_answer",
+      "target": "subject_exam_reviewers_wd_source_make_exam_run_dom",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_pointers_pdf",
+      "target": "src_data_exams_pointers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_pointers_pdf",
+      "target": "subject_exam_reviewers_wd_source_pointers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_wd_pointers_pdf",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_output_tracing_tips",
+      "target": "docs_project_knowledge_wd_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_output_tracing_tips",
+      "target": "docs_project_knowledge_wd_ch6",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_vercel_spa_rewrite",
+      "target": "vercel_rewrites",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_vercel_spa_rewrite",
+      "target": "docs_project_knowledge_vercel_deployment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_generic_make_pdf",
+      "target": "subject_exam_reviewers_wd_source_make_pdf_build",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_generic_make_pdf",
+      "target": "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_quiz_writing_rules",
+      "target": "subject_exam_reviewers_wd_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_wd_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_wd_source_pointers",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_graphify_usage",
+      "target": "docs_project_knowledge_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_new_subject_workflow",
+      "target": "subject_exam_reviewers_wd_source_make_exam",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
     }
   ],
   "hyperedges": [
@@ -4715,6 +6022,36 @@
         "src_data_exams_getexambyid",
         "src_pages_quizpage_quizpage",
         "src_pages_quizpage_quizpage_update"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    },
+    {
+      "id": "wd_reviewer_build_pipeline",
+      "label": "WD reviewer build pipeline",
+      "nodes": [
+        "subject_exam_reviewers_wd_source_questions",
+        "subject_exam_reviewers_wd_source_pointers",
+        "subject_exam_reviewers_wd_source_make_exam",
+        "subject_exam_reviewers_wd_source_make_pdf",
+        "src_data_exams_exams",
+        "src_data_exams_pointers"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    },
+    {
+      "id": "output_tracing_grading",
+      "label": "Output tracing grading",
+      "nodes": [
+        "src_pages_quizpage_outputtracingquestion",
+        "src_pages_quizpage_squash",
+        "src_pages_quizpage_questionpoints",
+        "src_pages_quizpage_quizpage_handlenonmcanswer"
       ],
       "relation": "participate_in",
       "confidence": "EXTRACTED",

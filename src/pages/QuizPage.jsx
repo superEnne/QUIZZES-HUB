@@ -29,6 +29,7 @@ function questionPoints(q) {
   const type = q.type || "mc";
   if (type === "matching")    return q.pairs?.length || 1;
   if (type === "enumeration") return q.minCount ?? q.count ?? q.items?.length ?? 1;
+  if (type === "output_tracing") return String(q.answer ?? "").split("\n").length || 1;
   return 1;
 }
 
@@ -251,36 +252,62 @@ function CodeBlock({ code }) {
 }
 
 // ─────────────── OUTPUT TRACING QUESTION ────────────────────────────────────
+/** Exact output comparison: trims the line and collapses inner spaces, but keeps case and symbols ("-1" ≠ "1"). */
+function squash(s) {
+  return String(s ?? "").trim().replace(/\s+/g, " ");
+}
+
+/**
+ * Output tracing. A multi-line output is worth one point per line (like a 5-pt
+ * snippet on a written quiz): each line is checked on its own, in order.
+ */
 function OutputTracingQuestion({ q, onAnswer }) {
+  const expected = String(q.answer).replace(/\r/g, "").split("\n");
+  const multi = expected.length > 1;
   const [input, setInput] = useState("");
   const [revealed, setRevealed] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(null);
-  const [selfGraded, setSelfGraded] = useState(null);
+  const [lineOk, setLineOk] = useState([]);
+  const [graded, setGraded] = useState(false);
   const inputRef = useRef(null);
 
   useEffect(() => { inputRef.current?.focus(); }, []);
 
   function handleSubmit() {
     if (!input.trim() || revealed) return;
-    const correct = checkIdentAnswer(input, q);
-    setIsCorrect(correct);
+    const got = input.replace(/\r/g, "").trim().split("\n");
+    const altHit = (q.altAnswers || []).some(a => squash(a) === squash(input));
+    const results = expected.map((line, i) => altHit || squash(got[i]) === squash(line));
+    setLineOk(results);
     setRevealed(true);
-    if (correct) onAnswer(true);
+    if (results.every(Boolean)) finish(results.length);
+  }
+
+  function finish(correctCount) {
+    if (graded) return;
+    setGraded(true);
+    onAnswer({
+      correct: correctCount === expected.length,
+      scoreDelta: correctCount,
+      correctCount,
+      totalCount: expected.length,
+    });
   }
 
   function handleKeyDown(e) {
-    if (e.key === "Enter" && !e.shiftKey) {
+    // Single line: Enter checks. Multi-line: Enter adds a line, Ctrl/Cmd+Enter checks.
+    if (e.key === "Enter" && (!multi || e.ctrlKey || e.metaKey)) {
       e.preventDefault();
       handleSubmit();
     }
   }
 
-  function handleSelfGrade(correct) {
-    setSelfGraded(correct);
-    onAnswer(correct);
-  }
-
-  const showSelfGrade = revealed && isCorrect === false && selfGraded === null;
+  const gotLines = input.replace(/\r/g, "").trim().split("\n");
+  const okCount = lineOk.filter(Boolean).length;
+  const showSelfGrade = revealed && !graded;
+  const instruction = q.instruction
+    || (multi
+      ? `Type exactly what this code prints, one line per output (${expected.length} lines).`
+      : "Type exactly what this code prints to the console.");
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
@@ -297,35 +324,37 @@ function OutputTracingQuestion({ q, onAnswer }) {
         color: "#92400e",
         fontWeight: 600,
       }}>
-        Type exactly what this code prints to the console.
+        {instruction}
+        {multi && !revealed && <span style={{ fontWeight: 500 }}> Press Enter for a new line, Ctrl+Enter to check.</span>}
       </div>
 
       {/* Input */}
       <textarea
         ref={inputRef}
-        rows={q.answer.includes("\n") ? 2 : 1}
+        rows={Math.min(Math.max(expected.length, 1), 8)}
         value={input}
         onChange={e => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
         disabled={revealed}
-        placeholder={q.answer.includes("\n") ? "Type output (use Shift+Enter for new line)..." : "Type the output here…"}
+        placeholder={multi ? "Type each output on its own line…" : "Type the output here…"}
         style={{
           width: "100%",
           padding: "0.85rem 1rem",
           borderRadius: "12px",
           border: revealed
-            ? `2px solid ${isCorrect ? "#86efac" : "#fca5a5"}`
+            ? `2px solid ${okCount === expected.length ? "#86efac" : "#fca5a5"}`
             : "2px solid #fde68a",
-          background: revealed ? (isCorrect ? "#f0fdf4" : "#fff1f2") : "white",
+          background: revealed ? (okCount === expected.length ? "#f0fdf4" : "#fff1f2") : "white",
           fontSize: "0.95rem",
           fontWeight: 600,
-          color: revealed ? (isCorrect ? "#15803d" : "#dc2626") : "#2d1f5e",
+          color: revealed ? (okCount === expected.length ? "#15803d" : "#dc2626") : "#2d1f5e",
           outline: "none",
           transition: "border-color 200ms, background 200ms",
           boxSizing: "border-box",
           fontFamily: "'Fira Code', 'Fira Mono', monospace",
           resize: "vertical",
           minHeight: "48px",
+          lineHeight: 1.6,
         }}
       />
 
@@ -341,7 +370,7 @@ function OutputTracingQuestion({ q, onAnswer }) {
         </button>
       )}
 
-      {/* Answer reveal panel */}
+      {/* Answer reveal panel: expected output, line by line */}
       {revealed && (
         <div style={{
           padding: "1rem 1.25rem",
@@ -349,29 +378,31 @@ function OutputTracingQuestion({ q, onAnswer }) {
           background: "#faf5ff",
           border: "1.5px solid var(--lilac-200)",
         }}>
-          <p style={{ fontSize: "0.72rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.07em", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
-            Expected Output
+          <p style={{ fontSize: "0.72rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.07em", color: "var(--text-soft)", marginBottom: "0.5rem" }}>
+            Expected Output{multi && ` · ${okCount} / ${expected.length} lines correct`}
           </p>
-          <p style={{
-            fontSize: "1rem", fontWeight: 700, color: "#2d1f5e",
-            marginBottom: q.explanation ? "0.6rem" : 0,
-            fontFamily: "'Fira Code', 'Fira Mono', monospace",
-            whiteSpace: "pre-wrap",
-          }}>
-            {q.answer}
-            {q.altAnswers?.length > 0 && (
-              <span style={{ fontSize: "0.78rem", color: "var(--text-soft)", fontWeight: 500, marginLeft: "0.5rem" }}>
-                (also: {q.altAnswers.join(", ")})
-              </span>
-            )}
-          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", marginBottom: q.explanation ? "0.6rem" : 0 }}>
+            {expected.map((line, i) => (
+              <div key={i} style={{ display: "flex", gap: "0.6rem", alignItems: "baseline", fontFamily: "'Fira Code', 'Fira Mono', monospace" }}>
+                <span style={{ width: "1rem", flexShrink: 0, fontWeight: 800, color: lineOk[i] ? "#16a34a" : "#dc2626" }}>
+                  {lineOk[i] ? "✓" : "✗"}
+                </span>
+                <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#2d1f5e", whiteSpace: "pre-wrap" }}>{line}</span>
+                {!lineOk[i] && (
+                  <span style={{ fontSize: "0.75rem", color: "#dc2626", fontWeight: 500 }}>
+                    (you: {gotLines[i]?.trim() ? gotLines[i].trim() : "—"})
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
           {q.explanation && (
             <p style={{ fontSize: "0.8rem", color: "var(--text-mid)", lineHeight: 1.55 }}>{q.explanation}</p>
           )}
         </div>
       )}
 
-      {/* Self-grade fallback */}
+      {/* Self-grade fallback for near misses (e.g. a spacing or quote difference) */}
       {showSelfGrade && (
         <div style={{
           padding: "0.85rem 1rem", borderRadius: "12px",
@@ -379,18 +410,19 @@ function OutputTracingQuestion({ q, onAnswer }) {
           display: "flex", flexDirection: "column", gap: "0.5rem",
         }}>
           <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
-            Your answer wasn't an exact match — did you get it right?
+            {multi
+              ? `${okCount} of ${expected.length} lines matched exactly. Were the others actually right?`
+              : "Your answer wasn't an exact match — did you get it right?"}
           </p>
-          <p style={{ fontSize: "0.8rem", color: "#92400e", fontStyle: "italic" }}>Your answer: "{input}"</p>
           <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
             <button
-              onClick={() => handleSelfGrade(true)}
+              onClick={() => finish(expected.length)}
               style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
-            >I got it right</button>
+            >{multi ? "Count all lines as correct" : "I got it right"}</button>
             <button
-              onClick={() => handleSelfGrade(false)}
+              onClick={() => finish(okCount)}
               style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
-            >I got it wrong</button>
+            >{multi ? `Keep ${okCount} / ${expected.length}` : "I got it wrong"}</button>
           </div>
         </div>
       )}
@@ -855,6 +887,7 @@ export default function QuizPage({ mode = "quiz" }) {
   const [score, setScore]         = useState(0);
   const [answers, setAnswers]     = useState([]);
   const [doShuffle, setDoShuffle] = useState(true);
+  const [useTimer, setUseTimer]   = useState(false); // mock exam timer is opt-in
 
   // MC-specific state
   const [selected, setSelected]   = useState(null);
@@ -902,7 +935,7 @@ export default function QuizPage({ mode = "quiz" }) {
     setCurrent(0); setScore(0); setAnswers([]);
     setSelected(null); setRevealed(false); setQAnswered(false);
     setTimedOut(false);
-    const seconds = isExam && reviewer.timeLimit ? reviewer.timeLimit * 60 : null;
+    const seconds = isExam && useTimer && reviewer.timeLimit ? reviewer.timeLimit * 60 : null;
     setTimeLeft(seconds);
     setEndsAt(seconds ? Date.now() + seconds * 1000 : null);
     setQuizState(STATE.QUIZ);
@@ -1020,30 +1053,42 @@ export default function QuizPage({ mode = "quiz" }) {
               )}
             </p>
 
-            {/* Mock exam time limit */}
-            {isExam && (
+            {/* Optional mock exam timer */}
+            {isExam && reviewer.timeLimit ? (
               <div style={{
-                display: "flex", alignItems: "center", gap: "0.6rem",
-                padding: "0.85rem 1.1rem",
+                display: "flex", alignItems: "center", gap: "0.85rem",
+                padding: "1rem 1.25rem",
                 borderRadius: "14px",
-                background: "#fffbeb",
-                border: "1.5px solid #fde68a",
+                background: useTimer ? "#fffbeb" : "var(--lilac-50)",
+                border: `1.5px solid ${useTimer ? "#fde68a" : "var(--lilac-200)"}`,
                 marginBottom: "0.85rem",
                 textAlign: "left",
-                fontSize: "0.82rem",
-                color: "#92400e",
-                fontWeight: 600,
-                lineHeight: 1.5,
-              }}>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}>
-                  <circle cx="8" cy="8.5" r="5.75" stroke="currentColor" strokeWidth="1.4"/>
-                  <path d="M8 5.5v3l2 1.5M6.5 1.75h3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                {reviewer.timeLimit
-                  ? <span>{reviewer.timeLimit}-minute time limit. The exam ends automatically when time runs out.</span>
-                  : <span>No time limit for this mock exam.</span>}
+                cursor: "pointer",
+                transition: "all 200ms",
+              }} onClick={() => setUseTimer(v => !v)}>
+                <div style={{
+                  width: "20px", height: "20px",
+                  borderRadius: "6px",
+                  background: useTimer ? "linear-gradient(135deg, #f59e0b, #fbbf24)" : "white",
+                  border: useTimer ? "none" : "1.5px solid var(--lilac-300)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  flexShrink: 0,
+                  transition: "all 200ms",
+                }}>
+                  {useTimer && (
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                      <path d="M2 5L4 7L8 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  )}
+                </div>
+                <div>
+                  <p style={{ fontSize: "0.875rem", fontWeight: 700, color: "#2d1f5e" }}>Use a {reviewer.timeLimit}-minute timer</p>
+                  <p style={{ fontSize: "0.775rem", color: "var(--text-soft)" }}>
+                    {useTimer ? "The exam ends automatically when time runs out." : "Off by default — turn on to practice under time pressure."}
+                  </p>
+                </div>
               </div>
-            )}
+            ) : null}
 
             {/* Shuffle toggle */}
             <div style={{
@@ -1268,6 +1313,11 @@ export default function QuizPage({ mode = "quiz" }) {
                           border: "1.5px solid #313244", margin: 0,
                         }}><code>{a.code}</code></pre>
                       </div>
+                    )}
+                    {a.totalCount > 1 && (
+                      <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text-mid)", marginBottom: "0.35rem" }}>
+                        {a.correctCount} / {a.totalCount} lines correct
+                      </p>
                     )}
                     <p style={{ fontSize: "0.8rem", color: "var(--text-soft)", marginBottom: "0.35rem" }}>
                       Expected output: <strong style={{ color: "#2d1f5e", fontFamily: "'Fira Code', monospace", whiteSpace: "pre-wrap" }}>{a.answer}</strong>

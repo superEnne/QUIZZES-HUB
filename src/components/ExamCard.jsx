@@ -53,7 +53,7 @@ export default function ExamCard({ exam, subjectId, index }) {
         </span>
         {exam.timeLimit ? (
           <span style={{ display: "inline-flex", alignItems: "center", gap: "0.3rem", fontSize: "0.72rem", fontWeight: 700, color: "var(--text-soft)" }}>
-            <ClockIcon /> {exam.timeLimit} min
+            <ClockIcon /> Optional {exam.timeLimit}-min timer
           </span>
         ) : null}
       </div>
