@@ -404,3 +404,297 @@ public class DemoWorkingDog {
      "wrong": ["Woof! / I am a dog who works", "I am a dog who works / Woof!", "The program does not compile, because Dog does not implement Worker"],
      "note": "work() calls the inherited speak() first, so Woof! appears twice."},
 ]
+
+
+# OUTPUT items: output tracing. make_exam.py compiles and runs each program; the student types
+# every printed line in order (scored per line).
+OUTPUT = [
+  {"module": M10, "file": "Employee", "name": "Redefining getPay()",
+   "code": '''class Person {
+   private String name;
+   Person(String aName) { name = aName; }
+   public String getName() { return name; }
+}
+class Employee extends Person {
+   private int basicSalary;
+   Employee(String aName, int aBasicSalary) {
+      super(aName);
+      basicSalary = aBasicSalary;
+   }
+   public int getPay() { return basicSalary; }
+   public static void main(String argv[]) {
+      Employee[] staff = { new Manager("Simon", 9000, 2000),
+                           new Secretary("Selene", 2500),
+                           new Clerk("Charmaine", 1200) };
+      for (int i = 0; i < staff.length; i++)
+         System.out.println(staff[i].getName() + " has a pay of " + staff[i].getPay());
+   }
+}
+class Manager extends Employee {
+   private int allowance;
+   Manager(String aName, int aBasicSalary, int aAllowance) {
+      super(aName, aBasicSalary);
+      allowance = aAllowance;
+   }
+   public int getPay() { return super.getPay() + allowance; }
+}
+class Secretary extends Employee {
+   Secretary(String aName, int aBasicSalary) { super(aName, aBasicSalary); }
+}
+class Clerk extends Employee {
+   Clerk(String aName, int aBasicSalary) { super(aName, aBasicSalary); }
+}''',
+   "note": "Manager redefines getPay() (same name and parameters), so its version adds the allowance; Secretary and Clerk inherit Employee's getPay()."},
+
+  {"module": M10, "file": "Technician", "name": "Constructor chain with super()",
+   "code": '''class Person {
+   Person() { System.out.println("Person created"); }
+}
+class Employee extends Person {
+   Employee() {
+      super();
+      System.out.println("Employee created");
+   }
+}
+public class Technician extends Employee {
+   Technician() {
+      super();
+      System.out.println("Technician created");
+   }
+   public static void main(String argv[]) {
+      Technician t = new Technician();
+   }
+}''',
+   "note": "super() runs the parent constructor first, so the messages print from the top of the hierarchy down."},
+
+  {"module": M10, "file": "Shape", "name": "Adding Triangle to the hierarchy",
+   "code": '''class Shape {
+   private String name;
+   Shape(String aName) { name = aName; }
+   public String getName() { return name; }
+   public float calculateArea() { return 0.0f; }
+   public static void main(String argv[]) {
+      Shape shapeArray[] = { new Square("Square S"),
+                             new Triangle("Triangle T"),
+                             new Shape("Shape X") };
+      for (int i = 0; i < shapeArray.length; i++)
+         System.out.println(shapeArray[i].getName() + ": " + shapeArray[i].calculateArea());
+   }
+}
+class Square extends Shape {
+   private int side;
+   Square(String aName) { super(aName); side = 3; }
+   public float calculateArea() {
+      int area;
+      area = side * side;
+      return area;
+   }
+}
+class Triangle extends Shape {
+   private int base, height;
+   Triangle(String aName) { super(aName); base = 4; height = 5; }
+   public float calculateArea() { return 0.5f * base * height; }
+}''',
+   "note": "calculateArea() returns a float, so the int area 9 prints as 9.0. Triangle was added as a subclass, so Shape and Square did not change."},
+
+  {"module": M11, "file": "TurnDemo", "name": "One interface, many classes",
+   "code": '''interface Turner {
+   void turn();
+}
+class Leaf implements Turner {
+   public void turn() { System.out.println("Changing colors"); }
+}
+class Page implements Turner {
+   public void turn() { System.out.println("Going to the next page"); }
+}
+class Pancake implements Turner {
+   public void turn() { System.out.println("Flipping"); }
+}
+public class TurnDemo {
+   public static void main(String[] args) {
+      Turner[] things = { new Pancake(), new Leaf(), new Page(), new Pancake() };
+      for (int i = 1; i < things.length; i++)
+         things[i].turn();
+   }
+}''',
+   "note": "The loop starts at index 1, so the first Pancake is skipped. Each class writes its own turn()."},
+
+  {"module": M11, "file": "SalesManager", "name": "extends and implements",
+   "code": '''interface Manage {
+   void authorize();
+}
+class SalesPerson {
+   public void sell() { System.out.println("Selling products"); }
+}
+public class SalesManager extends SalesPerson implements Manage {
+   public void authorize() {
+      System.out.println("Authorizing discount");
+      sell();
+   }
+   public static void main(String[] args) {
+      SalesManager boss = new SalesManager();
+      boss.sell();
+      boss.authorize();
+   }
+}''',
+   "note": "sell() is inherited through extends; authorize() had to be written because of implements Manage."},
+
+  {"module": M12, "file": "ColourTest", "name": "Constants in an interface",
+   "code": '''interface Colourable {
+   int RED = 1;
+   int GREEN = 2;
+   int BLUE = 3;
+}
+public class ColourTest implements Colourable {
+   public static void main(String args[]) {
+      System.out.println(RED + GREEN * BLUE);
+      System.out.println("Colour " + RED + GREEN);
+      System.out.println(Colourable.BLUE);
+   }
+}''',
+   "note": "Interface data are public, static and final constants. * runs before +, and once a String comes first, + joins text (\"Colour \" + 1 + 2 = Colour 12)."},
+
+  {"module": M12, "file": "B", "name": "Subclass of a class that implements an interface",
+   "code": '''interface I {
+   void x();
+}
+class A implements I {
+   public void x() { System.out.println("in A.x"); }
+}
+class B extends A {
+   void z() {
+      x();
+      System.out.println("in B.z");
+   }
+   public static void main(String args[]) {
+      B bb = new B();
+      bb.z();
+      I ii = new B();
+      ii.x();
+   }
+}''',
+   "note": "B inherits x() from A, which implements I, so a B object can also be used as an I."},
+
+  {"module": M12, "file": "AbstractDemo", "name": "Abstract class with a concrete method",
+   "code": '''abstract class Animal {
+   private String name;
+   Animal(String aName) { name = aName; }
+   public abstract void speak();
+   public void introduce() {
+      System.out.println("I am " + name);
+      speak();
+   }
+}
+class Dog extends Animal {
+   Dog(String aName) { super(aName); }
+   public void speak() { System.out.println("Woof!"); }
+}
+class Cow extends Animal {
+   Cow(String aName) { super(aName); }
+   public void speak() { System.out.println("Moo!"); }
+}
+public class AbstractDemo {
+   public static void main(String[] args) {
+      Animal a = new Dog("Murphy");
+      a.introduce();
+      a = new Cow("Bessie");
+      a.speak();
+   }
+}''',
+   "note": "An abstract class cannot be instantiated, but it can have constructors and concrete methods; each concrete subclass must implement speak()."},
+
+  {"module": M13, "file": "OverloadDemo", "name": "Operation overloading",
+   "code": '''public class OverloadDemo {
+   static void display(int x) { System.out.println("int " + x); }
+   static void display(double x) { System.out.println("double " + x); }
+   static void display(String x) { System.out.println("String " + x); }
+   static void display(int x, int y) { System.out.println("sum " + (x + y)); }
+   public static void main(String[] args) {
+      display(5);
+      display(2.5);
+      display("5");
+      display(5, 2);
+      display(10 / 4);
+   }
+}''',
+   "note": "The method is chosen by the parameters. 10 / 4 is integer division (2), so display(int) runs."},
+
+  {"module": M13, "file": "BindingDemo", "name": "Dynamic binding",
+   "code": '''class Parent {
+   void show() { System.out.println("Parent show"); }
+   void greet() {
+      System.out.println("Hello from Parent");
+      show();
+   }
+}
+class Child extends Parent {
+   void show() { System.out.println("Child show"); }
+}
+public class BindingDemo {
+   public static void main(String[] args) {
+      Parent p = new Child();
+      p.greet();
+      p = new Parent();
+      p.show();
+   }
+}''',
+   "note": "With dynamic binding the object's actual class decides which show() runs, even when it is called from inside Parent's greet()."},
+
+  {"module": M13, "file": "A", "name": "Overloaded constructors",
+   "code": '''class A {
+   A() {
+      this(1);
+      System.out.println("A()");
+   }
+   A(int x) { System.out.println("A(int x) " + x); }
+   A(int x, int y) { System.out.println("A(int x, int y) " + (x * y)); }
+   A(String x) { System.out.println("A(String x) " + x); }
+   public static void main(String args[]) {
+      A first = new A();
+      A second = new A(4, 5);
+      A third = new A("4");
+   }
+}''',
+   "note": "this(1) calls the A(int x) constructor first. Each new A(...) picks the constructor whose parameters match."},
+
+  {"module": M14, "file": "Counter", "name": "Object attribute vs. class attribute",
+   "code": '''class Counter {
+   static int total = 0;
+   int mine = 0;
+   Counter() {
+      total = total + 1;
+      mine = mine + 1;
+   }
+   public static void main(String argv[]) {
+      Counter c1 = new Counter();
+      Counter c2 = new Counter();
+      Counter c3 = new Counter();
+      System.out.println(c1.mine);
+      System.out.println(c3.total);
+      System.out.println(Counter.total + c2.mine);
+   }
+}''',
+   "note": "total is static (one shared copy, 3 after three objects); mine is an object attribute, so each object has its own value of 1."},
+
+  {"module": M14, "file": "Account", "name": "Information hiding",
+   "code": '''public class Account {
+   private int balance = 0;
+   public void deposit(int amount) {
+      if (amount > 0) balance = balance + amount;
+   }
+   public void withdraw(int amount) {
+      if (amount <= balance) balance = balance - amount;
+      else System.out.println("Insufficient funds");
+   }
+   public int getBalance() { return balance; }
+   public static void main(String[] args) {
+      Account acct = new Account();
+      acct.deposit(500);
+      acct.deposit(-100);
+      acct.withdraw(700);
+      acct.withdraw(200);
+      System.out.println("Balance: " + acct.getBalance());
+   }
+}''',
+   "note": "balance is private, so it changes only through deposit() and withdraw(); the negative deposit is ignored and the 700 withdrawal is refused."},
+]

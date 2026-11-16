@@ -3898,7 +3898,7 @@ export const exams = {
       "id": "oop_finals",
       "term": "Finals",
       "title": "Finals Exam Reviewer",
-      "description": "Modules 10–14: Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity. Multiple choice.",
+      "description": "Modules 10–14: Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity. Multiple choice + output tracing.",
       "timeLimit": 90,
       "questions": [
         {
@@ -4082,6 +4082,33 @@ export const exams = {
           "id": 15
         },
         {
+          "type": "output_tracing",
+          "question": "Trace the output (Redefining getPay()): what does this program print?",
+          "code": "class Person {\n   private String name;\n   Person(String aName) { name = aName; }\n   public String getName() { return name; }\n}\nclass Employee extends Person {\n   private int basicSalary;\n   Employee(String aName, int aBasicSalary) {\n      super(aName);\n      basicSalary = aBasicSalary;\n   }\n   public int getPay() { return basicSalary; }\n   public static void main(String argv[]) {\n      Employee[] staff = { new Manager(\"Simon\", 9000, 2000),\n                           new Secretary(\"Selene\", 2500),\n                           new Clerk(\"Charmaine\", 1200) };\n      for (int i = 0; i < staff.length; i++)\n         System.out.println(staff[i].getName() + \" has a pay of \" + staff[i].getPay());\n   }\n}\nclass Manager extends Employee {\n   private int allowance;\n   Manager(String aName, int aBasicSalary, int aAllowance) {\n      super(aName, aBasicSalary);\n      allowance = aAllowance;\n   }\n   public int getPay() { return super.getPay() + allowance; }\n}\nclass Secretary extends Employee {\n   Secretary(String aName, int aBasicSalary) { super(aName, aBasicSalary); }\n}\nclass Clerk extends Employee {\n   Clerk(String aName, int aBasicSalary) { super(aName, aBasicSalary); }\n}",
+          "answer": "Simon has a pay of 11000\nSelene has a pay of 2500\nCharmaine has a pay of 1200",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. Manager redefines getPay() (same name and parameters), so its version adds the allowance; Secretary and Clerk inherit Employee's getPay().",
+          "id": 16
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Constructor chain with super()): what does this program print?",
+          "code": "class Person {\n   Person() { System.out.println(\"Person created\"); }\n}\nclass Employee extends Person {\n   Employee() {\n      super();\n      System.out.println(\"Employee created\");\n   }\n}\npublic class Technician extends Employee {\n   Technician() {\n      super();\n      System.out.println(\"Technician created\");\n   }\n   public static void main(String argv[]) {\n      Technician t = new Technician();\n   }\n}",
+          "answer": "Person created\nEmployee created\nTechnician created",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. super() runs the parent constructor first, so the messages print from the top of the hierarchy down.",
+          "id": 17
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Adding Triangle to the hierarchy): what does this program print?",
+          "code": "class Shape {\n   private String name;\n   Shape(String aName) { name = aName; }\n   public String getName() { return name; }\n   public float calculateArea() { return 0.0f; }\n   public static void main(String argv[]) {\n      Shape shapeArray[] = { new Square(\"Square S\"),\n                             new Triangle(\"Triangle T\"),\n                             new Shape(\"Shape X\") };\n      for (int i = 0; i < shapeArray.length; i++)\n         System.out.println(shapeArray[i].getName() + \": \" + shapeArray[i].calculateArea());\n   }\n}\nclass Square extends Shape {\n   private int side;\n   Square(String aName) { super(aName); side = 3; }\n   public float calculateArea() {\n      int area;\n      area = side * side;\n      return area;\n   }\n}\nclass Triangle extends Shape {\n   private int base, height;\n   Triangle(String aName) { super(aName); base = 4; height = 5; }\n   public float calculateArea() { return 0.5f * base * height; }\n}",
+          "answer": "Square S: 9.0\nTriangle T: 10.0\nShape X: 0.0",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. calculateArea() returns a float, so the int area 9 prints as 9.0. Triangle was added as a subclass, so Shape and Square did not change.",
+          "id": 18
+        },
+        {
           "question": "The capability to inherit from more than one class is called:",
           "options": [
             "Multiple inheritance",
@@ -4091,7 +4118,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 16
+          "id": 19
         },
         {
           "question": "Which of the following languages allows a subclass to inherit from more than one parent class?",
@@ -4103,7 +4130,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 17
+          "id": 20
         },
         {
           "question": "Why is multiple inheritance prohibited in Java?",
@@ -4115,7 +4142,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 18
+          "id": 21
         },
         {
           "question": "A class inheriting from a superclass that has inherited from another superclass represents:",
@@ -4127,7 +4154,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 19
+          "id": 22
         },
         {
           "question": "Java's alternative to multiple inheritance is the:",
@@ -4139,7 +4166,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 20
+          "id": 23
         },
         {
           "question": "In an interface, all methods (if any) are implicitly:",
@@ -4151,7 +4178,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 21
+          "id": 24
         },
         {
           "question": "In an interface, all data items (if any) are implicitly:",
@@ -4163,7 +4190,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 22
+          "id": 25
         },
         {
           "question": "An interface is a description of:",
@@ -4175,7 +4202,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 23
+          "id": 26
         },
         {
           "question": "Which keyword is placed in a class header to use an interface?",
@@ -4187,7 +4214,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 24
+          "id": 27
         },
         {
           "question": "Whereas extends lets a subclass use nonprivate, nonoverridden members of its parent, implements requires the class to:",
@@ -4199,7 +4226,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 25
+          "id": 28
         },
         {
           "question": "The interface construct in Java is used with single inheritance to provide:",
@@ -4211,7 +4238,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 26
+          "id": 29
         },
         {
           "question": "class SalesManager extends SalesPerson implements Manage { ... } means that SalesManager:",
@@ -4223,7 +4250,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 27
+          "id": 30
         },
         {
           "question": "In the Manage interface, authorize() is declared without a body. The SalesManager class must:",
@@ -4235,7 +4262,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 28
+          "id": 31
         },
         {
           "question": "Choosing between SalesManager as a subclass of SalesPerson or of Manager (with a CanTakeOrder interface) is:",
@@ -4247,7 +4274,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 29
+          "id": 32
         },
         {
           "question": "When a class implements Worker, it must include a work() method or else:",
@@ -4259,7 +4286,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 30
+          "id": 33
         },
         {
           "question": "A WorkingDog extends Dog and implements Worker. Which method is it required to contain because of implements Worker?",
@@ -4271,7 +4298,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 31
+          "id": 34
         },
         {
           "question": "Why make many classes implement the Worker interface instead of each just having a work() method?",
@@ -4283,7 +4310,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 32
+          "id": 35
         },
         {
           "question": "A class that implements an interface represents a situation similar to inheritance. A WorkingDog therefore:",
@@ -4295,7 +4322,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 33
+          "id": 36
         },
         {
           "question": "What is the output of this program?",
@@ -4308,7 +4335,25 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. Output: Woof! / Woof! / I am a dog who works. work() calls the inherited speak() first, so Woof! appears twice.",
-          "id": 34
+          "id": 37
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (One interface, many classes): what does this program print?",
+          "code": "interface Turner {\n   void turn();\n}\nclass Leaf implements Turner {\n   public void turn() { System.out.println(\"Changing colors\"); }\n}\nclass Page implements Turner {\n   public void turn() { System.out.println(\"Going to the next page\"); }\n}\nclass Pancake implements Turner {\n   public void turn() { System.out.println(\"Flipping\"); }\n}\npublic class TurnDemo {\n   public static void main(String[] args) {\n      Turner[] things = { new Pancake(), new Leaf(), new Page(), new Pancake() };\n      for (int i = 1; i < things.length; i++)\n         things[i].turn();\n   }\n}",
+          "answer": "Changing colors\nGoing to the next page\nFlipping",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. The loop starts at index 1, so the first Pancake is skipped. Each class writes its own turn().",
+          "id": 38
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (extends and implements): what does this program print?",
+          "code": "interface Manage {\n   void authorize();\n}\nclass SalesPerson {\n   public void sell() { System.out.println(\"Selling products\"); }\n}\npublic class SalesManager extends SalesPerson implements Manage {\n   public void authorize() {\n      System.out.println(\"Authorizing discount\");\n      sell();\n   }\n   public static void main(String[] args) {\n      SalesManager boss = new SalesManager();\n      boss.sell();\n      boss.authorize();\n   }\n}",
+          "answer": "Selling products\nAuthorizing discount\nSelling products",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. sell() is inherited through extends; authorize() had to be written because of implements Manage.",
+          "id": 39
         },
         {
           "question": "What happens with the statement Animal myPet = new Animal(\"Murphy\"); if Animal is an abstract class?",
@@ -4320,7 +4365,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 35
+          "id": 40
         },
         {
           "question": "You create an abstract class such as Animal only so that you can:",
@@ -4332,7 +4377,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 36
+          "id": 41
         },
         {
           "question": "If you do not want to create Dog objects but want Dog to be a parent to further subclasses, then the Dog class:",
@@ -4344,7 +4389,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 37
+          "id": 42
         },
         {
           "question": "The @Override annotation for a method such as speak() is:",
@@ -4356,7 +4401,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 38
+          "id": 43
         },
         {
           "question": "Using the same method name to indicate different implementations is called:",
@@ -4368,7 +4413,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 39
+          "id": 44
         },
         {
           "question": "Data attributes declared in an interface construct are always:",
@@ -4380,7 +4425,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Static because there is only one copy; final because they are not modifiable.",
-          "id": 40
+          "id": 45
         },
         {
           "question": "Names for values with a specific meaning, such as RED = 1 in the Colourable interface, are called:",
@@ -4392,7 +4437,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 41
+          "id": 46
         },
         {
           "question": "All methods in an interface are:",
@@ -4404,7 +4449,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 42
+          "id": 47
         },
         {
           "question": "Methods in an interface may NOT be static because:",
@@ -4416,7 +4461,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 43
+          "id": 48
         },
         {
           "question": "ColourTest implements Colourable but does not implement getColour(). How must ColourTest be declared?",
@@ -4428,7 +4473,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 44
+          "id": 49
         },
         {
           "question": "Why must setColour() in ColourTest be declared public?",
@@ -4440,7 +4485,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 45
+          "id": 50
         },
         {
           "question": "Abstract classes and interfaces are similar in that:",
@@ -4452,7 +4497,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 46
+          "id": 51
         },
         {
           "question": "Abstract classes differ from interfaces because:",
@@ -4464,7 +4509,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 47
+          "id": 52
         },
         {
           "question": "A class can inherit from how many abstract superclasses, and implement how many interfaces?",
@@ -4476,7 +4521,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 48
+          "id": 53
         },
         {
           "question": "According to the comparison table, which is true about constructors?",
@@ -4488,7 +4533,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 49
+          "id": 54
         },
         {
           "question": "According to the comparison table, which is true about variables?",
@@ -4500,7 +4545,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 50
+          "id": 55
         },
         {
           "question": "An interface is generally used for achieving:",
@@ -4512,7 +4557,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 51
+          "id": 56
         },
         {
           "question": "Given public abstract class LandVehicle { ... }, which statement is invalid?",
@@ -4524,7 +4569,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 52
+          "id": 57
         },
         {
           "question": "Interface data fields must not be private because:",
@@ -4536,7 +4581,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 53
+          "id": 58
         },
         {
           "question": "The purpose of creating an interface containing constants is to:",
@@ -4548,7 +4593,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 54
+          "id": 59
         },
         {
           "question": "A class that has no name and is defined inside another class is a(n):",
@@ -4560,7 +4605,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 55
+          "id": 60
         },
         {
           "question": "When defining an anonymous inner class, you:",
@@ -4572,7 +4617,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 56
+          "id": 61
         },
         {
           "question": "An anonymous inner class must either implement an interface or extend another class, and it must:",
@@ -4584,7 +4629,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 57
+          "id": 62
         },
         {
           "question": "A variable whose value is assigned only once, which an anonymous inner class may access, is called:",
@@ -4596,7 +4641,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
-          "id": 58
+          "id": 63
         },
         {
           "question": "What is the output of this program?",
@@ -4609,7 +4654,34 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Output: 5. Interface data attributes are implicitly public, static, and final.",
-          "id": 59
+          "id": 64
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Constants in an interface): what does this program print?",
+          "code": "interface Colourable {\n   int RED = 1;\n   int GREEN = 2;\n   int BLUE = 3;\n}\npublic class ColourTest implements Colourable {\n   public static void main(String args[]) {\n      System.out.println(RED + GREEN * BLUE);\n      System.out.println(\"Colour \" + RED + GREEN);\n      System.out.println(Colourable.BLUE);\n   }\n}",
+          "answer": "7\nColour 12\n3",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Interface data are public, static and final constants. * runs before +, and once a String comes first, + joins text (\"Colour \" + 1 + 2 = Colour 12).",
+          "id": 65
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Subclass of a class that implements an interface): what does this program print?",
+          "code": "interface I {\n   void x();\n}\nclass A implements I {\n   public void x() { System.out.println(\"in A.x\"); }\n}\nclass B extends A {\n   void z() {\n      x();\n      System.out.println(\"in B.z\");\n   }\n   public static void main(String args[]) {\n      B bb = new B();\n      bb.z();\n      I ii = new B();\n      ii.x();\n   }\n}",
+          "answer": "in A.x\nin B.z\nin A.x",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. B inherits x() from A, which implements I, so a B object can also be used as an I.",
+          "id": 66
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Abstract class with a concrete method): what does this program print?",
+          "code": "abstract class Animal {\n   private String name;\n   Animal(String aName) { name = aName; }\n   public abstract void speak();\n   public void introduce() {\n      System.out.println(\"I am \" + name);\n      speak();\n   }\n}\nclass Dog extends Animal {\n   Dog(String aName) { super(aName); }\n   public void speak() { System.out.println(\"Woof!\"); }\n}\nclass Cow extends Animal {\n   Cow(String aName) { super(aName); }\n   public void speak() { System.out.println(\"Moo!\"); }\n}\npublic class AbstractDemo {\n   public static void main(String[] args) {\n      Animal a = new Dog(\"Murphy\");\n      a.introduce();\n      a = new Cow(\"Bessie\");\n      a.speak();\n   }\n}",
+          "answer": "I am Murphy\nWoof!\nMoo!",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. An abstract class cannot be instantiated, but it can have constructors and concrete methods; each concrete subclass must implement speak().",
+          "id": 67
         },
         {
           "question": "The binding of variables to operations at compile time is known as:",
@@ -4621,7 +4693,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 60
+          "id": 68
         },
         {
           "question": "The binding of variables to operations at run time is known as:",
@@ -4633,7 +4705,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 61
+          "id": 69
         },
         {
           "question": "Which statement about static and dynamic binding is correct?",
@@ -4645,7 +4717,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 62
+          "id": 70
         },
         {
           "question": "In the procedural Shape example, why were calculateCircleArea() and calculateSquareArea() needed?",
@@ -4657,7 +4729,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 63
+          "id": 71
         },
         {
           "question": "With static binding, adding a new shape such as Triangle requires changes in:",
@@ -4669,7 +4741,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
-          "id": 64
+          "id": 72
         },
         {
           "question": "With dynamic binding, the appropriate calculateArea() method is selected based on:",
@@ -4681,7 +4753,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 65
+          "id": 73
         },
         {
           "question": "Every SalariedEmployee \"is an\" Employee. Which statement is also true?",
@@ -4693,7 +4765,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 66
+          "id": 74
         },
         {
           "question": "A reference is not an object, but it:",
@@ -4705,7 +4777,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
-          "id": 67
+          "id": 75
         },
         {
           "question": "Assigning a variable or constant of one type to a variable of another type is called:",
@@ -4717,7 +4789,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 68
+          "id": 76
         },
         {
           "question": "Using a reference polymorphically allows you to:",
@@ -4729,7 +4801,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 69
+          "id": 77
         },
         {
           "question": "In Java, all instance method calls are virtual method calls by default. This means:",
@@ -4741,7 +4813,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 70
+          "id": 78
         },
         {
           "question": "An application's ability to select the correct subclass method depending on the argument type is known as:",
@@ -4753,7 +4825,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism. It is also called late method binding.",
-          "id": 71
+          "id": 79
         },
         {
           "question": "In Java, which methods use dynamic binding and which use static binding?",
@@ -4765,7 +4837,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 72
+          "id": 80
         },
         {
           "question": "Comparing the two kinds of binding:",
@@ -4777,7 +4849,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 73
+          "id": 81
         },
         {
           "question": "Dynamic method binding is most useful when you want a method whose parameters:",
@@ -4789,7 +4861,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
-          "id": 74
+          "id": 82
         },
         {
           "question": "When you create an array of objects in Java, you are actually creating:",
@@ -4801,7 +4873,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 75
+          "id": 83
         },
         {
           "question": "Animal[] animalRef = new Animal[3]; Given that Animal is abstract, this statement:",
@@ -4813,7 +4885,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 76
+          "id": 84
         },
         {
           "question": "An array of superclass references can hold subclass references:",
@@ -4825,7 +4897,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 77
+          "id": 85
         },
         {
           "question": "The ability to use the same name for two or more methods in a class is known as:",
@@ -4837,7 +4909,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
-          "id": 78
+          "id": 86
         },
         {
           "question": "Two methods have the same method signature if:",
@@ -4849,7 +4921,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 79
+          "id": 87
         },
         {
           "question": "Given constructors A(), A(int x), A(int x, int y), and A(String x), which is called by new A(\"hello\")?",
@@ -4861,7 +4933,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 80
+          "id": 88
         },
         {
           "question": "Declaring two public void a1() {} methods in the same class is:",
@@ -4873,7 +4945,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 81
+          "id": 89
         },
         {
           "question": "Can the return type alone distinguish overloaded methods from one another?",
@@ -4885,7 +4957,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
-          "id": 82
+          "id": 90
         },
         {
           "question": "Declaring methods of the same signature in different, unrelated classes is:",
@@ -4897,7 +4969,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
-          "id": 83
+          "id": 91
         },
         {
           "question": "For a subclass method to redefine (override) a superclass method:",
@@ -4909,7 +4981,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 84
+          "id": 92
         },
         {
           "question": "The ability of different objects to perform the appropriate method in response to the same message is known as:",
@@ -4921,7 +4993,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 85
+          "id": 93
         },
         {
           "question": "In polymorphism, the sender of a message (such as main()):",
@@ -4933,7 +5005,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
-          "id": 86
+          "id": 94
         },
         {
           "question": "Polymorphism is facilitated by:",
@@ -4945,7 +5017,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 87
+          "id": 95
         },
         {
           "question": "Polymorphism encourages programmers to specify:",
@@ -4957,7 +5029,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism. This promotes incremental program development.",
-          "id": 88
+          "id": 96
         },
         {
           "question": "What is the output of this program?",
@@ -4970,7 +5042,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism. Output: Woof! / Moo! / Ssss!. Each reference chooses the speak() method of the object it refers to (dynamic method binding).",
-          "id": 89
+          "id": 97
         },
         {
           "question": "What is the output of this program?",
@@ -4983,7 +5055,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism. Output: C.c1() / D.c1(). D's c1() overrides C's c1(); super.c1() runs the superclass version first.",
-          "id": 90
+          "id": 98
         },
         {
           "question": "What is the output of this program?",
@@ -4996,7 +5068,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism. Output: C.c1() / C.c1() / D.c1(). c1(int i) has a different signature, so it does not override c1(); both methods exist.",
-          "id": 91
+          "id": 99
         },
         {
           "question": "Which constructor message is printed?",
@@ -5009,7 +5081,34 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism. Output: A(int x, int y). Overloaded methods are distinguished by the number and type of parameters.",
-          "id": 92
+          "id": 100
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Operation overloading): what does this program print?",
+          "code": "public class OverloadDemo {\n   static void display(int x) { System.out.println(\"int \" + x); }\n   static void display(double x) { System.out.println(\"double \" + x); }\n   static void display(String x) { System.out.println(\"String \" + x); }\n   static void display(int x, int y) { System.out.println(\"sum \" + (x + y)); }\n   public static void main(String[] args) {\n      display(5);\n      display(2.5);\n      display(\"5\");\n      display(5, 2);\n      display(10 / 4);\n   }\n}",
+          "answer": "int 5\ndouble 2.5\nString 5\nsum 7\nint 2",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 13 - Polymorphism. The method is chosen by the parameters. 10 / 4 is integer division (2), so display(int) runs.",
+          "id": 101
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Dynamic binding): what does this program print?",
+          "code": "class Parent {\n   void show() { System.out.println(\"Parent show\"); }\n   void greet() {\n      System.out.println(\"Hello from Parent\");\n      show();\n   }\n}\nclass Child extends Parent {\n   void show() { System.out.println(\"Child show\"); }\n}\npublic class BindingDemo {\n   public static void main(String[] args) {\n      Parent p = new Child();\n      p.greet();\n      p = new Parent();\n      p.show();\n   }\n}",
+          "answer": "Hello from Parent\nChild show\nParent show",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 13 - Polymorphism. With dynamic binding the object's actual class decides which show() runs, even when it is called from inside Parent's greet().",
+          "id": 102
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Overloaded constructors): what does this program print?",
+          "code": "class A {\n   A() {\n      this(1);\n      System.out.println(\"A()\");\n   }\n   A(int x) { System.out.println(\"A(int x) \" + x); }\n   A(int x, int y) { System.out.println(\"A(int x, int y) \" + (x * y)); }\n   A(String x) { System.out.println(\"A(String x) \" + x); }\n   public static void main(String args[]) {\n      A first = new A();\n      A second = new A(4, 5);\n      A third = new A(\"4\");\n   }\n}",
+          "answer": "A(int x) 1\nA()\nA(int x, int y) 20\nA(String x) 4",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 13 - Polymorphism. this(1) calls the A(int x) constructor first. Each new A(...) picks the constructor whose parameters match.",
+          "id": 103
         },
         {
           "question": "Which is often viewed as the smallest program unit to be considered as a subprogram?",
@@ -5021,7 +5120,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
-          "id": 93
+          "id": 104
         },
         {
           "question": "Compared to a method, what is the next bigger unit under design?",
@@ -5033,7 +5132,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 94
+          "id": 105
         },
         {
           "question": "Properties that are specific to objects and apply to all objects from the same class are:",
@@ -5045,7 +5144,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 95
+          "id": 106
         },
         {
           "question": "Counting objects by adding count = count + 1; in main() for every new SalesPerson works, but it is:",
@@ -5057,7 +5156,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 96
+          "id": 107
         },
         {
           "question": "When count is an object attribute incremented in the constructor, two SalesPerson objects result in:",
@@ -5069,7 +5168,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 97
+          "id": 108
         },
         {
           "question": "Declaring count as static allows the variable to be:",
@@ -5081,7 +5180,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 98
+          "id": 109
         },
         {
           "question": "An attribute definition preceded with the keyword static is a(n):",
@@ -5093,7 +5192,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
-          "id": 99
+          "id": 110
         },
         {
           "question": "When getCount() is made static, the SalesPerson objects s1 and s2:",
@@ -5105,7 +5204,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 100
+          "id": 111
         },
         {
           "question": "Outside of the class definition, the only way to access the static method getCount() is:",
@@ -5117,7 +5216,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
-          "id": 101
+          "id": 112
         },
         {
           "question": "Ideally, objects reveal information on a:",
@@ -5129,7 +5228,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 102
+          "id": 113
         },
         {
           "question": "Which access specifier makes entities hidden from code fragments external to the class?",
@@ -5141,7 +5240,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 103
+          "id": 114
         },
         {
           "question": "Which access specifier makes entities fully visible from all other Java code?",
@@ -5153,7 +5252,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 104
+          "id": 115
         },
         {
           "question": "Which access specifier makes entities accessible to code fragments of its immediate subclass?",
@@ -5165,7 +5264,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
-          "id": 105
+          "id": 116
         },
         {
           "question": "For entities with no access specifier, this default visibility is assumed, giving access within the same package:",
@@ -5177,7 +5276,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 106
+          "id": 117
         },
         {
           "question": "Private variables are used within the class definition, or accessed outside it through a:",
@@ -5189,7 +5288,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 107
+          "id": 118
         },
         {
           "question": "A named collection of classes is a:",
@@ -5201,7 +5300,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 108
+          "id": 119
         },
         {
           "question": "Which package contains fundamental classes and is imported automatically into every program?",
@@ -5213,7 +5312,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 109
+          "id": 120
         },
         {
           "question": "When you create professional classes for others to use, you usually provide them with the:",
@@ -5225,7 +5324,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
-          "id": 110
+          "id": 121
         },
         {
           "question": "A class that will be placed in a nondefault package for others to use must be:",
@@ -5237,7 +5336,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 111
+          "id": 122
         },
         {
           "question": "If a file contains a package declaration, it must be:",
@@ -5249,7 +5348,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 112
+          "id": 123
         },
         {
           "question": "Which statements are the only ones that appear outside class definitions in Java program files?",
@@ -5261,7 +5360,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 113
+          "id": 124
         },
         {
           "question": "In the command javac -d . Animal.java, the -d option means:",
@@ -5273,7 +5372,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity. The dot means the package path is created within the current directory.",
-          "id": 114
+          "id": 125
         },
         {
           "question": "The Java package-naming convention uses:",
@@ -5285,7 +5384,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 115
+          "id": 126
         },
         {
           "question": "A class naming conflict is sometimes called a:",
@@ -5297,7 +5396,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 116
+          "id": 127
         },
         {
           "question": "The bringing together of a set of attributes and methods into an object definition and hiding their implementational structure from the object's users is:",
@@ -5309,7 +5408,7 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
-          "id": 117
+          "id": 128
         },
         {
           "question": "In the egg analogy of encapsulation, the data of an object is like the:",
@@ -5321,7 +5420,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
-          "id": 118
+          "id": 129
         },
         {
           "question": "Encapsulation enhances software maintainability by:",
@@ -5333,7 +5432,7 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
-          "id": 119
+          "id": 130
         },
         {
           "question": "The act of associating a set of methods with a set of data as the only means of affecting the values of the data is:",
@@ -5345,7 +5444,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
-          "id": 120
+          "id": 131
         },
         {
           "question": "The hiding of internal representation of data and methods from the users of these data and methods is:",
@@ -5357,7 +5456,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity. It separates the what from the how of object definition.",
-          "id": 121
+          "id": 132
         },
         {
           "question": "What is the output of this program (count is static)?",
@@ -5370,7 +5469,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity. Output: 2 salespersons have been created. A static count is one shared copy, so both constructors increment the same variable.",
-          "id": 122
+          "id": 133
         },
         {
           "question": "What is the output of this program (count is NOT static)?",
@@ -5383,7 +5482,25 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity. Output: 1 salespersons have been created. As an object attribute, each object has its own count with the value 1.",
-          "id": 123
+          "id": 134
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Object attribute vs. class attribute): what does this program print?",
+          "code": "class Counter {\n   static int total = 0;\n   int mine = 0;\n   Counter() {\n      total = total + 1;\n      mine = mine + 1;\n   }\n   public static void main(String argv[]) {\n      Counter c1 = new Counter();\n      Counter c2 = new Counter();\n      Counter c3 = new Counter();\n      System.out.println(c1.mine);\n      System.out.println(c3.total);\n      System.out.println(Counter.total + c2.mine);\n   }\n}",
+          "answer": "1\n3\n4",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 14 - Modularity. total is static (one shared copy, 3 after three objects); mine is an object attribute, so each object has its own value of 1.",
+          "id": 135
+        },
+        {
+          "type": "output_tracing",
+          "question": "Trace the output (Information hiding): what does this program print?",
+          "code": "public class Account {\n   private int balance = 0;\n   public void deposit(int amount) {\n      if (amount > 0) balance = balance + amount;\n   }\n   public void withdraw(int amount) {\n      if (amount <= balance) balance = balance - amount;\n      else System.out.println(\"Insufficient funds\");\n   }\n   public int getBalance() { return balance; }\n   public static void main(String[] args) {\n      Account acct = new Account();\n      acct.deposit(500);\n      acct.deposit(-100);\n      acct.withdraw(700);\n      acct.withdraw(200);\n      System.out.println(\"Balance: \" + acct.getBalance());\n   }\n}",
+          "answer": "Insufficient funds\nBalance: 300",
+          "instruction": "Type each printed line on its own line, in order.",
+          "explanation": "Module 14 - Modularity. balance is private, so it changes only through deposit() and withdraw(); the negative deposit is ignored and the 700 withdrawal is refused.",
+          "id": 136
         }
       ]
     }

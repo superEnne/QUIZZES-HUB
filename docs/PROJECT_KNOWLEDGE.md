@@ -91,9 +91,10 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 
 ## 6d. OOP Finals Exam Reviewer
 
-- Subject: OOP - Object Oriented Programming. Coverage: Modules 10-14 (Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, Modularity). Exam type: multiple choice only.
-- Mock exam: 123 multiple choice questions (M10 15, M11 18, M12 24, M13 29, M14 29), including 8 code-reading items. Letters balanced 31/31/30/31. Optional 90-minute timer.
+- Subject: OOP - Object Oriented Programming. Coverage: Modules 10-14 (Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, Modularity). Exam types: multiple choice + output tracing.
+- Mock exam: 136 questions: 123 multiple choice (M10 15, M11 18, M12 24, M13 29, M14 29, including 8 code-reading items) + 13 output tracing (41 scored lines; 3 per module, 2 for M14), placed after each module's MC. Letters balanced 31/31/30/31. Optional 90-minute timer.
 - Code-reading items are Java programs compiled and run with javac/java by make_exam.py; the real output (lines joined with " / ") is the correct option.
+- Output tracing items (questions.py OUTPUT) are Java programs built on the module examples (HomeCare getPay(), Shape/Triangle, Turner interface, Colourable constants, Animal abstract class, overloading, dynamic binding, static count, private balance). make_exam.py compiles and runs each with javac/java; the printed lines are the answer. Salaries use int so pay prints without .0; the Shape item keeps float on purpose (9 prints as 9.0).
 - New engine feature: an mc question may include `code`, shown as a code block above the options and in the answer review.
 - Module errors avoided: the Square area prints 9.0 (not 9) and the Manager pay 11000.0 (float), the overriding example output has a typo (C.c1()6 / D.d1()), and the visibility diagram's order (private, protected, default, public) conflicts with real Java, so no ranking question was made.
 - Two tables are images in the PDFs (abstract class vs interface, Table 11-2; accessibility, Table 8-1); they were read from the page images.

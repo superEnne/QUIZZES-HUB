@@ -9,7 +9,7 @@ import questions as Q
 rng = random.Random(11)  # fixed seed -> same answer letters every rebuild
 
 
-def run_java(file, code):
+def run_java(file, code, joiner=" / "):
     with tempfile.TemporaryDirectory() as d:
         src = os.path.join(d, f"{file}.java")
         open(src, "w").write(code)
@@ -19,7 +19,7 @@ def run_java(file, code):
         r = subprocess.run(["java", "-cp", d, file], capture_output=True, text=True, cwd=d, timeout=20)
         if r.returncode != 0:
             raise RuntimeError(f"{file}: runtime error\n{r.stderr}")
-        return " / ".join(line.strip() for line in r.stdout.strip().splitlines())
+        return joiner.join(line.strip() for line in r.stdout.strip().splitlines())
 
 
 def place(correct, distractors, bag):
@@ -48,6 +48,14 @@ def build():
             opts, pos = place(output, c["wrong"], bag)
             items.append({"question": c["q"], "code": c["code"], "options": opts, "answer": pos,
                           "explanation": module + f". Output: {output}. {c['note']}"})
+        for o in [x for x in Q.OUTPUT if x["module"] == module]:
+            output = run_java(o["file"], o["code"], "\n")
+            items.append({"type": "output_tracing",
+                          "question": f"Trace the output ({o['name']}): what does this program print?",
+                          "code": o["code"], "answer": output,
+                          "instruction": "Type each printed line on its own line, in order." if "\n" in output
+                                         else "Type exactly what is printed.",
+                          "explanation": module + f". {o['note']}"})
     for i, q in enumerate(items, 1):
         q["id"] = i
     return items
@@ -59,13 +67,18 @@ if __name__ == "__main__":
         "id": "oop_finals",
         "term": "Finals",
         "title": "Finals Exam Reviewer",
-        "description": "Modules 10–14: Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity. Multiple choice.",
+        "description": "Modules 10–14: Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity. Multiple choice + output tracing.",
         "timeLimit": 90,
         "questions": qs,
     }
     os.makedirs("out", exist_ok=True)
     json.dump(exam, open("out/oop_finals.json", "w"), ensure_ascii=False, indent=2)
     print("total:", len(qs), {m.split(" - ")[0]: len(v) for m, v in Q.MC.items()}, "| code items:", len(Q.CODE))
+    qs_mc = [q for q in qs if q.get("type") != "output_tracing"]
+    print("output tracing:", len(Q.OUTPUT), "items,", sum(len(q["answer"].split("\n")) for q in qs if q.get("type") == "output_tracing"), "lines")
+    for q in qs:
+        if q.get("type") == "output_tracing": print("\n#", q["question"]); print(q["answer"])
+    qs = qs_mc
     print("letters:", dict(sorted(Counter("ABCD"[q["answer"]] for q in qs).items())))
     print("longest-is-correct:", sum(1 for q in qs if max(range(4), key=lambda i: len(q["options"][i])) == q["answer"]))
     for q in qs:
