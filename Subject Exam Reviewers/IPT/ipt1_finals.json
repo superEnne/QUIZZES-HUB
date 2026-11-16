@@ -1,0 +1,2132 @@
+{
+  "id": "ipt1_finals",
+  "term": "Finals",
+  "title": "Finals Exam Reviewer",
+  "description": "Web Services and SOAP, REST and Consuming APIs, and Reliable and Secure Data Exchange (serialization, access control, data protection). Multiple choice, from remembering to scenario and evaluating items.",
+  "timeLimit": 90,
+  "questions": [
+    {
+      "question": "A software component that lets two applications communicate and exchange data over a network.",
+      "options": [
+        "Service registry",
+        "SOAP Envelope",
+        "Web service",
+        "WSDL binding"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 1
+    },
+    {
+      "question": "Web services communicate using open, agreed standards of the web, such as:",
+      "options": [
+        "HTTP and XML",
+        "FTP and CSV",
+        "RDP and YAML",
+        "SSH and BSON"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 2
+    },
+    {
+      "question": "Two applications built on different platforms can still talk through a web service because:",
+      "options": [
+        "Both share one database and one server",
+        "Both are rewritten in one common language",
+        "Both can read each other's source code",
+        "Both follow the same published contract"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. Neither side needs to know how the other was built internally.",
+      "id": 3
+    },
+    {
+      "question": "Systems interact through a published contract, not each other's internal code, so one can change without breaking the other.",
+      "options": [
+        "Interoperability",
+        "Loose coupling",
+        "Composability",
+        "Reusability"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 4
+    },
+    {
+      "question": "One service can be consumed by many applications: web, mobile, and other back-end systems.",
+      "options": [
+        "Interoperability",
+        "Discoverability",
+        "Reusability",
+        "Loose coupling"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 5
+    },
+    {
+      "question": "Open standards (HTTP, XML, JSON) let products from different vendors work together.",
+      "options": [
+        "Composability",
+        "Interoperability",
+        "Loose coupling",
+        "Reusability"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 6
+    },
+    {
+      "question": "A university's portal, library kiosk, and mobile grade-viewer all call one login service. When password hashing changes, only the login service is updated and none of the apps are touched. Which benefits does this show?",
+      "options": [
+        "Loose coupling and reusability",
+        "Cacheability and reliability",
+        "Discoverability and statelessness",
+        "Interoperability and composability"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP. Scenario: one login service, many apps.",
+      "id": 7
+    },
+    {
+      "question": "A bank on Java and an e-wallet on .NET exchange XML requests and responses for cash-ins without opening their databases to each other. What is the only thing the two companies share?",
+      "options": [
+        "A copy of each other's source code",
+        "A database both of them can write to",
+        "The same programming language and server platform",
+        "The web service, an agreed message format"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. Scenario: a bank and an e-wallet that never share source code.",
+      "id": 8
+    },
+    {
+      "question": "A strict protocol using XML and a WSDL contract, common in enterprise and high-security systems.",
+      "options": [
+        "XML-RPC",
+        "JSON-RPC",
+        "RESTful",
+        "SOAP-based"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 9
+    },
+    {
+      "question": "An architectural style using plain HTTP, usually with JSON; lightweight and common for web and mobile.",
+      "options": [
+        "SOAP-based",
+        "RESTful",
+        "XML-RPC",
+        "WS-Addressing"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 10
+    },
+    {
+      "question": "Older, simple styles for calling a remote method and passing parameters, rarely used in new systems.",
+      "options": [
+        "XML-RPC and JSON-RPC",
+        "REST and GraphQL",
+        "SOAP and WSDL",
+        "UDDI and WS-*"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 11
+    },
+    {
+      "question": "The three interactions of a service-oriented architecture are:",
+      "options": [
+        "Serialize, sign, and send",
+        "Request, process, and respond",
+        "Publish, find, and bind",
+        "Create, read, and update"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 12
+    },
+    {
+      "question": "In the web service architecture, which role hosts the service and publishes its WSDL?",
+      "options": [
+        "Service requester",
+        "Service registry",
+        "Service provider",
+        "Service consumer"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 13
+    },
+    {
+      "question": "In the web service architecture, which role searches the directory and retrieves the WSDL?",
+      "options": [
+        "Service provider",
+        "Service registry",
+        "Service endpoint",
+        "Service requester"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 14
+    },
+    {
+      "question": "In the web service architecture, the UDDI directory plays the role of the:",
+      "options": [
+        "Service requester",
+        "Service registry",
+        "Service provider",
+        "Service binding"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 15
+    },
+    {
+      "question": "In the bind and invoke step, the requester:",
+      "options": [
+        "Uses the WSDL to call the service at its endpoint",
+        "Groups services by category for browsing",
+        "Registers its WSDL file in the directory",
+        "Searches the registry directory for a matching service"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 16
+    },
+    {
+      "question": "A design approach where software is built as a set of reusable, independent services.",
+      "options": [
+        "Web Services Description Language",
+        "Simple Object Access Protocol (SOAP)",
+        "Universal Description and Discovery",
+        "Service-oriented architecture (SOA)"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 17
+    },
+    {
+      "question": "What is the most common way to put SOA into practice?",
+      "options": [
+        "Shared databases",
+        "Desktop programs",
+        "Web services",
+        "Binary files"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 18
+    },
+    {
+      "question": "SOA principle: small services can be combined into larger business processes.",
+      "options": [
+        "Discoverability",
+        "Composability",
+        "Reusability",
+        "Loose coupling"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 19
+    },
+    {
+      "question": "SOA principle: services can be published and found through a registry.",
+      "options": [
+        "Discoverability",
+        "Standardized contracts",
+        "Composability",
+        "Interoperability"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 20
+    },
+    {
+      "question": "SOA principle: each service exposes a clear, agreed interface.",
+      "options": [
+        "Standardized contracts",
+        "Loose coupling",
+        "Discoverability",
+        "Composability"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 21
+    },
+    {
+      "question": "A ride-hailing app books a ride by calling a mapping service, a pricing service, a payment service, and a notification service, each owned by a different team. This best illustrates:",
+      "options": [
+        "Statelessness in REST",
+        "Fault handling in SOAP",
+        "Pagination in REST",
+        "Composability in SOA"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. Scenario: how a ride-hailing app composes services.",
+      "id": 22
+    },
+    {
+      "question": "SOAP carries the message, WSDL ______, and UDDI ______.",
+      "options": [
+        "helps clients find it; describes the service",
+        "encrypts the message; routes the message",
+        "describes the service; helps clients find it",
+        "stores the data; validates the schema"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 23
+    },
+    {
+      "question": "Which core building block is the service contract?",
+      "options": [
+        "UDDI",
+        "WSDL",
+        "SOAP",
+        "XML"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 24
+    },
+    {
+      "question": "Which core building block is the directory where services are published so clients can discover them?",
+      "options": [
+        "UDDI",
+        "WSDL",
+        "SOAP",
+        "SOA"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 25
+    },
+    {
+      "question": "XML stands for:",
+      "options": [
+        "eXternal Mapping Language",
+        "eXtensible Markup Language",
+        "eXecutable Markup Language",
+        "eXtended Message Language"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 26
+    },
+    {
+      "question": "Which statement about the basic rules of XML is correct?",
+      "options": [
+        "Tags ignore uppercase letters",
+        "Closing tags are optional",
+        "Tags are case sensitive",
+        "Several root elements are allowed"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP. Well formed, case sensitive, exactly one root element.",
+      "id": 27
+    },
+    {
+      "question": "Why is this XML not a valid document?",
+      "options": [
+        "It is missing a SOAP Header",
+        "Its values are not in quotes",
+        "Its tags do not follow case sensitivity",
+        "It has more than one root element"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. There must be exactly one root element.",
+      "code": "<student>\n  <id>42</id>\n</student>\n<student>\n  <id>43</id>\n</student>",
+      "id": 28
+    },
+    {
+      "question": "SOAP messages are written entirely in:",
+      "options": [
+        "YAML",
+        "JSON",
+        "HTML",
+        "XML"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 29
+    },
+    {
+      "question": "SOAP stands for:",
+      "options": [
+        "Simple Object Access Protocol",
+        "Standard Object Application Protocol",
+        "Service Oriented Access Protocol",
+        "Simple Online Architecture Protocol"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 30
+    },
+    {
+      "question": "SOAP is transport independent but is most commonly sent over:",
+      "options": [
+        "SSH",
+        "HTTP",
+        "SMTP",
+        "FTP"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 31
+    },
+    {
+      "question": "Why do both sides always know exactly how to read a SOAP message?",
+      "options": [
+        "The message is converted to plain text",
+        "The client and server share one database",
+        "The format is strict and well defined",
+        "The server sends its source code first"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 32
+    },
+    {
+      "question": "The root element that marks the start and end of a SOAP message.",
+      "options": [
+        "Envelope",
+        "Fault",
+        "Header",
+        "Body"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 33
+    },
+    {
+      "question": "The optional part of a SOAP message that carries metadata such as authentication, transaction, and routing information.",
+      "options": [
+        "Envelope",
+        "Fault",
+        "Header",
+        "Body"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 34
+    },
+    {
+      "question": "The required part of a SOAP message that carries the actual request or response data.",
+      "options": [
+        "Envelope",
+        "Body",
+        "Header",
+        "Detail"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 35
+    },
+    {
+      "question": "In this SOAP message, what does the Header carry?",
+      "options": [
+        "The error code and message",
+        "The endpoint address (URL)",
+        "The request for student 42",
+        "An authentication token"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. The Header is optional; here it carries the auth token.",
+      "code": "<soap:Envelope xmlns:soap=\"http://.../envelope/\">\n  <soap:Header>\n    <auth:Token>abc123</auth:Token>\n  </soap:Header>\n  <soap:Body>\n    <getStudent>\n      <id>42</id>\n    </getStudent>\n  </soap:Body>\n</soap:Envelope>",
+      "id": 36
+    },
+    {
+      "question": "In this SOAP message, what is the Body asking for?",
+      "options": [
+        "The WSDL of the service",
+        "A new token for user 42",
+        "The list of all students",
+        "The student with ID 42"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. A response looks the same, with the result inside the Body.",
+      "code": "<soap:Envelope xmlns:soap=\"http://.../envelope/\">\n  <soap:Header>\n    <auth:Token>abc123</auth:Token>\n  </soap:Header>\n  <soap:Body>\n    <getStudent>\n      <id>42</id>\n    </getStudent>\n  </soap:Body>\n</soap:Envelope>",
+      "id": 37
+    },
+    {
+      "question": "When something goes wrong, the server returns a SOAP Fault. Where is it placed?",
+      "options": [
+        "Inside the Header",
+        "In the WSDL file",
+        "Inside the Body",
+        "Outside the Envelope"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 38
+    },
+    {
+      "question": "In this SOAP Fault, which element gives the human readable explanation of the error?",
+      "options": [
+        "faultstring",
+        "faultactor",
+        "detail",
+        "faultcode"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP. faultcode identifies the type of error.",
+      "code": "<soap:Body>\n  <soap:Fault>\n    <faultcode>soap:Client</faultcode>\n    <faultstring>Invalid student ID</faultstring>\n  </soap:Fault>\n</soap:Body>",
+      "id": 39
+    },
+    {
+      "question": "Which SOAP Fault element is optional and names who caused the fault?",
+      "options": [
+        "Envelope",
+        "faultactor",
+        "faultstring",
+        "faultcode"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP. detail holds application-specific error details.",
+      "id": 40
+    },
+    {
+      "question": "In the SOAP message flow, what does the server send back when the request fails?",
+      "options": [
+        "An empty Envelope with no Body",
+        "A UDDI entry pointing to another service",
+        "A new WSDL describing the error",
+        "A SOAP Fault instead of a normal result"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 41
+    },
+    {
+      "question": "A SOAP message that looks like a remote method call, carrying an operation name and its parameters, uses which style?",
+      "options": [
+        "Literal style",
+        "REST style",
+        "RPC style",
+        "Document style"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 42
+    },
+    {
+      "question": "Which SOAP messaging style carries a full XML document, is more loosely coupled, and is easier to validate against a schema?",
+      "options": [
+        "Document style",
+        "Binary style",
+        "Stateful style",
+        "RPC style"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 43
+    },
+    {
+      "question": "Why do most modern SOAP services use the document style with literal encoding?",
+      "options": [
+        "It removes the need for a WSDL contract",
+        "Validating a whole document against a schema is more reliable",
+        "Matching a method signature is faster and easier to validate",
+        "It lets SOAP messages be written in JSON"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 44
+    },
+    {
+      "question": "WSDL stands for:",
+      "options": [
+        "Web Services Discovery Layer",
+        "Wide Service Data Language",
+        "Web Services Description Language",
+        "Web Server Definition Language"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 45
+    },
+    {
+      "question": "Which WSDL element lists the operations the service offers?",
+      "options": [
+        "portType",
+        "binding",
+        "types",
+        "service"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 46
+    },
+    {
+      "question": "Which WSDL element states the protocol and format used?",
+      "options": [
+        "portType",
+        "binding",
+        "message",
+        "service"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 47
+    },
+    {
+      "question": "Which WSDL element gives the endpoint address (URL)?",
+      "options": [
+        "types",
+        "portType",
+        "binding",
+        "service"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 48
+    },
+    {
+      "question": "A logistics firm gives its partner only the WSDL URL of its tracking service. The partner runs a code generator and gets ready-made classes in seconds. What makes this possible?",
+      "options": [
+        "The WSDL states every operation, field, and endpoint",
+        "The partner reads the provider's source code and database",
+        "The UDDI registry sends the client classes",
+        "The SOAP Header carries the generated code"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP. Scenario: generating a client from a WSDL in minutes.",
+      "id": 49
+    },
+    {
+      "question": "Tools such as wsimport (Java) and svcutil (.NET) build client code from:",
+      "options": [
+        "A JSON body",
+        "A SOAP Fault",
+        "A WSDL",
+        "A UDDI page"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 50
+    },
+    {
+      "question": "UDDI stands for:",
+      "options": [
+        "Uniform Directory, Discovery, and Indexing",
+        "Unified Data, Delivery, and Interchange",
+        "Universal Design, Deployment, and Interface",
+        "Universal Description, Discovery, and Integration"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 51
+    },
+    {
+      "question": "In UDDI, which part holds technical details on how to connect to and call the service?",
+      "options": [
+        "Blue pages",
+        "Green pages",
+        "White pages",
+        "Yellow pages"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 52
+    },
+    {
+      "question": "In UDDI, which part groups services by category so clients can browse by type?",
+      "options": [
+        "Yellow pages",
+        "White pages",
+        "Blue pages",
+        "Green pages"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP. White pages hold the business name and contact information.",
+      "id": 53
+    },
+    {
+      "question": "Why is UDDI less common today?",
+      "options": [
+        "REST replaced XML in every SOAP service",
+        "Registries cannot store contact details",
+        "Many services are shared directly through their WSDL",
+        "SOAP messages can no longer be sent over HTTP connections"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 54
+    },
+    {
+      "question": "Which WS-* standard adds authentication, encryption, and message integrity?",
+      "options": [
+        "WS-ReliableMessaging",
+        "WS-Addressing",
+        "WS-AtomicTransaction",
+        "WS-Security"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 55
+    },
+    {
+      "question": "Which WS-* standard puts routing and addressing information inside the message?",
+      "options": [
+        "WS-AtomicTransaction",
+        "WS-Addressing",
+        "WS-Security",
+        "WS-ReliableMessaging"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 56
+    },
+    {
+      "question": "A payment message must still arrive even if the network fails temporarily. Which WS-* standard fits?",
+      "options": [
+        "WS-Addressing",
+        "WS-ReliableMessaging",
+        "WS-Security",
+        "WS-AtomicTransaction"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 57
+    },
+    {
+      "question": "Debiting one account and crediting another happen in two different services, and both must succeed or fail as one. Which WS-* standard coordinates this?",
+      "options": [
+        "WS-Security",
+        "WS-Addressing",
+        "WS-AtomicTransaction",
+        "WS-ReliableMessaging"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 58
+    },
+    {
+      "question": "An interbank transfer passes through several intermediaries. Why does the bank use WS-Security instead of relying only on HTTPS?",
+      "options": [
+        "It lets the message be sent without XML",
+        "It makes the XML message smaller and faster to send over HTTP",
+        "It removes the need for a WSDL contract",
+        "It protects the message itself, not just the connection"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 1 - Web Services and SOAP. Scenario: the signature and encryption travel with the XML.",
+      "id": 59
+    },
+    {
+      "question": "A dedicated tool to test, inspect, and debug SOAP services.",
+      "options": [
+        "SoapUI",
+        "DevTools",
+        "Swagger",
+        "curl"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 60
+    },
+    {
+      "question": "Which is a trade-off (limitation) of SOAP?",
+      "options": [
+        "Works over several transports",
+        "Verbose XML makes messages large",
+        "Language and platform neutral design",
+        "Strong typing through a WSDL contract"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 61
+    },
+    {
+      "question": "Which is a strength of SOAP?",
+      "options": [
+        "Messages are small, light, and quick to send",
+        "Setup is simple and very flexible",
+        "Built-in standards for security and reliability",
+        "It is faster than lightweight styles"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 1 - Web Services and SOAP.",
+      "id": 62
+    },
+    {
+      "question": "Which situation is the best fit for SOAP?",
+      "options": [
+        "An interbank payment needing formal security and reliability",
+        "A web page loading a short list of products",
+        "A quick weather widget for a personal blog site",
+        "A public mobile API that must stay light, simple, and fast"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 1 - Web Services and SOAP. When to use SOAP: banking, payments, telecom; strict contracts; guaranteed messaging.",
+      "id": 63
+    },
+    {
+      "question": "API stands for:",
+      "options": [
+        "Application Process Integration",
+        "Advanced Program Interchange",
+        "Automated Protocol Interface",
+        "Application Programming Interface"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 64
+    },
+    {
+      "question": "A defined set of rules that lets one program request data or services from another.",
+      "options": [
+        "URI",
+        "JSON",
+        "HTTP",
+        "API"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. A web API exposes those rules over the web, usually through HTTP.",
+      "id": 65
+    },
+    {
+      "question": "In the restaurant analogy, what represents the API?",
+      "options": [
+        "The food that is served",
+        "The diner placing the order",
+        "The menu and the waiter",
+        "The kitchen preparing food"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs. The diner orders without seeing the kitchen.",
+      "id": 66
+    },
+    {
+      "question": "In the restaurant analogy, what does the API hide from the diner (client)?",
+      "options": [
+        "The kitchen, where the work is done",
+        "The food that is delivered",
+        "The waiter carrying the order to the kitchen",
+        "The menu of things to order"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 67
+    },
+    {
+      "question": "API style with one endpoint where the client asks for exactly the data it needs, reducing over-fetching.",
+      "options": [
+        "gRPC",
+        "GraphQL",
+        "SOAP",
+        "REST"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 68
+    },
+    {
+      "question": "High-performance API style using a binary format over HTTP/2, common between back-end services.",
+      "options": [
+        "gRPC",
+        "GraphQL",
+        "REST",
+        "SOAP"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 69
+    },
+    {
+      "question": "REST stands for:",
+      "options": [
+        "Remote Execution State Transfer",
+        "Reliable Endpoint Service Transfer",
+        "REpresentational State Transfer",
+        "Resource Exchange Standard Transport"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 70
+    },
+    {
+      "question": "REST is best described as:",
+      "options": [
+        "A strict protocol with a fixed XML format",
+        "An architectural style, a set of guidelines",
+        "A binary format that runs over HTTP/2",
+        "A registry where services are published"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 71
+    },
+    {
+      "question": "An API that follows the REST guidelines is described as:",
+      "options": [
+        "SOAP-based",
+        "Composable",
+        "Stateful",
+        "RESTful"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 72
+    },
+    {
+      "question": "REST principle: each request carries all the information it needs, and the server keeps no session between calls.",
+      "options": [
+        "Client-Server",
+        "Layered System",
+        "Stateless",
+        "Cacheable"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 73
+    },
+    {
+      "question": "REST principle: a client cannot tell whether it talks to the server directly or through an intermediary.",
+      "options": [
+        "Layered System",
+        "Uniform Interface",
+        "Client-Server",
+        "Stateless"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 74
+    },
+    {
+      "question": "REST principle: responses can be stored and reused to reduce load and improve performance.",
+      "options": [
+        "Stateless",
+        "Cacheable",
+        "Uniform Interface",
+        "Layered System"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 75
+    },
+    {
+      "question": "REST principle: resources are accessed in one consistent, predictable way.",
+      "options": [
+        "Layered System",
+        "Cacheable",
+        "Client-Server",
+        "Uniform Interface"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 76
+    },
+    {
+      "question": "REST principle: the client and the server are separate, and each can change without affecting the other.",
+      "options": [
+        "Client-Server",
+        "Uniform Interface",
+        "Stateless",
+        "Cacheable"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 77
+    },
+    {
+      "question": "During enrollment week, any of ten identical servers can answer a student's request, and nothing is lost if one server crashes. Which REST principle makes this possible?",
+      "options": [
+        "Cacheable",
+        "Stateless",
+        "Uniform Interface",
+        "Client-Server"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: statelessness lets the API scale horizontally behind a load balancer.",
+      "id": 78
+    },
+    {
+      "question": "Each resource in REST is identified by a unique:",
+      "options": [
+        "Header",
+        "Token",
+        "WSDL",
+        "URI"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. A resource is any object or piece of data: a user, a product, an order.",
+      "id": 79
+    },
+    {
+      "question": "Which URI refers to the grades of student 42?",
+      "options": [
+        "/students/grades",
+        "/getGrades/42",
+        "/students/42/grades",
+        "/grades/students?42"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 80
+    },
+    {
+      "question": "Which endpoint follows the REST naming best practice?",
+      "options": [
+        "/deleteStudents",
+        "/getStudents",
+        "/createStudent",
+        "/students"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Use nouns in the URL; the HTTP method decides the action.",
+      "id": 81
+    },
+    {
+      "question": "JSON stands for:",
+      "options": [
+        "JavaScript Object Notation",
+        "Joint Standard Object Notation",
+        "JavaScript Online Node",
+        "Java Serialized Object Network"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 82
+    },
+    {
+      "question": "In JSON, objects use ____ and arrays use ____.",
+      "options": [
+        "< > ; ( )",
+        "( ) ; < >",
+        "{ } ; [ ]",
+        "[ ] ; { }"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 83
+    },
+    {
+      "question": "Which is NOT one of the JSON value types?",
+      "options": [
+        "Array",
+        "Date",
+        "Null",
+        "Boolean"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Values: string, number, boolean, null, object, or array.",
+      "id": 84
+    },
+    {
+      "question": "In this response, what type of value is stored in \"active\"?",
+      "options": [
+        "Number",
+        "Boolean",
+        "String",
+        "Null"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs. true without quotes is a boolean.",
+      "code": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{\n  \"id\": 42,\n  \"name\": \"Juan dela Cruz\",\n  \"course\": \"BSIT\",\n  \"active\": true\n}",
+      "id": 85
+    },
+    {
+      "question": "Why do REST APIs usually exchange data as JSON?",
+      "options": [
+        "It encrypts the data it carries",
+        "It has a strict schema like a WSDL",
+        "It is the only format HTTP accepts",
+        "It is lightweight and easy to read"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 86
+    },
+    {
+      "question": "Which HTTP method maps to the Create operation?",
+      "options": [
+        "POST",
+        "PUT",
+        "GET",
+        "PATCH"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 87
+    },
+    {
+      "question": "Which HTTP method modifies only part of a resource?",
+      "options": [
+        "GET",
+        "PUT",
+        "PATCH",
+        "POST"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs. PUT replaces the whole resource.",
+      "id": 88
+    },
+    {
+      "question": "What does PUT /students/42 do?",
+      "options": [
+        "Removes student 42",
+        "Replaces student 42",
+        "Creates a new student",
+        "Retrieves student 42"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 89
+    },
+    {
+      "question": "A method is called safe when:",
+      "options": [
+        "It only reads data and never changes it",
+        "It sends its data through HTTPS only",
+        "It always returns a 200 OK status code",
+        "Calling it many times has the same effect"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 90
+    },
+    {
+      "question": "A method is idempotent when:",
+      "options": [
+        "It needs a valid token in the Authorization header to run",
+        "It only reads data and never changes it",
+        "Calling it once or many times has the same final effect",
+        "It always creates a brand new resource"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 91
+    },
+    {
+      "question": "Which HTTP method is both safe and idempotent?",
+      "options": [
+        "POST",
+        "PUT",
+        "DELETE",
+        "GET"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 92
+    },
+    {
+      "question": "Which HTTP method is neither safe nor idempotent?",
+      "options": [
+        "PUT",
+        "GET",
+        "DELETE",
+        "POST"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Each POST creates a new resource.",
+      "id": 93
+    },
+    {
+      "question": "Why is DELETE idempotent even though it changes data?",
+      "options": [
+        "It can only be sent once per session",
+        "The server caches the deleted resource",
+        "The resource is gone after the first call",
+        "It never changes any data on the server"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 94
+    },
+    {
+      "question": "A shopper on a slow connection taps Pay twice and gets charged twice. What caused it?",
+      "options": [
+        "Checkout used PATCH, which deletes the order",
+        "Checkout is a POST, which is not idempotent",
+        "Checkout is a GET, which is not safe",
+        "Checkout used PUT, which creates new orders"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: the double-tap that charges a customer twice.",
+      "id": 95
+    },
+    {
+      "question": "Which fix prevents the double charge in that checkout scenario?",
+      "options": [
+        "A unique request key or an idempotent PUT",
+        "Removing the token from the request",
+        "Returning 200 OK for every failed call",
+        "Switching the checkout to a GET request"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 96
+    },
+    {
+      "question": "Which status code family means the problem is in the request itself?",
+      "options": [
+        "4xx",
+        "5xx",
+        "3xx",
+        "2xx"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 97
+    },
+    {
+      "question": "A 5xx status code means:",
+      "options": [
+        "The request was received and processed",
+        "The request itself was badly formed",
+        "Further action is needed to complete the request",
+        "The server failed to handle a valid request"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 98
+    },
+    {
+      "question": "A POST successfully adds a new student. Which status code fits best?",
+      "options": [
+        "200 OK",
+        "204 No Content",
+        "201 Created",
+        "304 Not Modified"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 99
+    },
+    {
+      "question": "Which status code belongs to the 3xx Redirection family?",
+      "options": [
+        "204 No Content",
+        "301 Moved Permanently",
+        "401 Unauthorized",
+        "503 Service Unavailable"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 100
+    },
+    {
+      "question": "A mobile app shows a blank screen and the network log shows 500. Where is the bug?",
+      "options": [
+        "In the client's Accept header",
+        "On the server, not in the app",
+        "In the app's request URL path",
+        "In the user's expired token"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs. 401 = token expired; 404 = wrong endpoint path; 500 = server bug.",
+      "id": 101
+    },
+    {
+      "question": "A request returns 404. What does it tell the developer?",
+      "options": [
+        "The token expired and the user must sign in again",
+        "The resource was created successfully",
+        "The endpoint path or resource is not found",
+        "The server crashed on a valid request"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 102
+    },
+    {
+      "question": "In this request, which part is the query string (filters or options)?",
+      "options": [
+        "/students/42",
+        "GET",
+        "https://api.school.edu",
+        "?active=true"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "code": "GET https://api.school.edu/students/42?active=true",
+      "id": 103
+    },
+    {
+      "question": "In this request, which part is the base URL (where the API lives)?",
+      "options": [
+        "https://api.school.edu",
+        "/students/42",
+        "GET",
+        "?active=true"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "code": "GET https://api.school.edu/students/42?active=true",
+      "id": 104
+    },
+    {
+      "question": "A request body (usually JSON) is sent with which methods?",
+      "options": [
+        "GET and DELETE only",
+        "GET, PUT, and DELETE",
+        "POST, PUT, and PATCH",
+        "Only with GET requests"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 105
+    },
+    {
+      "question": "Which request header states the format the client wants, such as application/json?",
+      "options": [
+        "Cache-Control",
+        "Authorization",
+        "Content-Type",
+        "Accept"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 106
+    },
+    {
+      "question": "Which request header carries credentials, such as a token?",
+      "options": [
+        "Authorization",
+        "Accept",
+        "Cache-Control",
+        "Content-Type"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 107
+    },
+    {
+      "question": "Which response header tells how the response may be cached?",
+      "options": [
+        "Accept",
+        "Cache-Control",
+        "Authorization",
+        "Content-Type"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 108
+    },
+    {
+      "question": "In content negotiation, the client asks with ______ and the server replies with a matching ______.",
+      "options": [
+        "Cache-Control; Status",
+        "Content-Type; Accept",
+        "Accept; Content-Type",
+        "Authorization; Accept"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 109
+    },
+    {
+      "question": "In this response, what does the Content-Type header tell the client?",
+      "options": [
+        "The request succeeded",
+        "The token is valid",
+        "The result is cached",
+        "The body is JSON"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. The status line 200 OK means success; the header says the body is JSON.",
+      "code": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{\n  \"id\": 42,\n  \"name\": \"Juan dela Cruz\",\n  \"course\": \"BSIT\",\n  \"active\": true\n}",
+      "id": 110
+    },
+    {
+      "question": "What does /students?page=2&limit=20 return?",
+      "options": [
+        "Twenty pages of student results",
+        "The second page of results, 20 per page",
+        "Student 2 and student 20 only",
+        "The first 2 students, sorted by limit"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 111
+    },
+    {
+      "question": "Which query parameter sorts the results?",
+      "options": [
+        "/students?sort=name",
+        "/students/name",
+        "/students?course=BSIT",
+        "/students?page=2"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 112
+    },
+    {
+      "question": "An admin dashboard must show 50,000 students without crashing the browser. What should the app use?",
+      "options": [
+        "One request for all 50,000 rows",
+        "A SOAP Fault for large results",
+        "Pagination with a page and limit",
+        "A new endpoint for every page"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: paging a list of fifty thousand records.",
+      "id": 113
+    },
+    {
+      "question": "Why must every REST request prove who is calling?",
+      "options": [
+        "REST messages are written in XML",
+        "REST is stateless, so no session is kept",
+        "REST has no status codes for reporting errors",
+        "REST uses the WSDL as its contract"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 114
+    },
+    {
+      "question": "A signed token sent in the Authorization header, common for logged-in users.",
+      "options": [
+        "Bearer token / JWT",
+        "WS-Security",
+        "OAuth 2.0",
+        "API key"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 115
+    },
+    {
+      "question": "A scheduling app posts on a user's social account using a limited token, without ever getting the user's password. Which method is this?",
+      "options": [
+        "Basic login",
+        "API key",
+        "WS-Addressing",
+        "OAuth 2.0"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: letting an app post for you without your password.",
+      "id": 116
+    },
+    {
+      "question": "What must be used with every authentication method so credentials are encrypted in transit?",
+      "options": [
+        "JSON",
+        "UDDI",
+        "XML",
+        "HTTPS"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 117
+    },
+    {
+      "question": "Unlike a SOAP Fault, how does REST report an error?",
+      "options": [
+        "With an HTTP status code plus a JSON body",
+        "With a new WSDL describing the error",
+        "With a 200 OK and an empty body",
+        "With a faultcode inside the SOAP Envelope"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 118
+    },
+    {
+      "question": "What does this response tell the client?",
+      "options": [
+        "The server crashed (server error)",
+        "Student 42 does not exist (client error)",
+        "Student 42 was created (success)",
+        "The client must log in (unauthorized)"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "code": "HTTP/1.1 404 Not Found\nContent-Type: application/json\n\n{\n  \"error\": \"Not Found\",\n  \"message\": \"Student 42 does not exist\"\n}",
+      "id": 119
+    },
+    {
+      "question": "Which is a REST error-handling rule from the lesson?",
+      "options": [
+        "Return errors as plain HTML pages",
+        "Always send 500 for every kind of error",
+        "Never send 200 OK for a failed request",
+        "Put the error inside a SOAP Fault"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 120
+    },
+    {
+      "question": "A company renames a field in its student response but thousands still use the old app. Which practice keeps both working?",
+      "options": [
+        "Versioning with /v1/students and /v2/students",
+        "Renaming the endpoint to /getStudents",
+        "Keeping a session for each old client",
+        "Returning 200 OK for all of the old app's errors"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: versioning saves a live mobile app.",
+      "id": 121
+    },
+    {
+      "question": "Which is a REST API design best practice?",
+      "options": [
+        "Store a session for each client on the server",
+        "Keep naming, casing, and response shapes uniform",
+        "Put verbs such as get in every endpoint",
+        "Return 200 OK even when a request fails"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Be consistent.",
+      "id": 122
+    },
+    {
+      "question": "What is the first step in consuming a REST API?",
+      "options": [
+        "Parse the JSON response",
+        "Hard-code the API key",
+        "Read the API documentation",
+        "Send the request right away"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs. The API contract is the documentation.",
+      "id": 123
+    },
+    {
+      "question": "Which reminder applies when consuming an API?",
+      "options": [
+        "Assume every request will succeed",
+        "Send data in any format you prefer",
+        "Skip the status code and read the body directly",
+        "Never hard-code secrets in client-side code"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 124
+    },
+    {
+      "question": "A tool for sending requests straight from the command line, useful for quick checks.",
+      "options": [
+        "curl",
+        "SoapUI",
+        "Postman",
+        "Swagger"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 125
+    },
+    {
+      "question": "A tool to document an API and let others try its endpoints interactively.",
+      "options": [
+        "curl",
+        "Browser DevTools",
+        "SoapUI",
+        "Swagger / OpenAPI"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 126
+    },
+    {
+      "question": "Which comparison of SOAP and REST is correct?",
+      "options": [
+        "Both are strict protocols that use only XML",
+        "SOAP is a protocol; REST is an architectural style",
+        "Both are styles that use only JSON over HTTP",
+        "SOAP is an architectural style; REST is a protocol"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 127
+    },
+    {
+      "question": "Which comparison of transport is correct?",
+      "options": [
+        "Both SOAP and REST use HTTP only",
+        "SOAP: HTTP only; REST: HTTP, SMTP, and more",
+        "SOAP: HTTP, SMTP, and more; REST: HTTP only",
+        "Both SOAP and REST use SMTP only"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 128
+    },
+    {
+      "question": "Which comparison of contracts is correct?",
+      "options": [
+        "SOAP: optional, e.g., OpenAPI; REST: WSDL (strict)",
+        "SOAP: WSDL (strict); REST: optional, e.g., OpenAPI",
+        "Neither one can have any contract",
+        "Both require a strict WSDL contract"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 2 - REST and Consuming APIs.",
+      "id": 129
+    },
+    {
+      "question": "A team is building a public mobile API that must be lightweight and fast. Which should they choose?",
+      "options": [
+        "SOAP",
+        "WS-*",
+        "UDDI",
+        "REST"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Choose REST for public web or mobile APIs.",
+      "id": 130
+    },
+    {
+      "question": "A digital bank uses REST for its public mobile API and SOAP with WS-Security for its clearing network. What does this show?",
+      "options": [
+        "REST and SOAP cannot work together in one company",
+        "SOAP is outdated and should be replaced",
+        "Real systems can use both, each where it fits",
+        "REST is unsafe for any kind of banking"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: one company, both styles.",
+      "id": 131
+    },
+    {
+      "question": "The three layers of reliable and secure data exchange, in order:",
+      "options": [
+        "Serialization, access control, data protection",
+        "Serialization, data protection, access control",
+        "Access control, serialization, data protection",
+        "Data protection, serialization, access control"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 132
+    },
+    {
+      "question": "What does \"reliable is not the same as safe\" mean?",
+      "options": [
+        "Security can be added at the end",
+        "You need all three layers together",
+        "Encryption makes validation unnecessary",
+        "Serialization alone keeps data safe"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 133
+    },
+    {
+      "question": "Converting an in-memory object into portable text or bytes so it can travel over a network or be saved to disk.",
+      "options": [
+        "Authorization",
+        "Deserialization",
+        "Serialization",
+        "Hashing"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 134
+    },
+    {
+      "question": "Parsing text or bytes back into a usable object on the other side.",
+      "options": [
+        "Deserialization",
+        "Serialization",
+        "Encryption",
+        "Validation"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 135
+    },
+    {
+      "question": "Serialization and deserialization are also called:",
+      "options": [
+        "Encoding and routing",
+        "Hashing and salting",
+        "Signing and verifying tokens",
+        "Marshalling and unmarshalling"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 136
+    },
+    {
+      "question": "Turning the raw string \"juan\" into structured code name: \"juan\" is called:",
+      "options": [
+        "Parsing",
+        "Serializing",
+        "Hashing",
+        "Signing"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Serializing goes the other way: structured code into a raw string.",
+      "id": 137
+    },
+    {
+      "question": "The round-trip rule says deserialize(serialize(x)) must:",
+      "options": [
+        "Encrypt x before it reaches the client over the network",
+        "Return x as a smaller binary format",
+        "Turn x into a JSON string every time",
+        "Give back x with the same values and structure"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. If not, your data exchange has a bug.",
+      "id": 138
+    },
+    {
+      "question": "A service serializes an order, sends it, and the client deserializes it, but the total comes back different. What does the round-trip rule say?",
+      "options": [
+        "The client must use XML instead",
+        "The order was safely encrypted",
+        "The data exchange has a bug",
+        "The values are allowed to change"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 139
+    },
+    {
+      "question": "In this code, what does JSON.stringify(order) do?",
+      "options": [
+        "Turns JSON text into an object",
+        "Turns the object into JSON text",
+        "Checks the JSON against a schema",
+        "Sends JSON and sets Content-Type"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "code": "const text = JSON.stringify(order);\nconst obj  = JSON.parse(text);\nres.json(order);",
+      "id": 140
+    },
+    {
+      "question": "In this code, what does res.json(order) do?",
+      "options": [
+        "Sends JSON and sets the Content-Type",
+        "Encrypts the order before sending",
+        "Turns JSON text into an object",
+        "Saves the JSON text to the disk"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "code": "const text = JSON.stringify(order);\nconst obj  = JSON.parse(text);\nres.json(order);",
+      "id": 141
+    },
+    {
+      "question": "Why should JSON.parse always be wrapped in try/catch?",
+      "options": [
+        "So the keys become double quoted",
+        "So the parse runs faster on the server",
+        "So the JSON is encrypted in transit",
+        "So bad input cannot crash the server"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 142
+    },
+    {
+      "question": "Which statement about JSON is correct?",
+      "options": [
+        "Keys may be numbers without quotes",
+        "Comments are allowed inside the data",
+        "Keys are always strings in double quotes",
+        "It has ten value types, including date"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 143
+    },
+    {
+      "question": "Which format is the default for web and mobile APIs?",
+      "options": [
+        "YAML",
+        "JSON",
+        "XML",
+        "Protocol Buffers"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 144
+    },
+    {
+      "question": "A government agency's legacy system needs a verbose but strict, self-describing format. Which fits?",
+      "options": [
+        "MessagePack",
+        "JSON",
+        "XML",
+        "YAML"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. XML is still common in SOAP, banking, government, and legacy systems.",
+      "id": 145
+    },
+    {
+      "question": "A team writes configuration files for Docker and Kubernetes. Which format is most used here?",
+      "options": [
+        "YAML",
+        "JSON",
+        "Protocol Buffers",
+        "XML"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 146
+    },
+    {
+      "question": "Heavy internal service-to-service traffic needs a compact, fast, schema-driven format. Which fits?",
+      "options": [
+        "Plain XML documents",
+        "Protocol Buffers or MessagePack",
+        "HTML pages",
+        "YAML configuration files and scripts"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 147
+    },
+    {
+      "question": "Which question does Authentication (AuthN) answer?",
+      "options": [
+        "Is it available?",
+        "Was it changed?",
+        "What may you do?",
+        "Who are you?"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Authentication always comes first.",
+      "id": 148
+    },
+    {
+      "question": "Which question does Authorization (AuthZ) answer?",
+      "options": [
+        "Where is it stored?",
+        "Was it changed?",
+        "Who are you?",
+        "What may you do?"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 149
+    },
+    {
+      "question": "A request arrives with no valid token. Which status code fits?",
+      "options": [
+        "401",
+        "403",
+        "404",
+        "429"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. 401 = we do not know who you are.",
+      "id": 150
+    },
+    {
+      "question": "A logged-in cashier tries to open an admin-only report. Which status code fits?",
+      "options": [
+        "429",
+        "403",
+        "401",
+        "500"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. 403 = we know you, but you are not allowed.",
+      "id": 151
+    },
+    {
+      "question": "What does HTTPS / TLS do?",
+      "options": [
+        "Turns objects into portable JSON text",
+        "Limits the number of requests per window for each client",
+        "Encrypts traffic in transit and confirms the real server",
+        "Groups permissions into roles for users"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Mandatory for every production API.",
+      "id": 152
+    },
+    {
+      "question": "Which is true about an API key?",
+      "options": [
+        "Best way to prove a specific logged-in user in every app",
+        "Only works over plain HTTP, never HTTPS",
+        "Good for service-to-service, weak at proving a user",
+        "Encrypted, so it is safe to commit to code"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 153
+    },
+    {
+      "question": "Why should secrets never be put in a JWT payload?",
+      "options": [
+        "It is signed, not encrypted, so anyone can read it",
+        "It is deleted after the first request",
+        "It is encrypted, so the server cannot read it",
+        "It is stored in the server's database"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 154
+    },
+    {
+      "question": "Which part of a JWT names the algorithm that signs the token?",
+      "options": [
+        "Payload",
+        "Signature",
+        "Body",
+        "Header"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Payload: user id, role, expiry (readable). Signature: proves it was not altered.",
+      "id": 155
+    },
+    {
+      "question": "Which part of a JWT proves the token was not altered and is made with a secret key?",
+      "options": [
+        "Payload",
+        "Signature",
+        "Header",
+        "Claim"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 156
+    },
+    {
+      "question": "Why is JWT called stateless?",
+      "options": [
+        "The token never expires once it is issued",
+        "The server verifies the signature with no database lookup",
+        "The server keeps a session for each token",
+        "The token is encrypted so no one but the server can read it"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 157
+    },
+    {
+      "question": "Which OAuth 2.0 flow is used for service-to-service access?",
+      "options": [
+        "Password-sharing flow",
+        "Authorization-code flow",
+        "Client-credentials flow",
+        "Refresh-only flow"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Authorization-code flow is for humans (Login with Google).",
+      "id": 158
+    },
+    {
+      "question": "A shop gives cashiers only the permissions they need and enforces it on the server. Which ideas are these?",
+      "options": [
+        "RBAC with least privilege",
+        "Hashing with salting",
+        "Rate limiting with CORS",
+        "Serialization with JSON"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 159
+    },
+    {
+      "question": "In RBAC, where should permissions be enforced?",
+      "options": [
+        "In the client app's local storage",
+        "In the JWT payload, kept as a secret",
+        "In the browser, through hidden buttons",
+        "On the server, never trust the client"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 160
+    },
+    {
+      "question": "The CIA triad stands for:",
+      "options": [
+        "Control, Identity, Authorization",
+        "Confidentiality, Identity, Access",
+        "Confidentiality, Integrity, Availability",
+        "Certificate, Integrity, Authentication"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 161
+    },
+    {
+      "question": "Which technique serves Confidentiality?",
+      "options": [
+        "Encryption",
+        "Pagination",
+        "Hashing",
+        "Rate limiting"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 162
+    },
+    {
+      "question": "Symmetric encryption:",
+      "options": [
+        "Is slower and used only for key exchange",
+        "Uses a public key and a private key",
+        "Cannot be used for bulk data at all",
+        "Uses one shared key to encrypt and decrypt"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Example: AES. Challenge: sharing the key safely.",
+      "id": 163
+    },
+    {
+      "question": "Asymmetric encryption:",
+      "options": [
+        "Turns data into a one-way fingerprint",
+        "Public key encrypts, private key decrypts",
+        "Faster than symmetric for bulk data",
+        "One shared key encrypts and decrypts"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Example: RSA, ECC. TLS combines both.",
+      "id": 164
+    },
+    {
+      "question": "A company uses HTTPS but stores customer payment details as plain text. What is still exposed?",
+      "options": [
+        "The TLS certificate",
+        "The API version",
+        "Data in transit",
+        "Data at rest"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Protect data in transit (TLS) AND at rest.",
+      "id": 165
+    },
+    {
+      "question": "How should passwords be stored?",
+      "options": [
+        "Saved as plain text in a safe table",
+        "Hashed with a slow salted algorithm like bcrypt",
+        "Encrypted so they can be decrypted and read back later",
+        "Hashed with MD5 or SHA-1 for speed"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 166
+    },
+    {
+      "question": "A one-way fingerprint: the same input always gives the same result, but it cannot be reversed.",
+      "options": [
+        "Hashing",
+        "Serialization",
+        "Encryption",
+        "Signing"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 167
+    },
+    {
+      "question": "A payment gateway sends a webhook with a hash of the message plus a shared secret. The receiver recomputes it and the values match. What does this prove?",
+      "options": [
+        "The sender has a valid API key",
+        "The JSON follows the schema",
+        "The message is authentic and unchanged",
+        "The message was encrypted at rest"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. This is HMAC; it serves integrity.",
+      "id": 168
+    },
+    {
+      "question": "Private key signs, public key verifies, so the signer cannot later deny it. This property is called:",
+      "options": [
+        "Non-repudiation",
+        "Statelessness",
+        "Idempotency",
+        "Availability"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Digital signatures are best across organizations.",
+      "id": 169
+    },
+    {
+      "question": "Rebuilding untrusted input into objects without checks is called:",
+      "options": [
+        "Weak encryption",
+        "Broken pagination",
+        "Insecure deserialization",
+        "Insecure serialization"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. A crafted payload can overwrite fields or run code. A classic OWASP Top 10 risk.",
+      "id": 170
+    },
+    {
+      "question": "Which is the defense against insecure deserialization?",
+      "options": [
+        "Use native object serialization only",
+        "Validate against a schema and prefer JSON",
+        "Skip validation for faster parsing",
+        "Trust fields that came from the client"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 171
+    },
+    {
+      "question": "When validating input, you should:",
+      "options": [
+        "Use a blocklist after the business logic",
+        "Validate only after saving the data",
+        "Trust input that is already in JSON",
+        "Use an allowlist and validate at the boundary"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 172
+    },
+    {
+      "question": "A login endpoint is hit by thousands of password guesses per minute. Which defense fits?",
+      "options": [
+        "Putting the password in a JWT",
+        "Rate limiting (429 Too Many Requests)",
+        "CORS with a wildcard origin",
+        "Removing the HTTPS layer"
+      ],
+      "answer": 1,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Rate limiting also protects availability.",
+      "id": 173
+    },
+    {
+      "question": "Which rule about CORS is correct?",
+      "options": [
+        "Allow every origin so all of the sites can call the API freely",
+        "CORS replaces the need for authentication",
+        "Use CORS on the server to hash the passwords",
+        "Allow only trusted origins, no wildcard with credentials"
+      ],
+      "answer": 3,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 174
+    },
+    {
+      "question": "In one secure payment request, which step comes right after Authenticate (attach a signed token)?",
+      "options": [
+        "Verify integrity (confirm the HMAC)",
+        "Store safely (encrypt at rest)",
+        "Encrypt in transit (send over TLS)",
+        "Validate (check the schema first)"
+      ],
+      "answer": 2,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Serialize, Authenticate, Encrypt in transit, Validate, Verify integrity, Store safely.",
+      "id": 175
+    },
+    {
+      "question": "What is the last step of one secure request?",
+      "options": [
+        "Store safely (encrypt data at rest)",
+        "Serialize (build the JSON payload)",
+        "Validate (check the schema)",
+        "Authenticate (attach a token)"
+      ],
+      "answer": 0,
+      "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+      "id": 176
+    }
+  ]
+}

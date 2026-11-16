@@ -109,6 +109,14 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - Distractors rewritten until the correct option is the longest in 36% of items (it started at 69%).
 - Pointers PDF: `public/pointers/OOP_Finals_Pointers.pdf`, 6 pages. Sources: `Subject Exam Reviewers/OOP/source/`.
 
+## 6h. IPT1 Finals Exam Reviewer
+
+- Subject: IPT1 - Integrative Programming and Technologies 1. Sources: Finals 1-1 Web Services and SOAP, Finals 1-2 REST and Consuming APIs (slides), the Web Services and APIs reading material (adds scenarios), and the Data Exchange summary (serialization, access control, data protection). Syllabus CO3-CO5 (Weeks 10-17).
+- Exam type: multiple choice only (the instructor said "multiple choice, just review what I gave you"). The user asked for a mix of levels: remembering, understanding, analyzing, scenario, conceptual, evaluating, so many items are short scenarios (taken from the reading material's scenario boxes and the summary) and 11 items show a code block (SOAP message, SOAP Fault, two-root XML, REST response/error, request URL, JSON.stringify code).
+- Mock exam: 176 questions in 3 parts: Lesson 1 Web Services and SOAP 63, Lesson 2 REST and Consuming APIs 68, Lesson 3 Reliable and Secure Data Exchange 45. Letters balanced 44/44/44/44; correct option longest in 35%. Optional 90-minute timer.
+- The Data Exchange summary's figures were read from the page images: JWT parts (header = algorithm, payload = user id/role/expiry readable, signature = proves not altered), 401 vs 403 gates, and the secure request order (serialize, authenticate, encrypt in transit, validate, verify integrity, store safely).
+- Pointers PDF: `public/pointers/IPT1_Finals_Pointers.pdf`, 6 pages, bundling all four sources. Sources: `Subject Exam Reviewers/IPT/source/`.
+
 ## 6e. COMPROG3 Finals Exam Reviewer (password-locked)
 
 - Subject: COMPROG3 - Computer Programming 3 (VB.NET, "Programming with Microsoft Visual Basic 2010"). Coverage: Chapter 6 The Repetition Structure, Chapter 7 Sub and Function Procedures, Chapter 8 String Manipulation. Exam types: true or false, identification, output tracing.
@@ -142,7 +150,7 @@ The user provides the modules per subject and decides the question types.
 - Balance the correct answer letters, and avoid making the correct option the longest one (aim for about a third of items or less; write wrong options with the same length and style as the right one).
 - Verify any code output by running the code (Node/jsdom for JavaScript, javac/java for Java) instead of trusting the module's printed output.
 - When the user provides quizzes for the subject, include their items in the exam (same wording) and match the quiz's output-tracing difficulty.
-- The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing; EA: multiple choice + True or False; OOP: multiple choice).
+- The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing; EA: multiple choice + True or False; OOP: multiple choice + output tracing; COMPROG3: identification, output tracing, true or false; IPT1: multiple choice with mixed difficulty levels).
 - Keep True/False roughly balanced (about 40-50% false) so guessing "True" does not pay off.
 
 ### Pointers PDF rules
