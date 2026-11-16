@@ -89,6 +89,17 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - Distractors were lengthened until the correct option is the longest in only 37% of MC items (it started at 50%).
 - Pointers PDF: `public/pointers/EA_Finals_Pointers.pdf`, 6 pages. Sources: `Subject Exam Reviewers/EA/source/`.
 
+## 6d. OOP Finals Exam Reviewer
+
+- Subject: OOP - Object Oriented Programming. Coverage: Modules 10-14 (Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, Modularity). Exam type: multiple choice only.
+- Mock exam: 123 multiple choice questions (M10 15, M11 18, M12 24, M13 29, M14 29), including 8 code-reading items. Letters balanced 31/31/30/31. Optional 90-minute timer.
+- Code-reading items are Java programs compiled and run with javac/java by make_exam.py; the real output (lines joined with " / ") is the correct option.
+- New engine feature: an mc question may include `code`, shown as a code block above the options and in the answer review.
+- Module errors avoided: the Square area prints 9.0 (not 9) and the Manager pay 11000.0 (float), the overriding example output has a typo (C.c1()6 / D.d1()), and the visibility diagram's order (private, protected, default, public) conflicts with real Java, so no ranking question was made.
+- Two tables are images in the PDFs (abstract class vs interface, Table 11-2; accessibility, Table 8-1); they were read from the page images.
+- Distractors rewritten until the correct option is the longest in 36% of items (it started at 69%).
+- Pointers PDF: `public/pointers/OOP_Finals_Pointers.pdf`, 6 pages. Sources: `Subject Exam Reviewers/OOP/source/`.
+
 ## 7. Reviewer-Making Rules (the user's preferences)
 
 The user provides the modules per subject and decides the question types.
@@ -98,9 +109,10 @@ The user provides the modules per subject and decides the question types.
 - Leave out redundant or overcomplicated details that will not end up in the exam.
 - Word usage must be exactly or very close to the module materials.
 - Distractors should be real terms from the same chapter so they are plausible.
-- Balance the correct answer letters, and avoid making the correct option the longest one.
+- Balance the correct answer letters, and avoid making the correct option the longest one (aim for about a third of items or less; write wrong options with the same length and style as the right one).
+- Verify any code output by running the code (Node/jsdom for JavaScript, javac/java for Java) instead of trusting the module's printed output.
 - When the user provides quizzes for the subject, include their items in the exam (same wording) and match the quiz's output-tracing difficulty.
-- The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing; EA: multiple choice + True or False).
+- The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing; EA: multiple choice + True or False; OOP: multiple choice).
 - Keep True/False roughly balanced (about 40-50% false) so guessing "True" does not pay off.
 
 ### Pointers PDF rules

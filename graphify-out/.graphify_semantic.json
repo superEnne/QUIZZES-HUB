@@ -592,6 +592,119 @@
       "author": null,
       "contributor": null,
       "rationale": "About 40-50% false so guessing True does not pay off; explanations give the correct fact."
+    },
+    {
+      "id": "docs_project_knowledge_oop_finals_exam",
+      "label": "OOP Finals mock exam (123 MC incl. 8 code items)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_oop_m10",
+      "label": "OOP M10 - Code Reuse and Class Hierarchy",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_oop_m11",
+      "label": "OOP M11 - Interfaces",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_oop_m12",
+      "label": "OOP M12 - Abstract Class and Interface",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_oop_m13",
+      "label": "OOP M13 - Polymorphism",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_oop_m14",
+      "label": "OOP M14 - Modularity",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_oop_pointers_pdf",
+      "label": "OOP Finals Pointers PDF (6 pages)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_knowledge_java_verified_output",
+      "label": "Java code outputs verified with javac/java",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The module's printed outputs had errors (9 vs 9.0, a C.c1()6 typo), so answers come from running the code."
+    },
+    {
+      "id": "docs_project_knowledge_mc_code_block",
+      "label": "Code block in multiple choice questions",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Code-reading MC items need the program shown above the options."
+    },
+    {
+      "id": "docs_project_knowledge_distractor_length_rule",
+      "label": "Wrong options match the right one's length",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "OOP started with the correct option longest in 69% of items; rewritten to 36%."
     }
   ],
   "edges": [
@@ -1774,6 +1887,266 @@
       "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
       "source_location": null,
       "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m10",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m10",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m11",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m11",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m12",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m12",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m13",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m13",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m14",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_m14",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_finals_exam",
+      "target": "src_data_exams_exams",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_finals_exam",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_finals_exam",
+      "target": "subject_exam_reviewers_oop_source_make_exam_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_java_verified_output",
+      "target": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_java_verified_output",
+      "target": "docs_project_knowledge_run_to_answer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_mc_code_block",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_mc_code_block",
+      "target": "src_pages_quizpage_codeblock",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_mc_code_block",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_distractor_length_rule",
+      "target": "docs_project_knowledge_quiz_writing_rules",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_distractor_length_rule",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_pointers_pdf",
+      "target": "src_data_exams_pointers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_pointers_pdf",
+      "target": "subject_exam_reviewers_oop_source_pointers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_oop_pointers_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_quiz_writing_rules",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_oop_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_project_knowledge_generic_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [
@@ -1852,12 +2225,28 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    },
+    {
+      "id": "oop_reviewer_build_pipeline",
+      "label": "OOP reviewer build pipeline",
+      "nodes": [
+        "subject_exam_reviewers_oop_source_questions",
+        "subject_exam_reviewers_oop_source_pointers",
+        "subject_exam_reviewers_oop_source_make_exam",
+        "subject_exam_reviewers_oop_source_make_pdf",
+        "src_data_exams_exams",
+        "src_data_exams_pointers"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
     }
   ],
   "input_tokens": 0,
   "output_tokens": 0,
   "coverage": {
-    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md": 122,
+    "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md": 134,
     "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/Subject Exam Reviewers/HOW TO ADD AN EXAM REVIEWER.txt": 50,
     "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/index.html": 14
   }

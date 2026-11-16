@@ -956,6 +956,7 @@ export default function QuizPage({ mode = "quiz" }) {
       correct: q.answer,
       isCorrect: ok,
       options: q.options,
+      code: q.code,
       explanation: q.explanation,
     }]);
     setQAnswered(true);
@@ -1239,6 +1240,16 @@ export default function QuizPage({ mode = "quiz" }) {
                 {/* MC review */}
                 {isChoiceType(a.type || "mc") && a.options && (
                   <div style={{ paddingLeft: "2.1rem", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                    {a.code && (
+                      <pre style={{
+                        background: "#1e1e2e", color: "#cdd6f4",
+                        borderRadius: "10px", padding: "0.65rem 0.9rem",
+                        fontSize: "0.72rem", lineHeight: 1.6,
+                        overflowX: "auto", whiteSpace: "pre-wrap", wordBreak: "break-word",
+                        fontFamily: "'Fira Code', 'Fira Mono', monospace",
+                        border: "1.5px solid #313244", margin: "0 0 0.25rem",
+                      }}><code>{a.code}</code></pre>
+                    )}
                     {a.options.map((opt, oi) => {
                       const isCorrect = oi === a.correct;
                       const isWrong   = oi === a.selected && !isCorrect;
@@ -1481,6 +1492,8 @@ export default function QuizPage({ mode = "quiz" }) {
           {/* ── Multiple Choice ── */}
           {isChoiceType(qType) && (
             <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
+              {/* Optional code snippet for code-reading questions */}
+              {q.code && <div style={{ marginBottom: "0.35rem" }}><CodeBlock code={q.code} /></div>}
               {q.options.map((opt, oi) => {
                 let cls = "quiz-option";
                 if (revealed) {

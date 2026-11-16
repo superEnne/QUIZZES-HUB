@@ -358,6 +358,170 @@
       "_origin": "ast"
     },
     {
+      "id": "subject_exam_reviewers_oop_source_make_exam",
+      "label": "make_exam.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "label": "run_java()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_exam_place",
+      "label": "place()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_exam_build",
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_exam_rationale_1",
+      "label": "Build the oop_finals exam object (JSON) for src/data/exams.js from…",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf",
+      "label": "make_pdf.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "label": "Rule",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_py_flowable",
+      "label": "Flowable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_rule_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_rule_wrap",
+      "label": ".wrap()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_rule_draw",
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L40",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_esc",
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_bullets_for",
+      "label": "bullets_for()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_build_footer",
+      "label": "footer()",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L98",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_rationale_1",
+      "label": "Build a subject's pointers PDF from pointers.py: Times 12, black text only,…",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_make_pdf_rationale_33",
+      "label": "Thin black line under a part heading, like the review material.",
+      "file_type": "rationale",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_pointers",
+      "label": "pointers.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/pointers.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "subject_exam_reviewers_oop_source_questions",
+      "label": "questions.py",
+      "file_type": "code",
+      "source_file": "Subject Exam Reviewers/OOP/source/questions.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
       "id": "subject_exam_reviewers_wd_source_make_exam",
       "label": "make_exam.py",
       "file_type": "code",
@@ -943,7 +1107,7 @@
       "label": "exams",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast"
     },
     {
@@ -951,7 +1115,7 @@
       "label": "pointers",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L6158",
+      "source_location": "L7644",
       "_origin": "ast"
     },
     {
@@ -959,7 +1123,7 @@
       "label": "getExamsBySubject()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L6193",
+      "source_location": "L7689",
       "_callable": true,
       "_origin": "ast"
     },
@@ -968,7 +1132,7 @@
       "label": "getExamById()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L6197",
+      "source_location": "L7693",
       "_callable": true,
       "_origin": "ast"
     },
@@ -977,7 +1141,7 @@
       "label": "getPointersBySubject()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L6201",
+      "source_location": "L7697",
       "_callable": true,
       "_origin": "ast"
     },
@@ -986,7 +1150,7 @@
       "label": "TERM_COLORS",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L6206",
+      "source_location": "L7702",
       "_origin": "ast"
     },
     {
@@ -994,7 +1158,7 @@
       "label": "termStyle()",
       "file_type": "code",
       "source_file": "src/data/exams.js",
-      "source_location": "L6213",
+      "source_location": "L7709",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1393,7 +1557,7 @@
       "label": "handleNonMcAnswer()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L966",
+      "source_location": "L967",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1402,7 +1566,7 @@
       "label": "handleNext()",
       "file_type": "code",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L988",
+      "source_location": "L989",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2090,6 +2254,129 @@
       "author": null,
       "contributor": null,
       "rationale": "About 40-50% false so guessing True does not pay off; explanations give the correct fact.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_finals_exam",
+      "label": "OOP Finals mock exam (123 MC incl. 8 code items)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_m10",
+      "label": "OOP M10 - Code Reuse and Class Hierarchy",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_m11",
+      "label": "OOP M11 - Interfaces",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_m12",
+      "label": "OOP M12 - Abstract Class and Interface",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_m13",
+      "label": "OOP M13 - Polymorphism",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_m14",
+      "label": "OOP M14 - Modularity",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_oop_pointers_pdf",
+      "label": "OOP Finals Pointers PDF (6 pages)",
+      "file_type": "concept",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_java_verified_output",
+      "label": "Java code outputs verified with javac/java",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The module's printed outputs had errors (9 vs 9.0, a C.c1()6 typo), so answers come from running the code.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_mc_code_block",
+      "label": "Code block in multiple choice questions",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Code-reading MC items need the program shown above the options.",
+      "_origin": "semantic"
+    },
+    {
+      "id": "docs_project_knowledge_distractor_length_rule",
+      "label": "Wrong options match the right one's length",
+      "file_type": "rationale",
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "OOP started with the correct option longest in 69% of items; rewritten to 36%.",
       "_origin": "semantic"
     }
   ],
@@ -2829,6 +3116,410 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "Subject Exam Reviewers/EA/source/make_pdf.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "random",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "tempfile",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "subject_exam_reviewers_oop_source_make_exam_place",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam",
+      "target": "subject_exam_reviewers_oop_source_make_exam_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam_build",
+      "target": "subject_exam_reviewers_oop_source_make_exam_place",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam_build",
+      "target": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam_rationale_1",
+      "target": "subject_exam_reviewers_oop_source_make_exam",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "reportlab_lib_pagesizes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "reportlab_lib_units",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "reportlab_lib_colors",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "reportlab_lib_enums",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "reportlab_lib_styles",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "reportlab_platypus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "xml_sax_saxutils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_pointers",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_py_flowable",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_rule_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_rule_wrap",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_rule_draw",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_esc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_bullets_for",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build_footer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_bullets_for",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_esc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_esc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_bullets_for",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build_footer",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_rationale_1",
+      "target": "subject_exam_reviewers_oop_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_pdf_rationale_33",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_rule",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "Subject Exam Reviewers/OOP/source/make_pdf.py",
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
@@ -3938,7 +4629,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3948,7 +4639,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6158",
+      "source_location": "L7644",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3958,7 +4649,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6193",
+      "source_location": "L7689",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3968,7 +4659,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6197",
+      "source_location": "L7693",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3978,7 +4669,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6201",
+      "source_location": "L7697",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3988,7 +4679,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6206",
+      "source_location": "L7702",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3998,7 +4689,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6213",
+      "source_location": "L7709",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4009,7 +4700,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/data/exams.js",
-      "source_location": "L6198",
+      "source_location": "L7694",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4606,7 +5297,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L966",
+      "source_location": "L967",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4616,7 +5307,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L988",
+      "source_location": "L989",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4814,7 +5505,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1001",
+      "source_location": "L1002",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4825,7 +5516,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1015",
+      "source_location": "L1016",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4836,7 +5527,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1153",
+      "source_location": "L1154",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4847,7 +5538,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1179",
+      "source_location": "L1180",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4858,7 +5549,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1240",
+      "source_location": "L1241",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4869,7 +5560,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1432",
+      "source_location": "L1443",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_quizpage_quizpage",
+      "target": "src_pages_quizpage_codeblock",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/QuizPage.jsx",
+      "source_location": "L1496",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4880,7 +5582,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1491",
+      "source_location": "L1504",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4891,7 +5593,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1516",
+      "source_location": "L1529",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4902,7 +5604,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1519",
+      "source_location": "L1532",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4913,7 +5615,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1525",
+      "source_location": "L1538",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4924,7 +5626,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1534",
+      "source_location": "L1547",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4935,7 +5637,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1543",
+      "source_location": "L1556",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4946,7 +5648,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1552",
+      "source_location": "L1565",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5379,7 +6081,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/QuizPage.jsx",
-      "source_location": "L1045",
+      "source_location": "L1046",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5416,6 +6118,30 @@
       "confidence_score": 1.0,
       "source_file": "src/pages/SubjectPage.jsx",
       "source_location": "L213",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "target": "tempfile",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "target": "subprocess",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Subject Exam Reviewers/OOP/source/make_exam.py",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6776,6 +7502,292 @@
       "source_location": null,
       "weight": 1.0,
       "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m10",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m10",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m11",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m11",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m12",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m12",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m13",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m13",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m14",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_m14",
+      "target": "docs_project_knowledge_oop_pointers_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_finals_exam",
+      "target": "src_data_exams_exams",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_finals_exam",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_finals_exam",
+      "target": "subject_exam_reviewers_oop_source_make_exam_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_java_verified_output",
+      "target": "subject_exam_reviewers_oop_source_make_exam_run_java",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_java_verified_output",
+      "target": "docs_project_knowledge_run_to_answer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_mc_code_block",
+      "target": "src_pages_quizpage_quizpage",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_mc_code_block",
+      "target": "src_pages_quizpage_codeblock",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_mc_code_block",
+      "target": "docs_project_knowledge_oop_finals_exam",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_distractor_length_rule",
+      "target": "docs_project_knowledge_quiz_writing_rules",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_distractor_length_rule",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_pointers_pdf",
+      "target": "src_data_exams_pointers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_pointers_pdf",
+      "target": "subject_exam_reviewers_oop_source_pointers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_oop_pointers_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_quiz_writing_rules",
+      "target": "subject_exam_reviewers_oop_source_questions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_pointers_pdf_rules",
+      "target": "subject_exam_reviewers_oop_source_make_pdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "docs_project_knowledge_generic_make_pdf",
+      "target": "subject_exam_reviewers_oop_source_make_pdf_build",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "semantic"
     }
   ],
   "hyperedges": [
@@ -6847,6 +7859,22 @@
         "subject_exam_reviewers_ea_source_pointers",
         "subject_exam_reviewers_ea_source_make_exam",
         "subject_exam_reviewers_ea_source_make_pdf",
+        "src_data_exams_exams",
+        "src_data_exams_pointers"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md"
+    },
+    {
+      "id": "oop_reviewer_build_pipeline",
+      "label": "OOP reviewer build pipeline",
+      "nodes": [
+        "subject_exam_reviewers_oop_source_questions",
+        "subject_exam_reviewers_oop_source_pointers",
+        "subject_exam_reviewers_oop_source_make_exam",
+        "subject_exam_reviewers_oop_source_make_pdf",
         "src_data_exams_exams",
         "src_data_exams_pointers"
       ],

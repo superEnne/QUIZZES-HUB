@@ -9,7 +9,8 @@
 //                 "title": "Finals Exam Reviewer",
 //                 "description": "Chapters 5-8 ...",
 //                 "timeLimit": 120,            minutes for the OPTIONAL timer (off by default); null = no timer option
-//                 "questions": [ ... ]         same format as subjects.js, all 7 types work
+//                 "questions": [ ... ]         same format as subjects.js, all 7 types work;
+//                                              an mc question may add "code" to show a code block
 //               }
 //             An exam with no questions shows as "Coming soon".
 //
@@ -3897,9 +3898,1494 @@ export const exams = {
       "id": "oop_finals",
       "term": "Finals",
       "title": "Finals Exam Reviewer",
-      "description": "",
-      "timeLimit": 60,
-      "questions": []
+      "description": "Modules 10–14: Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity. Multiple choice.",
+      "timeLimit": 90,
+      "questions": [
+        {
+          "question": "By allowing information of a superclass to be taken on by subclasses, the information is said to be:",
+          "options": [
+            "Duplicated in every object",
+            "Hidden from the subclass",
+            "Deleted from the superclass",
+            "Reused at the subclass level"
+          ],
+          "answer": 3,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 1
+        },
+        {
+          "question": "Which statement describes changes to software specification?",
+          "options": [
+            "Changes affect only the user interface",
+            "Changes are only allowed before coding",
+            "Changes to software specification are inevitable",
+            "Changes to software specification never happen"
+          ],
+          "answer": 2,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 2
+        },
+        {
+          "question": "Which of the following is one of the situations discussed for changes in a class hierarchy?",
+          "options": [
+            "Change in the operating system for some subclasses",
+            "Change in property definition for some subclasses",
+            "Change in the programming language for all subclasses",
+            "Change in the compiler used by the superclass"
+          ],
+          "answer": 1,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. The three situations: change for all subclasses, change for some subclasses, and adding/deleting a class.",
+          "id": 3
+        },
+        {
+          "question": "If inheritance is NOT available, a change in the representation of employee number must be made:",
+          "options": [
+            "Individually in every relevant class, which may lead to inconsistency",
+            "Automatically by the compiler for every class that uses it",
+            "Only in main(), since attributes are defined there for all classes",
+            "Only once, in the Employee class, and it propagates to every subclass"
+          ],
+          "answer": 0,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 4
+        },
+        {
+          "question": "If inheritance IS available, a change in the representation of employee number is limited to the:",
+          "options": [
+            "Last subclass created, and it propagates to the superclass",
+            "Manager class, and it is copied to the other subclasses",
+            "Employee (super)class, and it propagates to the subclasses",
+            "main() method, and it is passed to every class"
+          ],
+          "answer": 2,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 5
+        },
+        {
+          "question": "Defining a property once in the superclass and letting subclasses inherit it results in:",
+          "options": [
+            "Uniform and consistent property definitions and minimal redundancy",
+            "Different property definitions and more redundancy in each subclass",
+            "Inconsistent definitions that must be repeated at the subclass level",
+            "Harder maintenance, since every subclass must be changed separately"
+          ],
+          "answer": 0,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 6
+        },
+        {
+          "question": "In the HomeCare example, the manager's pay was wrong because:",
+          "options": [
+            "The Manager class had no constructor, so the basic salary was never set at all",
+            "The secretary's salary was added to it, since both classes share getPay() in Employee",
+            "The commission was counted twice, since Manager also extends SalesPerson in the hierarchy",
+            "The allowance was omitted, since getPay() in Employee returns only the basic salary"
+          ],
+          "answer": 3,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 7
+        },
+        {
+          "question": "What is the disadvantage of removing getPay() from Employee and defining it individually in every subclass?",
+          "options": [
+            "The program cannot compile, because getPay() must exist in the Employee superclass",
+            "The definition is repeated in all subclasses, which is inefficient and hard to maintain",
+            "Subclasses can no longer have constructors, so the objects cannot be created at all",
+            "Each subclass inherits two getPay() methods, which causes conflicts at run time"
+          ],
+          "answer": 1,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 8
+        },
+        {
+          "question": "Which approach to fixing the manager's pay is better?",
+          "options": [
+            "Keep getPay() in Employee and redefine it in the Manager class",
+            "Remove the Manager class from the hierarchy",
+            "Compute the pay inside main() for every employee",
+            "Remove getPay() from Employee and define it in every subclass"
+          ],
+          "answer": 0,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. It enhances software reuse and minimizes the effect of change on other classes.",
+          "id": 9
+        },
+        {
+          "question": "A redefining method has the same method name and parameter definition as the redefined method, but:",
+          "options": [
+            "It must have more parameters",
+            "It must have a different name",
+            "It cannot return a value",
+            "Its implementation may differ"
+          ],
+          "answer": 3,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 10
+        },
+        {
+          "question": "When adding a new class into an existing class hierarchy, it is always recommended that the new class be created as a:",
+          "options": [
+            "Superclass of all existing classes",
+            "Separate program",
+            "Subclass in the class hierarchy",
+            "Copy of an existing class"
+          ],
+          "answer": 2,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 11
+        },
+        {
+          "question": "To add the new Triangle class to the Shape program, which of the following is involved?",
+          "options": [
+            "Change the getName() method of every existing class",
+            "Create a new Triangle class as a subclass of Shape",
+            "Rewrite the Circle and Square classes",
+            "Delete the Shape class"
+          ],
+          "answer": 1,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 12
+        },
+        {
+          "question": "Subclassing is a desired design practice in object-oriented software engineering because:",
+          "options": [
+            "It prevents code reuse",
+            "It has minimal impact on software maintenance",
+            "It removes the need for constructors in subclasses",
+            "It makes every attribute public"
+          ],
+          "answer": 1,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. Subclassing is specialization.",
+          "id": 13
+        },
+        {
+          "question": "Deleting subclasses that are NOT superclasses to other classes:",
+          "options": [
+            "Requires rewriting the superclass",
+            "Breaks every other class in the class hierarchy",
+            "Has a minimal impact on software maintenance",
+            "Is not allowed in Java"
+          ],
+          "answer": 2,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 14
+        },
+        {
+          "question": "In the Shape example, the name attribute is declared private, so other objects get its value through:",
+          "options": [
+            "Direct access to the name variable from any class",
+            "The main() method, which stores the name for others",
+            "The calculateArea() method defined in each subclass",
+            "The getName() method defined in the Shape class"
+          ],
+          "answer": 3,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 15
+        },
+        {
+          "question": "The capability to inherit from more than one class is called:",
+          "options": [
+            "Multiple inheritance",
+            "Encapsulation",
+            "Single inheritance",
+            "Polymorphism"
+          ],
+          "answer": 0,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 16
+        },
+        {
+          "question": "Which of the following languages allows a subclass to inherit from more than one parent class?",
+          "options": [
+            "Java",
+            "Both C++ and Java",
+            "C++",
+            "Neither C++ nor Java"
+          ],
+          "answer": 2,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 17
+        },
+        {
+          "question": "Why is multiple inheritance prohibited in Java?",
+          "options": [
+            "Interfaces are slower than classes, so Java limits each class to one parent",
+            "Parent classes may have identical names, and super() would be unclear with multiple parents",
+            "Constructors are not allowed in Java subclasses, so super() cannot be called",
+            "Java does not support classes with parents, so only interfaces can be inherited by a subclass"
+          ],
+          "answer": 1,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 18
+        },
+        {
+          "question": "A class inheriting from a superclass that has inherited from another superclass represents:",
+          "options": [
+            "Single inheritance with multiple generations",
+            "Multiple inheritance through an interface",
+            "Multiple inheritance with a single generation",
+            "An anonymous inner class with two parents"
+          ],
+          "answer": 0,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 19
+        },
+        {
+          "question": "Java's alternative to multiple inheritance is the:",
+          "options": [
+            "Static variable",
+            "Abstract method",
+            "Package",
+            "Interface"
+          ],
+          "answer": 3,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 20
+        },
+        {
+          "question": "In an interface, all methods (if any) are implicitly:",
+          "options": [
+            "protected and final",
+            "public and static",
+            "public and abstract",
+            "private and static"
+          ],
+          "answer": 2,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 21
+        },
+        {
+          "question": "In an interface, all data items (if any) are implicitly:",
+          "options": [
+            "protected and static",
+            "public, static, and final",
+            "public and abstract",
+            "private and abstract"
+          ],
+          "answer": 1,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 22
+        },
+        {
+          "question": "An interface is a description of:",
+          "options": [
+            "What a class does, but not how it is done",
+            "The constructor of a class",
+            "The private data of a class",
+            "How a class does something, but not what it does"
+          ],
+          "answer": 0,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 23
+        },
+        {
+          "question": "Which keyword is placed in a class header to use an interface?",
+          "options": [
+            "extends",
+            "super",
+            "interface",
+            "implements"
+          ],
+          "answer": 3,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 24
+        },
+        {
+          "question": "Whereas extends lets a subclass use nonprivate, nonoverridden members of its parent, implements requires the class to:",
+          "options": [
+            "Inherit the parent's private data and methods",
+            "Call super() twice",
+            "Become an interface",
+            "Implement its own version of each method"
+          ],
+          "answer": 3,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 25
+        },
+        {
+          "question": "The interface construct in Java is used with single inheritance to provide:",
+          "options": [
+            "Some form of multiple inheritance",
+            "Some form of information hiding",
+            "Some form of static binding",
+            "Some form of operation overloading"
+          ],
+          "answer": 0,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 26
+        },
+        {
+          "question": "class SalesManager extends SalesPerson implements Manage { ... } means that SalesManager:",
+          "options": [
+            "Is derived from Manage and implements the SalesPerson interface",
+            "Cannot have a constructor",
+            "Is derived from SalesPerson and implements the Manage interface",
+            "Is an interface"
+          ],
+          "answer": 2,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 27
+        },
+        {
+          "question": "In the Manage interface, authorize() is declared without a body. The SalesManager class must:",
+          "options": [
+            "Call authorize() from the main() method only",
+            "Implement the abstract method authorize()",
+            "Declare authorize() as private",
+            "Remove authorize() from Manage"
+          ],
+          "answer": 1,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 28
+        },
+        {
+          "question": "Choosing between SalesManager as a subclass of SalesPerson or of Manager (with a CanTakeOrder interface) is:",
+          "options": [
+            "A modeling problem resolved with more information on the problem domain and requirements",
+            "Not allowed in Java, because a class cannot implement an interface and extend a class",
+            "Always solved by using SalesPerson, because collectPayment() is already defined there",
+            "Decided automatically by the compiler based on which superclass has more methods"
+          ],
+          "answer": 0,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 29
+        },
+        {
+          "question": "When a class implements Worker, it must include a work() method or else:",
+          "options": [
+            "The class becomes an interface, and its descendants inherit work() from it",
+            "The Worker interface must be changed so that work() is no longer abstract",
+            "The program still runs, and Java creates an empty work() method automatically for the class",
+            "The class must be declared abstract, and its descendants must implement the method"
+          ],
+          "answer": 3,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 30
+        },
+        {
+          "question": "A WorkingDog extends Dog and implements Worker. Which method is it required to contain because of implements Worker?",
+          "options": [
+            "speak()",
+            "getHoursOfTraining()",
+            "work()",
+            "setName()"
+          ],
+          "answer": 2,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 31
+        },
+        {
+          "question": "Why make many classes implement the Worker interface instead of each just having a work() method?",
+          "options": [
+            "The classes can share private data, because interfaces store each object's fields",
+            "You do not have to guess the name of the method that shows the work the objects perform",
+            "The classes no longer need constructors, because the interface creates their objects",
+            "The classes run faster, because interface methods are bound at compile time only"
+          ],
+          "answer": 1,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 32
+        },
+        {
+          "question": "A class that implements an interface represents a situation similar to inheritance. A WorkingDog therefore:",
+          "options": [
+            "\"Is a\" Dog and \"is a\" Worker, but it is not an Animal",
+            "\"Is a\" Worker, but it is no longer a Dog or an Animal",
+            "\"Is an\" Animal only, since interfaces do not count as types",
+            "\"Is a\" Dog, \"is an\" Animal, and \"is a\" Worker"
+          ],
+          "answer": 3,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 33
+        },
+        {
+          "question": "What is the output of this program?",
+          "code": "interface Worker {\n   void work();\n}\nclass Dog {\n   public void speak() { System.out.println(\"Woof!\"); }\n}\nclass WorkingDog extends Dog implements Worker {\n   public void work() {\n      speak();\n      System.out.println(\"I am a dog who works\");\n   }\n}\npublic class DemoWorkingDog {\n   public static void main(String[] args) {\n      WorkingDog aSheepHerder = new WorkingDog();\n      aSheepHerder.speak();\n      aSheepHerder.work();\n   }\n}",
+          "options": [
+            "Woof! / I am a dog who works",
+            "The program does not compile, because Dog does not implement Worker",
+            "Woof! / Woof! / I am a dog who works",
+            "I am a dog who works / Woof!"
+          ],
+          "answer": 2,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. Output: Woof! / Woof! / I am a dog who works. work() calls the inherited speak() first, so Woof! appears twice.",
+          "id": 34
+        },
+        {
+          "question": "What happens with the statement Animal myPet = new Animal(\"Murphy\"); if Animal is an abstract class?",
+          "options": [
+            "The program does not compile, because no Animal objects can exist",
+            "It compiles, but speak() prints nothing because it has no method body",
+            "It creates a Dog object instead, because Dog extends the Animal class",
+            "It creates an Animal object normally, because the constructor exists"
+          ],
+          "answer": 0,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 35
+        },
+        {
+          "question": "You create an abstract class such as Animal only so that you can:",
+          "options": [
+            "Use it as a package",
+            "Extend it",
+            "Instantiate it",
+            "Hide it from subclasses"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 36
+        },
+        {
+          "question": "If you do not want to create Dog objects but want Dog to be a parent to further subclasses, then the Dog class:",
+          "options": [
+            "Also must be abstract",
+            "Must be an interface",
+            "Must be private",
+            "Must be final"
+          ],
+          "answer": 0,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 37
+        },
+        {
+          "question": "The @Override annotation for a method such as speak() is:",
+          "options": [
+            "Used only in interfaces, never in subclasses",
+            "Not necessary, but it provides error checking and documentation",
+            "Used to create a new object of the parent class",
+            "Required, or the program will not compile at all without it"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 38
+        },
+        {
+          "question": "Using the same method name to indicate different implementations is called:",
+          "options": [
+            "Bundling",
+            "Encapsulation",
+            "Polymorphism",
+            "Static binding"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 39
+        },
+        {
+          "question": "Data attributes declared in an interface construct are always:",
+          "options": [
+            "protected and static",
+            "public and non-final",
+            "private and abstract",
+            "static and final"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Static because there is only one copy; final because they are not modifiable.",
+          "id": 40
+        },
+        {
+          "question": "Names for values with a specific meaning, such as RED = 1 in the Colourable interface, are called:",
+          "options": [
+            "Packages",
+            "Constants",
+            "References",
+            "Parameters"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 41
+        },
+        {
+          "question": "All methods in an interface are:",
+          "options": [
+            "Static methods that the implementing class may not override",
+            "Constructors that run when a class implements the interface",
+            "Private methods hidden from every class that uses the interface",
+            "Abstract methods that any class using the interface must implement"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 42
+        },
+        {
+          "question": "Methods in an interface may NOT be static because:",
+          "options": [
+            "Interfaces cannot contain methods, only constant data attributes",
+            "Static methods must have constructors, which interfaces do not have",
+            "Static methods, being class specific, are never abstract",
+            "Static methods are always private, so no class could call them"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 43
+        },
+        {
+          "question": "ColourTest implements Colourable but does not implement getColour(). How must ColourTest be declared?",
+          "options": [
+            "abstract class ColourTest implements Colourable",
+            "interface ColourTest implements Colourable",
+            "static class ColourTest implements Colourable",
+            "final class ColourTest implements Colourable"
+          ],
+          "answer": 0,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 44
+        },
+        {
+          "question": "Why must setColour() in ColourTest be declared public?",
+          "options": [
+            "Because ColourTest is declared abstract, all of its methods must be public",
+            "It is a method of the Colourable interface, and interface methods are public",
+            "Because main() is static, every method it can call must also be public",
+            "Because setColour() has a parameter, and methods with parameters must be public"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 45
+        },
+        {
+          "question": "Abstract classes and interfaces are similar in that:",
+          "options": [
+            "You cannot instantiate concrete objects from either one",
+            "A class can extend any number of either of them",
+            "Both must have constructors that create objects",
+            "Both can contain only private methods and private data fields"
+          ],
+          "answer": 0,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 46
+        },
+        {
+          "question": "Abstract classes differ from interfaces because:",
+          "options": [
+            "Abstract classes cannot have variables, but interfaces can have any kind of variable",
+            "Interfaces can contain constructors and nonabstract methods, but abstract classes cannot",
+            "Interfaces can be instantiated with new, but abstract classes can never be instantiated",
+            "Abstract classes can contain nonabstract methods, but all interface methods must be abstract"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 47
+        },
+        {
+          "question": "A class can inherit from how many abstract superclasses, and implement how many interfaces?",
+          "options": [
+            "None of either",
+            "Any number of abstract superclasses, but only one interface",
+            "Only one abstract superclass, but any number of interfaces",
+            "Only one of each"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 48
+        },
+        {
+          "question": "According to the comparison table, which is true about constructors?",
+          "options": [
+            "Neither can ever have a constructor, because neither one can be instantiated with new",
+            "An interface has no constructor; an abstract class's constructor is invoked when a child object is instantiated",
+            "Both have constructors, and each constructor creates an object of its own type whenever it is called",
+            "An interface's constructor is called each time a class implements the interface"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 49
+        },
+        {
+          "question": "According to the comparison table, which is true about variables?",
+          "options": [
+            "Interfaces cannot have any variables at all, while abstract classes must declare only private ones",
+            "Abstract class variables must be public, static, and final; interfaces have no restrictions",
+            "Both must declare all of their variables private, so that subclasses cannot change them",
+            "Interface variables must be public, static, and final; abstract classes have no restrictions on variables"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 50
+        },
+        {
+          "question": "An interface is generally used for achieving:",
+          "options": [
+            "Multiple inheritance in Java",
+            "Faster compilation",
+            "Information hiding in packages",
+            "Static binding"
+          ],
+          "answer": 0,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 51
+        },
+        {
+          "question": "Given public abstract class LandVehicle { ... }, which statement is invalid?",
+          "options": [
+            "LandVehicle l;",
+            "class Car extends LandVehicle { }",
+            "LandVehicle l = new LandVehicle();",
+            "LandVehicle[] list = new LandVehicle[3];"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 52
+        },
+        {
+          "question": "Interface data fields must not be private because:",
+          "options": [
+            "Private data cannot be static, and every field of an interface must be a static field",
+            "Private data uses too much memory, since every object would store its own copy of it",
+            "Interfaces are always final, so private fields would be hidden from the interface itself",
+            "Interface methods cannot contain method bodies, so there is no way to retrieve private data"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 53
+        },
+        {
+          "question": "The purpose of creating an interface containing constants is to:",
+          "options": [
+            "Create objects of the interface so that each object holds its own separate copy of the values",
+            "Replace all the classes in a program with one interface that contains every method",
+            "Provide a set of data that a number of classes can use without having to redeclare the values",
+            "Hide the data from every class so that the values can never be read by any program"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 54
+        },
+        {
+          "question": "A class that has no name and is defined inside another class is a(n):",
+          "options": [
+            "Anonymous inner class",
+            "Package",
+            "Interface",
+            "Abstract class"
+          ],
+          "answer": 0,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 55
+        },
+        {
+          "question": "When defining an anonymous inner class, you:",
+          "options": [
+            "Use the keyword implements, and declare the class outside the main class",
+            "Use the new operator and do not use the keywords extends or implements",
+            "Must give the class a name and save it in its own separate .java file",
+            "Must use the keyword extends, and give the class a name before using it"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 56
+        },
+        {
+          "question": "An anonymous inner class must either implement an interface or extend another class, and it must:",
+          "options": [
+            "Be declared in a separate package from the class in which it is defined",
+            "Have at least two constructors that call the superclass default constructor",
+            "Override all the abstract methods in the interface or superclass",
+            "Be declared static so that it can be instantiated more than once in the program"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 57
+        },
+        {
+          "question": "A variable whose value is assigned only once, which an anonymous inner class may access, is called:",
+          "options": [
+            "Abstract",
+            "Effectively final",
+            "Static",
+            "Protected and static"
+          ],
+          "answer": 1,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "id": 58
+        },
+        {
+          "question": "What is the output of this program?",
+          "code": "interface Colourable {\n   int RED = 1;\n   int GREEN = 2;\n   int BLUE = 3;\n}\npublic class ColourDemo implements Colourable {\n   public static void main(String[] args) {\n      System.out.println(GREEN + BLUE);\n   }\n}",
+          "options": [
+            "GREENBLUE",
+            "The program does not compile, because RED, GREEN, and BLUE are not declared static",
+            "23",
+            "5"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Output: 5. Interface data attributes are implicitly public, static, and final.",
+          "id": 59
+        },
+        {
+          "question": "The binding of variables to operations at compile time is known as:",
+          "options": [
+            "Static binding",
+            "Run-time binding",
+            "Dynamic binding",
+            "Late binding"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 60
+        },
+        {
+          "question": "The binding of variables to operations at run time is known as:",
+          "options": [
+            "Compile-time binding",
+            "Static binding",
+            "Dynamic binding",
+            "Early binding"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 61
+        },
+        {
+          "question": "Which statement about static and dynamic binding is correct?",
+          "options": [
+            "Static binding is limited and may lead to maintenance difficulty; dynamic binding provides design flexibility",
+            "Only procedural languages use dynamic binding",
+            "Both are identical",
+            "Static binding provides design flexibility; dynamic binding is limited and causes maintenance difficulty"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 62
+        },
+        {
+          "question": "In the procedural Shape example, why were calculateCircleArea() and calculateSquareArea() needed?",
+          "options": [
+            "Java requires separate routine names for every shape, even in object-oriented code",
+            "The switch statement cannot call any routine that has the word Area in its name",
+            "Circles and squares use the same formula, so the names only make the code readable",
+            "Most procedural languages do not allow two routines to have the same name"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 63
+        },
+        {
+          "question": "With static binding, adding a new shape such as Triangle requires changes in:",
+          "options": [
+            "No part of the program, since the switch statement detects new shapes on its own at run time",
+            "Multiple places (data section, switch statement, and routine section), which is error prone",
+            "Only the println statement, since the routine section does not need to change",
+            "Only one place: a new Triangle class, without touching the rest of the program"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 64
+        },
+        {
+          "question": "With dynamic binding, the appropriate calculateArea() method is selected based on:",
+          "options": [
+            "The class of the shape referenced at run time",
+            "The name of the array",
+            "A switch statement written by the programmer",
+            "The order the methods were written"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 65
+        },
+        {
+          "question": "Every SalariedEmployee \"is an\" Employee. Which statement is also true?",
+          "options": [
+            "Superclass objects are members of all subclasses",
+            "An Employee is always an HourlyEmployee",
+            "Every Employee is a SalariedEmployee",
+            "An Employee is not necessarily a SalariedEmployee"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 66
+        },
+        {
+          "question": "A reference is not an object, but it:",
+          "options": [
+            "Is always abstract",
+            "Points to a memory address",
+            "Is created with the keyword new",
+            "Contains all the object's methods"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 67
+        },
+        {
+          "question": "Assigning a variable or constant of one type to a variable of another type is called:",
+          "options": [
+            "Static binding, early binding, or fixed binding",
+            "Overloading, overriding, or redefining",
+            "Promotion, implicit conversion, or upcasting",
+            "Encapsulation, bundling, or information hiding"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 68
+        },
+        {
+          "question": "Using a reference polymorphically allows you to:",
+          "options": [
+            "Extend a base class and use extended objects when a base class type is expected",
+            "Create objects of an abstract class directly by using the keyword new",
+            "Make all methods static so that they are bound when the program is compiled",
+            "Avoid writing subclasses, since one reference can hold every method"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 69
+        },
+        {
+          "question": "In Java, all instance method calls are virtual method calls by default. This means:",
+          "options": [
+            "Methods cannot be overridden",
+            "Methods must be static",
+            "The method is chosen by the compiler before the program runs",
+            "The method used is determined when the program runs"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 70
+        },
+        {
+          "question": "An application's ability to select the correct subclass method depending on the argument type is known as:",
+          "options": [
+            "Information hiding",
+            "Dynamic method binding",
+            "Static method binding",
+            "Operation overloading"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism. It is also called late method binding.",
+          "id": 71
+        },
+        {
+          "question": "In Java, which methods use dynamic binding and which use static binding?",
+          "options": [
+            "All methods use dynamic binding",
+            "Class methods use dynamic binding; instance methods use static binding",
+            "Instance methods use dynamic binding; class methods use static binding",
+            "All methods use static binding"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 72
+        },
+        {
+          "question": "Comparing the two kinds of binding:",
+          "options": [
+            "Both are equally fast and flexible",
+            "Dynamic binding is not supported in Java",
+            "Dynamic binding makes programs flexible; static binding operates more quickly",
+            "Static binding makes programs flexible; dynamic binding operates more quickly"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 73
+        },
+        {
+          "question": "Dynamic method binding is most useful when you want a method whose parameters:",
+          "options": [
+            "Are always primitive types, such as int or double values",
+            "Might be one of several types, such as any Animal descendant",
+            "Cannot be objects, because objects are bound at compile time",
+            "Are always strings, so that the method can print their names"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 74
+        },
+        {
+          "question": "When you create an array of objects in Java, you are actually creating:",
+          "options": [
+            "Space for references to objects",
+            "A new class",
+            "The objects themselves, already constructed",
+            "A package of objects"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 75
+        },
+        {
+          "question": "Animal[] animalRef = new Animal[3]; Given that Animal is abstract, this statement:",
+          "options": [
+            "Does not compile, because an array cannot be declared using an abstract type",
+            "Creates three Animal objects, one for each element of the animalRef array",
+            "Creates one Dog, one Cow, and one Snake object to fill the three array elements",
+            "Reserves memory for three Animal references without instantiating any Animal"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 76
+        },
+        {
+          "question": "An array of superclass references can hold subclass references:",
+          "options": [
+            "Only if the superclass is concrete, never abstract",
+            "Only if the superclass is abstract, never concrete",
+            "Whether the superclass is abstract or concrete",
+            "Never, since every array element must be one type"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 77
+        },
+        {
+          "question": "The ability to use the same name for two or more methods in a class is known as:",
+          "options": [
+            "Encapsulation",
+            "Operation overloading",
+            "Static binding",
+            "Polymorphism"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 78
+        },
+        {
+          "question": "Two methods have the same method signature if:",
+          "options": [
+            "Their names are the same and the number and type of formal parameters are the same",
+            "They have the same access specifier and are both declared static in their classes",
+            "They are declared in the same package and have the same number of statements inside",
+            "Their return types are the same, even if their names and parameters are different"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 79
+        },
+        {
+          "question": "Given constructors A(), A(int x), A(int x, int y), and A(String x), which is called by new A(\"hello\")?",
+          "options": [
+            "A(int x)",
+            "A()",
+            "A(int x, int y)",
+            "A(String x)"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 80
+        },
+        {
+          "question": "Declaring two public void a1() {} methods in the same class is:",
+          "options": [
+            "Valid overriding, because the second replaces the first",
+            "Valid overloading, because the two methods are separate",
+            "Valid only if one of the two methods is declared static",
+            "Invalid, reported as a duplicate method declaration"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 81
+        },
+        {
+          "question": "Can the return type alone distinguish overloaded methods from one another?",
+          "options": [
+            "Only for static methods declared in the same class",
+            "No, the return type does not distinguish overloaded methods",
+            "Only for methods that are declared in an interface",
+            "Yes, the return type alone always distinguishes them from each other"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 82
+        },
+        {
+          "question": "Declaring methods of the same signature in different, unrelated classes is:",
+          "options": [
+            "Valid in object-oriented programming",
+            "Allowed only for constructors",
+            "Invalid",
+            "Allowed only if the classes are abstract"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 83
+        },
+        {
+          "question": "For a subclass method to redefine (override) a superclass method:",
+          "options": [
+            "The subclass method must have more parameters than the other",
+            "The superclass method must be private",
+            "The method signatures of the two methods must be the same",
+            "The methods must have different names"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 84
+        },
+        {
+          "question": "The ability of different objects to perform the appropriate method in response to the same message is known as:",
+          "options": [
+            "Operation overloading",
+            "Modularity",
+            "Polymorphism",
+            "Bundling"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 85
+        },
+        {
+          "question": "In polymorphism, the sender of a message (such as main()):",
+          "options": [
+            "Decides which method the receiving object uses to respond to the message",
+            "Knows the object can respond, but not its class or how it will respond",
+            "Must know the exact class of the receiver before it can send any message",
+            "Must use a switch statement to choose the method for each type of object"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 86
+        },
+        {
+          "question": "Polymorphism is facilitated by:",
+          "options": [
+            "Private variables and the use of switch statements to select the correct method",
+            "Static binding and the requirement for unique routine names in each and every class definition",
+            "Packages and import statements that bring similar classes into the same program",
+            "Dynamic binding and the ability to use the same name for similar methods across class definitions"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 87
+        },
+        {
+          "question": "Polymorphism encourages programmers to specify:",
+          "options": [
+            "What should happen rather than how it should happen",
+            "Only the user interface",
+            "How it should happen rather than what should happen",
+            "Only the data, not the methods"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism. This promotes incremental program development.",
+          "id": 88
+        },
+        {
+          "question": "What is the output of this program?",
+          "code": "abstract class Animal {\n   public abstract void speak();\n}\nclass Dog extends Animal {\n   public void speak() { System.out.println(\"Woof!\"); }\n}\nclass Cow extends Animal {\n   public void speak() { System.out.println(\"Moo!\"); }\n}\nclass Snake extends Animal {\n   public void speak() { System.out.println(\"Ssss!\"); }\n}\npublic class AnimalArrayDemo {\n   public static void main(String[] args) {\n      Animal[] animalRef = new Animal[3];\n      animalRef[0] = new Dog();\n      animalRef[1] = new Cow();\n      animalRef[2] = new Snake();\n      for (int x = 0; x < 3; ++x)\n         animalRef[x].speak();\n   }\n}",
+          "options": [
+            "Nothing, because Animal is abstract",
+            "Woof! / Woof! / Woof!",
+            "Ssss! / Moo! / Woof!",
+            "Woof! / Moo! / Ssss!"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism. Output: Woof! / Moo! / Ssss!. Each reference chooses the speak() method of the object it refers to (dynamic method binding).",
+          "id": 89
+        },
+        {
+          "question": "What is the output of this program?",
+          "code": "class C {\n   C() {}\n   public void c1() { System.out.println(\"C.c1()\"); }\n}\nclass D extends C {\n   D() {}\n   public void c1() {\n      super.c1();\n      System.out.println(\"D.c1()\");\n   }\n   public static void main(String args[]) {\n      D thisD = new D();\n      thisD.c1();\n   }\n}",
+          "options": [
+            "C.c1() / D.c1()",
+            "D.c1()",
+            "D.c1() / C.c1()",
+            "C.c1()"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism. Output: C.c1() / D.c1(). D's c1() overrides C's c1(); super.c1() runs the superclass version first.",
+          "id": 90
+        },
+        {
+          "question": "What is the output of this program?",
+          "code": "class C {\n   C() {}\n   public void c1() { System.out.println(\"C.c1()\"); }\n}\nclass D extends C {\n   D() {}\n   public void c1(int i) {\n      super.c1();\n      System.out.println(\"D.c1()\");\n   }\n   public static void main(String args[]) {\n      D thisD = new D();\n      thisD.c1();\n      thisD.c1(3);\n   }\n}",
+          "options": [
+            "The program does not compile",
+            "D.c1() / C.c1() / D.c1()",
+            "C.c1() / C.c1() / D.c1()",
+            "C.c1() / D.c1()"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism. Output: C.c1() / C.c1() / D.c1(). c1(int i) has a different signature, so it does not override c1(); both methods exist.",
+          "id": 91
+        },
+        {
+          "question": "Which constructor message is printed?",
+          "code": "class A {\n   A() { System.out.println(\"A()\"); }\n   A(int x) { System.out.println(\"A(int x)\"); }\n   A(int x, int y) { System.out.println(\"A(int x, int y)\"); }\n   A(String x) { System.out.println(\"A(String x)\"); }\n   public static void main(String args[]) {\n      A thisA = new A(4, 5);\n   }\n}",
+          "options": [
+            "A()",
+            "A(int x, int y)",
+            "A(String x)",
+            "A(int x)"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism. Output: A(int x, int y). Overloaded methods are distinguished by the number and type of parameters.",
+          "id": 92
+        },
+        {
+          "question": "Which is often viewed as the smallest program unit to be considered as a subprogram?",
+          "options": [
+            "A package",
+            "A method",
+            "A class",
+            "An object"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 93
+        },
+        {
+          "question": "Compared to a method, what is the next bigger unit under design?",
+          "options": [
+            "A statement",
+            "An attribute",
+            "A class definition",
+            "A variable"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 94
+        },
+        {
+          "question": "Properties that are specific to objects and apply to all objects from the same class are:",
+          "options": [
+            "Object properties",
+            "Static properties",
+            "Class properties",
+            "Package properties"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 95
+        },
+        {
+          "question": "Counting objects by adding count = count + 1; in main() for every new SalesPerson works, but it is:",
+          "options": [
+            "Always incorrect, since main() cannot change any variable after objects exist",
+            "Faster than any other method, so it is the preferred class organisation",
+            "Not allowed in Java, since count must be changed inside a constructor only",
+            "Cumbersome, since a new statement must be added for each new object"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 96
+        },
+        {
+          "question": "When count is an object attribute incremented in the constructor, two SalesPerson objects result in:",
+          "options": [
+            "A compile error, since count must be declared static",
+            "One copy of count in main(), which holds the value 0",
+            "Two independent copies of count, each with the value 1",
+            "One shared copy of count, which holds the value 2"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 97
+        },
+        {
+          "question": "Declaring count as static allows the variable to be:",
+          "options": [
+            "Shared among all instances of the SalesPerson class",
+            "Changed only by the main() method and no other code",
+            "Copied into every SalesPerson object separately",
+            "Hidden from the SalesPerson class itself and its methods"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 98
+        },
+        {
+          "question": "An attribute definition preceded with the keyword static is a(n):",
+          "options": [
+            "Object attribute",
+            "Class attribute",
+            "Local variable",
+            "Abstract attribute"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 99
+        },
+        {
+          "question": "When getCount() is made static, the SalesPerson objects s1 and s2:",
+          "options": [
+            "Cannot call getCount() at all, since static methods are hidden",
+            "Must override getCount() so that each returns its own count",
+            "Each own a separate copy of getCount(), one for each object",
+            "Do not own the getCount() method, since it belongs to the class"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 100
+        },
+        {
+          "question": "Outside of the class definition, the only way to access the static method getCount() is:",
+          "options": [
+            "Using the keyword new, as in new SalesPerson().getCount()",
+            "Qualification by the class name, as in SalesPerson.getCount()",
+            "Using super.getCount() from any class in the program",
+            "Calling getCount() alone, without any class or object name"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 101
+        },
+        {
+          "question": "Ideally, objects reveal information on a:",
+          "options": [
+            "Package-wide basis",
+            "Public basis",
+            "Random basis",
+            "Need-to-know basis"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 102
+        },
+        {
+          "question": "Which access specifier makes entities hidden from code fragments external to the class?",
+          "options": [
+            "friendly",
+            "protected",
+            "private",
+            "public"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 103
+        },
+        {
+          "question": "Which access specifier makes entities fully visible from all other Java code?",
+          "options": [
+            "public",
+            "private",
+            "friendly",
+            "protected"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 104
+        },
+        {
+          "question": "Which access specifier makes entities accessible to code fragments of its immediate subclass?",
+          "options": [
+            "private",
+            "protected",
+            "public",
+            "static"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 105
+        },
+        {
+          "question": "For entities with no access specifier, this default visibility is assumed, giving access within the same package:",
+          "options": [
+            "protected",
+            "public",
+            "private",
+            "friendly"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 106
+        },
+        {
+          "question": "Private variables are used within the class definition, or accessed outside it through a:",
+          "options": [
+            "Private constructor",
+            "Static import",
+            "Public accessor method",
+            "Protected package"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 107
+        },
+        {
+          "question": "A named collection of classes is a:",
+          "options": [
+            "Package",
+            "Constructor",
+            "Method",
+            "Interface"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 108
+        },
+        {
+          "question": "Which package contains fundamental classes and is imported automatically into every program?",
+          "options": [
+            "java.lang",
+            "java.util",
+            "javax.swing",
+            "com.course"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 109
+        },
+        {
+          "question": "When you create professional classes for others to use, you usually provide them with the:",
+          "options": [
+            ".java source code files",
+            "Compiled .class files",
+            "Package declarations only",
+            "Text files of your code"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 110
+        },
+        {
+          "question": "A class that will be placed in a nondefault package for others to use must be:",
+          "options": [
+            "static",
+            "private",
+            "abstract",
+            "public"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 111
+        },
+        {
+          "question": "If a file contains a package declaration, it must be:",
+          "options": [
+            "Inside the class definition, before the first method",
+            "The last statement in the file, after the class definition",
+            "The first statement in the file (excluding comments)",
+            "After all of the import statements at the top of the file"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 112
+        },
+        {
+          "question": "Which statements are the only ones that appear outside class definitions in Java program files?",
+          "options": [
+            "Interfaces, abstract methods, and static variables",
+            "Constructors, the main() method, and comments",
+            "Variable declarations, constructors, and methods",
+            "The package statement, import statements, and comments"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 113
+        },
+        {
+          "question": "In the command javac -d . Animal.java, the -d option means:",
+          "options": [
+            "Debug the program and display each error in detail",
+            "Place the generated .class file in a folder (directory)",
+            "Download the package that Animal.java needs to compile",
+            "Delete the Animal.java source file after it is compiled"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity. The dot means the package path is created within the current directory.",
+          "id": 114
+        },
+        {
+          "question": "The Java package-naming convention uses:",
+          "options": [
+            "Your Internet domain name in reverse order (e.g., com.course)",
+            "The class name written in uppercase (e.g., ANIMAL.DOG)",
+            "Random numbers so that no two package names can ever conflict",
+            "Your full name followed by the date the package was created"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 115
+        },
+        {
+          "question": "A class naming conflict is sometimes called a:",
+          "options": [
+            "Overload",
+            "Package",
+            "Collision",
+            "Binding"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 116
+        },
+        {
+          "question": "The bringing together of a set of attributes and methods into an object definition and hiding their implementational structure from the object's users is:",
+          "options": [
+            "Dynamic binding",
+            "Inheritance",
+            "Encapsulation",
+            "Polymorphism"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 117
+        },
+        {
+          "question": "In the egg analogy of encapsulation, the data of an object is like the:",
+          "options": [
+            "Yolk, and the methods are like the white",
+            "Yolk, and the methods are like the shell",
+            "White, and the methods are like the yolk",
+            "Shell, and the methods are like the yolk"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 118
+        },
+        {
+          "question": "Encapsulation enhances software maintainability by:",
+          "options": [
+            "Removing methods from objects so that other objects use the data directly",
+            "Increasing the coupling between components by making all data and methods public to other objects",
+            "Copying the same data into every object so that changes affect all objects",
+            "Increasing cohesiveness through bundling and reducing coupling by hiding implementation details"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 119
+        },
+        {
+          "question": "The act of associating a set of methods with a set of data as the only means of affecting the values of the data is:",
+          "options": [
+            "Upcasting",
+            "Bundling",
+            "Information hiding",
+            "Overloading"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 120
+        },
+        {
+          "question": "The hiding of internal representation of data and methods from the users of these data and methods is:",
+          "options": [
+            "Collision",
+            "Information hiding",
+            "Bundling",
+            "Promotion"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity. It separates the what from the how of object definition.",
+          "id": 121
+        },
+        {
+          "question": "What is the output of this program (count is static)?",
+          "code": "class SalesPerson {\n   String employeeId;\n   static int count = 0;\n   SalesPerson(String aEmployeeId) {\n      employeeId = aEmployeeId;\n      count = count + 1;\n   }\n   static int getCount() { return count; }\n   public static void main(String argv[]) {\n      SalesPerson s1 = new SalesPerson(\"12345S\");\n      SalesPerson s2 = new SalesPerson(\"33221K\");\n      System.out.println(getCount() + \" salespersons have been created\");\n   }\n}",
+          "options": [
+            "2 salespersons have been created",
+            "The program does not compile",
+            "1 salespersons have been created",
+            "0 salespersons have been created"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity. Output: 2 salespersons have been created. A static count is one shared copy, so both constructors increment the same variable.",
+          "id": 122
+        },
+        {
+          "question": "What is the output of this program (count is NOT static)?",
+          "code": "class SalesPerson {\n   String employeeId;\n   int count = 0;\n   SalesPerson(String aEmployeeId) {\n      employeeId = aEmployeeId;\n      count = count + 1;\n   }\n   int getCount() { return count; }\n   public static void main(String argv[]) {\n      SalesPerson s1 = new SalesPerson(\"12345S\");\n      SalesPerson s2 = new SalesPerson(\"33221K\");\n      System.out.println(s1.getCount() + \" salespersons have been created\");\n   }\n}",
+          "options": [
+            "The program does not compile",
+            "0 salespersons have been created",
+            "2 salespersons have been created",
+            "1 salespersons have been created"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity. Output: 1 salespersons have been created. As an object attribute, each object has its own count with the value 1.",
+          "id": 123
+        }
+      ]
     }
   ],
   "comprog3": [
@@ -6183,6 +7669,16 @@ export const pointers = {
       "title": "Finals Pointers — Chapters 5 to 7",
       "description": "Compact reviewer for Advanced CSS, Introduction to JavaScript and the DOM (with output tracing tips), and Web Hosting.",
       "file": "/pointers/WD_Finals_Pointers.pdf",
+      "pages": 6
+    }
+  ],
+  "oop": [
+    {
+      "id": "oop_finals_pointers",
+      "term": "Finals",
+      "title": "Finals Pointers — Modules 10 to 14",
+      "description": "Compact reviewer for Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity.",
+      "file": "/pointers/OOP_Finals_Pointers.pdf",
       "pages": 6
     }
   ]
