@@ -11,3 +11,6 @@ package-lock.json
 *.png
 *.svg
 *.pdf
+locked-src/
+Subject Exam Reviewers/COMPROG3/
+src/data/locked/

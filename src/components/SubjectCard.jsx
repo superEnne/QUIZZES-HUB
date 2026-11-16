@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { isLocked } from "../lib/lock";
 
 // Color palette per subject for variety
 const COLORS = [
@@ -13,7 +14,8 @@ const COLORS = [
 
 export default function SubjectCard({ subject, index }) {
   const c = COLORS[index % COLORS.length];
-  const hasContent = subject.reviewers && subject.reviewers.length > 0;
+  const locked = isLocked(subject.id);
+  const hasContent = locked || (subject.reviewers && subject.reviewers.length > 0);
   const delay = `${index * 70}ms`;
 
   return (
@@ -103,7 +105,9 @@ export default function SubjectCard({ subject, index }) {
               boxShadow: hasContent ? `0 0 6px ${c.dot}` : "none",
             }} />
             <span style={{ fontSize: "0.75rem", fontWeight: 600, color: hasContent ? c.badgeText : "#aaa" }}>
-              {hasContent ? `${subject.reviewers.length} ${subject.reviewers.length === 1 ? "Reviewer" : "Reviewers"}` : "No reviewers yet"}
+              {locked
+                ? "Password protected"
+                : hasContent ? `${subject.reviewers.length} ${subject.reviewers.length === 1 ? "Reviewer" : "Reviewers"}` : "No reviewers yet"}
             </span>
           </div>
 
@@ -114,8 +118,15 @@ export default function SubjectCard({ subject, index }) {
             borderRadius: "999px",
             background: hasContent ? c.badge : "#f5f5f5",
             color: hasContent ? c.badgeText : "#bbb",
+            display: "inline-flex", alignItems: "center", gap: "0.3rem",
           }}>
-            {hasContent ? "Open" : "Soon"}
+            {locked && (
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="4.5" y="10.5" width="15" height="10" rx="2.5" stroke="currentColor" strokeWidth="2.4" />
+                <path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
+              </svg>
+            )}
+            {locked ? "Locked" : hasContent ? "Open" : "Soon"}
           </span>
         </div>
       </div>

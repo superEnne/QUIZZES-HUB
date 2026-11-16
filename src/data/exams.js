@@ -5388,16 +5388,6 @@ export const exams = {
       ]
     }
   ],
-  "comprog3": [
-    {
-      "id": "comprog3_finals",
-      "term": "Finals",
-      "title": "Finals Exam Reviewer",
-      "description": "",
-      "timeLimit": 60,
-      "questions": []
-    }
-  ],
   "ipt1": [
     {
       "id": "ipt1_finals",

@@ -48,7 +48,7 @@ export default function PointersCard({ item, index }) {
             View PDF
           </button>
         </a>
-        <a href={item.file} download style={{ textDecoration: "none", flex: "0 0 auto", minWidth: "120px" }}>
+        <a href={item.file} download={item.downloadName || true} style={{ textDecoration: "none", flex: "0 0 auto", minWidth: "120px" }}>
           <button className="btn-ghost" style={{ width: "100%", padding: "0.65rem 1rem", fontSize: "0.85rem" }}>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}>
               <path d="M8 2v8m0 0L4.75 6.75M8 10l3.25-3.25M2.75 12.5v.75c0 .41.34.75.75.75h9c.41 0 .75-.34.75-.75v-.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

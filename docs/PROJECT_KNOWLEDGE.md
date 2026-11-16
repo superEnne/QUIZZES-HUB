@@ -100,6 +100,22 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - Distractors rewritten until the correct option is the longest in 36% of items (it started at 69%).
 - Pointers PDF: `public/pointers/OOP_Finals_Pointers.pdf`, 6 pages. Sources: `Subject Exam Reviewers/OOP/source/`.
 
+## 6e. COMPROG3 Finals Exam Reviewer (password-locked)
+
+- Subject: COMPROG3 - Computer Programming 3 (VB.NET, "Programming with Microsoft Visual Basic 2010"). Coverage: Chapter 6 The Repetition Structure, Chapter 7 Sub and Function Procedures, Chapter 8 String Manipulation. Exam types: true or false, identification, output tracing.
+- Mock exam: 113 questions: Part I 44 true or false (25 True / 19 False), Part II 51 identification (with altAnswers), Part III 18 "Analyze the code" output tracing items (45 scored lines). Optional 90-minute timer. Style follows the class's midterm: mostly T/F, code-analysis items, and each explanation names the chapter.
+- No VB compiler was available, so every VB snippet has a Python twin run by make_exam.py with .NET-rule helpers (0-based Substring/IndexOf, -1 when not found, inclusive For...Next, True/False for Booleans, whole Doubles print without ".0", Like operator patterns ? * # [list] [!list]). The helpers are first checked against the textbook's own figure examples.
+- Pointers PDF: 5 pages, built from `Subject Exam Reviewers/COMPROG3/source/pointers.py`. It is NOT in public/; it is inside the encrypted payload.
+
+## 6f. Subject Password Lock
+
+- A subject with `"locked": true` in subjects.js has `"reviewers": []` in the plain bundle and no entry in exams.js / pointers. Its real reviewers, exams and pointers PDF are in `src/data/locked/<id>.enc.json`, loaded with a dynamic import (separate chunk) only when someone opens the subject.
+- `src/lib/lock.js`: the username (trimmed, lower-cased) and password derive an AES-GCM-256 key with PBKDF2-SHA256 (600,000 iterations, random salt); a wrong pair fails to decrypt. No password or hash is stored in the code. On success the payload is injected into subjects/exams/pointers, the PDF becomes a blob URL (with `downloadName`), and the derived key (not the password) is kept in sessionStorage so a reload in the same tab stays unlocked. A new tab asks again.
+- `src/components/LockGate.jsx` wraps the subject, quiz and exam routes in App.jsx. SubjectCard shows "Password protected" and a Locked pill.
+- To change content or credentials: edit the plaintext sources, then run `node scripts/lock-subject.mjs <id> --user <username> --pass <password>`. It reads `locked-src/<id>.json` (manifest pointing at the reviewers JSON, exam JSON and PDF) and rewrites the .enc.json. Credentials are never written to any file; they are typed on the command line each time.
+- Git-ignored plaintext: `locked-src/`, `Subject Exam Reviewers/COMPROG3/`, `Subject Quiz Reviewers/COMPROG3/`. Only the .enc.json is committed. The old COMPROG3 midterm quiz is still in earlier git history.
+- Limits: it is client-side encryption, so its strength is the password's strength. A short password can be brute-forced offline by someone determined; it stops casual bypassing (dev tools, editing JS, reading the bundle).
+
 ## 7. Reviewer-Making Rules (the user's preferences)
 
 The user provides the modules per subject and decides the question types.

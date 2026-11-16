@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import SubjectPage from "./pages/SubjectPage";
 import QuizPage from "./pages/QuizPage";
+import LockGate from "./components/LockGate";
 
 export default function App() {
   return (
@@ -17,9 +18,9 @@ export default function App() {
       <main className="relative z-10">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/subject/:subjectId" element={<SubjectPage />} />
-          <Route path="/subject/:subjectId/quiz/:reviewerId" element={<QuizPage />} />
-          <Route path="/subject/:subjectId/exam/:examId" element={<QuizPage mode="exam" />} />
+          <Route path="/subject/:subjectId" element={<LockGate><SubjectPage /></LockGate>} />
+          <Route path="/subject/:subjectId/quiz/:reviewerId" element={<LockGate><QuizPage /></LockGate>} />
+          <Route path="/subject/:subjectId/exam/:examId" element={<LockGate><QuizPage mode="exam" /></LockGate>} />
         </Routes>
       </main>
     </BrowserRouter>

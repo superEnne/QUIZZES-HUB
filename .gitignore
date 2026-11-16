@@ -22,3 +22,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Password-locked subjects: plaintext sources stay on this computer only.
+# The site ships only the encrypted src/data/locked/*.enc.json (see scripts/lock-subject.mjs).
+locked-src/
+Subject Exam Reviewers/COMPROG3/
+Subject Quiz Reviewers/COMPROG3/
+
+# graphify scratch files
+graphify-out/.fuse_hidden*
+graphify-out/.graph.html.stale
+graphify-out/.graphify_labels.pending.json
+graphify-out/.graphify_labels.json.sig
+graphify-out/20*/
