@@ -6,99 +6,99 @@
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/CC6/source/make_exam.py": {
-    "mtime": 1794715282.3210874,
-    "seen": 1794801747.2224221,
-    "ast_hash": "cdd0e9bd6a4bb62c208734a0811dce82",
+    "mtime": 1794839085.814988,
+    "seen": 1794839191.7898948,
+    "ast_hash": "49a5de3b7102ed55675edb0112cff8cb",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/CC6/source/make_pdf.py": {
-    "mtime": 1794715010.716216,
-    "seen": 1794801747.2224243,
-    "ast_hash": "bd5d1710c4fc0511877a15013d8811c5",
+    "mtime": 1794839086.3739998,
+    "seen": 1794839191.7898974,
+    "ast_hash": "c89a643e4802fa8ebc490dd90398c6f3",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/CC6/source/pointers.py": {
-    "mtime": 1794715010.3457024,
-    "seen": 1794801747.2224262,
-    "ast_hash": "b949a3845a7e537e5bfa2555fb295418",
+    "mtime": 1794839086.8282926,
+    "seen": 1794839191.7898993,
+    "ast_hash": "606633a4f025a13ff222356881b023ab",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/CC6/source/questions.py": {
-    "mtime": 1794715009.9541202,
-    "seen": 1794801747.2224276,
-    "ast_hash": "ecfec83dec193d5f17a02bf798befbd2",
+    "mtime": 1794839087.288293,
+    "seen": 1794839191.789901,
+    "ast_hash": "13f8e364d036b3bd854908be275544ca",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/EA/source/make_exam.py": {
-    "mtime": 1794717968.1201513,
-    "seen": 1794801747.2224293,
+    "mtime": 1794839089.2516341,
+    "seen": 1794839191.7899046,
     "ast_hash": "d0fe5fc7e31657c78d5cb0d7ef3b0941",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/EA/source/make_pdf.py": {
-    "mtime": 1794717967.7318275,
-    "seen": 1794801747.2224307,
-    "ast_hash": "384588f67b1dc125f60d1ed7631aa4d2",
+    "mtime": 1794839089.7212863,
+    "seen": 1794839191.7899063,
+    "ast_hash": "c89a643e4802fa8ebc490dd90398c6f3",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/EA/source/pointers.py": {
-    "mtime": 1794717967.2872176,
-    "seen": 1794801747.222432,
-    "ast_hash": "60227db1e4b7e68b42005bfbc8e4cb5f",
+    "mtime": 1794839090.2272942,
+    "seen": 1794839191.789908,
+    "ast_hash": "e8d30bd753f6daef853ad736c169dafa",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/EA/source/questions.py": {
-    "mtime": 1794717966.8898833,
-    "seen": 1794801747.2224333,
-    "ast_hash": "87104312a1db118f6d57636c908dd50d",
+    "mtime": 1794839090.6779306,
+    "seen": 1794839191.7899098,
+    "ast_hash": "d4d4e41dfc471a4716870904226e6baf",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/OOP/source/make_exam.py": {
-    "mtime": 1794802039.6310432,
-    "seen": 1794802692.1578536,
+    "mtime": 1794839096.893422,
+    "seen": 1794839191.789921,
     "ast_hash": "afdc692b2305087a2e82ff2590d453b5",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/OOP/source/make_pdf.py": {
-    "mtime": 1794800099.5620534,
-    "seen": 1794801747.2224364,
-    "ast_hash": "384588f67b1dc125f60d1ed7631aa4d2",
+    "mtime": 1794839097.3644226,
+    "seen": 1794839191.7899227,
+    "ast_hash": "c89a643e4802fa8ebc490dd90398c6f3",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/OOP/source/pointers.py": {
-    "mtime": 1794800099.1150525,
-    "seen": 1794801747.2224379,
-    "ast_hash": "d104b9224828b4bf5c286acf90108ea4",
+    "mtime": 1794839097.8605897,
+    "seen": 1794839191.7899244,
+    "ast_hash": "b0b91d17c10dd38e23d8e63314ee2bbd",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/OOP/source/questions.py": {
-    "mtime": 1794802039.2603302,
-    "seen": 1794802692.1578608,
-    "ast_hash": "10125883abae543da281ae0a630ba25d",
+    "mtime": 1794839098.314592,
+    "seen": 1794839191.7899256,
+    "ast_hash": "04d257fee52fcc79e8bbf41dad53b696",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/WD/source/make_exam.py": {
-    "mtime": 1794716931.3551898,
-    "seen": 1794801747.2224405,
+    "mtime": 1794839092.9956796,
+    "seen": 1794839191.789929,
     "ast_hash": "1d95d618ca09424289b0b9a9c4075712",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/WD/source/make_pdf.py": {
-    "mtime": 1794716930.9722755,
-    "seen": 1794801747.2224417,
-    "ast_hash": "384588f67b1dc125f60d1ed7631aa4d2",
+    "mtime": 1794839093.6308968,
+    "seen": 1794839191.7899306,
+    "ast_hash": "c89a643e4802fa8ebc490dd90398c6f3",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/WD/source/pointers.py": {
-    "mtime": 1794716930.6042764,
-    "seen": 1794801747.2224433,
-    "ast_hash": "4895a400bd0e26f62ea727cd4849e442",
+    "mtime": 1794839094.0771244,
+    "seen": 1794839191.7899323,
+    "ast_hash": "ebf6e90c2bd05d142798ad17b10aa1e2",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/WD/source/questions.py": {
-    "mtime": 1794716930.2195575,
-    "seen": 1794801747.2224445,
-    "ast_hash": "17a39a41d3fc71747007a3d8846364fe",
+    "mtime": 1794839094.5876365,
+    "seen": 1794839191.7899342,
+    "ast_hash": "bf184faa953ece3e02d9f8a7cb29c3f7",
     "semantic_hash": ""
   },
   "package.json": {
@@ -162,9 +162,9 @@
     "semantic_hash": ""
   },
   "src/data/exams.js": {
-    "mtime": 1794832544.2388096,
-    "seen": 1794832638.5993173,
-    "ast_hash": "80b5702fc62ba1638cc8b58e75a8cadc",
+    "mtime": 1794839119.8426673,
+    "seen": 1794839191.7899735,
+    "ast_hash": "30f7b36b77bc24e5ddcb06b40d8a4d15",
     "semantic_hash": ""
   },
   "src/data/subjects.js": {
@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "docs/PROJECT_KNOWLEDGE.md": {
-    "mtime": 1794832633.7146204,
-    "seen": 1794832638.599333,
-    "ast_hash": "80b8273b6188ffbd16e6f1f7aa2e8d81",
+    "mtime": 1794839183.6241035,
+    "seen": 1794839191.7899914,
+    "ast_hash": "e6606a6dad732f8f9274d26caabc9210",
     "semantic_hash": ""
   },
   "index.html": {
@@ -240,27 +240,57 @@
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/IPT/source/make_exam.py": {
-    "mtime": 1794832527.1211576,
-    "seen": 1794832638.599279,
+    "mtime": 1794839100.607316,
+    "seen": 1794839191.7899132,
     "ast_hash": "b9a122053ca5706e632057ebbdb9815b",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/IPT/source/make_pdf.py": {
-    "mtime": 1794832528.0466855,
-    "seen": 1794832638.5992808,
-    "ast_hash": "384588f67b1dc125f60d1ed7631aa4d2",
+    "mtime": 1794839101.0321176,
+    "seen": 1794839191.7899146,
+    "ast_hash": "c89a643e4802fa8ebc490dd90398c6f3",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/IPT/source/pointers.py": {
-    "mtime": 1794832527.6101496,
-    "seen": 1794832638.5992825,
-    "ast_hash": "ca0ff2c74e06d37a65365f625d17f7fb",
+    "mtime": 1794839101.4454904,
+    "seen": 1794839191.7899163,
+    "ast_hash": "d3b7a0b0f8c078fff50d7af7fb3f8366",
     "semantic_hash": ""
   },
   "Subject Exam Reviewers/IPT/source/questions.py": {
-    "mtime": 1794832526.6917243,
-    "seen": 1794832638.5992844,
-    "ast_hash": "18d09f5c90de5d6a892ec51a40082c1a",
+    "mtime": 1794839102.0943718,
+    "seen": 1794839191.7899177,
+    "ast_hash": "5132e04ae137f0e531ce2b9b291e5eda",
+    "semantic_hash": ""
+  },
+  "Subject Exam Reviewers/CC6/source/figures.py": {
+    "mtime": 1794839085.3534188,
+    "seen": 1794839191.7898915,
+    "ast_hash": "70657326735d333c7b4065f26e510b3b",
+    "semantic_hash": ""
+  },
+  "Subject Exam Reviewers/EA/source/figures.py": {
+    "mtime": 1794839088.7396326,
+    "seen": 1794839191.7899027,
+    "ast_hash": "70657326735d333c7b4065f26e510b3b",
+    "semantic_hash": ""
+  },
+  "Subject Exam Reviewers/IPT/source/figures.py": {
+    "mtime": 1794839100.0843172,
+    "seen": 1794839191.789911,
+    "ast_hash": "70657326735d333c7b4065f26e510b3b",
+    "semantic_hash": ""
+  },
+  "Subject Exam Reviewers/OOP/source/figures.py": {
+    "mtime": 1794839096.3808508,
+    "seen": 1794839191.7899191,
+    "ast_hash": "70657326735d333c7b4065f26e510b3b",
+    "semantic_hash": ""
+  },
+  "Subject Exam Reviewers/WD/source/figures.py": {
+    "mtime": 1794839092.543079,
+    "seen": 1794839191.789927,
+    "ast_hash": "70657326735d333c7b4065f26e510b3b",
     "semantic_hash": ""
   },
   "package-lock.json": {

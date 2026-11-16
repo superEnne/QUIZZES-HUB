@@ -151,3 +151,27 @@ COMPARISONS = [
   ("Selection vs. Control vs. Evaluation", "Selection = funding decision. Control = ongoing projects. Evaluation = PIR and continuing value."),
   ("Project vs. Program", "Project = temporary and unique. Program = ongoing."),
 ]
+
+
+# Diagrams drawn under the section with the same heading (see figures.py).
+FIGURES = {
+  "The Future (\"To-Be\") View": {"type": "flow", "caption": "Moving from the current view to the future view.",
+      "boxes": ["Current view|\"as-is\": IT resources active today", "EA Management Plan|transition and sequencing plan", "Future view|\"to-be\": IT resources years from now"],
+      "labels": ["managed by", "leads to"], "shade": [1]},
+  "Strategic Level": {"type": "stack", "caption": "The five levels of the EA framework; updates are made top-down.",
+      "side": "top-down", "boxes": ["Strategic Level|goals and initiatives", "Business Level|products, services, processes",
+      "Information Level|data and information flows", "Systems/Services Level|systems and applications",
+      "Infrastructure Level|networks and infrastructure"], "shade": [0]},
+  "Future CONOPS Scenarios": {"type": "flow", "caption": "How future CONOPS scenarios are chosen and used.",
+      "boxes": ["SWOT Analysis|internal and external factors", "Several future scenarios|good and bad environments", "Planning assumptions|defensive and offensive moves"]},
+  "Plan Outline": {"type": "columns", "caption": "The four parts of the EA Management Plan.", "cols": [
+      {"title": "Part 1|EA Program Management", "rows": ["Governance and principles", "Roles", "Budget", "Measures"]},
+      {"title": "Part 2|Current Architecture", "rows": ["Goals, services", "Systems", "Infrastructure", "Standards, workforce"]},
+      {"title": "Part 3|Future Architecture", "rows": ["Future scenarios", "Planning assumptions", "Sequencing plan", "Configuration mgmt."]},
+      {"title": "Part 4|Glossary and References", "rows": ["Glossary", "Acronym list", "Bibliography"]}]},
+  "Part 1 - EA Program Management": {"type": "columns", "caption": "Outcome vs. output measures.", "cols": [
+      {"title": "Outcome measures", "rows": ["Progress toward a new end-state", "Tied to goal attainment", "e.g., reduce planning costs by 10%"]},
+      {"title": "Output measures", "rows": ["Data on activities and things", "Usually quantitative", "e.g., number of IT projects planned"]}]},
+  "The Four CPIC Phases (a cycle around the Project Management Plan)": {"type": "cycle", "caption": "The CPIC cycle around the Project Management Plan.",
+      "center": "Project Management Plan|(PMP)", "boxes": ["Plan|requirements, business case", "Select|funding decision", "Control|cost, schedule, risk", "Evaluate|PIR, continuing value"]},
+}

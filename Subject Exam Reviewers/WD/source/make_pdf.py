@@ -10,6 +10,7 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, Tab
                                 KeepTogether, Flowable)
 from xml.sax.saxutils import escape
 import pointers as P
+from figures import Figure
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "Pointers.pdf"
 R, B, I = "Times-Roman", "Times-Bold", "Times-Italic"
@@ -78,9 +79,15 @@ def build():
             if s.get("text") and after:
                 block.append(Spacer(1, 2))
                 block.append(Paragraph(esc(s["text"]), body_ind))
+            figs = s.get("figure") or getattr(P, "FIGURES", {}).get(s["heading"]) or []
+            if isinstance(figs, dict):
+                figs = [figs]
             # keep heading with its first lines
             story.append(KeepTogether(block[:3]))
             story.extend(block[3:])
+            for f in figs:
+                story.append(Spacer(1, 4))
+                story.append(Figure(f, indent=IND))
 
     # Quick comparisons
     n = len(P.CHAPTERS) + 1

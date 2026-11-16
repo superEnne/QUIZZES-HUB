@@ -186,3 +186,30 @@ COMPARISONS = [
   ("querySelector vs querySelectorAll", "querySelector = first match. querySelectorAll = all matches."),
   ("auto-fill vs auto-fit", "auto-fill = keeps empty columns. auto-fit = stretches existing columns."),
 ]
+
+
+# Diagrams drawn under the section with the same heading (see figures.py).
+FIGURES = {
+  "Transition": {"type": "flow", "caption": "Order of values in the transition shorthand, e.g., transition: width 2s ease 1s;",
+      "boxes": ["property|width", "duration|2s", "timing-function|ease", "delay|1s"]},
+  "Animation": {"type": "flow", "caption": "Using a CSS animation.",
+      "boxes": ["@keyframes|define the steps (from/to or %)", "Bind to an element|animation-name, animation-duration", "Animation plays|iteration-count, direction, fill-mode"]},
+  "CSS Display and Float": {"type": "columns", "caption": "The three common display values.", "cols": [
+      {"title": "block", "rows": ["Starts on a new line", "Takes the full width", "e.g., div, p, section"]},
+      {"title": "inline", "rows": ["Stays on the same line", "Only as wide as needed", "No width/height (a, span)"]},
+      {"title": "inline-block", "rows": ["Stays on the same line", "Allows width and height"]}]},
+  "CSS Grid (two-dimensional)": {"type": "columns", "caption": "Flexbox vs. CSS Grid.", "cols": [
+      {"title": "Flexbox|display: flex", "rows": ["One dimension: a row OR a column", "justify-content (main axis)", "align-items (cross axis)"]},
+      {"title": "CSS Grid|display: grid", "rows": ["Two dimensions: rows AND columns", "grid-template-columns, fr unit", "gap between rows and columns"]}]},
+  "DOM (Document Object Model)": {"type": "tree", "caption": "The DOM as a tree of nodes.",
+      "root": "document|<html>", "children": [
+        {"label": "<head>", "children": ["<title>"]},
+        {"label": "<body>", "children": ["<h1>", "<p>", "<button>"]}]},
+  "Domain Names": {"type": "columns", "caption": "Parts of the domain name blog.example.com.", "cols": [
+      {"title": "blog", "rows": ["Subdomain (third-level domain)"]},
+      {"title": "example", "rows": ["Second-Level Domain (SLD)"]},
+      {"title": ".com", "rows": ["Top-Level Domain (TLD)"]}]},
+  "Uploading a Website": {"type": "flow", "per_row": 4, "caption": "Steps to upload a website to a web host.",
+      "boxes": ["1 Choose a host|free or paid", "2 Get FTP credentials|host, user, port 21", "3 Upload files|public_html / htdocs", "4 Set up database|phpMyAdmin, .sql",
+                "5 Configure DNS|registrar nameservers", "6 Test|forms, links, database", "7 Troubleshoot|paths, 755/644, logs", "8 Maintain|monitor, back up"]},
+}

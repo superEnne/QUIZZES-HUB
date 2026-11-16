@@ -1868,10 +1868,10 @@
       "id": 161
     },
     {
-      "question": "In the business analogy of a website, the 'name' of the business is the:",
+      "question": "When you start a website, its 'name' is the:",
       "options": [
-        "Webmaster",
-        "Website content",
+        "Control panel",
+        "Root directory",
         "Domain name",
         "Web server"
       ],
@@ -1880,340 +1880,328 @@
       "id": 162
     },
     {
-      "question": "In the business analogy, the 'location' of the business is the:",
+      "question": "When you start a website, its 'location', where the site is hosted, is the:",
       "options": [
         "Web server",
-        "Control panel",
+        "Subdomain",
         "Domain name",
-        "Website content"
+        "Web browser"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 163
     },
     {
-      "question": "In the business analogy, the 'staff' is:",
+      "question": "Also called website address, it is the name that people type in the browser to open a certain website.",
       "options": [
-        "The visitors",
-        "The domain registrar",
-        "The hosting provider",
-        "You or the webmaster"
+        "Subdomain",
+        "IP address",
+        "Web host",
+        "Domain name"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 164
     },
     {
-      "question": "In the business analogy, the 'product' is the:",
+      "question": "These are the highest level in the hierarchy of domain names.",
       "options": [
-        "Backup system",
-        "Website content",
-        "Web server",
-        "Domain name"
+        "Internationalized Domain Names (IDNs)",
+        "Top-Level Domains (TLDs)",
+        "Subdomains",
+        "Second-Level Domains (SLDs)"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 165
     },
     {
-      "question": "If your website is your business, your host providers can be thought of as your:",
+      "question": "Which generic TLD is used by accredited educational institutions?",
       "options": [
-        "Customers",
-        "Competitors",
-        "Landlords",
-        "Employees"
+        ".org",
+        ".gov",
+        ".edu",
+        ".net"
       ],
       "answer": 2,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 166
     },
     {
-      "question": "Among the additional things a website needs, the 'insurance' is the:",
+      "question": ".ph, .jp, .uk, and .us are examples of:",
       "options": [
-        "Hosting account control panel",
-        "Username and password",
-        "Design of your site",
-        "Backup system"
+        "Sponsored TLDs (sTLDs)",
+        "New gTLDs",
+        "Second-Level Domains",
+        "Country-Code TLDs (ccTLDs)"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 167
     },
     {
-      "question": "Among the additional things a website needs, the 'office' is the:",
+      "question": "In \"example.com,\" the part \"example\" is the:",
       "options": [
-        "Hosting account control panel",
-        "Tools to update content",
-        "Design of your site",
-        "Backup system"
+        "Second-Level Domain (SLD)",
+        "Sponsored TLD",
+        "Subdomain",
+        "Top-Level Domain (TLD)"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 168
     },
     {
-      "question": "Among the additional things a website needs, the 'keys' are the:",
+      "question": "In \"blog.example.com,\" the part \"blog\" is a:",
       "options": [
-        "Domain name",
-        "Username and password",
-        "Web server",
-        "Backup system"
+        "Top-Level Domain (TLD)",
+        "Third-Level Domain (Subdomain)",
+        "Sponsored TLD (sTLD)",
+        "Second-Level Domain (SLD)"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 169
     },
     {
-      "question": "Also called website address, it is the name that people type in the browser to open a certain website.",
+      "question": ".tech, .store, .app, .xyz, and .guru are examples of:",
       "options": [
-        "Subdomain",
-        "Web host",
-        "Domain name",
-        "IP address"
+        "Internationalized Domain Names",
+        "Sponsored TLDs (sTLDs)",
+        "New gTLDs",
+        "Country-Code TLDs"
       ],
       "answer": 2,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 170
     },
     {
-      "question": "These are the highest level in the hierarchy of domain names.",
+      "question": "Specialized domains restricted to certain groups or organizations, such as .aero, .museum, and .coop.",
       "options": [
-        "Internationalized Domain Names (IDNs)",
-        "Second-Level Domains (SLDs)",
-        "Top-Level Domains (TLDs)",
-        "Subdomains"
+        "Subdomains",
+        "New gTLDs",
+        "Sponsored TLDs (sTLDs)",
+        "Generic TLDs"
       ],
       "answer": 2,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 171
     },
     {
-      "question": "Which generic TLD is used by accredited educational institutions?",
+      "question": "Domains that support non-ASCII characters, such as Chinese, Arabic, or Cyrillic characters.",
       "options": [
-        ".edu",
-        ".gov",
-        ".org",
-        ".net"
+        "Internationalized Domain Names (IDNs)",
+        "Country-Code TLDs (ccTLDs)",
+        "Sponsored TLDs (sTLDs)",
+        "New Generic TLDs (gTLDs)"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 172
     },
     {
-      "question": ".ph, .jp, .uk, and .us are examples of:",
+      "question": "Which platform is recommended for creating an ecommerce website?",
       "options": [
-        "Second-Level Domains",
-        "New gTLDs",
-        "Sponsored TLDs (sTLDs)",
-        "Country-Code TLDs (ccTLDs)"
+        "Web builders",
+        "Joomla",
+        "Drupal",
+        "PrestaShop"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 173
     },
     {
-      "question": "In \"example.com,\" the part \"example\" is the:",
+      "question": "Which platforms are recommended for creating a standard website or a blog?",
       "options": [
-        "Sponsored TLD",
-        "Second-Level Domain (SLD)",
-        "Subdomain",
-        "Top-Level Domain (TLD)"
+        "Drupal and Magento",
+        "WordPress and Joomla",
+        "OpenCart and OsCommerce",
+        "PrestaShop and Magento"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 174
     },
     {
-      "question": "In \"blog.example.com,\" the part \"blog\" is a:",
+      "question": "FTP, the credentials you get from your hosting dashboard or cPanel, stands for:",
       "options": [
-        "Third-Level Domain (Subdomain)",
-        "Sponsored TLD (sTLD)",
-        "Second-Level Domain (SLD)",
-        "Top-Level Domain (TLD)"
+        "File Transfer Protocol",
+        "Folder Transfer Path",
+        "File Text Protocol",
+        "Fast Transfer Program"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 175
     },
     {
-      "question": ".tech, .store, .app, .xyz, and .guru are examples of:",
+      "question": "What is the usual port number for FTP?",
       "options": [
-        "Country-Code TLDs",
-        "New gTLDs",
-        "Internationalized Domain Names",
-        "Sponsored TLDs (sTLDs)"
+        "443",
+        "21",
+        "3306",
+        "80"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 176
     },
     {
-      "question": "Specialized domains restricted to certain groups or organizations, such as .aero, .museum, and .coop.",
+      "question": "When uploading through the File Manager, website files go into the root directory, usually named:",
       "options": [
-        "Generic TLDs",
-        "Subdomains",
-        "Sponsored TLDs (sTLDs)",
-        "New gTLDs"
+        "uploads or assets",
+        "system32 or bin",
+        "public_html or htdocs",
+        "root_files or www_data"
       ],
       "answer": 2,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 177
     },
     {
-      "question": "Domains that support non-ASCII characters, such as Chinese, Arabic, or Cyrillic characters.",
+      "question": "If your website is compressed into a .zip file, you should:",
       "options": [
-        "New Generic TLDs (gTLDs)",
-        "Sponsored TLDs (sTLDs)",
-        "Country-Code TLDs (ccTLDs)",
-        "Internationalized Domain Names (IDNs)"
+        "Send it to the hosting provider by email",
+        "Rename it to .html and upload it as it is",
+        "Import it into the database using phpMyAdmin",
+        "Upload and extract it within the file manager"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 178
     },
     {
-      "question": "Which platform is recommended for creating an ecommerce website?",
+      "question": "For dynamic websites, the .sql file is imported using:",
       "options": [
-        "Drupal",
-        "PrestaShop",
-        "Joomla",
-        "Web builders"
+        "The File Manager's extract option",
+        "phpMyAdmin or a similar database management tool",
+        "The DNS settings at the domain registrar",
+        "The FTP host and port number"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 179
     },
     {
-      "question": "Which platforms are recommended for creating a standard website or a blog?",
+      "question": "When updating the database connection in your code, the database host is usually:",
       "options": [
-        "WordPress and Joomla",
-        "OpenCart and OsCommerce",
-        "PrestaShop and Magento",
-        "Drupal and Magento"
+        "localhost",
+        "ns1.yourhost.com",
+        "public_html",
+        "ftp.yourwebsite.com"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 180
     },
     {
-      "question": "FTP, the credentials you get from your hosting dashboard or cPanel, stands for:",
+      "question": "To use a custom domain, you point it to the hosting nameservers by updating the:",
       "options": [
-        "File Text Protocol",
-        "Folder Transfer Path",
-        "Fast Transfer Program",
-        "File Transfer Protocol"
+        "File permissions of public_html",
+        "FTP port number in cPanel",
+        "Database settings in phpMyAdmin",
+        "DNS settings at your domain registrar"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 181
     },
     {
-      "question": "What is the usual port number for FTP?",
+      "question": "DNS propagation can take up to:",
       "options": [
-        "443",
-        "80",
-        "21",
-        "3306"
+        "7 days",
+        "5 minutes",
+        "48 hours",
+        "30 days"
       ],
       "answer": 2,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 182
     },
     {
-      "question": "When uploading through the File Manager, website files go into the root directory, usually named:",
+      "question": "Which file permissions allow public access, as recommended when troubleshooting?",
       "options": [
-        "system32 or bin",
-        "root_files or www_data",
-        "public_html or htdocs",
-        "uploads or assets"
+        "000 for directories, 111 for files",
+        "777 for directories, 777 for files",
+        "755 for directories, 644 for files",
+        "644 for directories, 755 for files"
       ],
       "answer": 2,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 183
     },
     {
-      "question": "If your website is compressed into a .zip file, you should:",
+      "question": "Maintaining a website after it is uploaded includes:",
       "options": [
-        "Import it into the database using phpMyAdmin",
-        "Upload and extract it within the file manager",
-        "Send it to the hosting provider by email",
-        "Rename it to .html and upload it as it is"
+        "Deleting the database after each update",
+        "Monitoring performance and backing up regularly",
+        "Turning off the website during weekends",
+        "Buying a new domain name every month"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 184
     },
     {
-      "question": "For dynamic websites, the .sql file is imported using:",
+      "question": "These TLDs are the most common and widely used, such as .com, .org, and .net.",
       "options": [
-        "phpMyAdmin or a similar database management tool",
-        "The DNS settings at the domain registrar",
-        "The File Manager's extract option",
-        "The FTP host and port number"
+        "Generic TLDs (gTLDs)",
+        "Sponsored TLDs (sTLDs)",
+        "Country-Code TLDs (ccTLDs)",
+        "Internationalized Domain Names (IDNs)"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 185
     },
     {
-      "question": "When updating the database connection in your code, the database host is usually:",
+      "question": "Which TLD is used by U.S. government agencies?",
       "options": [
-        "public_html",
-        "ns1.yourhost.com",
-        "ftp.yourwebsite.com",
-        "localhost"
+        ".org",
+        ".net",
+        ".mil",
+        ".gov"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 186
     },
     {
-      "question": "To use a custom domain, you point it to the hosting nameservers by updating the:",
+      "question": "Subdomains can be used to:",
       "options": [
-        "File permissions of public_html",
-        "DNS settings at your domain registrar",
-        "Database settings in phpMyAdmin",
-        "FTP port number in cPanel"
+        "Replace the top-level domain of a website with a new one",
+        "Create distinct sections of a website or host separate sites under one domain",
+        "Translate a domain name into non-ASCII characters",
+        "Store the website's database and its .sql backup file"
       ],
       "answer": 1,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 187
     },
     {
-      "question": "DNS propagation can take up to:",
+      "question": "In the hosting control panel (e.g., cPanel), where do you create a new database and user?",
       "options": [
-        "5 minutes",
-        "7 days",
-        "30 days",
-        "48 hours"
+        "File Manager",
+        "DNS settings",
+        "Error logs",
+        "MySQL Databases section"
       ],
       "answer": 3,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 188
     },
     {
-      "question": "Which file permissions allow public access, as recommended when troubleshooting?",
+      "question": "Where do you check for errors when debugging server-side scripts such as PHP on a host?",
       "options": [
-        "755 for directories, 644 for files",
-        "777 for directories, 777 for files",
-        "644 for directories, 755 for files",
-        "000 for directories, 111 for files"
+        "The hosting provider's error logs",
+        "The browser's bookmarks list",
+        "The domain registrar's invoice",
+        "The website's public_html folder name"
       ],
       "answer": 0,
       "explanation": "Chapter 7 - Web Hosting",
       "id": 189
-    },
-    {
-      "question": "Step 8 (Maintain Your Website) includes:",
-      "options": [
-        "Choosing a web hosting provider and signing up",
-        "Getting the FTP credentials from cPanel",
-        "Monitoring performance and backing up regularly",
-        "Importing the .sql file into the database"
-      ],
-      "answer": 2,
-      "explanation": "Chapter 7 - Web Hosting",
-      "id": 190
     }
   ]
 }

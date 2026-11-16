@@ -2,6 +2,7 @@
 import json, random
 from collections import Counter
 import questions as Q
+import pointers as P
 
 rng = random.Random(6)  # fixed seed -> same answer letters every rebuild
 
@@ -21,6 +22,20 @@ def build_questions():
             out.append({"id": qid, "question": text, "options": wrong, "answer": pos, "explanation": expl})
             qid += 1
     return out
+
+def build_notes():
+    notes = []
+    for ch in P.CHAPTERS:
+        short = ch["chapter"].replace("Chapter ", "Ch. ")
+        for s in ch["sections"]:
+            t = {"heading": f"{short} · {s['heading']}"}
+            if s.get("text"): t["summary"] = s["text"]
+            if s.get("points"): t["points"] = s["points"]
+            if s.get("terms"): t["terms"] = [{"term": a, "definition": b} for a, b in s["terms"]]
+            notes.append(t)
+    notes.append({"heading": "Quick Comparisons",
+                  "terms": [{"term": a, "definition": b} for a, b in P.COMPARISONS]})
+    return notes
 
 if __name__ == "__main__":
     qs = build_questions()

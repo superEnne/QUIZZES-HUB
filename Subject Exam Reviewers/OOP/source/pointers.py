@@ -154,3 +154,31 @@ COMPARISONS = [
   ("Bundling vs. Information hiding", "Bundling = methods tied to data. Information hiding = internal details hidden."),
   ("Polymorphism vs. Operation overloading", "Polymorphism = different objects, same message. Overloading = same name for several methods."),
 ]
+
+
+# Diagrams drawn under the section with the same heading (see figures.py).
+FIGURES = {
+  "Adding/Deleting a Class": {"type": "tree", "caption": "A new class is added as a subclass; existing classes stay unchanged.",
+      "root": "Shape|name, getName(), calculateArea()", "children": ["Circle|calculateArea()", "Square|calculateArea()", "Triangle|new subclass"]},
+  "Interfaces": {"type": "columns", "caption": "extends vs. implements.", "cols": [
+      {"title": "extends|(a class)", "rows": ["Only one superclass", "Inherits nonprivate, nonoverridden members", "class B extends A"]},
+      {"title": "implements|(an interface)", "rows": ["Any number of interfaces", "Must write its own version of every method", "class B implements I"]}]},
+  "Abstract Class vs. Interface": {"type": "columns", "caption": "Abstract class vs. interface.", "cols": [
+      {"title": "Abstract class", "rows": ["Can have concrete and abstract methods", "Any kind of variables", "Constructor runs when a child is created", "A class extends only one"]},
+      {"title": "Interface", "rows": ["Methods are public and abstract", "Data are public, static, final", "No constructor", "A class implements many"]}]},
+  "Static and Dynamic Binding": {"type": "columns", "caption": "Static vs. dynamic binding.", "cols": [
+      {"title": "Static binding|compile time", "rows": ["Faster", "Used by class (static) methods", "Limited; harder to maintain"]},
+      {"title": "Dynamic binding|run time", "rows": ["Flexible", "Used by instance methods", "Method chosen by the object's class"]}]},
+  "Overloading and Overriding": {"type": "columns", "caption": "Overloading vs. overriding (redefining).", "cols": [
+      {"title": "Overloading", "rows": ["Same name, different parameters", "Usually in the same class", "Return type alone does not count"]},
+      {"title": "Overriding (redefining)", "rows": ["Same signature as the superclass method", "In a subclass", "Implementation may differ"]}]},
+  "Controlling Visibility": {"type": "columns", "caption": "Who can access an entity with each access specifier.", "cols": [
+      {"title": "private", "rows": ["Own class only"]},
+      {"title": "friendly (none)", "rows": ["Same package"]},
+      {"title": "protected", "rows": ["Subclasses"]},
+      {"title": "public", "rows": ["All other code"]}]},
+  "Encapsulation": {"type": "nested", "caption": "Encapsulation: methods are the only way to reach the hidden data.",
+      "box": {"label": "Object", "detail": "attributes and methods bundled together", "children": [
+          {"label": "Public methods (interface)", "detail": "bundling: the only means of affecting the data", "children": [
+              {"label": "Private data", "detail": "information hiding: internal representation is hidden"}]}]}},
+}

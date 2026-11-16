@@ -1,4 +1,5 @@
-"""Build the CC6 Finals pointers PDF: Times 12, black text only, review-material layout."""
+"""Build a subject's pointers PDF from pointers.py: Times 12, black text only, review-material layout.
+Usage: python3 make_pdf.py <output.pdf>"""
 import sys
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
@@ -9,8 +10,9 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, Tab
                                 KeepTogether, Flowable)
 from xml.sax.saxutils import escape
 import pointers as P
+from figures import Figure
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "CC6_Finals_Pointers.pdf"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "Pointers.pdf"
 R, B, I = "Times-Roman", "Times-Bold", "Times-Italic"
 SIZE, LEAD = 12, 15
 IND = 0.25 * inch          # body indent under a section heading
@@ -70,19 +72,22 @@ def build():
         for si, s in enumerate(ch["sections"], 1):
             head = Paragraph(f"{ch['num']}.{si}  {esc(s['heading'])}", sec)
             block = [head]
-            if s.get("text") and not s.get("terms") and not s.get("points"):
+            after = s.get("text_after", False)   # True = text is a follow-up note under the bullets
+            if s.get("text") and not after:
                 block.append(Paragraph(esc(s["text"]), body_ind))
-            else:
-                # text first if it is an introduction; for "Two Types" the text is a follow-up note
-                if s.get("text") and s["heading"] != "Two Types of Query Languages":
-                    block.append(Paragraph(esc(s["text"]), body_ind))
-                block.extend(bullets_for(s))
-                if s.get("text") and s["heading"] == "Two Types of Query Languages":
-                    block.append(Spacer(1, 2))
-                    block.append(Paragraph(esc(s["text"]), body_ind))
+            block.extend(bullets_for(s))
+            if s.get("text") and after:
+                block.append(Spacer(1, 2))
+                block.append(Paragraph(esc(s["text"]), body_ind))
+            figs = s.get("figure") or getattr(P, "FIGURES", {}).get(s["heading"]) or []
+            if isinstance(figs, dict):
+                figs = [figs]
             # keep heading with its first lines
             story.append(KeepTogether(block[:3]))
             story.extend(block[3:])
+            for f in figs:
+                story.append(Spacer(1, 4))
+                story.append(Figure(f, indent=IND))
 
     # Quick comparisons
     n = len(P.CHAPTERS) + 1
@@ -101,13 +106,13 @@ def build():
         canv.saveState()
         canv.setFont(R, 10)
         canv.setFillColor(black)
-        canv.drawCentredString(letter[0] / 2, 0.55 * inch, f"CC 6 Finals Pointers  |  Page {doc.page}")
+        canv.drawCentredString(letter[0] / 2, 0.55 * inch, f"{P.FOOTER}  |  Page {doc.page}")
         canv.restoreState()
 
     doc = SimpleDocTemplate(OUT, pagesize=letter, leftMargin=inch, rightMargin=inch,
                             topMargin=0.9 * inch, bottomMargin=0.9 * inch,
-                            title="CC 6 Finals Exam Pointers - Chapters 5 to 8",
-                            author="QuizHub", subject="Information Management")
+                            title=P.PDF_TITLE,
+                            author="QuizHub", subject=P.TITLE)
     from functools import partial
     from reportlab.pdfgen.canvas import Canvas
     doc.build(story, onFirstPage=footer, onLaterPages=footer,

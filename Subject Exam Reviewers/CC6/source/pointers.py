@@ -4,6 +4,8 @@
 
 TITLE = "CC 6 - Information Management"
 SUBTITLE = "Finals Exam Pointers - Chapters 5 to 8"
+FOOTER = "CC 6 Finals Pointers"
+PDF_TITLE = "CC 6 Finals Exam Pointers - Chapters 5 to 8"
 INTRO = ("This reviewer compacts Chapters 5 to 8 into one place. Each part starts with the big idea, "
          "followed by the key terms you need to remember. Quick comparisons for commonly confused "
          "terms are at the end.")
@@ -20,7 +22,7 @@ CHAPTERS = [
        "points": ["Queries can find, summarize, filter, combine, adjust, delete, insert, and update data",
                   "Basic types of queries - select, parameter, make-table, append, and crosstab queries",
                   "SQL (Structured Query Language) is the most popular query language for relational databases"]},
-      {"heading": "Two Types of Query Languages",
+      {"heading": "Two Types of Query Languages", "text_after": True,
        "terms": [("Procedural", "tells the computer how to do the task, step by step (example - PL/SQL)"),
                  ("Declarative", "states only what result is wanted, not how to get it (example - SQL)")],
        "text": "SQL is declarative because it describes what needs to be accomplished rather than how, "
@@ -185,3 +187,34 @@ COMPARISONS = [
   ("Real-time vs. Temporal", "Real-time processes data as it arrives. Temporal organizes data by time (histories)."),
   ("Explanatory vs. Predictive", "Explanatory explains existing data. Predictive forecasts future outcomes."),
 ]
+
+
+# Diagrams drawn under the section with the same heading (see figures.py).
+FIGURES = {
+  "Two Types of Query Languages": {"type": "columns", "caption": "Procedural vs. declarative query languages.", "cols": [
+      {"title": "Procedural|tells HOW", "rows": ["Step-by-step procedures", "Example: PL/SQL"]},
+      {"title": "Declarative|tells WHAT", "rows": ["Only the desired outcome", "Example: SQL"]}]},
+  "The Five SQL Sub-Languages": {"type": "tree", "caption": "The five SQL sub-languages and their key commands.",
+      "root": "SQL|Structured Query Language", "children": [
+      "DQL|SELECT", "DDL|CREATE, ALTER, DROP", "DML|INSERT, UPDATE, DELETE", "DCL|GRANT, REVOKE", "TCL|COMMIT, ROLLBACK, SAVEPOINT"]},
+  "Three Types of Data Models": {"type": "stack", "caption": "The three data models, from most abstract to most detailed.",
+      "side": "more detail", "boxes": [
+      "Conceptual (domain model)|big picture: what the system contains, business rules",
+      "Logical|data types, lengths, relationships; no technical requirements",
+      "Physical|tables, indexes, storage; used to create the schema"], "shade": [0]},
+  "Data Architecture Frameworks (IBM standard)": {"type": "columns", "caption": "TOGAF's four pillars.", "cols": [
+      {"title": "Business|Architecture", "rows": ["Structure, strategy, processes"]},
+      {"title": "Data|Architecture", "rows": ["Data assets and their lifecycle"]},
+      {"title": "Application|Architecture", "rows": ["Application systems and how they relate"]},
+      {"title": "Technical|Architecture", "rows": ["Hardware, software, networking"]}]},
+  "Data Management Systems": {"type": "flow", "caption": "From many sources to a warehouse, then focused data marts.",
+      "boxes": ["Data sources|many relational systems", "Data warehouse|one central, consistent repository", "Data mart|small subset for one team (e.g., HR)"],
+      "labels": ["aggregate", "subset"]},
+  "Operating Models": {"type": "columns", "caption": "The three Data Governance operating models.", "cols": [
+      {"title": "Centralized", "rows": ["One DG organization oversees all activities in all subject areas"]},
+      {"title": "Replicated", "rows": ["Each business unit adopts the same DG model and standards"]},
+      {"title": "Federated", "rows": ["One DG organization coordinates with multiple business units"]}]},
+  "Data Governance Activities": {"type": "flow", "per_row": 3, "caption": "Data Governance activities, in order.",
+      "boxes": ["Define DG|for the organization", "Readiness|assessment", "Discovery and|business alignment",
+                "Organizational|touch points", "DG strategy|charter, roadmap", "Operating|framework"]},
+}

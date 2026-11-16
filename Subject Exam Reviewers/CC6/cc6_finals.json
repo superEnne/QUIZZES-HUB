@@ -91,7 +91,7 @@
     },
     {
       "id": 8,
-      "question": "According to the module, procedural paradigms are exemplified by languages like:",
+      "question": "Procedural paradigms are exemplified by languages like:",
       "options": [
         "GraphQL",
         "SQL",
@@ -2047,7 +2047,7 @@
     },
     {
       "id": 171,
-      "question": "According to the module, data is said to be the new:",
+      "question": "In modern databases, data is said to be the new:",
       "options": [
         "Gold",
         "Electricity",

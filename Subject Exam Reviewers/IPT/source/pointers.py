@@ -155,3 +155,42 @@ COMPARISONS = [
   ("Symmetric vs. Asymmetric", "Symmetric = one shared key, fast (AES). Asymmetric = public/private pair, slower, key exchange (RSA)."),
   ("HMAC vs. Digital signature", "HMAC = shared secret, proves authentic and unchanged. Signature = private key signs, public verifies, non-repudiation."),
 ]
+
+
+# Diagrams drawn under the section with the same heading (see figures.py).
+FIGURES = {
+  "Web Service Architecture and SOA": {"type": "triangle", "caption": "Publish, find, and bind in a service-oriented architecture.",
+      "top": "Service Registry|UDDI directory", "left": "Service Requester|client / consumer", "right": "Service Provider|hosts the service",
+      "edges": {"left-top": "1. Find", "right-top": "2. Publish (WSDL)", "left-right": "3. Bind and invoke"}},
+  "SOAP (Simple Object Access Protocol)": {"type": "nested", "caption": "The parts of a SOAP message.",
+      "box": {"label": "SOAP Envelope", "detail": "root element: start and end of the message", "children": [
+          {"label": "SOAP Header (optional)", "detail": "authentication, transaction, routing"},
+          {"label": "SOAP Body (required)", "detail": "request or response data", "children": [
+              {"label": "Fault (on error)", "detail": "faultcode, faultstring, faultactor, detail"}]}]}},
+  "Status Codes": {"type": "columns", "caption": "HTTP status code families.", "cols": [
+      {"title": "2xx|Success", "rows": ["200 OK", "201 Created", "204 No Content"]},
+      {"title": "3xx|Redirection", "rows": ["301 Moved Permanently", "304 Not Modified"]},
+      {"title": "4xx|Client error", "rows": ["400 Bad Request", "401 Unauthorized", "404 Not Found"]},
+      {"title": "5xx|Server error", "rows": ["500 Internal Server Error", "503 Service Unavailable"]}]},
+  "Requests, Headers, and Query Parameters": {"type": "flow", "caption": "Anatomy of GET https://api.school.edu/students/42?active=true",
+      "boxes": ["Method|GET", "Base URL|https://api.school.edu", "Resource path|/students/42", "Query string|?active=true"]},
+  "The Three Layers": {"type": "stack", "caption": "The three layers of reliable and secure data exchange.",
+      "side": "all three together", "down": False, "boxes": [
+      "Layer 3: Data protection|keep it secret, prove it was not changed, deserialize safely",
+      "Layer 2: Access control|prove who is calling and what they may do",
+      "Layer 1: Serialization|turn data into a portable format both sides understand"], "shade": [0]},
+  "Layer 1: Serialization": {"type": "flow", "caption": "The serialization round trip: deserialize(serialize(x)) must equal x.",
+      "boxes": ["Object in memory|Service A", "Text / bytes|{\"orderId\": ..., \"total\": 2480}", "Object rebuilt|Client B"],
+      "labels": ["serialize", "deserialize"]},
+  "Layer 2: Access Control": [
+      {"type": "flow", "caption": "Authentication, then authorization.", "labels": ["", "pass", "pass"],
+       "boxes": ["Incoming request", "Gate 1: Authentication|Who are you? (fail: 401)", "Gate 2: Authorization|What may you do? (fail: 403)", "Handler runs"]},
+      {"type": "flow", "caption": "The three parts of a JWT: signed, NOT encrypted.",
+       "boxes": ["Header|which algorithm signs it", "Payload|user id, role, expiry (readable)", "Signature|proves it was not altered"]}],
+  "Layer 3: Data Protection": {"type": "columns", "caption": "Symmetric vs. asymmetric encryption (TLS combines both).", "cols": [
+      {"title": "Symmetric|e.g., AES", "rows": ["One shared key encrypts and decrypts", "Fast, good for bulk data", "Challenge: sharing the key safely"]},
+      {"title": "Asymmetric|e.g., RSA, ECC", "rows": ["Public key encrypts, private key decrypts", "Slower, used for key exchange"]}]},
+  "Insecure Deserialization and Defenses": {"type": "flow", "per_row": 3, "caption": "One secure request, in order.",
+      "boxes": ["1 Serialize|build the JSON payload", "2 Authenticate|attach a signed token", "3 Encrypt in transit|send over TLS",
+                "4 Validate|check the schema first", "5 Verify integrity|confirm the HMAC", "6 Store safely|encrypt data at rest"]},
+}

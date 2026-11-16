@@ -861,6 +861,30 @@
    "author": null,
    "contributor": null,
    "rationale": "Bundles slides, reading material and the Data Exchange summary."
+  },
+  {
+   "id": "docs_project_knowledge_exam_realism",
+   "label": "Exam realism: no module-example items, few scenarios, many definitions",
+   "file_type": "rationale",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "User feedback: module examples and situational items will not appear in the real exam."
+  },
+  {
+   "id": "docs_project_knowledge_pointers_figures",
+   "label": "Pointers PDFs include diagrams (figures.py)",
+   "file_type": "rationale",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "User asked for visuals like the IPT review material; black-and-white flow/stack/tree/columns/cycle/nested/triangle/cells figures."
   }
  ],
  "edges": [
@@ -2548,6 +2572,126 @@
    "source": "docs_project_knowledge_pointers_pdf_rules",
    "target": "subject_exam_reviewers_ipt_source_make_pdf",
    "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_realism",
+   "target": "subject_exam_reviewers_cc6_source_questions",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_realism",
+   "target": "subject_exam_reviewers_ea_source_questions",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_realism",
+   "target": "subject_exam_reviewers_wd_source_questions",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_realism",
+   "target": "subject_exam_reviewers_oop_source_questions",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_realism",
+   "target": "subject_exam_reviewers_ipt_source_questions",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_pointers_figures",
+   "target": "subject_exam_reviewers_cc6_source_figures",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_pointers_figures",
+   "target": "subject_exam_reviewers_ea_source_figures",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_pointers_figures",
+   "target": "subject_exam_reviewers_wd_source_figures",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_pointers_figures",
+   "target": "subject_exam_reviewers_oop_source_figures",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_pointers_figures",
+   "target": "subject_exam_reviewers_ipt_source_figures",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_realism",
+   "target": "docs_project_knowledge_quiz_writing_rules",
+   "relation": "conceptually_related_to",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_pointers_figures",
+   "target": "docs_project_knowledge_pointers_pdf_rules",
+   "relation": "conceptually_related_to",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
    "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",

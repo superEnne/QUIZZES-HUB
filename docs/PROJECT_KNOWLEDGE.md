@@ -138,6 +138,13 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - Only the lilac/purple/pink palette is used (user request: no yellow, green, orange or teal outliers). Correct = violet (#ede9fe / #8b5cf6 / #5b21b6), wrong = pink (#fce7f3 / #f472b6 / #db2777); timer and other accents use pink. TypeBadge gives each question type its own purple/pink shade; SubjectCard COLORS cycles lilac, pink, soft blue, violet, rose, purple. The soft blue (--blue vars) is part of the theme and stays.
 - `src/components/ScrollToTop.jsx` scrolls to the top on every route change (an SPA otherwise keeps the old scroll position, so pages opened from far down a list opened at the bottom). QuizPage also scrolls to the top when the screen changes (start, each question, results).
 
+## 6i. Exam Realism Revision (all Finals exams)
+
+- Done after user feedback ("questions out of reach", "too many situational questions", "add straight definitions"). A reusable editor `revise_tool.py` (container helper) dropped/replaced items by question text and appended new ones per module.
+- OOP: dropped 17 module-example items (HomeCare, Triangle in the Shape program, SalesManager/Manage, WorkingDog/Worker, ColourTest, procedural Shape, SalesPerson counting, egg analogy), rewrote 14 generically, added 23 "What is ...?" definitions (superclass, subclass, interface, abstract/concrete class, abstract method, polymorphism, static/dynamic binding, overloading, signature, upcasting, modularity, class/object attribute, package...). Output-tracing names changed from the module's (Simon/Selene) to generic. Now 129 MC + 13 output tracing = 142.
+- EA: dropped home-analogy and example-scenario items, removed section-number wording, added definitions (CONOPS, PMP, as-is view, EA governance, EA principles, waiver, PIR, CPIC). 101 MC + 46 T/F = 147.
+- WD: dropped the website-as-business mapping items (staff, product, landlord, insurance, office, keys), added hosting definitions. 171 MC + 18 output tracing = 189. CC6: only "according to the module" wording removed (already definitional). COMPROG3: replaced the clock and bank-balance analogy T/F items. IPT1: dropped the reading-material scenarios (bank/e-wallet, ride-hailing, enrollment week, double-tap, etc.), turned the rest into direct definitions (pagination, OAuth 2.0, RBAC, HMAC, rate limiting, 401/403...), added 8 definitions. 176 MC.
+
 ## 7. Reviewer-Making Rules (the user's preferences)
 
 The user provides the modules per subject and decides the question types.
@@ -151,6 +158,7 @@ The user provides the modules per subject and decides the question types.
 - Verify any code output by running the code (Node/jsdom for JavaScript, javac/java for Java) instead of trusting the module's printed output.
 - When the user provides quizzes for the subject, include their items in the exam (same wording) and match the quiz's output-tracing difficulty.
 - The user chooses the question types per subject (CC6: multiple choice; WD: multiple choice + output tracing; EA: multiple choice + True or False; OOP: multiple choice + output tracing; COMPROG3: identification, output tracing, true or false; IPT1: multiple choice with mixed difficulty levels).
+- Exam realism (user feedback after the first round): questions must make sense in a real exam. Do NOT build items on the module's own worked examples, analogies, or section numbers (e.g., the OOP HomeCare/SalesManager/WorkingDog examples, the EA "home architecture" analogy and example scenarios, the WD "website as a business" mapping, "according to section 2.3"). Keep situational items rare and generic; include plenty of straight definitions ("What is an abstract class?", "What is polymorphism?") in the style of the class quizzes. Self-contained code-tracing items are fine (real OOP exams give a class and ask for the output).
 - Keep True/False roughly balanced (about 40-50% false) so guessing "True" does not pay off.
 
 ### Pointers PDF rules
@@ -158,6 +166,7 @@ The user provides the modules per subject and decides the question types.
 - A clear module summary explanation that is not text heavy.
 - Compact all the modules into one document.
 - Layout follows the user's "Review Material" PDFs (for example the IPT1 Week 6 and Week 7 reviews): centered bold title, italic subtitle, numbered part headings with a rule under them, short intro paragraphs, "Term - meaning" bullets. The review files are a format basis only; their content is unrelated to the modules.
+- Add visuals (user request, like the IPT review material): simple black-and-white diagrams drawn by `figures.py` (flow, stack, tree, columns, cycle, nested, triangle, cells). Each subject's pointers.py has a FIGURES dict {section heading: spec or [specs]}; make_pdf.py draws them under that section with numbered captions. All subjects now share the same make_pdf.py + figures.py.
 - The PDF is shown on the site as a Reviewer Pointers card (like a Flash Card), not as on-page notes.
 
 ## 8. Workflow and Gotchas

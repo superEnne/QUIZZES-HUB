@@ -65,64 +65,52 @@ export const exams = {
           "id": 3
         },
         {
-          "question": "In the home architecture analogy, having future EA views is like having:",
+          "question": "The development of future EA views is important to an enterprise because it supports:",
           "options": [
-            "A full set of blueprints for the modification of an existing home or for building a new home",
-            "The owner's budget and the builder's schedule",
-            "The architect's project plan showing the design, approach, timeframe, and sequencing of work",
-            "A list of furniture for each room of the house"
+            "Resource planning and decision-making",
+            "Hardware repair",
+            "Software coding, testing, and debugging",
+            "Payroll processing"
           ],
           "answer": 0,
-          "explanation": "Chapter 9 - Developing Future Architecture Views. The architect's project plan is the analogy for the EA Management Plan (Chapter 10).",
+          "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 4
         },
         {
-          "question": "The development of future EA views is important to an enterprise because it supports:",
+          "question": "Initiatives in the very early stages of consideration can be left out of future views until they have:",
           "options": [
-            "Software coding, testing, and debugging",
-            "Hardware repair",
-            "Resource planning and decision-making",
-            "Payroll processing"
+            "A completed Post-Implementation Review and a lessons-learned report",
+            "A signed vendor contract, installed hardware, and trained end-users",
+            "Firm backing from sponsors, strong business cases, and viable technical solutions",
+            "Approval from all end-users, the webmaster, the research analyst, and the data architect"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 5
         },
         {
-          "question": "Initiatives in the very early stages of consideration can be left out of future views until they have:",
+          "question": "Candidate initiatives are better documented in:",
           "options": [
-            "Approval from all end-users, the webmaster, the research analyst, and the data architect",
-            "A signed vendor contract, installed hardware, and trained end-users",
-            "A completed Post-Implementation Review and a lessons-learned report",
-            "Firm backing from sponsors, strong business cases, and viable technical solutions"
+            "The current view of the Strategic Plan",
+            "The Network Inventory",
+            "The Data Dictionary",
+            "A special section of the EA Management Plan"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 6
         },
         {
-          "question": "Candidate initiatives are better documented in:",
+          "question": "CONOPS stands for:",
           "options": [
-            "A special section of the EA Management Plan",
-            "The Data Dictionary",
-            "The Network Inventory",
-            "The current view of the Strategic Plan"
+            "Concept of Operations",
+            "Control of Operations",
+            "Continuity of Operations",
+            "Configuration of Operating Systems"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 7
-        },
-        {
-          "question": "CONOPS stands for:",
-          "options": [
-            "Continuity of Operations",
-            "Concept of Operations",
-            "Configuration of Operating Systems",
-            "Control of Operations"
-          ],
-          "answer": 1,
-          "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 8
         },
         {
           "question": "CONOPS scenarios looking into the future have been used for millennia as a:",
@@ -134,439 +122,475 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 9
+          "id": 8
         },
         {
           "question": "The role that future scenarios play in developing EA future views is identifying:",
           "options": [
-            "A range of operating options and planning assumptions for the enterprise",
-            "The single exact operating environment the enterprise will face in the future",
             "The final cost and schedule of every planned IT project",
-            "The complete list of IT resources currently in operation"
+            "A range of operating options and planning assumptions for the enterprise",
+            "The complete list of IT resources currently in operation",
+            "The single exact operating environment the enterprise will face in the future"
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 10
+          "id": 9
         },
         {
           "question": "When an enterprise thinks through its scenarios in advance, its initiatives are described as:",
           "options": [
-            "Counter-moves",
-            "Defensive moves",
             "Offensive moves",
+            "Defensive moves",
+            "Counter-moves",
             "Neutral moves"
           ],
-          "answer": 2,
+          "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views. Probable responses are defensive moves.",
-          "id": 11
+          "id": 10
         },
         {
           "question": "Enterprises should identify a range of internal and external factors from this analysis in deciding which future CONOPS scenarios to document.",
           "options": [
-            "Post-Implementation Review",
-            "Cost-Benefit Analysis",
             "CRUD Matrix",
-            "SWOT Analysis"
+            "Cost-Benefit Analysis",
+            "SWOT Analysis",
+            "Post-Implementation Review"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 9 - Developing Future Architecture Views",
+          "id": 11
+        },
+        {
+          "question": "Why is having a number of future scenarios helpful to an enterprise?",
+          "options": [
+            "It reduces the number of EA artifacts that must be documented and maintained at each level of the framework",
+            "Only one scenario can be documented per year, so several years are needed",
+            "Each scenario replaces the need for a separate Strategic Plan document",
+            "It is impossible to predict which internal/external factors will create a helpful or hostile operating environment"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 12
         },
         {
-          "question": "Why is having a number of future scenarios helpful to an enterprise?",
+          "question": "Which of the following is a Strategic Level EA artifact?",
           "options": [
-            "It reduces the number of EA artifacts that must be documented and maintained at each level of the framework",
-            "It is impossible to predict which internal/external factors will create a helpful or hostile operating environment",
-            "Each scenario replaces the need for a separate Strategic Plan document",
-            "Only one scenario can be documented per year, so several years are needed"
+            "Rack Elevation Diagram (NI-7)",
+            "Balanced Scorecard (S-5)",
+            "Logical Data Model (D-5)",
+            "Swim Lane Process Diagram (B-3)"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 13
         },
         {
-          "question": "Which of the following is a Strategic Level EA artifact?",
+          "question": "Which plan provides more detailed descriptions of how IT initiatives will support the enterprise's Strategic Plan?",
           "options": [
-            "Rack Elevation Diagram (NI-7)",
-            "Logical Data Model (D-5)",
-            "Balanced Scorecard (S-5)",
-            "Swim Lane Process Diagram (B-3)"
+            "Security Plan",
+            "COOP Plan",
+            "E-Business or E-Government Plan",
+            "Knowledge Management Plan"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 14
         },
         {
-          "question": "Which plan provides more detailed descriptions of how IT initiatives will support the enterprise's Strategic Plan?",
+          "question": "How often should updated strategic plans be published to reflect changes in direction and priorities?",
           "options": [
-            "Knowledge Management Plan",
-            "Security Plan",
-            "COOP Plan",
-            "E-Business or E-Government Plan"
+            "Every month",
+            "Only once",
+            "Every week",
+            "Every few years"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 15
         },
         {
-          "question": "How often should updated strategic plans be published to reflect changes in direction and priorities?",
+          "question": "Future scenarios should be documented the same way as the current scenario, which is as:",
           "options": [
-            "Every few years",
-            "Every week",
-            "Only once",
-            "Every month"
+            "An integrated narrative and set of planning assumptions",
+            "A network connectivity diagram and an equipment inventory",
+            "A data dictionary of entities and formats",
+            "A list of hardware and software products"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 16
         },
         {
-          "question": "Future scenarios should be documented the same way as the current scenario, which is as:",
+          "question": "High-level resource planning supported by IT-related strategic initiatives is also known as the:",
           "options": [
-            "An integrated narrative and set of planning assumptions",
-            "A list of hardware and software products",
-            "A data dictionary of entities and formats",
-            "A network connectivity diagram and an equipment inventory"
+            "Capital planning and investment control (CPIC) process",
+            "EA configuration management (CM) process",
+            "Post-implementation review (PIR) process",
+            "Systems analysis and design method (SADM) process"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 17
         },
         {
-          "question": "High-level resource planning supported by IT-related strategic initiatives is also known as the:",
+          "question": "Changes to strategic goals and initiatives in the future views will require new or modified:",
           "options": [
-            "Systems analysis and design method (SADM) process",
-            "Capital planning and investment control (CPIC) process",
-            "Post-implementation review (PIR) process",
-            "EA configuration management (CM) process"
+            "Data dictionaries and object libraries",
+            "Outcome and output measures of success",
+            "Hardware and software product lists",
+            "Cable plant and network diagrams"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 18
         },
         {
-          "question": "Changes to strategic goals and initiatives in the future views will require new or modified:",
+          "question": "Which of the following is a Business Level EA artifact?",
           "options": [
-            "Hardware and software product lists",
-            "Data dictionaries and object libraries",
-            "Cable plant and network diagrams",
-            "Outcome and output measures of success"
+            "System Interface Matrix (SA-3)",
+            "Network Inventory (NI-2)",
+            "SWOT Analysis (S-2)",
+            "Investment Business Case (B-8)"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 19
         },
         {
-          "question": "Which of the following is a Business Level EA artifact?",
+          "question": "Influencing factors such as new customer requirements, competitive strategies, new technologies, and changes in resource availability are also known as:",
           "options": [
-            "Network Inventory (NI-2)",
-            "SWOT Analysis (S-2)",
-            "Investment Business Case (B-8)",
-            "System Interface Matrix (SA-3)"
+            "Waivers",
+            "Artifacts",
+            "Drivers",
+            "Baselines"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 20
         },
         {
-          "question": "Influencing factors such as new customer requirements, competitive strategies, new technologies, and changes in resource availability are also known as:",
-          "options": [
-            "Drivers",
-            "Baselines",
-            "Waivers",
-            "Artifacts"
-          ],
-          "answer": 0,
-          "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 21
-        },
-        {
           "question": "Which is NOT one of the four general types of changes to business services?",
           "options": [
-            "Major reengineering of an existing process",
+            "Outsourcing of an existing process to a vendor",
             "Minor improvement of an existing process",
-            "Introduction of a completely new process",
-            "Outsourcing of an existing process to a vendor"
+            "Major reengineering of an existing process",
+            "Introduction of a completely new process"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views. The four types: new process, elimination, major reengineering, and minor improvement.",
-          "id": 22
+          "id": 21
         },
         {
           "question": "Reviews of existing business services, to find those that are obsolete or duplicative, should be performed periodically by:",
           "options": [
             "End-user representatives",
             "The EA tool expert",
-            "Line-of-business managers",
-            "The webmaster"
+            "The webmaster",
+            "Line-of-business managers"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 23
+          "id": 22
         },
         {
           "question": "Documenting approved changes to business services helps maintain this kind of alignment with strategic goals and initiatives.",
           "options": [
             "Horizontal alignment",
+            "External alignment",
             "Upward alignment",
-            "Downward alignment",
-            "External alignment"
+            "Downward alignment"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views. Downward alignment ensures the lower three levels are adjusted to support the process changes.",
-          "id": 24
+          "id": 23
         },
         {
           "question": "The Project Management Plan (PMP) is described as a:",
           "options": [
-            "Network diagram",
-            "One-time document",
             "Legal contract",
-            "Living document"
+            "Living document",
+            "One-time document",
+            "Network diagram"
           ],
-          "answer": 3,
+          "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 25
+          "id": 24
         },
         {
           "question": "The current view of the PMP is developed in this stage of the project lifecycle.",
           "options": [
             "Maintenance stage",
             "Disposal stage",
-            "Requirements planning stage",
-            "Evaluation stage"
+            "Evaluation stage",
+            "Requirements planning stage"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 9 - Developing Future Architecture Views",
+          "id": 25
+        },
+        {
+          "question": "SADM stands for:",
+          "options": [
+            "System Audit and Data Monitoring",
+            "Strategic Architecture Development Model",
+            "Systems Analysis and Design Methods",
+            "Software Application Delivery Management"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 26
         },
         {
-          "question": "SADM stands for:",
+          "question": "A future view of a PMP may NOT be needed with methods that develop the entire system capability in one effort, such as:",
           "options": [
-            "Systems Analysis and Design Methods",
-            "Software Application Delivery Management",
-            "Strategic Architecture Development Model",
-            "System Audit and Data Monitoring"
+            "Waterfall or rapid application development",
+            "Evolutionary (spiral) development",
+            "Incremental (phased) development",
+            "Phased ERP implementation"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 27
         },
         {
-          "question": "A future view of a PMP may NOT be needed with methods that develop the entire system capability in one effort, such as:",
+          "question": "Which is an example where having both a current and future view of the PMP would be beneficial?",
           "options": [
-            "Evolutionary (spiral) development",
-            "Waterfall or rapid application development",
-            "Incremental (phased) development",
-            "Phased ERP implementation"
+            "A waterfall project where the whole system is delivered in one release",
+            "Phased implementation of large ERP projects with several modules",
+            "A small website developed in a single effort",
+            "A one-time purchase of desktop computers"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 28
         },
         {
-          "question": "Which is an example where having both a current and future view of the PMP would be beneficial?",
+          "question": "The part of the PMP that documents the value of the investment to the enterprise.",
           "options": [
-            "A one-time purchase of desktop computers",
-            "Phased implementation of large ERP projects with several modules",
-            "A waterfall project where the whole system is delivered in one release",
-            "A small website developed in a single effort"
+            "Network inventory",
+            "Investment business case",
+            "Sequencing plan",
+            "Data dictionary"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 29
         },
         {
-          "question": "The part of the PMP that documents the value of the investment to the enterprise.",
+          "question": "The determination that another use of the invested funds is not warranted relates to:",
           "options": [
-            "Sequencing plan",
-            "Data dictionary",
-            "Investment business case",
-            "Network inventory"
+            "Sunk cost",
+            "Total cost of ownership",
+            "Opportunity cost",
+            "Replacement cost"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 30
         },
         {
-          "question": "The determination that another use of the invested funds is not warranted relates to:",
+          "question": "Which of the following is an Information Level EA artifact?",
           "options": [
-            "Opportunity cost",
-            "Total cost of ownership",
-            "Sunk cost",
-            "Replacement cost"
+            "Activity/Entity (CRUD) Matrix (D-7)",
+            "Concept of Operations Diagram (S-4)",
+            "Use Case Narrative and Diagram (B-7)",
+            "Cable Plant Diagram (NI-6)"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 31
         },
         {
-          "question": "Which of the following is an Information Level EA artifact?",
+          "question": "Future changes in data models can be integrated into current views by using special notation such as:",
           "options": [
-            "Use Case Narrative and Diagram (B-7)",
-            "Concept of Operations Diagram (S-4)",
-            "Cable Plant Diagram (NI-6)",
-            "Activity/Entity (CRUD) Matrix (D-7)"
+            "Colored backgrounds",
+            "Different fonts",
+            "Page numbers",
+            "Dashed lines and symbols"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 32
         },
         {
-          "question": "Future changes in data models can be integrated into current views by using special notation such as:",
+          "question": "One of the most powerful reasons for adopting an Object-Oriented (OO) approach is that:",
           "options": [
-            "Dashed lines and symbols",
-            "Colored backgrounds",
-            "Page numbers",
-            "Different fonts"
+            "Objects can be modified with minimal effort to reflect changes in requirements",
+            "OO removes the need for logical and physical data models in system design",
+            "OO only works with proprietary products from one vendor",
+            "Objects never need to be changed once they are created"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 33
         },
         {
-          "question": "One of the most powerful reasons for adopting an Object-Oriented (OO) approach is that:",
+          "question": "These provide taxonomies and standard formats for data entities but do not store actual data.",
           "options": [
-            "OO removes the need for logical and physical data models in system design",
-            "Objects never need to be changed once they are created",
-            "Objects can be modified with minimal effort to reflect changes in requirements",
-            "OO only works with proprietary products from one vendor"
+            "Knowledge Warehouses",
+            "Object Libraries",
+            "Data Dictionaries",
+            "Databases"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 34
         },
         {
-          "question": "These provide taxonomies and standard formats for data entities but do not store actual data.",
+          "question": "These store both the formats/standards and the actual modules of code that constitute an object.",
           "options": [
-            "Object Libraries",
             "Data Dictionaries",
-            "Knowledge Warehouses",
-            "Databases"
+            "Object Libraries",
+            "Network Inventories",
+            "Swim Lane Diagrams"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 35
         },
         {
-          "question": "These store both the formats/standards and the actual modules of code that constitute an object.",
+          "question": "The protection of parts of the code module from alteration is called:",
           "options": [
-            "Network Inventories",
-            "Data Dictionaries",
-            "Swim Lane Diagrams",
-            "Object Libraries"
+            "Inheritance",
+            "Interoperability",
+            "Configuration management",
+            "Encapsulation"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 36
         },
         {
-          "question": "The protection of parts of the code module from alteration is called:",
+          "question": "Which of the following is a Systems/Services Level EA artifact?",
           "options": [
-            "Configuration management",
-            "Interoperability",
-            "Encapsulation",
-            "Inheritance"
+            "Business Plan (B-1)",
+            "Building Blueprints (NI-4)",
+            "System Evolution Diagram (SA-8)",
+            "Physical Data Model (D-6)"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 37
         },
         {
-          "question": "Which of the following is a Systems/Services Level EA artifact?",
+          "question": "These are where the designed interface points in the programming code of commercial software are located.",
           "options": [
-            "System Evolution Diagram (SA-8)",
-            "Business Plan (B-1)",
-            "Building Blueprints (NI-4)",
-            "Physical Data Model (D-6)"
+            "Application Program Interfaces (APIs)",
+            "Network Center Diagrams (NI-5)",
+            "Data Dictionaries / Object Libraries",
+            "System Interface Matrices (SA-3)"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 38
         },
         {
-          "question": "These are where the designed interface points in the programming code of commercial software are located.",
+          "question": "Web-based services exchange information through the:",
           "options": [
-            "System Interface Matrices (SA-3)",
-            "Application Program Interfaces (APIs)",
-            "Data Dictionaries / Object Libraries",
-            "Network Center Diagrams (NI-5)"
+            "COOP Plan and security plan",
+            "NAP/ESB Web Service Platform",
+            "OSI and TCP/IP network models",
+            "Cable plant and wiring closets"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 39
         },
         {
-          "question": "Web-based services exchange information through the:",
+          "question": "WSDL descriptions of web services are kept in the:",
           "options": [
-            "OSI and TCP/IP network models",
-            "Cable plant and wiring closets",
-            "COOP Plan and security plan",
-            "NAP/ESB Web Service Platform"
+            "Data Dictionary",
+            "Network Inventory",
+            "EA repository glossary",
+            "UDDI Registry"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 40
         },
         {
-          "question": "WSDL descriptions of web services are kept in the:",
+          "question": "Which of the following is an Infrastructure Level EA artifact?",
           "options": [
-            "UDDI Registry",
-            "EA repository glossary",
-            "Network Inventory",
-            "Data Dictionary"
+            "Rack Elevation Diagram (NI-7)",
+            "Information Exchange Matrix (D-2)",
+            "Strategic Plan (S-1)",
+            "System Data Flow Diagram (SA-4)"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 41
         },
         {
-          "question": "Which of the following is an Infrastructure Level EA artifact?",
+          "question": "Network technical standards in the future view include changes reflected in models such as:",
           "options": [
-            "System Data Flow Diagram (SA-4)",
-            "Rack Elevation Diagram (NI-7)",
-            "Strategic Plan (S-1)",
-            "Information Exchange Matrix (D-2)"
+            "The waterfall and spiral models",
+            "The OSI model and TCP/IP model",
+            "IDEF-0 and swim lane models",
+            "The Balanced Scorecard and SWOT"
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 42
         },
         {
-          "question": "Network technical standards in the future view include changes reflected in models such as:",
+          "question": "Future views of security documentation include the related security documentation for applications and databases, and the:",
           "options": [
-            "IDEF-0 and swim lane models",
-            "The waterfall and spiral models",
-            "The Balanced Scorecard and SWOT",
-            "The OSI model and TCP/IP model"
+            "Use Case Diagram",
+            "Balanced Scorecard",
+            "Business Plan",
+            "COOP Plan"
           ],
           "answer": 3,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 43
         },
         {
-          "question": "Future views of security documentation include the related security documentation for applications and databases, and the:",
+          "question": "The future view of EACRs consists of an archive of:",
           "options": [
-            "Balanced Scorecard",
-            "Use Case Diagram",
-            "COOP Plan",
-            "Business Plan"
+            "Rejected EA Change Requests from previous years",
+            "Current hardware and software inventories",
+            "Approved, but yet to be implemented EA Change Requests",
+            "Completed projects and their post-implementation reviews"
           ],
           "answer": 2,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 44
         },
         {
-          "question": "The future view of EACRs consists of an archive of:",
+          "question": "What is a Concept of Operations (CONOPS) scenario?",
           "options": [
-            "Approved, but yet to be implemented EA Change Requests",
-            "Current hardware and software inventories",
-            "Completed projects and their post-implementation reviews",
-            "Rejected EA Change Requests from previous years"
+            "A narrative of the current or a plausible future operating environment",
+            "A list of approved EA Change Requests yet to be implemented",
+            "A diagram of the network cables and racks in the data center",
+            "A table that lists the roles and duties of the EA team members"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
           "id": 45
+        },
+        {
+          "question": "What is the Project Management Plan (PMP)?",
+          "options": [
+            "A one-time report written after a project is closed and archived",
+            "A registry where web service descriptions are kept for clients",
+            "A living document with standardized ways to implement IT resources",
+            "A budget table that lists only the hardware costs of the EA"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 9 - Developing Future Architecture Views",
+          "id": 46
+        },
+        {
+          "question": "What is the \"as-is\" view of the EA?",
+          "options": [
+            "The future view, documenting resources years from now",
+            "The list of initiatives without executive sponsorship",
+            "The archive of change requests yet to be implemented",
+            "The current view, documenting IT resources active today"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 9 - Developing Future Architecture Views",
+          "id": 47
         },
         {
           "type": "true_false",
@@ -577,33 +601,11 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views. The future view is the \"to-be\" view; the \"as-is\" view documents current IT resources.",
-          "id": 46
-        },
-        {
-          "type": "true_false",
-          "question": "Future EA views provide an authoritative reference for the architect and homeowner to use in discussing options and changes during development.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 47
-        },
-        {
-          "type": "true_false",
-          "question": "Initiatives in the very early stages of consideration should always be included in future EA views.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "explanation": "Chapter 9 - Developing Future Architecture Views. They can be left out until they have firm sponsor backing, strong business cases, and viable technical solutions.",
           "id": 48
         },
         {
           "type": "true_false",
-          "question": "Cluttering future EA views with initiatives that have little chance of being implemented can detract from the perceived value of the EA.",
+          "question": "Future EA views provide an authoritative reference for discussing options and changes during development.",
           "options": [
             "True",
             "False"
@@ -614,18 +616,18 @@ export const exams = {
         },
         {
           "type": "true_false",
-          "question": "CONOPS scenarios looking into the future have mainly been used as a financial accounting tool.",
+          "question": "Initiatives in the very early stages of consideration should always be included in future EA views.",
           "options": [
             "True",
             "False"
           ],
           "answer": 1,
-          "explanation": "Chapter 9 - Developing Future Architecture Views. They have been used as a military planning tool for millennia.",
+          "explanation": "Chapter 9 - Developing Future Architecture Views. They can be left out until they have firm sponsor backing, strong business cases, and viable technical solutions.",
           "id": 50
         },
         {
           "type": "true_false",
-          "question": "CONOPS scenarios document both the current operating environment and a number of plausible future operating environments.",
+          "question": "Cluttering future EA views with initiatives that have little chance of being implemented can detract from the perceived value of the EA.",
           "options": [
             "True",
             "False"
@@ -636,18 +638,18 @@ export const exams = {
         },
         {
           "type": "true_false",
-          "question": "It is possible to predict exactly which internal and external factors will create a helpful or hostile operating environment.",
+          "question": "CONOPS scenarios looking into the future have mainly been used as a financial accounting tool.",
           "options": [
             "True",
             "False"
           ],
           "answer": 1,
-          "explanation": "Chapter 9 - Developing Future Architecture Views. It is impossible to predict, which is why several future scenarios are helpful.",
+          "explanation": "Chapter 9 - Developing Future Architecture Views. They have been used as a military planning tool for millennia.",
           "id": 52
         },
         {
           "type": "true_false",
-          "question": "The future view of strategic plans can serve as draft documents where potential changes that have executive sponsorship are recorded.",
+          "question": "CONOPS scenarios document both the current operating environment and a number of plausible future operating environments.",
           "options": [
             "True",
             "False"
@@ -658,29 +660,29 @@ export const exams = {
         },
         {
           "type": "true_false",
-          "question": "Strategic scenarios can be added or deleted from the Strategic Plan's future view in response to changes in the operating environment.",
+          "question": "It is possible to predict exactly which internal and external factors will create a helpful or hostile operating environment.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 9 - Developing Future Architecture Views. It is impossible to predict, which is why several future scenarios are helpful.",
+          "id": 54
+        },
+        {
+          "type": "true_false",
+          "question": "The future view of strategic plans can serve as draft documents where potential changes that have executive sponsorship are recorded.",
           "options": [
             "True",
             "False"
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 54
-        },
-        {
-          "type": "true_false",
-          "question": "Updated strategic plans should be published every month.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "explanation": "Chapter 9 - Developing Future Architecture Views. Updated plans should be published every few years.",
           "id": 55
         },
         {
           "type": "true_false",
-          "question": "New strategic goals serve to direct the development of future operating scenarios.",
+          "question": "Strategic scenarios can be added or deleted from the Strategic Plan's future view in response to changes in the operating environment.",
           "options": [
             "True",
             "False"
@@ -691,6 +693,28 @@ export const exams = {
         },
         {
           "type": "true_false",
+          "question": "Updated strategic plans should be published every month.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 9 - Developing Future Architecture Views. Updated plans should be published every few years.",
+          "id": 57
+        },
+        {
+          "type": "true_false",
+          "question": "New strategic goals serve to direct the development of future operating scenarios.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 9 - Developing Future Architecture Views",
+          "id": 58
+        },
+        {
+          "type": "true_false",
           "question": "There are six general types of changes to business services.",
           "options": [
             "True",
@@ -698,7 +722,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views. There are four: new process, elimination, major reengineering, and minor improvement.",
-          "id": 57
+          "id": 59
         },
         {
           "type": "true_false",
@@ -709,7 +733,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views. Only potential changes that have executive sponsorship should be documented.",
-          "id": 58
+          "id": 60
         },
         {
           "type": "true_false",
@@ -720,7 +744,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 59
+          "id": 61
         },
         {
           "type": "true_false",
@@ -731,7 +755,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 60
+          "id": 62
         },
         {
           "type": "true_false",
@@ -742,7 +766,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 61
+          "id": 63
         },
         {
           "type": "true_false",
@@ -753,7 +777,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 62
+          "id": 64
         },
         {
           "type": "true_false",
@@ -764,7 +788,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views. Object reuse lowers the cost of systems upgrade projects.",
-          "id": 63
+          "id": 65
         },
         {
           "type": "true_false",
@@ -775,7 +799,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views. Data Dictionaries do not store actual data; they list entities, attributes, data field formats, and standards.",
-          "id": 64
+          "id": 66
         },
         {
           "type": "true_false",
@@ -786,7 +810,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 65
+          "id": 67
         },
         {
           "type": "true_false",
@@ -797,7 +821,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 9 - Developing Future Architecture Views. APIs may include open standards if maximum integration is desired, or be proprietary and limit interoperability.",
-          "id": 66
+          "id": 68
         },
         {
           "type": "true_false",
@@ -808,375 +832,351 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 9 - Developing Future Architecture Views",
-          "id": 67
+          "id": 69
         },
         {
           "question": "The document that describes how an enterprise will manage the transition of its current processes and resources to those that will be needed in the future.",
           "options": [
-            "Strategic Plan",
             "Project Management Plan",
             "EA Management Plan",
+            "Strategic Plan",
             "Knowledge Management Plan"
-          ],
-          "answer": 2,
-          "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 68
-        },
-        {
-          "question": "The transition from the current EA to the future EA is:",
-          "options": [
-            "A one-time event that is completed within a single fiscal year",
-            "Not part of EA management, since it belongs only to project management and the PMP",
-            "Handled only by the webmaster when the EA website is updated",
-            "An ongoing activity, as new resources are implemented and become part of the current EA"
-          ],
-          "answer": 3,
-          "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 69
-        },
-        {
-          "question": "The EA Management Plan is updated at regular intervals (e.g., annually) to provide:",
-          "options": [
-            "A completely new EA framework for each year",
-            "Clear version control for changes in current and future views",
-            "New hardware and software purchases for every department and office",
-            "Daily status reports for every ongoing project"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 70
         },
         {
-          "question": "Where should the EA Management Plan be archived?",
+          "question": "The transition from the current EA to the future EA is:",
           "options": [
-            "In the on-line EA repository",
-            "In the UDDI Registry",
-            "In the Data Dictionary",
-            "In the CIO's personal files"
+            "An ongoing activity, as new resources are implemented and become part of the current EA",
+            "Not part of EA management, since it belongs only to project management and the PMP",
+            "Handled only by the webmaster when the EA website is updated",
+            "A one-time event that is completed within a single fiscal year"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 71
         },
         {
-          "question": "In the home architecture analogy, the EA Management Plan is like:",
+          "question": "The EA Management Plan is updated at regular intervals (e.g., annually) to provide:",
           "options": [
-            "A full set of blueprints for modifying an existing home or for building a completely new one",
-            "The architect's project plan, showing design, approach, timeframe, and sequencing of work",
-            "The homeowner's insurance policy that covers damage during remodeling",
-            "The builder's list of tools and materials needed for each room"
+            "New hardware and software purchases for every department and office",
+            "Clear version control for changes in current and future views",
+            "A completely new EA framework for each year",
+            "Daily status reports for every ongoing project"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 72
         },
         {
-          "question": "Which part of the EA Management Plan contains Governance and Principles, EA Roles and Responsibilities, and the EA Program Budget?",
+          "question": "Where should the EA Management Plan be archived?",
           "options": [
-            "Part 2. EA Current Architecture Summary",
-            "Part 3. EA Future Architecture Summary",
-            "Part 4. EA Glossary and References",
-            "Part 1. EA Program Management"
+            "In the CIO's personal files",
+            "In the Data Dictionary",
+            "In the UDDI Registry",
+            "In the on-line EA repository"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 73
         },
         {
-          "question": "Which part of the EA Management Plan contains Future Operating Scenarios, Planning Assumptions, and the Sequencing Plan?",
+          "question": "Which part of the EA Management Plan contains Governance and Principles, EA Roles and Responsibilities, and the EA Program Budget?",
           "options": [
             "Part 4. EA Glossary and References",
-            "Part 2. EA Current Architecture Summary",
             "Part 3. EA Future Architecture Summary",
-            "Part 1. EA Program Management"
+            "Part 1. EA Program Management",
+            "Part 2. EA Current Architecture Summary"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 74
         },
         {
-          "question": "EA governance is best described through a narrative that provides EA program policy and an accompanying:",
+          "question": "Which part of the EA Management Plan contains Future Operating Scenarios, Planning Assumptions, and the Sequencing Plan?",
           "options": [
-            "Data dictionary of all EA entities",
-            "Flow chart that shows how and when decisions are made",
-            "Cable plant diagram of each building",
-            "Rack elevation diagram of the enterprise network center"
+            "Part 2. EA Current Architecture Summary",
+            "Part 3. EA Future Architecture Summary",
+            "Part 4. EA Glossary and References",
+            "Part 1. EA Program Management"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 75
         },
         {
-          "question": "These articulate the enterprise's values as they relate to the EA and guide the EA program's establishment and management.",
+          "question": "EA governance is best described through a narrative that provides EA program policy and an accompanying:",
           "options": [
-            "EA output measures",
-            "EA waivers",
-            "EA principles",
-            "EA artifacts"
+            "Cable plant diagram of each building",
+            "Data dictionary of all EA entities",
+            "Flow chart that shows how and when decisions are made",
+            "Rack elevation diagram of the enterprise network center"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 76
         },
         {
-          "question": "Which is an example of an EA principle?",
+          "question": "These articulate the enterprise's values as they relate to the EA and guide the EA program's establishment and management.",
           "options": [
-            "Only proprietary products should be used",
-            "Stakeholders should not participate in EA",
-            "IT should always be purchased first, before a business case is written",
-            "The recognition that IT is normally a means and not an end in itself"
+            "EA waivers",
+            "EA output measures",
+            "EA artifacts",
+            "EA principles"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 77
         },
         {
-          "question": "For EA to be viewed as part of the strategic planning process, business executives must:",
+          "question": "Which is an example of an EA principle?",
           "options": [
-            "See the value of the EA program in supporting the outcomes that matter to them",
-            "Personally approve every hardware and software purchase in the enterprise",
-            "Write all of the EA documentation themselves at every level",
-            "Manage the EA repository and the EA software application"
+            "The recognition that IT is normally a means and not an end in itself",
+            "Only proprietary products should be used",
+            "IT should always be purchased first, before a business case is written",
+            "Stakeholders should not participate in EA"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 78
         },
         {
-          "question": "An effective format for showing EA roles and responsibilities is a:",
+          "question": "For EA to be viewed as part of the strategic planning process, business executives must:",
           "options": [
-            "Table",
-            "Swim lane",
-            "Pie chart",
-            "Rack elevation"
+            "See the value of the EA program in supporting the outcomes that matter to them",
+            "Manage the EA repository and the EA software application",
+            "Write all of the EA documentation themselves at every level",
+            "Personally approve every hardware and software purchase in the enterprise"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 79
         },
         {
-          "question": "EA team position whose role is to be the champion of the EA program, provide resources, and assist in resolving high-level EA issues.",
+          "question": "An effective format for showing EA roles and responsibilities is a:",
           "options": [
-            "Chief Architect",
-            "Research Analyst",
-            "Webmaster",
-            "Sponsor"
+            "Pie chart",
+            "Swim lane",
+            "Rack elevation",
+            "Table"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 80
         },
         {
-          "question": "EA team position that facilitates the establishment of the EA program, leads the resolution of high-level issues, and integrates EA and other governance.",
+          "question": "EA team position whose role is to be the champion of the EA program, provide resources, and assist in resolving high-level EA issues.",
           "options": [
-            "Solutions Architect",
-            "Executive Sponsor",
-            "Chief Information Officer (CIO)",
-            "Line of Business Manager"
+            "Webmaster",
+            "Chief Architect",
+            "Sponsor",
+            "Research Analyst"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 81
         },
         {
-          "question": "EA team position that manages the EA program, selects the EA framework, identifies EA standards, and manages the EA configuration management sub-process.",
+          "question": "EA team position that facilitates the establishment of the EA program, leads the resolution of high-level issues, and integrates EA and other governance.",
           "options": [
+            "Executive Sponsor",
             "Chief Information Officer (CIO)",
-            "Chief Architect",
             "Line of Business Manager",
-            "Systems Architect"
+            "Solutions Architect"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 82
         },
         {
-          "question": "EA team position responsible for maintenance of the EA software application and the EA repository.",
+          "question": "EA team position that manages the EA program, selects the EA framework, identifies EA standards, and manages the EA configuration management sub-process.",
           "options": [
-            "Data Architect",
-            "EA Tool Expert",
-            "Research Analyst",
-            "Webmaster"
+            "Systems Architect",
+            "Chief Architect",
+            "Line of Business Manager",
+            "Chief Information Officer (CIO)"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 83
         },
         {
-          "question": "EA team position that provides technical analysis and design support for database-related EA components.",
+          "question": "EA team position responsible for maintenance of the EA software application and the EA repository.",
           "options": [
-            "Systems Architect",
-            "Solutions Architect",
-            "EA Tool Expert",
-            "Data Architect"
+            "Webmaster",
+            "Data Architect",
+            "Research Analyst",
+            "EA Tool Expert"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 84
         },
         {
-          "question": "EA team position whose role is Requirements Identification / QA, identifying end-user requirements and giving feedback on solutions.",
+          "question": "EA team position that provides technical analysis and design support for database-related EA components.",
           "options": [
-            "Sponsor",
-            "Research Analyst",
-            "End-User Representative",
-            "Webmaster"
+            "Solutions Architect",
+            "Systems Architect",
+            "Data Architect",
+            "EA Tool Expert"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 85
         },
         {
-          "question": "The EA program budget is documented by fiscal year and over the total lifecycle so that this is identified.",
+          "question": "EA team position whose role is Requirements Identification / QA, identifying end-user requirements and giving feedback on solutions.",
           "options": [
-            "Total cost of ownership (TCO)",
-            "Market value",
-            "Opportunity cost",
-            "Return on investment (ROI)"
+            "End-User Representative",
+            "Webmaster",
+            "Sponsor",
+            "Research Analyst"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 86
         },
         {
-          "question": "The initial estimate of EA program costs represents the:",
+          "question": "The EA program budget is documented by fiscal year and over the total lifecycle so that this is identified.",
           "options": [
-            "Output measure",
-            "Final cost of the EA program",
-            "Waiver",
-            "\"Baseline\" for EA program funding"
+            "Opportunity cost",
+            "Return on investment (ROI)",
+            "Market value",
+            "Total cost of ownership (TCO)"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 87
         },
         {
-          "question": "These measures identify progress being made toward some new end-state, such as better EA component integration.",
+          "question": "The initial estimate of EA program costs represents the:",
           "options": [
-            "Outcome measures",
-            "Output measures",
-            "Baseline measures",
-            "Cost measures"
+            "\"Baseline\" for EA program funding",
+            "Final cost of the EA program",
+            "Output measure",
+            "Waiver"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 88
         },
         {
-          "question": "These measures provide data on activities and things, such as how many databases exist.",
+          "question": "These measures identify progress being made toward some new end-state, such as better EA component integration.",
           "options": [
-            "Outcome measures",
             "Output measures",
-            "Strategic measures",
-            "Qualitative measures"
+            "Outcome measures",
+            "Baseline measures",
+            "Cost measures"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 89
         },
         {
-          "question": "\"Reduce IT project planning average costs by ten percent within one year\" is an example of a(n):",
+          "question": "These measures provide data on activities and things, such as how many databases exist.",
           "options": [
-            "Planning assumption",
-            "Output measure",
-            "Outcome measure",
-            "EA principle"
+            "Qualitative measures",
+            "Outcome measures",
+            "Output measures",
+            "Strategic measures"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 90
         },
         {
-          "question": "Part 2 of the EA Management Plan helps the present role of IT to be analyzed from either a:",
+          "question": "\"Reduce IT project planning average costs by ten percent within one year\" is an example of a(n):",
           "options": [
-            "Top-down or bottom-up perspective",
-            "Daily or weekly perspective",
-            "Vendor or customer perspective",
-            "Left-to-right or right-to-left perspective"
+            "Outcome measure",
+            "EA principle",
+            "Planning assumption",
+            "Output measure"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 91
         },
         {
-          "question": "According to section 2.2, EA components should not be procured unless:",
+          "question": "Part 2 of the EA Management Plan helps the present role of IT to be analyzed from either a:",
           "options": [
-            "They are proprietary products from a single vendor",
-            "There is a strong business case that supports investment",
-            "They appear in the hardware/software list",
-            "The webmaster requests them for the EA website"
+            "Daily or weekly perspective",
+            "Top-down or bottom-up perspective",
+            "Vendor or customer perspective",
+            "Left-to-right or right-to-left perspective"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 92
         },
         {
-          "question": "In section 2.3 (Systems and applications), comments should focus on degree of integration, potential scalability, user satisfaction, and:",
+          "question": "EA components should not be procured unless:",
           "options": [
-            "The number of office chairs",
-            "Employee birthdays",
-            "The color scheme of applications",
-            "Any reliance on proprietary solutions"
+            "Every end user has requested the same component",
+            "The component replaces all existing systems at once",
+            "The vendor offers the lowest price for the component",
+            "There is a strong business case that supports investment"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 93
         },
         {
-          "question": "Section 2.4 discusses how well internal and external networks, systems, and cable plants integrate to create a:",
+          "question": "When documenting current systems and applications, comments should focus on degree of integration, potential scalability, user satisfaction, and:",
           "options": [
-            "Manual infrastructure",
-            "Temporary infrastructure",
-            "\"Seamless\" infrastructure",
-            "Proprietary infrastructure"
+            "The age of every server in the data center",
+            "The color scheme of each user interface",
+            "Any reliance on proprietary solutions",
+            "The number of programmers on each team"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 94
         },
         {
-          "question": "Why should specific IT security information NOT be part of the EA Management Plan?",
+          "question": "The current infrastructure is evaluated on how well internal and external networks, systems, and cable plants integrate to create a:",
           "options": [
-            "Security is not part of EA",
-            "It belongs in the glossary",
-            "It is too expensive to print",
-            "It could reveal vulnerabilities"
+            "\"Temporary\" infrastructure",
+            "\"Isolated\" infrastructure",
+            "\"Proprietary\" infrastructure",
+            "\"Seamless\" infrastructure"
           ],
           "answer": 3,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 95
         },
         {
-          "question": "The standards section documents this, which provides EA standards for voice, data, video, and IT security.",
+          "question": "Why should specific IT security information NOT be part of the EA Management Plan?",
           "options": [
-            "Balanced Scorecard (S-5)",
-            "Data Dictionary / Object Library",
-            "Technical Standards Reference Model (TSRM)",
-            "Capital Equipment Inventory (NI-3)"
+            "It is too expensive to print",
+            "Security is not part of EA",
+            "It could reveal vulnerabilities",
+            "It belongs in the glossary"
           ],
           "answer": 2,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 96
         },
         {
-          "question": "According to section 2.7, the most valuable resource an enterprise often has is its:",
+          "question": "The standards section documents this, which provides EA standards for voice, data, video, and IT security.",
           "options": [
-            "Hardware",
-            "People",
-            "Software licenses",
-            "Buildings"
+            "Balanced Scorecard (S-5)",
+            "Technical Standards Reference Model (TSRM)",
+            "Data Dictionary / Object Library",
+            "Capital Equipment Inventory (NI-3)"
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
           "id": 97
         },
         {
-          "question": "In the example of three future operating scenarios, Scenario 2 represents:",
+          "question": "The most valuable resource an enterprise often has is its:",
           "options": [
-            "An aggressive business strategy in a good market environment",
-            "A defensive business strategy during a market down-turn",
-            "Continuing with the status quo",
-            "Closing the enterprise"
+            "People",
+            "Software",
+            "Servers",
+            "Budget"
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
@@ -1243,6 +1243,42 @@ export const exams = {
           "id": 103
         },
         {
+          "question": "What is EA governance?",
+          "options": [
+            "The decision process for EA issues like investments and standards",
+            "The hardware and network that support the EA repository",
+            "The software application used to store the EA documentation",
+            "The glossary and acronym list at the end of the EA Plan"
+          ],
+          "answer": 0,
+          "explanation": "Chapter 10 - Developing an EA Management Plan",
+          "id": 104
+        },
+        {
+          "question": "What are EA principles?",
+          "options": [
+            "Diagrams that show the current network infrastructure",
+            "Technical standards for voice, data, and video systems",
+            "Statements of the enterprise's values that guide the EA program",
+            "Fiscal year budgets for each part of the EA program"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 10 - Developing an EA Management Plan",
+          "id": 105
+        },
+        {
+          "question": "What is a waiver in EA configuration management?",
+          "options": [
+            "A request to add a new component to the EA",
+            "A permanent exception that removes a standard for good",
+            "A budget approval for the EA program each year",
+            "A time-limited permission not to follow an EA standard"
+          ],
+          "answer": 3,
+          "explanation": "Chapter 10 - Developing an EA Management Plan",
+          "id": 106
+        },
+        {
           "type": "true_false",
           "question": "The EA Management Plan documents the enterprise's performance gaps, resource requirements, planned solutions, a sequencing plan, and a summary of the current and future architecture.",
           "options": [
@@ -1251,7 +1287,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 104
+          "id": 107
         },
         {
           "type": "true_false",
@@ -1262,7 +1298,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. It is a living document updated at regular intervals (e.g., annually).",
-          "id": 105
+          "id": 108
         },
         {
           "type": "true_false",
@@ -1273,7 +1309,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 106
+          "id": 109
         },
         {
           "type": "true_false",
@@ -1284,7 +1320,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan. Program Management, Current Architecture Summary, Future Architecture Summary, Glossary and References.",
-          "id": 107
+          "id": 110
         },
         {
           "type": "true_false",
@@ -1295,7 +1331,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 108
+          "id": 111
         },
         {
           "type": "true_false",
@@ -1306,7 +1342,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. That is the Chief Architect's responsibility; the Webmaster maintains the EA website.",
-          "id": 109
+          "id": 112
         },
         {
           "type": "true_false",
@@ -1317,7 +1353,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. That describes Line of Business Managers; the EA Tool Expert maintains the EA software application and repository.",
-          "id": 110
+          "id": 113
         },
         {
           "type": "true_false",
@@ -1328,7 +1364,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 111
+          "id": 114
         },
         {
           "type": "true_false",
@@ -1339,7 +1375,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. It is the reverse: outcome measures have both elements; output measures are usually quantitative.",
-          "id": 112
+          "id": 115
         },
         {
           "type": "true_false",
@@ -1350,7 +1386,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 113
+          "id": 116
         },
         {
           "type": "true_false",
@@ -1361,7 +1397,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 114
+          "id": 117
         },
         {
           "type": "true_false",
@@ -1372,7 +1408,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. Its objective is not to duplicate it, but to give an integrated view of how components and artifacts support each other.",
-          "id": 115
+          "id": 118
         },
         {
           "type": "true_false",
@@ -1383,29 +1419,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 116
-        },
-        {
-          "type": "true_false",
-          "question": "In the example scenarios, Scenario 1 is an aggressive business strategy in a good market environment.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "explanation": "Chapter 10 - Developing an EA Management Plan. Scenario 1 is continuing with the status quo; Scenario 2 is the aggressive strategy.",
-          "id": 117
-        },
-        {
-          "type": "true_false",
-          "question": "If Future Scenario 2 is pursued in the example, several new e-commerce systems may need to be built and new manufacturing capacity supported.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 118
+          "id": 119
         },
         {
           "type": "true_false",
@@ -1416,7 +1430,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. Updates are done top-down, beginning with the strategic goals and initiatives.",
-          "id": 119
+          "id": 120
         },
         {
           "type": "true_false",
@@ -1427,7 +1441,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 120
+          "id": 121
         },
         {
           "type": "true_false",
@@ -1438,7 +1452,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 10 - Developing an EA Management Plan. Waivers have specific time limits so that EA standards are eventually realized.",
-          "id": 121
+          "id": 122
         },
         {
           "type": "true_false",
@@ -1449,77 +1463,65 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 10 - Developing an EA Management Plan",
-          "id": 122
+          "id": 123
         },
         {
           "question": "The management and decision-making process associated with the planning, selection, control, and evaluation of investments in resources, including EA components.",
           "options": [
-            "Capital Planning",
             "Strategic Planning",
-            "Project Management",
-            "Configuration Management"
-          ],
-          "answer": 0,
-          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
-          "id": 123
-        },
-        {
-          "question": "What are the four phases of the CPIC process?",
-          "options": [
-            "Analyze, design, implement, maintain",
-            "Plan, design, build, test",
-            "Plan, select, control, and evaluate",
-            "Select, fund, build, retire"
+            "Configuration Management",
+            "Capital Planning",
+            "Project Management"
           ],
           "answer": 2,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 124
         },
         {
-          "question": "The EA program is only effective if the enterprise's resources are effectively applied to:",
+          "question": "What are the four phases of the CPIC process?",
           "options": [
-            "Marketing campaigns only",
-            "Office decorations",
-            "Employee recreation",
-            "Gaps in operational performance"
+            "Plan, select, control, and evaluate",
+            "Plan, design, build, test",
+            "Select, fund, build, retire",
+            "Analyze, design, implement, maintain"
           ],
-          "answer": 3,
-          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. If there were no gaps, there would be no requirement for new or upgraded EA components.",
+          "answer": 0,
+          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 125
         },
         {
-          "question": "In the home architecture analogy for this chapter, for an architect's design to be approved:",
+          "question": "The EA program is only effective if the enterprise's resources are effectively applied to:",
           "options": [
-            "The owner must draw all of the blueprints without the help of the architect",
-            "The house must be larger than any other house in the area",
-            "The owner's requirements must be met within the budget that is available",
-            "The builder must finish construction before the design is made"
+            "Marketing campaigns only",
+            "Gaps in operational performance",
+            "Employee recreation",
+            "Office decorations"
           ],
-          "answer": 2,
-          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+          "answer": 1,
+          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. If there were no gaps, there would be no requirement for new or upgraded EA components.",
           "id": 126
         },
         {
           "question": "Which of the following is promoted by the CPIC process?",
           "options": [
-            "Encouraging a culture of learning by evaluating each completed investment",
-            "Avoiding business cases so that investments can be approved faster",
             "Approving every proposed investment regardless of its value",
-            "Ignoring operational performance gaps until projects are completed"
+            "Avoiding business cases so that investments can be approved faster",
+            "Ignoring operational performance gaps until projects are completed",
+            "Encouraging a culture of learning by evaluating each completed investment"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 127
         },
         {
           "question": "In which CPIC phase are requirements, the business case, and the project plan developed?",
           "options": [
-            "Control Phase",
             "Planning Phase",
             "Evaluation Phase",
-            "Selection Phase"
+            "Selection Phase",
+            "Control Phase"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 128
         },
@@ -1527,23 +1529,23 @@ export const exams = {
           "question": "The CPIC phase where a funding decision is made for a proposed investment in an EA component.",
           "options": [
             "Control Phase",
-            "Planning Phase",
             "Evaluation Phase",
-            "Selection Phase"
+            "Selection Phase",
+            "Planning Phase"
           ],
-          "answer": 3,
+          "answer": 2,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 129
         },
         {
           "question": "The CPIC phase where ongoing projects are evaluated for how closely cost, schedule, and performance milestones are being met, and how well risk is managed.",
           "options": [
+            "Evaluation Phase",
             "Control Phase",
             "Planning Phase",
-            "Selection Phase",
-            "Evaluation Phase"
+            "Selection Phase"
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 130
         },
@@ -1552,22 +1554,22 @@ export const exams = {
           "options": [
             "Selection Phase",
             "Planning Phase",
-            "Evaluation Phase",
-            "Control Phase"
+            "Control Phase",
+            "Evaluation Phase"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 131
         },
         {
-          "question": "In the CPIC cycle diagram, what is at the center connecting all four phases?",
+          "question": "In the CPIC process, which document is at the center, connecting all four phases?",
           "options": [
-            "Data Dictionary",
             "Project Management Plan",
-            "Balanced Scorecard",
-            "EA Management Plan"
+            "EA Management Plan",
+            "Strategic Plan",
+            "Technical Standards Reference Model"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 132
         },
@@ -1575,73 +1577,97 @@ export const exams = {
           "question": "Governance processes, including CPIC, should be overseen by a(n):",
           "options": [
             "External vendor that supplies the enterprise's ERP solution",
+            "Executive Steering Committee comprised of the enterprise's top executives",
             "Webmaster and research analyst of the EA team",
-            "Group of end-user representatives chosen from each line of business",
-            "Executive Steering Committee comprised of the enterprise's top executives"
+            "Group of end-user representatives chosen from each line of business"
           ],
-          "answer": 3,
+          "answer": 1,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 133
         },
         {
           "question": "Project and Program Managers control successful outcomes by managing five primary aspects. Which of the following is one of them?",
           "options": [
-            "Mitigating risk",
+            "Writing the glossary",
             "Designing the logo",
-            "Hiring the CIO",
-            "Writing the glossary"
+            "Mitigating risk",
+            "Hiring the CIO"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. The five: managing scope, controlling costs, maintaining the schedule, achieving product performance, mitigating risk.",
           "id": 134
         },
         {
           "question": "A temporary endeavor undertaken to create a unique product, service, or result.",
           "options": [
-            "Portfolio",
-            "Project",
             "Process",
-            "Program"
+            "Program",
+            "Portfolio",
+            "Project"
           ],
-          "answer": 1,
+          "answer": 3,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 135
         },
         {
           "question": "An ongoing endeavor that manages existing processes/resources, or oversees the development of new processes/resources via projects.",
           "options": [
-            "Plan",
             "Project",
-            "Program",
-            "Phase"
+            "Plan",
+            "Phase",
+            "Program"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 136
         },
         {
           "question": "In the Project Management Plan outline, Alternatives Analysis, Cost-Benefit Analysis, and Return on Investment Analysis are part of the:",
           "options": [
-            "Security and Privacy",
-            "Project Controls",
             "Architectural Alignment",
-            "Business Case"
+            "Business Case",
+            "Security and Privacy",
+            "Project Controls"
           ],
-          "answer": 3,
+          "answer": 1,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 137
         },
         {
           "question": "In the Project Management Plan outline, the Schedule and Work Breakdown Structure and Risk Management are part of:",
           "options": [
-            "Strategic Alignment",
+            "Project Controls",
             "Project Requirements",
-            "Business Case",
-            "Project Controls"
+            "Strategic Alignment",
+            "Business Case"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
           "id": 138
+        },
+        {
+          "question": "What is a Post-Implementation Review (PIR)?",
+          "options": [
+            "A business case written in the CPIC Planning Phase",
+            "A funding decision made in the CPIC Selection Phase",
+            "A review of a completed IT project in the CPIC Evaluation Phase",
+            "A check of cost and schedule in the CPIC Control Phase"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+          "id": 139
+        },
+        {
+          "question": "What is CPIC?",
+          "options": [
+            "Capital Project and Implementation Cycle",
+            "Capital Planning and Investment Control",
+            "Common Process for Investment Costing",
+            "Central Planning and Information Control"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
+          "id": 140
         },
         {
           "type": "true_false",
@@ -1652,7 +1678,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
-          "id": 139
+          "id": 141
         },
         {
           "type": "true_false",
@@ -1663,7 +1689,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. If there were no gaps, there would be no requirement for new or upgraded EA components.",
-          "id": 140
+          "id": 142
         },
         {
           "type": "true_false",
@@ -1674,7 +1700,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
-          "id": 141
+          "id": 143
         },
         {
           "type": "true_false",
@@ -1685,7 +1711,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. The PIR happens in the Evaluation Phase; the Selection Phase makes the funding decision.",
-          "id": 142
+          "id": 144
         },
         {
           "type": "true_false",
@@ -1696,7 +1722,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
-          "id": 143
+          "id": 145
         },
         {
           "type": "true_false",
@@ -1707,7 +1733,7 @@ export const exams = {
           ],
           "answer": 1,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management. A project is temporary; a program is ongoing.",
-          "id": 144
+          "id": 146
         },
         {
           "type": "true_false",
@@ -1718,18 +1744,7 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
-          "id": 145
-        },
-        {
-          "type": "true_false",
-          "question": "In the home architecture analogy, the architect works with a builder to ensure the design is properly constructed, the schedule is met, and the budget is not exceeded.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "explanation": "Chapter 11 - The Role of Investment Planning and Project Management",
-          "id": 146
+          "id": 147
         }
       ]
     }
@@ -1828,7 +1843,7 @@ export const exams = {
         },
         {
           "id": 8,
-          "question": "According to the module, procedural paradigms are exemplified by languages like:",
+          "question": "Procedural paradigms are exemplified by languages like:",
           "options": [
             "GraphQL",
             "SQL",
@@ -3784,7 +3799,7 @@ export const exams = {
         },
         {
           "id": 171,
-          "question": "According to the module, data is said to be the new:",
+          "question": "In modern databases, data is said to be the new:",
           "options": [
             "Gold",
             "Electricity",
@@ -3938,24 +3953,24 @@ export const exams = {
           "id": 3
         },
         {
-          "question": "If inheritance is NOT available, a change in the representation of employee number must be made:",
+          "question": "Without inheritance, a change to an attribute shared by several classes must be made:",
           "options": [
-            "Individually in every relevant class, which may lead to inconsistency",
+            "Individually in every class, which may lead to inconsistency",
             "Automatically by the compiler for every class that uses it",
             "Only in main(), since attributes are defined there for all classes",
-            "Only once, in the Employee class, and it propagates to every subclass"
+            "Only once, in the superclass, and it propagates to every subclass"
           ],
           "answer": 0,
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
           "id": 4
         },
         {
-          "question": "If inheritance IS available, a change in the representation of employee number is limited to the:",
+          "question": "With inheritance, a change to an attribute defined in the superclass is:",
           "options": [
-            "Last subclass created, and it propagates to the superclass",
-            "Manager class, and it is copied to the other subclasses",
-            "Employee (super)class, and it propagates to the subclasses",
-            "main() method, and it is passed to every class"
+            "Made in the last subclass and passed up to the superclass",
+            "Copied by hand into each subclass of the hierarchy",
+            "Limited to the superclass, and it propagates to the subclasses",
+            "Made in main() and passed to every class"
           ],
           "answer": 2,
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
@@ -3974,121 +3989,109 @@ export const exams = {
           "id": 6
         },
         {
-          "question": "In the HomeCare example, the manager's pay was wrong because:",
+          "question": "A redefining method has the same method name and parameter definition as the redefined method, but:",
           "options": [
-            "The Manager class had no constructor, so the basic salary was never set at all",
-            "The secretary's salary was added to it, since both classes share getPay() in Employee",
-            "The commission was counted twice, since Manager also extends SalesPerson in the hierarchy",
-            "The allowance was omitted, since getPay() in Employee returns only the basic salary"
+            "It cannot return a value",
+            "It must have a different name",
+            "It must have more parameters",
+            "Its implementation may differ"
           ],
           "answer": 3,
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
           "id": 7
         },
         {
-          "question": "What is the disadvantage of removing getPay() from Employee and defining it individually in every subclass?",
+          "question": "When adding a new class into an existing class hierarchy, it is always recommended that the new class be created as a:",
           "options": [
-            "The program cannot compile, because getPay() must exist in the Employee superclass",
-            "The definition is repeated in all subclasses, which is inefficient and hard to maintain",
-            "Subclasses can no longer have constructors, so the objects cannot be created at all",
-            "Each subclass inherits two getPay() methods, which causes conflicts at run time"
+            "Copy of an existing class",
+            "Subclass in the class hierarchy",
+            "Superclass of all existing classes",
+            "Separate program"
           ],
           "answer": 1,
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
           "id": 8
         },
         {
-          "question": "Which approach to fixing the manager's pay is better?",
-          "options": [
-            "Keep getPay() in Employee and redefine it in the Manager class",
-            "Remove the Manager class from the hierarchy",
-            "Compute the pay inside main() for every employee",
-            "Remove getPay() from Employee and define it in every subclass"
-          ],
-          "answer": 0,
-          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. It enhances software reuse and minimizes the effect of change on other classes.",
-          "id": 9
-        },
-        {
-          "question": "A redefining method has the same method name and parameter definition as the redefined method, but:",
-          "options": [
-            "It must have more parameters",
-            "It must have a different name",
-            "It cannot return a value",
-            "Its implementation may differ"
-          ],
-          "answer": 3,
-          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
-          "id": 10
-        },
-        {
-          "question": "When adding a new class into an existing class hierarchy, it is always recommended that the new class be created as a:",
-          "options": [
-            "Superclass of all existing classes",
-            "Separate program",
-            "Subclass in the class hierarchy",
-            "Copy of an existing class"
-          ],
-          "answer": 2,
-          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
-          "id": 11
-        },
-        {
-          "question": "To add the new Triangle class to the Shape program, which of the following is involved?",
-          "options": [
-            "Change the getName() method of every existing class",
-            "Create a new Triangle class as a subclass of Shape",
-            "Rewrite the Circle and Square classes",
-            "Delete the Shape class"
-          ],
-          "answer": 1,
-          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
-          "id": 12
-        },
-        {
           "question": "Subclassing is a desired design practice in object-oriented software engineering because:",
           "options": [
-            "It prevents code reuse",
             "It has minimal impact on software maintenance",
-            "It removes the need for constructors in subclasses",
-            "It makes every attribute public"
+            "It makes every attribute public",
+            "It prevents code reuse",
+            "It removes the need for constructors in subclasses"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. Subclassing is specialization.",
-          "id": 13
+          "id": 9
         },
         {
           "question": "Deleting subclasses that are NOT superclasses to other classes:",
           "options": [
             "Requires rewriting the superclass",
             "Breaks every other class in the class hierarchy",
-            "Has a minimal impact on software maintenance",
-            "Is not allowed in Java"
+            "Is not allowed in Java",
+            "Has a minimal impact on software maintenance"
+          ],
+          "answer": 3,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 10
+        },
+        {
+          "question": "What is code reuse in a class hierarchy?",
+          "options": [
+            "Every subclass rewrites all of the methods of its superclass again",
+            "Methods are called again and again inside a loop until it ends",
+            "Subclasses use members already defined in a superclass",
+            "Objects copy all of their data into brand new objects when created"
+          ],
+          "answer": 2,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 11
+        },
+        {
+          "question": "What is a superclass?",
+          "options": [
+            "A class that contains only static methods",
+            "A general class whose members are inherited by subclasses",
+            "A class that inherits all members from a more general class",
+            "A class that cannot have any subclasses at all"
+          ],
+          "answer": 1,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 12
+        },
+        {
+          "question": "What is a subclass?",
+          "options": [
+            "A class with no attributes or methods",
+            "A specialized class that inherits from another class",
+            "A general class that many other classes inherit from",
+            "A class that cannot inherit from any class"
+          ],
+          "answer": 1,
+          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
+          "id": 13
+        },
+        {
+          "question": "What does it mean to redefine (override) a method?",
+          "options": [
+            "A method is deleted from the superclass",
+            "A class defines two methods with the same name but different parameters",
+            "A subclass gives a same-signature method its own body",
+            "A method is copied into every subclass unchanged"
           ],
           "answer": 2,
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
           "id": 14
         },
         {
-          "question": "In the Shape example, the name attribute is declared private, so other objects get its value through:",
-          "options": [
-            "Direct access to the name variable from any class",
-            "The main() method, which stores the name for others",
-            "The calculateArea() method defined in each subclass",
-            "The getName() method defined in the Shape class"
-          ],
-          "answer": 3,
-          "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy",
-          "id": 15
-        },
-        {
           "type": "output_tracing",
           "question": "Trace the output (Redefining getPay()): what does this program print?",
-          "code": "class Person {\n   private String name;\n   Person(String aName) { name = aName; }\n   public String getName() { return name; }\n}\nclass Employee extends Person {\n   private int basicSalary;\n   Employee(String aName, int aBasicSalary) {\n      super(aName);\n      basicSalary = aBasicSalary;\n   }\n   public int getPay() { return basicSalary; }\n   public static void main(String argv[]) {\n      Employee[] staff = { new Manager(\"Simon\", 9000, 2000),\n                           new Secretary(\"Selene\", 2500),\n                           new Clerk(\"Charmaine\", 1200) };\n      for (int i = 0; i < staff.length; i++)\n         System.out.println(staff[i].getName() + \" has a pay of \" + staff[i].getPay());\n   }\n}\nclass Manager extends Employee {\n   private int allowance;\n   Manager(String aName, int aBasicSalary, int aAllowance) {\n      super(aName, aBasicSalary);\n      allowance = aAllowance;\n   }\n   public int getPay() { return super.getPay() + allowance; }\n}\nclass Secretary extends Employee {\n   Secretary(String aName, int aBasicSalary) { super(aName, aBasicSalary); }\n}\nclass Clerk extends Employee {\n   Clerk(String aName, int aBasicSalary) { super(aName, aBasicSalary); }\n}",
-          "answer": "Simon has a pay of 11000\nSelene has a pay of 2500\nCharmaine has a pay of 1200",
+          "code": "class Person {\n   private String name;\n   Person(String aName) { name = aName; }\n   public String getName() { return name; }\n}\nclass Employee extends Person {\n   private int basicSalary;\n   Employee(String aName, int aBasicSalary) {\n      super(aName);\n      basicSalary = aBasicSalary;\n   }\n   public int getPay() { return basicSalary; }\n   public static void main(String argv[]) {\n      Employee[] staff = { new Manager(\"Ana\", 9000, 2000),\n                           new Secretary(\"Ben\", 2500),\n                           new Clerk(\"Carla\", 1200) };\n      for (int i = 0; i < staff.length; i++)\n         System.out.println(staff[i].getName() + \" has a pay of \" + staff[i].getPay());\n   }\n}\nclass Manager extends Employee {\n   private int allowance;\n   Manager(String aName, int aBasicSalary, int aAllowance) {\n      super(aName, aBasicSalary);\n      allowance = aAllowance;\n   }\n   public int getPay() { return super.getPay() + allowance; }\n}\nclass Secretary extends Employee {\n   Secretary(String aName, int aBasicSalary) { super(aName, aBasicSalary); }\n}\nclass Clerk extends Employee {\n   Clerk(String aName, int aBasicSalary) { super(aName, aBasicSalary); }\n}",
+          "answer": "Ana has a pay of 11000\nBen has a pay of 2500\nCarla has a pay of 1200",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. Manager redefines getPay() (same name and parameters), so its version adds the allowance; Secretary and Clerk inherit Employee's getPay().",
-          "id": 16
+          "id": 15
         },
         {
           "type": "output_tracing",
@@ -4097,7 +4100,7 @@ export const exams = {
           "answer": "Person created\nEmployee created\nTechnician created",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. super() runs the parent constructor first, so the messages print from the top of the hierarchy down.",
-          "id": 17
+          "id": 16
         },
         {
           "type": "output_tracing",
@@ -4106,236 +4109,224 @@ export const exams = {
           "answer": "Square S: 9.0\nTriangle T: 10.0\nShape X: 0.0",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 10 - Code Reuse, Making Changes in Class Hierarchy. calculateArea() returns a float, so the int area 9 prints as 9.0. Triangle was added as a subclass, so Shape and Square did not change.",
-          "id": 18
+          "id": 17
         },
         {
           "question": "The capability to inherit from more than one class is called:",
           "options": [
-            "Multiple inheritance",
-            "Encapsulation",
             "Single inheritance",
-            "Polymorphism"
+            "Encapsulation",
+            "Polymorphism",
+            "Multiple inheritance"
+          ],
+          "answer": 3,
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "id": 18
+        },
+        {
+          "question": "Which of the following languages allows a subclass to inherit from more than one parent class?",
+          "options": [
+            "C++",
+            "Neither C++ nor Java",
+            "Java",
+            "Both C++ and Java"
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 19
         },
         {
-          "question": "Which of the following languages allows a subclass to inherit from more than one parent class?",
+          "question": "Why is multiple inheritance prohibited in Java?",
           "options": [
-            "Java",
-            "Both C++ and Java",
-            "C++",
-            "Neither C++ nor Java"
+            "Java does not support classes with parents, so only interfaces can be inherited by a subclass",
+            "Interfaces are slower than classes, so Java limits each class to one parent",
+            "Parent classes may have identical names, and super() would be unclear with multiple parents",
+            "Constructors are not allowed in Java subclasses, so super() cannot be called"
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 20
         },
         {
-          "question": "Why is multiple inheritance prohibited in Java?",
+          "question": "A class inheriting from a superclass that has inherited from another superclass represents:",
           "options": [
-            "Interfaces are slower than classes, so Java limits each class to one parent",
-            "Parent classes may have identical names, and super() would be unclear with multiple parents",
-            "Constructors are not allowed in Java subclasses, so super() cannot be called",
-            "Java does not support classes with parents, so only interfaces can be inherited by a subclass"
+            "Multiple inheritance through an interface",
+            "Single inheritance with multiple generations",
+            "An anonymous inner class with two parents",
+            "Multiple inheritance with a single generation"
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 21
         },
         {
-          "question": "A class inheriting from a superclass that has inherited from another superclass represents:",
+          "question": "Java's alternative to multiple inheritance is the:",
           "options": [
-            "Single inheritance with multiple generations",
-            "Multiple inheritance through an interface",
-            "Multiple inheritance with a single generation",
-            "An anonymous inner class with two parents"
+            "Interface",
+            "Package",
+            "Abstract method",
+            "Static variable"
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 22
         },
         {
-          "question": "Java's alternative to multiple inheritance is the:",
+          "question": "In an interface, all methods (if any) are implicitly:",
           "options": [
-            "Static variable",
-            "Abstract method",
-            "Package",
-            "Interface"
+            "public and static",
+            "private and static",
+            "protected and final",
+            "public and abstract"
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 23
         },
         {
-          "question": "In an interface, all methods (if any) are implicitly:",
+          "question": "In an interface, all data items (if any) are implicitly:",
           "options": [
-            "protected and final",
-            "public and static",
+            "protected and static",
             "public and abstract",
-            "private and static"
+            "public, static, and final",
+            "private and abstract"
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 24
         },
         {
-          "question": "In an interface, all data items (if any) are implicitly:",
+          "question": "An interface is a description of:",
           "options": [
-            "protected and static",
-            "public, static, and final",
-            "public and abstract",
-            "private and abstract"
+            "The private data of a class",
+            "What a class does, but not how it is done",
+            "The constructor of a class",
+            "How a class does something, but not what it does"
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 25
         },
         {
-          "question": "An interface is a description of:",
+          "question": "Which keyword is placed in a class header to use an interface?",
           "options": [
-            "What a class does, but not how it is done",
-            "The constructor of a class",
-            "The private data of a class",
-            "How a class does something, but not what it does"
+            "implements",
+            "super",
+            "interface",
+            "extends"
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 26
         },
         {
-          "question": "Which keyword is placed in a class header to use an interface?",
+          "question": "Whereas extends lets a subclass use nonprivate, nonoverridden members of its parent, implements requires the class to:",
           "options": [
-            "extends",
-            "super",
-            "interface",
-            "implements"
+            "Inherit the parent's private data and methods",
+            "Become an interface",
+            "Call super() twice",
+            "Implement its own version of each method"
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 27
         },
         {
-          "question": "Whereas extends lets a subclass use nonprivate, nonoverridden members of its parent, implements requires the class to:",
+          "question": "The interface construct in Java is used with single inheritance to provide:",
           "options": [
-            "Inherit the parent's private data and methods",
-            "Call super() twice",
-            "Become an interface",
-            "Implement its own version of each method"
+            "Some form of static binding",
+            "Some form of operation overloading",
+            "Some form of information hiding",
+            "Some form of multiple inheritance"
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 28
         },
         {
-          "question": "The interface construct in Java is used with single inheritance to provide:",
+          "question": "When a class implements an interface but does not implement all of its methods:",
           "options": [
-            "Some form of multiple inheritance",
-            "Some form of information hiding",
-            "Some form of static binding",
-            "Some form of operation overloading"
+            "The class must be declared abstract",
+            "The interface methods are ignored when the program runs",
+            "The compiler adds empty bodies for the missing methods automatically",
+            "The class becomes final and can no longer be extended"
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 29
         },
         {
-          "question": "class SalesManager extends SalesPerson implements Manage { ... } means that SalesManager:",
+          "question": "A class Dog2 extends Dog and implements Worker. Which statement is true?",
           "options": [
-            "Is derived from Manage and implements the SalesPerson interface",
-            "Cannot have a constructor",
-            "Is derived from SalesPerson and implements the Manage interface",
-            "Is an interface"
+            "A Dog2 is a Dog, but it is not a Worker",
+            "A Dog2 is neither a Dog nor a Worker",
+            "A Dog2 \"is a\" Dog and \"is a\" Worker",
+            "A Dog2 is a Worker, but it is not a Dog"
           ],
           "answer": 2,
-          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
+          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. A class that implements an interface represents a situation similar to inheritance.",
           "id": 30
         },
         {
-          "question": "In the Manage interface, authorize() is declared without a body. The SalesManager class must:",
+          "question": "What is an interface in Java?",
           "options": [
-            "Call authorize() from the main() method only",
-            "Implement the abstract method authorize()",
-            "Declare authorize() as private",
-            "Remove authorize() from Manage"
+            "A named collection of related classes",
+            "A construct of abstract methods that a class must implement",
+            "A class from which objects can be instantiated",
+            "A class intended to be extended, not directly instantiated"
           ],
           "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 31
         },
         {
-          "question": "Choosing between SalesManager as a subclass of SalesPerson or of Manager (with a CanTakeOrder interface) is:",
+          "question": "What is multiple inheritance?",
           "options": [
-            "A modeling problem resolved with more information on the problem domain and requirements",
-            "Not allowed in Java, because a class cannot implement an interface and extend a class",
-            "Always solved by using SalesPerson, because collectPayment() is already defined there",
-            "Decided automatically by the compiler based on which superclass has more methods"
+            "Inheriting from more than one class",
+            "Having many objects of one class",
+            "Inheriting from one class only",
+            "Having several methods with one name"
           ],
           "answer": 0,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 32
         },
         {
-          "question": "When a class implements Worker, it must include a work() method or else:",
+          "question": "Which keyword is used for a class to inherit from a superclass?",
           "options": [
-            "The class becomes an interface, and its descendants inherit work() from it",
-            "The Worker interface must be changed so that work() is no longer abstract",
-            "The program still runs, and Java creates an empty work() method automatically for the class",
-            "The class must be declared abstract, and its descendants must implement the method"
+            "inherits",
+            "super",
+            "implements",
+            "extends"
           ],
           "answer": 3,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 33
         },
         {
-          "question": "A WorkingDog extends Dog and implements Worker. Which method is it required to contain because of implements Worker?",
+          "question": "How many interfaces can a Java class implement?",
           "options": [
-            "speak()",
-            "getHoursOfTraining()",
-            "work()",
-            "setName()"
+            "Only one interface",
+            "None, if it extends a class",
+            "Any number of interfaces",
+            "At most two interfaces"
           ],
           "answer": 2,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
           "id": 34
         },
         {
-          "question": "Why make many classes implement the Worker interface instead of each just having a work() method?",
-          "options": [
-            "The classes can share private data, because interfaces store each object's fields",
-            "You do not have to guess the name of the method that shows the work the objects perform",
-            "The classes no longer need constructors, because the interface creates their objects",
-            "The classes run faster, because interface methods are bound at compile time only"
-          ],
-          "answer": 1,
-          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 35
-        },
-        {
-          "question": "A class that implements an interface represents a situation similar to inheritance. A WorkingDog therefore:",
-          "options": [
-            "\"Is a\" Dog and \"is a\" Worker, but it is not an Animal",
-            "\"Is a\" Worker, but it is no longer a Dog or an Animal",
-            "\"Is an\" Animal only, since interfaces do not count as types",
-            "\"Is a\" Dog, \"is an\" Animal, and \"is a\" Worker"
-          ],
-          "answer": 3,
-          "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface",
-          "id": 36
-        },
-        {
           "question": "What is the output of this program?",
           "code": "interface Worker {\n   void work();\n}\nclass Dog {\n   public void speak() { System.out.println(\"Woof!\"); }\n}\nclass WorkingDog extends Dog implements Worker {\n   public void work() {\n      speak();\n      System.out.println(\"I am a dog who works\");\n   }\n}\npublic class DemoWorkingDog {\n   public static void main(String[] args) {\n      WorkingDog aSheepHerder = new WorkingDog();\n      aSheepHerder.speak();\n      aSheepHerder.work();\n   }\n}",
           "options": [
-            "Woof! / I am a dog who works",
-            "The program does not compile, because Dog does not implement Worker",
+            "I am a dog who works / Woof!",
             "Woof! / Woof! / I am a dog who works",
-            "I am a dog who works / Woof!"
+            "The program does not compile, because Dog does not implement Worker",
+            "Woof! / I am a dog who works"
           ],
-          "answer": 2,
+          "answer": 1,
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. Output: Woof! / Woof! / I am a dog who works. work() calls the inherited speak() first, so Woof! appears twice.",
-          "id": 37
+          "id": 35
         },
         {
           "type": "output_tracing",
@@ -4344,7 +4335,7 @@ export const exams = {
           "answer": "Changing colors\nGoing to the next page\nFlipping",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. The loop starts at index 1, so the first Pancake is skipped. Each class writes its own turn().",
-          "id": 38
+          "id": 36
         },
         {
           "type": "output_tracing",
@@ -4353,291 +4344,315 @@ export const exams = {
           "answer": "Selling products\nAuthorizing discount\nSelling products",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 11 - Concepts of Interface, Inheritance Using Interface. sell() is inherited through extends; authorize() had to be written because of implements Manage.",
+          "id": 37
+        },
+        {
+          "question": "What happens when code tries to create an object of an abstract class with new?",
+          "options": [
+            "The program runs but throws an error later",
+            "The object is created with default values",
+            "The object is created as an interface instead",
+            "The program does not compile"
+          ],
+          "answer": 3,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. No objects of an abstract class can exist.",
+          "id": 38
+        },
+        {
+          "question": "You create an abstract class such as Animal only so that you can:",
+          "options": [
+            "Instantiate it",
+            "Use it as a package",
+            "Extend it",
+            "Hide it from subclasses"
+          ],
+          "answer": 2,
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 39
         },
         {
-          "question": "What happens with the statement Animal myPet = new Animal(\"Murphy\"); if Animal is an abstract class?",
+          "question": "The @Override annotation for a method such as speak() is:",
           "options": [
-            "The program does not compile, because no Animal objects can exist",
-            "It compiles, but speak() prints nothing because it has no method body",
-            "It creates a Dog object instead, because Dog extends the Animal class",
-            "It creates an Animal object normally, because the constructor exists"
+            "Not necessary, but it provides error checking and documentation",
+            "Used only in interfaces, never in subclasses",
+            "Used to create a new object of the parent class",
+            "Required, or the program will not compile at all without it"
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 40
         },
         {
-          "question": "You create an abstract class such as Animal only so that you can:",
+          "question": "Using the same method name to indicate different implementations is called:",
           "options": [
-            "Use it as a package",
-            "Extend it",
-            "Instantiate it",
-            "Hide it from subclasses"
+            "Static binding",
+            "Polymorphism",
+            "Encapsulation",
+            "Bundling"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 41
         },
         {
-          "question": "If you do not want to create Dog objects but want Dog to be a parent to further subclasses, then the Dog class:",
+          "question": "Data attributes declared in an interface construct are always:",
           "options": [
-            "Also must be abstract",
-            "Must be an interface",
-            "Must be private",
-            "Must be final"
+            "static and final",
+            "protected and static",
+            "public and non-final",
+            "private and abstract"
           ],
           "answer": 0,
-          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Static because there is only one copy; final because they are not modifiable.",
           "id": 42
         },
         {
-          "question": "The @Override annotation for a method such as speak() is:",
+          "question": "Names for values with a specific meaning that are declared in an interface, such as int RED = 1, are called:",
           "options": [
-            "Used only in interfaces, never in subclasses",
-            "Not necessary, but it provides error checking and documentation",
-            "Used to create a new object of the parent class",
-            "Required, or the program will not compile at all without it"
+            "Literals",
+            "Constants",
+            "Parameters",
+            "Variables"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 43
         },
         {
-          "question": "Using the same method name to indicate different implementations is called:",
+          "question": "All methods in an interface are:",
           "options": [
-            "Bundling",
-            "Encapsulation",
-            "Polymorphism",
-            "Static binding"
+            "Private methods hidden from every class that uses the interface",
+            "Static methods that the implementing class may not override",
+            "Abstract methods that any class using the interface must implement",
+            "Constructors that run when a class implements the interface"
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 44
         },
         {
-          "question": "Data attributes declared in an interface construct are always:",
+          "question": "Methods in an interface may NOT be static because:",
           "options": [
-            "protected and static",
-            "public and non-final",
-            "private and abstract",
-            "static and final"
+            "Interfaces cannot contain methods, only constant data attributes",
+            "Static methods must have constructors, which interfaces do not have",
+            "Static methods are always private, so no class could call them",
+            "Static methods, being class specific, are never abstract"
           ],
           "answer": 3,
-          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface. Static because there is only one copy; final because they are not modifiable.",
+          "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 45
         },
         {
-          "question": "Names for values with a specific meaning, such as RED = 1 in the Colourable interface, are called:",
+          "question": "Abstract classes and interfaces are similar in that:",
           "options": [
-            "Packages",
-            "Constants",
-            "References",
-            "Parameters"
+            "A class can extend any number of either of them",
+            "You cannot instantiate concrete objects from either one",
+            "Both must have constructors that create objects",
+            "Both can contain only private methods and private data fields"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 46
         },
         {
-          "question": "All methods in an interface are:",
+          "question": "Abstract classes differ from interfaces because:",
           "options": [
-            "Static methods that the implementing class may not override",
-            "Constructors that run when a class implements the interface",
-            "Private methods hidden from every class that uses the interface",
-            "Abstract methods that any class using the interface must implement"
+            "Interfaces can contain constructors and nonabstract methods, but abstract classes cannot",
+            "Interfaces can be instantiated with new, but abstract classes can never be instantiated",
+            "Abstract classes cannot have variables, but interfaces can have any kind of variable",
+            "Abstract classes can contain nonabstract methods, but all interface methods must be abstract"
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 47
         },
         {
-          "question": "Methods in an interface may NOT be static because:",
+          "question": "A class can inherit from how many abstract superclasses, and implement how many interfaces?",
           "options": [
-            "Interfaces cannot contain methods, only constant data attributes",
-            "Static methods must have constructors, which interfaces do not have",
-            "Static methods, being class specific, are never abstract",
-            "Static methods are always private, so no class could call them"
+            "Only one of each",
+            "None of either",
+            "Only one abstract superclass, but any number of interfaces",
+            "Any number of abstract superclasses, but only one interface"
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 48
         },
         {
-          "question": "ColourTest implements Colourable but does not implement getColour(). How must ColourTest be declared?",
+          "question": "Which is true about constructors in abstract classes and interfaces?",
           "options": [
-            "abstract class ColourTest implements Colourable",
-            "interface ColourTest implements Colourable",
-            "static class ColourTest implements Colourable",
-            "final class ColourTest implements Colourable"
+            "An interface has none; an abstract class's runs when a child object is created",
+            "Both have constructors that are called directly with the new operator",
+            "Neither can have a constructor, so subclasses must define all of them",
+            "An abstract class has no constructor; an interface's constructor is invoked when a class implements it"
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 49
         },
         {
-          "question": "Why must setColour() in ColourTest be declared public?",
+          "question": "Which is true about variables in interfaces and abstract classes?",
           "options": [
-            "Because ColourTest is declared abstract, all of its methods must be public",
-            "It is a method of the Colourable interface, and interface methods are public",
-            "Because main() is static, every method it can call must also be public",
-            "Because setColour() has a parameter, and methods with parameters must be public"
+            "Abstract class variables must be public, static, and final; interfaces have no restrictions on variables",
+            "Interface variables must be public, static, and final; abstract classes have no restrictions on variables",
+            "Neither may contain any variables at all",
+            "Both may only contain private variables"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 50
         },
         {
-          "question": "Abstract classes and interfaces are similar in that:",
+          "question": "An interface is generally used for achieving:",
           "options": [
-            "You cannot instantiate concrete objects from either one",
-            "A class can extend any number of either of them",
-            "Both must have constructors that create objects",
-            "Both can contain only private methods and private data fields"
+            "Multiple inheritance in Java",
+            "Information hiding in packages",
+            "Faster compilation",
+            "Static binding"
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 51
         },
         {
-          "question": "Abstract classes differ from interfaces because:",
+          "question": "Given public abstract class LandVehicle { ... }, which statement is invalid?",
           "options": [
-            "Abstract classes cannot have variables, but interfaces can have any kind of variable",
-            "Interfaces can contain constructors and nonabstract methods, but abstract classes cannot",
-            "Interfaces can be instantiated with new, but abstract classes can never be instantiated",
-            "Abstract classes can contain nonabstract methods, but all interface methods must be abstract"
+            "class Car extends LandVehicle { }",
+            "LandVehicle l;",
+            "LandVehicle[] list = new LandVehicle[3];",
+            "LandVehicle l = new LandVehicle();"
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 52
         },
         {
-          "question": "A class can inherit from how many abstract superclasses, and implement how many interfaces?",
+          "question": "Interface data fields must not be private because:",
           "options": [
-            "None of either",
-            "Any number of abstract superclasses, but only one interface",
-            "Only one abstract superclass, but any number of interfaces",
-            "Only one of each"
+            "Private data cannot be static, and every field of an interface must be a static field",
+            "Private data uses too much memory, since every object would store its own copy of it",
+            "Interface methods cannot contain method bodies, so there is no way to retrieve private data",
+            "Interfaces are always final, so private fields would be hidden from the interface itself"
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 53
         },
         {
-          "question": "According to the comparison table, which is true about constructors?",
+          "question": "The purpose of creating an interface containing constants is to:",
           "options": [
-            "Neither can ever have a constructor, because neither one can be instantiated with new",
-            "An interface has no constructor; an abstract class's constructor is invoked when a child object is instantiated",
-            "Both have constructors, and each constructor creates an object of its own type whenever it is called",
-            "An interface's constructor is called each time a class implements the interface"
+            "Create objects of the interface so that each object holds its own separate copy of the values",
+            "Provide a set of data that a number of classes can use without having to redeclare the values",
+            "Hide the data from every class so that the values can never be read by any program",
+            "Replace all the classes in a program with one interface that contains every method"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 54
         },
         {
-          "question": "According to the comparison table, which is true about variables?",
+          "question": "A class that has no name and is defined inside another class is a(n):",
           "options": [
-            "Interfaces cannot have any variables at all, while abstract classes must declare only private ones",
-            "Abstract class variables must be public, static, and final; interfaces have no restrictions",
-            "Both must declare all of their variables private, so that subclasses cannot change them",
-            "Interface variables must be public, static, and final; abstract classes have no restrictions on variables"
+            "Interface",
+            "Abstract class",
+            "Package",
+            "Anonymous inner class"
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 55
         },
         {
-          "question": "An interface is generally used for achieving:",
+          "question": "When defining an anonymous inner class, you:",
           "options": [
-            "Multiple inheritance in Java",
-            "Faster compilation",
-            "Information hiding in packages",
-            "Static binding"
+            "Use the new operator and do not use the keywords extends or implements",
+            "Must give the class a name and save it in its own separate .java file",
+            "Use the keyword implements, and declare the class outside the main class",
+            "Must use the keyword extends, and give the class a name before using it"
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 56
         },
         {
-          "question": "Given public abstract class LandVehicle { ... }, which statement is invalid?",
+          "question": "An anonymous inner class must either implement an interface or extend another class, and it must:",
           "options": [
-            "LandVehicle l;",
-            "class Car extends LandVehicle { }",
-            "LandVehicle l = new LandVehicle();",
-            "LandVehicle[] list = new LandVehicle[3];"
+            "Have at least two constructors that call the superclass default constructor",
+            "Be declared static so that it can be instantiated more than once in the program",
+            "Override all the abstract methods in the interface or superclass",
+            "Be declared in a separate package from the class in which it is defined"
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 57
         },
         {
-          "question": "Interface data fields must not be private because:",
+          "question": "A variable whose value is assigned only once, which an anonymous inner class may access, is called:",
           "options": [
-            "Private data cannot be static, and every field of an interface must be a static field",
-            "Private data uses too much memory, since every object would store its own copy of it",
-            "Interfaces are always final, so private fields would be hidden from the interface itself",
-            "Interface methods cannot contain method bodies, so there is no way to retrieve private data"
+            "Protected and static",
+            "Static",
+            "Abstract",
+            "Effectively final"
           ],
           "answer": 3,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 58
         },
         {
-          "question": "The purpose of creating an interface containing constants is to:",
+          "question": "What is an abstract class?",
           "options": [
-            "Create objects of the interface so that each object holds its own separate copy of the values",
-            "Replace all the classes in a program with one interface that contains every method",
-            "Provide a set of data that a number of classes can use without having to redeclare the values",
-            "Hide the data from every class so that the values can never be read by any program"
+            "A class containing only static methods and fields",
+            "A class that cannot have constructors of its own",
+            "A class intended to be extended, not directly instantiated",
+            "A class with no inherited properties or methods"
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 59
         },
         {
-          "question": "A class that has no name and is defined inside another class is a(n):",
+          "question": "What is a concrete class?",
           "options": [
-            "Anonymous inner class",
-            "Package",
-            "Interface",
-            "Abstract class"
+            "A class from which objects can be instantiated",
+            "A class that declares only abstract methods",
+            "A class that can only be extended",
+            "A class that exists only as a diagram"
           ],
           "answer": 0,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 60
         },
         {
-          "question": "When defining an anonymous inner class, you:",
+          "question": "What is an abstract method?",
           "options": [
-            "Use the keyword implements, and declare the class outside the main class",
-            "Use the new operator and do not use the keywords extends or implements",
-            "Must give the class a name and save it in its own separate .java file",
-            "Must use the keyword extends, and give the class a name before using it"
+            "A static method that belongs to the class and not the object",
+            "A method declared without a body that subclasses must implement",
+            "A method that can only be called once by the main method",
+            "A method that has a body but no return type or parameters"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 61
         },
         {
-          "question": "An anonymous inner class must either implement an interface or extend another class, and it must:",
+          "question": "Which keyword declares a class or method as abstract?",
           "options": [
-            "Be declared in a separate package from the class in which it is defined",
-            "Have at least two constructors that call the superclass default constructor",
-            "Override all the abstract methods in the interface or superclass",
-            "Be declared static so that it can be instantiated more than once in the program"
+            "interface",
+            "static",
+            "abstract",
+            "final"
           ],
           "answer": 2,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
           "id": 62
         },
         {
-          "question": "A variable whose value is assigned only once, which an anonymous inner class may access, is called:",
+          "question": "What is an anonymous inner class?",
           "options": [
-            "Abstract",
-            "Effectively final",
-            "Static",
-            "Protected and static"
+            "A public class that is saved alone in its own file",
+            "A class with no name that is defined inside another class",
+            "A class with a fixed name that cannot ever be changed",
+            "A class that has no methods and no attributes at all"
           ],
           "answer": 1,
           "explanation": "Module 12 - Attributes and Methods in an Interface, Abstract Class and Interface",
@@ -4720,220 +4735,208 @@ export const exams = {
           "id": 70
         },
         {
-          "question": "In the procedural Shape example, why were calculateCircleArea() and calculateSquareArea() needed?",
+          "question": "With static binding, adding a new kind of object to a program usually requires changes in:",
           "options": [
-            "Java requires separate routine names for every shape, even in object-oriented code",
-            "The switch statement cannot call any routine that has the word Area in its name",
-            "Circles and squares use the same formula, so the names only make the code readable",
-            "Most procedural languages do not allow two routines to have the same name"
+            "Only the new class, with no other changes",
+            "No places, since the compiler adapts automatically",
+            "Only the main() method of the program",
+            "Multiple places in the code, which is error prone"
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
           "id": 71
         },
         {
-          "question": "With static binding, adding a new shape such as Triangle requires changes in:",
+          "question": "With dynamic binding, the method that runs for an overridden call is selected based on:",
           "options": [
-            "No part of the program, since the switch statement detects new shapes on its own at run time",
-            "Multiple places (data section, switch statement, and routine section), which is error prone",
-            "Only the println statement, since the routine section does not need to change",
-            "Only one place: a new Triangle class, without touching the rest of the program"
+            "The order the classes were written in the file",
+            "The class of the object referenced at run time",
+            "The name of the variable that holds the reference",
+            "The type of the reference variable at compile time"
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
           "id": 72
         },
         {
-          "question": "With dynamic binding, the appropriate calculateArea() method is selected based on:",
+          "question": "SalariedEmployee is a subclass of Employee. Which statement is true?",
           "options": [
-            "The class of the shape referenced at run time",
-            "The name of the array",
-            "A switch statement written by the programmer",
-            "The order the methods were written"
+            "Every SalariedEmployee is an Employee, but not every Employee is a SalariedEmployee",
+            "Employee and SalariedEmployee are unrelated types that share no members",
+            "Every Employee is a SalariedEmployee, but not every SalariedEmployee is an Employee",
+            "No SalariedEmployee can ever be treated or stored as an Employee reference"
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
           "id": 73
         },
         {
-          "question": "Every SalariedEmployee \"is an\" Employee. Which statement is also true?",
+          "question": "A reference is not an object, but it:",
           "options": [
-            "Superclass objects are members of all subclasses",
-            "An Employee is always an HourlyEmployee",
-            "Every Employee is a SalariedEmployee",
-            "An Employee is not necessarily a SalariedEmployee"
+            "Is always abstract",
+            "Is created with the keyword new",
+            "Contains all the object's methods",
+            "Points to a memory address"
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
           "id": 74
         },
         {
-          "question": "A reference is not an object, but it:",
+          "question": "Assigning a variable or constant of one type to a variable of another type is called:",
           "options": [
-            "Is always abstract",
-            "Points to a memory address",
-            "Is created with the keyword new",
-            "Contains all the object's methods"
+            "Static binding, early binding, or fixed binding",
+            "Promotion, implicit conversion, or upcasting",
+            "Encapsulation, bundling, or information hiding",
+            "Overloading, overriding, or redefining"
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
           "id": 75
         },
         {
-          "question": "Assigning a variable or constant of one type to a variable of another type is called:",
+          "question": "Using a reference polymorphically allows you to:",
           "options": [
-            "Static binding, early binding, or fixed binding",
-            "Overloading, overriding, or redefining",
-            "Promotion, implicit conversion, or upcasting",
-            "Encapsulation, bundling, or information hiding"
+            "Make all methods static so that they are bound when the program is compiled",
+            "Create objects of an abstract class directly by using the keyword new",
+            "Extend a base class and use extended objects when a base class type is expected",
+            "Avoid writing subclasses, since one reference can hold every method"
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
           "id": 76
         },
         {
-          "question": "Using a reference polymorphically allows you to:",
+          "question": "In Java, all instance method calls are virtual method calls by default. This means:",
           "options": [
-            "Extend a base class and use extended objects when a base class type is expected",
-            "Create objects of an abstract class directly by using the keyword new",
-            "Make all methods static so that they are bound when the program is compiled",
-            "Avoid writing subclasses, since one reference can hold every method"
+            "The method used is determined when the program runs",
+            "The method is chosen by the compiler before the program runs",
+            "Methods must be static",
+            "Methods cannot be overridden"
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
           "id": 77
         },
         {
-          "question": "In Java, all instance method calls are virtual method calls by default. This means:",
-          "options": [
-            "Methods cannot be overridden",
-            "Methods must be static",
-            "The method is chosen by the compiler before the program runs",
-            "The method used is determined when the program runs"
-          ],
-          "answer": 3,
-          "explanation": "Module 13 - Polymorphism",
-          "id": 78
-        },
-        {
           "question": "An application's ability to select the correct subclass method depending on the argument type is known as:",
           "options": [
             "Information hiding",
-            "Dynamic method binding",
+            "Operation overloading",
             "Static method binding",
-            "Operation overloading"
+            "Dynamic method binding"
           ],
-          "answer": 1,
+          "answer": 3,
           "explanation": "Module 13 - Polymorphism. It is also called late method binding.",
-          "id": 79
+          "id": 78
         },
         {
           "question": "In Java, which methods use dynamic binding and which use static binding?",
           "options": [
-            "All methods use dynamic binding",
-            "Class methods use dynamic binding; instance methods use static binding",
+            "All methods use static binding",
             "Instance methods use dynamic binding; class methods use static binding",
-            "All methods use static binding"
+            "Class methods use dynamic binding; instance methods use static binding",
+            "All methods use dynamic binding"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 79
+        },
+        {
+          "question": "Comparing the two kinds of binding:",
+          "options": [
+            "Dynamic binding is not supported in Java",
+            "Static binding makes programs flexible; dynamic binding operates more quickly",
+            "Dynamic binding makes programs flexible; static binding operates more quickly",
+            "Both are equally fast and flexible"
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
           "id": 80
         },
         {
-          "question": "Comparing the two kinds of binding:",
+          "question": "Dynamic method binding is most useful when you want a method whose parameters:",
           "options": [
-            "Both are equally fast and flexible",
-            "Dynamic binding is not supported in Java",
-            "Dynamic binding makes programs flexible; static binding operates more quickly",
-            "Static binding makes programs flexible; dynamic binding operates more quickly"
+            "Are always strings, so that the method can print their names",
+            "Cannot be objects, because objects are bound at compile time",
+            "Might be one of several types, such as any Animal descendant",
+            "Are always primitive types, such as int or double values"
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
           "id": 81
         },
         {
-          "question": "Dynamic method binding is most useful when you want a method whose parameters:",
+          "question": "When you create an array of objects in Java, you are actually creating:",
           "options": [
-            "Are always primitive types, such as int or double values",
-            "Might be one of several types, such as any Animal descendant",
-            "Cannot be objects, because objects are bound at compile time",
-            "Are always strings, so that the method can print their names"
+            "The objects themselves, already constructed",
+            "Space for references to objects",
+            "A package of objects",
+            "A new class"
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
           "id": 82
         },
         {
-          "question": "When you create an array of objects in Java, you are actually creating:",
+          "question": "Animal[] animalRef = new Animal[3]; Given that Animal is abstract, this statement:",
           "options": [
-            "Space for references to objects",
-            "A new class",
-            "The objects themselves, already constructed",
-            "A package of objects"
+            "Reserves memory for three Animal references without instantiating any Animal",
+            "Does not compile, because an array cannot be declared using an abstract type",
+            "Creates three Animal objects, one for each element of the animalRef array",
+            "Creates one Dog, one Cow, and one Snake object to fill the three array elements"
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
           "id": 83
         },
         {
-          "question": "Animal[] animalRef = new Animal[3]; Given that Animal is abstract, this statement:",
+          "question": "An array of superclass references can hold subclass references:",
           "options": [
-            "Does not compile, because an array cannot be declared using an abstract type",
-            "Creates three Animal objects, one for each element of the animalRef array",
-            "Creates one Dog, one Cow, and one Snake object to fill the three array elements",
-            "Reserves memory for three Animal references without instantiating any Animal"
+            "Only if the superclass is abstract, never concrete",
+            "Only if the superclass is concrete, never abstract",
+            "Never, since every array element must be one type",
+            "Whether the superclass is abstract or concrete"
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
           "id": 84
         },
         {
-          "question": "An array of superclass references can hold subclass references:",
+          "question": "The ability to use the same name for two or more methods in a class is known as:",
           "options": [
-            "Only if the superclass is concrete, never abstract",
-            "Only if the superclass is abstract, never concrete",
-            "Whether the superclass is abstract or concrete",
-            "Never, since every array element must be one type"
+            "Polymorphism",
+            "Static binding",
+            "Operation overloading",
+            "Encapsulation"
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
           "id": 85
         },
         {
-          "question": "The ability to use the same name for two or more methods in a class is known as:",
+          "question": "Two methods have the same method signature if:",
           "options": [
-            "Encapsulation",
-            "Operation overloading",
-            "Static binding",
-            "Polymorphism"
+            "They have the same access specifier and are both declared static in their classes",
+            "Their names are the same and the number and type of formal parameters are the same",
+            "They are declared in the same package and have the same number of statements inside",
+            "Their return types are the same, even if their names and parameters are different"
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
           "id": 86
         },
         {
-          "question": "Two methods have the same method signature if:",
+          "question": "Given constructors A(), A(int x), A(int x, int y), and A(String x), which is called by new A(\"hello\")?",
           "options": [
-            "Their names are the same and the number and type of formal parameters are the same",
-            "They have the same access specifier and are both declared static in their classes",
-            "They are declared in the same package and have the same number of statements inside",
-            "Their return types are the same, even if their names and parameters are different"
+            "A(String x)",
+            "A(int x, int y)",
+            "A(int x)",
+            "A()"
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
           "id": 87
-        },
-        {
-          "question": "Given constructors A(), A(int x), A(int x, int y), and A(String x), which is called by new A(\"hello\")?",
-          "options": [
-            "A(int x)",
-            "A()",
-            "A(int x, int y)",
-            "A(String x)"
-          ],
-          "answer": 3,
-          "explanation": "Module 13 - Polymorphism",
-          "id": 88
         },
         {
           "question": "Declaring two public void a1() {} methods in the same class is:",
@@ -4945,43 +4948,43 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Module 13 - Polymorphism",
-          "id": 89
+          "id": 88
         },
         {
           "question": "Can the return type alone distinguish overloaded methods from one another?",
           "options": [
             "Only for static methods declared in the same class",
-            "No, the return type does not distinguish overloaded methods",
+            "Yes, the return type alone always distinguishes them from each other",
             "Only for methods that are declared in an interface",
-            "Yes, the return type alone always distinguishes them from each other"
+            "No, the return type does not distinguish overloaded methods"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 89
+        },
+        {
+          "question": "Declaring methods of the same signature in different, unrelated classes is:",
+          "options": [
+            "Allowed only for constructors",
+            "Valid in object-oriented programming",
+            "Allowed only if the classes are abstract",
+            "Invalid"
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
           "id": 90
         },
         {
-          "question": "Declaring methods of the same signature in different, unrelated classes is:",
+          "question": "For a subclass method to redefine (override) a superclass method:",
           "options": [
-            "Valid in object-oriented programming",
-            "Allowed only for constructors",
-            "Invalid",
-            "Allowed only if the classes are abstract"
+            "The method signatures of the two methods must be the same",
+            "The methods must have different names",
+            "The subclass method must have more parameters than the other",
+            "The superclass method must be private"
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism",
           "id": 91
-        },
-        {
-          "question": "For a subclass method to redefine (override) a superclass method:",
-          "options": [
-            "The subclass method must have more parameters than the other",
-            "The superclass method must be private",
-            "The method signatures of the two methods must be the same",
-            "The methods must have different names"
-          ],
-          "answer": 2,
-          "explanation": "Module 13 - Polymorphism",
-          "id": 92
         },
         {
           "question": "The ability of different objects to perform the appropriate method in response to the same message is known as:",
@@ -4993,95 +4996,167 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Module 13 - Polymorphism",
-          "id": 93
+          "id": 92
         },
         {
           "question": "In polymorphism, the sender of a message (such as main()):",
           "options": [
-            "Decides which method the receiving object uses to respond to the message",
-            "Knows the object can respond, but not its class or how it will respond",
             "Must know the exact class of the receiver before it can send any message",
-            "Must use a switch statement to choose the method for each type of object"
+            "Must use a switch statement to choose the method for each type of object",
+            "Knows the object can respond, but not its class or how it will respond",
+            "Decides which method the receiving object uses to respond to the message"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 93
+        },
+        {
+          "question": "Polymorphism is facilitated by:",
+          "options": [
+            "Private variables and the use of switch statements to select the correct method",
+            "Dynamic binding and the ability to use the same name for similar methods across class definitions",
+            "Static binding and the requirement for unique routine names in each and every class definition",
+            "Packages and import statements that bring similar classes into the same program"
           ],
           "answer": 1,
           "explanation": "Module 13 - Polymorphism",
           "id": 94
         },
         {
-          "question": "Polymorphism is facilitated by:",
+          "question": "Polymorphism encourages programmers to specify:",
           "options": [
-            "Private variables and the use of switch statements to select the correct method",
-            "Static binding and the requirement for unique routine names in each and every class definition",
-            "Packages and import statements that bring similar classes into the same program",
-            "Dynamic binding and the ability to use the same name for similar methods across class definitions"
+            "Only the data, not the methods",
+            "How it should happen rather than what should happen",
+            "Only the user interface",
+            "What should happen rather than how it should happen"
           ],
           "answer": 3,
-          "explanation": "Module 13 - Polymorphism",
+          "explanation": "Module 13 - Polymorphism. This promotes incremental program development.",
           "id": 95
         },
         {
-          "question": "Polymorphism encourages programmers to specify:",
+          "question": "What is polymorphism?",
           "options": [
-            "What should happen rather than how it should happen",
-            "Only the user interface",
-            "How it should happen rather than what should happen",
-            "Only the data, not the methods"
+            "The ability of different objects to respond to the same message in their own way",
+            "The grouping of related classes and interfaces into one named package",
+            "The ability of one class to inherit directly from several parent classes at once",
+            "The hiding of an object's internal data and methods from the other objects"
           ],
           "answer": 0,
-          "explanation": "Module 13 - Polymorphism. This promotes incremental program development.",
+          "explanation": "Module 13 - Polymorphism",
           "id": 96
+        },
+        {
+          "question": "What is static binding?",
+          "options": [
+            "Binding of two classes into one package",
+            "Binding of a method call to its code at run time",
+            "Binding of data and methods into an object",
+            "Binding of a method call to its code at compile time"
+          ],
+          "answer": 3,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 97
+        },
+        {
+          "question": "What is dynamic binding?",
+          "options": [
+            "Binding of a method call to its code at run time",
+            "Binding of a method call to its code at compile time",
+            "Binding of a variable to a constant",
+            "Binding of attributes to a static class"
+          ],
+          "answer": 0,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 98
+        },
+        {
+          "question": "What is operation (method) overloading?",
+          "options": [
+            "Using a static method from another class",
+            "Using the same method signature in a subclass",
+            "Same method name, different parameter lists",
+            "Using a method that has no body"
+          ],
+          "answer": 2,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 99
+        },
+        {
+          "question": "What is a method signature?",
+          "options": [
+            "The method's return type together with its access specifier keyword",
+            "The method name together with the number and types of its parameters",
+            "The name of the class that owns the method and its package",
+            "The comment written above the method to describe what it does"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 100
+        },
+        {
+          "question": "What is upcasting?",
+          "options": [
+            "Changing an int into a String",
+            "Treating a subclass object as its superclass type",
+            "Treating a superclass object as a subclass object",
+            "Making a private method public"
+          ],
+          "answer": 1,
+          "explanation": "Module 13 - Polymorphism",
+          "id": 101
         },
         {
           "question": "What is the output of this program?",
           "code": "abstract class Animal {\n   public abstract void speak();\n}\nclass Dog extends Animal {\n   public void speak() { System.out.println(\"Woof!\"); }\n}\nclass Cow extends Animal {\n   public void speak() { System.out.println(\"Moo!\"); }\n}\nclass Snake extends Animal {\n   public void speak() { System.out.println(\"Ssss!\"); }\n}\npublic class AnimalArrayDemo {\n   public static void main(String[] args) {\n      Animal[] animalRef = new Animal[3];\n      animalRef[0] = new Dog();\n      animalRef[1] = new Cow();\n      animalRef[2] = new Snake();\n      for (int x = 0; x < 3; ++x)\n         animalRef[x].speak();\n   }\n}",
           "options": [
-            "Nothing, because Animal is abstract",
             "Woof! / Woof! / Woof!",
             "Ssss! / Moo! / Woof!",
-            "Woof! / Moo! / Ssss!"
+            "Woof! / Moo! / Ssss!",
+            "Nothing, because Animal is abstract"
           ],
-          "answer": 3,
+          "answer": 2,
           "explanation": "Module 13 - Polymorphism. Output: Woof! / Moo! / Ssss!. Each reference chooses the speak() method of the object it refers to (dynamic method binding).",
-          "id": 97
+          "id": 102
         },
         {
           "question": "What is the output of this program?",
           "code": "class C {\n   C() {}\n   public void c1() { System.out.println(\"C.c1()\"); }\n}\nclass D extends C {\n   D() {}\n   public void c1() {\n      super.c1();\n      System.out.println(\"D.c1()\");\n   }\n   public static void main(String args[]) {\n      D thisD = new D();\n      thisD.c1();\n   }\n}",
           "options": [
             "C.c1() / D.c1()",
-            "D.c1()",
             "D.c1() / C.c1()",
+            "D.c1()",
             "C.c1()"
           ],
           "answer": 0,
           "explanation": "Module 13 - Polymorphism. Output: C.c1() / D.c1(). D's c1() overrides C's c1(); super.c1() runs the superclass version first.",
-          "id": 98
+          "id": 103
         },
         {
           "question": "What is the output of this program?",
           "code": "class C {\n   C() {}\n   public void c1() { System.out.println(\"C.c1()\"); }\n}\nclass D extends C {\n   D() {}\n   public void c1(int i) {\n      super.c1();\n      System.out.println(\"D.c1()\");\n   }\n   public static void main(String args[]) {\n      D thisD = new D();\n      thisD.c1();\n      thisD.c1(3);\n   }\n}",
           "options": [
-            "The program does not compile",
             "D.c1() / C.c1() / D.c1()",
-            "C.c1() / C.c1() / D.c1()",
-            "C.c1() / D.c1()"
+            "The program does not compile",
+            "C.c1() / D.c1()",
+            "C.c1() / C.c1() / D.c1()"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Module 13 - Polymorphism. Output: C.c1() / C.c1() / D.c1(). c1(int i) has a different signature, so it does not override c1(); both methods exist.",
-          "id": 99
+          "id": 104
         },
         {
           "question": "Which constructor message is printed?",
           "code": "class A {\n   A() { System.out.println(\"A()\"); }\n   A(int x) { System.out.println(\"A(int x)\"); }\n   A(int x, int y) { System.out.println(\"A(int x, int y)\"); }\n   A(String x) { System.out.println(\"A(String x)\"); }\n   public static void main(String args[]) {\n      A thisA = new A(4, 5);\n   }\n}",
           "options": [
-            "A()",
-            "A(int x, int y)",
+            "A(int x)",
             "A(String x)",
-            "A(int x)"
+            "A(int x, int y)",
+            "A()"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "Module 13 - Polymorphism. Output: A(int x, int y). Overloaded methods are distinguished by the number and type of parameters.",
-          "id": 100
+          "id": 105
         },
         {
           "type": "output_tracing",
@@ -5090,7 +5165,7 @@ export const exams = {
           "answer": "int 5\ndouble 2.5\nString 5\nsum 7\nint 2",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 13 - Polymorphism. The method is chosen by the parameters. 10 / 4 is integer division (2), so display(int) runs.",
-          "id": 101
+          "id": 106
         },
         {
           "type": "output_tracing",
@@ -5099,7 +5174,7 @@ export const exams = {
           "answer": "Hello from Parent\nChild show\nParent show",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 13 - Polymorphism. With dynamic binding the object's actual class decides which show() runs, even when it is called from inside Parent's greet().",
-          "id": 102
+          "id": 107
         },
         {
           "type": "output_tracing",
@@ -5108,381 +5183,393 @@ export const exams = {
           "answer": "A(int x) 1\nA()\nA(int x, int y) 20\nA(String x) 4",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 13 - Polymorphism. this(1) calls the A(int x) constructor first. Each new A(...) picks the constructor whose parameters match.",
-          "id": 103
+          "id": 108
         },
         {
           "question": "Which is often viewed as the smallest program unit to be considered as a subprogram?",
           "options": [
-            "A package",
             "A method",
+            "An object",
             "A class",
-            "An object"
-          ],
-          "answer": 1,
-          "explanation": "Module 14 - Modularity",
-          "id": 104
-        },
-        {
-          "question": "Compared to a method, what is the next bigger unit under design?",
-          "options": [
-            "A statement",
-            "An attribute",
-            "A class definition",
-            "A variable"
-          ],
-          "answer": 2,
-          "explanation": "Module 14 - Modularity",
-          "id": 105
-        },
-        {
-          "question": "Properties that are specific to objects and apply to all objects from the same class are:",
-          "options": [
-            "Object properties",
-            "Static properties",
-            "Class properties",
-            "Package properties"
-          ],
-          "answer": 0,
-          "explanation": "Module 14 - Modularity",
-          "id": 106
-        },
-        {
-          "question": "Counting objects by adding count = count + 1; in main() for every new SalesPerson works, but it is:",
-          "options": [
-            "Always incorrect, since main() cannot change any variable after objects exist",
-            "Faster than any other method, so it is the preferred class organisation",
-            "Not allowed in Java, since count must be changed inside a constructor only",
-            "Cumbersome, since a new statement must be added for each new object"
-          ],
-          "answer": 3,
-          "explanation": "Module 14 - Modularity",
-          "id": 107
-        },
-        {
-          "question": "When count is an object attribute incremented in the constructor, two SalesPerson objects result in:",
-          "options": [
-            "A compile error, since count must be declared static",
-            "One copy of count in main(), which holds the value 0",
-            "Two independent copies of count, each with the value 1",
-            "One shared copy of count, which holds the value 2"
-          ],
-          "answer": 2,
-          "explanation": "Module 14 - Modularity",
-          "id": 108
-        },
-        {
-          "question": "Declaring count as static allows the variable to be:",
-          "options": [
-            "Shared among all instances of the SalesPerson class",
-            "Changed only by the main() method and no other code",
-            "Copied into every SalesPerson object separately",
-            "Hidden from the SalesPerson class itself and its methods"
+            "A package"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
           "id": 109
         },
         {
-          "question": "An attribute definition preceded with the keyword static is a(n):",
+          "question": "Compared to a method, what is the next bigger unit under design?",
           "options": [
-            "Object attribute",
-            "Class attribute",
-            "Local variable",
-            "Abstract attribute"
+            "A statement",
+            "A class definition",
+            "A variable",
+            "An attribute"
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
           "id": 110
         },
         {
-          "question": "When getCount() is made static, the SalesPerson objects s1 and s2:",
+          "question": "Properties that are specific to objects and apply to all objects from the same class are:",
           "options": [
-            "Cannot call getCount() at all, since static methods are hidden",
-            "Must override getCount() so that each returns its own count",
-            "Each own a separate copy of getCount(), one for each object",
-            "Do not own the getCount() method, since it belongs to the class"
+            "Package properties",
+            "Static properties",
+            "Class properties",
+            "Object properties"
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
           "id": 111
         },
         {
-          "question": "Outside of the class definition, the only way to access the static method getCount() is:",
+          "question": "If count is an object (instance) attribute incremented in the constructor, creating two objects results in:",
           "options": [
-            "Using the keyword new, as in new SalesPerson().getCount()",
-            "Qualification by the class name, as in SalesPerson.getCount()",
-            "Using super.getCount() from any class in the program",
-            "Calling getCount() alone, without any class or object name"
+            "One shared count with the value 0",
+            "Two separate counts, each equal to 1",
+            "A compile error, since count must be static",
+            "One shared count with the value 2"
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
           "id": 112
         },
         {
-          "question": "Ideally, objects reveal information on a:",
+          "question": "Declaring an attribute as static allows it to be:",
           "options": [
-            "Package-wide basis",
-            "Public basis",
-            "Random basis",
-            "Need-to-know basis"
+            "Changed only by the class's constructor",
+            "Copied separately into every object",
+            "Hidden from every method of the class",
+            "Shared among all instances of the class"
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
           "id": 113
         },
         {
-          "question": "Which access specifier makes entities hidden from code fragments external to the class?",
+          "question": "An attribute definition preceded with the keyword static is a(n):",
           "options": [
-            "friendly",
-            "protected",
-            "private",
-            "public"
+            "Abstract attribute",
+            "Local variable",
+            "Class attribute",
+            "Object attribute"
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
           "id": 114
         },
         {
-          "question": "Which access specifier makes entities fully visible from all other Java code?",
+          "question": "Outside of the class definition, a static method is accessed by:",
           "options": [
-            "public",
-            "private",
-            "friendly",
-            "protected"
+            "Through the class name, as in ClassName.method()",
+            "Creating an object first, as in obj.method() only",
+            "Declaring it again in the other class",
+            "Importing it as a separate package"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
           "id": 115
         },
         {
-          "question": "Which access specifier makes entities accessible to code fragments of its immediate subclass?",
+          "question": "Ideally, objects reveal information on a:",
           "options": [
-            "private",
-            "protected",
-            "public",
-            "static"
+            "Public basis",
+            "Need-to-know basis",
+            "Random basis",
+            "Package-wide basis"
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
           "id": 116
         },
         {
-          "question": "For entities with no access specifier, this default visibility is assumed, giving access within the same package:",
+          "question": "Which access specifier makes entities hidden from code fragments external to the class?",
           "options": [
-            "protected",
             "public",
-            "private",
-            "friendly"
+            "protected",
+            "friendly",
+            "private"
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
           "id": 117
         },
         {
-          "question": "Private variables are used within the class definition, or accessed outside it through a:",
+          "question": "Which access specifier makes entities fully visible from all other Java code?",
           "options": [
-            "Private constructor",
-            "Static import",
-            "Public accessor method",
-            "Protected package"
+            "private",
+            "protected",
+            "public",
+            "friendly"
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
           "id": 118
         },
         {
-          "question": "A named collection of classes is a:",
+          "question": "Which access specifier makes entities accessible to code fragments of its immediate subclass?",
           "options": [
-            "Package",
-            "Constructor",
-            "Method",
-            "Interface"
+            "protected",
+            "static",
+            "private",
+            "public"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
           "id": 119
         },
         {
-          "question": "Which package contains fundamental classes and is imported automatically into every program?",
+          "question": "For entities with no access specifier, this default visibility is assumed, giving access within the same package:",
           "options": [
-            "java.lang",
-            "java.util",
-            "javax.swing",
-            "com.course"
+            "friendly",
+            "protected",
+            "public",
+            "private"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
           "id": 120
         },
         {
-          "question": "When you create professional classes for others to use, you usually provide them with the:",
+          "question": "Private variables are used within the class definition, or accessed outside it through a:",
           "options": [
-            ".java source code files",
-            "Compiled .class files",
-            "Package declarations only",
-            "Text files of your code"
+            "Private constructor",
+            "Public accessor method",
+            "Static import",
+            "Protected package"
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
           "id": 121
         },
         {
-          "question": "A class that will be placed in a nondefault package for others to use must be:",
+          "question": "A named collection of classes is a:",
           "options": [
-            "static",
-            "private",
-            "abstract",
-            "public"
+            "Constructor",
+            "Method",
+            "Interface",
+            "Package"
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
           "id": 122
         },
         {
-          "question": "If a file contains a package declaration, it must be:",
+          "question": "Which package contains fundamental classes and is imported automatically into every program?",
           "options": [
-            "Inside the class definition, before the first method",
-            "The last statement in the file, after the class definition",
-            "The first statement in the file (excluding comments)",
-            "After all of the import statements at the top of the file"
+            "javax.swing",
+            "java.util",
+            "java.lang",
+            "com.course"
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
           "id": 123
         },
         {
-          "question": "Which statements are the only ones that appear outside class definitions in Java program files?",
+          "question": "When you create professional classes for others to use, you usually provide them with the:",
           "options": [
-            "Interfaces, abstract methods, and static variables",
-            "Constructors, the main() method, and comments",
-            "Variable declarations, constructors, and methods",
-            "The package statement, import statements, and comments"
+            "Text files of your code",
+            "Package declarations only",
+            ".java source code files",
+            "Compiled .class files"
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
           "id": 124
         },
         {
-          "question": "In the command javac -d . Animal.java, the -d option means:",
+          "question": "A class that will be placed in a nondefault package for others to use must be:",
           "options": [
-            "Debug the program and display each error in detail",
-            "Place the generated .class file in a folder (directory)",
-            "Download the package that Animal.java needs to compile",
-            "Delete the Animal.java source file after it is compiled"
+            "abstract",
+            "public",
+            "static",
+            "private"
           ],
           "answer": 1,
-          "explanation": "Module 14 - Modularity. The dot means the package path is created within the current directory.",
+          "explanation": "Module 14 - Modularity",
           "id": 125
         },
         {
-          "question": "The Java package-naming convention uses:",
+          "question": "If a file contains a package declaration, it must be:",
           "options": [
-            "Your Internet domain name in reverse order (e.g., com.course)",
-            "The class name written in uppercase (e.g., ANIMAL.DOG)",
-            "Random numbers so that no two package names can ever conflict",
-            "Your full name followed by the date the package was created"
+            "The first statement in the file (excluding comments)",
+            "Inside the class definition, before the first method",
+            "After all of the import statements at the top of the file",
+            "The last statement in the file, after the class definition"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
           "id": 126
         },
         {
-          "question": "A class naming conflict is sometimes called a:",
+          "question": "Which statements are the only ones that appear outside class definitions in Java program files?",
           "options": [
-            "Overload",
-            "Package",
-            "Collision",
-            "Binding"
+            "Interfaces, abstract methods, and static variables",
+            "Variable declarations, constructors, and methods",
+            "The package statement, import statements, and comments",
+            "Constructors, the main() method, and comments"
           ],
           "answer": 2,
           "explanation": "Module 14 - Modularity",
           "id": 127
         },
         {
-          "question": "The bringing together of a set of attributes and methods into an object definition and hiding their implementational structure from the object's users is:",
+          "question": "In the command javac -d . Animal.java, the -d option means:",
           "options": [
-            "Dynamic binding",
-            "Inheritance",
-            "Encapsulation",
-            "Polymorphism"
+            "Download the package that Animal.java needs to compile",
+            "Debug the program and display each error in detail",
+            "Place the generated .class file in a folder (directory)",
+            "Delete the Animal.java source file after it is compiled"
           ],
           "answer": 2,
-          "explanation": "Module 14 - Modularity",
+          "explanation": "Module 14 - Modularity. The dot means the package path is created within the current directory.",
           "id": 128
         },
         {
-          "question": "In the egg analogy of encapsulation, the data of an object is like the:",
+          "question": "The Java package-naming convention uses:",
           "options": [
-            "Yolk, and the methods are like the white",
-            "Yolk, and the methods are like the shell",
-            "White, and the methods are like the yolk",
-            "Shell, and the methods are like the yolk"
+            "Your Internet domain name in reverse order (e.g., com.course)",
+            "Random numbers so that no two package names can ever conflict",
+            "Your full name followed by the date the package was created",
+            "The class name written in uppercase (e.g., ANIMAL.DOG)"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity",
           "id": 129
         },
         {
-          "question": "Encapsulation enhances software maintainability by:",
+          "question": "A class naming conflict is sometimes called a:",
           "options": [
-            "Removing methods from objects so that other objects use the data directly",
-            "Increasing the coupling between components by making all data and methods public to other objects",
-            "Copying the same data into every object so that changes affect all objects",
-            "Increasing cohesiveness through bundling and reducing coupling by hiding implementation details"
+            "Binding",
+            "Package",
+            "Overload",
+            "Collision"
           ],
           "answer": 3,
           "explanation": "Module 14 - Modularity",
           "id": 130
         },
         {
-          "question": "The act of associating a set of methods with a set of data as the only means of affecting the values of the data is:",
+          "question": "The bringing together of a set of attributes and methods into an object definition and hiding their implementational structure from the object's users is:",
           "options": [
-            "Upcasting",
-            "Bundling",
-            "Information hiding",
-            "Overloading"
+            "Dynamic binding",
+            "Encapsulation",
+            "Polymorphism",
+            "Inheritance"
           ],
           "answer": 1,
           "explanation": "Module 14 - Modularity",
           "id": 131
         },
         {
+          "question": "Encapsulation enhances software maintainability by:",
+          "options": [
+            "Copying the same data into every object so that changes affect all objects",
+            "Increasing cohesiveness through bundling and reducing coupling by hiding implementation details",
+            "Increasing the coupling between components by making all data and methods public to other objects",
+            "Removing methods from objects so that other objects use the data directly"
+          ],
+          "answer": 1,
+          "explanation": "Module 14 - Modularity",
+          "id": 132
+        },
+        {
+          "question": "The act of associating a set of methods with a set of data as the only means of affecting the values of the data is:",
+          "options": [
+            "Bundling",
+            "Upcasting",
+            "Information hiding",
+            "Overloading"
+          ],
+          "answer": 0,
+          "explanation": "Module 14 - Modularity",
+          "id": 133
+        },
+        {
           "question": "The hiding of internal representation of data and methods from the users of these data and methods is:",
           "options": [
             "Collision",
-            "Information hiding",
+            "Promotion",
             "Bundling",
-            "Promotion"
+            "Information hiding"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity. It separates the what from the how of object definition.",
+          "id": 134
+        },
+        {
+          "question": "What is modularity?",
+          "options": [
+            "Combining all of the program's code into one long main method",
+            "Hiding the data of an object from all users of that object",
+            "Dividing a program into smaller units such as methods and classes",
+            "Using one name for several methods that have different parameters"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 135
+        },
+        {
+          "question": "What is a class (static) attribute?",
+          "options": [
+            "An attribute that can never be changed",
+            "An attribute shared by all objects of the class",
+            "An attribute that belongs to a package",
+            "An attribute that each object has its own copy of"
           ],
           "answer": 1,
-          "explanation": "Module 14 - Modularity. It separates the what from the how of object definition.",
-          "id": 132
+          "explanation": "Module 14 - Modularity",
+          "id": 136
+        },
+        {
+          "question": "What is an object (instance) attribute?",
+          "options": [
+            "An attribute shared by all objects of the class",
+            "An attribute that belongs to the main method",
+            "An attribute declared only in an interface",
+            "An attribute each object has its own copy of"
+          ],
+          "answer": 3,
+          "explanation": "Module 14 - Modularity",
+          "id": 137
+        },
+        {
+          "question": "What is a package in Java?",
+          "options": [
+            "A single compiled .class file",
+            "An interface that holds constants",
+            "A named collection of classes",
+            "A method that groups other methods"
+          ],
+          "answer": 2,
+          "explanation": "Module 14 - Modularity",
+          "id": 138
         },
         {
           "question": "What is the output of this program (count is static)?",
           "code": "class SalesPerson {\n   String employeeId;\n   static int count = 0;\n   SalesPerson(String aEmployeeId) {\n      employeeId = aEmployeeId;\n      count = count + 1;\n   }\n   static int getCount() { return count; }\n   public static void main(String argv[]) {\n      SalesPerson s1 = new SalesPerson(\"12345S\");\n      SalesPerson s2 = new SalesPerson(\"33221K\");\n      System.out.println(getCount() + \" salespersons have been created\");\n   }\n}",
           "options": [
             "2 salespersons have been created",
-            "The program does not compile",
+            "0 salespersons have been created",
             "1 salespersons have been created",
-            "0 salespersons have been created"
+            "The program does not compile"
           ],
           "answer": 0,
           "explanation": "Module 14 - Modularity. Output: 2 salespersons have been created. A static count is one shared copy, so both constructors increment the same variable.",
-          "id": 133
+          "id": 139
         },
         {
           "question": "What is the output of this program (count is NOT static)?",
           "code": "class SalesPerson {\n   String employeeId;\n   int count = 0;\n   SalesPerson(String aEmployeeId) {\n      employeeId = aEmployeeId;\n      count = count + 1;\n   }\n   int getCount() { return count; }\n   public static void main(String argv[]) {\n      SalesPerson s1 = new SalesPerson(\"12345S\");\n      SalesPerson s2 = new SalesPerson(\"33221K\");\n      System.out.println(s1.getCount() + \" salespersons have been created\");\n   }\n}",
           "options": [
-            "The program does not compile",
+            "1 salespersons have been created",
             "0 salespersons have been created",
-            "2 salespersons have been created",
-            "1 salespersons have been created"
+            "The program does not compile",
+            "2 salespersons have been created"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "Module 14 - Modularity. Output: 1 salespersons have been created. As an object attribute, each object has its own count with the value 1.",
-          "id": 134
+          "id": 140
         },
         {
           "type": "output_tracing",
@@ -5491,7 +5578,7 @@ export const exams = {
           "answer": "1\n3\n4",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 14 - Modularity. total is static (one shared copy, 3 after three objects); mine is an object attribute, so each object has its own value of 1.",
-          "id": 135
+          "id": 141
         },
         {
           "type": "output_tracing",
@@ -5500,7 +5587,7 @@ export const exams = {
           "answer": "Insufficient funds\nBalance: 300",
           "instruction": "Type each printed line on its own line, in order.",
           "explanation": "Module 14 - Modularity. balance is private, so it changes only through deposit() and withdraw(); the negative deposit is ignored and the 700 withdrawal is refused.",
-          "id": 136
+          "id": 142
         }
       ]
     }
@@ -5586,155 +5673,155 @@ export const exams = {
           "id": 6
         },
         {
-          "question": "A university's portal, library kiosk, and mobile grade-viewer all call one login service. When password hashing changes, only the login service is updated and none of the apps are touched. Which benefits does this show?",
+          "question": "A strict protocol using XML and a WSDL contract, common in enterprise and high-security systems.",
           "options": [
-            "Loose coupling and reusability",
-            "Cacheability and reliability",
-            "Discoverability and statelessness",
-            "Interoperability and composability"
+            "SOAP-based",
+            "JSON-RPC",
+            "XML-RPC",
+            "RESTful"
           ],
           "answer": 0,
-          "explanation": "Lesson 1 - Web Services and SOAP. Scenario: one login service, many apps.",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 7
         },
         {
-          "question": "A bank on Java and an e-wallet on .NET exchange XML requests and responses for cash-ins without opening their databases to each other. What is the only thing the two companies share?",
+          "question": "An architectural style using plain HTTP, usually with JSON; lightweight and common for web and mobile.",
           "options": [
-            "A copy of each other's source code",
-            "A database both of them can write to",
-            "The same programming language and server platform",
-            "The web service, an agreed message format"
+            "WS-Addressing",
+            "SOAP-based",
+            "XML-RPC",
+            "RESTful"
           ],
           "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP. Scenario: a bank and an e-wallet that never share source code.",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 8
         },
         {
-          "question": "A strict protocol using XML and a WSDL contract, common in enterprise and high-security systems.",
+          "question": "Older, simple styles for calling a remote method and passing parameters, rarely used in new systems.",
           "options": [
-            "XML-RPC",
-            "JSON-RPC",
-            "RESTful",
-            "SOAP-based"
+            "REST and GraphQL",
+            "UDDI and WS-*",
+            "SOAP and WSDL",
+            "XML-RPC and JSON-RPC"
           ],
           "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 9
         },
         {
-          "question": "An architectural style using plain HTTP, usually with JSON; lightweight and common for web and mobile.",
+          "question": "The three interactions of a service-oriented architecture are:",
           "options": [
-            "SOAP-based",
-            "RESTful",
-            "XML-RPC",
-            "WS-Addressing"
+            "Request, process, and respond",
+            "Publish, find, and bind",
+            "Serialize, sign, and send",
+            "Create, read, and update"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 10
         },
         {
-          "question": "Older, simple styles for calling a remote method and passing parameters, rarely used in new systems.",
+          "question": "In the web service architecture, which role hosts the service and publishes its WSDL?",
           "options": [
-            "XML-RPC and JSON-RPC",
-            "REST and GraphQL",
-            "SOAP and WSDL",
-            "UDDI and WS-*"
+            "Service provider",
+            "Service registry",
+            "Service requester",
+            "Service consumer"
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 11
         },
         {
-          "question": "The three interactions of a service-oriented architecture are:",
+          "question": "In the web service architecture, which role searches the directory and retrieves the WSDL?",
           "options": [
-            "Serialize, sign, and send",
-            "Request, process, and respond",
-            "Publish, find, and bind",
-            "Create, read, and update"
+            "Service registry",
+            "Service provider",
+            "Service requester",
+            "Service endpoint"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 12
         },
         {
-          "question": "In the web service architecture, which role hosts the service and publishes its WSDL?",
+          "question": "In the web service architecture, the UDDI directory plays the role of the:",
           "options": [
+            "Service provider",
             "Service requester",
             "Service registry",
-            "Service provider",
-            "Service consumer"
+            "Service binding"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 13
         },
         {
-          "question": "In the web service architecture, which role searches the directory and retrieves the WSDL?",
+          "question": "In the bind and invoke step, the requester:",
           "options": [
-            "Service provider",
-            "Service registry",
-            "Service endpoint",
-            "Service requester"
+            "Registers its WSDL file in the directory",
+            "Searches the registry directory for a matching service",
+            "Groups services by category for browsing",
+            "Uses the WSDL to call the service at its endpoint"
           ],
           "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 14
         },
         {
-          "question": "In the web service architecture, the UDDI directory plays the role of the:",
+          "question": "A design approach where software is built as a set of reusable, independent services.",
           "options": [
-            "Service requester",
-            "Service registry",
-            "Service provider",
-            "Service binding"
+            "Web Services Description Language",
+            "Service-oriented architecture (SOA)",
+            "Simple Object Access Protocol (SOAP)",
+            "Universal Description and Discovery"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 15
         },
         {
-          "question": "In the bind and invoke step, the requester:",
+          "question": "What is the most common way to put SOA into practice?",
           "options": [
-            "Uses the WSDL to call the service at its endpoint",
-            "Groups services by category for browsing",
-            "Registers its WSDL file in the directory",
-            "Searches the registry directory for a matching service"
+            "Web services",
+            "Desktop programs",
+            "Binary files",
+            "Shared databases"
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 16
         },
         {
-          "question": "A design approach where software is built as a set of reusable, independent services.",
+          "question": "SOA principle: small services can be combined into larger business processes.",
           "options": [
-            "Web Services Description Language",
-            "Simple Object Access Protocol (SOAP)",
-            "Universal Description and Discovery",
-            "Service-oriented architecture (SOA)"
+            "Reusability",
+            "Discoverability",
+            "Loose coupling",
+            "Composability"
           ],
           "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 17
         },
         {
-          "question": "What is the most common way to put SOA into practice?",
+          "question": "SOA principle: services can be published and found through a registry.",
           "options": [
-            "Shared databases",
-            "Desktop programs",
-            "Web services",
-            "Binary files"
+            "Standardized contracts",
+            "Interoperability",
+            "Discoverability",
+            "Composability"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 18
         },
         {
-          "question": "SOA principle: small services can be combined into larger business processes.",
+          "question": "SOA principle: each service exposes a clear, agreed interface.",
           "options": [
             "Discoverability",
+            "Standardized contracts",
             "Composability",
-            "Reusability",
             "Loose coupling"
           ],
           "answer": 1,
@@ -5742,308 +5829,272 @@ export const exams = {
           "id": 19
         },
         {
-          "question": "SOA principle: services can be published and found through a registry.",
+          "question": "SOAP carries the message, WSDL ______, and UDDI ______.",
           "options": [
-            "Discoverability",
-            "Standardized contracts",
-            "Composability",
-            "Interoperability"
+            "describes the service; helps clients find it",
+            "encrypts the message; routes the message",
+            "helps clients find it; describes the service",
+            "stores the data; validates the schema"
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 20
         },
         {
-          "question": "SOA principle: each service exposes a clear, agreed interface.",
+          "question": "Which core building block is the service contract?",
           "options": [
-            "Standardized contracts",
-            "Loose coupling",
-            "Discoverability",
-            "Composability"
+            "WSDL",
+            "XML",
+            "UDDI",
+            "SOAP"
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 21
         },
         {
-          "question": "A ride-hailing app books a ride by calling a mapping service, a pricing service, a payment service, and a notification service, each owned by a different team. This best illustrates:",
+          "question": "Which core building block is the directory where services are published so clients can discover them?",
           "options": [
-            "Statelessness in REST",
-            "Fault handling in SOAP",
-            "Pagination in REST",
-            "Composability in SOA"
+            "WSDL",
+            "SOAP",
+            "SOA",
+            "UDDI"
           ],
           "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP. Scenario: how a ride-hailing app composes services.",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 22
         },
         {
-          "question": "SOAP carries the message, WSDL ______, and UDDI ______.",
+          "question": "XML stands for:",
           "options": [
-            "helps clients find it; describes the service",
-            "encrypts the message; routes the message",
-            "describes the service; helps clients find it",
-            "stores the data; validates the schema"
+            "eXecutable Markup Language",
+            "eXtended Message Language",
+            "eXtensible Markup Language",
+            "eXternal Mapping Language"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 23
         },
         {
-          "question": "Which core building block is the service contract?",
+          "question": "Which statement about the basic rules of XML is correct?",
           "options": [
-            "UDDI",
-            "WSDL",
-            "SOAP",
-            "XML"
+            "Closing tags are optional",
+            "Tags are case sensitive",
+            "Several root elements are allowed",
+            "Tags ignore uppercase letters"
           ],
           "answer": 1,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "explanation": "Lesson 1 - Web Services and SOAP. Well formed, case sensitive, exactly one root element.",
           "id": 24
         },
         {
-          "question": "Which core building block is the directory where services are published so clients can discover them?",
+          "question": "Why is this XML not a valid document?",
           "options": [
-            "UDDI",
-            "WSDL",
-            "SOAP",
-            "SOA"
+            "It has more than one root element",
+            "Its tags do not follow case sensitivity",
+            "It is missing a SOAP Header",
+            "Its values are not in quotes"
           ],
           "answer": 0,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "explanation": "Lesson 1 - Web Services and SOAP. There must be exactly one root element.",
+          "code": "<student>\n  <id>42</id>\n</student>\n<student>\n  <id>43</id>\n</student>",
           "id": 25
         },
         {
-          "question": "XML stands for:",
+          "question": "SOAP messages are written entirely in:",
           "options": [
-            "eXternal Mapping Language",
-            "eXtensible Markup Language",
-            "eXecutable Markup Language",
-            "eXtended Message Language"
+            "HTML",
+            "XML",
+            "JSON",
+            "YAML"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 26
         },
         {
-          "question": "Which statement about the basic rules of XML is correct?",
+          "question": "SOAP stands for:",
           "options": [
-            "Tags ignore uppercase letters",
-            "Closing tags are optional",
-            "Tags are case sensitive",
-            "Several root elements are allowed"
+            "Simple Online Architecture Protocol",
+            "Service Oriented Access Protocol",
+            "Simple Object Access Protocol",
+            "Standard Object Application Protocol"
           ],
           "answer": 2,
-          "explanation": "Lesson 1 - Web Services and SOAP. Well formed, case sensitive, exactly one root element.",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 27
         },
         {
-          "question": "Why is this XML not a valid document?",
+          "question": "SOAP is transport independent but is most commonly sent over:",
           "options": [
-            "It is missing a SOAP Header",
-            "Its values are not in quotes",
-            "Its tags do not follow case sensitivity",
-            "It has more than one root element"
+            "FTP",
+            "SSH",
+            "SMTP",
+            "HTTP"
           ],
           "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP. There must be exactly one root element.",
-          "code": "<student>\n  <id>42</id>\n</student>\n<student>\n  <id>43</id>\n</student>",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 28
         },
         {
-          "question": "SOAP messages are written entirely in:",
+          "question": "Why do both sides always know exactly how to read a SOAP message?",
           "options": [
-            "YAML",
-            "JSON",
-            "HTML",
-            "XML"
+            "The server sends its source code first",
+            "The client and server share one database",
+            "The message is converted to plain text",
+            "The format is strict and well defined"
           ],
           "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 29
         },
         {
-          "question": "SOAP stands for:",
+          "question": "The root element that marks the start and end of a SOAP message.",
           "options": [
-            "Simple Object Access Protocol",
-            "Standard Object Application Protocol",
-            "Service Oriented Access Protocol",
-            "Simple Online Architecture Protocol"
+            "Envelope",
+            "Body",
+            "Header",
+            "Fault"
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 30
         },
         {
-          "question": "SOAP is transport independent but is most commonly sent over:",
+          "question": "The optional part of a SOAP message that carries metadata such as authentication, transaction, and routing information.",
           "options": [
-            "SSH",
-            "HTTP",
-            "SMTP",
-            "FTP"
+            "Fault",
+            "Header",
+            "Body",
+            "Envelope"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 31
         },
         {
-          "question": "Why do both sides always know exactly how to read a SOAP message?",
+          "question": "The required part of a SOAP message that carries the actual request or response data.",
           "options": [
-            "The message is converted to plain text",
-            "The client and server share one database",
-            "The format is strict and well defined",
-            "The server sends its source code first"
+            "Detail",
+            "Header",
+            "Body",
+            "Envelope"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 32
         },
         {
-          "question": "The root element that marks the start and end of a SOAP message.",
+          "question": "In this SOAP message, what does the Header carry?",
           "options": [
-            "Envelope",
-            "Fault",
-            "Header",
-            "Body"
+            "An authentication token",
+            "The endpoint address (URL)",
+            "The request for student 42",
+            "The error code and message"
           ],
           "answer": 0,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "explanation": "Lesson 1 - Web Services and SOAP. The Header is optional; here it carries the auth token.",
+          "code": "<soap:Envelope xmlns:soap=\"http://.../envelope/\">\n  <soap:Header>\n    <auth:Token>abc123</auth:Token>\n  </soap:Header>\n  <soap:Body>\n    <getStudent>\n      <id>42</id>\n    </getStudent>\n  </soap:Body>\n</soap:Envelope>",
           "id": 33
         },
         {
-          "question": "The optional part of a SOAP message that carries metadata such as authentication, transaction, and routing information.",
+          "question": "In this SOAP message, what is the Body asking for?",
           "options": [
-            "Envelope",
-            "Fault",
-            "Header",
-            "Body"
+            "The list of all students",
+            "The WSDL of the service",
+            "The student with ID 42",
+            "A new token for user 42"
           ],
           "answer": 2,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "explanation": "Lesson 1 - Web Services and SOAP. A response looks the same, with the result inside the Body.",
+          "code": "<soap:Envelope xmlns:soap=\"http://.../envelope/\">\n  <soap:Header>\n    <auth:Token>abc123</auth:Token>\n  </soap:Header>\n  <soap:Body>\n    <getStudent>\n      <id>42</id>\n    </getStudent>\n  </soap:Body>\n</soap:Envelope>",
           "id": 34
         },
         {
-          "question": "The required part of a SOAP message that carries the actual request or response data.",
+          "question": "When something goes wrong, the server returns a SOAP Fault. Where is it placed?",
           "options": [
-            "Envelope",
-            "Body",
-            "Header",
-            "Detail"
+            "Outside the Envelope",
+            "Inside the Body",
+            "Inside the Header",
+            "In the WSDL file"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 35
         },
         {
-          "question": "In this SOAP message, what does the Header carry?",
-          "options": [
-            "The error code and message",
-            "The endpoint address (URL)",
-            "The request for student 42",
-            "An authentication token"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP. The Header is optional; here it carries the auth token.",
-          "code": "<soap:Envelope xmlns:soap=\"http://.../envelope/\">\n  <soap:Header>\n    <auth:Token>abc123</auth:Token>\n  </soap:Header>\n  <soap:Body>\n    <getStudent>\n      <id>42</id>\n    </getStudent>\n  </soap:Body>\n</soap:Envelope>",
-          "id": 36
-        },
-        {
-          "question": "In this SOAP message, what is the Body asking for?",
-          "options": [
-            "The WSDL of the service",
-            "A new token for user 42",
-            "The list of all students",
-            "The student with ID 42"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP. A response looks the same, with the result inside the Body.",
-          "code": "<soap:Envelope xmlns:soap=\"http://.../envelope/\">\n  <soap:Header>\n    <auth:Token>abc123</auth:Token>\n  </soap:Header>\n  <soap:Body>\n    <getStudent>\n      <id>42</id>\n    </getStudent>\n  </soap:Body>\n</soap:Envelope>",
-          "id": 37
-        },
-        {
-          "question": "When something goes wrong, the server returns a SOAP Fault. Where is it placed?",
-          "options": [
-            "Inside the Header",
-            "In the WSDL file",
-            "Inside the Body",
-            "Outside the Envelope"
-          ],
-          "answer": 2,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 38
-        },
-        {
           "question": "In this SOAP Fault, which element gives the human readable explanation of the error?",
           "options": [
-            "faultstring",
             "faultactor",
             "detail",
-            "faultcode"
+            "faultcode",
+            "faultstring"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP. faultcode identifies the type of error.",
           "code": "<soap:Body>\n  <soap:Fault>\n    <faultcode>soap:Client</faultcode>\n    <faultstring>Invalid student ID</faultstring>\n  </soap:Fault>\n</soap:Body>",
-          "id": 39
+          "id": 36
         },
         {
           "question": "Which SOAP Fault element is optional and names who caused the fault?",
           "options": [
             "Envelope",
-            "faultactor",
+            "faultcode",
             "faultstring",
-            "faultcode"
+            "faultactor"
           ],
-          "answer": 1,
+          "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP. detail holds application-specific error details.",
-          "id": 40
+          "id": 37
         },
         {
           "question": "In the SOAP message flow, what does the server send back when the request fails?",
           "options": [
             "An empty Envelope with no Body",
             "A UDDI entry pointing to another service",
-            "A new WSDL describing the error",
-            "A SOAP Fault instead of a normal result"
+            "A SOAP Fault instead of a normal result",
+            "A new WSDL describing the error"
           ],
-          "answer": 3,
+          "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 41
+          "id": 38
         },
         {
           "question": "A SOAP message that looks like a remote method call, carrying an operation name and its parameters, uses which style?",
           "options": [
+            "RPC style",
             "Literal style",
             "REST style",
-            "RPC style",
             "Document style"
           ],
-          "answer": 2,
+          "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 42
+          "id": 39
         },
         {
           "question": "Which SOAP messaging style carries a full XML document, is more loosely coupled, and is easier to validate against a schema?",
           "options": [
+            "Stateful style",
             "Document style",
             "Binary style",
-            "Stateful style",
             "RPC style"
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 43
+          "id": 40
         },
         {
           "question": "Why do most modern SOAP services use the document style with literal encoding?",
           "options": [
-            "It removes the need for a WSDL contract",
-            "Validating a whole document against a schema is more reliable",
             "Matching a method signature is faster and easier to validate",
-            "It lets SOAP messages be written in JSON"
+            "It lets SOAP messages be written in JSON",
+            "It removes the need for a WSDL contract",
+            "Validating a whole document against a schema is more reliable"
           ],
-          "answer": 1,
+          "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 44
+          "id": 41
         },
         {
           "question": "WSDL stands for:",
@@ -6055,211 +6106,211 @@ export const exams = {
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 45
+          "id": 42
         },
         {
           "question": "Which WSDL element lists the operations the service offers?",
           "options": [
             "portType",
-            "binding",
+            "service",
             "types",
+            "binding"
+          ],
+          "answer": 0,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 43
+        },
+        {
+          "question": "Which WSDL element states the protocol and format used?",
+          "options": [
+            "message",
+            "binding",
+            "portType",
             "service"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 44
+        },
+        {
+          "question": "Which WSDL element gives the endpoint address (URL)?",
+          "options": [
+            "portType",
+            "types",
+            "service",
+            "binding"
+          ],
+          "answer": 2,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 45
+        },
+        {
+          "question": "Why can a developer generate working client code from a WSDL alone?",
+          "options": [
+            "The WSDL describes every operation, message, data type, and endpoint",
+            "The WSDL contains the provider's full source code and database",
+            "The SOAP Header carries the generated code to the client",
+            "The UDDI registry sends ready-made classes to every client"
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 46
         },
         {
-          "question": "Which WSDL element states the protocol and format used?",
+          "question": "Tools such as wsimport (Java) and svcutil (.NET) build client code from:",
           "options": [
-            "portType",
-            "binding",
-            "message",
-            "service"
+            "A JSON body",
+            "A WSDL",
+            "A UDDI page",
+            "A SOAP Fault"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 47
         },
         {
-          "question": "Which WSDL element gives the endpoint address (URL)?",
+          "question": "UDDI stands for:",
           "options": [
-            "types",
-            "portType",
-            "binding",
-            "service"
+            "Uniform Directory, Discovery, and Indexing",
+            "Universal Design, Deployment, and Interface",
+            "Unified Data, Delivery, and Interchange",
+            "Universal Description, Discovery, and Integration"
           ],
           "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 48
         },
         {
-          "question": "A logistics firm gives its partner only the WSDL URL of its tracking service. The partner runs a code generator and gets ready-made classes in seconds. What makes this possible?",
+          "question": "In UDDI, which part holds technical details on how to connect to and call the service?",
           "options": [
-            "The WSDL states every operation, field, and endpoint",
-            "The partner reads the provider's source code and database",
-            "The UDDI registry sends the client classes",
-            "The SOAP Header carries the generated code"
+            "Green pages",
+            "White pages",
+            "Yellow pages",
+            "Blue pages"
           ],
           "answer": 0,
-          "explanation": "Lesson 1 - Web Services and SOAP. Scenario: generating a client from a WSDL in minutes.",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 49
         },
         {
-          "question": "Tools such as wsimport (Java) and svcutil (.NET) build client code from:",
+          "question": "In UDDI, which part groups services by category so clients can browse by type?",
           "options": [
-            "A JSON body",
-            "A SOAP Fault",
-            "A WSDL",
-            "A UDDI page"
+            "White pages",
+            "Blue pages",
+            "Yellow pages",
+            "Green pages"
           ],
           "answer": 2,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "explanation": "Lesson 1 - Web Services and SOAP. White pages hold the business name and contact information.",
           "id": 50
         },
         {
-          "question": "UDDI stands for:",
+          "question": "Why is UDDI less common today?",
           "options": [
-            "Uniform Directory, Discovery, and Indexing",
-            "Unified Data, Delivery, and Interchange",
-            "Universal Design, Deployment, and Interface",
-            "Universal Description, Discovery, and Integration"
+            "Registries cannot store contact details",
+            "SOAP messages can no longer be sent over HTTP connections",
+            "REST replaced XML in every SOAP service",
+            "Many services are shared directly through their WSDL"
           ],
           "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 51
         },
         {
-          "question": "In UDDI, which part holds technical details on how to connect to and call the service?",
+          "question": "Which WS-* standard adds authentication, encryption, and message integrity?",
           "options": [
-            "Blue pages",
-            "Green pages",
-            "White pages",
-            "Yellow pages"
+            "WS-AtomicTransaction",
+            "WS-Security",
+            "WS-Addressing",
+            "WS-ReliableMessaging"
           ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 52
         },
         {
-          "question": "In UDDI, which part groups services by category so clients can browse by type?",
+          "question": "Which WS-* standard puts routing and addressing information inside the message?",
           "options": [
-            "Yellow pages",
-            "White pages",
-            "Blue pages",
-            "Green pages"
+            "WS-Addressing",
+            "WS-Security",
+            "WS-AtomicTransaction",
+            "WS-ReliableMessaging"
           ],
           "answer": 0,
-          "explanation": "Lesson 1 - Web Services and SOAP. White pages hold the business name and contact information.",
+          "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 53
         },
         {
-          "question": "Why is UDDI less common today?",
+          "question": "Which WS-* standard guarantees delivery even if the network fails temporarily?",
           "options": [
-            "REST replaced XML in every SOAP service",
-            "Registries cannot store contact details",
-            "Many services are shared directly through their WSDL",
-            "SOAP messages can no longer be sent over HTTP connections"
+            "WS-AtomicTransaction",
+            "WS-Security",
+            "WS-ReliableMessaging",
+            "WS-Addressing"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 54
         },
         {
-          "question": "Which WS-* standard adds authentication, encryption, and message integrity?",
-          "options": [
-            "WS-ReliableMessaging",
-            "WS-Addressing",
-            "WS-AtomicTransaction",
-            "WS-Security"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 55
-        },
-        {
-          "question": "Which WS-* standard puts routing and addressing information inside the message?",
-          "options": [
-            "WS-AtomicTransaction",
-            "WS-Addressing",
-            "WS-Security",
-            "WS-ReliableMessaging"
-          ],
-          "answer": 1,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 56
-        },
-        {
-          "question": "A payment message must still arrive even if the network fails temporarily. Which WS-* standard fits?",
+          "question": "Which WS-* standard coordinates a transaction across several services?",
           "options": [
             "WS-Addressing",
             "WS-ReliableMessaging",
             "WS-Security",
             "WS-AtomicTransaction"
           ],
+          "answer": 3,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 55
+        },
+        {
+          "question": "How does WS-Security differ from relying only on HTTPS?",
+          "options": [
+            "It lets the SOAP message be sent without using any XML",
+            "It protects the message itself, not just the connection",
+            "It makes the XML message smaller and faster to send over HTTP",
+            "It removes the need for a WSDL contract between the parties"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 56
+        },
+        {
+          "question": "A dedicated tool to test, inspect, and debug SOAP services.",
+          "options": [
+            "curl",
+            "SoapUI",
+            "DevTools",
+            "Swagger"
+          ],
           "answer": 1,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 57
         },
         {
-          "question": "Debiting one account and crediting another happen in two different services, and both must succeed or fail as one. Which WS-* standard coordinates this?",
+          "question": "Which is a trade-off (limitation) of SOAP?",
           "options": [
-            "WS-Security",
-            "WS-Addressing",
-            "WS-AtomicTransaction",
-            "WS-ReliableMessaging"
+            "Works over several transports",
+            "Language and platform neutral design",
+            "Verbose XML makes messages large",
+            "Strong typing through a WSDL contract"
           ],
           "answer": 2,
           "explanation": "Lesson 1 - Web Services and SOAP.",
           "id": 58
         },
         {
-          "question": "An interbank transfer passes through several intermediaries. Why does the bank use WS-Security instead of relying only on HTTPS?",
-          "options": [
-            "It lets the message be sent without XML",
-            "It makes the XML message smaller and faster to send over HTTP",
-            "It removes the need for a WSDL contract",
-            "It protects the message itself, not just the connection"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 1 - Web Services and SOAP. Scenario: the signature and encryption travel with the XML.",
-          "id": 59
-        },
-        {
-          "question": "A dedicated tool to test, inspect, and debug SOAP services.",
-          "options": [
-            "SoapUI",
-            "DevTools",
-            "Swagger",
-            "curl"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 60
-        },
-        {
-          "question": "Which is a trade-off (limitation) of SOAP?",
-          "options": [
-            "Works over several transports",
-            "Verbose XML makes messages large",
-            "Language and platform neutral design",
-            "Strong typing through a WSDL contract"
-          ],
-          "answer": 1,
-          "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 61
-        },
-        {
           "question": "Which is a strength of SOAP?",
           "options": [
+            "It is faster than lightweight styles",
             "Messages are small, light, and quick to send",
             "Setup is simple and very flexible",
-            "Built-in standards for security and reliability",
-            "It is faster than lightweight styles"
+            "Built-in standards for security and reliability"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Lesson 1 - Web Services and SOAP.",
-          "id": 62
+          "id": 59
         },
         {
           "question": "Which situation is the best fit for SOAP?",
@@ -6271,19 +6322,43 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Lesson 1 - Web Services and SOAP. When to use SOAP: banking, payments, telecom; strict contracts; guaranteed messaging.",
-          "id": 63
+          "id": 60
+        },
+        {
+          "question": "What is a SOAP Fault?",
+          "options": [
+            "A WSDL element that describes the endpoint address of the service",
+            "An element in the Body that reports an error instead of a normal result",
+            "The root element that marks the start and end of a SOAP message",
+            "An optional element in the Header that carries authentication data"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 61
+        },
+        {
+          "question": "What is SOAP?",
+          "options": [
+            "An architectural style that treats data as resources over HTTP",
+            "A registry where providers publish services for clients to find",
+            "A strict XML-based protocol for exchanging structured information",
+            "A lightweight text format built from key and value pairs"
+          ],
+          "answer": 2,
+          "explanation": "Lesson 1 - Web Services and SOAP.",
+          "id": 62
         },
         {
           "question": "API stands for:",
           "options": [
-            "Application Process Integration",
-            "Advanced Program Interchange",
+            "Application Programming Interface",
             "Automated Protocol Interface",
-            "Application Programming Interface"
+            "Advanced Program Interchange",
+            "Application Process Integration"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "id": 64
+          "id": 63
         },
         {
           "question": "A defined set of rules that lets one program request data or services from another.",
@@ -6295,37 +6370,49 @@ export const exams = {
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs. A web API exposes those rules over the web, usually through HTTP.",
-          "id": 65
+          "id": 64
         },
         {
           "question": "In the restaurant analogy, what represents the API?",
           "options": [
-            "The food that is served",
             "The diner placing the order",
-            "The menu and the waiter",
-            "The kitchen preparing food"
+            "The kitchen preparing food",
+            "The food that is served",
+            "The menu and the waiter"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs. The diner orders without seeing the kitchen.",
-          "id": 66
+          "id": 65
         },
         {
           "question": "In the restaurant analogy, what does the API hide from the diner (client)?",
           "options": [
-            "The kitchen, where the work is done",
-            "The food that is delivered",
             "The waiter carrying the order to the kitchen",
-            "The menu of things to order"
+            "The menu of things to order",
+            "The kitchen, where the work is done",
+            "The food that is delivered"
+          ],
+          "answer": 2,
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "id": 66
+        },
+        {
+          "question": "API style with one endpoint where the client asks for exactly the data it needs, reducing over-fetching.",
+          "options": [
+            "GraphQL",
+            "REST",
+            "SOAP",
+            "gRPC"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 67
         },
         {
-          "question": "API style with one endpoint where the client asks for exactly the data it needs, reducing over-fetching.",
+          "question": "High-performance API style using a binary format over HTTP/2, common between back-end services.",
           "options": [
-            "gRPC",
             "GraphQL",
+            "gRPC",
             "SOAP",
             "REST"
           ],
@@ -6334,825 +6421,801 @@ export const exams = {
           "id": 68
         },
         {
-          "question": "High-performance API style using a binary format over HTTP/2, common between back-end services.",
+          "question": "REST stands for:",
           "options": [
-            "gRPC",
-            "GraphQL",
-            "REST",
-            "SOAP"
+            "REpresentational State Transfer",
+            "Remote Execution State Transfer",
+            "Resource Exchange Standard Transport",
+            "Reliable Endpoint Service Transfer"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 69
         },
         {
-          "question": "REST stands for:",
+          "question": "REST is best described as:",
           "options": [
-            "Remote Execution State Transfer",
-            "Reliable Endpoint Service Transfer",
-            "REpresentational State Transfer",
-            "Resource Exchange Standard Transport"
+            "A strict protocol with a fixed XML format",
+            "A binary format that runs over HTTP/2",
+            "An architectural style, a set of guidelines",
+            "A registry where services are published"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 70
         },
         {
-          "question": "REST is best described as:",
+          "question": "An API that follows the REST guidelines is described as:",
           "options": [
-            "A strict protocol with a fixed XML format",
-            "An architectural style, a set of guidelines",
-            "A binary format that runs over HTTP/2",
-            "A registry where services are published"
+            "SOAP-based",
+            "RESTful",
+            "Composable",
+            "Stateful"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 71
         },
         {
-          "question": "An API that follows the REST guidelines is described as:",
+          "question": "REST principle: each request carries all the information it needs, and the server keeps no session between calls.",
           "options": [
-            "SOAP-based",
-            "Composable",
-            "Stateful",
-            "RESTful"
+            "Cacheable",
+            "Client-Server",
+            "Layered System",
+            "Stateless"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 72
         },
         {
-          "question": "REST principle: each request carries all the information it needs, and the server keeps no session between calls.",
+          "question": "REST principle: a client cannot tell whether it talks to the server directly or through an intermediary.",
           "options": [
+            "Stateless",
             "Client-Server",
             "Layered System",
-            "Stateless",
-            "Cacheable"
+            "Uniform Interface"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 73
         },
         {
-          "question": "REST principle: a client cannot tell whether it talks to the server directly or through an intermediary.",
+          "question": "REST principle: responses can be stored and reused to reduce load and improve performance.",
           "options": [
-            "Layered System",
+            "Cacheable",
+            "Stateless",
             "Uniform Interface",
-            "Client-Server",
-            "Stateless"
+            "Layered System"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 74
         },
         {
-          "question": "REST principle: responses can be stored and reused to reduce load and improve performance.",
+          "question": "REST principle: resources are accessed in one consistent, predictable way.",
           "options": [
-            "Stateless",
-            "Cacheable",
+            "Layered System",
             "Uniform Interface",
-            "Layered System"
+            "Cacheable",
+            "Client-Server"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 75
         },
         {
-          "question": "REST principle: resources are accessed in one consistent, predictable way.",
+          "question": "REST principle: the client and the server are separate, and each can change without affecting the other.",
           "options": [
-            "Layered System",
+            "Stateless",
             "Cacheable",
-            "Client-Server",
-            "Uniform Interface"
+            "Uniform Interface",
+            "Client-Server"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 76
         },
         {
-          "question": "REST principle: the client and the server are separate, and each can change without affecting the other.",
-          "options": [
-            "Client-Server",
-            "Uniform Interface",
-            "Stateless",
-            "Cacheable"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "id": 77
-        },
-        {
-          "question": "During enrollment week, any of ten identical servers can answer a student's request, and nothing is lost if one server crashes. Which REST principle makes this possible?",
-          "options": [
-            "Cacheable",
-            "Stateless",
-            "Uniform Interface",
-            "Client-Server"
-          ],
-          "answer": 1,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: statelessness lets the API scale horizontally behind a load balancer.",
-          "id": 78
-        },
-        {
           "question": "Each resource in REST is identified by a unique:",
           "options": [
+            "URI",
             "Header",
-            "Token",
             "WSDL",
-            "URI"
+            "Token"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs. A resource is any object or piece of data: a user, a product, an order.",
-          "id": 79
+          "id": 77
         },
         {
           "question": "Which URI refers to the grades of student 42?",
           "options": [
-            "/students/grades",
-            "/getGrades/42",
+            "/grades/students?42",
             "/students/42/grades",
-            "/grades/students?42"
+            "/getGrades/42",
+            "/students/grades"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "id": 78
+        },
+        {
+          "question": "Which endpoint follows the REST naming best practice?",
+          "options": [
+            "/deleteStudents",
+            "/createStudent",
+            "/getStudents",
+            "/students"
+          ],
+          "answer": 3,
+          "explanation": "Lesson 2 - REST and Consuming APIs. Use nouns in the URL; the HTTP method decides the action.",
+          "id": 79
+        },
+        {
+          "question": "JSON stands for:",
+          "options": [
+            "Joint Standard Object Notation",
+            "JavaScript Online Node",
+            "JavaScript Object Notation",
+            "Java Serialized Object Network"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 80
         },
         {
-          "question": "Which endpoint follows the REST naming best practice?",
-          "options": [
-            "/deleteStudents",
-            "/getStudents",
-            "/createStudent",
-            "/students"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Use nouns in the URL; the HTTP method decides the action.",
-          "id": 81
-        },
-        {
-          "question": "JSON stands for:",
-          "options": [
-            "JavaScript Object Notation",
-            "Joint Standard Object Notation",
-            "JavaScript Online Node",
-            "Java Serialized Object Network"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "id": 82
-        },
-        {
           "question": "In JSON, objects use ____ and arrays use ____.",
           "options": [
             "< > ; ( )",
+            "[ ] ; { }",
             "( ) ; < >",
-            "{ } ; [ ]",
-            "[ ] ; { }"
+            "{ } ; [ ]"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "id": 83
+          "id": 81
         },
         {
           "question": "Which is NOT one of the JSON value types?",
           "options": [
-            "Array",
             "Date",
+            "Array",
             "Null",
             "Boolean"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs. Values: string, number, boolean, null, object, or array.",
-          "id": 84
+          "id": 82
         },
         {
           "question": "In this response, what type of value is stored in \"active\"?",
           "options": [
+            "Null",
             "Number",
             "Boolean",
-            "String",
-            "Null"
+            "String"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs. true without quotes is a boolean.",
           "code": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{\n  \"id\": 42,\n  \"name\": \"Juan dela Cruz\",\n  \"course\": \"BSIT\",\n  \"active\": true\n}",
-          "id": 85
+          "id": 83
         },
         {
           "question": "Why do REST APIs usually exchange data as JSON?",
           "options": [
             "It encrypts the data it carries",
+            "It is lightweight and easy to read",
             "It has a strict schema like a WSDL",
-            "It is the only format HTTP accepts",
-            "It is lightweight and easy to read"
+            "It is the only format HTTP accepts"
           ],
-          "answer": 3,
+          "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "id": 86
+          "id": 84
         },
         {
           "question": "Which HTTP method maps to the Create operation?",
           "options": [
+            "GET",
             "POST",
             "PUT",
-            "GET",
             "PATCH"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "id": 85
+        },
+        {
+          "question": "Which HTTP method modifies only part of a resource?",
+          "options": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH"
+          ],
+          "answer": 3,
+          "explanation": "Lesson 2 - REST and Consuming APIs. PUT replaces the whole resource.",
+          "id": 86
+        },
+        {
+          "question": "What does PUT /students/42 do?",
+          "options": [
+            "Replaces student 42",
+            "Creates a new student",
+            "Removes student 42",
+            "Retrieves student 42"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 87
         },
         {
-          "question": "Which HTTP method modifies only part of a resource?",
+          "question": "A method is called safe when:",
           "options": [
-            "GET",
-            "PUT",
-            "PATCH",
-            "POST"
+            "It always returns a 200 OK status code",
+            "Calling it many times has the same effect",
+            "It only reads data and never changes it",
+            "It sends its data through HTTPS only"
           ],
           "answer": 2,
-          "explanation": "Lesson 2 - REST and Consuming APIs. PUT replaces the whole resource.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 88
         },
         {
-          "question": "What does PUT /students/42 do?",
+          "question": "A method is idempotent when:",
           "options": [
-            "Removes student 42",
-            "Replaces student 42",
-            "Creates a new student",
-            "Retrieves student 42"
+            "It needs a valid token in the Authorization header to run",
+            "Calling it once or many times has the same final effect",
+            "It only reads data and never changes it",
+            "It always creates a brand new resource"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 89
         },
         {
-          "question": "A method is called safe when:",
+          "question": "Which HTTP method is both safe and idempotent?",
           "options": [
-            "It only reads data and never changes it",
-            "It sends its data through HTTPS only",
-            "It always returns a 200 OK status code",
-            "Calling it many times has the same effect"
+            "GET",
+            "PUT",
+            "DELETE",
+            "POST"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 90
         },
         {
-          "question": "A method is idempotent when:",
+          "question": "Which HTTP method is neither safe nor idempotent?",
           "options": [
-            "It needs a valid token in the Authorization header to run",
-            "It only reads data and never changes it",
-            "Calling it once or many times has the same final effect",
-            "It always creates a brand new resource"
+            "PUT",
+            "GET",
+            "POST",
+            "DELETE"
           ],
           "answer": 2,
-          "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "explanation": "Lesson 2 - REST and Consuming APIs. Each POST creates a new resource.",
           "id": 91
         },
         {
-          "question": "Which HTTP method is both safe and idempotent?",
+          "question": "Why is DELETE idempotent even though it changes data?",
           "options": [
-            "POST",
-            "PUT",
-            "DELETE",
-            "GET"
+            "It never changes any data on the server",
+            "It can only be sent once per session",
+            "The server caches the deleted resource",
+            "The resource is gone after the first call"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 92
         },
         {
-          "question": "Which HTTP method is neither safe nor idempotent?",
+          "question": "Why can sending the same POST request twice create two resources?",
           "options": [
-            "PUT",
-            "GET",
-            "DELETE",
-            "POST"
+            "PUT always creates new resources",
+            "GET is not safe",
+            "DELETE is not idempotent",
+            "POST is not idempotent"
           ],
           "answer": 3,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Each POST creates a new resource.",
+          "explanation": "Lesson 2 - REST and Consuming APIs. Each POST call creates a new resource.",
           "id": 93
         },
         {
-          "question": "Why is DELETE idempotent even though it changes data?",
+          "question": "Which status code family means the problem is in the request itself?",
           "options": [
-            "It can only be sent once per session",
-            "The server caches the deleted resource",
-            "The resource is gone after the first call",
-            "It never changes any data on the server"
+            "3xx",
+            "5xx",
+            "4xx",
+            "2xx"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 94
         },
         {
-          "question": "A shopper on a slow connection taps Pay twice and gets charged twice. What caused it?",
+          "question": "A 5xx status code means:",
           "options": [
-            "Checkout used PATCH, which deletes the order",
-            "Checkout is a POST, which is not idempotent",
-            "Checkout is a GET, which is not safe",
-            "Checkout used PUT, which creates new orders"
+            "The request was received and processed",
+            "The server failed to handle a valid request",
+            "The request itself was badly formed",
+            "Further action is needed to complete the request"
           ],
           "answer": 1,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: the double-tap that charges a customer twice.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 95
         },
         {
-          "question": "Which fix prevents the double charge in that checkout scenario?",
+          "question": "Which status code means a new resource was created?",
           "options": [
-            "A unique request key or an idempotent PUT",
-            "Removing the token from the request",
-            "Returning 200 OK for every failed call",
-            "Switching the checkout to a GET request"
+            "201 Created",
+            "304 Not Modified",
+            "204 No Content",
+            "200 OK"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 96
         },
         {
-          "question": "Which status code family means the problem is in the request itself?",
+          "question": "Which status code belongs to the 3xx Redirection family?",
           "options": [
-            "4xx",
-            "5xx",
-            "3xx",
-            "2xx"
+            "301 Moved Permanently",
+            "503 Service Unavailable",
+            "401 Unauthorized",
+            "204 No Content"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 97
         },
         {
-          "question": "A 5xx status code means:",
+          "question": "A request returns 404. What does it tell the developer?",
           "options": [
-            "The request was received and processed",
-            "The request itself was badly formed",
-            "Further action is needed to complete the request",
-            "The server failed to handle a valid request"
+            "The resource was created successfully",
+            "The token expired and the user must sign in again",
+            "The server crashed on a valid request",
+            "The endpoint path or resource is not found"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 98
         },
         {
-          "question": "A POST successfully adds a new student. Which status code fits best?",
+          "question": "In this request, which part is the query string (filters or options)?",
           "options": [
-            "200 OK",
-            "204 No Content",
-            "201 Created",
-            "304 Not Modified"
+            "GET",
+            "https://api.school.edu",
+            "?active=true",
+            "/students/42"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "code": "GET https://api.school.edu/students/42?active=true",
           "id": 99
         },
         {
-          "question": "Which status code belongs to the 3xx Redirection family?",
+          "question": "In this request, which part is the base URL (where the API lives)?",
           "options": [
-            "204 No Content",
-            "301 Moved Permanently",
-            "401 Unauthorized",
-            "503 Service Unavailable"
+            "/students/42",
+            "https://api.school.edu",
+            "?active=true",
+            "GET"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "code": "GET https://api.school.edu/students/42?active=true",
           "id": 100
         },
         {
-          "question": "A mobile app shows a blank screen and the network log shows 500. Where is the bug?",
+          "question": "A request body (usually JSON) is sent with which methods?",
           "options": [
-            "In the client's Accept header",
-            "On the server, not in the app",
-            "In the app's request URL path",
-            "In the user's expired token"
+            "Only with GET requests",
+            "POST, PUT, and PATCH",
+            "GET, PUT, and DELETE",
+            "GET and DELETE only"
           ],
           "answer": 1,
-          "explanation": "Lesson 2 - REST and Consuming APIs. 401 = token expired; 404 = wrong endpoint path; 500 = server bug.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 101
         },
         {
-          "question": "A request returns 404. What does it tell the developer?",
+          "question": "Which request header states the format the client wants, such as application/json?",
           "options": [
-            "The token expired and the user must sign in again",
-            "The resource was created successfully",
-            "The endpoint path or resource is not found",
-            "The server crashed on a valid request"
+            "Content-Type",
+            "Cache-Control",
+            "Accept",
+            "Authorization"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 102
         },
         {
-          "question": "In this request, which part is the query string (filters or options)?",
+          "question": "Which request header carries credentials, such as a token?",
           "options": [
-            "/students/42",
-            "GET",
-            "https://api.school.edu",
-            "?active=true"
+            "Cache-Control",
+            "Accept",
+            "Content-Type",
+            "Authorization"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "code": "GET https://api.school.edu/students/42?active=true",
           "id": 103
         },
         {
-          "question": "In this request, which part is the base URL (where the API lives)?",
+          "question": "Which response header tells how the response may be cached?",
           "options": [
-            "https://api.school.edu",
-            "/students/42",
-            "GET",
-            "?active=true"
+            "Cache-Control",
+            "Content-Type",
+            "Authorization",
+            "Accept"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "code": "GET https://api.school.edu/students/42?active=true",
           "id": 104
         },
         {
-          "question": "A request body (usually JSON) is sent with which methods?",
+          "question": "In content negotiation, the client asks with ______ and the server replies with a matching ______.",
           "options": [
-            "GET and DELETE only",
-            "GET, PUT, and DELETE",
-            "POST, PUT, and PATCH",
-            "Only with GET requests"
+            "Authorization; Accept",
+            "Content-Type; Accept",
+            "Accept; Content-Type",
+            "Cache-Control; Status"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 105
         },
         {
-          "question": "Which request header states the format the client wants, such as application/json?",
+          "question": "In this response, what does the Content-Type header tell the client?",
           "options": [
-            "Cache-Control",
-            "Authorization",
-            "Content-Type",
-            "Accept"
+            "The result is cached",
+            "The token is valid",
+            "The request succeeded",
+            "The body is JSON"
           ],
           "answer": 3,
-          "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "explanation": "Lesson 2 - REST and Consuming APIs. The status line 200 OK means success; the header says the body is JSON.",
+          "code": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{\n  \"id\": 42,\n  \"name\": \"Juan dela Cruz\",\n  \"course\": \"BSIT\",\n  \"active\": true\n}",
           "id": 106
         },
         {
-          "question": "Which request header carries credentials, such as a token?",
+          "question": "What does /students?page=2&limit=20 return?",
           "options": [
-            "Authorization",
-            "Accept",
-            "Cache-Control",
-            "Content-Type"
+            "The second page of results, 20 per page",
+            "Student 2 and student 20 only",
+            "Twenty pages of student results",
+            "The first 2 students, sorted by limit"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 107
         },
         {
-          "question": "Which response header tells how the response may be cached?",
+          "question": "Which query parameter sorts the results?",
           "options": [
-            "Accept",
-            "Cache-Control",
-            "Authorization",
-            "Content-Type"
+            "/students?page=2",
+            "/students?sort=name",
+            "/students/name",
+            "/students?course=BSIT"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 108
         },
         {
-          "question": "In content negotiation, the client asks with ______ and the server replies with a matching ______.",
+          "question": "What is pagination in a REST API?",
           "options": [
-            "Cache-Control; Status",
-            "Content-Type; Accept",
-            "Accept; Content-Type",
-            "Authorization; Accept"
+            "Splitting one resource into two separate endpoints with new names",
+            "Ordering the results of a collection by one field, e.g., ?sort=name",
+            "Returning a large collection in smaller pages, e.g., ?page=2&limit=20",
+            "Returning only the records that match a value, e.g., ?course=BSIT"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 109
         },
         {
-          "question": "In this response, what does the Content-Type header tell the client?",
+          "question": "Why must every REST request prove who is calling?",
           "options": [
-            "The request succeeded",
-            "The token is valid",
-            "The result is cached",
-            "The body is JSON"
+            "REST messages are written in XML",
+            "REST has no status codes for reporting errors",
+            "REST uses the WSDL as its contract",
+            "REST is stateless, so no session is kept"
           ],
           "answer": 3,
-          "explanation": "Lesson 2 - REST and Consuming APIs. The status line 200 OK means success; the header says the body is JSON.",
-          "code": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{\n  \"id\": 42,\n  \"name\": \"Juan dela Cruz\",\n  \"course\": \"BSIT\",\n  \"active\": true\n}",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 110
         },
         {
-          "question": "What does /students?page=2&limit=20 return?",
+          "question": "A signed token sent in the Authorization header, common for logged-in users.",
           "options": [
-            "Twenty pages of student results",
-            "The second page of results, 20 per page",
-            "Student 2 and student 20 only",
-            "The first 2 students, sorted by limit"
+            "WS-Security",
+            "Bearer token / JWT",
+            "API key",
+            "OAuth 2.0"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 111
         },
         {
-          "question": "Which query parameter sorts the results?",
+          "question": "What is OAuth 2.0?",
           "options": [
-            "/students?sort=name",
-            "/students/name",
-            "/students?course=BSIT",
-            "/students?page=2"
+            "A standard flow that grants limited access without a password",
+            "A browser rule on which websites may call your API",
+            "A simple secret string sent in a header or a query string",
+            "A signed token that the server verifies on each request"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 112
         },
         {
-          "question": "An admin dashboard must show 50,000 students without crashing the browser. What should the app use?",
+          "question": "What must be used with every authentication method so credentials are encrypted in transit?",
           "options": [
-            "One request for all 50,000 rows",
-            "A SOAP Fault for large results",
-            "Pagination with a page and limit",
-            "A new endpoint for every page"
+            "XML",
+            "JSON",
+            "HTTPS",
+            "UDDI"
           ],
           "answer": 2,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: paging a list of fifty thousand records.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 113
         },
         {
-          "question": "Why must every REST request prove who is calling?",
+          "question": "Unlike a SOAP Fault, how does REST report an error?",
           "options": [
-            "REST messages are written in XML",
-            "REST is stateless, so no session is kept",
-            "REST has no status codes for reporting errors",
-            "REST uses the WSDL as its contract"
+            "With a faultcode inside the SOAP Envelope",
+            "With an HTTP status code plus a JSON body",
+            "With a 200 OK and an empty body",
+            "With a new WSDL describing the error"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 114
         },
         {
-          "question": "A signed token sent in the Authorization header, common for logged-in users.",
+          "question": "What does this response tell the client?",
           "options": [
-            "Bearer token / JWT",
-            "WS-Security",
-            "OAuth 2.0",
-            "API key"
+            "Student 42 does not exist (client error)",
+            "The client must log in (unauthorized)",
+            "Student 42 was created (success)",
+            "The server crashed (server error)"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "code": "HTTP/1.1 404 Not Found\nContent-Type: application/json\n\n{\n  \"error\": \"Not Found\",\n  \"message\": \"Student 42 does not exist\"\n}",
           "id": 115
         },
         {
-          "question": "A scheduling app posts on a user's social account using a limited token, without ever getting the user's password. Which method is this?",
+          "question": "Which is a REST error-handling rule from the lesson?",
           "options": [
-            "Basic login",
-            "API key",
-            "WS-Addressing",
-            "OAuth 2.0"
+            "Put the error inside a SOAP Fault",
+            "Always send 500 for every kind of error",
+            "Return errors as plain HTML pages",
+            "Never send 200 OK for a failed request"
           ],
           "answer": 3,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: letting an app post for you without your password.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 116
         },
         {
-          "question": "What must be used with every authentication method so credentials are encrypted in transit?",
+          "question": "Why should an API be versioned, e.g., /v1/students?",
           "options": [
-            "JSON",
-            "UDDI",
-            "XML",
-            "HTTPS"
+            "So the API can return 200 OK for every error",
+            "So each request can skip the Authorization header",
+            "So the server can keep a session for each client",
+            "So changes do not break existing clients"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 117
         },
         {
-          "question": "Unlike a SOAP Fault, how does REST report an error?",
+          "question": "Which is a REST API design best practice?",
           "options": [
-            "With an HTTP status code plus a JSON body",
-            "With a new WSDL describing the error",
-            "With a 200 OK and an empty body",
-            "With a faultcode inside the SOAP Envelope"
+            "Keep naming, casing, and response shapes uniform",
+            "Return 200 OK even when a request fails",
+            "Store a session for each client on the server",
+            "Put verbs such as get in every endpoint"
           ],
           "answer": 0,
-          "explanation": "Lesson 2 - REST and Consuming APIs.",
+          "explanation": "Lesson 2 - REST and Consuming APIs. Be consistent.",
           "id": 118
         },
         {
-          "question": "What does this response tell the client?",
+          "question": "What is the first step in consuming a REST API?",
           "options": [
-            "The server crashed (server error)",
-            "Student 42 does not exist (client error)",
-            "Student 42 was created (success)",
-            "The client must log in (unauthorized)"
+            "Send the request right away",
+            "Read the API documentation",
+            "Parse the JSON response",
+            "Hard-code the API key"
           ],
           "answer": 1,
-          "explanation": "Lesson 2 - REST and Consuming APIs.",
-          "code": "HTTP/1.1 404 Not Found\nContent-Type: application/json\n\n{\n  \"error\": \"Not Found\",\n  \"message\": \"Student 42 does not exist\"\n}",
+          "explanation": "Lesson 2 - REST and Consuming APIs. The API contract is the documentation.",
           "id": 119
         },
         {
-          "question": "Which is a REST error-handling rule from the lesson?",
+          "question": "Which reminder applies when consuming an API?",
           "options": [
-            "Return errors as plain HTML pages",
-            "Always send 500 for every kind of error",
-            "Never send 200 OK for a failed request",
-            "Put the error inside a SOAP Fault"
+            "Skip the status code and read the body directly",
+            "Assume every request will succeed",
+            "Never hard-code secrets in client-side code",
+            "Send data in any format you prefer"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 120
         },
         {
-          "question": "A company renames a field in its student response but thousands still use the old app. Which practice keeps both working?",
+          "question": "A tool for sending requests straight from the command line, useful for quick checks.",
           "options": [
-            "Versioning with /v1/students and /v2/students",
-            "Renaming the endpoint to /getStudents",
-            "Keeping a session for each old client",
-            "Returning 200 OK for all of the old app's errors"
+            "curl",
+            "Postman",
+            "SoapUI",
+            "Swagger"
           ],
           "answer": 0,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: versioning saves a live mobile app.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 121
         },
         {
-          "question": "Which is a REST API design best practice?",
+          "question": "A tool to document an API and let others try its endpoints interactively.",
           "options": [
-            "Store a session for each client on the server",
-            "Keep naming, casing, and response shapes uniform",
-            "Put verbs such as get in every endpoint",
-            "Return 200 OK even when a request fails"
+            "Browser DevTools",
+            "Swagger / OpenAPI",
+            "curl",
+            "SoapUI"
           ],
           "answer": 1,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Be consistent.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 122
         },
         {
-          "question": "What is the first step in consuming a REST API?",
+          "question": "Which comparison of SOAP and REST is correct?",
           "options": [
-            "Parse the JSON response",
-            "Hard-code the API key",
-            "Read the API documentation",
-            "Send the request right away"
+            "Both are strict protocols that use only XML",
+            "Both are styles that use only JSON over HTTP",
+            "SOAP is a protocol; REST is an architectural style",
+            "SOAP is an architectural style; REST is a protocol"
           ],
           "answer": 2,
-          "explanation": "Lesson 2 - REST and Consuming APIs. The API contract is the documentation.",
+          "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 123
         },
         {
-          "question": "Which reminder applies when consuming an API?",
+          "question": "Which comparison of transport is correct?",
           "options": [
-            "Assume every request will succeed",
-            "Send data in any format you prefer",
-            "Skip the status code and read the body directly",
-            "Never hard-code secrets in client-side code"
+            "SOAP: HTTP only; REST: HTTP, SMTP, and more",
+            "Both SOAP and REST use HTTP only",
+            "Both SOAP and REST use SMTP only",
+            "SOAP: HTTP, SMTP, and more; REST: HTTP only"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 124
         },
         {
-          "question": "A tool for sending requests straight from the command line, useful for quick checks.",
+          "question": "Which comparison of contracts is correct?",
           "options": [
-            "curl",
-            "SoapUI",
-            "Postman",
-            "Swagger"
+            "SOAP: WSDL (strict); REST: optional, e.g., OpenAPI",
+            "Neither one can have any contract",
+            "SOAP: optional, e.g., OpenAPI; REST: WSDL (strict)",
+            "Both require a strict WSDL contract"
           ],
           "answer": 0,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 125
         },
         {
-          "question": "A tool to document an API and let others try its endpoints interactively.",
+          "question": "REST is usually the better choice for:",
           "options": [
-            "curl",
-            "Browser DevTools",
-            "SoapUI",
-            "Swagger / OpenAPI"
+            "Enterprise transactions that need WS-Security",
+            "Systems that require a strict WSDL contract",
+            "Messages that must use only the XML format",
+            "Public web and mobile APIs"
           ],
           "answer": 3,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 126
         },
         {
-          "question": "Which comparison of SOAP and REST is correct?",
+          "question": "What is a query string in a REST request?",
           "options": [
-            "Both are strict protocols that use only XML",
-            "SOAP is a protocol; REST is an architectural style",
-            "Both are styles that use only JSON over HTTP",
-            "SOAP is an architectural style; REST is a protocol"
+            "The part that tells where the API lives, e.g., https://api.school.edu",
+            "The part after ? that adds filters or options, e.g., ?active=true",
+            "The part that identifies the resource, e.g., /students/42",
+            "The part that names the action to perform, e.g., GET"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 127
         },
         {
-          "question": "Which comparison of transport is correct?",
+          "question": "What is content negotiation?",
           "options": [
-            "Both SOAP and REST use HTTP only",
-            "SOAP: HTTP only; REST: HTTP, SMTP, and more",
-            "SOAP: HTTP, SMTP, and more; REST: HTTP only",
-            "Both SOAP and REST use SMTP only"
+            "The server keeps a session so the client does not resend its token each time",
+            "The client and server agree on a price for using the API before the first request",
+            "The client asks for a format with Accept and the server replies with a matching Content-Type",
+            "The client sends its credentials in the query string instead of a header"
           ],
           "answer": 2,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 128
         },
         {
-          "question": "Which comparison of contracts is correct?",
+          "question": "What is a resource in REST?",
           "options": [
-            "SOAP: optional, e.g., OpenAPI; REST: WSDL (strict)",
-            "SOAP: WSDL (strict); REST: optional, e.g., OpenAPI",
-            "Neither one can have any contract",
-            "Both require a strict WSDL contract"
+            "A method that decides the action, such as GET or POST",
+            "Any object or piece of data, such as a user, product, or order",
+            "A status code that reports the result of a request",
+            "A header that carries credentials, such as a token"
           ],
           "answer": 1,
           "explanation": "Lesson 2 - REST and Consuming APIs.",
           "id": 129
         },
         {
-          "question": "A team is building a public mobile API that must be lightweight and fast. Which should they choose?",
+          "question": "The three layers of reliable and secure data exchange, in order:",
           "options": [
-            "SOAP",
-            "WS-*",
-            "UDDI",
-            "REST"
+            "Access control, serialization, data protection",
+            "Serialization, data protection, access control",
+            "Data protection, serialization, access control",
+            "Serialization, access control, data protection"
           ],
           "answer": 3,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Choose REST for public web or mobile APIs.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 130
         },
         {
-          "question": "A digital bank uses REST for its public mobile API and SOAP with WS-Security for its clearing network. What does this show?",
+          "question": "What does \"reliable is not the same as safe\" mean?",
           "options": [
-            "REST and SOAP cannot work together in one company",
-            "SOAP is outdated and should be replaced",
-            "Real systems can use both, each where it fits",
-            "REST is unsafe for any kind of banking"
+            "Serialization alone keeps data safe",
+            "Security can be added at the end",
+            "You need all three layers together",
+            "Encryption makes validation unnecessary"
           ],
           "answer": 2,
-          "explanation": "Lesson 2 - REST and Consuming APIs. Scenario: one company, both styles.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 131
         },
         {
-          "question": "The three layers of reliable and secure data exchange, in order:",
+          "question": "Converting an in-memory object into portable text or bytes so it can travel over a network or be saved to disk.",
           "options": [
-            "Serialization, access control, data protection",
-            "Serialization, data protection, access control",
-            "Access control, serialization, data protection",
-            "Data protection, serialization, access control"
+            "Serialization",
+            "Hashing",
+            "Deserialization",
+            "Authorization"
           ],
           "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 132
         },
         {
-          "question": "What does \"reliable is not the same as safe\" mean?",
+          "question": "Parsing text or bytes back into a usable object on the other side.",
           "options": [
-            "Security can be added at the end",
-            "You need all three layers together",
-            "Encryption makes validation unnecessary",
-            "Serialization alone keeps data safe"
+            "Encryption",
+            "Deserialization",
+            "Validation",
+            "Serialization"
           ],
           "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 133
         },
         {
-          "question": "Converting an in-memory object into portable text or bytes so it can travel over a network or be saved to disk.",
+          "question": "Serialization and deserialization are also called:",
           "options": [
-            "Authorization",
-            "Deserialization",
-            "Serialization",
-            "Hashing"
+            "Signing and verifying tokens",
+            "Hashing and salting",
+            "Marshalling and unmarshalling",
+            "Encoding and routing"
           ],
           "answer": 2,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 134
-        },
-        {
-          "question": "Parsing text or bytes back into a usable object on the other side.",
-          "options": [
-            "Deserialization",
-            "Serialization",
-            "Encryption",
-            "Validation"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 135
-        },
-        {
-          "question": "Serialization and deserialization are also called:",
-          "options": [
-            "Encoding and routing",
-            "Hashing and salting",
-            "Signing and verifying tokens",
-            "Marshalling and unmarshalling"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 136
         },
         {
           "question": "Turning the raw string \"juan\" into structured code name: \"juan\" is called:",
@@ -7164,473 +7227,497 @@ export const exams = {
           ],
           "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Serializing goes the other way: structured code into a raw string.",
-          "id": 137
+          "id": 135
         },
         {
           "question": "The round-trip rule says deserialize(serialize(x)) must:",
           "options": [
-            "Encrypt x before it reaches the client over the network",
-            "Return x as a smaller binary format",
             "Turn x into a JSON string every time",
+            "Return x as a smaller binary format",
+            "Encrypt x before it reaches the client over the network",
             "Give back x with the same values and structure"
           ],
           "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. If not, your data exchange has a bug.",
+          "id": 136
+        },
+        {
+          "question": "In this code, what does JSON.stringify(order) do?",
+          "options": [
+            "Turns the object into JSON text",
+            "Turns JSON text into an object",
+            "Sends JSON and sets Content-Type",
+            "Checks the JSON against a schema"
+          ],
+          "answer": 0,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "code": "const text = JSON.stringify(order);\nconst obj  = JSON.parse(text);\nres.json(order);",
+          "id": 137
+        },
+        {
+          "question": "In this code, what does res.json(order) do?",
+          "options": [
+            "Encrypts the order before sending",
+            "Turns JSON text into an object",
+            "Saves the JSON text to the disk",
+            "Sends JSON and sets the Content-Type"
+          ],
+          "answer": 3,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "code": "const text = JSON.stringify(order);\nconst obj  = JSON.parse(text);\nres.json(order);",
           "id": 138
         },
         {
-          "question": "A service serializes an order, sends it, and the client deserializes it, but the total comes back different. What does the round-trip rule say?",
+          "question": "Why should JSON.parse always be wrapped in try/catch?",
           "options": [
-            "The client must use XML instead",
-            "The order was safely encrypted",
-            "The data exchange has a bug",
-            "The values are allowed to change"
+            "So the JSON is encrypted in transit",
+            "So the keys become double quoted",
+            "So bad input cannot crash the server",
+            "So the parse runs faster on the server"
           ],
           "answer": 2,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 139
         },
         {
-          "question": "In this code, what does JSON.stringify(order) do?",
+          "question": "Which statement about JSON is correct?",
           "options": [
-            "Turns JSON text into an object",
-            "Turns the object into JSON text",
-            "Checks the JSON against a schema",
-            "Sends JSON and sets Content-Type"
+            "Comments are allowed inside the data",
+            "Keys are always strings in double quotes",
+            "Keys may be numbers without quotes",
+            "It has ten value types, including date"
           ],
           "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "code": "const text = JSON.stringify(order);\nconst obj  = JSON.parse(text);\nres.json(order);",
           "id": 140
         },
         {
-          "question": "In this code, what does res.json(order) do?",
+          "question": "Which format is the default for web and mobile APIs?",
           "options": [
-            "Sends JSON and sets the Content-Type",
-            "Encrypts the order before sending",
-            "Turns JSON text into an object",
-            "Saves the JSON text to the disk"
+            "JSON",
+            "YAML",
+            "XML",
+            "Protocol Buffers"
           ],
           "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "code": "const text = JSON.stringify(order);\nconst obj  = JSON.parse(text);\nres.json(order);",
           "id": 141
         },
         {
-          "question": "Why should JSON.parse always be wrapped in try/catch?",
+          "question": "Which format is verbose but strict and self-describing, still common in SOAP, banking, and government systems?",
           "options": [
-            "So the keys become double quoted",
-            "So the parse runs faster on the server",
-            "So the JSON is encrypted in transit",
-            "So bad input cannot crash the server"
+            "JSON",
+            "MessagePack",
+            "YAML",
+            "XML"
           ],
           "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 142
         },
         {
-          "question": "Which statement about JSON is correct?",
+          "question": "Which format is the most readable and is used for configuration files (Docker, Kubernetes, CI)?",
           "options": [
-            "Keys may be numbers without quotes",
-            "Comments are allowed inside the data",
-            "Keys are always strings in double quotes",
-            "It has ten value types, including date"
+            "Protocol Buffers",
+            "XML",
+            "YAML",
+            "JSON"
           ],
           "answer": 2,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 143
         },
         {
-          "question": "Which format is the default for web and mobile APIs?",
+          "question": "Protocol Buffers and MessagePack are examples of which kind of format?",
           "options": [
-            "YAML",
-            "JSON",
-            "XML",
-            "Protocol Buffers"
+            "Configuration formats",
+            "Binary formats",
+            "Markup formats",
+            "Plain text formats"
           ],
           "answer": 1,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Compact, fast, and schema-driven, for heavy internal service-to-service traffic.",
           "id": 144
-        },
-        {
-          "question": "A government agency's legacy system needs a verbose but strict, self-describing format. Which fits?",
-          "options": [
-            "MessagePack",
-            "JSON",
-            "XML",
-            "YAML"
-          ],
-          "answer": 2,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. XML is still common in SOAP, banking, government, and legacy systems.",
-          "id": 145
-        },
-        {
-          "question": "A team writes configuration files for Docker and Kubernetes. Which format is most used here?",
-          "options": [
-            "YAML",
-            "JSON",
-            "Protocol Buffers",
-            "XML"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 146
-        },
-        {
-          "question": "Heavy internal service-to-service traffic needs a compact, fast, schema-driven format. Which fits?",
-          "options": [
-            "Plain XML documents",
-            "Protocol Buffers or MessagePack",
-            "HTML pages",
-            "YAML configuration files and scripts"
-          ],
-          "answer": 1,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 147
         },
         {
           "question": "Which question does Authentication (AuthN) answer?",
           "options": [
             "Is it available?",
             "Was it changed?",
-            "What may you do?",
-            "Who are you?"
+            "Who are you?",
+            "What may you do?"
           ],
-          "answer": 3,
+          "answer": 2,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Authentication always comes first.",
-          "id": 148
+          "id": 145
         },
         {
           "question": "Which question does Authorization (AuthZ) answer?",
           "options": [
-            "Where is it stored?",
+            "What may you do?",
             "Was it changed?",
-            "Who are you?",
-            "What may you do?"
+            "Where is it stored?",
+            "Who are you?"
+          ],
+          "answer": 0,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 146
+        },
+        {
+          "question": "Which status code means \"we do not know who you are\" (authentication failed)?",
+          "options": [
+            "429",
+            "401",
+            "404",
+            "403"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 147
+        },
+        {
+          "question": "Which status code means \"we know you, but you are not allowed\" (authorization failed)?",
+          "options": [
+            "500",
+            "429",
+            "401",
+            "403"
           ],
           "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 149
-        },
-        {
-          "question": "A request arrives with no valid token. Which status code fits?",
-          "options": [
-            "401",
-            "403",
-            "404",
-            "429"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. 401 = we do not know who you are.",
-          "id": 150
-        },
-        {
-          "question": "A logged-in cashier tries to open an admin-only report. Which status code fits?",
-          "options": [
-            "429",
-            "403",
-            "401",
-            "500"
-          ],
-          "answer": 1,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. 403 = we know you, but you are not allowed.",
-          "id": 151
+          "id": 148
         },
         {
           "question": "What does HTTPS / TLS do?",
           "options": [
-            "Turns objects into portable JSON text",
             "Limits the number of requests per window for each client",
-            "Encrypts traffic in transit and confirms the real server",
-            "Groups permissions into roles for users"
+            "Turns objects into portable JSON text",
+            "Groups permissions into roles for users",
+            "Encrypts traffic in transit and confirms the real server"
           ],
-          "answer": 2,
+          "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Mandatory for every production API.",
-          "id": 152
+          "id": 149
         },
         {
           "question": "Which is true about an API key?",
           "options": [
-            "Best way to prove a specific logged-in user in every app",
-            "Only works over plain HTTP, never HTTPS",
             "Good for service-to-service, weak at proving a user",
-            "Encrypted, so it is safe to commit to code"
+            "Encrypted, so it is safe to commit to code",
+            "Only works over plain HTTP, never HTTPS",
+            "Best way to prove a specific logged-in user in every app"
+          ],
+          "answer": 0,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 150
+        },
+        {
+          "question": "Why should secrets never be put in a JWT payload?",
+          "options": [
+            "It is deleted after the first request",
+            "It is signed, not encrypted, so anyone can read it",
+            "It is encrypted, so the server cannot read it",
+            "It is stored in the server's database"
+          ],
+          "answer": 1,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 151
+        },
+        {
+          "question": "Which part of a JWT names the algorithm that signs the token?",
+          "options": [
+            "Signature",
+            "Body",
+            "Header",
+            "Payload"
+          ],
+          "answer": 2,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Payload: user id, role, expiry (readable). Signature: proves it was not altered.",
+          "id": 152
+        },
+        {
+          "question": "Which part of a JWT proves the token was not altered and is made with a secret key?",
+          "options": [
+            "Payload",
+            "Claim",
+            "Signature",
+            "Header"
           ],
           "answer": 2,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 153
         },
         {
-          "question": "Why should secrets never be put in a JWT payload?",
+          "question": "Why is JWT called stateless?",
           "options": [
-            "It is signed, not encrypted, so anyone can read it",
-            "It is deleted after the first request",
-            "It is encrypted, so the server cannot read it",
-            "It is stored in the server's database"
+            "The server verifies the signature with no database lookup",
+            "The server keeps a session for each token",
+            "The token is encrypted so no one but the server can read it",
+            "The token never expires once it is issued"
           ],
           "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 154
         },
         {
-          "question": "Which part of a JWT names the algorithm that signs the token?",
+          "question": "Which OAuth 2.0 flow is used for service-to-service access?",
           "options": [
-            "Payload",
-            "Signature",
-            "Body",
-            "Header"
+            "Authorization-code flow",
+            "Password-sharing flow",
+            "Refresh-only flow",
+            "Client-credentials flow"
           ],
           "answer": 3,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Payload: user id, role, expiry (readable). Signature: proves it was not altered.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Authorization-code flow is for humans (Login with Google).",
           "id": 155
         },
         {
-          "question": "Which part of a JWT proves the token was not altered and is made with a secret key?",
+          "question": "What is RBAC (role-based access control)?",
           "options": [
-            "Payload",
-            "Signature",
-            "Header",
-            "Claim"
+            "Encrypting stored data so that only the owner can read it",
+            "Grouping permissions into roles and giving each role only what it needs",
+            "Limiting the number of requests a client can send per window",
+            "Signing a token so the server can verify it with no lookup"
           ],
           "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 156
         },
         {
-          "question": "Why is JWT called stateless?",
+          "question": "In RBAC, where should permissions be enforced?",
           "options": [
-            "The token never expires once it is issued",
-            "The server verifies the signature with no database lookup",
-            "The server keeps a session for each token",
-            "The token is encrypted so no one but the server can read it"
+            "In the client app's local storage",
+            "On the server, never trust the client",
+            "In the JWT payload, kept as a secret",
+            "In the browser, through hidden buttons"
           ],
           "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 157
         },
         {
-          "question": "Which OAuth 2.0 flow is used for service-to-service access?",
+          "question": "The CIA triad stands for:",
           "options": [
-            "Password-sharing flow",
-            "Authorization-code flow",
-            "Client-credentials flow",
-            "Refresh-only flow"
+            "Confidentiality, Identity, Access",
+            "Control, Identity, Authorization",
+            "Confidentiality, Integrity, Availability",
+            "Certificate, Integrity, Authentication"
           ],
           "answer": 2,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Authorization-code flow is for humans (Login with Google).",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 158
         },
         {
-          "question": "A shop gives cashiers only the permissions they need and enforces it on the server. Which ideas are these?",
+          "question": "Which technique serves Confidentiality?",
           "options": [
-            "RBAC with least privilege",
-            "Hashing with salting",
-            "Rate limiting with CORS",
-            "Serialization with JSON"
+            "Encryption",
+            "Rate limiting",
+            "Hashing",
+            "Pagination"
           ],
           "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 159
         },
         {
-          "question": "In RBAC, where should permissions be enforced?",
-          "options": [
-            "In the client app's local storage",
-            "In the JWT payload, kept as a secret",
-            "In the browser, through hidden buttons",
-            "On the server, never trust the client"
-          ],
-          "answer": 3,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 160
-        },
-        {
-          "question": "The CIA triad stands for:",
-          "options": [
-            "Control, Identity, Authorization",
-            "Confidentiality, Identity, Access",
-            "Confidentiality, Integrity, Availability",
-            "Certificate, Integrity, Authentication"
-          ],
-          "answer": 2,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 161
-        },
-        {
-          "question": "Which technique serves Confidentiality?",
-          "options": [
-            "Encryption",
-            "Pagination",
-            "Hashing",
-            "Rate limiting"
-          ],
-          "answer": 0,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 162
-        },
-        {
           "question": "Symmetric encryption:",
           "options": [
+            "Cannot be used for bulk data at all",
             "Is slower and used only for key exchange",
             "Uses a public key and a private key",
-            "Cannot be used for bulk data at all",
             "Uses one shared key to encrypt and decrypt"
           ],
           "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Example: AES. Challenge: sharing the key safely.",
-          "id": 163
+          "id": 160
         },
         {
           "question": "Asymmetric encryption:",
           "options": [
-            "Turns data into a one-way fingerprint",
-            "Public key encrypts, private key decrypts",
+            "One shared key encrypts and decrypts",
             "Faster than symmetric for bulk data",
-            "One shared key encrypts and decrypts"
+            "Public key encrypts, private key decrypts",
+            "Turns data into a one-way fingerprint"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Example: RSA, ECC. TLS combines both.",
-          "id": 164
+          "id": 161
         },
         {
-          "question": "A company uses HTTPS but stores customer payment details as plain text. What is still exposed?",
+          "question": "If data is encrypted in transit (TLS) but stored as plain text, what is still exposed?",
           "options": [
-            "The TLS certificate",
+            "Data at rest",
             "The API version",
             "Data in transit",
-            "Data at rest"
+            "The TLS certificate"
           ],
-          "answer": 3,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Protect data in transit (TLS) AND at rest.",
-          "id": 165
+          "answer": 0,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Protect data in transit AND at rest.",
+          "id": 162
         },
         {
           "question": "How should passwords be stored?",
           "options": [
-            "Saved as plain text in a safe table",
-            "Hashed with a slow salted algorithm like bcrypt",
+            "Hashed with MD5 or SHA-1 for speed",
             "Encrypted so they can be decrypted and read back later",
-            "Hashed with MD5 or SHA-1 for speed"
+            "Saved as plain text in a safe table",
+            "Hashed with a slow salted algorithm like bcrypt"
           ],
-          "answer": 1,
+          "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 166
+          "id": 163
         },
         {
           "question": "A one-way fingerprint: the same input always gives the same result, but it cannot be reversed.",
           "options": [
+            "Signing",
             "Hashing",
             "Serialization",
-            "Encryption",
-            "Signing"
+            "Encryption"
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
-          "id": 167
+          "id": 164
         },
         {
-          "question": "A payment gateway sends a webhook with a hash of the message plus a shared secret. The receiver recomputes it and the values match. What does this prove?",
+          "question": "What is HMAC?",
           "options": [
-            "The sender has a valid API key",
-            "The JSON follows the schema",
-            "The message is authentic and unchanged",
-            "The message was encrypted at rest"
+            "A list of trusted origins that are allowed to call the API from a browser",
+            "A role that groups permissions so each user gets only what is needed",
+            "A public key that encrypts a message so only the private key can decrypt it",
+            "A hash of the message plus a shared secret, used to confirm it is authentic and unchanged"
           ],
-          "answer": 2,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. This is HMAC; it serves integrity.",
-          "id": 168
+          "answer": 3,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 165
         },
         {
           "question": "Private key signs, public key verifies, so the signer cannot later deny it. This property is called:",
           "options": [
+            "Availability",
             "Non-repudiation",
-            "Statelessness",
             "Idempotency",
-            "Availability"
+            "Statelessness"
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Digital signatures are best across organizations.",
-          "id": 169
+          "id": 166
         },
         {
           "question": "Rebuilding untrusted input into objects without checks is called:",
           "options": [
-            "Weak encryption",
-            "Broken pagination",
             "Insecure deserialization",
-            "Insecure serialization"
+            "Broken pagination",
+            "Insecure serialization",
+            "Weak encryption"
           ],
-          "answer": 2,
+          "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange. A crafted payload can overwrite fields or run code. A classic OWASP Top 10 risk.",
-          "id": 170
+          "id": 167
         },
         {
           "question": "Which is the defense against insecure deserialization?",
           "options": [
             "Use native object serialization only",
-            "Validate against a schema and prefer JSON",
             "Skip validation for faster parsing",
+            "Validate against a schema and prefer JSON",
             "Trust fields that came from the client"
+          ],
+          "answer": 2,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 168
+        },
+        {
+          "question": "When validating input, you should:",
+          "options": [
+            "Use an allowlist and validate at the boundary",
+            "Trust input that is already in JSON",
+            "Use a blocklist after the business logic",
+            "Validate only after saving the data"
+          ],
+          "answer": 0,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "id": 169
+        },
+        {
+          "question": "What is rate limiting?",
+          "options": [
+            "Encrypting traffic between the client and server",
+            "Checking input against an allowlist at the boundary",
+            "Capping requests per time window (429 Too Many Requests)",
+            "Allowing only trusted websites to call the API"
+          ],
+          "answer": 2,
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Stops brute force and scraping and protects availability.",
+          "id": 170
+        },
+        {
+          "question": "Which rule about CORS is correct?",
+          "options": [
+            "Use CORS on the server to hash the passwords",
+            "Allow only trusted origins, no wildcard with credentials",
+            "CORS replaces the need for authentication",
+            "Allow every origin so all of the sites can call the API freely"
           ],
           "answer": 1,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 171
         },
         {
-          "question": "When validating input, you should:",
+          "question": "In one secure payment request, which step comes right after Authenticate (attach a signed token)?",
           "options": [
-            "Use a blocklist after the business logic",
-            "Validate only after saving the data",
-            "Trust input that is already in JSON",
-            "Use an allowlist and validate at the boundary"
+            "Validate (check the schema first)",
+            "Verify integrity (confirm the HMAC)",
+            "Store safely (encrypt at rest)",
+            "Encrypt in transit (send over TLS)"
           ],
           "answer": 3,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Serialize, Authenticate, Encrypt in transit, Validate, Verify integrity, Store safely.",
           "id": 172
         },
         {
-          "question": "A login endpoint is hit by thousands of password guesses per minute. Which defense fits?",
+          "question": "What is the last step of one secure request?",
           "options": [
-            "Putting the password in a JWT",
-            "Rate limiting (429 Too Many Requests)",
-            "CORS with a wildcard origin",
-            "Removing the HTTPS layer"
+            "Authenticate (attach a token)",
+            "Store safely (encrypt data at rest)",
+            "Serialize (build the JSON payload)",
+            "Validate (check the schema)"
           ],
           "answer": 1,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Rate limiting also protects availability.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 173
         },
         {
-          "question": "Which rule about CORS is correct?",
+          "question": "What is a JWT (JSON Web Token)?",
           "options": [
-            "Allow every origin so all of the sites can call the API freely",
-            "CORS replaces the need for authentication",
-            "Use CORS on the server to hash the passwords",
-            "Allow only trusted origins, no wildcard with credentials"
+            "An encrypted file that stores passwords so they can be read back later",
+            "A binary format for heavy internal service-to-service traffic",
+            "A browser rule that controls which websites may call the API",
+            "A signed token with a header, payload, and signature, used for stateless authentication"
           ],
           "answer": 3,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 174
         },
         {
-          "question": "In one secure payment request, which step comes right after Authenticate (attach a signed token)?",
+          "question": "What is CORS?",
           "options": [
-            "Verify integrity (confirm the HMAC)",
-            "Store safely (encrypt at rest)",
-            "Encrypt in transit (send over TLS)",
-            "Validate (check the schema first)"
+            "A flow that grants limited access without passwords",
+            "A one-way fingerprint used to store passwords safely",
+            "A browser rule controlling which websites may call your API",
+            "A cap on the number of requests allowed per window"
           ],
           "answer": 2,
-          "explanation": "Lesson 3 - Reliable and Secure Data Exchange. Serialize, Authenticate, Encrypt in transit, Validate, Verify integrity, Store safely.",
+          "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
           "id": 175
         },
         {
-          "question": "What is the last step of one secure request?",
+          "question": "What is a digital signature?",
           "options": [
-            "Store safely (encrypt data at rest)",
-            "Serialize (build the JSON payload)",
-            "Validate (check the schema)",
-            "Authenticate (attach a token)"
+            "Private key signs, public key verifies, giving non-repudiation",
+            "One shared key encrypts and decrypts the same message",
+            "A hash of the message plus a shared secret key",
+            "A list of roles with only the permissions needed"
           ],
           "answer": 0,
           "explanation": "Lesson 3 - Reliable and Secure Data Exchange.",
@@ -9510,10 +9597,10 @@ export const exams = {
           "id": 161
         },
         {
-          "question": "In the business analogy of a website, the 'name' of the business is the:",
+          "question": "When you start a website, its 'name' is the:",
           "options": [
-            "Webmaster",
-            "Website content",
+            "Control panel",
+            "Root directory",
             "Domain name",
             "Web server"
           ],
@@ -9522,340 +9609,328 @@ export const exams = {
           "id": 162
         },
         {
-          "question": "In the business analogy, the 'location' of the business is the:",
+          "question": "When you start a website, its 'location', where the site is hosted, is the:",
           "options": [
             "Web server",
-            "Control panel",
+            "Subdomain",
             "Domain name",
-            "Website content"
+            "Web browser"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 163
         },
         {
-          "question": "In the business analogy, the 'staff' is:",
+          "question": "Also called website address, it is the name that people type in the browser to open a certain website.",
           "options": [
-            "The visitors",
-            "The domain registrar",
-            "The hosting provider",
-            "You or the webmaster"
+            "Subdomain",
+            "IP address",
+            "Web host",
+            "Domain name"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 164
         },
         {
-          "question": "In the business analogy, the 'product' is the:",
+          "question": "These are the highest level in the hierarchy of domain names.",
           "options": [
-            "Backup system",
-            "Website content",
-            "Web server",
-            "Domain name"
+            "Internationalized Domain Names (IDNs)",
+            "Top-Level Domains (TLDs)",
+            "Subdomains",
+            "Second-Level Domains (SLDs)"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 165
         },
         {
-          "question": "If your website is your business, your host providers can be thought of as your:",
+          "question": "Which generic TLD is used by accredited educational institutions?",
           "options": [
-            "Customers",
-            "Competitors",
-            "Landlords",
-            "Employees"
+            ".org",
+            ".gov",
+            ".edu",
+            ".net"
           ],
           "answer": 2,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 166
         },
         {
-          "question": "Among the additional things a website needs, the 'insurance' is the:",
+          "question": ".ph, .jp, .uk, and .us are examples of:",
           "options": [
-            "Hosting account control panel",
-            "Username and password",
-            "Design of your site",
-            "Backup system"
+            "Sponsored TLDs (sTLDs)",
+            "New gTLDs",
+            "Second-Level Domains",
+            "Country-Code TLDs (ccTLDs)"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 167
         },
         {
-          "question": "Among the additional things a website needs, the 'office' is the:",
+          "question": "In \"example.com,\" the part \"example\" is the:",
           "options": [
-            "Hosting account control panel",
-            "Tools to update content",
-            "Design of your site",
-            "Backup system"
+            "Second-Level Domain (SLD)",
+            "Sponsored TLD",
+            "Subdomain",
+            "Top-Level Domain (TLD)"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 168
         },
         {
-          "question": "Among the additional things a website needs, the 'keys' are the:",
+          "question": "In \"blog.example.com,\" the part \"blog\" is a:",
           "options": [
-            "Domain name",
-            "Username and password",
-            "Web server",
-            "Backup system"
+            "Top-Level Domain (TLD)",
+            "Third-Level Domain (Subdomain)",
+            "Sponsored TLD (sTLD)",
+            "Second-Level Domain (SLD)"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 169
         },
         {
-          "question": "Also called website address, it is the name that people type in the browser to open a certain website.",
+          "question": ".tech, .store, .app, .xyz, and .guru are examples of:",
           "options": [
-            "Subdomain",
-            "Web host",
-            "Domain name",
-            "IP address"
+            "Internationalized Domain Names",
+            "Sponsored TLDs (sTLDs)",
+            "New gTLDs",
+            "Country-Code TLDs"
           ],
           "answer": 2,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 170
         },
         {
-          "question": "These are the highest level in the hierarchy of domain names.",
+          "question": "Specialized domains restricted to certain groups or organizations, such as .aero, .museum, and .coop.",
           "options": [
-            "Internationalized Domain Names (IDNs)",
-            "Second-Level Domains (SLDs)",
-            "Top-Level Domains (TLDs)",
-            "Subdomains"
+            "Subdomains",
+            "New gTLDs",
+            "Sponsored TLDs (sTLDs)",
+            "Generic TLDs"
           ],
           "answer": 2,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 171
         },
         {
-          "question": "Which generic TLD is used by accredited educational institutions?",
+          "question": "Domains that support non-ASCII characters, such as Chinese, Arabic, or Cyrillic characters.",
           "options": [
-            ".edu",
-            ".gov",
-            ".org",
-            ".net"
+            "Internationalized Domain Names (IDNs)",
+            "Country-Code TLDs (ccTLDs)",
+            "Sponsored TLDs (sTLDs)",
+            "New Generic TLDs (gTLDs)"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 172
         },
         {
-          "question": ".ph, .jp, .uk, and .us are examples of:",
+          "question": "Which platform is recommended for creating an ecommerce website?",
           "options": [
-            "Second-Level Domains",
-            "New gTLDs",
-            "Sponsored TLDs (sTLDs)",
-            "Country-Code TLDs (ccTLDs)"
+            "Web builders",
+            "Joomla",
+            "Drupal",
+            "PrestaShop"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 173
         },
         {
-          "question": "In \"example.com,\" the part \"example\" is the:",
+          "question": "Which platforms are recommended for creating a standard website or a blog?",
           "options": [
-            "Sponsored TLD",
-            "Second-Level Domain (SLD)",
-            "Subdomain",
-            "Top-Level Domain (TLD)"
+            "Drupal and Magento",
+            "WordPress and Joomla",
+            "OpenCart and OsCommerce",
+            "PrestaShop and Magento"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 174
         },
         {
-          "question": "In \"blog.example.com,\" the part \"blog\" is a:",
+          "question": "FTP, the credentials you get from your hosting dashboard or cPanel, stands for:",
           "options": [
-            "Third-Level Domain (Subdomain)",
-            "Sponsored TLD (sTLD)",
-            "Second-Level Domain (SLD)",
-            "Top-Level Domain (TLD)"
+            "File Transfer Protocol",
+            "Folder Transfer Path",
+            "File Text Protocol",
+            "Fast Transfer Program"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 175
         },
         {
-          "question": ".tech, .store, .app, .xyz, and .guru are examples of:",
+          "question": "What is the usual port number for FTP?",
           "options": [
-            "Country-Code TLDs",
-            "New gTLDs",
-            "Internationalized Domain Names",
-            "Sponsored TLDs (sTLDs)"
+            "443",
+            "21",
+            "3306",
+            "80"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 176
         },
         {
-          "question": "Specialized domains restricted to certain groups or organizations, such as .aero, .museum, and .coop.",
+          "question": "When uploading through the File Manager, website files go into the root directory, usually named:",
           "options": [
-            "Generic TLDs",
-            "Subdomains",
-            "Sponsored TLDs (sTLDs)",
-            "New gTLDs"
+            "uploads or assets",
+            "system32 or bin",
+            "public_html or htdocs",
+            "root_files or www_data"
           ],
           "answer": 2,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 177
         },
         {
-          "question": "Domains that support non-ASCII characters, such as Chinese, Arabic, or Cyrillic characters.",
+          "question": "If your website is compressed into a .zip file, you should:",
           "options": [
-            "New Generic TLDs (gTLDs)",
-            "Sponsored TLDs (sTLDs)",
-            "Country-Code TLDs (ccTLDs)",
-            "Internationalized Domain Names (IDNs)"
+            "Send it to the hosting provider by email",
+            "Rename it to .html and upload it as it is",
+            "Import it into the database using phpMyAdmin",
+            "Upload and extract it within the file manager"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 178
         },
         {
-          "question": "Which platform is recommended for creating an ecommerce website?",
+          "question": "For dynamic websites, the .sql file is imported using:",
           "options": [
-            "Drupal",
-            "PrestaShop",
-            "Joomla",
-            "Web builders"
+            "The File Manager's extract option",
+            "phpMyAdmin or a similar database management tool",
+            "The DNS settings at the domain registrar",
+            "The FTP host and port number"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 179
         },
         {
-          "question": "Which platforms are recommended for creating a standard website or a blog?",
+          "question": "When updating the database connection in your code, the database host is usually:",
           "options": [
-            "WordPress and Joomla",
-            "OpenCart and OsCommerce",
-            "PrestaShop and Magento",
-            "Drupal and Magento"
+            "localhost",
+            "ns1.yourhost.com",
+            "public_html",
+            "ftp.yourwebsite.com"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 180
         },
         {
-          "question": "FTP, the credentials you get from your hosting dashboard or cPanel, stands for:",
+          "question": "To use a custom domain, you point it to the hosting nameservers by updating the:",
           "options": [
-            "File Text Protocol",
-            "Folder Transfer Path",
-            "Fast Transfer Program",
-            "File Transfer Protocol"
+            "File permissions of public_html",
+            "FTP port number in cPanel",
+            "Database settings in phpMyAdmin",
+            "DNS settings at your domain registrar"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 181
         },
         {
-          "question": "What is the usual port number for FTP?",
+          "question": "DNS propagation can take up to:",
           "options": [
-            "443",
-            "80",
-            "21",
-            "3306"
+            "7 days",
+            "5 minutes",
+            "48 hours",
+            "30 days"
           ],
           "answer": 2,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 182
         },
         {
-          "question": "When uploading through the File Manager, website files go into the root directory, usually named:",
+          "question": "Which file permissions allow public access, as recommended when troubleshooting?",
           "options": [
-            "system32 or bin",
-            "root_files or www_data",
-            "public_html or htdocs",
-            "uploads or assets"
+            "000 for directories, 111 for files",
+            "777 for directories, 777 for files",
+            "755 for directories, 644 for files",
+            "644 for directories, 755 for files"
           ],
           "answer": 2,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 183
         },
         {
-          "question": "If your website is compressed into a .zip file, you should:",
+          "question": "Maintaining a website after it is uploaded includes:",
           "options": [
-            "Import it into the database using phpMyAdmin",
-            "Upload and extract it within the file manager",
-            "Send it to the hosting provider by email",
-            "Rename it to .html and upload it as it is"
+            "Deleting the database after each update",
+            "Monitoring performance and backing up regularly",
+            "Turning off the website during weekends",
+            "Buying a new domain name every month"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 184
         },
         {
-          "question": "For dynamic websites, the .sql file is imported using:",
+          "question": "These TLDs are the most common and widely used, such as .com, .org, and .net.",
           "options": [
-            "phpMyAdmin or a similar database management tool",
-            "The DNS settings at the domain registrar",
-            "The File Manager's extract option",
-            "The FTP host and port number"
+            "Generic TLDs (gTLDs)",
+            "Sponsored TLDs (sTLDs)",
+            "Country-Code TLDs (ccTLDs)",
+            "Internationalized Domain Names (IDNs)"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 185
         },
         {
-          "question": "When updating the database connection in your code, the database host is usually:",
+          "question": "Which TLD is used by U.S. government agencies?",
           "options": [
-            "public_html",
-            "ns1.yourhost.com",
-            "ftp.yourwebsite.com",
-            "localhost"
+            ".org",
+            ".net",
+            ".mil",
+            ".gov"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 186
         },
         {
-          "question": "To use a custom domain, you point it to the hosting nameservers by updating the:",
+          "question": "Subdomains can be used to:",
           "options": [
-            "File permissions of public_html",
-            "DNS settings at your domain registrar",
-            "Database settings in phpMyAdmin",
-            "FTP port number in cPanel"
+            "Replace the top-level domain of a website with a new one",
+            "Create distinct sections of a website or host separate sites under one domain",
+            "Translate a domain name into non-ASCII characters",
+            "Store the website's database and its .sql backup file"
           ],
           "answer": 1,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 187
         },
         {
-          "question": "DNS propagation can take up to:",
+          "question": "In the hosting control panel (e.g., cPanel), where do you create a new database and user?",
           "options": [
-            "5 minutes",
-            "7 days",
-            "30 days",
-            "48 hours"
+            "File Manager",
+            "DNS settings",
+            "Error logs",
+            "MySQL Databases section"
           ],
           "answer": 3,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 188
         },
         {
-          "question": "Which file permissions allow public access, as recommended when troubleshooting?",
+          "question": "Where do you check for errors when debugging server-side scripts such as PHP on a host?",
           "options": [
-            "755 for directories, 644 for files",
-            "777 for directories, 777 for files",
-            "644 for directories, 755 for files",
-            "000 for directories, 111 for files"
+            "The hosting provider's error logs",
+            "The browser's bookmarks list",
+            "The domain registrar's invoice",
+            "The website's public_html folder name"
           ],
           "answer": 0,
           "explanation": "Chapter 7 - Web Hosting",
           "id": 189
-        },
-        {
-          "question": "Step 8 (Maintain Your Website) includes:",
-          "options": [
-            "Choosing a web hosting provider and signing up",
-            "Getting the FTP credentials from cPanel",
-            "Monitoring performance and backing up regularly",
-            "Importing the .sql file into the database"
-          ],
-          "answer": 2,
-          "explanation": "Chapter 7 - Web Hosting",
-          "id": 190
         }
       ]
     }
@@ -9880,7 +9955,7 @@ export const pointers = {
       "title": "Finals Pointers — Chapters 9 to 11",
       "description": "Compact reviewer for Future Architecture Views, the EA Management Plan, and Investment Planning and Project Management (CPIC).",
       "file": "/pointers/EA_Finals_Pointers.pdf",
-      "pages": 6
+      "pages": 8
     }
   ],
   "cc6": [
@@ -9890,7 +9965,7 @@ export const pointers = {
       "title": "Finals Pointers — Chapters 5 to 8",
       "description": "Compact reviewer for Query Languages, Data Organization and Architecture, Data Governance, and Special Purpose Databases.",
       "file": "/pointers/CC6_Finals_Pointers.pdf",
-      "pages": 7
+      "pages": 8
     }
   ],
   "wd": [
@@ -9900,7 +9975,7 @@ export const pointers = {
       "title": "Finals Pointers — Chapters 5 to 7",
       "description": "Compact reviewer for Advanced CSS, Introduction to JavaScript and the DOM (with output tracing tips), and Web Hosting.",
       "file": "/pointers/WD_Finals_Pointers.pdf",
-      "pages": 6
+      "pages": 7
     }
   ],
   "oop": [
@@ -9910,7 +9985,7 @@ export const pointers = {
       "title": "Finals Pointers — Modules 10 to 14",
       "description": "Compact reviewer for Code Reuse and Class Hierarchy, Interfaces, Abstract Class and Interface, Polymorphism, and Modularity.",
       "file": "/pointers/OOP_Finals_Pointers.pdf",
-      "pages": 6
+      "pages": 7
     }
   ],
   "ipt1": [
@@ -9920,7 +9995,7 @@ export const pointers = {
       "title": "Finals Pointers — Web Services, APIs, and Secure Data Exchange",
       "description": "Compact reviewer for Web Services and SOAP, REST and Consuming APIs, and Reliable and Secure Data Exchange (serialization, access control, data protection).",
       "file": "/pointers/IPT1_Finals_Pointers.pdf",
-      "pages": 6
+      "pages": 8
     }
   ]
 };
