@@ -419,293 +419,348 @@ public class DemoWorkingDog {
 
 # OUTPUT items: output tracing. make_exam.py compiles and runs each program; the student types
 # every printed line in order (scored per line).
+# OUTPUT items: output tracing in the instructor's style (OOP Quiz Set A): inheritance chains,
+# getters/setters named after the field (name(String) / name()), constructors with super(),
+# overloading, and state changes between prints. Each item is a short piece (2-5 output lines)
+# so it is not overwhelming. make_exam.py compiles and runs each program.
 OUTPUT = [
-  {"module": M10, "file": "Employee", "name": "Redefining getPay()",
-   "code": '''class Person {
-   private String name;
-   Person(String aName) { name = aName; }
-   public String getName() { return name; }
-}
-class Employee extends Person {
-   private int basicSalary;
-   Employee(String aName, int aBasicSalary) {
-      super(aName);
-      basicSalary = aBasicSalary;
+  {"module": M10, "file": "MyMain", "name": 'Default constructors in a chain',
+   "code": """public class Person{
+   private String id; private String name;
+   public Person(){ name="name"; id="id";}
+   public String name(){return name;}
+   public String id(){return id;}}
+public class Employee extends Person{
+   private String salary;
+   public Employee(){ super(); salary="salary";}
+   public String salary(){return salary;}}
+public class Teaching extends Employee{
+   public Teaching(){super();}
+   public String course(){return "course";}}
+public class Professor extends Teaching{
+   private String research;
+   private String course;
+   public Professor(){ super(); this.research="research"; course = "course";}
+   public String course(){
+      course = course + "," + research;
+      return course;}}
+public class MyMain{
+   public static void main(String args[]){
+      Professor prof1 = new Professor();
+      System.out.println(prof1.id());
+      System.out.println(prof1.name());
+      System.out.println(prof1.salary());
+      System.out.println(prof1.course());
    }
-   public int getPay() { return basicSalary; }
-   public static void main(String argv[]) {
-      Employee[] staff = { new Manager("Ana", 9000, 2000),
-                           new Secretary("Ben", 2500),
-                           new Clerk("Carla", 1200) };
-      for (int i = 0; i < staff.length; i++)
-         System.out.println(staff[i].getName() + " has a pay of " + staff[i].getPay());
+}""",
+   "note": 'Based on the OOP Quiz (Set A). Nothing was set, so the inherited fields keep the defaults from Person() and Employee(). Professor\'s course() appends "," + research.'},
+  {"module": M10, "file": "MyMain", "name": 'Setters and an overloaded constructor',
+   "code": """public class Person{
+   private String id; private String name;
+   public Person(){ name="name"; id="id";}
+   public void name(String name){this.name=name;}
+   public String name(){return name;}
+   public void id(String id){ this.id=id;}
+   public String id(){return id;}}
+public class Employee extends Person{
+   private String salary;
+   public Employee(){ super(); salary="salary";}
+   public void salary(String salary){ this.salary = salary;}
+   public String salary(){return salary;}}
+public class Teaching extends Employee{
+   public Teaching(){super();}
+   public String course(){return "course";}}
+public class Professor extends Teaching{
+   private String research;
+   private String course;
+   public Professor(String course){ super(); this.research="research"; this.course = course;}
+   public void research(String research){ this.research = research;}
+   public String course(){
+      course = course + "," + research;
+      return course;}}
+public class MyMain{
+   public static void main(String args[]){
+      Professor prof2 = new Professor("Thesis1");
+      prof2.id("1234");
+      prof2.name("Mr.Prof2");
+      prof2.salary("95300");
+      prof2.research("Security");
+      System.out.println(prof2.id());
+      System.out.println(prof2.name());
+      System.out.println(prof2.salary());
+      System.out.println(prof2.course());
    }
-}
-class Manager extends Employee {
+}""",
+   "note": 'Based on the OOP Quiz (Set A). The setters are inherited from Person and Employee; Professor(String) stores "Thesis1" as the course.'},
+  {"module": M10, "file": "MyMain", "name": 'A getter that changes its own field',
+   "code": """public class Person{
+   private String id; private String name;
+   public Person(){ name="name"; id="id";}
+   public void name(String name){this.name=name;}
+   public String name(){return name;}
+   public void id(String id){ this.id=id;}
+   public String id(){return id;}}
+public class Employee extends Person{
+   private String salary;
+   public Employee(){ super(); salary="salary";}
+   public String salary(){return salary;}}
+public class Teaching extends Employee{
+   public Teaching(){super();}
+   public String course(){return "course";}}
+public class Professor extends Teaching{
+   private String research;
+   private String course;
+   public Professor(){ super(); this.research="research"; course = "course";}
+   public void research(String research){ this.research = research;}
+   public String course(){
+      course = course + "," + research;
+      return course;}}
+public class MyMain{
+   public static void main(String args[]){
+      Professor prof3 = new Professor();
+      prof3.name("Mr.Prof3");
+      prof3.research("DataMining");
+      System.out.println(prof3.name());
+      System.out.println(prof3.salary());
+      System.out.println(prof3.course());
+      System.out.println(prof3.course());
+   }
+}""",
+   "note": 'Based on the OOP Quiz (Set A). course() saves the longer string back into the field, so calling it a second time appends research again.'},
+  {"module": M10, "file": "MyMain", "name": 'Same method name, different classes',
+   "code": """public class Person{
+   private String id; private String name;
+   public Person(){ name="name"; id="id";}
+   public void name(String name){this.name=name;}
+   public String name(){return name;}
+   public void id(String id){ this.id=id;}
+   public String id(){return id;}}
+public class Employee extends Person{
+   private String salary;
+   public Employee(){ super(); salary="salary";}
+   public void salary(String salary){ this.salary = salary;}
+   public String salary(){return salary;}}
+public class Teaching extends Employee{
+   public Teaching(){super();}
+   public String course(){return "course";}}
+public class Lecturer extends Teaching{
+   private String course;
+   public Lecturer(){ super(); course = "course";}
+   public Lecturer(String course){ super(); this.course = course;}
+   public String course(){ return course;}}
+public class MyMain{
+   public static void main(String args[]){
+      Lecturer lec1 = new Lecturer();
+      Lecturer lec2 = new Lecturer("OOP");
+      lec2.id("4567");
+      lec2.salary("35100");
+      System.out.println(lec1.name());
+      System.out.println(lec1.course());
+      System.out.println(lec2.id());
+      System.out.println(lec2.salary());
+      System.out.println(lec2.course());
+   }
+}""",
+   "note": 'Based on the OOP Quiz (Set A). Lecturer redefines course() to return its own field; values that were never set keep the defaults.'},
+  {"module": M10, "file": "MyMain", "name": 'Redefining pay() with super',
+   "code": """public class Employee{
+   private int basic;
+   public Employee(){ basic=1000;}
+   public Employee(int basic){ this.basic=basic;}
+   public int pay(){return basic;}}
+public class Manager extends Employee{
    private int allowance;
-   Manager(String aName, int aBasicSalary, int aAllowance) {
-      super(aName, aBasicSalary);
-      allowance = aAllowance;
+   public Manager(int basic, int allowance){
+      super(basic);
+      this.allowance=allowance;}
+   public int pay(){return super.pay() + allowance;}}
+public class Clerk extends Employee{
+   public Clerk(){ super();}}
+public class MyMain{
+   public static void main(String args[]){
+      Manager m = new Manager(9000, 2000);
+      Clerk c = new Clerk();
+      System.out.println(m.pay());
+      System.out.println(c.pay());
    }
-   public int getPay() { return super.getPay() + allowance; }
-}
-class Secretary extends Employee {
-   Secretary(String aName, int aBasicSalary) { super(aName, aBasicSalary); }
-}
-class Clerk extends Employee {
-   Clerk(String aName, int aBasicSalary) { super(aName, aBasicSalary); }
-}''',
-   "note": "Manager redefines getPay() (same name and parameters), so its version adds the allowance; Secretary and Clerk inherit Employee's getPay()."},
-
-  {"module": M10, "file": "Technician", "name": "Constructor chain with super()",
-   "code": '''class Person {
-   Person() { System.out.println("Person created"); }
-}
-class Employee extends Person {
-   Employee() {
-      super();
-      System.out.println("Employee created");
-   }
-}
-public class Technician extends Employee {
-   Technician() {
-      super();
-      System.out.println("Technician created");
-   }
-   public static void main(String argv[]) {
-      Technician t = new Technician();
-   }
-}''',
-   "note": "super() runs the parent constructor first, so the messages print from the top of the hierarchy down."},
-
-  {"module": M10, "file": "Shape", "name": "Adding Triangle to the hierarchy",
-   "code": '''class Shape {
+}""",
+   "note": "Manager redefines pay() and still reuses Employee's version through super.pay(); Clerk inherits pay() unchanged."},
+  {"module": M11, "file": "MyMain", "name": 'Extends and implements',
+   "code": """public interface Taxable{
+   int RATE = 10;
+   int tax();}
+public class Person{
    private String name;
-   Shape(String aName) { name = aName; }
-   public String getName() { return name; }
-   public float calculateArea() { return 0.0f; }
-   public static void main(String argv[]) {
-      Shape shapeArray[] = { new Square("Square S"),
-                             new Triangle("Triangle T"),
-                             new Shape("Shape X") };
-      for (int i = 0; i < shapeArray.length; i++)
-         System.out.println(shapeArray[i].getName() + ": " + shapeArray[i].calculateArea());
+   public Person(){ name="name";}
+   public void name(String name){this.name=name;}
+   public String name(){return name;}}
+public class Staff extends Person implements Taxable{
+   private int salary;
+   public Staff(int salary){ super(); this.salary=salary;}
+   public int tax(){ return salary * RATE / 100;}}
+public class MyMain{
+   public static void main(String args[]){
+      Staff s = new Staff(35000);
+      System.out.println(s.name());
+      s.name("Carla");
+      System.out.println(s.name());
+      System.out.println(s.tax());
+      System.out.println(Taxable.RATE);
    }
-}
-class Square extends Shape {
-   private int side;
-   Square(String aName) { super(aName); side = 3; }
-   public float calculateArea() {
-      int area;
-      area = side * side;
-      return area;
-   }
-}
-class Triangle extends Shape {
-   private int base, height;
-   Triangle(String aName) { super(aName); base = 4; height = 5; }
-   public float calculateArea() { return 0.5f * base * height; }
-}''',
-   "note": "calculateArea() returns a float, so the int area 9 prints as 9.0. Triangle was added as a subclass, so Shape and Square did not change."},
-
-  {"module": M11, "file": "TurnDemo", "name": "One interface, many classes",
-   "code": '''interface Turner {
-   void turn();
-}
-class Leaf implements Turner {
-   public void turn() { System.out.println("Changing colors"); }
-}
-class Page implements Turner {
-   public void turn() { System.out.println("Going to the next page"); }
-}
-class Pancake implements Turner {
-   public void turn() { System.out.println("Flipping"); }
-}
-public class TurnDemo {
-   public static void main(String[] args) {
-      Turner[] things = { new Pancake(), new Leaf(), new Page(), new Pancake() };
-      for (int i = 1; i < things.length; i++)
-         things[i].turn();
-   }
-}''',
-   "note": "The loop starts at index 1, so the first Pancake is skipped. Each class writes its own turn()."},
-
-  {"module": M11, "file": "SalesManager", "name": "extends and implements",
-   "code": '''interface Manage {
-   void authorize();
-}
-class SalesPerson {
-   public void sell() { System.out.println("Selling products"); }
-}
-public class SalesManager extends SalesPerson implements Manage {
-   public void authorize() {
-      System.out.println("Authorizing discount");
-      sell();
-   }
-   public static void main(String[] args) {
-      SalesManager boss = new SalesManager();
-      boss.sell();
-      boss.authorize();
-   }
-}''',
-   "note": "sell() is inherited through extends; authorize() had to be written because of implements Manage."},
-
-  {"module": M12, "file": "ColourTest", "name": "Constants in an interface",
-   "code": '''interface Colourable {
-   int RED = 1;
-   int GREEN = 2;
-   int BLUE = 3;
-}
-public class ColourTest implements Colourable {
-   public static void main(String args[]) {
-      System.out.println(RED + GREEN * BLUE);
-      System.out.println("Colour " + RED + GREEN);
-      System.out.println(Colourable.BLUE);
-   }
-}''',
-   "note": "Interface data are public, static and final constants. * runs before +, and once a String comes first, + joins text (\"Colour \" + 1 + 2 = Colour 12)."},
-
-  {"module": M12, "file": "B", "name": "Subclass of a class that implements an interface",
-   "code": '''interface I {
-   void x();
-}
-class A implements I {
-   public void x() { System.out.println("in A.x"); }
-}
-class B extends A {
-   void z() {
-      x();
-      System.out.println("in B.z");
-   }
-   public static void main(String args[]) {
-      B bb = new B();
-      bb.z();
-      I ii = new B();
-      ii.x();
-   }
-}''',
-   "note": "B inherits x() from A, which implements I, so a B object can also be used as an I."},
-
-  {"module": M12, "file": "AbstractDemo", "name": "Abstract class with a concrete method",
-   "code": '''abstract class Animal {
+}""",
+   "note": 'name() comes from Person through extends; tax() had to be written because of implements. RATE is an interface constant (public, static, final).'},
+  {"module": M11, "file": "MyMain", "name": 'Two interfaces in one class',
+   "code": """public interface Worker{
+   String work();}
+public interface Player{
+   String play();}
+public class Student implements Worker, Player{
    private String name;
-   Animal(String aName) { name = aName; }
-   public abstract void speak();
-   public void introduce() {
-      System.out.println("I am " + name);
-      speak();
+   public Student(String name){ this.name=name;}
+   public String work(){ return name + " studies";}
+   public String play(){ return name + " plays";}}
+public class MyMain{
+   public static void main(String args[]){
+      Student s = new Student("Ana");
+      Worker w = s;
+      Player p = s;
+      System.out.println(w.work());
+      System.out.println(p.play());
    }
-}
-class Dog extends Animal {
-   Dog(String aName) { super(aName); }
-   public void speak() { System.out.println("Woof!"); }
-}
-class Cow extends Animal {
-   Cow(String aName) { super(aName); }
-   public void speak() { System.out.println("Moo!"); }
-}
-public class AbstractDemo {
-   public static void main(String[] args) {
-      Animal a = new Dog("Murphy");
-      a.introduce();
-      a = new Cow("Bessie");
-      a.speak();
+}""",
+   "note": 'A class can implement any number of interfaces, and its object can be referred to by either interface type.'},
+  {"module": M12, "file": "MyMain", "name": 'Abstract class with a concrete method',
+   "code": """public abstract class Vehicle{
+   private String plate;
+   public Vehicle(){ plate="none";}
+   public void plate(String plate){this.plate=plate;}
+   public String plate(){return plate;}
+   public abstract int wheels();
+   public String info(){ return plate() + "-" + wheels();}}
+public class Car extends Vehicle{
+   public Car(){ super();}
+   public int wheels(){ return 4;}}
+public class MyMain{
+   public static void main(String args[]){
+      Car car = new Car();
+      System.out.println(car.info());
+      car.plate("ABC123");
+      System.out.println(car.info());
    }
-}''',
-   "note": "An abstract class cannot be instantiated, but it can have constructors and concrete methods; each concrete subclass must implement speak()."},
-
-  {"module": M13, "file": "OverloadDemo", "name": "Operation overloading",
-   "code": '''public class OverloadDemo {
-   static void display(int x) { System.out.println("int " + x); }
-   static void display(double x) { System.out.println("double " + x); }
-   static void display(String x) { System.out.println("String " + x); }
-   static void display(int x, int y) { System.out.println("sum " + (x + y)); }
-   public static void main(String[] args) {
-      display(5);
-      display(2.5);
-      display("5");
-      display(5, 2);
-      display(10 / 4);
+}""",
+   "note": "Vehicle cannot be instantiated, but its constructor runs through super() and its concrete info() calls the subclass's wheels()."},
+  {"module": M12, "file": "MyMain", "name": 'Implementing an abstract method differently',
+   "code": """public abstract class Vehicle{
+   public abstract int wheels();}
+public class Motor extends Vehicle{
+   private int sidecar;
+   public Motor(){ sidecar=0;}
+   public Motor(int sidecar){ this.sidecar=sidecar;}
+   public int wheels(){ return 2 + sidecar;}}
+public class MyMain{
+   public static void main(String args[]){
+      Motor m1 = new Motor();
+      Motor m2 = new Motor(1);
+      System.out.println(m1.wheels());
+      System.out.println(m2.wheels());
    }
-}''',
-   "note": "The method is chosen by the parameters. 10 / 4 is integer division (2), so display(int) runs."},
-
-  {"module": M13, "file": "BindingDemo", "name": "Dynamic binding",
-   "code": '''class Parent {
-   void show() { System.out.println("Parent show"); }
-   void greet() {
-      System.out.println("Hello from Parent");
-      show();
+}""",
+   "note": 'Each concrete subclass must implement the abstract method; the overloaded constructors set different values.'},
+  {"module": M13, "file": "MyMain", "name": 'Superclass references and dynamic binding',
+   "code": """public class Animal{
+   private String name;
+   public Animal(String name){ this.name=name;}
+   public String name(){return name;}
+   public String sound(){return "...";}}
+public class Dog extends Animal{
+   public Dog(String name){ super(name);}
+   public String sound(){return "Woof";}}
+public class Cat extends Animal{
+   public Cat(String name){ super(name);}
+   public String sound(){return "Meow";}}
+public class MyMain{
+   public static void main(String args[]){
+      Animal[] pets = new Animal[3];
+      pets[0] = new Dog("Bantay");
+      pets[1] = new Cat("Muning");
+      pets[2] = new Animal("Pet");
+      for (int i = 0; i < pets.length; i++)
+         System.out.println(pets[i].name() + " says " + pets[i].sound());
    }
-}
-class Child extends Parent {
-   void show() { System.out.println("Child show"); }
-}
-public class BindingDemo {
-   public static void main(String[] args) {
-      Parent p = new Child();
-      p.greet();
-      p = new Parent();
-      p.show();
+}""",
+   "note": "Each element is an Animal reference, but dynamic binding runs the object's own sound()."},
+  {"module": M13, "file": "MyMain", "name": 'Overloaded print methods',
+   "code": """public class Printer{
+   public void print(int n){ System.out.println("int " + n);}
+   public void print(String s){ System.out.println("String " + s);}
+   public void print(int a, int b){ System.out.println("sum " + (a + b));}}
+public class MyMain{
+   public static void main(String args[]){
+      Printer p = new Printer();
+      p.print(5);
+      p.print("5");
+      p.print(5, 2);
+      p.print(10 / 4);
    }
-}''',
-   "note": "With dynamic binding the object's actual class decides which show() runs, even when it is called from inside Parent's greet()."},
-
-  {"module": M13, "file": "A", "name": "Overloaded constructors",
-   "code": '''class A {
-   A() {
-      this(1);
-      System.out.println("A()");
+}""",
+   "note": 'The method is chosen by the number and types of arguments. 10 / 4 is integer division (2).'},
+  {"module": M13, "file": "MyMain", "name": 'Overloaded constructors with this()',
+   "code": """public class Box{
+   private int length; private int width;
+   public Box(){ this(1, 1);}
+   public Box(int side){ this(side, side);}
+   public Box(int length, int width){
+      this.length=length; this.width=width;}
+   public int area(){ return length * width;}}
+public class MyMain{
+   public static void main(String args[]){
+      Box b1 = new Box();
+      Box b2 = new Box(3);
+      Box b3 = new Box(2, 5);
+      System.out.println(b1.area());
+      System.out.println(b2.area());
+      System.out.println(b3.area());
    }
-   A(int x) { System.out.println("A(int x) " + x); }
-   A(int x, int y) { System.out.println("A(int x, int y) " + (x * y)); }
-   A(String x) { System.out.println("A(String x) " + x); }
-   public static void main(String args[]) {
-      A first = new A();
-      A second = new A(4, 5);
-      A third = new A("4");
+}""",
+   "note": 'this(...) calls another constructor of the same class; the constructor used depends on the arguments.'},
+  {"module": M14, "file": "MyMain", "name": 'Class attribute vs. object attribute',
+   "code": """public class Account{
+   private static int count = 0;
+   private int number;
+   public Account(){
+      count = count + 1;
+      number = count;}
+   public int number(){return number;}
+   public static int count(){return count;}}
+public class MyMain{
+   public static void main(String args[]){
+      Account a1 = new Account();
+      Account a2 = new Account();
+      Account a3 = new Account();
+      System.out.println(a1.number());
+      System.out.println(a3.number());
+      System.out.println(Account.count());
    }
-}''',
-   "note": "this(1) calls the A(int x) constructor first. Each new A(...) picks the constructor whose parameters match."},
-
-  {"module": M14, "file": "Counter", "name": "Object attribute vs. class attribute",
-   "code": '''class Counter {
-   static int total = 0;
-   int mine = 0;
-   Counter() {
-      total = total + 1;
-      mine = mine + 1;
-   }
-   public static void main(String argv[]) {
-      Counter c1 = new Counter();
-      Counter c2 = new Counter();
-      Counter c3 = new Counter();
-      System.out.println(c1.mine);
-      System.out.println(c3.total);
-      System.out.println(Counter.total + c2.mine);
-   }
-}''',
-   "note": "total is static (one shared copy, 3 after three objects); mine is an object attribute, so each object has its own value of 1."},
-
-  {"module": M14, "file": "Account", "name": "Information hiding",
-   "code": '''public class Account {
+}""",
+   "note": 'count is static (one shared copy for the class); number is an object attribute, saved when each object is created.'},
+  {"module": M14, "file": "MyMain", "name": 'Private data through methods',
+   "code": """public class Account{
    private int balance = 0;
-   public void deposit(int amount) {
-      if (amount > 0) balance = balance + amount;
+   public void deposit(int amount){
+      if (amount > 0) balance = balance + amount;}
+   public void withdraw(int amount){
+      if (amount <= balance) balance = balance - amount;}
+   public int balance(){return balance;}}
+public class MyMain{
+   public static void main(String args[]){
+      Account a = new Account();
+      a.deposit(500);
+      a.withdraw(800);
+      System.out.println(a.balance());
+      a.deposit(-100);
+      a.withdraw(200);
+      System.out.println(a.balance());
    }
-   public void withdraw(int amount) {
-      if (amount <= balance) balance = balance - amount;
-      else System.out.println("Insufficient funds");
-   }
-   public int getBalance() { return balance; }
-   public static void main(String[] args) {
-      Account acct = new Account();
-      acct.deposit(500);
-      acct.deposit(-100);
-      acct.withdraw(700);
-      acct.withdraw(200);
-      System.out.println("Balance: " + acct.getBalance());
-   }
-}''',
-   "note": "balance is private, so it changes only through deposit() and withdraw(); the negative deposit is ignored and the 700 withdrawal is refused."},
+}""",
+   "note": 'balance is private, so it changes only through deposit() and withdraw(); invalid amounts are ignored.'},
 ]

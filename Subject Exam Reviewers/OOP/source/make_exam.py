@@ -12,6 +12,11 @@ rng = random.Random(11)  # fixed seed -> same answer letters every rebuild
 def run_java(file, code, joiner=" / "):
     with tempfile.TemporaryDirectory() as d:
         src = os.path.join(d, f"{file}.java")
+        # Like the instructor's handouts, every class may be written "public class ..."; only the
+        # class holding main() can be public in one .java file, so drop "public" from the others.
+        import re
+        code = re.sub(r"\bpublic\s+((?:abstract\s+)?(?:class|interface))\s+(\w+)",
+                      lambda m: m.group(0) if m.group(2) == file else f"{m.group(1)} {m.group(2)}", code)
         open(src, "w").write(code)
         c = subprocess.run(["javac", src], capture_output=True, text=True, cwd=d)
         if c.returncode != 0:

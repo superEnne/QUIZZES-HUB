@@ -17,8 +17,9 @@
       "src_components_typebadge",
       "src_components_typebadge_typebadge",
       "src_components_typebadge_types",
-      "src_data_exams_getexambyid",
+      "src_data_subjects",
       "src_data_subjects_getreviewerbyid",
+      "src_data_subjects_getsubjectbyid",
       "src_pages_quizpage",
       "src_pages_quizpage_checkidentanswer",
       "src_pages_quizpage_chevright",
@@ -69,16 +70,21 @@
       "src_pages_quizpage_totalpointsof"
     ],
     "1": [
+      "ambiguous_python_import_0dd32eafdf32",
+      "docs_project_knowledge_ipt1_pointers_pdf",
+      "subject_exam_reviewers_ipt_source_make_pdf",
       "subject_exam_reviewers_ipt_source_make_pdf_build",
       "subject_exam_reviewers_ipt_source_make_pdf_build_footer",
       "subject_exam_reviewers_ipt_source_make_pdf_bullets_for",
       "subject_exam_reviewers_ipt_source_make_pdf_esc",
       "subject_exam_reviewers_ipt_source_make_pdf_py_flowable",
+      "subject_exam_reviewers_ipt_source_make_pdf_rationale_1",
       "subject_exam_reviewers_ipt_source_make_pdf_rationale_34",
       "subject_exam_reviewers_ipt_source_make_pdf_rule",
       "subject_exam_reviewers_ipt_source_make_pdf_rule_draw",
       "subject_exam_reviewers_ipt_source_make_pdf_rule_init",
-      "subject_exam_reviewers_ipt_source_make_pdf_rule_wrap"
+      "subject_exam_reviewers_ipt_source_make_pdf_rule_wrap",
+      "subject_exam_reviewers_ipt_source_pointers"
     ],
     "2": [
       "docs_project_knowledge_comprog3_finals",
@@ -112,9 +118,6 @@
       "src_components_subjectcard",
       "src_components_subjectcard_colors",
       "src_components_subjectcard_subjectcard",
-      "src_data_subjects",
-      "src_data_subjects_getsubjectbyid",
-      "src_data_subjects_subjects",
       "src_index",
       "src_lib_lock",
       "src_lib_lock_decryptwithkeybytes",
@@ -166,15 +169,6 @@
       "vite_config"
     ],
     "4": [
-      "docs_project_knowledge_bloom_mix",
-      "docs_project_knowledge_cpic_diagram_image",
-      "docs_project_knowledge_ea_ch10",
-      "docs_project_knowledge_ea_ch11",
-      "docs_project_knowledge_ea_ch9",
-      "docs_project_knowledge_ea_finals_exam",
-      "docs_project_knowledge_ea_pointers_pdf",
-      "docs_project_knowledge_finals_only",
-      "docs_project_knowledge_ipt1_finals",
       "docs_project_knowledge_pointers_as_section",
       "docs_project_knowledge_quiz_vs_flashcard",
       "docs_project_knowledge_subject_page_order",
@@ -186,75 +180,36 @@
       "src_components_reviewercard",
       "src_components_reviewercard_reviewercard",
       "src_data_exams",
-      "src_data_exams_exams",
+      "src_data_exams_getexambyid",
       "src_data_exams_getexamsbysubject",
       "src_data_exams_getpointersbysubject",
-      "src_data_exams_pointers",
       "src_data_exams_term_colors",
       "src_data_exams_termstyle",
+      "src_data_subjects_subjects",
       "src_pages_subjectpage",
-      "src_pages_subjectpage_subjectpage",
-      "subject_exam_reviewers_ea_source_make_exam_build",
-      "subject_exam_reviewers_ea_source_pointers",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry",
-      "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder"
+      "src_pages_subjectpage_subjectpage"
     ],
     "5": [
-      "collections",
-      "docs_project_knowledge_cc6_ch5",
-      "docs_project_knowledge_cc6_ch6",
-      "docs_project_knowledge_cc6_ch7",
-      "docs_project_knowledge_cc6_ch8",
-      "docs_project_knowledge_cc6_finals_exam",
-      "docs_project_knowledge_cc6_pointers_pdf",
-      "docs_project_knowledge_ch8_slide_gaps",
-      "docs_project_knowledge_distractor_length_rule",
-      "docs_project_knowledge_exam_realism",
       "docs_project_knowledge_java_verified_output",
-      "docs_project_knowledge_new_subject_workflow",
-      "docs_project_knowledge_quiz_writing_rules",
+      "docs_project_knowledge_oop_instructor_style",
+      "docs_project_knowledge_oop_output_tracing",
       "docs_project_knowledge_run_to_answer",
-      "docs_project_knowledge_wd_finals_exam",
-      "docs_project_knowledge_wd_ft_quizzes",
       "json",
       "os",
-      "random",
-      "subject_exam_reviewers_cc6_source_make_exam",
-      "subject_exam_reviewers_cc6_source_make_exam_build_notes",
-      "subject_exam_reviewers_cc6_source_make_exam_build_questions",
-      "subject_exam_reviewers_cc6_source_make_exam_rationale_1",
-      "subject_exam_reviewers_cc6_source_pointers",
-      "subject_exam_reviewers_cc6_source_questions",
-      "subject_exam_reviewers_cc6_source_questions_rationale_14",
-      "subject_exam_reviewers_cc6_source_questions_sub",
-      "subject_exam_reviewers_ea_source_make_exam",
-      "subject_exam_reviewers_ea_source_make_exam_rationale_1",
-      "subject_exam_reviewers_ea_source_questions",
-      "subject_exam_reviewers_ipt_source_make_exam",
-      "subject_exam_reviewers_ipt_source_make_exam_build",
-      "subject_exam_reviewers_ipt_source_make_exam_place",
-      "subject_exam_reviewers_ipt_source_make_exam_rationale_1",
-      "subject_exam_reviewers_ipt_source_questions",
       "subject_exam_reviewers_oop_source_make_exam",
       "subject_exam_reviewers_oop_source_make_exam_build",
       "subject_exam_reviewers_oop_source_make_exam_place",
       "subject_exam_reviewers_oop_source_make_exam_rationale_1",
       "subject_exam_reviewers_oop_source_make_exam_run_java",
-      "subject_exam_reviewers_oop_source_questions",
       "subject_exam_reviewers_wd_source_make_exam",
-      "subject_exam_reviewers_wd_source_make_exam_build_mc",
       "subject_exam_reviewers_wd_source_make_exam_build_output",
       "subject_exam_reviewers_wd_source_make_exam_rationale_1",
       "subject_exam_reviewers_wd_source_make_exam_run_console",
       "subject_exam_reviewers_wd_source_make_exam_run_dom",
-      "subject_exam_reviewers_wd_source_questions",
       "subprocess",
       "tempfile"
     ],
     "6": [
-      "reportlab_platypus",
       "subject_exam_reviewers_wd_source_figures",
       "subject_exam_reviewers_wd_source_figures_arrow",
       "subject_exam_reviewers_wd_source_figures_box",
@@ -314,6 +269,7 @@
       "scripts_lock_subject_user"
     ],
     "8": [
+      "reportlab_lib_colors",
       "subject_exam_reviewers_cc6_source_figures",
       "subject_exam_reviewers_cc6_source_figures_arrow",
       "subject_exam_reviewers_cc6_source_figures_box",
@@ -353,8 +309,8 @@
       "subject_exam_reviewers_cc6_source_figures_rationale_45"
     ],
     "9": [
-      "reportlab_lib_colors",
       "reportlab_lib_utils",
+      "reportlab_platypus",
       "subject_exam_reviewers_ipt_source_figures",
       "subject_exam_reviewers_ipt_source_figures_arrow",
       "subject_exam_reviewers_ipt_source_figures_box",
@@ -480,11 +436,14 @@
       "subject_exam_reviewers_oop_source_figures_rationale_45"
     ],
     "13": [
+      "ambiguous_python_import_00cda7dc5647",
+      "subject_exam_reviewers_wd_source_make_pdf",
       "subject_exam_reviewers_wd_source_make_pdf_build",
       "subject_exam_reviewers_wd_source_make_pdf_build_footer",
       "subject_exam_reviewers_wd_source_make_pdf_bullets_for",
       "subject_exam_reviewers_wd_source_make_pdf_esc",
       "subject_exam_reviewers_wd_source_make_pdf_py_flowable",
+      "subject_exam_reviewers_wd_source_make_pdf_rationale_1",
       "subject_exam_reviewers_wd_source_make_pdf_rationale_34",
       "subject_exam_reviewers_wd_source_make_pdf_rule",
       "subject_exam_reviewers_wd_source_make_pdf_rule_draw",
@@ -493,37 +452,26 @@
     ],
     "14": [
       "ambiguous_python_import_e2a32cb91f9f",
+      "docs_project_knowledge_generic_make_pdf",
+      "reportlab_lib_styles",
       "subject_exam_reviewers_ea_source_make_pdf",
       "subject_exam_reviewers_ea_source_make_pdf_build",
       "subject_exam_reviewers_ea_source_make_pdf_build_footer",
       "subject_exam_reviewers_ea_source_make_pdf_bullets_for",
       "subject_exam_reviewers_ea_source_make_pdf_esc",
-      "subject_exam_reviewers_ea_source_make_pdf_py_flowable",
       "subject_exam_reviewers_ea_source_make_pdf_rationale_1",
-      "subject_exam_reviewers_ea_source_make_pdf_rationale_34",
-      "subject_exam_reviewers_ea_source_make_pdf_rule",
-      "subject_exam_reviewers_ea_source_make_pdf_rule_draw",
-      "subject_exam_reviewers_ea_source_make_pdf_rule_init",
-      "subject_exam_reviewers_ea_source_make_pdf_rule_wrap"
+      "xml_sax_saxutils"
     ],
     "15": [
-      "ambiguous_python_import_00cda7dc5647",
-      "ambiguous_python_import_0dd32eafdf32",
       "ambiguous_python_import_26e2d6c266f0",
-      "docs_project_knowledge_ipt1_pointers_pdf",
       "reportlab_lib_enums",
       "reportlab_lib_pagesizes",
-      "reportlab_lib_styles",
-      "reportlab_lib_units",
       "subject_exam_reviewers_cc6_source_make_pdf",
-      "subject_exam_reviewers_cc6_source_make_pdf_rationale_1",
-      "subject_exam_reviewers_ipt_source_make_pdf",
-      "subject_exam_reviewers_ipt_source_make_pdf_rationale_1",
-      "subject_exam_reviewers_ipt_source_pointers",
-      "subject_exam_reviewers_wd_source_make_pdf",
-      "subject_exam_reviewers_wd_source_make_pdf_rationale_1",
-      "sys",
-      "xml_sax_saxutils"
+      "subject_exam_reviewers_cc6_source_make_pdf_build",
+      "subject_exam_reviewers_cc6_source_make_pdf_build_footer",
+      "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
+      "subject_exam_reviewers_cc6_source_make_pdf_esc",
+      "subject_exam_reviewers_cc6_source_make_pdf_rationale_1"
     ],
     "16": [
       "docs_project_knowledge_pointers_figures",
@@ -539,6 +487,7 @@
     ],
     "17": [
       "ambiguous_python_import_0b58b9cedc81",
+      "reportlab_lib_units",
       "subject_exam_reviewers_oop_source_make_pdf",
       "subject_exam_reviewers_oop_source_make_pdf_build",
       "subject_exam_reviewers_oop_source_make_pdf_build_footer",
@@ -550,14 +499,21 @@
       "subject_exam_reviewers_oop_source_make_pdf_rule",
       "subject_exam_reviewers_oop_source_make_pdf_rule_draw",
       "subject_exam_reviewers_oop_source_make_pdf_rule_init",
-      "subject_exam_reviewers_oop_source_make_pdf_rule_wrap"
+      "subject_exam_reviewers_oop_source_make_pdf_rule_wrap",
+      "sys"
     ],
     "18": [
-      "docs_project_knowledge_generic_make_pdf",
-      "subject_exam_reviewers_cc6_source_make_pdf_build",
-      "subject_exam_reviewers_cc6_source_make_pdf_build_footer",
-      "subject_exam_reviewers_cc6_source_make_pdf_bullets_for",
-      "subject_exam_reviewers_cc6_source_make_pdf_esc"
+      "collections",
+      "random",
+      "subject_exam_reviewers_cc6_source_make_exam",
+      "subject_exam_reviewers_cc6_source_make_exam_build_notes",
+      "subject_exam_reviewers_cc6_source_make_exam_rationale_1",
+      "subject_exam_reviewers_ea_source_make_exam",
+      "subject_exam_reviewers_ea_source_make_exam_rationale_1",
+      "subject_exam_reviewers_ipt_source_make_exam",
+      "subject_exam_reviewers_ipt_source_make_exam_build",
+      "subject_exam_reviewers_ipt_source_make_exam_place",
+      "subject_exam_reviewers_ipt_source_make_exam_rationale_1"
     ],
     "19": [
       "flowable"
@@ -569,7 +525,6 @@
       "docs_project_knowledge_oop_m12",
       "docs_project_knowledge_oop_m13",
       "docs_project_knowledge_oop_m14",
-      "docs_project_knowledge_oop_output_tracing",
       "docs_project_knowledge_oop_pointers_pdf",
       "subject_exam_reviewers_oop_source_pointers"
     ],
@@ -578,33 +533,94 @@
       "docs_project_knowledge_wd_ch5",
       "docs_project_knowledge_wd_ch6",
       "docs_project_knowledge_wd_ch7",
+      "docs_project_knowledge_wd_finals_exam",
+      "docs_project_knowledge_wd_ft_quizzes",
       "docs_project_knowledge_wd_pointers_pdf",
-      "subject_exam_reviewers_wd_source_pointers"
+      "subject_exam_reviewers_wd_source_make_exam_build_mc",
+      "subject_exam_reviewers_wd_source_pointers",
+      "subject_exam_reviewers_wd_source_questions"
+    ],
+    "22": [
+      "docs_project_knowledge_bloom_mix",
+      "docs_project_knowledge_finals_only",
+      "docs_project_knowledge_ipt1_finals",
+      "docs_project_knowledge_new_subject_workflow",
+      "src_data_exams_exams",
+      "src_data_exams_pointers",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_guide",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_mock_exam_entry",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_pointers_entry",
+      "subject_exam_reviewers_how_to_add_an_exam_reviewer_source_folder"
+    ],
+    "23": [
+      "docs_project_knowledge_cc6_ch5",
+      "docs_project_knowledge_cc6_ch6",
+      "docs_project_knowledge_cc6_ch7",
+      "docs_project_knowledge_cc6_ch8",
+      "docs_project_knowledge_cc6_finals_exam",
+      "docs_project_knowledge_cc6_pointers_pdf",
+      "docs_project_knowledge_ch8_slide_gaps",
+      "subject_exam_reviewers_cc6_source_make_exam_build_questions",
+      "subject_exam_reviewers_cc6_source_pointers"
+    ],
+    "24": [
+      "docs_project_knowledge_distractor_length_rule",
+      "docs_project_knowledge_exam_realism",
+      "docs_project_knowledge_quiz_writing_rules",
+      "subject_exam_reviewers_cc6_source_questions",
+      "subject_exam_reviewers_cc6_source_questions_rationale_14",
+      "subject_exam_reviewers_cc6_source_questions_sub",
+      "subject_exam_reviewers_ea_source_questions",
+      "subject_exam_reviewers_ipt_source_questions",
+      "subject_exam_reviewers_oop_source_questions"
+    ],
+    "25": [
+      "docs_project_knowledge_cpic_diagram_image",
+      "docs_project_knowledge_ea_ch10",
+      "docs_project_knowledge_ea_ch11",
+      "docs_project_knowledge_ea_ch9",
+      "docs_project_knowledge_ea_finals_exam",
+      "docs_project_knowledge_ea_pointers_pdf",
+      "subject_exam_reviewers_ea_source_make_exam_build",
+      "subject_exam_reviewers_ea_source_pointers"
+    ],
+    "26": [
+      "subject_exam_reviewers_ea_source_make_pdf_py_flowable",
+      "subject_exam_reviewers_ea_source_make_pdf_rationale_34",
+      "subject_exam_reviewers_ea_source_make_pdf_rule",
+      "subject_exam_reviewers_ea_source_make_pdf_rule_draw",
+      "subject_exam_reviewers_ea_source_make_pdf_rule_init",
+      "subject_exam_reviewers_ea_source_make_pdf_rule_wrap"
     ]
   },
   "cohesion": {
-    "0": 0.057342657342657345,
-    "1": 0.2222222222222222,
-    "2": 0.07197763801537387,
+    "0": 0.05698778833107191,
+    "1": 0.17142857142857143,
+    "2": 0.07372549019607844,
     "3": 0.10256410256410256,
-    "4": 0.10338680926916222,
-    "5": 0.0783673469387755,
-    "6": 0.10241820768136557,
+    "4": 0.2222222222222222,
+    "5": 0.21568627450980393,
+    "6": 0.1066066066066066,
     "7": 0.1111111111111111,
-    "8": 0.1066066066066066,
+    "8": 0.10241820768136557,
     "9": 0.09851551956815115,
     "10": 0.3333333333333333,
     "11": 0.1066066066066066,
     "12": 0.1066066066066066,
-    "13": 0.2222222222222222,
-    "14": 0.20512820512820512,
-    "15": 0.19117647058823528,
+    "13": 0.20512820512820512,
+    "14": 0.26666666666666666,
+    "15": 0.3055555555555556,
     "16": 0.2,
-    "17": 0.20512820512820512,
-    "18": 0.5,
+    "17": 0.17142857142857143,
+    "18": 0.23636363636363636,
     "19": 1.0,
-    "20": 0.3333333333333333,
-    "21": 0.4
+    "20": 0.39285714285714285,
+    "21": 0.28888888888888886,
+    "22": 0.2,
+    "23": 0.3055555555555556,
+    "24": 0.3611111111111111,
+    "25": 0.32142857142857145,
+    "26": 0.3333333333333333
   },
   "gods": [
     {
@@ -643,6 +659,11 @@
       "degree": 11
     },
     {
+      "id": "docs_project_knowledge_oop_finals_exam",
+      "label": "OOP Finals mock exam (123 MC incl. 8 code items)",
+      "degree": 11
+    },
+    {
       "id": "src_app_app",
       "label": "App()",
       "degree": 10
@@ -650,11 +671,6 @@
     {
       "id": "src_lib_lock_unlocksubject",
       "label": "unlockSubject()",
-      "degree": 10
-    },
-    {
-      "id": "src_pages_subjectpage_subjectpage",
-      "label": "SubjectPage()",
       "degree": 10
     }
   ],
@@ -668,7 +684,18 @@
       ],
       "confidence": "INFERRED",
       "relation": "semantically_similar_to",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; semantically similar concepts with no structural link"
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Finals-only exam slots",
+      "target": "termStyle()",
+      "source_files": [
+        "docs/PROJECT_KNOWLEDGE.md",
+        "src/data/exams.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities; peripheral node `Finals-only exam slots` unexpectedly reaches hub `termStyle()`"
     },
     {
       "source": "Review Material layout (IPT1 Week 6/7)",
@@ -693,32 +720,21 @@
       "why": "crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities; peripheral node `Lilac/pink palette only (no yellow/green outliers)` unexpectedly reaches hub `SubjectCard()`"
     },
     {
-      "source": "Optional timer toggle (off by default)",
-      "target": "ExamCard()",
+      "source": "Quiz writing rules",
+      "target": "build_questions()",
       "source_files": [
         "docs/PROJECT_KNOWLEDGE.md",
-        "src/components/ExamCard.jsx"
+        "Subject Exam Reviewers/CC6/source/make_exam.py"
       ],
       "confidence": "INFERRED",
       "relation": "rationale_for",
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "Finals-only exam slots",
-      "target": "termStyle()",
-      "source_files": [
-        "docs/PROJECT_KNOWLEDGE.md",
-        "src/data/exams.js"
-      ],
-      "confidence": "INFERRED",
-      "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `Finals-only exam slots` unexpectedly reaches hub `termStyle()`"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `pointers` connect `Subject Page, Exam and Pointer Cards` to `WD Finals Content`, `App Shell, Lock and Routing`, `OOP Finals Content`, `Exam Builders and Exam Content`?",
+      "question": "Why does `pointers` connect `HOW Finals Content` to `App Shell, Lock and Routing`, `Subject Page, Exam and Pointer Cards`, `OOP Finals Content`, `Exam Builders (WD)`, `Exam Builders (CC6)`, `Exam Builders (EA)`?",
       "why": "High betweenness centrality (0.201) - this node is a cross-community bridge."
     },
     {
@@ -729,26 +745,26 @@
     {
       "type": "low_cohesion",
       "question": "Should `Quiz Engine, Grading and Exam Parts` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.057342657342657345 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.05698778833107191 - nodes in this community are weakly interconnected."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `Workflow for a new subject reviewer` connect `Exam Builders and Exam Content` to `Subject Page, Exam and Pointer Cards`, `Pointers PDF Generator`?",
+      "question": "Why does `Workflow for a new subject reviewer` connect `HOW Finals Content` to `Exam Builders (IPT)`, `Exam Builders (OOP)`, `CC6 PDF Builder`?",
       "why": "High betweenness centrality (0.126) - this node is a cross-community bridge."
     },
     {
       "type": "low_cohesion",
       "question": "Should `App Shell, Lock and Routing` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.07197763801537387 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.07372549019607844 - nodes in this community are weakly interconnected."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `CC6 Finals Pointers PDF (7 pages)` connect `Exam Builders and Exam Content` to `CC6 PDF Builder`, `Subject Page, Exam and Pointer Cards`?",
+      "question": "Why does `CC6 Finals Pointers PDF (7 pages)` connect `Exam Builders (CC6)` to `Subject Page, Exam and Pointer Cards`, `HOW Finals Content`, `CC6 PDF Builder`?",
       "why": "High betweenness centrality (0.120) - this node is a cross-community bridge."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Dependencies and Build` be split into smaller, more focused modules?",
+      "question": "Should `Misc 2` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.10256410256410256 - nodes in this community are weakly interconnected."
     }
   ]

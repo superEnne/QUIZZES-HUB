@@ -885,6 +885,18 @@
    "author": null,
    "contributor": null,
    "rationale": "User asked for visuals like the IPT review material; black-and-white flow/stack/tree/columns/cycle/nested/triangle/cells figures."
+  },
+  {
+   "id": "docs_project_knowledge_oop_instructor_style",
+   "label": "OOP output tracing in the instructor's style (Quiz Set A)",
+   "file_type": "rationale",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Long inheritance-chain programs with field-named getters/setters, super(), overloaded Printer.print(), and state changes between prints."
   }
  ],
  "edges": [
@@ -2691,6 +2703,36 @@
   {
    "source": "docs_project_knowledge_pointers_figures",
    "target": "docs_project_knowledge_pointers_pdf_rules",
+   "relation": "conceptually_related_to",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_oop_instructor_style",
+   "target": "subject_exam_reviewers_oop_source_questions",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_oop_instructor_style",
+   "target": "subject_exam_reviewers_oop_source_make_exam_run_java",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_oop_instructor_style",
+   "target": "docs_project_knowledge_oop_finals_exam",
    "relation": "conceptually_related_to",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
