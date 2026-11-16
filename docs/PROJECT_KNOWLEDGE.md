@@ -58,11 +58,6 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - When an attempt ends, every fully answered part's score is saved in localStorage (`qh-parts:<subjectId>:<examId>`), so a whole-exam run also fills every part. Part results screen shows the whole-exam progress per part and a "Next: Part N" button (next unfinished part). Exit during a part returns to the picker.
 - Current parts: CC6 4 (Ch 5-8), WD 3 (Ch 5-7), EA 3 (Ch 9-11), OOP 5 (M10-14), COMPROG3 3 (Ch 6-8).
 
-### Joke paywall (user's prank for friends)
-
-- In every quiz and mock exam attempt, right after the 5th answered question (0.7 s pause so feedback shows), a "QuizHub Premium" overlay with the user's GCash QR (`public/gcash-qr.png`) covers the quiz for 60 seconds with a "Verifying payment…" countdown, then disappears. It shows once per attempt; starting a new attempt resets it. Constants PAYWALL_AFTER / PAYWALL_SECONDS / PAYWALL_QR at the top of QuizPage.
-- While it is up, the quiz content is `inert` and blurred (no clicking or typing through it). A running mock exam timer is extended by the paywall time, so it never costs exam time. The navbar stays usable as an escape.
-
 ### Output tracing scoring
 - A multi-line output is worth one point per line, like a 5-pt snippet on a written quiz. Lines are checked in order.
 - Matching is exact per line (trimmed, inner spaces collapsed) and keeps case and symbols, so "1" does not match "-1". The old loose normalize() would have accepted it.

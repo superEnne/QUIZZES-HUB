@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "src/pages/QuizPage.jsx": {
-    "mtime": 1794803125.0459,
-    "seen": 1794803327.4732163,
-    "ast_hash": "1e5686d2c78ff4c69aae518eb89a257f",
+    "mtime": 1794811518.7519703,
+    "seen": 1794811627.3857317,
+    "ast_hash": "009dc8b37368b35c32cede9943304790",
     "semantic_hash": ""
   },
   "src/pages/SubjectPage.jsx": {
@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "docs/PROJECT_KNOWLEDGE.md": {
-    "mtime": 1794803323.8383737,
-    "seen": 1794803327.4732242,
-    "ast_hash": "b0c81ad6a5b222c65b70669cc440d3c7",
+    "mtime": 1794811621.1042755,
+    "seen": 1794811627.385741,
+    "ast_hash": "bfc03374836e7592480658b69e00430b",
     "semantic_hash": ""
   },
   "index.html": {

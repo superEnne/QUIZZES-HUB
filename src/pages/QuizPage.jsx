@@ -10,47 +10,6 @@ const HEARTS  = "/Untitled design (2).png";
 
 const STATE = { IDLE: "idle", QUIZ: "quiz", RESULT: "result" };
 
-// Joke "paywall": after this many answered questions in an attempt, a GCash QR
-// covers the quiz for PAYWALL_SECONDS, then goes away for the rest of that attempt.
-const PAYWALL_AFTER   = 5;
-const PAYWALL_SECONDS = 60;
-const PAYWALL_QR      = "/gcash-qr.png";
-
-function Paywall({ secondsLeft }) {
-  const m = Math.floor(secondsLeft / 60), sec = String(secondsLeft % 60).padStart(2, "0");
-  return (
-    <div role="dialog" aria-modal="true" aria-label="Premium required" style={{
-      position: "fixed", inset: 0, zIndex: 100,
-      display: "flex", alignItems: "center", justifyContent: "center",
-      padding: "1.25rem", overflowY: "auto",
-      background: "rgba(45,31,94,0.45)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)",
-    }}>
-      <div className="card anim-scale-in" style={{ width: "100%", maxWidth: "380px", padding: "1.6rem 1.4rem", textAlign: "center", background: "rgba(255,255,255,0.96)" }}>
-        <span className="badge badge-pink" style={{ marginBottom: "0.75rem", display: "inline-flex" }}>QuizHub Premium</span>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.35rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "0.35rem", lineHeight: 1.25 }}>
-          Your free preview has ended
-        </h2>
-        <p style={{ fontSize: "0.84rem", color: "var(--text-soft)", lineHeight: 1.5, marginBottom: "1rem" }}>
-          You've answered {PAYWALL_AFTER} free questions. Scan with GCash to unlock the rest of this reviewer.
-        </p>
-        <img src={PAYWALL_QR} alt="GCash QR code" style={{
-          width: "100%", maxWidth: "250px", display: "block", margin: "0 auto 1rem",
-          borderRadius: "14px", border: "1.5px solid var(--lilac-200)",
-        }} />
-        <div style={{ height: "6px", borderRadius: "999px", background: "var(--lilac-100)", overflow: "hidden", marginBottom: "0.55rem" }}>
-          <div style={{
-            height: "100%", width: `${(secondsLeft / PAYWALL_SECONDS) * 100}%`,
-            background: "linear-gradient(90deg, #9370db, #c084f5, #f97bad)", transition: "width 1s linear",
-          }} />
-        </div>
-        <p style={{ fontSize: "0.76rem", fontWeight: 600, color: "var(--text-mid)", fontVariantNumeric: "tabular-nums" }}>
-          Verifying payment… {m}:{sec}
-        </p>
-      </div>
-    </div>
-  );
-}
-
 function shuffleArray(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -1081,11 +1040,6 @@ export default function QuizPage({ mode = "quiz" }) {
   const [doShuffle, setDoShuffle] = useState(true);
   const [useTimer, setUseTimer]   = useState(false); // mock exam timer is opt-in
 
-  // Joke paywall: shown once per attempt, after PAYWALL_AFTER answers, for PAYWALL_SECONDS.
-  const [paywallShown, setPaywallShown] = useState(false);
-  const [paywallEndsAt, setPaywallEndsAt] = useState(null);
-  const [paywallLeft, setPaywallLeft] = useState(0);
-
   // Mock exam parts (one per chapter/module). "all" = whole exam.
   const allQuestions = reviewer ? reviewer.questions || [] : [];
   const parts = isExam ? examParts(allQuestions) : [];
@@ -1140,30 +1094,6 @@ export default function QuizPage({ mode = "quiz" }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quizState]);
 
-  // Open the paywall right after the 5th answer (a short pause so the answer feedback shows first).
-  useEffect(() => {
-    if (quizState !== STATE.QUIZ || paywallShown || answers.length !== PAYWALL_AFTER) return;
-    const id = setTimeout(() => {
-      setPaywallShown(true);
-      setPaywallEndsAt(Date.now() + PAYWALL_SECONDS * 1000);
-      // Don't let the joke eat into a timed mock exam.
-      setEndsAt(e => (e === null ? null : e + PAYWALL_SECONDS * 1000 + 700));
-    }, 700);
-    return () => clearTimeout(id);
-  }, [quizState, paywallShown, answers.length]);
-
-  useEffect(() => {
-    if (paywallEndsAt === null) return;
-    function tick() {
-      const left = Math.max(0, Math.ceil((paywallEndsAt - Date.now()) / 1000));
-      setPaywallLeft(left);
-      if (left <= 0) setPaywallEndsAt(null);
-    }
-    tick();
-    const id = setInterval(tick, 250);
-    return () => clearInterval(id);
-  }, [paywallEndsAt]);
-
   // Each new screen (start, question, results) starts at the top, important on phones.
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
@@ -1198,7 +1128,6 @@ export default function QuizPage({ mode = "quiz" }) {
     const seconds = minutes ? minutes * 60 : null;
     setTimeLeft(seconds);
     setEndsAt(seconds ? Date.now() + seconds * 1000 : null);
-    setPaywallShown(false); setPaywallEndsAt(null); setPaywallLeft(0);
     setQuizState(STATE.QUIZ);
   }
 
@@ -1719,14 +1648,12 @@ export default function QuizPage({ mode = "quiz" }) {
   /* ─────────────────── QUIZ SCREEN ─────────────────── */
   const q = shuffled[current];
   const qType = q.type || "mc";
-  const paywallOn = paywallEndsAt !== null;
 
   return (
     <div style={{ minHeight: "100vh", paddingTop: "64px", position: "relative", zIndex: 1 }}>
       <div className="blob blob-1" /><div className="blob blob-2" />
-      {paywallOn && <Paywall secondsLeft={paywallLeft} />}
 
-      <div inert={paywallOn} aria-hidden={paywallOn || undefined} style={{ maxWidth: "600px", margin: "0 auto", padding: "2rem 1.25rem 4rem", filter: paywallOn ? "blur(3px)" : "none", transition: "filter 300ms" }}>
+      <div style={{ maxWidth: "600px", margin: "0 auto", padding: "2rem 1.25rem 4rem" }}>
         {/* Top bar */}
         <div className="anim-slide-left" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem" }}>
           <div>

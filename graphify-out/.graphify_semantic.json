@@ -803,18 +803,6 @@
    "rationale": "User wanted stops and a choice of module order while the exam stays one whole."
   },
   {
-   "id": "docs_project_knowledge_joke_paywall",
-   "label": "Joke paywall after 5 answers (GCash QR, 60 s, once per attempt)",
-   "file_type": "concept",
-   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
-   "source_location": null,
-   "source_url": null,
-   "captured_at": null,
-   "author": null,
-   "contributor": null,
-   "rationale": "Prank for friends; quiz inert while shown; exam timer extended."
-  },
-  {
    "id": "docs_project_knowledge_theme_palette",
    "label": "Lilac/pink palette only (no yellow/green outliers)",
    "file_type": "rationale",
@@ -2424,26 +2412,6 @@
    "source": "docs_project_knowledge_parts_not_overwhelming",
    "target": "docs_project_knowledge_exam_parts",
    "relation": "rationale_for",
-   "confidence": "EXTRACTED",
-   "confidence_score": 1.0,
-   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
-   "source_location": null,
-   "weight": 1.0
-  },
-  {
-   "source": "docs_project_knowledge_joke_paywall",
-   "target": "src_pages_quizpage_paywall",
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "confidence_score": 1.0,
-   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
-   "source_location": null,
-   "weight": 1.0
-  },
-  {
-   "source": "docs_project_knowledge_joke_paywall",
-   "target": "src_pages_quizpage_quizpage",
-   "relation": "references",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
    "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
