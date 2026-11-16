@@ -58,6 +58,11 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - When an attempt ends, every fully answered part's score is saved in localStorage (`qh-parts:<subjectId>:<examId>`), so a whole-exam run also fills every part. Part results screen shows the whole-exam progress per part and a "Next: Part N" button (next unfinished part). Exit during a part returns to the picker.
 - Current parts: CC6 4 (Ch 5-8), WD 3 (Ch 5-7), EA 3 (Ch 9-11), OOP 5 (M10-14), COMPROG3 3 (Ch 6-8).
 
+### Joke paywall (user's prank for friends)
+
+- In every quiz and mock exam attempt, right after the 5th answered question (0.7 s pause so feedback shows), a "QuizHub Premium" overlay with the user's GCash QR (`public/gcash-qr.png`) covers the quiz for 60 seconds with a "Verifying payment…" countdown, then disappears. It shows once per attempt; starting a new attempt resets it. Constants PAYWALL_AFTER / PAYWALL_SECONDS / PAYWALL_QR at the top of QuizPage.
+- While it is up, the quiz content is `inert` and blurred (no clicking or typing through it). A running mock exam timer is extended by the paywall time, so it never costs exam time. The navbar stays usable as an escape.
+
 ### Output tracing scoring
 - A multi-line output is worth one point per line, like a 5-pt snippet on a written quiz. Lines are checked in order.
 - Matching is exact per line (trimmed, inner spaces collapsed) and keeps case and symbols, so "1" does not match "-1". The old loose normalize() would have accepted it.
@@ -124,6 +129,11 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - To change content or credentials: edit the plaintext sources, then run `node scripts/lock-subject.mjs <id> --user <username> --pass <password>`. It reads `locked-src/<id>.json` (manifest pointing at the reviewers JSON, exam JSON and PDF) and rewrites the .enc.json. Credentials are never written to any file; they are typed on the command line each time.
 - Git-ignored plaintext: `locked-src/`, `Subject Exam Reviewers/COMPROG3/`, `Subject Quiz Reviewers/COMPROG3/`. Only the .enc.json is committed. The old COMPROG3 midterm quiz is still in earlier git history.
 - Limits: it is client-side encryption, so its strength is the password's strength. A short password can be brute-forced offline by someone determined; it stops casual bypassing (dev tools, editing JS, reading the bundle).
+
+## 6g. Theme Colors and Scrolling
+
+- Only the lilac/purple/pink palette is used (user request: no yellow, green, orange or teal outliers). Correct = violet (#ede9fe / #8b5cf6 / #5b21b6), wrong = pink (#fce7f3 / #f472b6 / #db2777); timer and other accents use pink. TypeBadge gives each question type its own purple/pink shade; SubjectCard COLORS cycles lilac, pink, soft blue, violet, rose, purple. The soft blue (--blue vars) is part of the theme and stays.
+- `src/components/ScrollToTop.jsx` scrolls to the top on every route change (an SPA otherwise keeps the old scroll position, so pages opened from far down a list opened at the bottom). QuizPage also scrolls to the top when the screen changes (start, each question, results).
 
 ## 7. Reviewer-Making Rules (the user's preferences)
 

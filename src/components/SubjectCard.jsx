@@ -6,10 +6,10 @@ const COLORS = [
   { bg: "#f3eeff", border: "rgba(174,142,240,0.4)", badge: "#ede0ff", badgeText: "#7c55c8", dot: "#9370db" },
   { bg: "#fce7f3", border: "rgba(249,123,173,0.35)", badge: "#ffe0ef", badgeText: "#be4e8b", dot: "#f97bad" },
   { bg: "#eff6ff", border: "rgba(147,197,253,0.4)", badge: "#dbeafe", badgeText: "#3b6cd4", dot: "#93c5fd" },
-  { bg: "#f0fdf4", border: "rgba(134,239,172,0.4)", badge: "#dcfce7", badgeText: "#25855a", dot: "#86efac" },
-  { bg: "#fff7ed", border: "rgba(253,186,116,0.4)", badge: "#ffedd5", badgeText: "#b45309", dot: "#fdba74" },
+  { bg: "#f5f3ff", border: "rgba(196,181,253,0.4)", badge: "#ede9fe", badgeText: "#6d28d9", dot: "#c4b5fd" },
+  { bg: "#fdf2f8", border: "rgba(244,114,182,0.4)", badge: "#ffe4f0", badgeText: "#be185d", dot: "#f9a8d4" },
   { bg: "#fdf4ff", border: "rgba(216,180,254,0.4)", badge: "#f3e8ff", badgeText: "#7c3aed", dot: "#d8b4fe" },
-  { bg: "#f0fdfa", border: "rgba(94,234,212,0.4)", badge: "#ccfbf1", badgeText: "#0f766e", dot: "#5eead4" },
+  { bg: "#faf5ff", border: "rgba(216,180,254,0.4)", badge: "#f3e8ff", badgeText: "#9333ea", dot: "#d8b4fe" },
 ];
 
 export default function SubjectCard({ subject, index }) {

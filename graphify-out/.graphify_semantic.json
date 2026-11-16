@@ -801,6 +801,42 @@
    "author": null,
    "contributor": null,
    "rationale": "User wanted stops and a choice of module order while the exam stays one whole."
+  },
+  {
+   "id": "docs_project_knowledge_joke_paywall",
+   "label": "Joke paywall after 5 answers (GCash QR, 60 s, once per attempt)",
+   "file_type": "concept",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Prank for friends; quiz inert while shown; exam timer extended."
+  },
+  {
+   "id": "docs_project_knowledge_theme_palette",
+   "label": "Lilac/pink palette only (no yellow/green outliers)",
+   "file_type": "rationale",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Correct = violet, wrong = pink; user asked to remove off-theme colors."
+  },
+  {
+   "id": "docs_project_knowledge_scroll_to_top",
+   "label": "Scroll to top on route and screen change",
+   "file_type": "rationale",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "SPA kept the old scroll position, so pages opened at the bottom on mobile and web."
   }
  ],
  "edges": [
@@ -2388,6 +2424,66 @@
    "source": "docs_project_knowledge_parts_not_overwhelming",
    "target": "docs_project_knowledge_exam_parts",
    "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_joke_paywall",
+   "target": "src_pages_quizpage_paywall",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_joke_paywall",
+   "target": "src_pages_quizpage_quizpage",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_theme_palette",
+   "target": "src_components_typebadge_typebadge",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_theme_palette",
+   "target": "src_components_subjectcard_subjectcard",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_scroll_to_top",
+   "target": "src_components_scrolltotop_scrolltotop",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_scroll_to_top",
+   "target": "src_app_app",
+   "relation": "references",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
    "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",

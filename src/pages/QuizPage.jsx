@@ -10,6 +10,47 @@ const HEARTS  = "/Untitled design (2).png";
 
 const STATE = { IDLE: "idle", QUIZ: "quiz", RESULT: "result" };
 
+// Joke "paywall": after this many answered questions in an attempt, a GCash QR
+// covers the quiz for PAYWALL_SECONDS, then goes away for the rest of that attempt.
+const PAYWALL_AFTER   = 5;
+const PAYWALL_SECONDS = 60;
+const PAYWALL_QR      = "/gcash-qr.png";
+
+function Paywall({ secondsLeft }) {
+  const m = Math.floor(secondsLeft / 60), sec = String(secondsLeft % 60).padStart(2, "0");
+  return (
+    <div role="dialog" aria-modal="true" aria-label="Premium required" style={{
+      position: "fixed", inset: 0, zIndex: 100,
+      display: "flex", alignItems: "center", justifyContent: "center",
+      padding: "1.25rem", overflowY: "auto",
+      background: "rgba(45,31,94,0.45)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)",
+    }}>
+      <div className="card anim-scale-in" style={{ width: "100%", maxWidth: "380px", padding: "1.6rem 1.4rem", textAlign: "center", background: "rgba(255,255,255,0.96)" }}>
+        <span className="badge badge-pink" style={{ marginBottom: "0.75rem", display: "inline-flex" }}>QuizHub Premium</span>
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.35rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "0.35rem", lineHeight: 1.25 }}>
+          Your free preview has ended
+        </h2>
+        <p style={{ fontSize: "0.84rem", color: "var(--text-soft)", lineHeight: 1.5, marginBottom: "1rem" }}>
+          You've answered {PAYWALL_AFTER} free questions. Scan with GCash to unlock the rest of this reviewer.
+        </p>
+        <img src={PAYWALL_QR} alt="GCash QR code" style={{
+          width: "100%", maxWidth: "250px", display: "block", margin: "0 auto 1rem",
+          borderRadius: "14px", border: "1.5px solid var(--lilac-200)",
+        }} />
+        <div style={{ height: "6px", borderRadius: "999px", background: "var(--lilac-100)", overflow: "hidden", marginBottom: "0.55rem" }}>
+          <div style={{
+            height: "100%", width: `${(secondsLeft / PAYWALL_SECONDS) * 100}%`,
+            background: "linear-gradient(90deg, #9370db, #c084f5, #f97bad)", transition: "width 1s linear",
+          }} />
+        </div>
+        <p style={{ fontSize: "0.76rem", fontWeight: 600, color: "var(--text-mid)", fontVariantNumeric: "tabular-nums" }}>
+          Verifying payment… {m}:{sec}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function shuffleArray(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -159,7 +200,7 @@ function PartPicker({ parts, value, onChange, results, wholeCount, wholePoints, 
               sub: p.name,
               right: `${p.questions.length} questions`,
               chip: r ? (
-                <span style={{ fontSize: "0.66rem", fontWeight: 800, padding: "0.1rem 0.45rem", borderRadius: "999px", background: "#dcfce7", color: "#15803d", whiteSpace: "nowrap" }}>
+                <span style={{ fontSize: "0.66rem", fontWeight: 800, padding: "0.1rem 0.45rem", borderRadius: "999px", background: "#ede9fe", color: "#6d28d9", whiteSpace: "nowrap" }}>
                   ✓ {fmtScore(r.score)}/{r.total}
                 </span>
               ) : (
@@ -211,10 +252,10 @@ function PartBreakdown({ rows, title }) {
 }
 
 function getGrade(pct) {
-  if (pct >= 90) return { label: "Excellent!", color: "#22c55e", bg: "#dcfce7", border: "#86efac" };
+  if (pct >= 90) return { label: "Excellent!", color: "#8b5cf6", bg: "#ede9fe", border: "#c4b5fd" };
   if (pct >= 75) return { label: "Good Job!", color: "#9370db", bg: "#f3eeff", border: "#c9b4f8" };
-  if (pct >= 60) return { label: "Fair",       color: "#f59e0b", bg: "#fffbeb", border: "#fde68a" };
-  return              { label: "Keep Practicing", color: "#f43f5e", bg: "#fff1f2", border: "#fecdd3" };
+  if (pct >= 60) return { label: "Fair",       color: "#ec4899", bg: "#fdf2f8", border: "#fbcfe8" };
+  return              { label: "Keep Practicing", color: "#ec4899", bg: "#fff1f2", border: "#fecdd3" };
 }
 
 /** Normalize a string for loose comparison */
@@ -285,15 +326,15 @@ function IdentificationQuestion({ q, onAnswer }) {
             padding: "0.85rem 1rem",
             borderRadius: "12px",
             border: revealed
-              ? `2px solid ${isCorrect ? "#86efac" : "#fca5a5"}`
+              ? `2px solid ${isCorrect ? "#c4b5fd" : "#f9a8d4"}`
               : "2px solid var(--lilac-200)",
             background: revealed
-              ? (isCorrect ? "#f0fdf4" : "#fff1f2")
+              ? (isCorrect ? "#f5f3ff" : "#fff1f2")
               : "white",
             fontSize: "0.95rem",
             fontWeight: 600,
             color: revealed
-              ? (isCorrect ? "#15803d" : "#dc2626")
+              ? (isCorrect ? "#6d28d9" : "#db2777")
               : "#2d1f5e",
             outline: "none",
             transition: "border-color 200ms, background 200ms",
@@ -344,21 +385,21 @@ function IdentificationQuestion({ q, onAnswer }) {
         <div style={{
           padding: "0.85rem 1rem",
           borderRadius: "12px",
-          background: "#fffbeb",
-          border: "1.5px solid #fde68a",
+          background: "#fdf2f8",
+          border: "1.5px solid #fbcfe8",
           display: "flex", flexDirection: "column", gap: "0.5rem",
         }}>
-          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
+          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9d174d" }}>
             Your answer wasn't an exact match — did you get it right?
           </p>
-          <p style={{ fontSize: "0.8rem", color: "#92400e", fontStyle: "italic" }}>Your answer: "{input}"</p>
+          <p style={{ fontSize: "0.8rem", color: "#9d174d", fontStyle: "italic" }}>Your answer: "{input}"</p>
           <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
             <button
               onClick={() => handleSelfGrade(true)}
               style={{
                 flex: 1, padding: "0.6rem", borderRadius: "10px",
-                background: "#dcfce7", border: "1.5px solid #86efac",
-                color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
+                background: "#ede9fe", border: "1.5px solid #c4b5fd",
+                color: "#6d28d9", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
               }}
             >
               I got it right
@@ -367,8 +408,8 @@ function IdentificationQuestion({ q, onAnswer }) {
               onClick={() => handleSelfGrade(false)}
               style={{
                 flex: 1, padding: "0.6rem", borderRadius: "10px",
-                background: "#fee2e2", border: "1.5px solid #fca5a5",
-                color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
+                background: "#fce7f3", border: "1.5px solid #f9a8d4",
+                color: "#db2777", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer",
               }}
             >
               I got it wrong
@@ -469,10 +510,10 @@ function OutputTracingQuestion({ q, onAnswer }) {
       <div style={{
         padding: "0.55rem 0.85rem",
         borderRadius: "10px",
-        background: "#fef3c7",
-        border: "1.5px solid #fde68a",
+        background: "#fce7f3",
+        border: "1.5px solid #fbcfe8",
         fontSize: "0.78rem",
-        color: "#92400e",
+        color: "#9d174d",
         fontWeight: 600,
       }}>
         {instruction}
@@ -493,12 +534,12 @@ function OutputTracingQuestion({ q, onAnswer }) {
           padding: "0.85rem 1rem",
           borderRadius: "12px",
           border: revealed
-            ? `2px solid ${okCount === expected.length ? "#86efac" : "#fca5a5"}`
-            : "2px solid #fde68a",
-          background: revealed ? (okCount === expected.length ? "#f0fdf4" : "#fff1f2") : "white",
+            ? `2px solid ${okCount === expected.length ? "#c4b5fd" : "#f9a8d4"}`
+            : "2px solid #fbcfe8",
+          background: revealed ? (okCount === expected.length ? "#f5f3ff" : "#fff1f2") : "white",
           fontSize: "0.95rem",
           fontWeight: 600,
-          color: revealed ? (okCount === expected.length ? "#15803d" : "#dc2626") : "#2d1f5e",
+          color: revealed ? (okCount === expected.length ? "#6d28d9" : "#db2777") : "#2d1f5e",
           outline: "none",
           transition: "border-color 200ms, background 200ms",
           boxSizing: "border-box",
@@ -535,12 +576,12 @@ function OutputTracingQuestion({ q, onAnswer }) {
           <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", marginBottom: q.explanation ? "0.6rem" : 0 }}>
             {expected.map((line, i) => (
               <div key={i} style={{ display: "flex", gap: "0.6rem", alignItems: "baseline", fontFamily: "'Fira Code', 'Fira Mono', monospace" }}>
-                <span style={{ width: "1rem", flexShrink: 0, fontWeight: 800, color: lineOk[i] ? "#16a34a" : "#dc2626" }}>
+                <span style={{ width: "1rem", flexShrink: 0, fontWeight: 800, color: lineOk[i] ? "#16a34a" : "#db2777" }}>
                   {lineOk[i] ? "✓" : "✗"}
                 </span>
                 <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#2d1f5e", whiteSpace: "pre-wrap" }}>{line}</span>
                 {!lineOk[i] && (
-                  <span style={{ fontSize: "0.75rem", color: "#dc2626", fontWeight: 500 }}>
+                  <span style={{ fontSize: "0.75rem", color: "#db2777", fontWeight: 500 }}>
                     (you: {gotLines[i]?.trim() ? gotLines[i].trim() : "—"})
                   </span>
                 )}
@@ -557,10 +598,10 @@ function OutputTracingQuestion({ q, onAnswer }) {
       {showSelfGrade && (
         <div style={{
           padding: "0.85rem 1rem", borderRadius: "12px",
-          background: "#fffbeb", border: "1.5px solid #fde68a",
+          background: "#fdf2f8", border: "1.5px solid #fbcfe8",
           display: "flex", flexDirection: "column", gap: "0.5rem",
         }}>
-          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
+          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9d174d" }}>
             {multi
               ? `${okCount} of ${expected.length} lines matched exactly. Were the others actually right?`
               : "Your answer wasn't an exact match — did you get it right?"}
@@ -568,11 +609,11 @@ function OutputTracingQuestion({ q, onAnswer }) {
           <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
             <button
               onClick={() => finish(expected.length)}
-              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#ede9fe", border: "1.5px solid #c4b5fd", color: "#6d28d9", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
             >{multi ? "Count all lines as correct" : "I got it right"}</button>
             <button
               onClick={() => finish(okCount)}
-              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fce7f3", border: "1.5px solid #f9a8d4", color: "#db2777", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
             >{multi ? `Keep ${okCount} / ${expected.length}` : "I got it wrong"}</button>
           </div>
         </div>
@@ -645,12 +686,12 @@ function FillCodeQuestion({ q, onAnswer }) {
           padding: "0.85rem 1rem",
           borderRadius: "12px",
           border: revealed
-            ? `2px solid ${isCorrect ? "#86efac" : "#fca5a5"}`
+            ? `2px solid ${isCorrect ? "#c4b5fd" : "#f9a8d4"}`
             : "2px solid #f9a8d4",
-          background: revealed ? (isCorrect ? "#f0fdf4" : "#fff1f2") : "white",
+          background: revealed ? (isCorrect ? "#f5f3ff" : "#fff1f2") : "white",
           fontSize: "0.95rem",
           fontWeight: 600,
-          color: revealed ? (isCorrect ? "#15803d" : "#dc2626") : "#2d1f5e",
+          color: revealed ? (isCorrect ? "#6d28d9" : "#db2777") : "#2d1f5e",
           outline: "none",
           transition: "border-color 200ms, background 200ms",
           boxSizing: "border-box",
@@ -697,21 +738,21 @@ function FillCodeQuestion({ q, onAnswer }) {
       {showSelfGrade && (
         <div style={{
           padding: "0.85rem 1rem", borderRadius: "12px",
-          background: "#fffbeb", border: "1.5px solid #fde68a",
+          background: "#fdf2f8", border: "1.5px solid #fbcfe8",
           display: "flex", flexDirection: "column", gap: "0.5rem",
         }}>
-          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#92400e" }}>
+          <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#9d174d" }}>
             Your answer wasn't an exact match — did you get it right?
           </p>
-          <p style={{ fontSize: "0.8rem", color: "#92400e", fontStyle: "italic" }}>Your answer: "{input}"</p>
+          <p style={{ fontSize: "0.8rem", color: "#9d174d", fontStyle: "italic" }}>Your answer: "{input}"</p>
           <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
             <button
               onClick={() => handleSelfGrade(true)}
-              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#dcfce7", border: "1.5px solid #86efac", color: "#15803d", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#ede9fe", border: "1.5px solid #c4b5fd", color: "#6d28d9", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
             >I got it right</button>
             <button
               onClick={() => handleSelfGrade(false)}
-              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fee2e2", border: "1.5px solid #fca5a5", color: "#dc2626", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
+              style={{ flex: 1, padding: "0.6rem", borderRadius: "10px", background: "#fce7f3", border: "1.5px solid #f9a8d4", color: "#db2777", fontWeight: 700, fontSize: "0.8rem", cursor: "pointer" }}
             >I got it wrong</button>
           </div>
         </div>
@@ -790,10 +831,10 @@ function EnumerationQuestion({ q, onAnswer }) {
           <div style={{
             padding: "0.75rem 1rem",
             borderRadius: "12px",
-            background: "#fffbeb",
-            border: "1.5px solid #fde68a",
+            background: "#fdf2f8",
+            border: "1.5px solid #fbcfe8",
             fontSize: "0.8rem",
-            color: "#92400e",
+            color: "#9d174d",
             fontWeight: 600,
           }}>
             Check off the items you knew — then tap "I'm done grading".
@@ -808,8 +849,8 @@ function EnumerationQuestion({ q, onAnswer }) {
                   display: "flex", alignItems: "center", gap: "0.75rem",
                   padding: "0.75rem 1rem",
                   borderRadius: "12px",
-                  background: checked[i] ? "#f0fdf4" : "#faf5ff",
-                  border: `1.5px solid ${checked[i] ? "#86efac" : "var(--lilac-200)"}`,
+                  background: checked[i] ? "#f5f3ff" : "#faf5ff",
+                  border: `1.5px solid ${checked[i] ? "#c4b5fd" : "var(--lilac-200)"}`,
                   textAlign: "left", cursor: "pointer",
                   transition: "all 180ms",
                 }}
@@ -817,7 +858,7 @@ function EnumerationQuestion({ q, onAnswer }) {
                 <span style={{
                   width: "22px", height: "22px",
                   borderRadius: "6px",
-                  background: checked[i] ? "linear-gradient(135deg, #22c55e, #4ade80)" : "white",
+                  background: checked[i] ? "linear-gradient(135deg, #8b5cf6, #4ade80)" : "white",
                   border: checked[i] ? "none" : "1.5px solid var(--lilac-300)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   flexShrink: 0, transition: "all 180ms",
@@ -828,7 +869,7 @@ function EnumerationQuestion({ q, onAnswer }) {
                     </svg>
                   )}
                 </span>
-                <span style={{ fontSize: "0.875rem", fontWeight: checked[i] ? 700 : 500, color: checked[i] ? "#15803d" : "#2d1f5e" }}>
+                <span style={{ fontSize: "0.875rem", fontWeight: checked[i] ? 700 : 500, color: checked[i] ? "#6d28d9" : "#2d1f5e" }}>
                   {item}
                 </span>
               </button>
@@ -914,7 +955,7 @@ function MatchingQuestion({ q, onAnswer }) {
         <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
           {q.rightOptions.map(opt => (
             <div key={opt.key} style={{ fontSize: "0.8rem", color: "#2d1f5e", display: "flex", gap: "0.5rem", lineHeight: 1.5 }}>
-              <strong style={{ color: "#0e7490", minWidth: "1.3em", flexShrink: 0 }}>{opt.key}.</strong>
+              <strong style={{ color: "#7e22ce", minWidth: "1.3em", flexShrink: 0 }}>{opt.key}.</strong>
               <span>{opt.label}</span>
             </div>
           ))}
@@ -926,10 +967,10 @@ function MatchingQuestion({ q, onAnswer }) {
         <div style={{
           padding: "0.55rem 0.85rem",
           borderRadius: "10px",
-          background: "#cffafe",
+          background: "#f3e8ff",
           border: "1.5px solid #a5f3fc",
           fontSize: "0.78rem",
-          color: "#0e7490",
+          color: "#7e22ce",
           fontWeight: 600,
         }}>
           Tap a letter next to each item in Column A to match it with Column B.
@@ -945,8 +986,8 @@ function MatchingQuestion({ q, onAnswer }) {
             <div key={i} style={{
               padding: "0.75rem 0.9rem",
               borderRadius: "12px",
-              background: revealed ? (isRowCorrect ? "#f0fdf4" : "#fff1f2") : "#faf5ff",
-              border: `1.5px solid ${revealed ? (isRowCorrect ? "#86efac" : "#fca5a5") : "var(--lilac-200)"}`,
+              background: revealed ? (isRowCorrect ? "#f5f3ff" : "#fff1f2") : "#faf5ff",
+              border: `1.5px solid ${revealed ? (isRowCorrect ? "#c4b5fd" : "#f9a8d4") : "var(--lilac-200)"}`,
               transition: "all 180ms",
             }}>
               <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#2d1f5e", marginBottom: "0.55rem" }}>
@@ -969,9 +1010,9 @@ function MatchingQuestion({ q, onAnswer }) {
                         fontSize: "0.78rem",
                         fontWeight: 700,
                         cursor: revealed ? "default" : "pointer",
-                        background: showAsCorrect ? "#22c55e" : showAsWrongSelected ? "#f43f5e" : isSelected ? "#0e7490" : "white",
-                        color: (showAsCorrect || showAsWrongSelected || isSelected) ? "white" : "#0e7490",
-                        border: `1.5px solid ${showAsCorrect ? "#22c55e" : showAsWrongSelected ? "#f43f5e" : isSelected ? "#0e7490" : "var(--lilac-200)"}`,
+                        background: showAsCorrect ? "#8b5cf6" : showAsWrongSelected ? "#ec4899" : isSelected ? "#7e22ce" : "white",
+                        color: (showAsCorrect || showAsWrongSelected || isSelected) ? "white" : "#7e22ce",
+                        border: `1.5px solid ${showAsCorrect ? "#8b5cf6" : showAsWrongSelected ? "#ec4899" : isSelected ? "#7e22ce" : "var(--lilac-200)"}`,
                         transition: "all 150ms",
                       }}
                     >
@@ -1040,6 +1081,11 @@ export default function QuizPage({ mode = "quiz" }) {
   const [doShuffle, setDoShuffle] = useState(true);
   const [useTimer, setUseTimer]   = useState(false); // mock exam timer is opt-in
 
+  // Joke paywall: shown once per attempt, after PAYWALL_AFTER answers, for PAYWALL_SECONDS.
+  const [paywallShown, setPaywallShown] = useState(false);
+  const [paywallEndsAt, setPaywallEndsAt] = useState(null);
+  const [paywallLeft, setPaywallLeft] = useState(0);
+
   // Mock exam parts (one per chapter/module). "all" = whole exam.
   const allQuestions = reviewer ? reviewer.questions || [] : [];
   const parts = isExam ? examParts(allQuestions) : [];
@@ -1094,6 +1140,35 @@ export default function QuizPage({ mode = "quiz" }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quizState]);
 
+  // Open the paywall right after the 5th answer (a short pause so the answer feedback shows first).
+  useEffect(() => {
+    if (quizState !== STATE.QUIZ || paywallShown || answers.length !== PAYWALL_AFTER) return;
+    const id = setTimeout(() => {
+      setPaywallShown(true);
+      setPaywallEndsAt(Date.now() + PAYWALL_SECONDS * 1000);
+      // Don't let the joke eat into a timed mock exam.
+      setEndsAt(e => (e === null ? null : e + PAYWALL_SECONDS * 1000 + 700));
+    }, 700);
+    return () => clearTimeout(id);
+  }, [quizState, paywallShown, answers.length]);
+
+  useEffect(() => {
+    if (paywallEndsAt === null) return;
+    function tick() {
+      const left = Math.max(0, Math.ceil((paywallEndsAt - Date.now()) / 1000));
+      setPaywallLeft(left);
+      if (left <= 0) setPaywallEndsAt(null);
+    }
+    tick();
+    const id = setInterval(tick, 250);
+    return () => clearInterval(id);
+  }, [paywallEndsAt]);
+
+  // Each new screen (start, question, results) starts at the top, important on phones.
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [quizState, current]);
+
   if (!subject || !reviewer) {
     return (
       <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", paddingTop: "64px", padding: "6rem 1.25rem 2rem" }}>
@@ -1123,6 +1198,7 @@ export default function QuizPage({ mode = "quiz" }) {
     const seconds = minutes ? minutes * 60 : null;
     setTimeLeft(seconds);
     setEndsAt(seconds ? Date.now() + seconds * 1000 : null);
+    setPaywallShown(false); setPaywallEndsAt(null); setPaywallLeft(0);
     setQuizState(STATE.QUIZ);
   }
 
@@ -1266,8 +1342,8 @@ export default function QuizPage({ mode = "quiz" }) {
                 display: "flex", alignItems: "center", gap: "0.85rem",
                 padding: "1rem 1.25rem",
                 borderRadius: "14px",
-                background: useTimer ? "#fffbeb" : "var(--lilac-50)",
-                border: `1.5px solid ${useTimer ? "#fde68a" : "var(--lilac-200)"}`,
+                background: useTimer ? "#fdf2f8" : "var(--lilac-50)",
+                border: `1.5px solid ${useTimer ? "#fbcfe8" : "var(--lilac-200)"}`,
                 marginBottom: "0.85rem",
                 textAlign: "left",
                 cursor: "pointer",
@@ -1276,7 +1352,7 @@ export default function QuizPage({ mode = "quiz" }) {
                 <div style={{
                   width: "20px", height: "20px",
                   borderRadius: "6px",
-                  background: useTimer ? "linear-gradient(135deg, #f59e0b, #fbbf24)" : "white",
+                  background: useTimer ? "linear-gradient(135deg, #ec4899, #f9a8d4)" : "white",
                   border: useTimer ? "none" : "1.5px solid var(--lilac-300)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   flexShrink: 0,
@@ -1461,12 +1537,12 @@ export default function QuizPage({ mode = "quiz" }) {
                   <span style={{
                     minWidth: "26px", height: "26px",
                     borderRadius: "8px",
-                    background: a.isCorrect ? "#dcfce7" : "#fee2e2",
-                    color: a.isCorrect ? "#15803d" : "#dc2626",
+                    background: a.isCorrect ? "#ede9fe" : "#fce7f3",
+                    color: a.isCorrect ? "#6d28d9" : "#db2777",
                     fontSize: "0.72rem", fontWeight: 800,
                     display: "flex", alignItems: "center", justifyContent: "center",
                     flexShrink: 0,
-                    border: `1.5px solid ${a.isCorrect ? "#86efac" : "#fca5a5"}`,
+                    border: `1.5px solid ${a.isCorrect ? "#c4b5fd" : "#f9a8d4"}`,
                   }}>
                     {i + 1}
                   </span>
@@ -1497,9 +1573,9 @@ export default function QuizPage({ mode = "quiz" }) {
                           fontSize: "0.8rem",
                           padding: "0.5rem 0.85rem",
                           borderRadius: "10px",
-                          background: isCorrect ? "#f0fdf4" : isWrong ? "#fff1f2" : "#faf5ff",
-                          border: `1px solid ${isCorrect ? "#86efac" : isWrong ? "#fca5a5" : "#e9d5ff"}`,
-                          color: isCorrect ? "#166534" : isWrong ? "#991b1b" : "var(--text-soft)",
+                          background: isCorrect ? "#f5f3ff" : isWrong ? "#fff1f2" : "#faf5ff",
+                          border: `1px solid ${isCorrect ? "#c4b5fd" : isWrong ? "#f9a8d4" : "#e9d5ff"}`,
+                          color: isCorrect ? "#5b21b6" : isWrong ? "#9d174d" : "var(--text-soft)",
                           fontWeight: isCorrect || isWrong ? 700 : 400,
                         }}>
                           {isCorrect && "Correct: "}
@@ -1617,9 +1693,9 @@ export default function QuizPage({ mode = "quiz" }) {
                             fontSize: "0.78rem",
                             padding: "0.4rem 0.65rem",
                             borderRadius: "8px",
-                            background: ok ? "#f0fdf4" : "#fff1f2",
-                            border: `1px solid ${ok ? "#86efac" : "#fca5a5"}`,
-                            color: ok ? "#166534" : "#991b1b",
+                            background: ok ? "#f5f3ff" : "#fff1f2",
+                            border: `1px solid ${ok ? "#c4b5fd" : "#f9a8d4"}`,
+                            color: ok ? "#5b21b6" : "#9d174d",
                           }}>
                             {ii + 1}. {p.left} — <strong>{userSel ?? "—"}</strong>
                             {!ok && <span style={{ color: "var(--text-soft)" }}> (correct: {p.correct})</span>}
@@ -1643,12 +1719,14 @@ export default function QuizPage({ mode = "quiz" }) {
   /* ─────────────────── QUIZ SCREEN ─────────────────── */
   const q = shuffled[current];
   const qType = q.type || "mc";
+  const paywallOn = paywallEndsAt !== null;
 
   return (
     <div style={{ minHeight: "100vh", paddingTop: "64px", position: "relative", zIndex: 1 }}>
       <div className="blob blob-1" /><div className="blob blob-2" />
+      {paywallOn && <Paywall secondsLeft={paywallLeft} />}
 
-      <div style={{ maxWidth: "600px", margin: "0 auto", padding: "2rem 1.25rem 4rem" }}>
+      <div inert={paywallOn} aria-hidden={paywallOn || undefined} style={{ maxWidth: "600px", margin: "0 auto", padding: "2rem 1.25rem 4rem", filter: paywallOn ? "blur(3px)" : "none", transition: "filter 300ms" }}>
         {/* Top bar */}
         <div className="anim-slide-left" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem" }}>
           <div>
@@ -1661,9 +1739,9 @@ export default function QuizPage({ mode = "quiz" }) {
             {timeLeft !== null && (() => {
               const urgent = timeLeft <= 60, low = timeLeft <= 300;
               const c = urgent
-                ? { bg: "#fee2e2", fg: "#dc2626", bd: "#fca5a5" }
+                ? { bg: "#fce7f3", fg: "#db2777", bd: "#f9a8d4" }
                 : low
-                  ? { bg: "#fffbeb", fg: "#b45309", bd: "#fde68a" }
+                  ? { bg: "#fdf2f8", fg: "#be185d", bd: "#fbcfe8" }
                   : { bg: "var(--lilac-100)", fg: "var(--lilac-600)", bd: "var(--lilac-200)" };
               return (
                 <span
@@ -1823,9 +1901,9 @@ export default function QuizPage({ mode = "quiz" }) {
                 display: "flex", alignItems: "center", gap: "0.5rem",
                 padding: "0.6rem 1rem",
                 borderRadius: "12px",
-                background: selected === q.answer ? "#dcfce7" : "#fee2e2",
-                color: selected === q.answer ? "#15803d" : "#dc2626",
-                border: `1.5px solid ${selected === q.answer ? "#86efac" : "#fca5a5"}`,
+                background: selected === q.answer ? "#ede9fe" : "#fce7f3",
+                color: selected === q.answer ? "#6d28d9" : "#db2777",
+                border: `1.5px solid ${selected === q.answer ? "#c4b5fd" : "#f9a8d4"}`,
                 fontSize: "0.875rem",
                 fontWeight: 700,
               }}>

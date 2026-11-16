@@ -1,12 +1,12 @@
 // Question-type pill, shared by the quiz player and the exam reviewer page.
 const TYPES = {
   mc:             { label: "Multiple Choice", color: "#7c3aed", bg: "#f3e8ff" },
-  identification: { label: "Identification",  color: "#0369a1", bg: "#e0f2fe" },
-  true_false:     { label: "True or False",   color: "#c2410c", bg: "#ffedd5" },
-  enumeration:    { label: "Enumeration",     color: "#047857", bg: "#d1fae5" },
-  output_tracing: { label: "Output Tracing",  color: "#b45309", bg: "#fef3c7" },
-  fill_code:      { label: "Fill the Code",   color: "#be185d", bg: "#fce7f3" },
-  matching:       { label: "Matching Type",   color: "#0e7490", bg: "#cffafe" },
+  identification: { label: "Identification",  color: "#5b4bc4", bg: "#ece9ff" },
+  true_false:     { label: "True or False",   color: "#db2777", bg: "#fce7f3" },
+  enumeration:    { label: "Enumeration",     color: "#9333ea", bg: "#faf5ff" },
+  output_tracing: { label: "Output Tracing",  color: "#c026d3", bg: "#fae8ff" },
+  fill_code:      { label: "Fill the Code",   color: "#be185d", bg: "#ffe4f0" },
+  matching:       { label: "Matching Type",   color: "#7e22ce", bg: "#f3e8ff" },
 };
 
 export default function TypeBadge({ type }) {

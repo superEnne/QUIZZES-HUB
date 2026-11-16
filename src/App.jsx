@@ -4,10 +4,12 @@ import HomePage from "./pages/HomePage";
 import SubjectPage from "./pages/SubjectPage";
 import QuizPage from "./pages/QuizPage";
 import LockGate from "./components/LockGate";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       {/* Animated background orbs */}
       <div className="bg-orb bg-orb-1" aria-hidden="true" />
       <div className="bg-orb bg-orb-2" aria-hidden="true" />

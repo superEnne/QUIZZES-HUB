@@ -7809,7 +7809,7 @@ export function getPointersBySubject(subjectId) {
 const TERM_COLORS = {
   Prelim:       { color: "#3b6cd4", bg: "#dbeafe", border: "rgba(147,197,253,0.6)", strip: "#93c5fd" },
   Midterm:      { color: "#7c55c8", bg: "#ede0ff", border: "rgba(174,142,240,0.5)", strip: "#9370db" },
-  "Pre-Finals": { color: "#b45309", bg: "#ffedd5", border: "rgba(253,186,116,0.5)", strip: "#fdba74" },
+  "Pre-Finals": { color: "#be185d", bg: "#ffe4f0", border: "rgba(244,114,182,0.5)", strip: "#f9a8d4" },
   Finals:       { color: "#be4e8b", bg: "#ffe0ef", border: "rgba(249,123,173,0.45)", strip: "#f97bad" },
 };
 

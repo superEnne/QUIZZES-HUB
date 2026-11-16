@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "src/App.jsx": {
-    "mtime": 1794801609.5853188,
-    "seen": 1794801747.2224483,
-    "ast_hash": "43fca357c8a096a970837178eec0ce98",
+    "mtime": 1794803112.5655444,
+    "seen": 1794803327.473192,
+    "ast_hash": "da9cc32714b98410f5e39f80e1e91605",
     "semantic_hash": ""
   },
   "src/components/ExamCard.jsx": {
@@ -150,21 +150,21 @@
     "semantic_hash": ""
   },
   "src/components/SubjectCard.jsx": {
-    "mtime": 1794801619.8817954,
-    "seen": 1794801747.2224646,
-    "ast_hash": "5fec8970ffb13033378ba534d6099c6e",
+    "mtime": 1794803082.8445115,
+    "seen": 1794803327.4732056,
+    "ast_hash": "708ebfa5bb3a69d6efef7a22cdbaaa86",
     "semantic_hash": ""
   },
   "src/components/TypeBadge.jsx": {
-    "mtime": 1794713504.9086573,
-    "seen": 1794801747.2224658,
-    "ast_hash": "cb823ebff62d008c629af30586a3a811",
+    "mtime": 1794803082.9485123,
+    "seen": 1794803327.4732068,
+    "ast_hash": "3f5216ceb4b43f0513a332f845c5738a",
     "semantic_hash": ""
   },
   "src/data/exams.js": {
-    "mtime": 1794802045.9719841,
-    "seen": 1794802692.1578894,
-    "ast_hash": "a6ca87700af318fae5f62b8d67b0a1e4",
+    "mtime": 1794803082.9215114,
+    "seen": 1794803327.4732087,
+    "ast_hash": "fc20603db091b6447a8bde472de89b4c",
     "semantic_hash": ""
   },
   "src/data/subjects.js": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "src/pages/QuizPage.jsx": {
-    "mtime": 1794802566.2825222,
-    "seen": 1794802692.1578977,
-    "ast_hash": "a1f32fe3b7c940a03d5969810436b4e6",
+    "mtime": 1794803125.0459,
+    "seen": 1794803327.4732163,
+    "ast_hash": "1e5686d2c78ff4c69aae518eb89a257f",
     "semantic_hash": ""
   },
   "src/pages/SubjectPage.jsx": {
@@ -222,15 +222,21 @@
     "semantic_hash": ""
   },
   "docs/PROJECT_KNOWLEDGE.md": {
-    "mtime": 1794802689.1842716,
-    "seen": 1794802692.1579053,
-    "ast_hash": "6b135728c1bce929e736660e662ca7a8",
+    "mtime": 1794803323.8383737,
+    "seen": 1794803327.4732242,
+    "ast_hash": "b0c81ad6a5b222c65b70669cc440d3c7",
     "semantic_hash": ""
   },
   "index.html": {
     "mtime": 1786437919.1242995,
     "seen": 1794801747.222482,
     "ast_hash": "25205874c520683df6399af6130817e0",
+    "semantic_hash": ""
+  },
+  "src/components/ScrollToTop.jsx": {
+    "mtime": 1794803112.5473633,
+    "seen": 1794803327.4732034,
+    "ast_hash": "28dc2d705d057e2e3a243db722a88741",
     "semantic_hash": ""
   },
   "package-lock.json": {
