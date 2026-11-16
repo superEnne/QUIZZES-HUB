@@ -59,6 +59,157 @@ function fmtClock(total) {
   return h > 0 ? `${h}:${String(m).padStart(2, "0")}:${sec}` : `${m}:${sec}`;
 }
 
+// ── Mock exam parts ─────────────────────────────────────────────────────────
+// A finals mock exam stays one exam, but it can be taken one part (chapter or
+// module) at a time. A question's part is its "part" field, or else the
+// "Chapter N - Title." / "Module N - Title." start of its explanation.
+const PART_RE = /^\s*((?:Chapter|Module|Lesson|Unit|Week|Topic)\s+\d+[A-Za-z]?)\s*[-–—:]\s*([^.]+)/i;
+
+function partOf(q) {
+  if (q.part) return { key: String(q.part), label: String(q.part), name: "" };
+  const m = PART_RE.exec(q.explanation || "");
+  return m ? { key: m[1], label: m[1], name: m[2].trim() } : null;
+}
+
+/** Parts in order of first appearance. Empty unless every question has a part and there are 2+. */
+function examParts(qs) {
+  const map = new Map();
+  for (const q of qs) {
+    const p = partOf(q);
+    if (!p) return [];
+    if (!map.has(p.key)) map.set(p.key, { ...p, questions: [] });
+    map.get(p.key).questions.push(q);
+  }
+  if (map.size < 2) return [];
+  return [...map.values()].map((p, i) => ({ ...p, num: i + 1, points: totalPointsOf(p.questions) }));
+}
+
+const partsStorageKey = (subjectId, examId) => `qh-parts:${subjectId}:${examId}`;
+function loadPartResults(key) {
+  try { return JSON.parse(localStorage.getItem(key)) || {}; } catch { return {}; }
+}
+function savePartResults(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage unavailable */ }
+}
+
+/** Minutes for the optional timer: the whole limit, or a share of it sized to the part. */
+function partMinutes(timeLimit, part, wholePoints) {
+  if (!timeLimit) return null;
+  if (!part) return timeLimit;
+  return Math.max(1, Math.round((timeLimit * part.points) / wholePoints));
+}
+
+function pctOf(score, total) {
+  return total > 0 ? Math.round((score / total) * 100) : 0;
+}
+
+function PartPicker({ parts, value, onChange, results, wholeCount, wholePoints, onReset }) {
+  const done = parts.filter(p => results[p.key]);
+  const doneScore = done.reduce((n, p) => n + results[p.key].score, 0);
+  // A plain render function (not a nested component) so options keep focus between renders.
+  const renderOption = ({ id, title, sub, right, chip }) => {
+    const active = value === id;
+    return (
+      <button
+        key={id}
+        type="button"
+        onClick={() => onChange(id)}
+        style={{
+          display: "flex", alignItems: "center", gap: "0.75rem", width: "100%",
+          padding: "0.7rem 0.9rem", borderRadius: "12px", cursor: "pointer", textAlign: "left",
+          background: active ? "linear-gradient(135deg, #f3eeff, #fdf2f8)" : "white",
+          border: `1.5px solid ${active ? "#b794f4" : "var(--lilac-200)"}`,
+          boxShadow: active ? "0 0 0 3px rgba(183,148,244,0.18)" : "none",
+          transition: "all 160ms", font: "inherit",
+        }}
+      >
+        <span style={{
+          width: "16px", height: "16px", borderRadius: "50%", flexShrink: 0,
+          border: active ? "5px solid #9370db" : "1.5px solid var(--lilac-300)", background: "white",
+          transition: "all 160ms",
+        }} />
+        <span style={{ flex: 1, minWidth: 0 }}>
+          <span style={{ display: "block", fontSize: "0.84rem", fontWeight: 700, color: "#2d1f5e" }}>{title}</span>
+          {sub && <span style={{ display: "block", fontSize: "0.74rem", color: "var(--text-soft)", lineHeight: 1.35, marginTop: "0.1rem" }}>{sub}</span>}
+        </span>
+        <span style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "0.2rem", flexShrink: 0 }}>
+          <span style={{ fontSize: "0.72rem", fontWeight: 600, color: "var(--text-mid)", whiteSpace: "nowrap" }}>{right}</span>
+          {chip}
+        </span>
+      </button>
+    );
+  };
+
+  return (
+    <div style={{ textAlign: "left", marginBottom: "0.85rem" }}>
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "0.5rem", marginBottom: "0.5rem" }}>
+        <p style={{ fontSize: "0.875rem", fontWeight: 700, color: "#2d1f5e" }}>Take it by part</p>
+        <p style={{ fontSize: "0.72rem", color: "var(--text-soft)" }}>{done.length} of {parts.length} parts done</p>
+      </div>
+      <p style={{ fontSize: "0.775rem", color: "var(--text-soft)", marginBottom: "0.65rem", lineHeight: 1.5 }}>
+        Still one exam. Finish the parts in any order and stop between them; your part scores are kept on this device.
+      </p>
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>
+        {renderOption({ id: "all", title: "Whole exam", sub: "All parts in one sitting", right: `${wholeCount} questions` })}
+        {parts.map(p => {
+          const r = results[p.key];
+          return renderOption({
+              id: p.key,
+              title: `Part ${p.num} · ${p.label}`,
+              sub: p.name,
+              right: `${p.questions.length} questions`,
+              chip: r ? (
+                <span style={{ fontSize: "0.66rem", fontWeight: 800, padding: "0.1rem 0.45rem", borderRadius: "999px", background: "#dcfce7", color: "#15803d", whiteSpace: "nowrap" }}>
+                  ✓ {fmtScore(r.score)}/{r.total}
+                </span>
+              ) : (
+                <span style={{ fontSize: "0.66rem", fontWeight: 700, padding: "0.1rem 0.45rem", borderRadius: "999px", background: "#f5f3ff", color: "var(--text-soft)", whiteSpace: "nowrap" }}>
+                  Not yet
+                </span>
+              ),
+            });
+        })}
+      </div>
+      {done.length > 0 && (
+        <div style={{
+          display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.5rem", flexWrap: "wrap",
+          marginTop: "0.6rem", padding: "0.55rem 0.8rem", borderRadius: "10px",
+          background: "var(--lilac-50)", border: "1.5px dashed var(--lilac-200)",
+        }}>
+          <span style={{ fontSize: "0.76rem", color: "var(--text-mid)", fontWeight: 600 }}>
+            Whole exam so far: {fmtScore(doneScore)} / {wholePoints}
+            {done.length === parts.length && <> ({pctOf(doneScore, wholePoints)}%)</>}
+          </span>
+          <button type="button" onClick={onReset} style={{ font: "inherit", fontSize: "0.72rem", fontWeight: 700, color: "#be4e8b", background: "none", border: "none", cursor: "pointer", padding: 0 }}>
+            Reset part scores
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Score per part, from the answers of one attempt or from saved part results. */
+function PartBreakdown({ rows, title }) {
+  return (
+    <div style={{ textAlign: "left", marginBottom: "1.5rem", padding: "0.9rem 1rem", borderRadius: "14px", background: "var(--lilac-50)", border: "1.5px solid var(--lilac-200)" }}>
+      <p style={{ fontSize: "0.8rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "0.5rem" }}>{title}</p>
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+        {rows.map(r => (
+          <div key={r.key} style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            <span style={{ fontSize: "0.76rem", fontWeight: 600, color: "var(--text-mid)", flex: 1, minWidth: 0 }}>
+              Part {r.num} · {r.label}{r.name ? ` - ${r.name}` : ""}
+            </span>
+            <span style={{ fontSize: "0.76rem", fontWeight: 800, color: r.score === null ? "var(--text-soft)" : "#7c55c8", whiteSpace: "nowrap", fontVariantNumeric: "tabular-nums" }}>
+              {r.score === null ? "Not yet" : `${fmtScore(r.score)}/${r.total} · ${pctOf(r.score, r.total)}%`}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function getGrade(pct) {
   if (pct >= 90) return { label: "Excellent!", color: "#22c55e", bg: "#dcfce7", border: "#86efac" };
   if (pct >= 75) return { label: "Good Job!", color: "#9370db", bg: "#f3eeff", border: "#c9b4f8" };
@@ -889,6 +1040,14 @@ export default function QuizPage({ mode = "quiz" }) {
   const [doShuffle, setDoShuffle] = useState(true);
   const [useTimer, setUseTimer]   = useState(false); // mock exam timer is opt-in
 
+  // Mock exam parts (one per chapter/module). "all" = whole exam.
+  const allQuestions = reviewer ? reviewer.questions || [] : [];
+  const parts = isExam ? examParts(allQuestions) : [];
+  const storageKey = partsStorageKey(subjectId, examId);
+  const [partKey, setPartKey]         = useState("all");   // choice on the start screen
+  const [activePart, setActivePart]   = useState(null);    // part being taken, null = whole exam
+  const [partResults, setPartResults] = useState(() => (isExam ? loadPartResults(storageKey) : {}));
+
   // MC-specific state
   const [selected, setSelected]   = useState(null);
   const [revealed, setRevealed]   = useState(false);
@@ -917,6 +1076,24 @@ export default function QuizPage({ mode = "quiz" }) {
     return () => clearInterval(id);
   }, [quizState, endsAt]);
 
+  // When an attempt ends, keep the score of every part that was fully answered.
+  useEffect(() => {
+    if (quizState !== STATE.RESULT || parts.length === 0) return;
+    const next = { ...loadPartResults(storageKey) };
+    let changed = false;
+    for (const p of parts) {
+      const mine = answers.filter(a => a.part === p.key);
+      if (mine.length === 0 || mine.length < p.questions.length) continue;
+      next[p.key] = { score: mine.reduce((n, a) => n + (a.points || 0), 0), total: p.points, at: Date.now() };
+      changed = true;
+    }
+    if (changed) {
+      savePartResults(storageKey, next);
+      setPartResults(next);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [quizState]);
+
   if (!subject || !reviewer) {
     return (
       <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", paddingTop: "64px", padding: "6rem 1.25rem 2rem" }}>
@@ -928,14 +1105,22 @@ export default function QuizPage({ mode = "quiz" }) {
     );
   }
 
-  const questions = reviewer.questions || [];
+  const questions = allQuestions;
+  const wholePoints = totalPointsOf(questions);
+  const chosenPart = parts.find(p => p.key === partKey) || null;
+  const runningPart = parts.find(p => p.key === activePart) || null;
 
-  function startQuiz() {
-    setShuffled(doShuffle ? shuffleArray(questions) : [...questions]);
+  function startQuiz(key = partKey) {
+    const part = parts.find(p => p.key === key) || null;
+    const pool = part ? part.questions : questions;
+    setPartKey(part ? part.key : "all");
+    setActivePart(part ? part.key : null);
+    setShuffled(doShuffle ? shuffleArray(pool) : [...pool]);
     setCurrent(0); setScore(0); setAnswers([]);
     setSelected(null); setRevealed(false); setQAnswered(false);
     setTimedOut(false);
-    const seconds = isExam && useTimer && reviewer.timeLimit ? reviewer.timeLimit * 60 : null;
+    const minutes = isExam && useTimer ? partMinutes(reviewer.timeLimit, part, wholePoints) : null;
+    const seconds = minutes ? minutes * 60 : null;
     setTimeLeft(seconds);
     setEndsAt(seconds ? Date.now() + seconds * 1000 : null);
     setQuizState(STATE.QUIZ);
@@ -955,6 +1140,8 @@ export default function QuizPage({ mode = "quiz" }) {
       selected: oi,
       correct: q.answer,
       isCorrect: ok,
+      part: partOf(q)?.key,
+      points: ok ? 1 : 0,
       options: q.options,
       code: q.code,
       explanation: q.explanation,
@@ -974,6 +1161,8 @@ export default function QuizPage({ mode = "quiz" }) {
       type: q.type,
       question: q.question,
       isCorrect,
+      part: partOf(q)?.key,
+      points: scoreDelta,
       answer: q.answer,
       items: q.items,
       pairs: q.pairs,
@@ -1054,6 +1243,23 @@ export default function QuizPage({ mode = "quiz" }) {
               )}
             </p>
 
+            {parts.length > 0 && (
+              <PartPicker
+                parts={parts}
+                value={partKey}
+                onChange={setPartKey}
+                results={partResults}
+                wholeCount={questions.length}
+                wholePoints={wholePoints}
+                onReset={() => {
+                  if (window.confirm("Clear the saved scores of every part?")) {
+                    savePartResults(storageKey, {});
+                    setPartResults({});
+                  }
+                }}
+              />
+            )}
+
             {/* Optional mock exam timer */}
             {isExam && reviewer.timeLimit ? (
               <div style={{
@@ -1083,7 +1289,9 @@ export default function QuizPage({ mode = "quiz" }) {
                   )}
                 </div>
                 <div>
-                  <p style={{ fontSize: "0.875rem", fontWeight: 700, color: "#2d1f5e" }}>Use a {reviewer.timeLimit}-minute timer</p>
+                  <p style={{ fontSize: "0.875rem", fontWeight: 700, color: "#2d1f5e" }}>
+                    Use a {partMinutes(reviewer.timeLimit, chosenPart, wholePoints)}-minute timer{chosenPart ? ` for Part ${chosenPart.num}` : ""}
+                  </p>
                   <p style={{ fontSize: "0.775rem", color: "var(--text-soft)" }}>
                     {useTimer ? "The exam ends automatically when time runs out." : "Off by default — turn on to practice under time pressure."}
                   </p>
@@ -1124,8 +1332,8 @@ export default function QuizPage({ mode = "quiz" }) {
             </div>
 
             {questions.length > 0 ? (
-              <button className="btn-primary" onClick={startQuiz} style={{ width: "100%", padding: "0.9rem", fontSize: "0.95rem" }}>
-                {isExam ? "Start Mock Exam" : "Start Quiz"}
+              <button className="btn-primary" onClick={() => startQuiz()} style={{ width: "100%", padding: "0.9rem", fontSize: "0.95rem" }}>
+                {chosenPart ? `Start Part ${chosenPart.num} · ${chosenPart.questions.length} questions` : isExam ? "Start Mock Exam" : "Start Quiz"}
               </button>
             ) : (
               <button className="btn-primary" disabled style={{ width: "100%", padding: "0.9rem", fontSize: "0.95rem" }}>
@@ -1152,6 +1360,16 @@ export default function QuizPage({ mode = "quiz" }) {
   /* ─────────────────── RESULT SCREEN ─────────────────── */
   if (quizState === STATE.RESULT) {
     const grade = getGrade(pct);
+    const attemptRows = parts.map(p => {
+      const mine = answers.filter(a => a.part === p.key);
+      return { ...p, total: p.points, score: mine.length ? mine.reduce((n, a) => n + (a.points || 0), 0) : null };
+    });
+    const nextPart = runningPart
+      ? [...parts.slice(runningPart.num), ...parts.slice(0, runningPart.num - 1)].find(p => !partResults[p.key]) || null
+      : null;
+    const allPartsDone = parts.length > 0 && parts.every(p => partResults[p.key]);
+    const savedRows = parts.map(p => ({ ...p, total: p.points, score: partResults[p.key] ? partResults[p.key].score : null }));
+    const savedScore = savedRows.reduce((n, r) => n + (r.score || 0), 0);
     return (
       <div style={{ minHeight: "100vh", paddingTop: "64px", position: "relative", zIndex: 1 }}>
         <div className="blob blob-1" /><div className="blob blob-2" />
@@ -1173,6 +1391,11 @@ export default function QuizPage({ mode = "quiz" }) {
               </span>
               <span style={{ fontSize: "0.65rem", fontWeight: 700, color: grade.color }}>Score</span>
             </div>
+            {runningPart && (
+              <span className="badge badge-lilac" style={{ marginBottom: "0.6rem", display: "inline-flex" }}>
+                Part {runningPart.num} of {parts.length} · {runningPart.label}
+              </span>
+            )}
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.75rem", fontWeight: 700, color: "#2d1f5e", marginBottom: "0.4rem" }}>
               {grade.label}
             </h2>
@@ -1197,9 +1420,25 @@ export default function QuizPage({ mode = "quiz" }) {
                 )}
               </div>
             )}
+            {parts.length > 0 && !runningPart && (
+              <PartBreakdown title="Score by part" rows={attemptRows} />
+            )}
+            {runningPart && (
+              <PartBreakdown
+                title={allPartsDone
+                  ? `Whole exam: ${fmtScore(savedScore)} / ${wholePoints} (${pctOf(savedScore, wholePoints)}%) · all parts done`
+                  : `Whole exam progress: ${parts.filter(p => partResults[p.key]).length} of ${parts.length} parts done`}
+                rows={savedRows}
+              />
+            )}
             <div className="result-actions" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
-              <button className="btn-primary" onClick={() => setQuizState(STATE.IDLE)} style={{ padding: "0.75rem 2rem" }}>
-                Try Again
+              {nextPart && (
+                <button className="btn-primary" onClick={() => startQuiz(nextPart.key)} style={{ padding: "0.75rem 1.5rem" }}>
+                  Next: Part {nextPart.num}
+                </button>
+              )}
+              <button className={nextPart ? "btn-ghost" : "btn-primary"} onClick={() => setQuizState(STATE.IDLE)} style={{ padding: "0.75rem 2rem" }}>
+                {runningPart ? "Choose a Part" : "Try Again"}
               </button>
               <Link to={backPath} style={{ textDecoration: "none" }}>
                 <button className="btn-ghost" style={{ padding: "0.75rem 1.5rem" }}>
@@ -1414,7 +1653,9 @@ export default function QuizPage({ mode = "quiz" }) {
         <div className="anim-slide-left" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem" }}>
           <div>
             <span className="badge badge-lilac" style={{ marginBottom: "0.25rem", display: "inline-flex" }}>{subject.code}</span>
-            <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", fontWeight: 500 }}>{reviewer.title}</p>
+            <p style={{ fontSize: "0.78rem", color: "var(--text-soft)", fontWeight: 500 }}>
+              {runningPart ? `${reviewer.title} · Part ${runningPart.num}: ${runningPart.label}` : reviewer.title}
+            </p>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             {timeLeft !== null && (() => {
@@ -1448,7 +1689,11 @@ export default function QuizPage({ mode = "quiz" }) {
               className="btn-ghost"
               style={{ padding: "0.5rem 1rem", fontSize: "0.78rem" }}
               onClick={() => {
-                if (window.confirm(`Exit ${isExam ? "mock exam" : "quiz"}? Your progress will be lost.`)) navigate(backPath);
+                if (window.confirm(runningPart
+                  ? `Stop Part ${runningPart.num}? Answers in this part will be lost; finished parts stay saved.`
+                  : `Exit ${isExam ? "mock exam" : "quiz"}? Your progress will be lost.`)) {
+                  if (runningPart) setQuizState(STATE.IDLE); else navigate(backPath);
+                }
               }}
             >
               Exit

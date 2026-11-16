@@ -44,6 +44,13 @@ Put the PDF in  public/pointers/  and add an entry under "pointers":
       }
     ]
 
+-- PARTS (one per chapter/module) ---------------------------------------------
+
+The mock exam is split into parts automatically. Start every explanation with the
+chapter or module, e.g. "Chapter 6 - Data Organization and Architecture. ..." or
+"Module 13 - Polymorphism. ...". Or give a question "part": "Chapter 6" directly.
+If any question has no part, the exam just shows as one whole exam.
+
 -- SOURCE FILES ---------------------------------------------------------------
 
 Subject Exam Reviewers/<SUBJECT>/source/ keeps the editable sources

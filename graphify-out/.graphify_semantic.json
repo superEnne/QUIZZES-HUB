@@ -777,6 +777,30 @@
    "author": null,
    "contributor": null,
    "rationale": "13 Java programs from the module examples; the real printed lines are the answer, scored per line."
+  },
+  {
+   "id": "docs_project_knowledge_exam_parts",
+   "label": "Exam parts: take a finals mock exam by chapter/module",
+   "file_type": "concept",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "One exam split into parts from the explanation's Chapter/Module prefix; picker, per-part saved scores, next-part button."
+  },
+  {
+   "id": "docs_project_knowledge_parts_not_overwhelming",
+   "label": "Parts keep long exams from being overwhelming",
+   "file_type": "rationale",
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "User wanted stops and a choice of module order while the exam stays one whole."
   }
  ],
  "edges": [
@@ -2323,6 +2347,46 @@
   {
    "source": "docs_project_knowledge_oop_output_tracing",
    "target": "subject_exam_reviewers_oop_source_make_exam_run_java",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_parts",
+   "target": "src_pages_quizpage_quizpage",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_parts",
+   "target": "src_pages_quizpage_partpicker",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_exam_parts",
+   "target": "src_pages_quizpage_examparts",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "/sessions/rcw-01kjudwq1yg7c41s3evtkiwm/mnt/QUIZZES HUB/docs/PROJECT_KNOWLEDGE.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_project_knowledge_parts_not_overwhelming",
+   "target": "docs_project_knowledge_exam_parts",
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,

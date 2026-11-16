@@ -50,6 +50,14 @@ mc, true_false, identification, enumeration, output_tracing, fill_code, matching
 - When on, the timer counts down to a fixed end timestamp (endsAt) checked every 250 ms, so it stays accurate when a browser throttles timers in background tabs. A tick-by-tick setTimeout would drift.
 - Timer pill turns amber at 5 minutes and red at 1 minute. When time runs out the exam ends, shows "Time's up", and unanswered questions count as wrong.
 
+### Exam parts (take it by part)
+
+- Every finals mock exam is split into parts, one per chapter/module, but stays one exam (user request: less overwhelming, stop between parts, pick the order).
+- A question's part comes from its `part` field if present, else from the start of its explanation: "Chapter N - Title." / "Module N - Title." (PART_RE in QuizPage). No data change was needed because every exam explanation already starts that way. Parts appear only when every question has one and there are 2+.
+- Start screen: "Take it by part" picker (Whole exam or Part N), with each part's saved score or "Not yet", "N of M parts done", and "Whole exam so far: X / total". The timer is scaled to the part's share of the points.
+- When an attempt ends, every fully answered part's score is saved in localStorage (`qh-parts:<subjectId>:<examId>`), so a whole-exam run also fills every part. Part results screen shows the whole-exam progress per part and a "Next: Part N" button (next unfinished part). Exit during a part returns to the picker.
+- Current parts: CC6 4 (Ch 5-8), WD 3 (Ch 5-7), EA 3 (Ch 9-11), OOP 5 (M10-14), COMPROG3 3 (Ch 6-8).
+
 ### Output tracing scoring
 - A multi-line output is worth one point per line, like a 5-pt snippet on a written quiz. Lines are checked in order.
 - Matching is exact per line (trimmed, inner spaces collapsed) and keeps case and symbols, so "1" does not match "-1". The old loose normalize() would have accepted it.
@@ -140,6 +148,8 @@ The user provides the modules per subject and decides the question types.
 - The PDF is shown on the site as a Reviewer Pointers card (like a Flash Card), not as on-page notes.
 
 ## 8. Workflow and Gotchas
+
+- graphify: `graphify update .` refreshes code nodes but does NOT read `.graphify_semantic.json`. After adding doc/rationale nodes there, merge the new ones into graph.json (with `_origin: semantic`), then run `graphify cluster-only . --no-label` and write community names into `.graphify_labels.json`.
 
 - The site files are on the user's Windows PC. The local node_modules is a Windows install, so builds are verified in a separate Linux scratch copy (`npm ci` then `vite build` and `oxlint`).
 - Times New Roman cannot be embedded unless the font files are copied into the project; the PDF currently uses the PDF-standard Times font, which Windows viewers display as Times New Roman.
